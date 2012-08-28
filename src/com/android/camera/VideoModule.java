@@ -347,7 +347,7 @@ public class VideoModule implements CameraModule,
                     break;
                 }
 
-				case TRUE_VIEW: {
+                case TRUE_VIEW: {
                     mActivity.setTrueView(mPreferences);
                     break;
                 }
