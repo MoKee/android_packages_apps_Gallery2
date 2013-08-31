@@ -197,7 +197,8 @@ public class VideoMenu extends PieController
             settings.addItem(item);
         }
         // jpeg quality
-        if (group.findPreference(CameraSettings.KEY_VIDEO_JPEG) != null) {
+        if (group.findPreference(CameraSettings.KEY_VIDEO_JPEG) != null
+            && !Util.disableTouchSnapshot()) {
             item = makeItem(R.drawable.ic_jpeg);
             final ListPreference effectPref = group.findPreference(CameraSettings.KEY_VIDEO_JPEG);
             item.setLabel(res.getString(R.string.pref_jpeg_title).toUpperCase(locale));

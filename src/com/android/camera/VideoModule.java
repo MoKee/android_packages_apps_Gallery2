@@ -475,36 +475,38 @@ public class VideoModule implements CameraModule,
     // Preview area is touched. Take a picture.
     @Override
     public void onSingleTapUp(View view, int x, int y) {
-        if (mMediaRecorderRecording && effectsActive()) {
-            new RotateTextToast(mActivity, R.string.disable_video_snapshot_hint,
-                    mOrientation).show();
-            return;
+        if (!Util.disableTouchSnapshot()) {
+            if (mMediaRecorderRecording && effectsActive()) {
+                new RotateTextToast(mActivity, R.string.disable_video_snapshot_hint,
+                        mOrientation).show();
+                return;
+            }
+
+            MediaSaveService s = mActivity.getMediaSaveService();
+            if (mPaused || mSnapshotInProgress || effectsActive() || s == null || s.isQueueFull()) {
+                return;
+            }
+
+            if (!mMediaRecorderRecording) {
+                // check for dismissing popup
+                mUI.dismissPopup();
+                return;
+            }
+
+            // Set rotation and gps data.
+            int rotation = Util.getJpegRotation(mCameraId, mOrientation);
+            mParameters.setRotation(rotation);
+            Location loc = mLocationManager.getCurrentLocation();
+            Util.setGpsParameters(mParameters, loc);
+            mActivity.mCameraDevice.setParameters(mParameters);
+
+            Log.v(TAG, "Video snapshot start");
+            mActivity.mCameraDevice.takePicture(null, null, null, new JpegPictureCallback(loc));
+            showVideoSnapshotUI(true);
+            mSnapshotInProgress = true;
+            UsageStatistics.onEvent(UsageStatistics.COMPONENT_CAMERA,
+                    UsageStatistics.ACTION_CAPTURE_DONE, "VideoSnapshot");
         }
-
-        MediaSaveService s = mActivity.getMediaSaveService();
-        if (mPaused || mSnapshotInProgress || effectsActive() || s == null || s.isQueueFull()) {
-            return;
-        }
-
-        if (!mMediaRecorderRecording) {
-            // check for dismissing popup
-            mUI.dismissPopup();
-            return;
-        }
-
-        // Set rotation and gps data.
-        int rotation = Util.getJpegRotation(mCameraId, mOrientation);
-        mParameters.setRotation(rotation);
-        Location loc = mLocationManager.getCurrentLocation();
-        Util.setGpsParameters(mParameters, loc);
-        mActivity.mCameraDevice.setParameters(mParameters);
-
-        Log.v(TAG, "Video snapshot start");
-        mActivity.mCameraDevice.takePicture(null, null, null, new JpegPictureCallback(loc));
-        showVideoSnapshotUI(true);
-        mSnapshotInProgress = true;
-        UsageStatistics.onEvent(UsageStatistics.COMPONENT_CAMERA,
-                UsageStatistics.ACTION_CAPTURE_DONE, "VideoSnapshot");
     }
 
     @Override
@@ -2291,7 +2293,8 @@ public class VideoModule implements CameraModule,
             mActivity.setSingleTapUpListener(mUI.getPreview());
             // Show the tap to focus toast if this is the first start.
             if (mPreferences.getBoolean(
-                        CameraSettings.KEY_VIDEO_FIRST_USE_HINT_SHOWN, true)) {
+                        CameraSettings.KEY_VIDEO_FIRST_USE_HINT_SHOWN, true)
+                        && !Util.disableTouchSnapshot()) {
                 // Delay the toast for one second to wait for orientation.
                 mHandler.sendEmptyMessageDelayed(SHOW_TAP_TO_SNAPSHOT_TOAST, 1000);
             }
@@ -2407,12 +2410,14 @@ public class VideoModule implements CameraModule,
     }
 
     private void showTapToSnapshotToast() {
-        new RotateTextToast(mActivity, R.string.video_snapshot_hint, 0)
-                .show();
-        // Clear the preference.
-        Editor editor = mPreferences.edit();
-        editor.putBoolean(CameraSettings.KEY_VIDEO_FIRST_USE_HINT_SHOWN, false);
-        editor.apply();
+        if (!Util.disableTouchSnapshot()) {
+            new RotateTextToast(mActivity, R.string.video_snapshot_hint, 0)
+                    .show();
+            // Clear the preference.
+            Editor editor = mPreferences.edit();
+            editor.putBoolean(CameraSettings.KEY_VIDEO_FIRST_USE_HINT_SHOWN, false);
+            editor.apply();
+        }
     }
 
     @Override
