@@ -69,6 +69,8 @@ public class CameraSettings {
     public static final String KEY_VIDEO_FIRST_USE_HINT_SHOWN = "pref_video_first_use_hint_shown_key";
     public static final String KEY_PHOTOSPHERE_PICTURESIZE = "pref_photosphere_picturesize_key";
     public static final String KEY_STORAGE = "pref_camera_storage_key";
+    public static final String KEY_SMART_CAPTURE_PHOTO = "pref_smart_capture_camera";
+    public static final String KEY_SMART_CAPTURE_VIDEO = "pref_smart_capture_video";
 
     public static final String EXPOSURE_DEFAULT_VALUE = "0";
 
