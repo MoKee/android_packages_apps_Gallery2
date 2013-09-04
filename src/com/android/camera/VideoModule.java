@@ -34,6 +34,10 @@ import android.hardware.Camera.CameraInfo;
 import android.hardware.Camera.Parameters;
 import android.hardware.Camera.PictureCallback;
 import android.hardware.Camera.Size;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.media.CamcorderProfile;
 import android.media.CameraProfile;
@@ -78,7 +82,8 @@ public class VideoModule implements CameraModule,
     ShutterButton.OnShutterButtonListener,
     MediaRecorder.OnErrorListener,
     MediaRecorder.OnInfoListener,
-    EffectsRecorder.EffectsListener {
+    EffectsRecorder.EffectsListener,
+    SensorEventListener {
 
     private static final String TAG = "CAM_VideoModule";
 
@@ -208,6 +213,10 @@ public class VideoModule implements CameraModule,
     private boolean mEnableHFR = false;
 
     private StartPreviewThread mStartPreviewThread;
+
+    private SensorManager mSensorManager;
+    private long mLastVid = 0;
+	private long mStartTime = 0;
 
     private final MediaSaveService.OnMediaSavedListener mOnVideoSavedListener =
             new MediaSaveService.OnMediaSavedListener() {
@@ -416,6 +425,8 @@ public class VideoModule implements CameraModule,
         mPrefVideoEffectDefault = mActivity.getString(R.string.pref_video_effect_default);
         resetEffect();
 
+        mSensorManager = (SensorManager)(mActivity.getSystemService(Context.SENSOR_SERVICE));
+
         // Power shutter
         mActivity.initPowerShutter(mPreferences);
 
@@ -578,6 +589,27 @@ public class VideoModule implements CameraModule,
 
     @Override
     public void onStop() {}
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        int type = event.sensor.getType();
+        if (type == Sensor.TYPE_PROXIMITY) {
+            // Minimum 2 second timeout for start/stop record
+            // else it will crash the thread on low end devices
+            if ((SystemClock.uptimeMillis() - mLastVid) > 2000
+                && mActivity.mShowCameraAppView && SystemClock.uptimeMillis() - mStartTime > 2000) {
+                int currentProx = (int) event.values[0];
+                if (currentProx <= 5) {
+                    onShutterButtonClick();
+                    mLastVid = SystemClock.uptimeMillis();
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    }
 
     private void loadCameraPreferences() {
         CameraSettings settings = new CameraSettings(mActivity, mParameters,
@@ -959,6 +991,8 @@ public class VideoModule implements CameraModule,
 
         UsageStatistics.onContentViewChanged(
                 UsageStatistics.COMPONENT_CAMERA, "VideoModule");
+
+        initSmartCapture();
     }
 
     private void setDisplayOrientation() {
@@ -1183,6 +1217,7 @@ public class VideoModule implements CameraModule,
         mHandler.removeMessages(SWITCH_CAMERA_START_ANIMATION);
         mPendingSwitchCameraId = -1;
         mSwitchingCamera = false;
+        stopSmartCapture();
         // Call onPause after stopping video recording. So the camera can be
         // released as soon as possible.
     }
@@ -1326,6 +1361,29 @@ public class VideoModule implements CameraModule,
             mActivity.mCameraDevice.startPreviewAsync();
             mPreviewing = true;
             mMediaRecorder.setPreviewDisplay(mUI.getSurfaceHolder().getSurface());
+        }
+    }
+
+    private void initSmartCapture() {
+        if (mActivity.initSmartCapture(mPreferences, true)) {
+            startSmartCapture();
+        } else {
+            stopSmartCapture();
+        }
+    }
+
+    private void startSmartCapture() {
+        mStartTime = SystemClock.uptimeMillis();
+        Sensor psensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        if (psensor != null) {
+            mSensorManager.registerListener(this, psensor, SensorManager.SENSOR_DELAY_UI);
+        }
+    }
+
+    private void stopSmartCapture() {
+        Sensor psensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        if (psensor != null) {
+            mSensorManager.unregisterListener(this, psensor);
         }
     }
 
@@ -2347,6 +2405,7 @@ public class VideoModule implements CameraModule,
             }
             mUI.updateOnScreenIndicators(mParameters, mPreferences);
             mActivity.initPowerShutter(mPreferences);
+            initSmartCapture();
         }
     }
 
@@ -2375,6 +2434,7 @@ public class VideoModule implements CameraModule,
         initializeVideoSnapshot();
         resizeForPreviewAspectRatio();
         initializeVideoControl();
+        initSmartCapture();
 
         CameraInfo info = CameraHolder.instance().getCameraInfo()[mCameraId];
         boolean mirror = (info.facing == CameraInfo.CAMERA_FACING_FRONT);

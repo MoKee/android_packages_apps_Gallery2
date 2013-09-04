@@ -57,6 +57,11 @@ public class VideoMenu extends PieController
         mPopup = null;
         mPopupStatus = POPUP_NONE;
         PieItem item = null;
+        // smart capture
+        if (group.findPreference(CameraSettings.KEY_SMART_CAPTURE_VIDEO) != null) {
+            item = makeSwitchItem(CameraSettings.KEY_SMART_CAPTURE_VIDEO, true);
+            mRenderer.addItem(item);
+        }
         // hdr
         if (group.findPreference(CameraSettings.KEY_VIDEO_HDR) != null) {
             item = makeSwitchItem(CameraSettings.KEY_VIDEO_HDR, true);

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2013 The MoKee OpenSource Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<resources>
+    <!-- Smart capture. -->
+    <string-array name="pref_smart_capture_entryvalues" translatable="false">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+
+    <array name="pref_smart_capture_entries" translatable="false">
+        <item>@string/setting_off</item>
+        <item>@string/setting_on</item>
+    </array>
+
+    <array name="pref_smart_capture_labels" translatable="false">
+        <item>@string/pref_smart_capture_label</item>
+        <item>@string/pref_smart_capture_label</item>
+    </array>
+
+    <array name="smart_capture_icons" translatable="false">
+        <item>@drawable/ic_smart_capture_off</item>
+        <item>@drawable/ic_smart_capture</item>
+    </array>
+
+    <array name="smart_capture_largeicons" translatable="false">
+        <item>@drawable/ic_smart_capture_off</item>
+        <item>@drawable/ic_smart_capture</item>
+    </array>
+</resources>
