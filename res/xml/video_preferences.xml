@@ -17,6 +17,15 @@
 <PreferenceGroup
         xmlns:camera="http://schemas.android.com/apk/res/com.android.gallery3d"
         camera:title="@string/pref_camcorder_settings_category">
+    <IconListPreference
+            camera:key="pref_smart_capture_video"
+            camera:defaultValue="@string/pref_smart_capture_default"
+            camera:title="@string/pref_smart_capture_title"
+            camera:icons="@array/smart_capture_icons"
+            camera:largeIcons="@array/smart_capture_largeicons"
+            camera:entries="@array/pref_smart_capture_entries"
+            camera:entryValues="@array/pref_smart_capture_entryvalues"
+            camera:labelList="@array/pref_smart_capture_labels" />
     <ListPreference
             camera:key="pref_video_quality_key"
             camera:defaultValue="@string/pref_video_quality_default"
