@@ -148,6 +148,11 @@ public class PhotoMenu extends PieController
             }
         });
         more.addItem(item);
+        // true view
+        if (group.findPreference(CameraSettings.KEY_TRUE_VIEW) != null) {
+            item = makeSwitchItem(CameraSettings.KEY_TRUE_VIEW, true);
+            more.addItem(item);
+        }
         // Storage location
         if (group.findPreference(CameraSettings.KEY_STORAGE) != null) {
             item = makeItem(R.drawable.stat_notify_sdcard);

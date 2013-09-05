@@ -223,6 +223,15 @@ public abstract class ActivityBase extends AbstractGalleryActivity
             .equals(getResources().getString(R.string.setting_on_value));
     }
 
+    protected void setTrueView(SharedPreferences prefs) {
+        CameraScreenNail.mEnableAspectRatioClamping =
+                prefs.getString(CameraSettings.KEY_TRUE_VIEW,
+                getResources().getString(R.string.setting_off_value))
+                .equals(getResources().getString(R.string.setting_off_value));
+        ((CameraScreenNail) mCameraScreenNail).updateRenderSize();
+        notifyScreenNailChanged();
+    }
+
     protected boolean setStoragePath(SharedPreferences prefs) {
         String storagePath = prefs.getString(CameraSettings.KEY_STORAGE,
                 Environment.getExternalStorageDirectory().toString());

@@ -1766,6 +1766,8 @@ public class PhotoModule
         if (mSnapshotOnIdle) {
             mHandler.post(mDoSnapRunnable);
         }
+
+        mActivity.setTrueView(mPreferences);
     }
 
     @Override
@@ -2083,6 +2085,7 @@ public class PhotoModule
 
         setCameraParametersWhenIdle(UPDATE_PARAM_PREFERENCE);
         mUI.updateOnScreenIndicators(mParameters, mPreferenceGroup, mPreferences);
+        mActivity.setTrueView(mPreferences);
         initSmartCapture();
     }
 

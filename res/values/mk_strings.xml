@@ -20,4 +20,8 @@
     <string name="pref_smart_capture_title">Smart capture</string>
     <string name="pref_smart_capture_default">@string/setting_off_value</string>
 
+    <!-- True View -->
+    <string name="pref_true_view_label">True View</string>
+    <string name="pref_true_view_title">True View</string>
+    <string name="pref_true_view_default">@string/setting_off_value</string>
 </resources>
