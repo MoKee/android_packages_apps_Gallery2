@@ -101,6 +101,8 @@ public class VideoModule implements CameraModule,
     private static final int CAPTURE_ANIMATION_DONE = 11;
     private static final int START_PREVIEW_DONE = 12;
 
+    private static final int TRUE_VIEW = 15;
+
     private static final int SCREEN_DELAY = 2 * 60 * 1000;
 
     private static final long SHUTTER_BUTTON_TIMEOUT = 500L; // 500ms
@@ -342,6 +344,11 @@ public class VideoModule implements CameraModule,
 
                 case HIDE_SURFACE_VIEW: {
                     mUI.hideSurfaceView();
+                    break;
+                }
+
+				case TRUE_VIEW: {
+                    mActivity.setTrueView(mPreferences);
                     break;
                 }
 
@@ -1086,6 +1093,7 @@ public class VideoModule implements CameraModule,
     private void onPreviewStarted() {
         mHandler.sendEmptyMessage(ENABLE_SHUTTER_BUTTON);
         mHandler.sendEmptyMessage(START_PREVIEW_DONE);
+        mHandler.sendEmptyMessage(TRUE_VIEW);
     }
 
     @Override
@@ -2405,6 +2413,7 @@ public class VideoModule implements CameraModule,
             }
             mUI.updateOnScreenIndicators(mParameters, mPreferences);
             mActivity.initPowerShutter(mPreferences);
+            mActivity.setTrueView(mPreferences);
             initSmartCapture();
         }
     }

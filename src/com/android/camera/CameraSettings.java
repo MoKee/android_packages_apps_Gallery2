@@ -73,6 +73,7 @@ public class CameraSettings {
     public static final String KEY_STORAGE = "pref_camera_storage_key";
     public static final String KEY_SMART_CAPTURE_PHOTO = "pref_smart_capture_camera";
     public static final String KEY_SMART_CAPTURE_VIDEO = "pref_smart_capture_video";
+    public static final String KEY_TRUE_VIEW = "pref_true_view";
     public static final String KEY_VIDEO_HDR = "pref_camera_video_hdr_key";
     public static final String KEY_POWER_SHUTTER = "pref_power_shutter";
     public static final String KEY_ISO_MODE = "pref_camera_iso_key";

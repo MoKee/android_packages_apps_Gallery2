@@ -26,6 +26,15 @@
             camera:entries="@array/pref_smart_capture_entries"
             camera:entryValues="@array/pref_smart_capture_entryvalues"
             camera:labelList="@array/pref_smart_capture_labels" />
+    <IconListPreference
+            camera:key="pref_true_view"
+            camera:defaultValue="@string/pref_true_view_default"
+            camera:title="@string/pref_true_view_title"
+            camera:icons="@array/true_view_icons"
+            camera:largeIcons="@array/true_view_largeicons"
+            camera:entries="@array/pref_true_view_entries"
+            camera:entryValues="@array/pref_true_view_entryvalues"
+            camera:labelList="@array/pref_true_view_labels" />
     <ListPreference
             camera:key="pref_video_quality_key"
             camera:defaultValue="@string/pref_video_quality_default"
