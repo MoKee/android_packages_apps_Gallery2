@@ -938,6 +938,7 @@ public class VideoModule implements CameraModule,
 
     private void onPreviewStarted() {
         mUI.enableShutter(true);
+        mActivity.setTrueView(mPreferences);
     }
 
     @Override
@@ -2131,6 +2132,7 @@ public class VideoModule implements CameraModule,
                 setCameraParameters();
             }
             mUI.updateOnScreenIndicators(mParameters, mPreferences);
+            mActivity.setTrueView(mPreferences);
             initSmartCapture();
         }
     }

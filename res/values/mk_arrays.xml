@@ -16,7 +16,7 @@
  -->
 
 <resources>
-    <!-- Smart capture. -->
+    <!-- Smart capture -->
     <string-array name="pref_smart_capture_entryvalues" translatable="false">
         <item>off</item>
         <item>on</item>
@@ -40,5 +40,31 @@
     <array name="smart_capture_largeicons" translatable="false">
         <item>@drawable/ic_smart_capture_off</item>
         <item>@drawable/ic_smart_capture</item>
+    </array>
+
+    <!-- True View -->
+    <string-array name="pref_true_view_entryvalues" translatable="false">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+
+    <array name="pref_true_view_entries" translatable="false">
+        <item>@string/setting_off</item>
+        <item>@string/setting_on</item>
+    </array>
+
+    <array name="pref_true_view_labels" translatable="false">
+        <item>@string/pref_true_view_label</item>
+        <item>@string/pref_true_view_label</item>
+    </array>
+
+    <array name="true_view_icons" translatable="false">
+        <item>@drawable/ic_true_view_off</item>
+        <item>@drawable/ic_true_view</item>
+    </array>
+
+    <array name="true_view_largeicons" translatable="false">
+        <item>@drawable/ic_true_view_off</item>
+        <item>@drawable/ic_true_view</item>
     </array>
 </resources>
