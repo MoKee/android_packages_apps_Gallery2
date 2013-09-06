@@ -186,6 +186,25 @@ public class PhotoMenu extends PieController
             }
         });
         settings.addItem(item);
+        // color effects
+        if (group.findPreference(CameraSettings.KEY_JPEG) != null) {
+            item = makeItem(R.drawable.ic_jpeg);
+            final ListPreference effectPref = group.findPreference(CameraSettings.KEY_JPEG);
+            item.setLabel(res.getString(R.string.pref_camera_jpeg_title).toUpperCase(locale));
+            item.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(PieItem item) {
+                    ListPrefSettingPopup popup = (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
+                            R.layout.list_pref_setting_popup, null, false);
+                    popup.initialize(effectPref);
+                    popup.setSettingChangedListener(PhotoMenu.this);
+                    mUI.dismissPopup();
+                    mPopup = popup;
+                    mUI.showPopup(mPopup);
+                }
+            });
+        }
+        settings.addItem(item);
         // true view
         if (group.findPreference(CameraSettings.KEY_TRUE_VIEW) != null) {
             item = makeSwitchItem(CameraSettings.KEY_TRUE_VIEW, true);
