@@ -146,8 +146,8 @@ public class PhotoMenu extends PieController
                     mUI.showPopup(mPopup);
                 }
             });
+            more.addItem(item);
         }
-        more.addItem(item);
         // scene mode
         if (group.findPreference(CameraSettings.KEY_SCENE_MODE) != null) {
             IconListPreference pref = (IconListPreference) group.findPreference(
@@ -186,11 +186,11 @@ public class PhotoMenu extends PieController
             }
         });
         settings.addItem(item);
-        // color effects
-        if (group.findPreference(CameraSettings.KEY_JPEG) != null) {
+        // jpeg quality
+        if (group.findPreference(CameraSettings.KEY_CAMERA_JPEG) != null) {
             item = makeItem(R.drawable.ic_jpeg);
-            final ListPreference effectPref = group.findPreference(CameraSettings.KEY_JPEG);
-            item.setLabel(res.getString(R.string.pref_camera_jpeg_title).toUpperCase(locale));
+            final ListPreference effectPref = group.findPreference(CameraSettings.KEY_CAMERA_JPEG);
+            item.setLabel(res.getString(R.string.pref_jpeg_title).toUpperCase(locale));
             item.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(PieItem item) {
@@ -203,8 +203,8 @@ public class PhotoMenu extends PieController
                     mUI.showPopup(mPopup);
                 }
             });
+            settings.addItem(item);
         }
-        settings.addItem(item);
         // true view
         if (group.findPreference(CameraSettings.KEY_TRUE_VIEW) != null) {
             item = makeSwitchItem(CameraSettings.KEY_TRUE_VIEW, true);

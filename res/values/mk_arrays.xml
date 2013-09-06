@@ -106,14 +106,14 @@
     </string-array>
 
     <!-- Camera Preferences JPEG dialog box entries -->
-    <string-array name="pref_camera_jpeg_entries" translatable="false">
-        <item>@string/pref_camera_jpeg_entry_super</item>
-        <item>@string/pref_camera_jpeg_entry_high</item>
-        <item>@string/pref_camera_jpeg_entry_medium</item>
-        <item>@string/pref_camera_jpeg_entry_low</item>
+    <string-array name="pref_jpeg_entries" translatable="false">
+        <item>@string/pref_jpeg_entry_super</item>
+        <item>@string/pref_jpeg_entry_high</item>
+        <item>@string/pref_jpeg_entry_medium</item>
+        <item>@string/pref_jpeg_entry_low</item>
     </string-array>
 
-    <string-array name="pref_camera_jpeg_entryvalues" translatable="false">
+    <string-array name="pref_jpeg_entryvalues" translatable="false">
         <item>100</item>
         <item>90</item>
         <item>75</item>
