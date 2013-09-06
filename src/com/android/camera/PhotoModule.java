@@ -1923,8 +1923,8 @@ public class PhotoModule
 
         // Set JPEG quality.
         int jpegQuality = Integer.parseInt(mPreferences.getString(
-                CameraSettings.KEY_JPEG,
-                mActivity.getString(R.string.pref_camera_jpeg_default)));
+                CameraSettings.KEY_CAMERA_JPEG,
+                mActivity.getString(R.string.pref_jpeg_default)));
         mParameters.setJpegQuality(jpegQuality);
 
         // For the following settings, we need to check if the settings are

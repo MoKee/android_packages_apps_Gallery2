@@ -48,6 +48,12 @@
             camera:entries="@array/pref_coloreffect_entries"
             camera:entryValues="@array/pref_coloreffect_entryvalues" />
     <ListPreference
+            camera:key="pref_video_jpeg_key"
+            camera:defaultValue="@string/pref_jpeg_default"
+            camera:title="@string/pref_jpeg_title"
+            camera:entries="@array/pref_jpeg_entries"
+            camera:entryValues="@array/pref_jpeg_entryvalues" />
+    <ListPreference
             camera:key="pref_camera_storage_key"
             camera:title="@string/pref_camera_storage_title" />
     <IconListPreference
