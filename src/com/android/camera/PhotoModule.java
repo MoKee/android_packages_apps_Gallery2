@@ -1932,8 +1932,8 @@ public class PhotoModule
 
         // Color effect
         String colorEffect = mPreferences.getString(
-                CameraSettings.KEY_COLOR_EFFECT,
-                mActivity.getString(R.string.pref_camera_coloreffect_default));
+                CameraSettings.KEY_CAMERA_COLOR_EFFECT,
+                mActivity.getString(R.string.pref_coloreffect_default));
         if (Util.isSupported(colorEffect, mParameters.getSupportedColorEffects())) {
             mParameters.setColorEffect(colorEffect);
         }
