@@ -17,6 +17,7 @@
 package com.android.camera;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 
 import com.android.camera.ui.AbstractSettingPopup;
@@ -27,6 +28,8 @@ import com.android.camera.ui.PieItem.OnClickListener;
 import com.android.camera.ui.PieRenderer;
 import com.android.camera.ui.TimeIntervalPopup;
 import com.android.gallery3d.R;
+
+import java.util.Locale;
 
 public class VideoMenu extends PieController
         implements MoreSettingPopup.Listener,
@@ -56,6 +59,8 @@ public class VideoMenu extends PieController
         mPopup = null;
         mPopupStatus = POPUP_NONE;
         PieItem item = null;
+        final Resources res = mActivity.getResources();
+        Locale locale = res.getConfiguration().locale;
         // smart capture
         if (group.findPreference(CameraSettings.KEY_SMART_CAPTURE_VIDEO) != null) {
             item = makeSwitchItem(CameraSettings.KEY_SMART_CAPTURE_VIDEO, true);
@@ -66,11 +71,28 @@ public class VideoMenu extends PieController
             item = makeItem(CameraSettings.KEY_WHITE_BALANCE);
             mRenderer.addItem(item);
         }
+        // color effects
+        item = makeItem(R.drawable.ic_color_effect);
+        final ListPreference effectPref = group.findPreference(CameraSettings.KEY_COLOR_EFFECT);
+        item.setLabel(res.getString(R.string.pref_camera_coloreffect_title).toUpperCase(locale));
+        item.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(PieItem item) {
+                ListPrefSettingPopup popup = (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
+                        R.layout.list_pref_setting_popup, null, false);
+                popup.initialize(effectPref);
+                popup.setSettingChangedListener(VideoMenu.this);
+                mUI.dismissPopup(false);
+                mPopup = popup;
+                mUI.showPopup(mPopup);
+            }
+        });
+        mRenderer.addItem(item);
         // settings popup
         mOtherKeys = new String[] {
+                CameraSettings.KEY_VIDEO_QUALITY,
                 CameraSettings.KEY_VIDEO_EFFECT,
                 CameraSettings.KEY_VIDEO_TIME_LAPSE_FRAME_INTERVAL,
-                CameraSettings.KEY_VIDEO_QUALITY,
                 CameraSettings.KEY_TRUE_VIEW,
                 CameraSettings.KEY_RECORD_LOCATION,
                 CameraSettings.KEY_STORAGE
