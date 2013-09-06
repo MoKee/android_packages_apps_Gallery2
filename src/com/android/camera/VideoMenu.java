@@ -32,20 +32,13 @@ import com.android.gallery3d.R;
 import java.util.Locale;
 
 public class VideoMenu extends PieController
-        implements MoreSettingPopup.Listener,
-        ListPrefSettingPopup.Listener,
+        implements ListPrefSettingPopup.Listener,
         TimeIntervalPopup.Listener {
 
     private static String TAG = "CAM_VideoMenu";
 
     private VideoUI mUI;
-    private String[] mOtherKeys;
     private AbstractSettingPopup mPopup;
-
-    private static final int POPUP_NONE = 0;
-    private static final int POPUP_FIRST_LEVEL = 1;
-    private static final int POPUP_SECOND_LEVEL = 2;
-    private int mPopupStatus;
     private CameraActivity mActivity;
 
     public VideoMenu(CameraActivity activity, VideoUI ui, PieRenderer pie) {
@@ -57,7 +50,6 @@ public class VideoMenu extends PieController
     public void initialize(PreferenceGroup group) {
         super.initialize(group);
         mPopup = null;
-        mPopupStatus = POPUP_NONE;
         PieItem item = null;
         final Resources res = mActivity.getResources();
         Locale locale = res.getConfiguration().locale;
@@ -66,50 +58,10 @@ public class VideoMenu extends PieController
             item = makeSwitchItem(CameraSettings.KEY_SMART_CAPTURE_VIDEO, true);
             mRenderer.addItem(item);
         }
-        // white balance
-        if (group.findPreference(CameraSettings.KEY_WHITE_BALANCE) != null) {
-            item = makeItem(CameraSettings.KEY_WHITE_BALANCE);
-            mRenderer.addItem(item);
-        }
-        // color effects
-        item = makeItem(R.drawable.ic_color_effect);
-        final ListPreference effectPref = group.findPreference(CameraSettings.KEY_COLOR_EFFECT);
-        item.setLabel(res.getString(R.string.pref_camera_coloreffect_title).toUpperCase(locale));
-        item.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(PieItem item) {
-                ListPrefSettingPopup popup = (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
-                        R.layout.list_pref_setting_popup, null, false);
-                popup.initialize(effectPref);
-                popup.setSettingChangedListener(VideoMenu.this);
-                mUI.dismissPopup(false);
-                mPopup = popup;
-                mUI.showPopup(mPopup);
-            }
-        });
-        mRenderer.addItem(item);
-        // settings popup
-        mOtherKeys = new String[] {
-                CameraSettings.KEY_VIDEO_QUALITY,
-                CameraSettings.KEY_VIDEO_EFFECT,
-                CameraSettings.KEY_VIDEO_TIME_LAPSE_FRAME_INTERVAL,
-                CameraSettings.KEY_TRUE_VIEW,
-                CameraSettings.KEY_RECORD_LOCATION,
-                CameraSettings.KEY_STORAGE
-        };
-        item = makeItem(R.drawable.ic_settings_holo_light);
-        item.setLabel(mActivity.getResources().getString(R.string.camera_menu_settings_label));
-        item.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(PieItem item) {
-                if (mPopup == null || mPopupStatus != POPUP_FIRST_LEVEL) {
-                    initializePopup();
-                    mPopupStatus = POPUP_FIRST_LEVEL;
-                }
-                mUI.showPopup(mPopup);
-            }
-        });
-        mRenderer.addItem(item);
+        // more options
+        PieItem more = makeItem(R.drawable.ic_more_options);
+        more.setLabel(res.getString(R.string.camera_menu_more_label));
+        mRenderer.addItem(more);
         // camera switcher
         if (group.findPreference(CameraSettings.KEY_CAMERA_ID) != null) {
             item = makeItem(R.drawable.ic_switch_back);
@@ -147,87 +99,158 @@ public class VideoMenu extends PieController
             item = makeItem(CameraSettings.KEY_VIDEOCAMERA_FLASH_MODE);
             mRenderer.addItem(item);
         }
-    }
-
-    @Override
-    public void reloadPreferences() {
-        super.reloadPreferences();
-        if (mPopup != null) {
-            mPopup.reloadPreference();
+        // time laps frame interval
+        if (group.findPreference(CameraSettings.KEY_VIDEO_TIME_LAPSE_FRAME_INTERVAL) != null) {
+            item = makeItem(R.drawable.ic_timelapse_none);
+            final IconListPreference timeLapsPref = (IconListPreference)
+                group.findPreference(CameraSettings.KEY_VIDEO_TIME_LAPSE_FRAME_INTERVAL);
+            item.setLabel(res.getString(
+                R.string.pref_video_time_lapse_frame_interval_title).toUpperCase(locale));
+            item.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(PieItem item) {
+                    LayoutInflater inflater =  mActivity.getLayoutInflater();
+                    TimeIntervalPopup popup = (TimeIntervalPopup) inflater.inflate(
+                    R.layout.time_interval_popup, null, false);
+                    popup.initialize(timeLapsPref);
+                    popup.setSettingChangedListener(VideoMenu.this);
+                    mUI.dismissPopup();
+                    mPopup = popup;
+                    mUI.showPopup(mPopup);
+                }
+            });
+            more.addItem(item);
         }
-    }
-
-    @Override
-    public void overrideSettings(final String ... keyvalues) {
-        super.overrideSettings(keyvalues);
-        if (mPopup == null || mPopupStatus != POPUP_FIRST_LEVEL) {
-            mPopupStatus = POPUP_FIRST_LEVEL;
-            initializePopup();
+        // white balance
+        if (group.findPreference(CameraSettings.KEY_WHITE_BALANCE) != null) {
+            item = makeItem(CameraSettings.KEY_WHITE_BALANCE);
+            more.addItem(item);
         }
-        ((MoreSettingPopup) mPopup).overrideSettings(keyvalues);
-    }
-
-    @Override
-    // Hit when an item in the second-level popup gets selected
-    public void onListPrefChanged(ListPreference pref) {
-        if (mPopup != null) {
-            if (mPopupStatus == POPUP_SECOND_LEVEL) {
-                mUI.dismissPopup(true);
+        // color effects
+        if (group.findPreference(CameraSettings.KEY_COLOR_EFFECT) != null) {
+            item = makeItem(R.drawable.ic_color_effect);
+            final ListPreference effectPref = group.findPreference(CameraSettings.KEY_COLOR_EFFECT);
+            item.setLabel(res.getString(R.string.pref_camera_coloreffect_title).toUpperCase(locale));
+            item.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(PieItem item) {
+                    ListPrefSettingPopup popup = (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
+                            R.layout.list_pref_setting_popup, null, false);
+                    popup.initialize(effectPref);
+                    popup.setSettingChangedListener(VideoMenu.this);
+                    mUI.dismissPopup();
+                    mPopup = popup;
+                    mUI.showPopup(mPopup);
+                }
+            });
+            more.addItem(item);
+        }
+        // video effects
+        if (group.findPreference(CameraSettings.KEY_VIDEO_EFFECT) != null) {
+            item = makeItem(R.drawable.ic_effects_holo_light);
+            final ListPreference effectPref = group.findPreference(CameraSettings.KEY_VIDEO_EFFECT);
+            item.setLabel(res.getString(R.string.pref_video_effect_title).toUpperCase(locale));
+            item.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(PieItem item) {
+                    ListPrefSettingPopup popup = (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
+                            R.layout.list_pref_setting_popup, null, false);
+                    popup.initialize(effectPref);
+                    popup.setSettingChangedListener(VideoMenu.this);
+                    mUI.dismissPopup();
+                    mPopup = popup;
+                    mUI.showPopup(mPopup);
+                }
+            });
+            more.addItem(item);
+        }
+        // settings
+        PieItem settings = makeItem(R.drawable.ic_settings_holo_light);
+        settings.setLabel(res.getString(R.string.camera_menu_settings_label));
+        more.addItem(settings);
+        // location
+        if (group.findPreference(CameraSettings.KEY_RECORD_LOCATION) != null) {
+            item = makeSwitchItem(CameraSettings.KEY_RECORD_LOCATION, true);
+            settings.addItem(item);
+            if (mActivity.isSecureCamera()) {
+                // Prevent location preference from getting changed in secure camera mode
+                item.setEnabled(false);
             }
         }
-        super.onSettingChanged(pref);
-    }
-
-    protected void initializePopup() {
-        LayoutInflater inflater = (LayoutInflater) mActivity.getSystemService(
-                Context.LAYOUT_INFLATER_SERVICE);
-
-        MoreSettingPopup popup = (MoreSettingPopup) inflater.inflate(
-                R.layout.more_setting_popup, null, false);
-        popup.setSettingChangedListener(this);
-        popup.initialize(mPreferenceGroup, mOtherKeys);
-        if (mActivity.isSecureCamera()) {
-            // Prevent location preference from getting changed in secure camera mode
-            popup.setPreferenceEnabled(CameraSettings.KEY_RECORD_LOCATION, false);
+        // video quality
+        if (group.findPreference(CameraSettings.KEY_VIDEO_QUALITY) != null) {
+            item = makeItem(R.drawable.ic_imagesize);
+            final ListPreference qualityPref = group.findPreference(CameraSettings.KEY_VIDEO_QUALITY);
+            item.setLabel(res.getString(R.string.pref_video_quality_title).toUpperCase(locale));
+            item.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(PieItem item) {
+                    ListPrefSettingPopup popup = (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
+                            R.layout.list_pref_setting_popup, null, false);
+                    popup.initialize(qualityPref);
+                    popup.setSettingChangedListener(VideoMenu.this);
+                    mUI.dismissPopup();
+                    mPopup = popup;
+                    mUI.showPopup(mPopup);
+                }
+            });
+            settings.addItem(item);
         }
-        mPopup = popup;
-    }
-
-    public void popupDismissed(boolean topPopupOnly) {
-        initializePopup();
-        // if the 2nd level popup gets dismissed
-        if (mPopupStatus == POPUP_SECOND_LEVEL) {
-            mPopupStatus = POPUP_FIRST_LEVEL;
-            if (topPopupOnly) mUI.showPopup(mPopup);
+        // true view
+        if (group.findPreference(CameraSettings.KEY_TRUE_VIEW) != null) {
+            item = makeSwitchItem(CameraSettings.KEY_TRUE_VIEW, true);
+            item.setLabel(res.getString(R.string.pref_true_view_label).toUpperCase(locale));
+            settings.addItem(item);
+        }
+        // Storage location
+        if (group.findPreference(CameraSettings.KEY_STORAGE) != null) {
+            item = makeItem(R.drawable.stat_notify_sdcard);
+            final ListPreference storagePref = group.findPreference(CameraSettings.KEY_STORAGE);
+            item.setLabel(res.getString(R.string.pref_camera_storage_title).toUpperCase(locale));
+            item.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(PieItem item) {
+                    LayoutInflater inflater =  mActivity.getLayoutInflater();
+                    ListPrefSettingPopup popup = (ListPrefSettingPopup) inflater.inflate(
+                            R.layout.list_pref_setting_popup, null, false);
+                    popup.initialize(storagePref);
+                    popup.setSettingChangedListener(VideoMenu.this);
+                    mUI.dismissPopup();
+                    mPopup = popup;
+                    mUI.showPopup(mPopup);
+                }
+            });
+            settings.addItem(item);
         }
     }
 
     @Override
-    // Hit when an item in the first-level popup gets selected, then bring up
-    // the second-level popup
-    public void onPreferenceClicked(ListPreference pref) {
-        if (mPopupStatus != POPUP_FIRST_LEVEL) return;
-
-        LayoutInflater inflater = (LayoutInflater) mActivity.getSystemService(
-                Context.LAYOUT_INFLATER_SERVICE);
-
-        if (CameraSettings.KEY_VIDEO_TIME_LAPSE_FRAME_INTERVAL.equals(pref.getKey())) {
-            TimeIntervalPopup timeInterval = (TimeIntervalPopup) inflater.inflate(
-                    R.layout.time_interval_popup, null, false);
-            timeInterval.initialize((IconListPreference) pref);
-            timeInterval.setSettingChangedListener(this);
-            mUI.dismissPopup(true);
-            mPopup = timeInterval;
-        } else {
-            ListPrefSettingPopup basic = (ListPrefSettingPopup) inflater.inflate(
-                    R.layout.list_pref_setting_popup, null, false);
-            basic.initialize(pref);
-            basic.setSettingChangedListener(this);
-            mUI.dismissPopup(true);
-            mPopup = basic;
+    // Hit when an item in a popup gets selected
+    public void onListPrefChanged(ListPreference pref) {
+        if (mPopup != null) {
+            mUI.dismissPopup();
         }
-        mUI.showPopup(mPopup);
-        mPopupStatus = POPUP_SECOND_LEVEL;
+        onSettingChanged(pref);
+    }
+
+    public void popupDismissed() {
+        // the popup gets dismissed
+        if (mPopup != null) {
+            mPopup = null;
+        }
+    }
+
+    // Return true if the preference has the specified key but not the value.
+    private static boolean notSame(ListPreference pref, String key, String value) {
+        return (key.equals(pref.getKey()) && !value.equals(pref.getValue()));
+    }
+
+    private void setPreference(String key, String value) {
+        ListPreference pref = mPreferenceGroup.findPreference(key);
+        if (pref != null && !value.equals(pref.getValue())) {
+            pref.setValue(value);
+            reloadPreferences();
+        }
     }
 
 }
