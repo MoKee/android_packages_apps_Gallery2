@@ -73,25 +73,8 @@ public class PhotoMenu extends PieController
             item.setLabel(res.getString(R.string.pref_exposure_label));
             mRenderer.addItem(item);
         }
-        // color effects
-        item = makeItem(R.drawable.ic_color_effect);
-        final ListPreference effectPref = group.findPreference(CameraSettings.KEY_COLOR_EFFECT);
-        item.setLabel(res.getString(R.string.pref_camera_coloreffect_title).toUpperCase(locale));
-        item.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(PieItem item) {
-                ListPrefSettingPopup popup = (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
-                        R.layout.list_pref_setting_popup, null, false);
-                popup.initialize(effectPref);
-                popup.setSettingChangedListener(PhotoMenu.this);
-                mUI.dismissPopup();
-                mPopup = popup;
-                mUI.showPopup(mPopup);
-            }
-        });
-        mRenderer.addItem(item);
-        // more settings
-        PieItem more = makeItem(R.drawable.ic_settings_holo_light);
+        // more options
+        PieItem more = makeItem(R.drawable.ic_more_options);
         more.setLabel(res.getString(R.string.camera_menu_more_label));
         mRenderer.addItem(more);
         // flash
@@ -122,15 +105,6 @@ public class PhotoMenu extends PieController
             });
             mRenderer.addItem(item);
         }
-        // location
-        if (group.findPreference(CameraSettings.KEY_RECORD_LOCATION) != null) {
-            item = makeSwitchItem(CameraSettings.KEY_RECORD_LOCATION, true);
-            more.addItem(item);
-            if (mActivity.isSecureCamera()) {
-                // Prevent location preference from getting changed in secure camera mode
-                item.setEnabled(false);
-            }
-        }
         // countdown timer
         final ListPreference ctpref = group.findPreference(CameraSettings.KEY_TIMER);
         final ListPreference beeppref = group.findPreference(CameraSettings.KEY_TIMER_SOUND_EFFECTS);
@@ -149,6 +123,52 @@ public class PhotoMenu extends PieController
             }
         });
         more.addItem(item);
+        // white balance
+        if (group.findPreference(CameraSettings.KEY_WHITE_BALANCE) != null) {
+            item = makeItem(CameraSettings.KEY_WHITE_BALANCE);
+            item.setLabel(res.getString(R.string.pref_camera_whitebalance_label));
+            more.addItem(item);
+        }
+        // color effects
+        if (group.findPreference(CameraSettings.KEY_COLOR_EFFECT) != null) {
+            item = makeItem(R.drawable.ic_color_effect);
+            final ListPreference effectPref = group.findPreference(CameraSettings.KEY_COLOR_EFFECT);
+            item.setLabel(res.getString(R.string.pref_camera_coloreffect_title).toUpperCase(locale));
+            item.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(PieItem item) {
+                    ListPrefSettingPopup popup = (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
+                            R.layout.list_pref_setting_popup, null, false);
+                    popup.initialize(effectPref);
+                    popup.setSettingChangedListener(PhotoMenu.this);
+                    mUI.dismissPopup();
+                    mPopup = popup;
+                    mUI.showPopup(mPopup);
+                }
+            });
+        }
+        more.addItem(item);
+        // scene mode
+        if (group.findPreference(CameraSettings.KEY_SCENE_MODE) != null) {
+            IconListPreference pref = (IconListPreference) group.findPreference(
+                    CameraSettings.KEY_SCENE_MODE);
+            pref.setUseSingleIcon(true);
+            item = makeItem(CameraSettings.KEY_SCENE_MODE);
+            more.addItem(item);
+        }
+        // settings
+        PieItem settings = makeItem(R.drawable.ic_settings_holo_light);
+        settings.setLabel(res.getString(R.string.camera_menu_settings_label));
+        more.addItem(settings);
+        // location
+        if (group.findPreference(CameraSettings.KEY_RECORD_LOCATION) != null) {
+            item = makeSwitchItem(CameraSettings.KEY_RECORD_LOCATION, true);
+            settings.addItem(item);
+            if (mActivity.isSecureCamera()) {
+                // Prevent location preference from getting changed in secure camera mode
+                item.setEnabled(false);
+            }
+        }
         // image size
         item = makeItem(R.drawable.ic_imagesize);
         final ListPreference sizePref = group.findPreference(CameraSettings.KEY_PICTURE_SIZE);
@@ -165,12 +185,12 @@ public class PhotoMenu extends PieController
                 mUI.showPopup(mPopup);
             }
         });
-        more.addItem(item);
+        settings.addItem(item);
         // true view
         if (group.findPreference(CameraSettings.KEY_TRUE_VIEW) != null) {
             item = makeSwitchItem(CameraSettings.KEY_TRUE_VIEW, true);
             item.setLabel(res.getString(R.string.pref_true_view_label).toUpperCase(locale));
-            more.addItem(item);
+            settings.addItem(item);
         }
         // Storage location
         if (group.findPreference(CameraSettings.KEY_STORAGE) != null) {
@@ -190,21 +210,7 @@ public class PhotoMenu extends PieController
                     mUI.showPopup(mPopup);
                 }
             });
-            more.addItem(item);
-        }
-        // white balance
-        if (group.findPreference(CameraSettings.KEY_WHITE_BALANCE) != null) {
-            item = makeItem(CameraSettings.KEY_WHITE_BALANCE);
-            item.setLabel(res.getString(R.string.pref_camera_whitebalance_label));
-            more.addItem(item);
-        }
-        // scene mode
-        if (group.findPreference(CameraSettings.KEY_SCENE_MODE) != null) {
-            IconListPreference pref = (IconListPreference) group.findPreference(
-                    CameraSettings.KEY_SCENE_MODE);
-            pref.setUseSingleIcon(true);
-            item = makeItem(CameraSettings.KEY_SCENE_MODE);
-            more.addItem(item);
+            settings.addItem(item);
         }
     }
 
