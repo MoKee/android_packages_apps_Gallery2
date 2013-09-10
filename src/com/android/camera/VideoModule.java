@@ -500,7 +500,7 @@ public class VideoModule implements CameraModule,
             if ((SystemClock.uptimeMillis() - mLastVid) > 2000
                 && mActivity.mShowCameraAppView) {
                 int currentProx = (int) event.values[0];
-                if (currentProx == 0) {
+                if (currentProx <= 3) {
                     onShutterButtonClick();
                     mLastVid = SystemClock.uptimeMillis();
                 }

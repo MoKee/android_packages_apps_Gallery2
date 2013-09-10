@@ -2230,7 +2230,7 @@ public class PhotoModule
         } else if (type == Sensor.TYPE_PROXIMITY) {
             if (mActivity.mShowCameraAppView) {
                 int currentProx = (int) event.values[0];
-                if (currentProx == 0) {
+                if (currentProx <= 3) {
                     if (mFirstTimeInitialized) {
                         onShutterButtonFocus(true);
                     }
