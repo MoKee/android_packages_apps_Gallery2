@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The MoKee OpenSource Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The label for Smart capture. -->
+    <string name="pref_smart_capture_label">手势拍照</string>
+    <string name="pref_smart_capture_title">手势拍照</string>
+
+    <!-- True View -->
+    <string name="pref_true_view_label">实景</string>
+    <string name="pref_true_view_title">实景</string>
+
+    <!-- Settings screen, Select Color effect title -->
+    <string name="pref_coloreffect_title">颜色效果</string>
+
+    <!-- Default color effect setting. -->
+    <string name="pref_coloreffect_default" translatable="false">无</string>
+
+    <!-- Settings screen, Color effect dialog radio button choices -->
+    <string name="pref_coloreffect_entry_none">无</string>
+    <string name="pref_coloreffect_entry_mono">Mono</string>
+    <string name="pref_coloreffect_entry_sepia">Sepia</string>
+    <string name="pref_coloreffect_entry_negative">Negative</string>
+    <string name="pref_coloreffect_entry_solarize">Solarize</string>
+    <string name="pref_coloreffect_entry_posterize">Posterize</string>
+    <string name="pref_coloreffect_entry_aqua">Aqua</string>
+    <string name="pref_coloreffect_entry_emboss">Emboss</string>
+    <string name="pref_coloreffect_entry_sketch">Sketch</string>
+    <string name="pref_coloreffect_entry_neon">Neon</string>
+    <string name="pref_coloreffect_entry_pastel">Pastel</string>
+    <string name="pref_coloreffect_entry_mosaic">马赛克</string>
+    <string name="pref_coloreffect_entry_redtint">红色调</string>
+    <string name="pref_coloreffect_entry_bluetint">蓝色调</string>
+    <string name="pref_coloreffect_entry_greentint">緑色调</string>
+
+    <!-- Settings screen, JPEG Quality -->
+    <string name="pref_jpeg_title">JPEG质量</string>
+
+    <!-- Settings screen, JPEG dialog radio button choices -->
+    <string name="pref_jpeg_entry_super">超精细</string>
+    <string name="pref_jpeg_entry_high">精细</string>
+    <string name="pref_jpeg_entry_medium">普通</string>
+    <string name="pref_jpeg_entry_low">一般</string>
+</resources>
