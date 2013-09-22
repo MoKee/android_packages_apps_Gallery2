@@ -170,8 +170,9 @@ public class PhotoMenu extends PieController
             }
         }
         // image size
-        item = makeItem(R.drawable.ic_imagesize);
         final ListPreference sizePref = group.findPreference(CameraSettings.KEY_PICTURE_SIZE);
+        if (sizePref != null) {
+            item = makeItem(R.drawable.ic_imagesize);
         item.setLabel(res.getString(R.string.pref_camera_picturesize_title).toUpperCase(locale));
         item.setOnClickListener(new OnClickListener() {
             @Override
