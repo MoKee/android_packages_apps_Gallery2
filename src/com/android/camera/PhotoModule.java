@@ -785,6 +785,14 @@ public class PhotoModule
             mRawPictureCallbackTime = System.currentTimeMillis();
             Log.v(TAG, "mShutterToRawCallbackTime = "
                     + (mRawPictureCallbackTime - mShutterCallbackTime) + "ms");
+            if (ApiHelper.HAS_SURFACE_TEXTURE && !mIsImageCaptureIntent
+                    && mActivity.mShowCameraAppView) {
+                // Finish capture animation
+                mHandler.removeMessages(CAPTURE_ANIMATION_DONE);
+                ((CameraScreenNail) mActivity.mCameraScreenNail).animateSlide();
+                mHandler.sendEmptyMessageDelayed(CAPTURE_ANIMATION_DONE,
+                        CaptureAnimManager.getAnimationDuration());
+            }
         }
     }
 
@@ -827,14 +835,6 @@ public class PhotoModule
             // Only animate when in full screen capture mode
             // i.e. If monkey/a user swipes to the gallery during picture taking,
             // don't show animation
-            if (ApiHelper.HAS_SURFACE_TEXTURE && !mIsImageCaptureIntent
-                    && mActivity.mShowCameraAppView) {
-                // Finish capture animation
-                mHandler.removeMessages(CAPTURE_ANIMATION_DONE);
-                ((CameraScreenNail) mActivity.mCameraScreenNail).animateSlide();
-                mHandler.sendEmptyMessageDelayed(CAPTURE_ANIMATION_DONE,
-                        CaptureAnimManager.getAnimationDuration());
-            }
             mFocusManager.updateFocusUI(); // Ensure focus indicator is hidden.
 
             boolean isSamsungHDR =
@@ -1526,13 +1526,9 @@ public class PhotoModule
     public void onConfigurationChanged(Configuration newConfig) {
         Log.v(TAG, "onConfigurationChanged");
 
-        // Wait for camera initialization
-        try {
-            if (mCameraStartUpThread != null) {
-                mCameraStartUpThread.join();
-            }
-        } catch (InterruptedException iex) {
-            // Ignore.
+        // Ignore until the hardware is started
+        if (mCameraStartUpThread != null) {
+            return;
         }
 
         setDisplayOrientation();
@@ -2122,6 +2118,10 @@ public class PhotoModule
         } else {
             switchCamera();
         }
+    }
+
+    @Override
+    public void onCameraPickerSuperClicked() {
     }
 
     // Preview texture has been copied. Now camera can be released and the

@@ -443,6 +443,7 @@ public class VideoModule implements CameraModule,
 
         readVideoPreferences();
         mUI.setPrefChangedListener(this);
+
         mStartPreviewThread = new StartPreviewThread();
         mStartPreviewThread.start();
 
@@ -824,12 +825,12 @@ public class VideoModule implements CameraModule,
     public void onResumeAfterSuper() {
         if (mActivity.mOpenCameraFail || mActivity.mCameraDisabled)
             return;
-        mUI.enableShutter(false);
         mZoomValue = 0;
 
         showVideoSnapshotUI(false);
+        mUI.enableShutter(false);
 
-        if (!mPreviewing) {
+        if (!mPreviewing && mStartPreviewThread == null) {
             resetEffect();
             openCamera();
             if (mActivity.mOpenCameraFail) {
@@ -842,6 +843,7 @@ public class VideoModule implements CameraModule,
             }
             readVideoPreferences();
             resizeForPreviewAspectRatio();
+
             CameraScreenNail screenNail = (CameraScreenNail) mActivity.mCameraScreenNail;
             screenNail.cancelAcquire();
             if (screenNail.getSurfaceTexture() == null) {
@@ -1546,9 +1548,9 @@ public class VideoModule implements CameraModule,
     @Override
     public void onError(MediaRecorder mr, int what, int extra) {
         Log.e(TAG, "MediaRecorder error. what=" + what + ". extra=" + extra);
+        stopVideoRecording();
         if (what == MediaRecorder.MEDIA_RECORDER_ERROR_UNKNOWN) {
             // We may have run out of space on the sdcard.
-            stopVideoRecording();
             mActivity.updateStorageSpaceAndHint();
         }
     }
@@ -2437,11 +2439,17 @@ public class VideoModule implements CameraModule,
             // We need to keep a preview frame for the animation before
             // releasing the camera. This will trigger onPreviewTextureCopied.
             ((CameraScreenNail) mActivity.mCameraScreenNail).copyTexture();
-            // Disable all camera controls.
-            mSwitchingCamera = true;
         } else {
             switchCamera();
         }
+    }
+
+    @Override
+    public void onCameraPickerSuperClicked() {
+        if (mPaused || mPendingSwitchCameraId != -1) return;
+
+        // Disable all camera controls.
+        mSwitchingCamera = true;
     }
 
     @Override
