@@ -1770,8 +1770,10 @@ public class VideoModule implements CameraModule,
             if (!mPaused) {
                 mActivity.mCameraDevice.lock();
                 mActivity.mCameraDevice.waitDone();
-                if (ApiHelper.HAS_SURFACE_TEXTURE &&
-                    !ApiHelper.HAS_SURFACE_TEXTURE_RECORDING) {
+                if ((ApiHelper.HAS_SURFACE_TEXTURE &&
+                    !ApiHelper.HAS_SURFACE_TEXTURE_RECORDING) ||
+                    !mActivity.getResources().getBoolean(
+                            R.bool.useVideoSnapshotWorkaround)) {
                     stopPreview();
                     // Switch back to use SurfaceTexture for preview.
                     ((CameraScreenNail) mActivity.mCameraScreenNail).setOneTimeOnFrameDrawnListener(
@@ -1979,15 +1981,20 @@ public class VideoModule implements CameraModule,
         // The logic here is different from the logic in still-mode camera.
         // There we determine the preview size based on the picture size, but
         // here we determine the picture size based on the preview size.
-        List<Size> supported = mParameters.getSupportedPictureSizes();
-        Size optimalSize = Util.getOptimalVideoSnapshotPictureSize(supported,
-                (double) mDesiredPreviewWidth / mDesiredPreviewHeight);
-        Size original = mParameters.getPictureSize();
-        if (!original.equals(optimalSize)) {
-            mParameters.setPictureSize(optimalSize.width, optimalSize.height);
+        if (!mActivity.getResources().getBoolean(R.bool.useVideoSnapshotWorkaround)) {
+            List<Size> supported = mParameters.getSupportedPictureSizes();
+            Size optimalSize = Util.getOptimalVideoSnapshotPictureSize(supported,
+                    (double) mDesiredPreviewWidth / mDesiredPreviewHeight);
+            Size original = mParameters.getPictureSize();
+            if (!original.equals(optimalSize)) {
+                mParameters.setPictureSize(optimalSize.width, optimalSize.height);
+            }
+            Log.v(TAG, "Video snapshot size is " + optimalSize.width + "x" +
+                    optimalSize.height);
+        } else {
+            // At least one device will get bus overflows if we set this too high
+            mParameters.setPictureSize(mDesiredPreviewWidth, mDesiredPreviewHeight);
         }
-        Log.v(TAG, "Video snapshot size is " + optimalSize.width + "x" +
-                optimalSize.height);
 
         // Set JPEG quality.
         int jpegQuality = Integer.parseInt(mPreferences.getString(
@@ -2003,6 +2010,7 @@ public class VideoModule implements CameraModule,
             mParameters.setColorEffect(colorEffect);
         }
 
+        Util.dumpParameters(mParameters);
         mActivity.mCameraDevice.setParameters(mParameters);
         // Keep preview size up to date.
         mParameters = mActivity.mCameraDevice.getParameters();
@@ -2364,6 +2372,7 @@ public class VideoModule implements CameraModule,
     }
 
     private void storeImage(final byte[] data, Location loc) {
+        mParameters = mActivity.mCameraDevice.getParameters();
         long dateTaken = System.currentTimeMillis();
         String title = Util.createJpegName(dateTaken);
         ExifInterface exif = Exif.getExif(data);
