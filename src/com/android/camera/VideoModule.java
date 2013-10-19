@@ -534,9 +534,6 @@ public class VideoModule implements CameraModule,
     public void onSingleTapUp(View view, int x, int y) {
         if (!Util.disableTouchSnapshot()) {
             if (!mParameters.isVideoSnapshotSupported()) {
-                // Do not trigger touch focus if popup window is opened.
-                if (mUI.removeTopLevelPopup())
-                    return;
 
                 // Check if metering area or focus area is supported.
                 if (mFocusAreaSupported || mMeteringAreaSupported) {
