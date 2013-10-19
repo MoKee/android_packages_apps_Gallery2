@@ -53,6 +53,12 @@ public class VideoMenu extends PieController
         PieItem item = null;
         final Resources res = mActivity.getResources();
         Locale locale = res.getConfiguration().locale;
+
+        // hdr
+        if (group.findPreference(CameraSettings.KEY_VIDEO_HDR) != null) {
+            item = makeSwitchItem(CameraSettings.KEY_VIDEO_HDR, true);
+            mRenderer.addItem(item);
+        }
         // smart capture
         if (group.findPreference(CameraSettings.KEY_SMART_CAPTURE_VIDEO) != null) {
             item = makeSwitchItem(CameraSettings.KEY_SMART_CAPTURE_VIDEO, true);

@@ -76,6 +76,7 @@ public class CameraSettings {
     public static final String KEY_VIDEO_JPEG = "pref_video_jpeg_key";
     public static final String KEY_CAMERA_COLOR_EFFECT = "pref_camera_coloreffect_key";
     public static final String KEY_VIDEO_COLOR_EFFECT = "pref_video_coloreffect_key";
+    public static final String KEY_VIDEO_HDR = "pref_camera_video_hdr_key";
 
     public static final String EXPOSURE_DEFAULT_VALUE = "0";
 
@@ -188,6 +189,7 @@ public class CameraSettings {
         ListPreference storage = group.findPreference(KEY_STORAGE);
         ListPreference colorEffectCamera = group.findPreference(KEY_CAMERA_COLOR_EFFECT);
         ListPreference colorEffectVideo = group.findPreference(KEY_VIDEO_COLOR_EFFECT);
+        ListPreference videoHdr = group.findPreference(KEY_VIDEO_HDR);
 
         // Since the screen could be loaded from different resources, we need
         // to check if the preference is available here
@@ -246,6 +248,12 @@ public class CameraSettings {
         if (cameraHdr != null && (!ApiHelper.HAS_CAMERA_HDR
                     || !Util.isCameraHdrSupported(mParameters))) {
             removePreference(group, cameraHdr.getKey());
+        }
+        if (videoHdr != null) {
+            if (!mContext.getResources().getBoolean(R.bool.enableVideoHDR)) {
+                removePreference(group, videoHdr.getKey());
+            }
+            filterUnsupportedOptions(group, videoHdr, mParameters.getSupportedVideoHDRModes());
         }
         if (storage != null) {
             buildStorage(group, storage);
@@ -647,6 +655,13 @@ public class CameraSettings {
         if (CamcorderProfile.hasProfile(mCameraId, CamcorderProfile.QUALITY_480P)) {
             supported.add(Integer.toString(CamcorderProfile.QUALITY_480P));
         }
+        if (CamcorderProfile.hasProfile(mCameraId, CamcorderProfile.QUALITY_WVGA)) {
+            for (Size size : mParameters.getSupportedHfrSizes()) {
+                if (size.width == 800 && size.height == 480) {
+                    supported.add(Integer.toString(CamcorderProfile.QUALITY_WVGA));
+                }
+            }
+        }
     }
 
     /**
@@ -660,7 +675,8 @@ public class CameraSettings {
             params.set("video-size", profile.videoFrameWidth + "x" + profile.videoFrameHeight);
         }
     }
-     /**
+
+    /**
      * Enable video mode for certain cameras.
      *
      * @param params
@@ -672,6 +688,12 @@ public class CameraSettings {
         }
         if (Util.useHTCCamMode()) {
             params.set("cam-mode", on ? "1" : "0");
+        }
+    }
+
+    public static void setReducePurple(Parameters params, boolean on) {
+        if (params.get("reduce-purple") != null) {
+            params.set("reduce-purple", on ? "on" : "off");
         }
     }
 

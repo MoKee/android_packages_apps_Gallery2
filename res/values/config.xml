@@ -54,4 +54,6 @@
     <bool name="useVideoSnapshotWorkaround">false</bool>
     <!-- Disable touch snapshot in video recording -->
     <bool name="disableTouchSnapshot">false</bool>
+    <!-- Video HDR mode. Aggressively crashes on some hardware -->
+    <bool name="enableVideoHDR">false</bool>
 </resources>
