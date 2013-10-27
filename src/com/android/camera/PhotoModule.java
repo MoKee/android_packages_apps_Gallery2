@@ -1885,8 +1885,6 @@ public class PhotoModule
             mParameters.setPreviewFrameRate(max);
         }
 
-        CameraSettings.setReducePurple(mParameters, true);
-
         mParameters.set(Util.RECORDING_HINT, Util.FALSE);
 
         // Disable video stabilization. Convenience methods not available in API
@@ -2008,8 +2006,6 @@ public class PhotoModule
                 mSceneMode = Parameters.SCENE_MODE_AUTO;
             }
         }
-
-        CameraSettings.enableSceneDetection(mParameters);
 
         if (Util.isZSLEnabled()) {
             if (Util.sendMagicSamsungZSLCommand()) {
