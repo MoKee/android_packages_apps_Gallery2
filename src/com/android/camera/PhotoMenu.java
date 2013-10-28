@@ -167,6 +167,11 @@ public class PhotoMenu extends PieController
             });
             more.addItem(item);
         }
+        // true view
+        if (group.findPreference(CameraSettings.KEY_TRUE_VIEW) != null) {
+            item = makeSwitchItem(CameraSettings.KEY_TRUE_VIEW, true);
+            more.addItem(item);
+        }
         // white balance
         if (group.findPreference(CameraSettings.KEY_WHITE_BALANCE) != null) {
             item = makeItem(CameraSettings.KEY_WHITE_BALANCE);
