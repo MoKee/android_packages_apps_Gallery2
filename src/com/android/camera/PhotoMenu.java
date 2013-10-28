@@ -140,6 +140,7 @@ public class PhotoMenu extends PieController
                 timerPopup.setSettingChangedListener(PhotoMenu.this);
                 mUI.dismissPopup();
                 mPopup = timerPopup;
+                mPopupStatus = POPUP_SECOND_LEVEL;
                 mUI.showPopup(mPopup);
             }
         });
@@ -157,32 +158,6 @@ public class PhotoMenu extends PieController
                             (ListPrefSettingPopup) mActivity.getLayoutInflater().inflate(
                             R.layout.list_pref_setting_popup, null, false);
                     popup.initialize(sizePref);
-                    popup.setSettingChangedListener(PhotoMenu.this);
-                    mUI.dismissPopup();
-                    mPopup = popup;
-                    mPopupStatus = POPUP_SECOND_LEVEL;
-                    mUI.showPopup(mPopup);
-                }
-            });
-            more.addItem(item);
-        }
-        // true view
-        if (group.findPreference(CameraSettings.KEY_TRUE_VIEW) != null) {
-            item = makeSwitchItem(CameraSettings.KEY_TRUE_VIEW, true);
-            more.addItem(item);
-        }
-        // Storage location
-        if (group.findPreference(CameraSettings.KEY_STORAGE) != null) {
-            item = makeItem(R.drawable.stat_notify_sdcard);
-            final ListPreference storagePref = group.findPreference(CameraSettings.KEY_STORAGE);
-            item.setLabel(res.getString(R.string.pref_camera_storage_title).toUpperCase(locale));
-            item.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(PieItem item) {
-                    LayoutInflater inflater =  mActivity.getLayoutInflater();
-                    ListPrefSettingPopup popup = (ListPrefSettingPopup) inflater.inflate(
-                            R.layout.list_pref_setting_popup, null, false);
-                    popup.initialize(storagePref);
                     popup.setSettingChangedListener(PhotoMenu.this);
                     mUI.dismissPopup();
                     mPopup = popup;
@@ -221,6 +196,7 @@ public class PhotoMenu extends PieController
         }
         // extra settings popup
         mOtherKeys = new String[] {
+                CameraSettings.KEY_STORAGE,
                 CameraSettings.KEY_FOCUS_MODE,
                 CameraSettings.KEY_FOCUS_TIME,
                 CameraSettings.KEY_POWER_SHUTTER,
