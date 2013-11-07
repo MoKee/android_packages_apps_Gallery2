@@ -1284,20 +1284,38 @@ public class VideoModule implements CameraModule,
         }
 
         switch (keyCode) {
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                if (event.getRepeatCount() == 0 && !ActivityBase.mPowerShutter &&
+                        !Util.hasCameraKey()) {
+                    mUI.clickShutter();
+                }
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                if (event.getRepeatCount() == 0 && !ActivityBase.mPowerShutter &&
+                        !Util.hasCameraKey()) {
+                    mUI.clickShutter();
+                }
+                return true;
             case KeyEvent.KEYCODE_CAMERA:
                 if (event.getRepeatCount() == 0) {
                     mUI.clickShutter();
-                    return true;
                 }
-                break;
+                return true;
             case KeyEvent.KEYCODE_DPAD_CENTER:
                 if (event.getRepeatCount() == 0) {
                     mUI.clickShutter();
+                }
+                return true;
+            case KeyEvent.KEYCODE_POWER:
+                if (event.getRepeatCount() == 0 && ActivityBase.mPowerShutter &&
+                        !Util.hasCameraKey()) {
+                    mUI.clickShutter();
+                }
+                return true;
+            case KeyEvent.KEYCODE_MENU:
+                if (mMediaRecorderRecording) {
                     return true;
                 }
-                break;
-            case KeyEvent.KEYCODE_MENU:
-                if (mMediaRecorderRecording) return true;
                 break;
         }
         return false;
@@ -1306,12 +1324,22 @@ public class VideoModule implements CameraModule,
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         switch (keyCode) {
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                if (!ActivityBase.mPowerShutter && !Util.hasCameraKey()) {
+                    mUI.pressShutter(false);
+                }
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                if (!ActivityBase.mPowerShutter && !Util.hasCameraKey()) {
+                    mUI.pressShutter(false);
+                }
+                return true;
             case KeyEvent.KEYCODE_CAMERA:
                 mUI.pressShutter(false);
                 return true;
             case KeyEvent.KEYCODE_POWER:
-                if (ActivityBase.mPowerShutter) {
-                    onShutterButtonClick();
+                if (ActivityBase.mPowerShutter && !Util.hasCameraKey()) {
+                    mUI.pressShutter(false);
                 }
                 return true;
         }
@@ -2208,6 +2236,10 @@ public class VideoModule implements CameraModule,
         if (Util.isSupported(colorEffect, mParameters.getSupportedColorEffects())) {
             mParameters.setColorEffect(colorEffect);
         }
+
+        // Beauty mode
+        CameraSettings.setBeautyMode(mParameters, mPreferences.getString(CameraSettings.KEY_BEAUTY_MODE,
+                mActivity.getString(R.string.pref_camera_beauty_mode_default)).equals("on"));
 
         // Set exposure compensation
         int value = CameraSettings.readExposure(mPreferences);
