@@ -220,7 +220,6 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Impossible d\'établir une connexion avec l\'appareil photo."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"L\'appareil photo a été désactivé en raison des règles de sécurité."</string>
     <string name="camera_label" msgid="6346560772074764302">"Appareil photo"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Caméra"</string>
     <string name="wait" msgid="8600187532323801552">"Veuillez patienter..."</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Veuillez installer une mémoire de stockage USB avant d\'utiliser l\'appareil photo."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Veuillez insérer une carte SD avant d\'utiliser l\'appareil photo."</string>
@@ -236,7 +235,7 @@
     <string name="pref_camera_id_entry_front" msgid="5668958706828733669">"Avant"</string>
     <string name="pref_camera_recordlocation_title" msgid="371208839215448917">"Enregist. position"</string>
     <string name="pref_camera_location_label" msgid="2254270920298609161">"POSITION"</string>
-    <string name="pref_camera_timer_title" msgid="3105232208281893389">"Compte à rebours"</string>
+    <string name="pref_camera_timer_title" msgid="3105232208281893389">"Retardateur"</string>
   <plurals name="pref_camera_timer_entry">
     <item quantity="one" msgid="1654523400981245448">"1 seconde"</item>
     <item quantity="other" msgid="6455381617076792481">"%d secondes"</item>
@@ -254,7 +253,7 @@
     <string name="pref_camcorder_settings_category" msgid="460313486231965141">"Mode Caméra"</string>
     <string name="pref_camera_picturesize_title" msgid="4333724936665883006">"Taille d\'image"</string>
     <string name="pref_camera_picturesize_entry_13mp" msgid="675309554194481780">"13 mégapixels"</string>
-    <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"8 mégapixels"</string>
+    <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"8 Mpx"</string>
     <string name="pref_camera_picturesize_entry_5mp" msgid="2882928212030661159">"5 M pixels"</string>
     <string name="pref_camera_picturesize_entry_4mp" msgid="933242108272469142">"4 Mpx"</string>
     <string name="pref_camera_picturesize_entry_3mp" msgid="741415860337400696">"3 M pixels"</string>
@@ -303,7 +302,7 @@
     <string name="pref_camera_scenemode_label_night" msgid="1269871886845854574">"NUIT"</string>
     <string name="pref_camera_scenemode_label_sunset" msgid="2802732082948866877">"COUCHER DE SOLEIL"</string>
     <string name="pref_camera_scenemode_label_party" msgid="1409459091844374828">"FÊTE"</string>
-    <string name="pref_camera_countdown_label" msgid="7592784692450586126">"COMPTE À REBOURS"</string>
+    <string name="pref_camera_countdown_label" msgid="7592784692450586126">"RETARDATEUR"</string>
     <string name="pref_camera_countdown_label_off" msgid="4987856883590176585">"MINUTEUR DÉSACTIVÉ"</string>
     <string name="pref_camera_countdown_label_one" msgid="1101814103087928898">"1 SECONDE"</string>
     <string name="pref_camera_countdown_label_three" msgid="1047399297342955649">"3 SECONDES"</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"Dans l\'espace"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Coucher soleil"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Votre vidéo"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Posez votre appareil."\n"Sortez du cadre quelques instants."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Posez votre appareil.\nSortez du cadre quelques instants."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Appuyez pour prendre une photo pendant l\'enregistrement"</string>
     <string name="video_recording_started" msgid="4132915454417193503">"L\'enregistrement vidéo a commencé."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"L\'enregistrement vidéo s\'est arrêté."</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Mode vidéo"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Mode panoramique"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Passer au nouveau mode panoramique"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Activer le mode Refocus"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Examen – Annuler"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Examen – OK"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Examiner la deuxième prise de la photo"</string>
@@ -419,11 +419,11 @@
     <string name="time_lapse_interval_set" msgid="2486386210951700943">"OK"</string>
     <string name="set_time_interval" msgid="2970567717633813771">"Définir l\'intervalle de temps"</string>
     <string name="set_time_interval_help" msgid="6665849510484821483">"La fonctionnalité Time Lapse est désactivée. Veuillez l\'activer pour définir un intervalle."</string>
-    <string name="set_timer_help" msgid="5007708849404589472">"La fonctionnalité de compte à rebours est désactivée. Activez-la pour effectuer un compte à rebours avant de prendre une photo."</string>
+    <string name="set_timer_help" msgid="5007708849404589472">"Le retardateur est désactivé. Activez-le pour déclencher un compte à rebours avant de prendre une photo."</string>
     <string name="set_duration" msgid="5578035312407161304">"Définir la durée en secondes"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Compte à rebours avant la photo"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Se souvenir du lieu des photos ?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Ajoutez des tags à vos photos et à vos vidéos pour identifier l\'endroit de la prise de vue."\n\n"D\'autres applications peuvent accéder à ces informations, ainsi qu\'aux images enregistrées."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Ajoutez des tags à vos photos et à vos vidéos pour identifier l\'endroit de la prise de vue.\n\nD\'autres applications peuvent accéder à ces informations, ainsi qu\'aux images enregistrées."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Non, merci"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Oui"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Appareil photo"</string>

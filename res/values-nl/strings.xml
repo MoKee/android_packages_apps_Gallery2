@@ -191,7 +191,7 @@
     <string name="folder_download" msgid="7186215137642323932">"Downloaden"</string>
     <string name="folder_edited_online_photos" msgid="6278215510236800181">"Bewerkte online foto\'s"</string>
     <string name="folder_imported" msgid="2773581395524747099">"Geïmporteerd"</string>
-    <string name="folder_screenshot" msgid="7200396565864213450">"Schermafbeelding"</string>
+    <string name="folder_screenshot" msgid="7200396565864213450">"Screenshot"</string>
     <string name="help" msgid="7368960711153618354">"Help"</string>
     <string name="no_external_storage_title" msgid="2408933644249734569">"Geen opslag"</string>
     <string name="no_external_storage" msgid="95726173164068417">"Geen externe opslag beschikbaar"</string>
@@ -220,7 +220,6 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Kan geen verbinding maken met de camera."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"De camera is uitgeschakeld vanwege het beveiligingsbeleid."</string>
     <string name="camera_label" msgid="6346560772074764302">"Camera"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Camcorder"</string>
     <string name="wait" msgid="8600187532323801552">"Een ogenblik geduld..."</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Koppel de USB-opslag voordat u de camera gebruikt."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Plaats een SD-kaart voordat u de camera gebruikt."</string>
@@ -253,13 +252,13 @@
     <string name="pref_camera_settings_category" msgid="2576236450859613120">"Camera-instellingen"</string>
     <string name="pref_camcorder_settings_category" msgid="460313486231965141">"Camcorder-instellingen"</string>
     <string name="pref_camera_picturesize_title" msgid="4333724936665883006">"Grootte van foto"</string>
-    <string name="pref_camera_picturesize_entry_13mp" msgid="675309554194481780">"13 megapixel"</string>
-    <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"8 megapixel"</string>
+    <string name="pref_camera_picturesize_entry_13mp" msgid="675309554194481780">"13M pixels"</string>
+    <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"8 megapixels"</string>
     <string name="pref_camera_picturesize_entry_5mp" msgid="2882928212030661159">"5 megapixel"</string>
-    <string name="pref_camera_picturesize_entry_4mp" msgid="933242108272469142">"4 megapixel"</string>
+    <string name="pref_camera_picturesize_entry_4mp" msgid="933242108272469142">"4M pixels"</string>
     <string name="pref_camera_picturesize_entry_3mp" msgid="741415860337400696">"3 megapixel"</string>
     <string name="pref_camera_picturesize_entry_2mp" msgid="1753709802245460393">"2 megapixel"</string>
-    <string name="pref_camera_picturesize_entry_2mp_wide" msgid="5359490802026616612">"2 megapixel (16:9)"</string>
+    <string name="pref_camera_picturesize_entry_2mp_wide" msgid="5359490802026616612">"2M pixels (16:9)"</string>
     <string name="pref_camera_picturesize_entry_1_3mp" msgid="829109608140747258">"1,3 megapixel"</string>
     <string name="pref_camera_picturesize_entry_1mp" msgid="1669725616780375066">"1 megapixel"</string>
     <string name="pref_camera_picturesize_entry_vga" msgid="806934254162981919">"VGA"</string>
@@ -341,8 +340,8 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"In de ruimte"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Zonsondergang"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Uw video"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Zet uw apparaat neer."\n"Stap even uit beeld."</string>
-    <string name="video_snapshot_hint" msgid="18833576851372483">"Raak aan om een foto te maken tijdens een opname."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Zet uw apparaat neer.\nStap even uit beeld."</string>
+    <string name="video_snapshot_hint" msgid="18833576851372483">"Tik op het scherm en maak een foto tijdens een opname"</string>
     <string name="video_recording_started" msgid="4132915454417193503">"Video-opname is gestart."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"Video-opname is gestopt."</string>
     <string name="disable_video_snapshot_hint" msgid="4957723267826476079">"Videosnapshot staat uit als speciale effecten zijn ingeschakeld."</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Overschakelen naar video"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Overschakelen naar panorama"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Overschakelen naar nieuwe panoramamodus"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Overschakelen naar Opnieuw scherpstellen"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Beoordeling: annuleren"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Beoordeling: gereed"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Opnieuw maken na beoordeling"</string>
@@ -423,7 +423,7 @@
     <string name="set_duration" msgid="5578035312407161304">"Duur in seconden instellen"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Aftellen om een foto te nemen"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Fotolocaties onthouden?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Label uw foto\'s en video\'s met de locaties waar ze zijn genomen."\n\n"Andere apps hebben toegang tot deze informatie en uw opgeslagen afbeeldingen."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Label uw foto\'s en video\'s met de locaties waar ze zijn genomen.\n\nAndere apps hebben toegang tot deze informatie en uw opgeslagen afbeeldingen."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Nee, bedankt"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Ja"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Camera"</string>

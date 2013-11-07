@@ -26,6 +26,7 @@ import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.print.PrintHelper;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -45,7 +46,6 @@ import com.android.gallery3d.util.ThreadPool.JobContext;
 import java.util.ArrayList;
 
 public class MenuExecutor {
-    @SuppressWarnings("unused")
     private static final String TAG = "MenuExecutor";
 
     private static final int MSG_TASK_COMPLETE = 1;
@@ -58,7 +58,6 @@ public class MenuExecutor {
     public static final int EXECUTION_RESULT_CANCEL = 3;
 
     private ProgressDialog mDialog;
-    private AlertDialog mConfirmDialog;
     private Future<?> mTask;
     // wait the operation to finish when we want to stop it.
     private boolean mWaitOnStop;
@@ -139,13 +138,6 @@ public class MenuExecutor {
         }
     }
 
-    private void dismissConfirmDialog() {
-        if (mConfirmDialog != null && mConfirmDialog.isShowing()) {
-            mConfirmDialog.dismiss();
-            mConfirmDialog = null;
-        }
-    }
-
     public void resume() {
         mPaused = false;
         if (mDialog != null) mDialog.show();
@@ -153,7 +145,6 @@ public class MenuExecutor {
 
     public void pause() {
         mPaused = true;
-        dismissConfirmDialog();
         if (mDialog != null && mDialog.isShowing()) mDialog.hide();
     }
 
@@ -174,7 +165,7 @@ public class MenuExecutor {
         mHandler.sendMessage(mHandler.obtainMessage(MSG_TASK_COMPLETE, result, 0, listener));
     }
 
-    public static void updateMenuOperation(Context context, Menu menu, int supported) {
+    public static void updateMenuOperation(Menu menu, int supported) {
         boolean supportDelete = (supported & MediaObject.SUPPORT_DELETE) != 0;
         boolean supportRotate = (supported & MediaObject.SUPPORT_ROTATE) != 0;
         boolean supportCrop = (supported & MediaObject.SUPPORT_CROP) != 0;
@@ -182,11 +173,12 @@ public class MenuExecutor {
         boolean supportMute = (supported & MediaObject.SUPPORT_MUTE) != 0;
         boolean supportShare = (supported & MediaObject.SUPPORT_SHARE) != 0;
         boolean supportSetAs = (supported & MediaObject.SUPPORT_SETAS) != 0;
-        boolean supportShowOnMap = (supported & MediaObject.SUPPORT_SHOW_ON_MAP) != 0 &&
-                                   GalleryUtils.isGeolocationViewAvailable(context);
+        boolean supportShowOnMap = (supported & MediaObject.SUPPORT_SHOW_ON_MAP) != 0;
         boolean supportCache = (supported & MediaObject.SUPPORT_CACHE) != 0;
         boolean supportEdit = (supported & MediaObject.SUPPORT_EDIT) != 0;
         boolean supportInfo = (supported & MediaObject.SUPPORT_INFO) != 0;
+        boolean supportPrint = (supported & MediaObject.SUPPORT_PRINT) != 0;
+        supportPrint &= PrintHelper.systemSupportsPrint();
 
         setMenuItemVisible(menu, R.id.action_delete, supportDelete);
         setMenuItemVisible(menu, R.id.action_rotate_ccw, supportRotate);
@@ -202,6 +194,7 @@ public class MenuExecutor {
         setMenuItemVisible(menu, R.id.action_edit, supportEdit);
         // setMenuItemVisible(menu, R.id.action_simple_edit, supportEdit);
         setMenuItemVisible(menu, R.id.action_details, supportInfo);
+        setMenuItemVisible(menu, R.id.print, supportPrint);
     }
 
     public static void updateMenuForPanorama(Menu menu, boolean shareAsPanorama360,
@@ -322,15 +315,12 @@ public class MenuExecutor {
         if (confirmMsg != null) {
             if (listener != null) listener.onConfirmDialogShown();
             ConfirmDialogListener cdl = new ConfirmDialogListener(action, listener);
-            //new AlertDialog.Builder(mActivity.getAndroidContext())
-            dismissConfirmDialog();
-            mConfirmDialog = new AlertDialog.Builder(mActivity.getAndroidContext())
+            new AlertDialog.Builder(mActivity.getAndroidContext())
                     .setMessage(confirmMsg)
                     .setOnCancelListener(cdl)
                     .setPositiveButton(R.string.ok, cdl)
                     .setNegativeButton(R.string.cancel, cdl)
-                    .create();
-            mConfirmDialog.show();
+                    .create().show();
         } else {
             onMenuClicked(action, listener);
         }

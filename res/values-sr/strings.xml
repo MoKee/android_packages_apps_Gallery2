@@ -151,7 +151,7 @@
     <string name="ffx_bleach" msgid="8946700451603478453">"Bleach"</string>
     <string name="ffx_blue_crush" msgid="6034283412305561226">"Плаво"</string>
     <string name="ffx_bw_contrast" msgid="517988490066217206">"Црно-бело"</string>
-    <string name="ffx_punch" msgid="1343475517872562639">"Punch"</string>
+    <string name="ffx_punch" msgid="1343475517872562639">"Пунч"</string>
     <string name="ffx_x_process" msgid="4779398678661811765">"X Process"</string>
     <string name="ffx_washout" msgid="4594160692176642735">"Испрано"</string>
     <string name="ffx_washout_color" msgid="8034075742195795219">"Литографски"</string>
@@ -220,14 +220,13 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Није могуће повезати се са камером."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"Камера је онемогућена због смерница за безбедност."</string>
     <string name="camera_label" msgid="6346560772074764302">"Камера"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Камкордер"</string>
     <string name="wait" msgid="8600187532323801552">"Сачекајте…"</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Прикључите USB меморију пре коришћења камере."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Уметните SD картицу пре коришћења камере."</string>
     <string name="preparing_sd" product="nosdcard" msgid="6104019983528341353">"Припрема USB меморије…"</string>
     <string name="preparing_sd" product="default" msgid="2914969119574812666">"Припремање SD картице…"</string>
-    <string name="access_sd_fail" product="nosdcard" msgid="8147993984037859354">"Није било могуће приступити USB меморији."</string>
-    <string name="access_sd_fail" product="default" msgid="1584968646870054352">"Није било могуће приступити SD картици."</string>
+    <string name="access_sd_fail" product="nosdcard" msgid="8147993984037859354">"Није могуће приступити USB меморији."</string>
+    <string name="access_sd_fail" product="default" msgid="1584968646870054352">"Није могуће приступити SD картици."</string>
     <string name="review_cancel" msgid="8188009385853399254">"ОТКАЖИ"</string>
     <string name="review_ok" msgid="1156261588693116433">"ГОТОВО"</string>
     <string name="time_lapse_title" msgid="4360632427760662691">"Снимањe у дужем интервалу"</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"У свемиру"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Залазак сунца"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Ваш видео"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Спустите уређај."\n"Изађите из кадра на тренутак."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Спустите уређај.\nИзађите из кадра на тренутак."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Додирните да бисте направили фотографију током снимања."</string>
     <string name="video_recording_started" msgid="4132915454417193503">"Снимање видео садржаја је започето."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"Снимање видео садржаја је заустављено."</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Пребаци на видео"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Пребаци на панораму"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Пребаци на нову панораму"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Пребаци на Поновно фокусирање"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Откажи у режиму прегледа"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Довршено у режиму прегледа"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Поново сними за преглед"</string>
@@ -423,7 +423,7 @@
     <string name="set_duration" msgid="5578035312407161304">"Подеси трајање у секундама"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Одбројавање за снимање слике"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Желите ли да запамтите локације слика?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Додајте сликама и видео снимцима ознаке са местима где су снимљени."\n\n"Друге апликације могу да приступе овим информацијама заједно са сачуваним сликама."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Додајте сликама и видео снимцима ознаке са местима где су снимљени.\n\nДруге апликације могу да приступе овим информацијама заједно са сачуваним сликама."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Не, хвала"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Да"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Камера"</string>

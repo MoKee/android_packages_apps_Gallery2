@@ -149,7 +149,7 @@
     <string name="ffx_vintage" msgid="8348759951363844780">"Ретро"</string>
     <string name="ffx_instant" msgid="726968618715691987">"Моментно фото"</string>
     <string name="ffx_bleach" msgid="8946700451603478453">"Избелване"</string>
-    <string name="ffx_blue_crush" msgid="6034283412305561226">"синьо"</string>
+    <string name="ffx_blue_crush" msgid="6034283412305561226">"Синьо"</string>
     <string name="ffx_bw_contrast" msgid="517988490066217206">"Ч/Б"</string>
     <string name="ffx_punch" msgid="1343475517872562639">"Пунш"</string>
     <string name="ffx_x_process" msgid="4779398678661811765">"Кроспроцес"</string>
@@ -205,22 +205,21 @@
     <string name="trim_too_short" msgid="751593965620665326">"Не може да се отреже: Целевият видеоклип е твърде кратък"</string>
     <string name="pano_progress_text" msgid="1586851614586678464">"Панорамата се изобразява"</string>
     <string name="save" msgid="613976532235060516">"Запазване"</string>
-    <string name="ingest_scanning" msgid="1062957108473988971">"Съдържанието се сканира..."</string>
+    <string name="ingest_scanning" msgid="1062957108473988971">"Scanning content..."</string>
   <plurals name="ingest_number_of_items_scanned">
-    <item quantity="zero" msgid="2623289390474007396">"Сканирани са %1$d елемента"</item>
-    <item quantity="one" msgid="4340019444460561648">"Сканиран е %1$d елемент"</item>
-    <item quantity="other" msgid="3138021473860555499">"Сканирани са %1$d елемента"</item>
+    <item quantity="zero" msgid="2623289390474007396">"%1$d items scanned"</item>
+    <item quantity="one" msgid="4340019444460561648">"%1$d item scanned"</item>
+    <item quantity="other" msgid="3138021473860555499">"%1$d items scanned"</item>
   </plurals>
-    <string name="ingest_sorting" msgid="1028652103472581918">"Сортира се..."</string>
-    <string name="ingest_scanning_done" msgid="8911916277034483430">"Сканирането завърши"</string>
-    <string name="ingest_importing" msgid="7456633398378527611">"Импортира се..."</string>
+    <string name="ingest_sorting" msgid="1028652103472581918">"Sorting..."</string>
+    <string name="ingest_scanning_done" msgid="8911916277034483430">"Scanning done"</string>
+    <string name="ingest_importing" msgid="7456633398378527611">"Importing..."</string>
     <string name="ingest_empty_device" msgid="2010470482779872622">"Няма съдържание, налично за импортиране на това устройство."</string>
     <string name="ingest_no_device" msgid="3054128223131382122">"Няма свързано устройство, поддържащо MTP"</string>
     <string name="camera_error_title" msgid="6484667504938477337">"Грешка в камерата"</string>
     <string name="cannot_connect_camera" msgid="955440687597185163">"Не може да се осъществи връзка с камерата."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"Камерата е деактивирана заради правилата за сигурност."</string>
     <string name="camera_label" msgid="6346560772074764302">"Камера"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Видеокамера"</string>
     <string name="wait" msgid="8600187532323801552">"Моля, изчакайте…"</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Свържете USB хранилището, преди да използвате камерата."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Поставете SD карта, преди да използвате камерата."</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"В космоса"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Залез"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Видеоклипът ви"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Оставете устройството си."\n"Отдръпнете се от зрителното му поле за момент."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Оставете устройството си.\nОтдръпнете се от зрителното му поле за момент."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Докоснете, за да направите снимка, докато записвате."</string>
     <string name="video_recording_started" msgid="4132915454417193503">"Видеозаписът започна."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"Видеозаписът спря."</string>
@@ -359,11 +358,12 @@
     <string name="accessibility_zoom_control" msgid="1339909363226825709">"Контрола за промяна на мащаба"</string>
     <string name="accessibility_decrement" msgid="1411194318538035666">"Намаляване на %1$s"</string>
     <string name="accessibility_increment" msgid="8447850530444401135">"Увеличаване на %1$s"</string>
-    <string name="accessibility_check_box" msgid="7317447218256584181">"Квадратче за отметка за %1$s"</string>
+    <string name="accessibility_check_box" msgid="7317447218256584181">"%1$s check box"</string>
     <string name="accessibility_switch_to_camera" msgid="5951340774212969461">"Превключване към фотоапарат"</string>
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Превключване към видео"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Превключване към панорама"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Превключване към нова панорама"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Превключване към режима за префокусиране"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Анулиране на прегледа"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Прегледът приключи"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Преглед на презаснетия елемент"</string>
@@ -423,7 +423,7 @@
     <string name="set_duration" msgid="5578035312407161304">"Задаване на продължителността в секунди"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Обратно отброяване до правенето на снимка"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Да се запомнят ли местоположенията на снимките?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Поставете в снимките и видеоклиповете си маркери с местоположенията, на които са направени."\n\n"Другите приложения могат да осъществяват достъп до тази информация, както и до запазените ви изображения."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Поставете в снимките и видеоклиповете си маркери с местоположенията, на които са направени.\n\nДругите приложения могат да осъществяват достъп до тази информация, както и до запазените ви изображения."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Не, благодаря"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Да"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Камера"</string>

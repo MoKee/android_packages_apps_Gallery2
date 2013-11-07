@@ -18,7 +18,6 @@ package com.android.gallery3d.util;
 
 import android.os.Environment;
 
-import com.android.camera.Storage;
 import com.android.gallery3d.data.LocalAlbum;
 import com.android.gallery3d.data.LocalMergeAlbum;
 import com.android.gallery3d.data.MediaSet;
@@ -29,9 +28,9 @@ import java.util.Comparator;
 public class MediaSetUtils {
     public static final Comparator<MediaSet> NAME_COMPARATOR = new NameComparator();
 
-    public static int getCameraBucketId() {
-        return Storage.getInstance().generateBucketIdInt();
-    }
+    public static final int CAMERA_BUCKET_ID = GalleryUtils.getBucketId(
+            Environment.getExternalStorageDirectory().toString() + "/"
+            + BucketNames.CAMERA);
     public static final int DOWNLOAD_BUCKET_ID = GalleryUtils.getBucketId(
             Environment.getExternalStorageDirectory().toString() + "/"
             + BucketNames.DOWNLOAD);
@@ -45,10 +44,14 @@ public class MediaSetUtils {
             Environment.getExternalStorageDirectory().toString() +
             "/" + BucketNames.SCREENSHOTS);
 
+    private static final Path[] CAMERA_PATHS = {
+            Path.fromString("/local/all/" + CAMERA_BUCKET_ID),
+            Path.fromString("/local/image/" + CAMERA_BUCKET_ID),
+            Path.fromString("/local/video/" + CAMERA_BUCKET_ID)};
+
     public static boolean isCameraSource(Path path) {
-        return path.equalsIgnoreCase("/local/all/" + getCameraBucketId())
-                || path.equalsIgnoreCase("/local/image/" + getCameraBucketId())
-                || path.equalsIgnoreCase("/local/video/" + getCameraBucketId());
+        return CAMERA_PATHS[0] == path || CAMERA_PATHS[1] == path
+                || CAMERA_PATHS[2] == path;
     }
 
     // Sort MediaSets by name

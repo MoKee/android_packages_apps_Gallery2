@@ -65,7 +65,7 @@
     <string name="deselect_all" msgid="5758897506061723684">"Auswahl für alle aufheben"</string>
     <string name="slideshow" msgid="4355906903247112975">"Diashow"</string>
     <string name="details" msgid="8415120088556445230">"Details"</string>
-    <string name="details_title" msgid="2611396603977441273">"%1$d von %2$d Elementen:"</string>
+    <string name="details_title" msgid="2611396603977441273">"Element %1$d von %2$d:"</string>
     <string name="close" msgid="5585646033158453043">"Schließen"</string>
     <string name="switch_to_camera" msgid="7280111806675169992">"Zu Kamera wechseln"</string>
   <plurals name="number_of_items_selected">
@@ -119,7 +119,7 @@
     <string name="make_available_offline" msgid="5157950985488297112">"Offline bereitstellen"</string>
     <string name="sync_picasa_albums" msgid="8522572542111169872">"Aktualisieren"</string>
     <string name="done" msgid="217672440064436595">"Fertig"</string>
-    <string name="sequence_in_set" msgid="7235465319919457488">"%1$d von %2$d Elementen:"</string>
+    <string name="sequence_in_set" msgid="7235465319919457488">"Element %1$d von %2$d:"</string>
     <string name="title" msgid="7622928349908052569">"Titel"</string>
     <string name="description" msgid="3016729318096557520">"Beschreibung"</string>
     <string name="time" msgid="1367953006052876956">"Uhrzeit"</string>
@@ -137,7 +137,7 @@
     <string name="aperture" msgid="5920657630303915195">"Blende"</string>
     <string name="focal_length" msgid="1291383769749877010">"Brennweite"</string>
     <string name="white_balance" msgid="1582509289994216078">"Weißabgleich"</string>
-    <string name="exposure_time" msgid="3990163680281058826">"Einblendungsdauer"</string>
+    <string name="exposure_time" msgid="3990163680281058826">"Belichtungszeit"</string>
     <string name="iso" msgid="5028296664327335940">"ISO"</string>
     <string name="unit_mm" msgid="1125768433254329136">"mm"</string>
     <string name="manual" msgid="6608905477477607865">"Manuell"</string>
@@ -220,7 +220,6 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Keine Verbindung zur Kamera möglich"</string>
     <string name="camera_disabled" msgid="8923911090533439312">"Die Kamera wurde aufgrund von Sicherheitsrichtlinien deaktiviert."</string>
     <string name="camera_label" msgid="6346560772074764302">"Kamera"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Camcorder"</string>
     <string name="wait" msgid="8600187532323801552">"Bitte warten..."</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Stellen Sie vor Verwendung der Kamera einen USB-Speicher bereit."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Legen Sie vor Verwendung der Kamera eine SD-Karte ein."</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"Im All"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Sonnenuntergang"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Mein Video"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Legen Sie Ihr Gerät ab."\n"Treten Sie für einen kurzen Moment aus dem Aufnahmebereich."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Legen Sie Ihr Gerät ab.\nTreten Sie für einen kurzen Moment aus dem Aufnahmebereich."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Zum Erstellen eines Fotos während der Aufnahme tippen"</string>
     <string name="video_recording_started" msgid="4132915454417193503">"Videoaufzeichnung wurde gestartet."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"Videoaufzeichnung wurde beendet."</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"In Video-Modus wechseln"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"In Panorama-Modus wechseln"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Zum neuen Panorama wechseln"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Zu Auswahl eines neuen Fokus wechseln"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Überprüfung abbrechen"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Überprüfung abgeschlossen"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Überprüfen – erneut aufnehmen"</string>
@@ -423,7 +423,7 @@
     <string name="set_duration" msgid="5578035312407161304">"Dauer in Sekunden festlegen"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Countdown für Fotoaufnahme"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Aufnahmeorte für Fotos speichern?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Taggen Sie Ihre Fotos und Videos mit den Standorten, an denen sie aufgenommen wurden."\n\n"Andere Apps können auf diese Informationen und Ihre gespeicherten Bilder zugreifen."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Taggen Sie Ihre Fotos und Videos mit den Standorten, an denen sie aufgenommen wurden.\n\nAndere Apps können auf diese Informationen und Ihre gespeicherten Bilder zugreifen."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Nein"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Ja"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Kamera"</string>

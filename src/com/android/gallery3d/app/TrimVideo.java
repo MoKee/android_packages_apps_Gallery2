@@ -168,7 +168,6 @@ public class TrimVideo extends Activity implements
         mTrimStartTime = savedInstanceState.getInt(KEY_TRIM_START, 0);
         mTrimEndTime = savedInstanceState.getInt(KEY_TRIM_END, 0);
         mVideoPosition = savedInstanceState.getInt(KEY_VIDEO_POSITION, 0);
-        mSaveVideoTextView.setEnabled(isModified());
     }
 
     // This updates the time bar display (if necessary). It is called by
@@ -198,6 +197,8 @@ public class TrimVideo extends Activity implements
             mTrimEndTime = duration;
         }
         mController.setTimes(mVideoPosition, duration, mTrimStartTime, mTrimEndTime);
+        // Enable save if there's modifications
+        mSaveVideoTextView.setEnabled(isModified());
         return mVideoPosition;
     }
 
@@ -242,22 +243,8 @@ public class TrimVideo extends Activity implements
                     // Update the database for adding a new video file.
                     SaveVideoFileUtils.insertContent(mDstFileInfo,
                             getContentResolver(), mUri);
-                } catch (Exception e) {
+                } catch (IOException e) {
                     e.printStackTrace();
-                    mHandler.post(new Runnable(){
-                        @Override
-                        public void run(){
-                            Toast.makeText(getApplicationContext(),
-                                getString(R.string.fail_trim),
-                                Toast.LENGTH_SHORT)
-                                .show();
-                            if (mProgress != null) {
-                                mProgress.dismiss();
-                                mProgress = null;
-                            }
-                        }
-                    });
-                    return;
                 }
                 // After trimming is done, trigger the UI changed.
                 mHandler.post(new Runnable() {
@@ -322,8 +309,6 @@ public class TrimVideo extends Activity implements
         mTrimStartTime = start;
         mTrimEndTime = end;
         setProgress();
-        // Enable save if there's modifications
-        mSaveVideoTextView.setEnabled(isModified());
     }
 
     @Override

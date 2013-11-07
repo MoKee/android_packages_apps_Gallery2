@@ -66,7 +66,6 @@ public class GLRootView extends GLSurfaceView
     private static final boolean DEBUG_FPS = false;
     private int mFrameCount = 0;
     private long mFrameCountingStart = 0;
-    private int mClearCount = 0;
 
     private static final boolean DEBUG_INVALIDATE = false;
     private int mInvalidateColor = 0;
@@ -340,15 +339,6 @@ public class GLRootView extends GLSurfaceView
 
     @Override
     public void onDrawFrame(GL10 gl) {
-        //The view is undefined before the first frame of camera preview data
-        //come up. This makes the UI has random corruption when open camera
-        //and exit quickly. However, we have no way to know the timing of
-        //the first frame. So, we clear the buffer for first 15 frames.
-        if(mFirstDraw || (mClearCount < 15)){
-            mCanvas.clearBuffer();
-            mClearCount++;
-        }
-
         AnimationTime.update();
         long t0;
         if (DEBUG_PROFILE_SLOW_ONLY) {
@@ -419,6 +409,9 @@ public class GLRootView extends GLSurfaceView
         rotateCanvas(-mCompensation);
         if (mContentView != null) {
            mContentView.render(mCanvas);
+        } else {
+            // Make sure we always draw something to prevent displaying garbage
+            mCanvas.clearBuffer();
         }
         mCanvas.restore();
 
@@ -546,12 +539,6 @@ public class GLRootView extends GLSurfaceView
             Profile.dumpToFile("/sdcard/gallery.prof");
             Profile.reset();
         }
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        mClearCount = 0;
     }
 
     @Override

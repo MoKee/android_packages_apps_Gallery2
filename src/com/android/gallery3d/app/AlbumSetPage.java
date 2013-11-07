@@ -268,8 +268,6 @@ public class AlbumSetPage extends ActivityState implements
                 data.putInt(PhotoPage.KEY_INDEX_HINT, 0);
                 data.putString(PhotoPage.KEY_MEDIA_SET_PATH,
                         mediaPath);
-                data.putString(PhotoPage.KEY_MEDIA_ITEM_PATH,
-                        targetSet.getCoverMediaItem().getPath().toString());
                 data.putBoolean(PhotoPage.KEY_START_IN_FILMSTRIP, true);
                 data.putBoolean(PhotoPage.KEY_IN_CAMERA_ROLL, targetSet.isCameraRoll());
                 mActivity.getStateManager().startStateForResult(
@@ -324,8 +322,8 @@ public class AlbumSetPage extends ActivityState implements
         initializeViews();
         initializeData(data);
         Context context = mActivity.getAndroidContext();
-        mGetContent = data.getBoolean(Gallery.KEY_GET_CONTENT, false);
-        mGetAlbum = data.getBoolean(Gallery.KEY_GET_ALBUM, false);
+        mGetContent = data.getBoolean(GalleryActivity.KEY_GET_CONTENT, false);
+        mGetAlbum = data.getBoolean(GalleryActivity.KEY_GET_ALBUM, false);
         mTitle = data.getString(AlbumSetPage.KEY_SET_TITLE);
         mSubtitle = data.getString(AlbumSetPage.KEY_SET_SUBTITLE);
         mEyePosition = new EyePosition(context, this);
@@ -536,7 +534,7 @@ public class AlbumSetPage extends ActivityState implements
         if (mGetContent) {
             inflater.inflate(R.menu.pickup, menu);
             int typeBits = mData.getInt(
-                    Gallery.KEY_TYPE_BITS, DataManager.INCLUDE_IMAGE);
+                    GalleryActivity.KEY_TYPE_BITS, DataManager.INCLUDE_IMAGE);
             mActionBar.setTitle(GalleryUtils.getSelectionModePrompt(typeBits));
         } else  if (mGetAlbum) {
             inflater.inflate(R.menu.pickup, menu);
@@ -556,7 +554,7 @@ public class AlbumSetPage extends ActivityState implements
 
             FilterUtils.setupMenuItems(mActionBar, mMediaSet.getPath(), false);
 
-            Intent helpIntent = HelpUtils.getHelpIntent(activity, R.string.help_url_gallery_main);
+            Intent helpIntent = HelpUtils.getHelpIntent(activity);
 
             MenuItem helpItem = menu.findItem(R.id.action_general_help);
             helpItem.setVisible(helpIntent != null);
@@ -604,9 +602,6 @@ public class AlbumSetPage extends ActivityState implements
                 GalleryUtils.startCameraActivity(activity);
                 return true;
             }
-/*   Comment out since picasa support is not built in.
-     Also comment out the settings item at albumset.xml menu.
-
             case R.id.action_manage_offline: {
                 Bundle data = new Bundle();
                 String mediaPath = mActivity.getDataManager().getTopSetPath(
@@ -619,16 +614,10 @@ public class AlbumSetPage extends ActivityState implements
                 PicasaSource.requestSync(activity);
                 return true;
             }
-*/
-/*   Comment out to enable Settings in menu. This should be done when
-     GallerySettings.java has content, as it is currently empty.
-     Also comment out the settings item at albumset.xml menu.
-
             case R.id.action_settings: {
                 activity.startActivity(new Intent(activity, GallerySettings.class));
                 return true;
             }
-*/
             default:
                 return false;
         }
@@ -674,11 +663,6 @@ public class AlbumSetPage extends ActivityState implements
                 break;
             }
             case SelectionManager.SELECT_ALL_MODE: {
-                mActionModeHandler.updateSupportedOperation();
-                mRootPane.invalidate();
-                break;
-            }
-            case SelectionManager.DESELECT_ALL_MODE: {
                 mActionModeHandler.updateSupportedOperation();
                 mRootPane.invalidate();
                 break;

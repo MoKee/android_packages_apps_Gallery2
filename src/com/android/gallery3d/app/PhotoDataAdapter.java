@@ -374,7 +374,6 @@ public class PhotoDataAdapter implements PhotoPage.Model {
             if (entry.fullImageTask != null) entry.fullImageTask.cancel();
             if (entry.screenNailTask != null) entry.screenNailTask.cancel();
             if (entry.screenNail != null) entry.screenNail.recycle();
-            if (entry.fullImage != null) entry.fullImage.recycle();
         }
         mImageCache.clear();
         mTileProvider.clear();
@@ -748,7 +747,7 @@ public class PhotoDataAdapter implements PhotoPage.Model {
         // Must be an item in camera roll.
         if (!(mediaItem instanceof LocalMediaItem)) return false;
         LocalMediaItem item = (LocalMediaItem) mediaItem;
-        if (item.getBucketId() != MediaSetUtils.getCameraBucketId()) return false;
+        if (item.getBucketId() != MediaSetUtils.CAMERA_BUCKET_ID) return false;
         // Must have no size, but must have width and height information
         if (item.getSize() != 0) return false;
         if (item.getWidth() == 0) return false;
@@ -1037,10 +1036,6 @@ public class PhotoDataAdapter implements PhotoPage.Model {
                 if (info.version != version) {
                     info.reloadContent = true;
                     info.size = mSource.getMediaItemCount();
-                    int start = Utils.clamp(info.indexHint - DATA_CACHE_SIZE / 2,
-                            0, Math.max(0, info.size - DATA_CACHE_SIZE));
-                    info.contentStart = start;
-                    info.contentEnd = Math.min(info.size, start + DATA_CACHE_SIZE);
                 }
                 if (!info.reloadContent) continue;
                 info.items = mSource.getMediaItem(
@@ -1084,8 +1079,8 @@ public class PhotoDataAdapter implements PhotoPage.Model {
                 }
 
                 // Don't change index if mSize == 0
-                if (info.size > 0) {
-                    if (index >= info.size) index = info.size - 1;
+                if (mSize > 0) {
+                    if (index >= mSize) index = mSize - 1;
                 }
 
                 info.indexHint = index;

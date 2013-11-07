@@ -24,7 +24,6 @@ import android.os.Parcelable;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.android.camera.CameraActivity;
 import com.android.gallery3d.anim.StateTransitionAnimation;
 import com.android.gallery3d.common.Utils;
 import com.android.gallery3d.util.UsageStatistics;
@@ -64,39 +63,11 @@ public class StateManager {
                     StateTransitionAnimation.Transition.Incoming);
             if (mIsResumed) top.onPause();
         }
-        // Ignore the filmstrip used for the root of the camera app
-        boolean ignoreHit = (mActivity instanceof CameraActivity)
-                && mStack.isEmpty();
-        if (!ignoreHit) {
-            UsageStatistics.onContentViewChanged(
-                    UsageStatistics.COMPONENT_GALLERY,
-                    klass.getSimpleName());
-        }
+
+        UsageStatistics.onContentViewChanged(
+                UsageStatistics.COMPONENT_GALLERY,
+                klass.getSimpleName());
         state.initialize(mActivity, data);
-
-        mStack.push(new StateEntry(data, state));
-        state.onCreate(data, null);
-        if (mIsResumed) state.resume();
-    }
-
-    //Starts state without 'transitionOnNextPause'
-    public void startStateNow(Class<? extends ActivityState> klass, Bundle data) {
-        Log.v(TAG, "startStateNow " + klass);
-        ActivityState state = null;
-        try {
-            state = klass.newInstance();
-        } catch (Exception e) {
-            throw new AssertionError(e);
-        }
-        if (!mStack.isEmpty()) {
-            ActivityState top = getTopState();
-            if (mIsResumed) top.onPause();
-        }
-        state.initialize(mActivity, data);
-
-        if (!mStack.isEmpty()) {
-            mStack.pop();
-        }
 
         mStack.push(new StateEntry(data, state));
         state.onCreate(data, null);

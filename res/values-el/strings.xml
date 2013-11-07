@@ -70,17 +70,17 @@
     <string name="switch_to_camera" msgid="7280111806675169992">"Φωτογραφική μηχανή"</string>
   <plurals name="number_of_items_selected">
     <item quantity="zero" msgid="2142579311530586258">"Επιλέχθηκαν %1$d"</item>
-    <item quantity="one" msgid="2478365152745637768">"Επιλέχθηκε %1$d"</item>
+    <item quantity="one" msgid="2478365152745637768">"Επιλέχθηκαν %1$d"</item>
     <item quantity="other" msgid="754722656147810487">"Επιλέχθηκαν %1$d"</item>
   </plurals>
   <plurals name="number_of_albums_selected">
     <item quantity="zero" msgid="749292746814788132">"Επιλέχθηκαν %1$d"</item>
-    <item quantity="one" msgid="6184377003099987825">"Επιλέχθηκε %1$d"</item>
+    <item quantity="one" msgid="6184377003099987825">"Επιλέχθηκαν %1$d"</item>
     <item quantity="other" msgid="53105607141906130">"Επιλέχθηκαν %1$d"</item>
   </plurals>
   <plurals name="number_of_groups_selected">
     <item quantity="zero" msgid="3466388370310869238">"Επιλέχθηκαν %1$d"</item>
-    <item quantity="one" msgid="5030162638216034260">"Επιλέχθηκε %1$d"</item>
+    <item quantity="one" msgid="5030162638216034260">"Επιλέχθηκαν %1$d"</item>
     <item quantity="other" msgid="3512041363942842738">"Επιλέχθηκαν %1$d"</item>
   </plurals>
     <string name="show_on_map" msgid="6157544221201750980">"Εμφάνιση στον χάρτη"</string>
@@ -220,7 +220,6 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Δεν είναι δυνατή η σύνδεση με τη φωτογραφική μηχανή."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"Η φωτογραφική μηχανή έχει απενεργοποιηθεί λόγω των πολιτικών ασφαλείας."</string>
     <string name="camera_label" msgid="6346560772074764302">"Φωτογ.μηχανή"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Βιντεοκάμ."</string>
     <string name="wait" msgid="8600187532323801552">"Περιμένετε..."</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Προσαρτήστε τον χώρο αποθήκευσης USB προτού κάνετε χρήση της φωτογραφικής μηχανής."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Εισαγάγετε κάρτα SD πριν χρησιμοποιήσετε τη φωτογραφική μηχανή."</string>
@@ -234,7 +233,7 @@
     <string name="pref_camera_id_title" msgid="4040791582294635851">"Επιλογή φωτ. μηχανής"</string>
     <string name="pref_camera_id_entry_back" msgid="5142699735103692485">"Πίσω"</string>
     <string name="pref_camera_id_entry_front" msgid="5668958706828733669">"Μπροστά"</string>
-    <string name="pref_camera_recordlocation_title" msgid="371208839215448917">"Αποθήκευση τοποθεσίας"</string>
+    <string name="pref_camera_recordlocation_title" msgid="371208839215448917">"Τοποθεσία αποθήκευσης"</string>
     <string name="pref_camera_location_label" msgid="2254270920298609161">"ΤΟΠΟΘΕΣΙΑ"</string>
     <string name="pref_camera_timer_title" msgid="3105232208281893389">"Χρονόμετρο αντίστροφης μέτρησης"</string>
   <plurals name="pref_camera_timer_entry">
@@ -253,15 +252,15 @@
     <string name="pref_camera_settings_category" msgid="2576236450859613120">"Ρυθμίσεις φωτογραφικής μηχανής"</string>
     <string name="pref_camcorder_settings_category" msgid="460313486231965141">"Ρυθμίσεις βιντεοκάμερας"</string>
     <string name="pref_camera_picturesize_title" msgid="4333724936665883006">"Μέγεθος εικόνας"</string>
-    <string name="pref_camera_picturesize_entry_13mp" msgid="675309554194481780">"13 MP"</string>
-    <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"8 MP"</string>
-    <string name="pref_camera_picturesize_entry_5mp" msgid="2882928212030661159">"5 MP"</string>
-    <string name="pref_camera_picturesize_entry_4mp" msgid="933242108272469142">"4 MP"</string>
-    <string name="pref_camera_picturesize_entry_3mp" msgid="741415860337400696">"3 MP"</string>
-    <string name="pref_camera_picturesize_entry_2mp" msgid="1753709802245460393">"2 MP"</string>
-    <string name="pref_camera_picturesize_entry_2mp_wide" msgid="5359490802026616612">"2 MP (16:9)"</string>
-    <string name="pref_camera_picturesize_entry_1_3mp" msgid="829109608140747258">"1.3 MP"</string>
-    <string name="pref_camera_picturesize_entry_1mp" msgid="1669725616780375066">"1 MP"</string>
+    <string name="pref_camera_picturesize_entry_13mp" msgid="675309554194481780">"13M εικονοστ."</string>
+    <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"8M εικονοστ."</string>
+    <string name="pref_camera_picturesize_entry_5mp" msgid="2882928212030661159">"5 M εικονοστ."</string>
+    <string name="pref_camera_picturesize_entry_4mp" msgid="933242108272469142">"4M εικονοστ."</string>
+    <string name="pref_camera_picturesize_entry_3mp" msgid="741415860337400696">"3M εικονοστ."</string>
+    <string name="pref_camera_picturesize_entry_2mp" msgid="1753709802245460393">"2M  εικονοστ."</string>
+    <string name="pref_camera_picturesize_entry_2mp_wide" msgid="5359490802026616612">"2M εικον.(16:9)"</string>
+    <string name="pref_camera_picturesize_entry_1_3mp" msgid="829109608140747258">"1.3M εικονοστ."</string>
+    <string name="pref_camera_picturesize_entry_1mp" msgid="1669725616780375066">"1M εικονοστ."</string>
     <string name="pref_camera_picturesize_entry_vga" msgid="806934254162981919">"VGA"</string>
     <string name="pref_camera_picturesize_entry_qvga" msgid="8576186463069770133">"QVGA"</string>
     <string name="pref_camera_focusmode_title" msgid="2877248921829329127">"Λειτουργία εστίασης"</string>
@@ -297,12 +296,12 @@
     <string name="pref_camera_scenemode_entry_action" msgid="616748587566110484">"Ενέργεια"</string>
     <string name="pref_camera_scenemode_entry_night" msgid="7606898503102476329">"Νύχτα"</string>
     <string name="pref_camera_scenemode_entry_sunset" msgid="181661154611507212">"Ηλιοβασίλεμα"</string>
-    <string name="pref_camera_scenemode_entry_party" msgid="907053529286788253">"Πάρτι"</string>
+    <string name="pref_camera_scenemode_entry_party" msgid="907053529286788253">"Πάρτυ"</string>
     <string name="pref_camera_scenemode_label_auto" msgid="4475096836397300237">"ΚΑΜΙΑ"</string>
     <string name="pref_camera_scenemode_label_action" msgid="964748409622151496">"ΔΡΑΣΗ"</string>
     <string name="pref_camera_scenemode_label_night" msgid="1269871886845854574">"ΝΥΧΤΑ"</string>
     <string name="pref_camera_scenemode_label_sunset" msgid="2802732082948866877">"ΗΛΙΟΒΑΣΙΛΕΜΑ"</string>
-    <string name="pref_camera_scenemode_label_party" msgid="1409459091844374828">"ΠΑΡΤΙ"</string>
+    <string name="pref_camera_scenemode_label_party" msgid="1409459091844374828">"ΠΑΡΤΥ"</string>
     <string name="pref_camera_countdown_label" msgid="7592784692450586126">"ΧΡΟΝΟΜΕΤΡΟ ΑΝΤΙΣΤΡΟΦΗΣ ΜΕΤΡΗΣΗΣ"</string>
     <string name="pref_camera_countdown_label_off" msgid="4987856883590176585">"ΑΝΕΝΕΡΓΟ ΧΡΟΝΟΜΕΤΡΟ"</string>
     <string name="pref_camera_countdown_label_one" msgid="1101814103087928898">"1 ΔΕΥΤΕΡΟΛΕΠΤΟ"</string>
@@ -315,7 +314,7 @@
     <!-- no translation found for pref_camera_hdr_default (1336869406134365882) -->
     <skip />
     <string name="pref_camera_hdr_label" msgid="7217211253357027510">"Υψηλό δυναμικό εύρος (HDR)"</string>
-    <string name="pref_camera_id_label_back" msgid="8745553500400332333">"ΜΠΡΟΣΤΙΝΗ ΚΑΜΕΡΑ"</string>
+    <string name="pref_camera_id_label_back" msgid="8745553500400332333">"ΜΠΡΟΣΤΑ"</string>
     <string name="pref_camera_id_label_front" msgid="8699439330056996709">"ΠΙΣΩ ΚΑΜΕΡΑ"</string>
     <string name="dialog_ok" msgid="6263301364153382152">"OK"</string>
     <string name="spaceIsLow_content" product="nosdcard" msgid="4401325203349203177">"Ο διαθέσιμος χώρος USB είναι ελάχιστος. Αλλάξτε τη ρύθμιση της ποιότητας ή διαγράψτε κάποιες εικόνες ή άλλα αρχεία."</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"Στο διάστημα"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Δύση ηλίου"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Το βίντεό σας"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Αφήστε τη συσκευή σας κάτω"\n"Απομακρυνθείτε για λίγο από την εμβέλειά της."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Αφήστε τη συσκευή σας κάτω\nΑπομακρυνθείτε για λίγο από την εμβέλειά της."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Αγγίξτε για λήψη φωτογραφίας κατά την εγγραφή."</string>
     <string name="video_recording_started" msgid="4132915454417193503">"Έχει ξεκινήσει η εγγραφή βίντεο."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"Έχει διακοπεί η εγγραφή βίντεο."</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Μετάβαση σε λειτουργία βίντεο"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Μετάβαση σε πανόραμα"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Μετάβαση σε νέο πανόραμα"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Εναλλαγή στην επανεστίαση"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Ακύρωση αναθεώρησης"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Ολοκλήρωση αναθεώρησης"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Έλεγχος νέας λήψης"</string>
@@ -423,7 +423,7 @@
     <string name="set_duration" msgid="5578035312407161304">"Ορισμός διάρκειας σε δευτερόλεπτα"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Αντίστροφη μέτρηση για λήψη φωτογραφίας"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Απομνημόνευση τοποθεσίας φωτογραφιών;"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Προσθέστε ετικέτες στις φωτογραφίες και τα βίντεό σας με την τοποθεσία στην οποία έχουν τραβηχτεί."\n\n"Οι άλλες εφαρμογές μπορούν να αποκτήσουν πρόσβαση σε αυτές τις πληροφορίες μαζί με τις αποθηκευμένες σας εικόνες."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Προσθέστε ετικέτες στις φωτογραφίες και τα βίντεό σας με την τοποθεσία στην οποία έχουν τραβηχτεί.\n\nΟι άλλες εφαρμογές μπορούν να αποκτήσουν πρόσβαση σε αυτές τις πληροφορίες μαζί με τις αποθηκευμένες σας εικόνες."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Όχι ευχαριστώ"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Ναι"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Κάμερα"</string>

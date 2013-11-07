@@ -35,13 +35,11 @@ import android.os.Message;
 import android.os.SystemClock;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.ShareActionProvider;
 import android.widget.Toast;
-import android.media.MediaFile;
 
-import com.android.camera.CameraActivity;
-import com.android.camera.ProxyLauncher;
 import com.android.gallery3d.R;
 import com.android.gallery3d.common.ApiHelper;
 import com.android.gallery3d.data.ComboAlbum;
@@ -66,6 +64,7 @@ import com.android.gallery3d.picasasource.PicasaSource;
 import com.android.gallery3d.ui.DetailsHelper;
 import com.android.gallery3d.ui.DetailsHelper.CloseListener;
 import com.android.gallery3d.ui.DetailsHelper.DetailsSource;
+import com.android.gallery3d.ui.GLRootView;
 import com.android.gallery3d.ui.GLView;
 import com.android.gallery3d.ui.MenuExecutor;
 import com.android.gallery3d.ui.PhotoView;
@@ -89,7 +88,6 @@ public abstract class PhotoPage extends ActivityState implements
     private static final int MSG_ON_PICTURE_CENTER = 10;
     private static final int MSG_REFRESH_IMAGE = 11;
     private static final int MSG_UPDATE_PHOTO_UI = 12;
-    private static final int MSG_UPDATE_PROGRESS = 13;
     private static final int MSG_UPDATE_DEFERRED = 14;
     private static final int MSG_UPDATE_SHARE_URI = 15;
     private static final int MSG_UPDATE_PANORAMA_UI = 16;
@@ -114,6 +112,7 @@ public abstract class PhotoPage extends ActivityState implements
     public static final String KEY_RETURN_INDEX_HINT = "return-index-hint";
     public static final String KEY_SHOW_WHEN_LOCKED = "show_when_locked";
     public static final String KEY_IN_CAMERA_ROLL = "in_camera_roll";
+    public static final String KEY_READONLY = "read-only";
 
     public static final String KEY_ALBUMPAGE_TRANSITION = "albumpage-transition";
     public static final int MSG_ALBUMPAGE_NONE = 0;
@@ -147,13 +146,13 @@ public abstract class PhotoPage extends ActivityState implements
     private boolean mIsMenuVisible;
     private boolean mHaveImageEditor;
     private PhotoPageBottomControls mBottomControls;
-    private PhotoPageProgressBar mProgressBar;
     private MediaItem mCurrentPhoto = null;
     private MenuExecutor mMenuExecutor;
     private boolean mIsActive;
     private boolean mShowSpinner;
     private String mSetPathString;
     // This is the original mSetPathString before adding the camera preview item.
+    private boolean mReadOnlyView = false;
     private String mOriginalSetPathString;
     private AppBridge mAppBridge;
     private SnailItem mScreenNailItem;
@@ -184,7 +183,8 @@ public abstract class PhotoPage extends ActivityState implements
 
     private final MyMenuVisibilityListener mMenuVisibilityListener =
             new MyMenuVisibilityListener();
-    private UpdateProgressListener mProgressListener;
+
+    private int mLastSystemUiVis = 0;
 
     private final PanoramaSupportCallback mUpdatePanoramaMenuItemsCallback = new PanoramaSupportCallback() {
         @Override
@@ -233,33 +233,6 @@ public abstract class PhotoPage extends ActivityState implements
             refreshHidingMessage();
         }
     }
-
-    private class UpdateProgressListener implements StitchingChangeListener {
-
-        @Override
-        public void onStitchingResult(Uri uri) {
-            sendUpdate(uri, MSG_REFRESH_IMAGE);
-        }
-
-        @Override
-        public void onStitchingQueued(Uri uri) {
-            sendUpdate(uri, MSG_UPDATE_PROGRESS);
-        }
-
-        @Override
-        public void onStitchingProgress(Uri uri, final int progress) {
-            sendUpdate(uri, MSG_UPDATE_PROGRESS);
-        }
-
-        private void sendUpdate(Uri uri, int message) {
-            MediaObject currentPhoto = mCurrentPhoto;
-            boolean isCurrentPhoto = currentPhoto instanceof LocalImage
-                    && currentPhoto.getContentUri().equals(uri);
-            if (isCurrentPhoto) {
-                mHandler.sendEmptyMessage(message);
-            }
-        }
-    };
 
     @Override
     protected int getBackgroundColorId() {
@@ -380,10 +353,6 @@ public abstract class PhotoPage extends ActivityState implements
                         updateUIForCurrentPhoto();
                         break;
                     }
-                    case MSG_UPDATE_PROGRESS: {
-                        updateProgressBar();
-                        break;
-                    }
                     case MSG_UPDATE_SHARE_URI: {
                         if (mCurrentPhoto == message.obj) {
                             boolean isPanorama360 = message.arg1 != 0;
@@ -412,6 +381,7 @@ public abstract class PhotoPage extends ActivityState implements
         };
 
         mSetPathString = data.getString(KEY_MEDIA_SET_PATH);
+        mReadOnlyView = data.getBoolean(KEY_READONLY);
         mOriginalSetPathString = mSetPathString;
         setupNfcBeamPush();
         String itemPathString = data.getString(KEY_MEDIA_ITEM_PATH);
@@ -578,16 +548,20 @@ public abstract class PhotoPage extends ActivityState implements
             if (mSecureAlbum == null) {
                 mBottomControls = new PhotoPageBottomControls(this, mActivity, galleryRoot);
             }
-            StitchingProgressManager progressManager = mApplication.getStitchingProgressManager();
-            if (progressManager != null) {
-                mProgressBar = new PhotoPageProgressBar(mActivity, galleryRoot);
-                mProgressListener = new UpdateProgressListener();
-                progressManager.addChangeListener(mProgressListener);
-                if (mSecureAlbum != null) {
-                    progressManager.addChangeListener(mSecureAlbum);
-                }
-            }
         }
+
+        ((GLRootView) mActivity.getGLRoot()).setOnSystemUiVisibilityChangeListener(
+                new View.OnSystemUiVisibilityChangeListener() {
+                @Override
+                    public void onSystemUiVisibilityChange(int visibility) {
+                        int diff = mLastSystemUiVis ^ visibility;
+                        mLastSystemUiVis = visibility;
+                        if ((diff & View.SYSTEM_UI_FLAG_FULLSCREEN) != 0
+                                && (visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0) {
+                            showBars();
+                        }
+                    }
+                });
     }
 
     @Override
@@ -604,13 +578,6 @@ public abstract class PhotoPage extends ActivityState implements
         return mIsActive && !mPhotoView.canUndo();
     }
 
-    /**
-     * Returns the start source index of the album
-     */
-    protected int getStartSourceIndex() {
-        return 0;
-    }
-
     @Override
     public boolean canDisplayBottomControl(int control) {
         if (mCurrentPhoto == null) {
@@ -618,7 +585,7 @@ public abstract class PhotoPage extends ActivityState implements
         }
         switch(control) {
             case R.id.photopage_bottom_control_edit:
-                return mHaveImageEditor && mShowBars
+                return mHaveImageEditor && mShowBars && !mReadOnlyView
                         && !mPhotoView.getFilmMode()
                         && (mCurrentPhoto.getSupportedOperations() & MediaItem.SUPPORT_EDIT) != 0
                         && mCurrentPhoto.getMediaType() == MediaObject.MEDIA_TYPE_IMAGE;
@@ -704,10 +671,8 @@ public abstract class PhotoPage extends ActivityState implements
     }
 
     private void launchCamera() {
-        Intent intent = new Intent(mActivity, CameraActivity.class)
-            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         mRecenterCameraOnResume = false;
-        mActivity.startActivity(intent);
+        GalleryUtils.startCameraActivity(mActivity);
     }
 
     private void launchPhotoEditor() {
@@ -782,7 +747,6 @@ public abstract class PhotoPage extends ActivityState implements
                 && (mCurrentPhoto.getSupportedOperations() & MediaItem.SUPPORT_SHARE) != 0) {
             mCurrentPhoto.getPanoramaSupport(mUpdateShareURICallback);
         }
-        updateProgressBar();
     }
 
     private void updateCurrentPhoto(MediaItem photo) {
@@ -792,19 +756,6 @@ public abstract class PhotoPage extends ActivityState implements
             requestDeferredUpdate();
         } else {
             updateUIForCurrentPhoto();
-        }
-    }
-
-    private void updateProgressBar() {
-        if (mProgressBar != null) {
-            mProgressBar.hideProgress();
-            StitchingProgressManager progressManager = mApplication.getStitchingProgressManager();
-            if (progressManager != null && mCurrentPhoto instanceof LocalImage) {
-                Integer progress = progressManager.getProgress(mCurrentPhoto.getContentUri());
-                if (progress != null) {
-                    mProgressBar.setProgress(progress);
-                }
-            }
         }
     }
 
@@ -821,6 +772,9 @@ public abstract class PhotoPage extends ActivityState implements
         if (mCurrentPhoto == null) return;
 
         int supportedOperations = mCurrentPhoto.getSupportedOperations();
+        if (mReadOnlyView) {
+            supportedOperations ^= MediaObject.SUPPORT_EDIT;
+        }
         if (mSecureAlbum != null) {
             supportedOperations &= MediaObject.SUPPORT_DELETE;
         } else {
@@ -828,18 +782,8 @@ public abstract class PhotoPage extends ActivityState implements
             if (!mHaveImageEditor) {
                 supportedOperations &= ~MediaObject.SUPPORT_EDIT;
             }
-        // If current photo page is single item only, to cut some menu items
-        boolean singleItemOnly = mData.getBoolean("SingleItemOnly", false);
-        if (singleItemOnly) {
-            supportedOperations &= ~MediaObject.SUPPORT_DELETE;
-            supportedOperations &= ~MediaObject.SUPPORT_ROTATE;
-            supportedOperations &= ~MediaObject.SUPPORT_SHARE;
-            supportedOperations &= ~MediaObject.SUPPORT_CROP;
-            supportedOperations &= ~MediaObject.SUPPORT_INFO;
         }
-
-        }
-        MenuExecutor.updateMenuOperation(mActivity.getAndroidContext(), menu, supportedOperations);
+        MenuExecutor.updateMenuOperation(menu, supportedOperations);
     }
 
     private boolean canDoSlideShow() {
@@ -918,6 +862,7 @@ public abstract class PhotoPage extends ActivityState implements
 
     @Override
     protected void onBackPressed() {
+        showBars();
         if (mShowDetails) {
             hideDetails();
         } else if (mAppBridge == null || !switchWithCaptureAnimation(-1)) {
@@ -1034,10 +979,6 @@ public abstract class PhotoPage extends ActivityState implements
             onUpPressed();
         } else {
             if (mOriginalSetPathString == null) return;
-            if (mProgressBar != null) {
-                updateCurrentPhoto(null);
-                mProgressBar.hideProgress();
-            }
             Bundle data = new Bundle(getData());
             data.putString(AlbumPage.KEY_MEDIA_PATH, mOriginalSetPathString);
             data.putString(AlbumPage.KEY_PARENT_MEDIA_PATH,
@@ -1116,14 +1057,8 @@ public abstract class PhotoPage extends ActivityState implements
                 Intent intent = new Intent(mActivity, TrimVideo.class);
                 intent.setData(manager.getContentUri(path));
                 // We need the file path to wrap this into a RandomAccessFile.
-                String str = MediaFile.getMimeTypeForFile(current.getFilePath());
-                if("video/mp4".equals(str)){
-                    intent.putExtra(KEY_MEDIA_ITEM_PATH, current.getFilePath());
-                    mActivity.startActivityForResult(intent, REQUEST_TRIM);
-                } else {
-                    Toast.makeText(mActivity, mActivity.getString(R.string.can_not_trim),
-                        Toast.LENGTH_SHORT).show();
-                }
+                intent.putExtra(KEY_MEDIA_ITEM_PATH, current.getFilePath());
+                mActivity.startActivityForResult(intent, REQUEST_TRIM);
                 return true;
             }
             case R.id.action_mute: {
@@ -1146,6 +1081,10 @@ public abstract class PhotoPage extends ActivityState implements
                 } else {
                     showDetails();
                 }
+                return true;
+            }
+            case R.id.print: {
+                mActivity.printSelectedImage(manager.getContentUri(path));
                 return true;
             }
             case R.id.action_delete:
@@ -1222,8 +1161,8 @@ public abstract class PhotoPage extends ActivityState implements
         } else if (goBack) {
             onBackPressed();
         } else if (unlock) {
-            Intent intent = new Intent(mActivity, Gallery.class);
-            intent.putExtra(Gallery.KEY_DISMISS_KEYGUARD, true);
+            Intent intent = new Intent(mActivity, GalleryActivity.class);
+            intent.putExtra(GalleryActivity.KEY_DISMISS_KEYGUARD, true);
             mActivity.startActivity(intent);
         } else if (launchCamera) {
             launchCamera();
@@ -1300,6 +1239,9 @@ public abstract class PhotoPage extends ActivityState implements
                 .findPathByUri(intent.getData(), intent.getType());
         if (path != null) {
             Path albumPath = mApplication.getDataManager().getDefaultSetOf(path);
+            if (albumPath == null) {
+                return;
+            }
             if (!albumPath.equalsIgnoreCase(mOriginalSetPathString)) {
                 // If the edited image is stored in a different album, we need
                 // to start a new activity state to show the new image
@@ -1318,10 +1260,6 @@ public abstract class PhotoPage extends ActivityState implements
         if (resultCode == Activity.RESULT_CANCELED) {
             // This is a reset, not a canceled
             return;
-        }
-        if (resultCode == ProxyLauncher.RESULT_USER_CANCELED) {
-            // Unmap reset vs. canceled
-            resultCode = Activity.RESULT_CANCELED;
         }
         mRecenterCameraOnResume = false;
         switch (requestCode) {
@@ -1510,12 +1448,12 @@ public abstract class PhotoPage extends ActivityState implements
 
         @Override
         public int size() {
-            return mMediaSet != null ? mMediaSet.getMediaItemCount() - getStartSourceIndex() : 1;
+            return mMediaSet != null ? mMediaSet.getMediaItemCount() : 1;
         }
 
         @Override
         public int setIndex() {
-            return mModel.getCurrentIndex() - getStartSourceIndex();
+            return mModel.getCurrentIndex();
         }
     }
 

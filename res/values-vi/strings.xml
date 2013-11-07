@@ -151,7 +151,7 @@
     <string name="ffx_bleach" msgid="8946700451603478453">"Làm phai màu"</string>
     <string name="ffx_blue_crush" msgid="6034283412305561226">"Màu xanh dương"</string>
     <string name="ffx_bw_contrast" msgid="517988490066217206">"Đen/trắng"</string>
-    <string name="ffx_punch" msgid="1343475517872562639">"Punch"</string>
+    <string name="ffx_punch" msgid="1343475517872562639">"Hơi vàng"</string>
     <string name="ffx_x_process" msgid="4779398678661811765">"Quá trình X"</string>
     <string name="ffx_washout" msgid="4594160692176642735">"Latte"</string>
     <string name="ffx_washout_color" msgid="8034075742195795219">"Litho"</string>
@@ -220,7 +220,6 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Không thể kết nối với máy ảnh."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"Máy ảnh đã bị tắt do chính sách bảo mật."</string>
     <string name="camera_label" msgid="6346560772074764302">"Máy ảnh"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Máy quay video"</string>
     <string name="wait" msgid="8600187532323801552">"Vui lòng đợi..."</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Kết nối bộ nhớ USB trước khi sử dụng máy ảnh."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Lắp thẻ SD trước khi sử dụng máy ảnh."</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"Trong không gian"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Hoàng hôn"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Video của bạn"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Dừng thiết bị của bạn."\n"Thoát khỏi chế độ xem trong giây lát."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Dừng thiết bị của bạn.\nThoát khỏi chế độ xem trong giây lát."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Chạm để chụp ảnh trong khi quay."</string>
     <string name="video_recording_started" msgid="4132915454417193503">"Đã bắt đầu quay video."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"Đã dừng quay video."</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Chuyển sang video"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Chuyển sang chế độ toàn cảnh"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Chuyển sang chế độ toàn cảnh mới"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Chuyển sang Lấy nét lại"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Hủy bài đánh giá"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Đánh giá xong"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Xem lại ảnh chụp lại"</string>
@@ -423,7 +423,7 @@
     <string name="set_duration" msgid="5578035312407161304">"Đặt thời gian trong vài giây"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Đếm ngược để chụp ảnh"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Nhớ vị trí chụp ảnh?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Gắn thẻ cho ảnh và video của bạn với những địa điểm mà ảnh đó được chụp và video đó được quay."\n\n"Các ứng dụng khác có thể truy cập vào thông tin này cùng với các hình ảnh đã lưu của bạn."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Gắn thẻ cho ảnh và video của bạn với những địa điểm mà ảnh đó được chụp và video đó được quay.\n\nCác ứng dụng khác có thể truy cập vào thông tin này cùng với các hình ảnh đã lưu của bạn."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Không, cảm ơn"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Có"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Máy ảnh"</string>

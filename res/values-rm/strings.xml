@@ -358,7 +358,6 @@
     <!-- no translation found for camera_disabled (8923911090533439312) -->
     <skip />
     <string name="camera_label" msgid="6346560772074764302">"Camera"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Camera da video"</string>
     <string name="wait" msgid="8600187532323801552">"Spetgar..."</string>
     <!-- no translation found for no_storage (7335975356349008814) -->
     <skip />
@@ -603,6 +602,8 @@
     <!-- no translation found for accessibility_switch_to_panorama (604756878371875836) -->
     <skip />
     <!-- no translation found for accessibility_switch_to_new_panorama (8116783308051524188) -->
+    <skip />
+    <!-- no translation found for accessibility_switch_to_refocus (4539294619557299903) -->
     <skip />
     <!-- no translation found for accessibility_review_cancel (9070531914908644686) -->
     <skip />

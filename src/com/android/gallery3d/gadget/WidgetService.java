@@ -21,7 +21,6 @@ import android.appwidget.AppWidgetManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
@@ -98,7 +97,7 @@ public class WidgetService extends RemoteViewsService {
 
         @Override
         public int getViewTypeCount() {
-            return 1;
+            return 2;
         }
 
         @Override
@@ -117,28 +116,15 @@ public class WidgetService extends RemoteViewsService {
 
         @Override
         public RemoteViews getViewAt(int position) {
-            Bitmap bitmap = null;
-            if (mSource != null) {
-                bitmap = mSource.getImage(position);
-            } else {
-                // when widget is destroyed, mSource can be null
-                Log.w(TAG, "mSource is null, not to get bitmap");
-                return null;
-            }
+            Bitmap bitmap = mSource.getImage(position);
             if (bitmap == null) return getLoadingView();
             RemoteViews views = new RemoteViews(
                     mApp.getAndroidContext().getPackageName(),
                     R.layout.appwidget_photo_item);
             views.setImageViewBitmap(R.id.appwidget_photo_item, bitmap);
-            if (mSource != null) {
-                views.setOnClickFillInIntent(R.id.appwidget_photo_item, new Intent()
-                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-                        .setData(mSource.getContentUri(position)));
-            } else {
-                // when widget is destroyed, mSource can be null
-                Log.w(TAG, "mSource is null, not to get content uri");
-                return null;
-            }
+            views.setOnClickFillInIntent(R.id.appwidget_photo_item, new Intent()
+                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                    .setData(mSource.getContentUri(position)));
             return views;
         }
 

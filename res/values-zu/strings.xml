@@ -222,7 +222,6 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Ayikwazi ukuxhuma ekhamereni."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"Ikhamera inqunyiwe ngenxa yepolisi yezokuphepha."</string>
     <string name="camera_label" msgid="6346560772074764302">"Ikhamera"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Ikhamera enerekhoda"</string>
     <string name="wait" msgid="8600187532323801552">"Sicela ulinde..."</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Sicela ukhweze isitoreji se-USB ngaphambi kokusebenzisa ikhamera."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Sicela ufake ikhadi le-SD ngaphambi kokusebenzisa ikhamera."</string>
@@ -343,7 +342,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"Eskhaleni"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Ukushona kwelanga"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Ividiyo yakho"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Setha idivayisi yakho phansi."\n"Isethe ingabonakali okwesikhashana."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Setha idivayisi yakho phansi.\nIsethe ingabonakali okwesikhashana."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Thinta ukuze uthwebule isithombe ngenkathi uqopha."</string>
     <string name="video_recording_started" msgid="4132915454417193503">"Ukuqoshwa kwevidiyo sekuqalile."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"Ukuqoshwa kwevidiyo sekumisiwe."</string>
@@ -366,6 +365,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Shintshela kwividiyo"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Shintshela kwi-panorama"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Shintshela ku-panorama entsha"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Shintshela ekugxileni kabusha"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Buyekeza ukukhansela"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Ukubuyekeza kuphelile"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Ukuphindwa kuthathwe kwesibuyekezo"</string>
@@ -425,7 +425,7 @@
     <string name="set_duration" msgid="5578035312407161304">"Setha ubude besikhathi bube amasekhondi"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Kubalwa ngokwehla kuze kufike ekuthatheni isithombe"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Khumbula izindawo zezithombe?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Maka izithombe zakho namavidiyo ngezindawo lapha zithathwe khona."\n\n"Ezinye izinhlelo zokusebenza zingafinyelela lolu lwazi nezithombe zakho ezilondoloziwe."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Maka izithombe zakho namavidiyo ngezindawo lapha zithathwe khona.\n\nEzinye izinhlelo zokusebenza zingafinyelela lolu lwazi nezithombe zakho ezilondoloziwe."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Cha ngiyabonga"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Yebo"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Ikhamera"</string>

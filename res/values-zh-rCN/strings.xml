@@ -38,7 +38,7 @@
     <string name="saving_image" msgid="7270334453636349407">"正在保存照片..."</string>
     <string name="filtershow_saving_image" msgid="6659463980581993016">"正在将照片保存到“<xliff:g id="ALBUM_NAME">%1$s</xliff:g>”…"</string>
     <string name="save_error" msgid="6857408774183654970">"无法保存经过裁剪的图片。"</string>
-    <string name="crop_label" msgid="521114301871349328">"修剪照片"</string>
+    <string name="crop_label" msgid="521114301871349328">"剪裁照片"</string>
     <string name="trim_label" msgid="274203231381209979">"剪辑视频"</string>
     <string name="select_image" msgid="7841406150484742140">"选择照片"</string>
     <string name="select_video" msgid="4859510992798615076">"选择视频"</string>
@@ -69,9 +69,9 @@
     <string name="close" msgid="5585646033158453043">"关闭"</string>
     <string name="switch_to_camera" msgid="7280111806675169992">"切换到相机"</string>
   <plurals name="number_of_items_selected">
-    <item quantity="zero" msgid="2142579311530586258">"%1$d 项选中了"</item>
-    <item quantity="one" msgid="2478365152745637768">"%1$d 项选中了"</item>
-    <item quantity="other" msgid="754722656147810487">"%1$d 项选中了"</item>
+    <item quantity="zero" msgid="2142579311530586258">"选中了 %1$d 项"</item>
+    <item quantity="one" msgid="2478365152745637768">"选中了 %1$d 项"</item>
+    <item quantity="other" msgid="754722656147810487">"选中了 %1$d 项"</item>
   </plurals>
   <plurals name="number_of_albums_selected">
     <item quantity="zero" msgid="749292746814788132">"选中了 %1$d 本相册"</item>
@@ -91,7 +91,7 @@
     <string name="simple_edit" msgid="2792835918347498211">"简单编辑"</string>
     <string name="process_caching_requests" msgid="8722939570307386071">"正在处理缓存请求"</string>
     <string name="caching_label" msgid="4521059045896269095">"正在缓存..."</string>
-    <string name="crop_action" msgid="3427470284074377001">"修剪"</string>
+    <string name="crop_action" msgid="3427470284074377001">"剪裁"</string>
     <string name="trim_action" msgid="703098114452883524">"修剪"</string>
     <string name="mute_action" msgid="5296241754753306251">"静音"</string>
     <string name="set_as" msgid="3636764710790507868">"设置为"</string>
@@ -218,9 +218,8 @@
     <string name="ingest_no_device" msgid="3054128223131382122">"未连接 MTP 设备"</string>
     <string name="camera_error_title" msgid="6484667504938477337">"相机故障"</string>
     <string name="cannot_connect_camera" msgid="955440687597185163">"无法连接到相机。"</string>
-    <string name="camera_disabled" msgid="8923911090533439312">"由于安全政策的限制，相机已被停用。"</string>
+    <string name="camera_disabled" msgid="8923911090533439312">"由于安全政策的限制，相机已被禁用。"</string>
     <string name="camera_label" msgid="6346560772074764302">"相机"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"摄像机"</string>
     <string name="wait" msgid="8600187532323801552">"请稍候..."</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"使用相机前请先装载 USB 存储设备。"</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"使用相机前请先插入 SD 卡。"</string>
@@ -234,7 +233,7 @@
     <string name="pref_camera_id_title" msgid="4040791582294635851">"选择摄像头"</string>
     <string name="pref_camera_id_entry_back" msgid="5142699735103692485">"背面相机"</string>
     <string name="pref_camera_id_entry_front" msgid="5668958706828733669">"正面相机"</string>
-    <string name="pref_camera_recordlocation_title" msgid="371208839215448917">"保存所在位置"</string>
+    <string name="pref_camera_recordlocation_title" msgid="371208839215448917">"保存位置信息"</string>
     <string name="pref_camera_location_label" msgid="2254270920298609161">"位置"</string>
     <string name="pref_camera_timer_title" msgid="3105232208281893389">"倒计时器"</string>
   <plurals name="pref_camera_timer_entry">
@@ -252,7 +251,7 @@
     <string name="pref_video_time_lapse_frame_interval_title" msgid="6245716906744079302">"延时"</string>
     <string name="pref_camera_settings_category" msgid="2576236450859613120">"相机设置"</string>
     <string name="pref_camcorder_settings_category" msgid="460313486231965141">"摄像机设置"</string>
-    <string name="pref_camera_picturesize_title" msgid="4333724936665883006">"照片大小"</string>
+    <string name="pref_camera_picturesize_title" msgid="4333724936665883006">"照片尺寸"</string>
     <string name="pref_camera_picturesize_entry_13mp" msgid="675309554194481780">"1300万像素"</string>
     <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"800 万像素"</string>
     <string name="pref_camera_picturesize_entry_5mp" msgid="2882928212030661159">"500 万像素"</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"太空背景"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"日落"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"您的视频"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"把设备放好。"\n"离开镜头前片刻。"</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"把设备放好。\n离开镜头前片刻。"</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"在录制视频过程中，轻触一下即可拍一张照片。"</string>
     <string name="video_recording_started" msgid="4132915454417193503">"已开始录制视频。"</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"已停止录制视频。"</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"切换到视频模式"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"切换到全景模式"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"切换到新的全景模式"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"切换为重新聚焦模式"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"取消"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"完成"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"重拍"</string>
@@ -423,9 +423,9 @@
     <string name="set_duration" msgid="5578035312407161304">"设置倒数时间（秒）"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"拍照倒计时中"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"是否记住照片拍摄地点？"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"为您的照片和视频标明拍摄地点。"\n\n"其他应用在查看您保存的图片时将可以访问这些信息。"</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"为您的照片和视频标明拍摄地点。\n\n其他应用在查看您保存的照片和视频时将可以使用这些信息。"</string>
     <string name="remember_location_no" msgid="7541394381714894896">"不用了"</string>
-    <string name="remember_location_yes" msgid="862884269285964180">"是"</string>
+    <string name="remember_location_yes" msgid="862884269285964180">"好"</string>
     <string name="menu_camera" msgid="3476709832879398998">"相机"</string>
     <string name="menu_search" msgid="7580008232297437190">"搜索"</string>
     <string name="tab_photos" msgid="9110813680630313419">"照片"</string>

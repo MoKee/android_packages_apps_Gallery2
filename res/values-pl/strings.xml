@@ -122,7 +122,7 @@
     <string name="sequence_in_set" msgid="7235465319919457488">"%1$d z %2$d elementów:"</string>
     <string name="title" msgid="7622928349908052569">"Tytuł"</string>
     <string name="description" msgid="3016729318096557520">"Opis"</string>
-    <string name="time" msgid="1367953006052876956">"Godzina"</string>
+    <string name="time" msgid="1367953006052876956">"Data/godzina"</string>
     <string name="location" msgid="3432705876921618314">"Lokalizacja"</string>
     <string name="path" msgid="4725740395885105824">"Ścieżka"</string>
     <string name="width" msgid="9215847239714321097">"Szerokość"</string>
@@ -220,7 +220,6 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Nie można nawiązać połączenia z aparatem."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"Aparat został wyłączony z powodu zasad bezpieczeństwa."</string>
     <string name="camera_label" msgid="6346560772074764302">"Aparat"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Kamera"</string>
     <string name="wait" msgid="8600187532323801552">"Proszę czekać…"</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Zanim użyjesz aparatu podłącz nośnik USB."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Przed przystąpieniem do korzystania z aparatu włóż kartę SD."</string>
@@ -253,15 +252,15 @@
     <string name="pref_camera_settings_category" msgid="2576236450859613120">"Ustawienia aparatu"</string>
     <string name="pref_camcorder_settings_category" msgid="460313486231965141">"Ustawienia kamery"</string>
     <string name="pref_camera_picturesize_title" msgid="4333724936665883006">"Rozmiar zdjęcia"</string>
-    <string name="pref_camera_picturesize_entry_13mp" msgid="675309554194481780">"13M pikseli"</string>
-    <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"8M pikseli"</string>
-    <string name="pref_camera_picturesize_entry_5mp" msgid="2882928212030661159">"5M pikseli"</string>
-    <string name="pref_camera_picturesize_entry_4mp" msgid="933242108272469142">"4M piksele"</string>
-    <string name="pref_camera_picturesize_entry_3mp" msgid="741415860337400696">"3M piksele"</string>
-    <string name="pref_camera_picturesize_entry_2mp" msgid="1753709802245460393">"2M piksele"</string>
-    <string name="pref_camera_picturesize_entry_2mp_wide" msgid="5359490802026616612">"2M piksele (16:9)"</string>
-    <string name="pref_camera_picturesize_entry_1_3mp" msgid="829109608140747258">"1,3M piksela"</string>
-    <string name="pref_camera_picturesize_entry_1mp" msgid="1669725616780375066">"1M piksel"</string>
+    <string name="pref_camera_picturesize_entry_13mp" msgid="675309554194481780">"13 Mpix"</string>
+    <string name="pref_camera_picturesize_entry_8mp" msgid="259953780932849079">"8 Mpix"</string>
+    <string name="pref_camera_picturesize_entry_5mp" msgid="2882928212030661159">"5 Mpix"</string>
+    <string name="pref_camera_picturesize_entry_4mp" msgid="933242108272469142">"4 megapiksele"</string>
+    <string name="pref_camera_picturesize_entry_3mp" msgid="741415860337400696">"3 Mpix"</string>
+    <string name="pref_camera_picturesize_entry_2mp" msgid="1753709802245460393">"2 Mpix"</string>
+    <string name="pref_camera_picturesize_entry_2mp_wide" msgid="5359490802026616612">"2 megapiksele (16:9)"</string>
+    <string name="pref_camera_picturesize_entry_1_3mp" msgid="829109608140747258">"1,3 Mpix"</string>
+    <string name="pref_camera_picturesize_entry_1mp" msgid="1669725616780375066">"1 Mpix"</string>
     <string name="pref_camera_picturesize_entry_vga" msgid="806934254162981919">"VGA"</string>
     <string name="pref_camera_picturesize_entry_qvga" msgid="8576186463069770133">"QVGA"</string>
     <string name="pref_camera_focusmode_title" msgid="2877248921829329127">"Tryb ostrości"</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"W kosmosie"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Zachód słońca"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"Twój film"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Skieruj urządzenie w dół."\n"Opuść na chwilę kadr."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Skieruj urządzenie w dół.\nOpuść na chwilę kadr."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Dotknij, by zrobić zdjęcie podczas nagrywania."</string>
     <string name="video_recording_started" msgid="4132915454417193503">"Rozpoczęto nagrywanie filmu."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"Zatrzymano nagrywanie filmu."</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Przełącz na wideo"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Przełącz na panoramę"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Przełącz na nową panoramę"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Przełącz na tryb przywracania ostrości"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Przegląd: anulowanie"</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Przegląd: gotowe"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Przegląd – zrób zdjęcie/nagraj film ponownie"</string>
@@ -417,13 +417,13 @@
     <string name="time_lapse_minutes" msgid="7738520349259013762">"min"</string>
     <string name="time_lapse_hours" msgid="1776453661704997476">"godz."</string>
     <string name="time_lapse_interval_set" msgid="2486386210951700943">"Gotowe"</string>
-    <string name="set_time_interval" msgid="2970567717633813771">"Ustaw interwał czasu"</string>
-    <string name="set_time_interval_help" msgid="6665849510484821483">"Funkcja filmu poklatkowego jest wyłączona. Włącz ją, by ustawić interwał czasu."</string>
+    <string name="set_time_interval" msgid="2970567717633813771">"Ustaw odstęp czasu"</string>
+    <string name="set_time_interval_help" msgid="6665849510484821483">"Funkcja filmu poklatkowego jest wyłączona. Włącz ją, by ustawić odstęp czasu."</string>
     <string name="set_timer_help" msgid="5007708849404589472">"Samowyzwalacz jest wyłączony. Włącz go, by odliczał czas pozostały do wykonania zdjęcia."</string>
     <string name="set_duration" msgid="5578035312407161304">"Ustaw czas w sekundach"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Odliczanie czasu pozostałego do zrobienia zdjęcia"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Zapamiętywać lokalizacje zdjęć?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Oznacz zdjęcia i filmy informacją, gdzie zostały zrobione."\n\n"Inne aplikacje mają dostęp do tych informacji wraz z zapisanymi zdjęciami."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Oznacz zdjęcia i filmy informacją, gdzie zostały zrobione.\n\nInne aplikacje mają dostęp do tych informacji wraz z zapisanymi zdjęciami."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Nie, dziękuję"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Tak"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Aparat"</string>

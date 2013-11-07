@@ -220,7 +220,6 @@
     <string name="cannot_connect_camera" msgid="955440687597185163">"Não é possível efetuar ligação à câmara."</string>
     <string name="camera_disabled" msgid="8923911090533439312">"Devido a políticas de segurança, a câmara foi desativada."</string>
     <string name="camera_label" msgid="6346560772074764302">"Câmara"</string>
-    <string name="video_camera_label" msgid="2899292505526427293">"Câmara de vídeo"</string>
     <string name="wait" msgid="8600187532323801552">"Aguarde..."</string>
     <string name="no_storage" product="nosdcard" msgid="7335975356349008814">"Monte a memória de armazenamento USB antes de utilizar a câmara."</string>
     <string name="no_storage" product="default" msgid="5137703033746873624">"Insira um cartão SD antes de utilizar a câmara."</string>
@@ -341,7 +340,7 @@
     <string name="effect_backdropper_space" msgid="7935661090723068402">"No espaço"</string>
     <string name="effect_backdropper_sunset" msgid="45198943771777870">"Pôr do Sol"</string>
     <string name="effect_backdropper_gallery" msgid="959158844620991906">"O seu vídeo"</string>
-    <string name="bg_replacement_message" msgid="9184270738916564608">"Vire o seu aparelho para baixo."\n"Saia da vista por alguns momentos."</string>
+    <string name="bg_replacement_message" msgid="9184270738916564608">"Vire o seu aparelho para baixo.\nSaia da vista por alguns momentos."</string>
     <string name="video_snapshot_hint" msgid="18833576851372483">"Toque para tirar uma fotografia durante a gravação."</string>
     <string name="video_recording_started" msgid="4132915454417193503">"A gravação de vídeo foi iniciada."</string>
     <string name="video_recording_stopped" msgid="5086919511555808580">"A gravação de vídeo foi parada."</string>
@@ -364,6 +363,7 @@
     <string name="accessibility_switch_to_video" msgid="4991396355234561505">"Mudar para vídeo"</string>
     <string name="accessibility_switch_to_panorama" msgid="604756878371875836">"Mudar para panorama"</string>
     <string name="accessibility_switch_to_new_panorama" msgid="8116783308051524188">"Mudar para o novo panorama"</string>
+    <string name="accessibility_switch_to_refocus" msgid="4539294619557299903">"Mudar para focar novamente"</string>
     <string name="accessibility_review_cancel" msgid="9070531914908644686">"Comentário cancelado."</string>
     <string name="accessibility_review_ok" msgid="7793302834271343168">"Reveja o que está concluído"</string>
     <string name="accessibility_review_retake" msgid="659300290054705484">"Retomar comentário"</string>
@@ -423,7 +423,7 @@
     <string name="set_duration" msgid="5578035312407161304">"Definir a duração em segundos"</string>
     <string name="count_down_title_text" msgid="4976386810910453266">"Contagem decrescente para tirar uma fotografia"</string>
     <string name="remember_location_title" msgid="9060472929006917810">"Memorizar localizações das fotografias?"</string>
-    <string name="remember_location_prompt" msgid="724592331305808098">"Insira etiquetas nas suas fotografias e vídeos com as localizações onde foram capturados."\n\n"Outras aplicações podem aceder a estas informações juntamente com as suas imagens guardadas."</string>
+    <string name="remember_location_prompt" msgid="724592331305808098">"Insira etiquetas nas suas fotografias e vídeos com as localizações onde foram capturados.\n\nOutras aplicações podem aceder a estas informações juntamente com as suas imagens guardadas."</string>
     <string name="remember_location_no" msgid="7541394381714894896">"Não, obrigado"</string>
     <string name="remember_location_yes" msgid="862884269285964180">"Sim"</string>
     <string name="menu_camera" msgid="3476709832879398998">"Câmara"</string>
