@@ -724,6 +724,10 @@ public class CameraSettings {
         return params.get("face-beautify") != null;
     }
 
+    public static boolean isBeautyModeEnabled(Parameters params) {
+        return isBeautyModeSupported(params) && (Integer.valueOf(params.get("face-beautify")) > 0);
+    }
+
     public static List<String> getSupportedSlowShutter(Parameters params) {
         String p = params.get("slow-shutter-values");
         if (p != null) {
@@ -738,6 +742,11 @@ public class CameraSettings {
         }
     }
 
+    public static boolean isSlowShutterEnabled(Parameters params) {
+        return (getSupportedSlowShutter(params) != null) &&
+                !"slow-shutter-off".equals(params.get("slow-shutter"));
+    }
+
     /**
      * Enable video mode for certain cameras.
      *
@@ -750,6 +759,9 @@ public class CameraSettings {
         }
         if (Util.useHTCCamMode()) {
             params.set("cam-mode", on ? "1" : "0");
+        }
+        if (params.get("oppo-app") != null) {
+            params.set("oppo-app", "1");
         }
     }
 

@@ -574,7 +574,7 @@ public class VideoModule implements CameraModule,
 
         if (!mMediaRecorderRecording) {
             // check for dismissing popup
-            mUI.dismissPopup(true);
+            mUI.dismissPopup();
             return;
         }
 
