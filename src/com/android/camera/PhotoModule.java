@@ -1004,7 +1004,10 @@ public class PhotoModule
 
             mAutoFocusTime = System.currentTimeMillis() - mFocusStartTime;
             Log.v(TAG, "mAutoFocusTime = " + mAutoFocusTime + "ms");
-            setCameraState(IDLE);
+            //don't reset the camera state while capture is in progress
+            //otherwise, it might result in another takepicture
+            if(SNAPSHOT_IN_PROGRESS != mCameraState)
+                setCameraState(IDLE);
             mFocusManager.onAutoFocus(focused, mUI.isShutterPressed());
         }
     }
@@ -1169,24 +1172,29 @@ public class PhotoModule
     }
 
     private void updateSceneMode() {
-        updateSceneDetection();
-        // If scene mode or slow shutter is set, we cannot set flash mode, white balance, and
-        // focus mode, instead, we read it from driver
-        if (!Parameters.SCENE_MODE_AUTO.equals(mSceneMode) ||
-            CameraSettings.isSlowShutterEnabled(mParameters)) {
-            overrideCameraSettings(mParameters.getFlashMode(),
-                    mParameters.getWhiteBalance(), mParameters.getFocusMode());
-        } else {
-            overrideCameraSettings(null, null, null);
+        synchronized (mCameraDevice) {
+            updateSceneDetection();
+            // If scene mode or slow shutter is set, we cannot set flash mode, white balance, and
+            // focus mode, instead, we read it from driver
+            if (!Parameters.SCENE_MODE_AUTO.equals(mSceneMode) ||
+                CameraSettings.isSlowShutterEnabled(mParameters)) {
+                overrideCameraSettings(mParameters.getFlashMode(),
+                        mParameters.getWhiteBalance(), mParameters.getFocusMode(),
+                        mParameters.getColorEffect());
+            } else {
+                overrideCameraSettings(null, null, null, null);
+            }
         }
     }
 
     private void overrideCameraSettings(final String flashMode,
-            final String whiteBalance, final String focusMode) {
+            final String whiteBalance, final String focusMode,
+            final String colorEffect) {
         mUI.overrideSettings(
                 CameraSettings.KEY_FLASH_MODE, flashMode,
                 CameraSettings.KEY_WHITE_BALANCE, whiteBalance,
-                CameraSettings.KEY_FOCUS_MODE, focusMode);
+                CameraSettings.KEY_FOCUS_MODE, focusMode,
+                CameraSettings.KEY_COLOR_EFFECT, colorEffect);
         if (Util.needSamsungHDRFormat()){
             if (mSceneMode == Util.SCENE_MODE_HDR) {
                 mUI.overrideSettings(CameraSettings.KEY_EXPOSURE,
@@ -2157,23 +2165,25 @@ public class PhotoModule
     // the subsets actually need updating. The PREFERENCE set needs extra
     // locking because the preference can be changed from GLThread as well.
     private void setCameraParameters(int updateSet) {
-        if ((updateSet & UPDATE_PARAM_INITIALIZE) != 0) {
-            updateCameraParametersInitialize();
+        synchronized (mCameraDevice) {
+            if ((updateSet & UPDATE_PARAM_INITIALIZE) != 0) {
+                updateCameraParametersInitialize();
 
-            // Set camera mode
-            CameraSettings.setVideoMode(mParameters, false);
+                // Set camera mode
+                CameraSettings.setVideoMode(mParameters, false);
+            }
+
+            if ((updateSet & UPDATE_PARAM_ZOOM) != 0) {
+                updateCameraParametersZoom();
+            }
+
+            if ((updateSet & UPDATE_PARAM_PREFERENCE) != 0) {
+                updateCameraParametersPreference();
+            }
+
+            Util.dumpParameters(mParameters);
+            mCameraDevice.setParameters(mParameters);
         }
-
-        if ((updateSet & UPDATE_PARAM_ZOOM) != 0) {
-            updateCameraParametersZoom();
-        }
-
-        if ((updateSet & UPDATE_PARAM_PREFERENCE) != 0) {
-            updateCameraParametersPreference();
-        }
-
-        Util.dumpParameters(mParameters);
-        mCameraDevice.setParameters(mParameters);
     }
 
     // If the Camera is idle, update the parameters immediately, otherwise
