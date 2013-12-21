@@ -69,7 +69,13 @@
                 <data android:mimeType="video/3gpp2" />
                 <data android:mimeType="video/webm" />
                 <data android:mimeType="video/avi" />
+                <data android:mimeType="video/mp2ts" />
+                <data android:mimeType="video/x-ms-asf" />
+                <data android:mimeType="video/x-ms-wmv" />
+                <data android:mimeType="video/x-matroska" />
                 <data android:mimeType="application/sdp" />
+                <data android:mimeType="video/x-msvideo"/>
+                <data android:mimeType="video/divx" />
              </intent-filter>
              <intent-filter>
                 <!-- HTTP live support -->
