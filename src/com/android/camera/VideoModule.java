@@ -100,7 +100,7 @@ public class VideoModule implements CameraModule,
     private static final int HIDE_SURFACE_VIEW = 10;
     private static final int CAPTURE_ANIMATION_DONE = 11;
     private static final int ENABLE_PAUSE_BUTTON = 13;
-
+    private static final int TRUE_VIEW = 15;
     private static final int SCREEN_DELAY = 2 * 60 * 1000;
 
     private static final long SHUTTER_BUTTON_TIMEOUT = 500L; // 500ms
