@@ -83,7 +83,7 @@ public class CropActivity extends Activity {
      * sure the intent stays below 1MB.We should consider just returning a byte
      * array instead of a Bitmap instance to avoid overhead.
      */
-    public static final int MAX_BMAP_IN_INTENT = 750000;
+    public static final int MAX_BMAP_IN_INTENT = 520000;
 
     // Flags
     private static final int DO_SET_WALLPAPER = 1;
@@ -347,6 +347,8 @@ public class CropActivity extends Activity {
         if (success) {
             setResult(RESULT_OK, intent);
         } else {
+            Toast.makeText(CropActivity.this, R.string.save_error,
+                    Toast.LENGTH_LONG).show();
             setResult(RESULT_CANCELED, intent);
         }
         done();
@@ -400,16 +402,8 @@ public class CropActivity extends Activity {
             mOutputX = outputX;
             mOutputY = outputY;
 
-            if ((flags & DO_EXTRA_OUTPUT) != 0) {
-                if (mOutUri == null) {
-                    Log.w(LOGTAG, "cannot write file, no output URI given");
-                } else {
-                    try {
-                        mOutStream = getContentResolver().openOutputStream(mOutUri);
-                    } catch (FileNotFoundException e) {
-                        Log.w(LOGTAG, "cannot write file: " + mOutUri.toString(), e);
-                    }
-                }
+            if ((flags & DO_EXTRA_OUTPUT) != 0 && mOutUri == null) {
+                Log.w(LOGTAG, "cannot write file, no output URI given");
             }
 
             if ((flags & (DO_EXTRA_OUTPUT | DO_SET_WALLPAPER)) != 0) {
@@ -476,6 +470,14 @@ public class CropActivity extends Activity {
                     failure = true;
                     return false;
                 }
+                if (roundedTrueCrop.right > mOrig.right) {
+                    roundedTrueCrop.set(roundedTrueCrop.left, roundedTrueCrop.top,
+                            (int) mOrig.right, roundedTrueCrop.bottom);
+                }
+                if (roundedTrueCrop.bottom > mOrig.bottom) {
+                    roundedTrueCrop.set(roundedTrueCrop.left, roundedTrueCrop.top,
+                            roundedTrueCrop.right, (int) mOrig.bottom);
+                }
 
                 // Attempt to open a region decoder
                 BitmapRegionDecoder decoder = null;
@@ -502,9 +504,13 @@ public class CropActivity extends Activity {
                         fullSize = BitmapFactory.decodeStream(mInStream);
                     }
                     if (fullSize != null) {
-                        crop = Bitmap.createBitmap(fullSize, roundedTrueCrop.left,
-                                roundedTrueCrop.top, roundedTrueCrop.width(),
-                                roundedTrueCrop.height());
+                        try {
+                            crop = Bitmap.createBitmap(fullSize, roundedTrueCrop.left,
+                                    roundedTrueCrop.top, roundedTrueCrop.width(),
+                                    roundedTrueCrop.height());
+                        } catch (java.lang.OutOfMemoryError err) {
+                            Log.e(LOGTAG, "failed to create bitmap:" + err );
+                        }
                     }
                 }
 
@@ -542,7 +548,14 @@ public class CropActivity extends Activity {
                 // Get output compression format
                 CompressFormat cf =
                         convertExtensionToCompressFormat(getFileExtension(mOutputFormat));
-
+                Utils.closeSilently(mInStream);
+                if (mOutUri != null) {
+                    try {
+                        mOutStream = getContentResolver().openOutputStream(mOutUri);
+                    } catch (FileNotFoundException e) {
+                        Log.w(LOGTAG, "cannot write file: " + mOutUri.toString(), e);
+                    }
+                }
                 // If we only need to output to a URI, compress straight to file
                 if (mFlags == DO_EXTRA_OUTPUT) {
                     if (mOutStream == null
@@ -604,7 +617,7 @@ public class CropActivity extends Activity {
         @Override
         protected void onPostExecute(Boolean result) {
             Utils.closeSilently(mOutStream);
-            Utils.closeSilently(mInStream);
+            // Utils.closeSilently(mInStream);
             doneBitmapIO(result.booleanValue(), mResultIntent);
         }
 

@@ -543,6 +543,13 @@ public class AlbumSetPage extends ActivityState implements
             inflater.inflate(R.menu.albumset, menu);
             boolean wasShowingClusterMenu = mShowClusterMenu;
             mShowClusterMenu = !inAlbum;
+            if (mShowClusterMenu != wasShowingClusterMenu) {
+                if (mShowClusterMenu) {
+                    mActionBar.enableClusterMenu(mSelectedAction, this);
+                } else {
+                    mActionBar.disableClusterMenu(true);
+                }
+            }
             boolean selectAlbums = !inAlbum &&
                     mActionBar.getClusterTypeAction() == FilterUtils.CLUSTER_BY_ALBUM;
             MenuItem selectItem = menu.findItem(R.id.action_select);
@@ -562,13 +569,6 @@ public class AlbumSetPage extends ActivityState implements
 
             mActionBar.setTitle(mTitle);
             mActionBar.setSubtitle(mSubtitle);
-            if (mShowClusterMenu != wasShowingClusterMenu) {
-                if (mShowClusterMenu) {
-                    mActionBar.enableClusterMenu(mSelectedAction, this);
-                } else {
-                    mActionBar.disableClusterMenu(true);
-                }
-            }
         }
         return true;
     }
@@ -663,6 +663,11 @@ public class AlbumSetPage extends ActivityState implements
                 break;
             }
             case SelectionManager.SELECT_ALL_MODE: {
+                mActionModeHandler.updateSupportedOperation();
+                mRootPane.invalidate();
+                break;
+            }
+            case SelectionManager.DESELECT_ALL_MODE: {
                 mActionModeHandler.updateSupportedOperation();
                 mRootPane.invalidate();
                 break;
