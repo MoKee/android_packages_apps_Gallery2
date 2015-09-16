@@ -35,6 +35,7 @@ import android.content.res.Configuration;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.database.Cursor;
+import android.drm.DrmHelper;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.AudioManager;
@@ -239,6 +240,16 @@ public class MovieActivity extends Activity {
                 initEffects(mp.getAudioSessionId());
             }
         });
+
+        // DRM validation
+        Uri original = intent.getData();
+        String mimeType = intent.getType();
+        String filepath = DrmHelper.getFilePath(this, original);
+        if (DrmHelper.isDrmFile(filepath)) {
+            if (!DrmHelper.validateLicense(this, filepath, mimeType)) {
+                finish();
+            }
+        }
     }
 
     private void setActionBarLogoFromIntent(Intent intent) {
