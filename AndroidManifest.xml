@@ -61,6 +61,7 @@
                 android:protectionLevel="signature" />
 
     <application android:icon="@mipmap/ic_launcher_gallery" android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_gallery_round"
             android:name="com.android.gallery3d.app.GalleryAppImpl"
             android:logo="@mipmap/ic_launcher_gallery"
             android:hardwareAccelerated="true"
@@ -203,6 +204,7 @@
              are preserved. -->
         <activity android:name="com.android.camera.CameraActivity"
             android:icon="@mipmap/ic_launcher_camera"
+            android:roundIcon="@mipmap/ic_launcher_camera_round"
             android:label="@string/camera_label"
             android:taskAffinity="com.android.camera.CameraActivity"
             android:theme="@style/android:Theme.NoDisplay" />
