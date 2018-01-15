@@ -85,5 +85,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="drm_license_info">ข้อมูลสิทธิ์การใช้ DRM</string>
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
+  <string name="albums_title">อัลบั้ม</string>
   <!-- Videos screen title -->
+  <string name="truescanner_normal">ปกติ</string>
+  <string name="trim_video_exit_title">คุณต้องการบันทึกก่อนที่จะออกหรือไม่</string>
 </resources>

@@ -84,5 +84,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="fail_trim">بەداخەوە، ئەم پەڕگە ڤیدیۆیییە ناتوانرێت ببڕدرێت</string>
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
+  <string name="albums_title">ئەلبوم</string>
   <!-- Videos screen title -->
 </resources>

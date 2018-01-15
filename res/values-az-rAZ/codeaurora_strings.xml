@@ -37,7 +37,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="setp_option_six_second">6 saniyə</string>
   <string name="loop">"Dövr"</string>
   <string name="single">"Tək"</string>
-  <string name="stereo">"Stereo"</string>
   <string name="speaker_on">Səsucaldan AÇIQ</string>
   <string name="speaker_off">Səsucaldan QAPALI</string>
   <string name="speaker_need_headset">Bu özəllikdən istifadə etmək üçün qulaqlıq taxın.</string>
@@ -85,5 +84,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="drm_license_info">DRM lisenziya məlumatı</string>
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
+  <string name="albums_title">Albomlar</string>
   <!-- Videos screen title -->
+  <string name="trim_video_exit_title">Çıxmadan öncə yadda saxlamaq istəyirsiniz mi?</string>
 </resources>

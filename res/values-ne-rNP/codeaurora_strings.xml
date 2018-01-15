@@ -40,5 +40,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- The tips of trimming video -->
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
+  <string name="albums_title">एल्बमहरू</string>
   <!-- Videos screen title -->
+  <string name="trim_video_exit_title">के तपाईँ निस्कनुभन्दा पहिले बचत गर्न चाहनु हुन्छ?</string>
 </resources>

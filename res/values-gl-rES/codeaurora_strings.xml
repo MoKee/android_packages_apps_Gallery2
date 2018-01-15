@@ -104,9 +104,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_Soften">Suavizar</string>
   <string name="text_makeup_trimface">Retoque facial</string>
   <string name="text_makeup_bigeye">Ollos grandes</string>
-  <string name="truescanner_normal">Normal</string>
   <string name="truescanner_white">Encerado branco</string>
-  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Eliminar reflexos</string>
   <string name="hazebuster_acts">Axuste de brétema</string>
   <string name="seestraight_acts">Ver directamente</string>

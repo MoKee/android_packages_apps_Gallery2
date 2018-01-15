@@ -28,7 +28,6 @@
   <!--  Text for to display on a download failure [CHAR LIMIT=NONE] -->
   <string name="download_failure">Konnt d\'Foto net eroflueden. D\'Netzwierk ass net disponibel.</string>
   <!--  Text to label an image as "original" [CHAR LIMIT=20] -->
-  <string name="original">Original</string>
   <!--  Text for filters that apply a border to a picture [CHAR LIMIT=20] -->
   <string name="borders" msgid="4461692156695893616">Rumm</string>
   <!-- Text for the custom border filter [CHAR LIMIT=20] -->
@@ -56,7 +55,6 @@
   <!--  Text for size value tag [CHAR LIMIT=30] -->
   <string name="size">Gréisst</string>
   <!--  Text for size x [CHAR LIMIT=1] -->
-  <string name="x">x</string>
   <!--  Name for the overflow menu item for settings [CHAR LIMIT=20] -->
   <string name="menu_settings">Astellungen</string>
   <!--  Exit Dialog -->
@@ -74,7 +72,6 @@
   <string name="history">Historique</string>
   <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
   <!--  Text for the original image[CHAR LIMIT=20]-->
-  <string name="history_original">@string/original</string>
   <!--  Image state panel -->
   <!--  Text for the image state panel title [CHAR LIMIT=50] -->
   <string name="imageState">Applizéiert Effekter</string>
@@ -88,19 +85,12 @@
   <!--  Label for aspect [CHAR LIMIT=15] -->
   <string name="aspect">Aspekt</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
-  <string name="aspect1to1_effect">1:1</string>
   <!--  Label for the aspect 4:3 effect [CHAR LIMIT=15] -->
-  <string name="aspect4to3_effect">4:3</string>
   <!--  Label for the aspect 3:4 effect [CHAR LIMIT=15] -->
-  <string name="aspect3to4_effect">3:4</string>
   <!--  Label for the aspect 4:7 effect [CHAR LIMIT=15] -->
-  <string name="aspect4to6_effect">4:6</string>
   <!--  Label for the aspect 5:7 effect [CHAR LIMIT=15] -->
-  <string name="aspect5to7_effect">5:7</string>
   <!--  Label for the aspect 7:5 effect [CHAR LIMIT=15] -->
-  <string name="aspect7to5_effect">7:5</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
-  <string name="aspect9to16_effect">16:9</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <!-- Label for when the aspect ratio is fixed to a value [CHAR LIMIT=15] -->
@@ -177,6 +167,7 @@
   <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
   <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
   <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="bw">S/W</string>
   <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
   <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
   <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
@@ -200,18 +191,15 @@
   <!--  Label for the green control for per channel saturation effect [CHAR LIMIT=20] -->
   <string name="editor_chan_sat_green">Gréng</string>
   <!--  Label for the cyan control for per channel saturation effect [CHAR LIMIT=20] -->
-  <string name="editor_chan_sat_cyan">Cyan</string>
   <!--  Label for the blue control for per channel saturation effect [CHAR LIMIT=20] -->
   <string name="editor_chan_sat_blue">Blo</string>
   <!--  Label for the Magenta control for per channel saturation effect [CHAR LIMIT=20] -->
-  <string name="editor_chan_sat_magenta">Magenta</string>
   <!--  Label for the image graduated filter effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_style">Stil</string>
   <!-- new virtual graduated neutral density filter  [CHAR LIMIT=20] -->
   <string name="editor_grad_new">nei</string>
   <!--  Labels for the curves tool -->
   <!--  Label for the curves tool, all channels (RGB) [CHAR LIMIT=3] -->
-  <string name="curves_channel_rgb">RGB</string>
   <!--  Label for the curves tool, Red color channel [CHAR LIMIT=14] -->
   <string name="curves_channel_red">Rout</string>
   <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->
@@ -253,9 +241,7 @@
   <!--  The title for draw size [CHAR LIMIT=50] -->
   <string name="draw_size_title">Gréisst auswielen</string>
   <!--  The accept the draw size [CHAR LIMIT=20] -->
-  <string name="draw_size_accept">OK</string>
   <!--  Name used to indicate the original image in the state panel [CHAR LIMIT=20] -->
-  <string name="state_panel_original">Original</string>
   <!--  Name used to indicate the final image in the state panel [CHAR LIMIT=20] -->
   <string name="state_panel_result">Resultat</string>
   <!-- Label for the notification [CHAR LIMIT=50] -->
@@ -285,7 +271,6 @@
   <!-- Label for the add button in the versions panel [CHAR LIMIT=30] -->
   <string name="filtershow_add_button_versions">Versioun</string>
   <!-- Label for the Original version in the versions panel [CHAR LIMIT=30] -->
-  <string name="filtershow_version_original">Original</string>
   <!-- Label for the Current version in the versions panel [CHAR LIMIT=30] -->
   <string name="filtershow_version_current">Aktuell</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
@@ -295,7 +280,6 @@
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_focal_length">Brennwäit</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
-  <string name="filtershow_exif_iso">ISO</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_subject_distance">Distanz zum Sujet</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
@@ -309,4 +293,7 @@
   <string name="color">Faarf</string>
   <!--Filtershow dialog -->
   <string name="filtershow_preset_title">Personaliséiert</string>
+  <string name="watermark_location">Standuert</string>
+  <string name="watermark_time">Zäit</string>
+  <!--Filtershow Toast -->
 </resources>

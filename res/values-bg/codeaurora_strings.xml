@@ -106,9 +106,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_bigeye">Големи очи</string>
   <string name="truescanner_normal">Нормално</string>
   <string name="truescanner_white">Бяла дъска</string>
-  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Премахване на отблясъци</string>
-  <string name="hazebuster_acts">Haze Buster</string>
   <string name="seestraight_acts">Гледай направо</string>
   <string name="seestraight_input_image_is_small">Изображението е прекалено малко за обработка.</string>
   <string name="seestraight_process_fail">Грешка при обработката на изображението.</string>

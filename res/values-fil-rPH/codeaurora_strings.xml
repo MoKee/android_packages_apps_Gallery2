@@ -31,14 +31,88 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Strings for step option settins -->
+  <string name="setp_option_name">Ang hakbang</string>
+  <string name="step_option_desc">I-customize ang mabilis na pag forward/rewind na hakbang</string>
+  <string name="setp_option_three_second">Naka 3 segundo</string>
+  <string name="setp_option_six_second">naka 6 segundo</string>
+  <string name="loop">"Naka loop"</string>
+  <string name="single">"Naka single"</string>
+  <string name="stereo">"Naka stereo"</string>
+  <string name="speaker_on">Ang speaker ay naka-ON</string>
+  <string name="speaker_off">Ang Speaker ay naka-OFF</string>
+  <string name="speaker_need_headset">Magplug-in sa headphone para gamitin ang feature na ito.</string>
+  <string name="single_track">"Naka single track"</string>
+  <string name="input_url">"Magpasok ng URL"</string>
+  <string name="streaming_settings">"Ang settings ng streaming"</string>
+  <string name="next">"Susunod"</string>
+  <string name="previous">"Nakaraan"</string>
+  <string name="buffer_size">Laki ng buffer</string>
+  <string name="apn">Ginustong APN</string>
+  <string name="rtp_min_port">Ang min port</string>
+  <string name="rtp_max_port">Ang max port</string>
+  <string name="set_rtp_min_port">I-set ang min port</string>
+  <string name="set_rtp_max_port">I-set ang max port</string>
+  <string name="set_buffer_size">Laki ng buffer ng itinakda</string>
+  <string name="set_apn">Piliin ang gagamiting APN</string>
+  <string name="setting">Mga setting</string>
+  <string name="server_timeout_title">"Naka server timeout"</string>
+  <string name="server_timeout_message">"Magreconnect sa server para mag-play ng video?"</string>
+  <string name="videoview_error_text_cannot_connect_retry">"Ang Konektion ay bigo, mag try uli na mag-rekonek sa %1$d\u2026"</string>
+  <string name="media_controller_live">Naka live</string>
+  <string name="media_controller_playing">Naka play</string>
+  <string name="media_controller_connecting">Komukonekta\u2026</string>
+  <string name="bookmark_add">"Magdagdag ng bookmark"</string>
+  <string name="bookmark_display">"Ipakita ang mga bookmark"</string>
+  <string name="bookmark_empty">"Walang mga bookmark"</string>
+  <string name="bookmark_exist">"Umiiral na ang bookmark"</string>
+  <string name="bookmark_add_success">"Nai-dagdag ang bookmark"</string>
+  <string name="bookmark_list">"Mga Bookmark"</string>
+  <string name="bookmark_title">"Pamagat"</string>
+  <string name="bookmark_location">"Lokasyon"</string>
+  <string name="delete_all">"Tanggalin lahat"</string>
+  <string name="default_title">"Naka default na paksa"</string>
   <!-- A label describing to link website [CHAR LIMIT=30] -->
+  <string name="more_image">Karagdagang mga imahe</string>
   <!-- Toast if the muted video is not supported. [CHAR LIMIT=80] -->
+  <string name="mute_nosupport">Hindi pwedeng mapipi : ang video ay hindi suportado</string>
   <!-- The message is shown in toast when click showOnMap Menu and there is no map app -->
+  <string name="map_activity_not_found_err">Walang mapa ang app na naka-install para maipakita ang lokasyon.</string>
+  <plurals name="number_of_videos">
+    <item quantity="one">%1$d na video</item>
+    <item quantity="other">%1$d na mga video</item>
+  </plurals>
   <!-- Toast message for share items -->
+  <string name="cannot_share_items">Ang pinaka-max na mapili na mga item para ito ay mabahagi ay 300</string>
+  <string name="share_dialogue_title">Ibahagi sa pamamagitan ng</string>
   <!-- When grouping photos by peoples, the label used for photos that don't
          have people information in them [CHAR LIMIT=20]-->
+  <string name="no_faces">Walang mga mukha</string>
   <!-- The tips of trimming video -->
+  <string name="fail_trim">Pasensya na, ang video file ay hindi pwedeng ma trim</string>
+  <string name="can_not_trim">Ang mp4 at 3gp lamang na mga file ay pwedeng ma trim</string>
+  <string name="drm_license_info">Ang DRM license info</string>
   <!-- Timeline screen title -->
+  <string name="timeline_title">Ang timeline</string>
   <!-- Albums screen title -->
+  <string name="albums_title">Mga albums</string>
   <!-- Videos screen title -->
+  <string name="videos_title">Mga video</string>
+  <string name="action_viewtype_list">Ang listahan ng makikita</string>
+  <string name="tvEmptyAlbum">Walang mga larawan na matatagpuan</string>
+  <string name="tvEmptyVideos">Walang video na matatagpuan</string>
+  <string name="text_makeup_whiten">Ang pagpapaputi</string>
+  <string name="text_makeup_Soften">Ang pagpapalambot</string>
+  <string name="text_makeup_trimface">Ang Trimface</string>
+  <string name="text_makeup_bigeye">Ang Bigeye</string>
+  <string name="truescanner_normal">Normal</string>
+  <string name="truescanner_white">Ang whiteboard</string>
+  <string name="truescanner">TrueScanner</string>
+  <string name="truescanner_remove_glare">Magtanggap ng Glare</string>
+  <string name="hazebuster_acts">Ang Haze Buster</string>
+  <string name="seestraight_acts">Tingnan ng Straight</string>
+  <string name="seestraight_input_image_is_small">Magpasok ng imahe ay napakaliit para maproseso.</string>
+  <string name="seestraight_process_fail">Hindi maproseso ang larawan.</string>
+  <string name="trim_video_exit_title">Balewalain ang mga pagbabago?</string>
+  <string name="trim_video_exit_msg">Balewalain ang mga pagbabagong nagawa sa video na ito?</string>
+  <string name="trim_video_exit_discard">Balewalain</string>
 </resources>

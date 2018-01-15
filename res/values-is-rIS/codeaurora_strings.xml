@@ -41,4 +41,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
   <!-- Videos screen title -->
+  <string name="trim_video_exit_title">Viltu vista áður en þú hættir?</string>
 </resources>

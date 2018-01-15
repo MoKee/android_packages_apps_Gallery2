@@ -102,11 +102,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="tvEmptyVideos">Ez da bideorik aurkitu</string>
   <string name="text_makeup_whiten">Zuritu</string>
   <string name="text_makeup_Soften">Xamurtu</string>
-  <string name="text_makeup_trimface">Trimface</string>
-  <string name="text_makeup_bigeye">Bigeye</string>
   <string name="truescanner_normal">Arrunta</string>
   <string name="truescanner_white">Arbela zuria</string>
-  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Kendu dirdira</string>
   <string name="hazebuster_acts">Laino kentzailea</string>
   <string name="seestraight_acts">Ikusi garbi</string>
