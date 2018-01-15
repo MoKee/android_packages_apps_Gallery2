@@ -58,7 +58,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="server_timeout_title">"Time-out van de server"</string>
   <string name="server_timeout_message">"Opnieuw verbinding maken met de server om de video af te spelen?"</string>
   <string name="videoview_error_text_cannot_connect_retry">"Verbinding mislukt, probeert opnieuw verbinding te maken met %1$d\u2026"</string>
-  <string name="media_controller_live">Live</string>
+  <string name="media_controller_live">Rechtstreeks
+</string>
   <string name="media_controller_playing">Afspelen</string>
   <string name="media_controller_connecting">Verbinding maken\u2026</string>
   <string name="bookmark_add">"Favoriet toevoegen"</string>
@@ -105,8 +106,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_trimface">Gezicht bijwerken</string>
   <string name="text_makeup_bigeye">Grote ogen</string>
   <string name="truescanner_normal">Normaal</string>
-  <string name="truescanner_white">Whiteboard</string>
-  <string name="truescanner">TrueScanner</string>
+  <string name="truescanner_white">Magneetbord</string>
+  <string name="truescanner">Betrouwbare inlezer</string>
   <string name="truescanner_remove_glare">Reflecties verwijderen</string>
   <string name="hazebuster_acts">Waas verwijderen</string>
   <string name="seestraight_acts">Rechtuit kijken</string>

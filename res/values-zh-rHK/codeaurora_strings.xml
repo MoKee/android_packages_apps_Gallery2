@@ -33,6 +33,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Strings for step option settins -->
   <string name="setp_option_name">步驟</string>
   <string name="step_option_desc">自訂快進/後退步驟</string>
+  <string name="setp_option_three_second">3 秒</string>
   <string name="setp_option_six_second">6 秒</string>
   <string name="loop">"循環"</string>
   <string name="single">"單聲道"</string>
@@ -55,6 +56,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="set_apn">選擇首選 APN</string>
   <string name="setting">設定</string>
   <string name="server_timeout_title">"伺服器逾時"</string>
+  <string name="server_timeout_message">"重新連線至伺服器並繼續播放影片嗎？"</string>
   <string name="videoview_error_text_cannot_connect_retry">"連綫失敗，嘗試重新連綫至 %1$d\u2026"</string>
   <string name="media_controller_live">直播</string>
   <string name="media_controller_playing">正在播放</string>
@@ -75,12 +77,41 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="mute_nosupport">無法靜音：影片不支援</string>
   <!-- The message is shown in toast when click showOnMap Menu and there is no map app -->
   <string name="map_activity_not_found_err">沒有安裝地圖應用程式供顯示位置。</string>
+  <plurals name="number_of_videos">
+    <item quantity="other">%1$d 個影片</item>
+  </plurals>
   <!-- Toast message for share items -->
+  <string name="cannot_share_items">分享的最大選取項目為 300</string>
+  <string name="share_dialogue_title">分享通過</string>
   <!-- When grouping photos by peoples, the label used for photos that don't
          have people information in them [CHAR LIMIT=20]-->
+  <string name="no_faces">無人物資訊</string>
   <!-- The tips of trimming video -->
   <string name="fail_trim">抱歉，此影片檔無法被修剪</string>
+  <string name="can_not_trim">只有 mp4 和 3gp 檔案才可修剪</string>
+  <string name="drm_license_info">DRM 許可資訊</string>
   <!-- Timeline screen title -->
+  <string name="timeline_title">時間軸</string>
   <!-- Albums screen title -->
+  <string name="albums_title">相簿</string>
   <!-- Videos screen title -->
+  <string name="videos_title">影片</string>
+  <string name="action_viewtype_list">清單檢視</string>
+  <string name="tvEmptyAlbum">沒有圖片</string>
+  <string name="tvEmptyVideos">沒有影片</string>
+  <string name="text_makeup_whiten">美白</string>
+  <string name="text_makeup_Soften">柔和</string>
+  <string name="text_makeup_trimface">修剪臉部</string>
+  <string name="text_makeup_bigeye">大眼睛</string>
+  <string name="truescanner_normal">正常</string>
+  <string name="truescanner_white">白板</string>
+  <string name="truescanner">真實掃描</string>
+  <string name="truescanner_remove_glare">刪除眩光</string>
+  <string name="hazebuster_acts">霧霾剋星</string>
+  <string name="seestraight_acts">參考直線</string>
+  <string name="seestraight_input_image_is_small">輸入圖片太小，無法處理。</string>
+  <string name="seestraight_process_fail">無法處理圖片。</string>
+  <string name="trim_video_exit_title">您要在結束前儲存變更嗎？</string>
+  <string name="trim_video_exit_msg">捨棄對此影片所做的變更？</string>
+  <string name="trim_video_exit_discard">捨棄</string>
 </resources>

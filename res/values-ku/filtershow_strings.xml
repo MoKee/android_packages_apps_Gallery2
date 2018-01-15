@@ -55,7 +55,6 @@
   <!--  Text for size value tag [CHAR LIMIT=30] -->
   <string name="size">قه‌باره‌</string>
   <!--  Text for size x [CHAR LIMIT=1] -->
-  <string name="x">x</string>
   <!--  Name for the overflow menu item for settings [CHAR LIMIT=20] -->
   <string name="menu_settings">ڕێکخستنه‌کان</string>
   <!--  Exit Dialog -->
@@ -86,19 +85,12 @@
   <!--  Label for aspect [CHAR LIMIT=15] -->
   <string name="aspect">لا</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
-  <string name="aspect1to1_effect">1:1</string>
   <!--  Label for the aspect 4:3 effect [CHAR LIMIT=15] -->
-  <string name="aspect4to3_effect">4:3</string>
   <!--  Label for the aspect 3:4 effect [CHAR LIMIT=15] -->
-  <string name="aspect3to4_effect">3:4</string>
   <!--  Label for the aspect 4:7 effect [CHAR LIMIT=15] -->
-  <string name="aspect4to6_effect">4:6</string>
   <!--  Label for the aspect 5:7 effect [CHAR LIMIT=15] -->
-  <string name="aspect5to7_effect">5:7</string>
   <!--  Label for the aspect 7:5 effect [CHAR LIMIT=15] -->
-  <string name="aspect7to5_effect">7:5</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
-  <string name="aspect9to16_effect">16:9</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <!-- Label for when the aspect ratio is fixed to a value [CHAR LIMIT=15] -->
@@ -209,7 +201,6 @@
   <string name="editor_grad_new">نوێ</string>
   <!--  Labels for the curves tool -->
   <!--  Label for the curves tool, all channels (RGB) [CHAR LIMIT=3] -->
-  <string name="curves_channel_rgb">RGB</string>
   <!--  Label for the curves tool, Red color channel [CHAR LIMIT=14] -->
   <string name="curves_channel_red">سوور</string>
   <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->
@@ -293,7 +284,6 @@
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_focal_length">درێژیی تیشکۆیی</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
-  <string name="filtershow_exif_iso">ISO</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_subject_distance">ماوه‌ی دێڕ</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
@@ -307,4 +297,7 @@
   <string name="color">ڕەنگ</string>
   <!--Filtershow dialog -->
   <string name="filtershow_preset_title">تایبەت بە خۆ</string>
+  <string name="watermark_location">شوێن</string>
+  <string name="watermark_time">کات</string>
+  <!--Filtershow Toast -->
 </resources>

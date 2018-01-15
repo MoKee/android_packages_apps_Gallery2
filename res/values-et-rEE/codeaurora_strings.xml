@@ -37,7 +37,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="setp_option_six_second">6 sekundit</string>
   <string name="loop">"Kordamine"</string>
   <string name="single">"Üksik"</string>
-  <string name="stereo">"Stereo"</string>
   <string name="speaker_on">Kõlar sees</string>
   <string name="speaker_off">Kõlar väljas</string>
   <string name="speaker_need_headset">Ühendage kõrvaklapid et seda funktsiooni kasutada.</string>
@@ -85,5 +84,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="drm_license_info">DRM litsensi info</string>
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
+  <string name="albums_title">Albumid</string>
   <!-- Videos screen title -->
+  <string name="trim_video_exit_title">Kas soovite enne väljumist salvestada?</string>
 </resources>

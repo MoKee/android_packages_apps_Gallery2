@@ -48,8 +48,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="previous">"Poprzedni"</string>
   <string name="buffer_size">Rozmiar bufora</string>
   <string name="apn">Preferowany APN</string>
-  <string name="rtp_min_port">Min port</string>
-  <string name="rtp_max_port">Max port</string>
+  <string name="rtp_min_port">Minimalny port</string>
+  <string name="rtp_max_port">Maksymalny port</string>
   <string name="set_rtp_min_port">Ustaw min port</string>
   <string name="set_rtp_max_port">Ustaw max port</string>
   <string name="set_buffer_size">Ustaw rozmiar bufora</string>
@@ -103,9 +103,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="tvEmptyVideos">Nie znaleziono filmów</string>
   <string name="text_makeup_whiten">Wybiel</string>
   <string name="text_makeup_Soften">Zmiękczenie</string>
+  <string name="text_makeup_trimface">Przycinanie twarzy</string>
+  <string name="text_makeup_bigeye">Wielkie oczy</string>
   <string name="truescanner_normal">Normalny</string>
   <string name="truescanner_white">Biała tablica</string>
-  <string name="truescanner">TrueScanner</string>
+  <string name="truescanner">Wierny skaner</string>
   <string name="truescanner_remove_glare">Usuń odblask</string>
   <string name="hazebuster_acts">Zredukuj efekt mgły</string>
   <string name="seestraight_acts">Patrz prosto</string>

@@ -85,11 +85,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="tvEmptyVideos">Nun s\'alcontraron vídeos</string>
   <string name="text_makeup_whiten">Ablanquiao</string>
   <string name="text_makeup_Soften">Suavizao</string>
-  <string name="text_makeup_trimface">Trimface</string>
   <string name="text_makeup_bigeye">Güeyos grandes</string>
-  <string name="truescanner_normal">Normal</string>
   <string name="truescanner_white">Pizarra</string>
-  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Desaniciar reflexos</string>
   <string name="hazebuster_acts">Anti-nublina</string>
   <string name="seestraight_acts">Ver direutamente</string>

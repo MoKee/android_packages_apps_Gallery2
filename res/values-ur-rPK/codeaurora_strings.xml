@@ -41,4 +41,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
   <!-- Videos screen title -->
+  <string name="trim_video_exit_title">کیا آپ باہر نکلنے سے پہلے محفوظ کرنا چاہتے ہیں؟</string>
 </resources>

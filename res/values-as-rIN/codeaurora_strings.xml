@@ -86,4 +86,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
   <!-- Videos screen title -->
+  <string name="truescanner_normal">সাধাৰণ</string>
 </resources>

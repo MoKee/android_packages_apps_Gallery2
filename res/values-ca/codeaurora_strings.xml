@@ -104,9 +104,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_Soften">Suavitza</string>
   <string name="text_makeup_trimface">Retoc facial</string>
   <string name="text_makeup_bigeye">Ulls grans</string>
-  <string name="truescanner_normal">Normal</string>
   <string name="truescanner_white">Pissarra</string>
-  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Elimina reflexos</string>
   <string name="hazebuster_acts">Anti-calitja</string>
   <string name="seestraight_acts">Veure directament</string>

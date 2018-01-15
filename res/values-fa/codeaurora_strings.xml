@@ -85,5 +85,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="drm_license_info">اطلاعات مجوز DRM</string>
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
+  <string name="albums_title">آلبوم‌ها</string>
   <!-- Videos screen title -->
+  <string name="videos_title">ویدئوها</string>
+  <string name="trim_video_exit_title">آیا می‌خواهید پیش از خروج تغییرات ذخیره شود؟</string>
 </resources>

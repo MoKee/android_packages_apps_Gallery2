@@ -107,7 +107,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_bigeye">Велике очи</string>
   <string name="truescanner_normal">Нормално</string>
   <string name="truescanner_white">Бела табла</string>
-  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Уклони одсјај</string>
   <string name="hazebuster_acts">Уклони замагљеност</string>
   <string name="seestraight_acts">Гледај право</string>

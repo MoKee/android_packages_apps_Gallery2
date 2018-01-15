@@ -48,8 +48,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="previous">"Edellinen"</string>
   <string name="buffer_size">Puskurin koko</string>
   <string name="apn">Ensisijainen APN</string>
-  <string name="rtp_min_port">Min port</string>
-  <string name="rtp_max_port">Max port</string>
+  <string name="rtp_min_port">Minimi portti:</string>
+  <string name="rtp_max_port">maksimi portti</string>
   <string name="set_rtp_min_port">Aseta min port</string>
   <string name="set_rtp_max_port">Aseta max port</string>
   <string name="set_buffer_size">Aseta puskurin koko</string>
