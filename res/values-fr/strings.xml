@@ -610,7 +610,7 @@
   <!-- Settings menu countdown timer labels [CHAR LIMIT=50] -->
   <string name="pref_camera_countdown_label">RETARDATEUR</string>
   <!-- Settings menu countdown timer off [CHAR LIMIT=50] -->
-  <string name="pref_camera_countdown_label_off">MINUTEUR DÉSACTIVÉ</string>
+  <string name="pref_camera_countdown_label_off">RETARDATEUR DÉSACTIVÉ</string>
   <!-- Settings menu countdown timer 1 second [CHAR LIMIT=50] -->
   <string name="pref_camera_countdown_label_one">1 SECONDE</string>
   <!-- Settings menu countdown timer 3 seconds [CHAR LIMIT=50] -->
@@ -845,7 +845,7 @@ CHAR LIMIT = NONE] -->
   <!-- Help text that is shown when the time lapse feature is turned off. [CHAR LIMIT = 180]-->
   <string name="set_time_interval_help">La fonctionnalité Time Lapse est désactivée. Veuillez l\'activer pour définir un intervalle.</string>
   <!-- Help text that is shown when the countdown timer is turned off. [CHAR LIMIT = 180]-->
-  <string name="set_timer_help">Le retardateur est désactivé. Activez-le pour déclencher un compte à rebours avant de prendre une photo.</string>
+  <string name="set_timer_help">Le retardateur est désactivé. L’activer pour compter à rebours avant de prendre une photo.</string>
   <!-- Title in timer setting for setting the duration for the countdown timer. [CHAR LIMIT = 50]-->
   <string name="set_duration">Définir la durée en secondes</string>
   <!-- On-screen hint during timer countdown for taking a photo. [CHAR LIMIT = 60]-->

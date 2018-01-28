@@ -610,7 +610,7 @@
   <!-- Settings menu countdown timer labels [CHAR LIMIT=50] -->
   <string name="pref_camera_countdown_label">MINUTERIE À REBOURS</string>
   <!-- Settings menu countdown timer off [CHAR LIMIT=50] -->
-  <string name="pref_camera_countdown_label_off">MINUTERIE DÉSACTIVÉE</string>
+  <string name="pref_camera_countdown_label_off">RETARDATEUR DÉSACTIVÉ</string>
   <!-- Settings menu countdown timer 1 second [CHAR LIMIT=50] -->
   <string name="pref_camera_countdown_label_one">1 SECONDE</string>
   <!-- Settings menu countdown timer 3 seconds [CHAR LIMIT=50] -->
@@ -735,7 +735,7 @@
   <!-- The button in review mode indicating that the photo taking, video recording, and panorama saving session should be canceled [CHAR LIMIT = NONE] -->
   <string name="accessibility_review_cancel">Examen – Annuler</string>
   <!-- The button in review mode indicating that the taken photo/video is OK to be attached/uploaded [CHAR LIMIT = NONE] -->
-  <string name="accessibility_review_ok">Examen – OK</string>
+  <string name="accessibility_review_ok">Vérification OK</string>
   <!-- button in review mode indicate the user want to retake another photo/video for attachment [
 CHAR LIMIT = NONE] -->
   <string name="accessibility_review_retake">Examiner la deuxième prise de la photo</string>
