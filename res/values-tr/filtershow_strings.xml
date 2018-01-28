@@ -369,4 +369,7 @@
   <string name="watermark_emotions">Duygular</string>
   <string name="watermark_food">Yiyecek</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">Yüz Eşleşmesi Bulunamadı</string>
+  <string name="image_size_too_small">Resim boyutu çok küçük</string>
+  <string name="not_support_gif">gif uzantısı desteklenmiyor, lütfen tekrar seçin</string>
 </resources>

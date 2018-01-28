@@ -151,6 +151,7 @@
   <!-- The title of the menu item to let user crop the image. [CHAR LIMIT=15] -->
   <string name="crop_action">I-crop</string>
   <!-- The title of the menu item to let user trim the video. [CHAR LIMIT=15] -->
+  <string name="trim_action">I-trim</string>
   <!-- The title of the menu item to let user mute the video. [CHAR LIMIT=15] -->
   <string name="mute_action">I-mute</string>
   <!-- The title of the menu item to let user set the image as background etc. [CHAR LIMIT=15] -->
@@ -197,6 +198,7 @@
   <!-- Title of a menu item to show all (both images and videos) [CHAR LIMIT=30]-->
   <string name="show_all">Mga larawan &amp; video</string>
   <!-- Title of the StackView AppWidget -->
+  <string name="appwidget_title">Gallery ng larawan</string>
   <!-- Text for the empty state of the StackView AppWidget [CHAR LIMIT=30] -->
   <string name="appwidget_empty_text">Walang mga larawan.</string>
   <!-- Toast message shown when the cropped image has been saved in the
@@ -247,6 +249,7 @@
   <!-- Text indicating the model of a media item in details window [CHAR LIMIT=14] -->
   <string name="model">Modelo</string>
   <!-- Text indicating flash info of a media item in details window [CHAR LIMIT=14] -->
+  <string name="flash">Kislap</string>
   <!-- Text indicating aperture of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating the focal length of a media item in details window [CHAR LIMIT=14] -->
   <string name="focal_length">Haba ng Focal</string>
@@ -259,6 +262,7 @@
   <!-- String indicating how camera shooting feature is used. [CHAR LIMIT=8] -->
   <string name="manual">Mano-mano</string>
   <!-- String indicating how camera shooting feature is used. [CHAR LIMIT=8] -->
+  <string name="auto">Awtomatiko</string>
   <!-- String indicating camera flash is fired. [CHAR LIMIT=14] -->
   <!-- String indicating camera flash is not used. [CHAR LIMIT=14] -->
   <string name="flash_off">Walang flash</string>
@@ -267,14 +271,17 @@
   <!-- String for the empty not filtered image [CHAR LIMIT=10] -->
   <string name="ffx_original">Orihinal</string>
   <!-- String for brown-colored old-fashion looking filter (filtershow_fx_0000_vintage) [CHAR LIMIT=10] -->
+  <string name="ffx_vintage">Antigo</string>
   <!-- String for filter that brightens colors like instant cameras(filtershow_fx_0001_instant) [CHAR LIMIT=10] -->
   <!-- String for filter that washes out colors (filtershow_fx_0002_bleach) [CHAR LIMIT=10] -->
+  <string name="ffx_bleach">Pampaputi</string>
   <!-- String for filter that makes colors a bluish (filtershow_fx_0003_blue_crush) [CHAR LIMIT=10] -->
   <string name="ffx_blue_crush">Asul</string>
   <!-- String for filter that makes image black & white (filtershow_fx_0004_bw_contrast) [CHAR LIMIT=10] -->
   <!-- String for filter that makes colors a yellowish (filtershow_fx_0005_punch) [CHAR LIMIT=10] -->
   <!-- String for filter that mimics the cross-process technique in
          photography (makes colors bluish) (filtershow_fx_0006_x_process) [CHAR LIMIT=10] -->
+  <string name="ffx_x_process">X Proseso</string>
   <!-- String for filter that makes image coffee-colored (filtershow_fx_0007_washout) [CHAR LIMIT=10] -->
   <!-- String for filter that makes colors washed out and brownish
          (filtershow_fx_0008_washout_color) [CHAR LIMIT=10] -->
@@ -405,6 +412,10 @@
     <item quantity="other">%1$d (na) item ang na-scan</item>
   </plurals>
   <!-- String indicating how many media items from the camera have been selected -->
+  <plurals name="ingest_number_of_items_selected">
+    <item quantity="one">%1$d na item na napili</item>
+    <item quantity="other">%1$d na item na napili</item>
+  </plurals>
   <!--  Status message shown when content from the camera is being sorted -->
   <string name="ingest_sorting" msgid="624687230903648118">Pinagbubukud-bukod...</string>
   <!--  Status message shown when scanning the content from the camera has completed -->
@@ -491,27 +502,37 @@
   <!-- Settings screen, Picture size title -->
   <string name="pref_camera_picturesize_title">Laki ng larawan</string>
   <!-- Settings screen, dialog choice for 13 megapixels picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_13mp">13M mga pixel</string>
   <!-- Settings screen, dialog choice for 8 megapixels picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_8mp">8M mga pixel</string>
   <!-- Settings screen, dialog choice for 5 megapixels picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_5mp">5M mga pixel</string>
   <!-- Settings screen, dialog choice for 4 megapixels picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_4mp">4M mga pixel</string>
   <!-- Settings screen, dialog choice for 3 megapixels picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_3mp">3M mga pixel</string>
   <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_2mp">2M mga pixel</string>
   <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=15] -->
   <string name="pref_camera_picturesize_entry_2mp_wide">2M pixel (16:9)</string>
   <!-- Settings screen, dialog choice for 1.3 megapixels picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_1_3mp">1.3M mga pixel</string>
   <!-- Settings screen, dialog choice for 1 megapixels picture size [CHAR LIMIT=15] -->
   <string name="pref_camera_picturesize_entry_1mp">1M pixel</string>
   <!-- Settings screen, dialog choice for VGA picture size [CHAR LIMIT=15] -->
   <!-- Settings screen, dialog choice for QVGA picture size [CHAR LIMIT=15] -->
   <!-- Settings screen, Focus mode title -->
   <!-- Settings screen, Focus mode dialog radio button choices -->
+  <string name="pref_camera_focusmode_entry_auto">Awtomatiko</string>
   <string name="pref_camera_focusmode_entry_infinity">Walang Katapusan</string>
   <!-- Menu, focus mode labels [CHAR LIMIT=50] -->
   <!-- Default flash mode setting.-->
   <!-- Value for flash off setting-->
   <!-- Settings screen, Flash mode title -->
+  <string name="pref_camera_flashmode_title">Mode na naka-flash</string>
   <!-- flash label [CHAR LIMIT=50] -->
   <!-- Settings screen, Flash mode dialog radio button choices -->
+  <string name="pref_camera_flashmode_entry_auto">Awtomatiko</string>
   <string name="pref_camera_flashmode_entry_on">Naka-on</string>
   <string name="pref_camera_flashmode_entry_off">Naka-off</string>
   <!-- Menu, flash mode labels [CHAR LIMIT=50] -->
@@ -522,6 +543,7 @@
   <!-- Settings screen, white balance title -->
   <!-- Menu, white balance label -->
   <!-- Settings screen, White balance dialog radio button choices -->
+  <string name="pref_camera_whitebalance_entry_auto">Awtomatiko</string>
   <string name="pref_camera_whitebalance_entry_incandescent">Napakaliwanag</string>
   <string name="pref_camera_whitebalance_entry_daylight">Liwanag ng araw</string>
   <string name="pref_camera_whitebalance_entry_cloudy">Maulap</string>
@@ -529,6 +551,7 @@
   <!-- Default scene mode setting. -->
   <!-- Settings screen, Select Scene mode -->
   <!-- Settings menu, scene mode choices [CHAR LIMIT=16] -->
+  <string name="pref_camera_scenemode_entry_auto">Awtomatiko</string>
   <!-- Scene mode that uses HDR (high dynamic range) [CHAR LIMIT=16] -->
   <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=16] -->
   <string name="pref_camera_scenemode_entry_action">Pagkilos</string>

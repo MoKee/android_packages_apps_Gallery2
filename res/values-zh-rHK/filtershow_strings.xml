@@ -22,7 +22,6 @@
   <!--  String shown when cannot load the original image. We will edit selected image [CHAR LIMIT=NONE] -->
   <string name="cannot_edit_original">無法編輯原圖</string>
   <!--  String displayed when showing the original image [CHAR LIMIT=NONE] -->
-  <string name="original_picture_text">@string/original</string>
   <!--  String displayed when setting the homepage wallpaper in the background [CHAR LIMIT=NONE] -->
   <string name="setting_wallpaper">正在設定桌布</string>
   <!--  generic strings -->
@@ -79,7 +78,6 @@
   <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
   <string name="reset">重設</string>
   <!--  Text for the original image[CHAR LIMIT=20]-->
-  <string name="history_original">@string/original</string>
   <!--  Image state panel -->
   <!--  Text for the image state panel title [CHAR LIMIT=50] -->
   <string name="imageState">套用的效果</string>
@@ -109,7 +107,6 @@
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <string name="aspectNone_effect">無</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
-  <string name="aspectOriginal_effect">@string/original</string>
   <!-- Label for when the aspect ratio is fixed to a value [CHAR LIMIT=15] -->
   <string name="Fixed">已固定</string>
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
@@ -371,5 +368,28 @@
   <string name="watermark_weather">天氣</string>
   <string name="watermark_emotions">表情</string>
   <string name="watermark_food">食物</string>
+  <string name="location_pin">LOCATION_PIN</string>
+  <string name="location_city">LOCATION_CITY</string>
+  <string name="location_hello">LOCATION_HELLO</string>
+  <string name="location_stamp">LOCATION_STAMP</string>
+  <string name="time_hourglass">TIME_HOURGLASS</string>
+  <string name="time_timestamp">TIME_TIMESTAMP</string>
+  <string name="time_sunrise">TIME_SUNRISE</string>
+  <string name="time_calendar">TIME_CALENDAR</string>
+  <string name="weather_rain">WEATHER_RAIN</string>
+  <string name="weather_snow">WEATHER_SNOW</string>
+  <string name="weather_sun">WEATHER_SUN</string>
+  <string name="weather_artistic_sun">WEATHER_ARTISTIC_SUN</string>
+  <string name="emotion_party">EMOTION_PARTY</string>
+  <string name="emotion_peace">EMOTION_PEACE</string>
+  <string name="emotion_cry">EMOTION_CRY</string>
+  <string name="emotion_happy">EMOTION_HAPPY</string>
+  <string name="food_fork_knife">FOOD_FORK_KNIFE</string>
+  <string name="food_tea_time">FOOD_TEA_TIME</string>
+  <string name="food_cheers">FOOD_CHEERS</string>
+  <string name="food_yum">FOOD_YUM</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">沒有發現臉孔</string>
+  <string name="image_size_too_small">圖片尺寸太小</string>
+  <string name="not_support_gif">不支援 gif 檔，請再次選擇</string>
 </resources>

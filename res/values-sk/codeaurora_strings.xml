@@ -3,6 +3,7 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
+Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -42,7 +43,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="speaker_off">Vypnúť reproduktor</string>
   <string name="speaker_need_headset">Pripojte slúchadlá pre použitie tejto funkcie.</string>
   <string name="single_track">"Jedna stopa"</string>
-  <string name="input_url">"Zadať adresu URL"</string>
+  <string name="input_url">"Zadajte aresu URL"</string>
   <string name="streaming_settings">"Nastavenia streamovania"</string>
   <string name="next">"Ďalšie"</string>
   <string name="previous">"Predchádzajúce"</string>
@@ -114,6 +115,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="seestraight_input_image_is_small">Vstupný obraz je príliš malý na spracovanie.</string>
   <string name="seestraight_process_fail">Obrázok sa nepodarilo spracovať.</string>
   <string name="trim_video_exit_title">Zrušiť zmeny?</string>
-  <string name="trim_video_exit_msg">Zahodiť zmeny vykonané v tomto videu?</string>
+  <string name="trim_video_exit_msg">Zrušiť zmeny vykonané v tomto videu?</string>
   <string name="trim_video_exit_discard">ZRUŠIŤ</string>
 </resources>

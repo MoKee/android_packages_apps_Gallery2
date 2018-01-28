@@ -323,6 +323,8 @@
   <string name="filtershow_exif_exposure_time">Ang Oras ng pagkakalantad</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Ang Karapatang magpalathala</string>
+  <string name="fusion_pick_point">Pumili ng Segment</string>
+  <string name="fusion_pick_underlay">Pumili ng Underlay</string>
   <string name="trueportrait_edit_foreground_toast">Gamitin ang daliri upang pinatahan ang anumang lugar sa harapan na nalampasan.</string>
   <string name="trueportrait_edit_background_toast">Gamitin ang daliri upang pinatahan ang anumang lugar sa likuran na nalampasan.</string>
   <string name="do_not_show_again">Huwag ipakita pang muli</string>

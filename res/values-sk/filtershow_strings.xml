@@ -45,14 +45,14 @@
   <!--  Text for the menu item to export a flattened photo[CHAR LIMIT=30] -->
   <string name="export_image">Exportovať</string>
   <!-- Text for the print menu item [CHAR LIMIT=20] -->
-  <string name="print_image">Tlačiť</string>
+  <string name="print_image">Vytlačiť</string>
   <!-- Export Dialog-->
   <!--  Text for the dialog title to export a flattened photo[CHAR LIMIT=25] -->
   <string name="export_flattened">Exportovať vyrovnaný obrázok</string>
   <!--  Text for selecting export image quality [CHAR LIMIT=100] -->
   <string name="select_output_settings">Exportovaný obrázok bude kópia bez histórie.</string>
   <!--  Text for quality value tag [CHAR LIMIT=30] -->
-  <string name="quality">Kvalitné</string>
+  <string name="quality">Kvalita</string>
   <!--  Text for size value tag [CHAR LIMIT=30] -->
   <string name="size">Veľkosť</string>
   <!--  Text for size x [CHAR LIMIT=1] -->
@@ -129,7 +129,7 @@
   <!--  Label for the image saturation (brightens colors) filter button [CHAR LIMIT=10] -->
   <string name="saturation">Sýtosť</string>
   <!--  Label for the image BW filter (makes black & white) button [CHAR LIMIT=10] -->
-  <string name="bwfilter">Filter ČB</string>
+  <string name="bwfilter">ČB filter</string>
   <!--  Label for the image Autocolor filter (makes off-white colors whiter) button [CHAR LIMIT=10] -->
   <string name="wbalance">Autom. farba</string>
   <!--  Label for the image Hue filter (color, shade, tinge, tone) button [CHAR LIMIT=10] -->
@@ -174,7 +174,7 @@
           images into solid colors, as popularized by Andy Warhol [CHAR LIMIT=15] -->
   <string name="kmeans">Posterizácia</string>
   <!--  Label for the image downsampling effect (makes image smaller) [CHAR LIMIT=15] -->
-  <string name="downsample">Zmen.vzor.</string>
+  <string name="downsample">Zmenšiť</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Stupňovanie</string>
   <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
@@ -368,5 +368,28 @@
   <string name="watermark_weather">Počasie</string>
   <string name="watermark_emotions">Emócie</string>
   <string name="watermark_food">Jedlo</string>
+  <string name="location_pin">LOCATION_PIN</string>
+  <string name="location_city">LOCATION_CITY</string>
+  <string name="location_hello">LOCATION_HELLO</string>
+  <string name="location_stamp">LOCATION_STAMP</string>
+  <string name="time_hourglass">TIME_HOURGLASS</string>
+  <string name="time_timestamp">TIME_TIMESTAMP</string>
+  <string name="time_sunrise">TIME_SUNRISE</string>
+  <string name="time_calendar">TIME_CALENDAR</string>
+  <string name="weather_rain">WEATHER_RAIN</string>
+  <string name="weather_snow">WEATHER_SNOW</string>
+  <string name="weather_sun">WEATHER_SUN</string>
+  <string name="weather_artistic_sun">WEATHER_ARTISTIC_SUN</string>
+  <string name="emotion_party">EMOTION_PARTY</string>
+  <string name="emotion_peace">EMOTION_PEACE</string>
+  <string name="emotion_cry">EMOTION_CRY</string>
+  <string name="emotion_happy">EMOTION_HAPPY</string>
+  <string name="food_fork_knife">FOOD_FORK_KNIFE</string>
+  <string name="food_tea_time">FOOD_TEA_TIME</string>
+  <string name="food_cheers">FOOD_CHEERS</string>
+  <string name="food_yum">FOOD_YUM</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">Neboli nájdené žiadne tváre</string>
+  <string name="image_size_too_small">Veľkosť obrázku je príliš malá</string>
+  <string name="not_support_gif">nepodporuje GIF rozšírenie, vyberte prosím znovu</string>
 </resources>

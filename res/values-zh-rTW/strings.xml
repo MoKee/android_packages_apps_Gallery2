@@ -19,17 +19,15 @@
   <!-- Title for picture frame gadget to show in list of all available gadgets -->
   <string name="gadget_title">相框</string>
   <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
-  <string name="details_ms">%1$02d:%2$02d</string>
   <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
-  <string name="details_hms">%1$d:%2$02d:%3$02d</string>
   <!-- Activity label. This might show up in the activity-picker -->
   <string name="movie_view_label">影片播放器</string>
   <!-- shown in the video player view while the video is being loaded, before it starts playing -->
-  <string name="loading_video">正在載入影片…</string>
-  <string name="loading_image">正在載入圖片…</string>
+  <string name="loading_video">正在載入影片\u2026</string>
+  <string name="loading_image">正在載入圖片\u2026</string>
   <!-- Message shown on the progress dialog to indicate we're loading the
             account info [CHAR LIMIT=30] -->
-  <string name="loading_account">正在載入帳戶…</string>
+  <string name="loading_account">正在載入帳戶\u2026</string>
   <!-- Movie View Resume Playing dialog title -->
   <string name="resume_playing_title">繼續播放影片</string>
   <!-- Movie View Start Playing dialog title -->
@@ -37,7 +35,7 @@
   <!-- Movie View Start Playing button "Resume from bookmark" -->
   <string name="resume_playing_resume">繼續播放</string>
   <!-- Displayed in the title of those albums that are being loaded -->
-  <string name="loading">載入中…</string>
+  <string name="loading">載入中\u2026</string>
   <!-- Displayed in the title of those pictures that fails to be loaded
          [CHAR LIMIT=50]-->
   <string name="fail_to_load">無法載入</string>
@@ -57,9 +55,9 @@
   <string name="ok">確定</string>
   <!-- Button indicating that the cropped image should be reverted back to the original -->
   <!-- Hint that appears when cropping an image with more than one face -->
-  <string name="multiface_crop_help">輕觸臉孔即可開始。</string>
+  <string name="multiface_crop_help">輕觸臉部即可開始。</string>
   <!-- Toast/alert that the image is being saved to the SD card -->
-  <string name="saving_image">正在儲存相片…</string>
+  <string name="saving_image">正在儲存相片\u2026</string>
   <!-- Toast/alert that the image is being saved after editing in filtershow [CHAR LIMIT=40]-->
   <string name="filtershow_saving_image">正在將圖片儲存至「<xliff:g id="ALBUM_NAME">%1$s</xliff:g>」…</string>
   <!-- Eorror toast message that the image cannot be saved [CHAR LIMIT=40]-->
@@ -85,7 +83,7 @@
   <!-- Activity title for cropping picture and setting it as wallpaper [CHAR LIMIT=20] -->
   <string name="set_wallpaper">設定桌布</string>
   <!-- Toast/alert after saving wallpaper -->
-  <string name="wallpaper">正在設定桌布…</string>
+  <string name="wallpaper">正在設定桌布\u2026</string>
   <string name="camera_setas_wallpaper">桌布</string>
   <!-- Details dialog "OK" button. Dismisses dialog. -->
   <string name="delete">刪除</string>
@@ -174,7 +172,7 @@
   <!-- Title of a menu item to group photo by faces [CHAR LIMIT=30]-->
   <string name="group_by_faces">依人物分組</string>
   <!-- Title of a menu item to group photo by albums [CHAR LIMIT=30]-->
-  <string name="group_by_album">依專輯</string>
+  <string name="group_by_album">依相簿</string>
   <!-- Title of a menu item to group photo by size [CHAR LIMIT=30]-->
   <string name="group_by_size">依大小分類</string>
   <!-- When grouping photos by tags, the label used for photos without tags
@@ -416,9 +414,7 @@
   <!-- The label on the button that will save an edited image -->
   <string name="save" msgid="8140440041190264400">儲存</string>
   <!-- A label representing the action of importing media item(s) [CHAR LIMIT=20] -->
-  <string name="ingest_import">@string/Import</string>
   <!-- A label that indicates the media import operation completed [CHAR LIMIT=20] -->
-  <string name="ingest_import_complete">@string/import_complete</string>
   <!--  Text of notification message which is shown when user attaches camera -->
   <string name="ingest_scanning" msgid="2048262851775139720">正在掃描內容...</string>
   <!-- String indicating how many media items from the camera have been scanned -->
@@ -440,9 +436,7 @@
   <!--  Status message shown when there is no MTP device connected  -->
   <string name="ingest_no_device">未連接任何 MTP 裝置</string>
   <!-- Label for album grid button -->
-  <string name="ingest_switch_photo_grid">@string/switch_photo_grid</string>
   <!-- Label for fullscreen button. [CHAR LIMIT=20] -->
-  <string name="ingest_switch_photo_fullscreen">@string/switch_photo_fullscreen</string>
   <!-- Camera resources below -->
   <!-- General strings -->
   <!-- title for the dialog showing the error of camera hardware -->
@@ -454,15 +448,15 @@
   <!-- label for the icon meaning 'show me all the images that were taken with the camera' -->
   <string name="camera_label">相機</string>
   <!-- alert to the user to wait for some operation to complete -->
-  <string name="wait">請稍候…</string>
+  <string name="wait">請稍候\u2026</string>
   <!-- alert to the user that USB storage must be available before using the camera [CHAR LIMIT=NONE] -->
   <string name="no_storage" product="nosdcard">使用相機前，請先插入 USB 儲存裝置。</string>
   <!-- alert to the user that an SD card must be installed before using the camera -->
   <string name="no_storage" product="default">使用相機前，請先插入 SD 卡。</string>
   <!-- alert to the user that the USB storage is being disk-checked [CHAR LIMIT=30] -->
-  <string name="preparing_sd" product="nosdcard">正在準備 USB 儲存裝置…</string>
+  <string name="preparing_sd" product="nosdcard">正在準備 USB 儲存裝置\u2026</string>
   <!-- alert to the user that the SD card is being disk-checked -->
-  <string name="preparing_sd" product="default">正在準備 SD 卡…</string>
+  <string name="preparing_sd" product="default">正在準備 SD 卡\u2026</string>
   <!-- alert to the user that the camera fails to read or write the USB storage. [CHAR LIMIT=NONE] -->
   <string name="access_sd_fail" product="nosdcard">無法存取 USB 儲存裝置。</string>
   <!-- alert to the user that the camera fails to read or write the SD card. -->
@@ -489,7 +483,6 @@
   <plurals name="pref_camera_timer_entry">
     <item quantity="other">%d 秒</item>
   </plurals>
-  <string name="pref_camera_timer_sound_default">@string/setting_on_value</string>
   <!-- Text followed by a checkbox to turn on/off sound effects during the countdown. [CHAR LIMIT = 16]-->
   <string name="pref_camera_timer_sound_title">倒數時發出提示音</string>
   <!-- Entry of a on/off setting. The setting is turned off. [CHAR LIMIT=15] -->
@@ -625,9 +618,8 @@
   <!--  menu label exposure compensation [CHAR LIMIT=50] -->
   <string name="pref_exposure_label">曝光</string>
   <!-- Default HDR entry value -->
-  <string name="pref_camera_hdr_default">@string/setting_off_value</string>
   <!-- HDR label ON [CHAR LIMIT=60] -->
-  <string name="pref_camera_hdr_label">高動態範圍</string>
+  <string name="pref_camera_hdr_label">HDR</string>
   <!-- switch camera label back [CHAR LIMIT=60] -->
   <string name="pref_camera_id_label_back">前置鏡頭</string>
   <!-- switch camera label front [CHAR LIMIT=60] -->

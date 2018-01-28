@@ -3,6 +3,7 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
+Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -31,6 +32,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Strings for step option settins -->
+  <string name="setp_option_name">Langkah</string>
+  <string name="step_option_desc">Menyesuaikan cepat ke hadapan/langkah mundur</string>
+  <string name="setp_option_three_second">3 saat</string>
+  <string name="setp_option_six_second">6 saat</string>
+  <string name="loop">"Gelung"</string>
+  <string name="single">"Tunggal"</string>
+  <string name="stereo">"Stereo"</string>
   <string name="next">"Selepas"</string>
   <string name="setting">Tetapan</string>
   <!-- A label describing to link website [CHAR LIMIT=30] -->

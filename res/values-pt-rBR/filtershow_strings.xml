@@ -22,7 +22,6 @@
   <!--  String shown when cannot load the original image. We will edit selected image [CHAR LIMIT=NONE] -->
   <string name="cannot_edit_original">Não é possível editar o original</string>
   <!--  String displayed when showing the original image [CHAR LIMIT=NONE] -->
-  <string name="original_picture_text">@string/original</string>
   <!--  String displayed when setting the homepage wallpaper in the background [CHAR LIMIT=NONE] -->
   <string name="setting_wallpaper">Definindo o papel de parede</string>
   <!--  generic strings -->
@@ -79,7 +78,6 @@
   <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
   <string name="reset">Voltar ao original</string>
   <!--  Text for the original image[CHAR LIMIT=20]-->
-  <string name="history_original">@string/original</string>
   <!--  Image state panel -->
   <!--  Text for the image state panel title [CHAR LIMIT=50] -->
   <string name="imageState">Efeitos Aplicados</string>
@@ -109,7 +107,6 @@
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <string name="aspectNone_effect">Livre</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
-  <string name="aspectOriginal_effect">@string/original</string>
   <!-- Label for when the aspect ratio is fixed to a value [CHAR LIMIT=15] -->
   <string name="Fixed">Fixo</string>
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->

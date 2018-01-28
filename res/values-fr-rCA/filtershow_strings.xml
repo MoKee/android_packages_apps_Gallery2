@@ -28,7 +28,7 @@
   <!--  Text for to display on a download failure [CHAR LIMIT=NONE] -->
   <string name="download_failure">Impossible de télécharger la photo. Réseau indisponible.</string>
   <!--  Text to label an image as "original" [CHAR LIMIT=20] -->
-  <string name="original">Original</string>
+  <string name="original">Originale</string>
   <!--  Text for filters that apply a border to a picture [CHAR LIMIT=20] -->
   <string name="borders" msgid="4461692156695893616">Contours</string>
   <!-- Text for the custom border filter [CHAR LIMIT=20] -->
@@ -272,7 +272,7 @@
   <!--  The accept the draw size [CHAR LIMIT=20] -->
   <string name="draw_size_accept">OK</string>
   <!--  Name used to indicate the original image in the state panel [CHAR LIMIT=20] -->
-  <string name="state_panel_original">Original</string>
+  <string name="state_panel_original">Originale</string>
   <!--  Name used to indicate the final image in the state panel [CHAR LIMIT=20] -->
   <string name="state_panel_result">Résultat</string>
   <!-- Label for the notification [CHAR LIMIT=50] -->
@@ -367,5 +367,25 @@
   <string name="watermark_weather">Météo</string>
   <string name="watermark_emotions">Émotions</string>
   <string name="watermark_food">Nourriture</string>
+  <string name="location_hello">EMPLACEMENT_SALUT</string>
+  <string name="location_stamp">EMPLACEMENT_TIMBRE</string>
+  <string name="time_hourglass">TEMPS_SABLIER</string>
+  <string name="time_sunrise">TEMPS_LEVE_DU_SOLEIL</string>
+  <string name="time_calendar">TEMPS_CALENDRIER</string>
+  <string name="weather_rain">METEO_PLUIE</string>
+  <string name="weather_snow">METEO_NEIGE</string>
+  <string name="weather_sun">METEO_ENSOLEILLE</string>
+  <string name="weather_artistic_sun">METEO_SOLEIL_MAGNIFIQUE</string>
+  <string name="emotion_party">EMOTION_FETE</string>
+  <string name="emotion_peace">EMOTION_PAIX</string>
+  <string name="emotion_cry">EMOTION_PLEUR</string>
+  <string name="emotion_happy">EMOTION_JOIE</string>
+  <string name="food_fork_knife">NOURRITURE_COUVERT</string>
+  <string name="food_tea_time">NOURRITURE_L\'HEURE_DU_THE</string>
+  <string name="food_cheers">NOURRITURE_TCHIN</string>
+  <string name="food_yum">NOURRITURE_MIAM</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">Aucun visage trouvé</string>
+  <string name="image_size_too_small">Image trop petite</string>
+  <string name="not_support_gif">ne supporte pas l’extension \"gif\" , veuillez choisir de nouveau</string>
 </resources>

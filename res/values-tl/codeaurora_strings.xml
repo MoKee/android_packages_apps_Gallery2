@@ -3,6 +3,7 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
+Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -32,10 +33,34 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Strings for step option settins -->
   <string name="setp_option_name">Hakbang</string>
+  <string name="step_option_desc">I-customize ang mabilis na pag forward/rewind na hakbang</string>
   <string name="setp_option_three_second">3 na segundo</string>
   <string name="setp_option_six_second">6 na segundo</string>
+  <string name="loop">"Loop"</string>
+  <string name="single">"Iisa"</string>
+  <string name="speaker_on">Ang speaker ay naka-ON</string>
+  <string name="speaker_off">Ang speaker ay naka-OFF</string>
+  <string name="speaker_need_headset">Magplug-in ng mga headphone para magamit ang feature na ito.</string>
+  <string name="single_track">"Solong track"</string>
+  <string name="input_url">"Ilagay ang URL"</string>
+  <string name="streaming_settings">"Mga setting sa streaming"</string>
   <string name="next">"Susunod"</string>
+  <string name="previous">"Nakaraan"</string>
+  <string name="buffer_size">Sukat ng buffer</string>
+  <string name="apn">Ginustong APN</string>
+  <string name="rtp_min_port">Pinakamaliit na port</string>
+  <string name="rtp_max_port">Pinakamalaki na port</string>
+  <string name="set_rtp_min_port">Itakda ang pinakamaliit na port</string>
+  <string name="set_rtp_max_port">Itakda ang pinakamalaki na port</string>
+  <string name="set_buffer_size">Itakda ang sukat ng buffer</string>
+  <string name="set_apn">Itakda ang ginustong APN</string>
   <string name="setting">Mga setting</string>
+  <string name="server_timeout_title">"Timeout ng server"</string>
+  <string name="server_timeout_message">"I-connect muli sa server upang i-play ang video?"</string>
+  <string name="videoview_error_text_cannot_connect_retry">"Nabigo ang connection, sinusubukang i-connect muli sa %1$d\u2026"</string>
+  <string name="media_controller_live">Live</string>
+  <string name="media_controller_playing">Nagpi-play</string>
+  <string name="media_controller_connecting">Kumukonekta ang \u2026</string>
   <string name="bookmark_add">"Magdagdag ng bookmark"</string>
   <string name="bookmark_display">"Ipakita ang mga bookmark"</string>
   <string name="bookmark_empty">"Walang bookmark"</string>
@@ -52,19 +77,32 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="mute_nosupport">Hindi maaaring i-mute : ang video ay hindi suportado</string>
   <!-- The message is shown in toast when click showOnMap Menu and there is no map app -->
   <string name="map_activity_not_found_err">Walang map na app na naka-install upang ipakita ang lokasyon.</string>
+  <plurals name="number_of_videos">
+    <item quantity="one">%1$d na video</item>
+    <item quantity="other">%1$d na mga video</item>
+  </plurals>
   <!-- Toast message for share items -->
+  <string name="cannot_share_items">Ang pinaka-max na mapili na mga item para ito ay mabahagi ay 300</string>
+  <string name="share_dialogue_title">Ipamahagi sa pamamagitan ng</string>
   <!-- When grouping photos by peoples, the label used for photos that don't
          have people information in them [CHAR LIMIT=20]-->
+  <string name="no_faces">Walang mga mukha</string>
   <!-- The tips of trimming video -->
   <string name="fail_trim">Paumanhin, ang video file na ito ay hindi maaaring putulin</string>
   <string name="can_not_trim">Ang mga mp4 at 3gp na file lamang ang maaaring putulin</string>
+  <string name="drm_license_info">Impormasyon ng DRM lisensya</string>
   <!-- Timeline screen title -->
+  <string name="timeline_title">Timeline</string>
   <!-- Albums screen title -->
   <string name="albums_title">Mga Album</string>
   <!-- Videos screen title -->
   <string name="videos_title">Mga video</string>
+  <string name="action_viewtype_list">View na listahan</string>
   <string name="tvEmptyAlbum">Walang natagpuan na mga larawan</string>
   <string name="tvEmptyVideos">Walang natagpuan na mga video</string>
+  <string name="text_makeup_whiten">Paputiin</string>
+  <string name="truescanner">TrueScanner</string>
+  <string name="truescanner_remove_glare">Tanggalin ang glare</string>
   <string name="seestraight_input_image_is_small">Ang input na larawan ay masyadong maliit upang i-proseso.</string>
   <string name="seestraight_process_fail">Hindi ma-proseso ang larawan.</string>
   <string name="trim_video_exit_title">Gusto mo bang mag-save bago lumabas?</string>

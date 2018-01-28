@@ -369,4 +369,7 @@
   <string name="watermark_emotions">情绪</string>
   <string name="watermark_food">食物</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">无法识别到面孔</string>
+  <string name="image_size_too_small">图片尺寸太小</string>
+  <string name="not_support_gif">不支持 gif 扩展，请再次选择</string>
 </resources>

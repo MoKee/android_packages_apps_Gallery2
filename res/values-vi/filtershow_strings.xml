@@ -56,6 +56,7 @@
   <!--  Text for size value tag [CHAR LIMIT=30] -->
   <string name="size">Kích thước</string>
   <!--  Text for size x [CHAR LIMIT=1] -->
+  <string name="x">x</string>
   <!--  Name for the overflow menu item for settings [CHAR LIMIT=20] -->
   <string name="menu_settings">Cài đặt</string>
   <!--  Exit Dialog -->
@@ -66,6 +67,7 @@
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Lưu và thoát</string>
   <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
+  <string name="discard">Hủy</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Đang xử lý hình ảnh có độ phân giải đầy đủ...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -89,12 +91,19 @@
   <!--  Label for aspect [CHAR LIMIT=15] -->
   <string name="aspect">Tỷ lệ</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+  <string name="aspect1to1_effect">1:1</string>
   <!--  Label for the aspect 4:3 effect [CHAR LIMIT=15] -->
+  <string name="aspect4to3_effect">4:3</string>
   <!--  Label for the aspect 3:4 effect [CHAR LIMIT=15] -->
+  <string name="aspect3to4_effect">3:4</string>
   <!--  Label for the aspect 4:7 effect [CHAR LIMIT=15] -->
+  <string name="aspect4to6_effect">4:6</string>
   <!--  Label for the aspect 5:7 effect [CHAR LIMIT=15] -->
+  <string name="aspect5to7_effect">5:7</string>
   <!--  Label for the aspect 7:5 effect [CHAR LIMIT=15] -->
+  <string name="aspect7to5_effect">7:5</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+  <string name="aspect9to16_effect">16:9</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <string name="aspectNone_effect">Không có</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
@@ -106,7 +115,9 @@
   <!--  True Effect button -->
   <string name="trueScanner">Quét Trực tiếp</string>
   <!--  HazeBuster button -->
+  <string name="hazeBuster">Bộ lọc Đám mây, Sương mù</string>
   <!--  SeeStraight button -->
+  <string name="seeStraight">Xem thẳng</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Độ phơi sáng</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -167,22 +178,31 @@
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Đã chia độ</string>
   <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="focus">Tập trung</string>
   <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="fusion">Dung hợp</string>
   <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="sketch">Phác họa</string>
   <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="halo">Hào quang</string>
   <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="zoom">Thu phóng</string>
   <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="motion">Chuyển động</string>
   <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
   <string name="bw">Đen/trắng</string>
   <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
   <string name="blackboard">Bảng đen</string>
   <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="whiteboard">Bảng trắng</string>
   <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
   <string name="posterize">Giảm màu</string>
   <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
   <string name="dc_negative">Âm bản</string>
   <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="blur">Độ mờ</string>
   <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="motion_blur">Chuyển động mờ</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Độ sáng</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -209,6 +229,7 @@
   <string name="editor_grad_new">mới</string>
   <!--  Labels for the curves tool -->
   <!--  Label for the curves tool, all channels (RGB) [CHAR LIMIT=3] -->
+  <string name="curves_channel_rgb">RGB</string>
   <!--  Label for the curves tool, Red color channel [CHAR LIMIT=14] -->
   <string name="curves_channel_red">Đỏ</string>
   <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->
@@ -292,6 +313,7 @@
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_focal_length">Tiêu cự</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+  <string name="filtershow_exif_iso">ISO</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_subject_distance">Khoảng cách đối tượng</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
@@ -302,12 +324,72 @@
   <string name="filtershow_exif_exposure_time">Thời gian phơi sáng</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Bản quyền</string>
+  <string name="fusion_pick_point">Chọn Phân đoạn</string>
+  <string name="fusion_pick_underlay">Chọn Lớp lót</string>
+  <string name="dual_camera_effects">Hiệu ứng máy ảnh kép</string>
+  <string name="dual_camera_effects_intro">Cho phép bạn áp dụng hiệu ứng nền, chẳng hạn như \"Chuyển động\" và \"Phác hoạ\". Bạn cũng có thể hợp nhất hai bức ảnh lại với nhau để có những hiệu ứng thú vị. Tính năng này hoạt động tốt nhất khi bạn có một khoảng cách ngắn camera của bạn và chủ đề chính của hình ảnh bạn.</string>
+  <string name="dualcam_no_segment_toast">Không có phân khúc nào được tìm thấy tại thời điểm này</string>
+  <string name="dualcam_filter_not_supported">Bộ lọc máy ảnh kép không được hỗ trợ cho hình ảnh này</string>
+  <string name="trueportrait_intro">Cho phép bạn nâng cao hình ảnh của người dân. Bạn có thể áp dụng hiệu ứng vào nền, chẳng hạn như \"độ mờ\" và \"phác hoạ\". Bạn cũng có thể hợp nhất hai ảnh lại với nhau để tạo ra những cảnh nền thú vị cho ảnh chân dung của bạn.</string>
+  <string name="trueportrait_no_face">Không thể áp dụng hiệu ứng Chân dung Chân dung cho ảnh này. Mặt không bị phát hiện.</string>
+  <string name="trueportrait_edit_intro">Với công cụ Chạm-Lên, bạn có thể chỉnh sửa nền trước và nền. Bạn có thể sử dụng ngón tay của bạn để sơn ở bất kỳ khu vực tiền cảnh hoặc nền đã bị bỏ qua.</string>
+  <string name="trueportrait_edit_foreground_toast">Sử dụng ngón tay của bạn để sơn ở bất kỳ khu vực nào của tiền cảnh đã bỏ qua.</string>
+  <string name="trueportrait_edit_background_toast">Sử dụng ngón tay của bạn để sơn ở bất kỳ khu vực nào của tiền cảnh đã bỏ qua.</string>
+  <string name="trueportrait_edit_help">Để phóng to, sử dụng hai ngón tay để chụm mở hoặc đóng lại. Bạn cũng có thể kéo bằng hai ngón tay để định vị lại hình ảnh. Điều này có thể làm cho nó dễ dàng hơn để khắc phục bất kỳ vấn đề khu vực.</string>
+  <string name="trueportrait_fusion_intro">Người tiền cảnh của bạn có thể được sao chép và dán vào bất kỳ ảnh nào trong Thư viện của bạn. Bạn có thể thử sử dụng ảnh nền khác nhau để tạo chân dung mới và thú vị.</string>
+  <string name="dualcam_fusion_intro">Người tiền cảnh của bạn có thể được sao chép và dán vào bất kỳ ảnh nào trong Thư viện của bạn. \n\nBạn có thể thử sử dụng ảnh nền khác nhau để tạo chân dung mới và thú vị.</string>
+  <string name="do_not_show_again">Không hiện lại</string>
+  <string name="trueportrait_touch_up">Chạm vào</string>
+  <string name="fusion_pick_background">Chọn hình nền</string>
   <string name="color">Màu</string>
   <string name="ok_continue">Tiếp tục</string>
+  <string name="frames">Khung</string>
+  <string name="beautify">Làm đẹp</string>
+  <string name="dualcam">Máy ảnh kép</string>
+  <string name="trueportrait">Chân dung</string>
+  <string name="foreground">Nền trước</string>
+  <string name="background">Hình nền</string>
+  <string name="brush_size">Kích thước Cọ</string>
   <!--Filtershow dialog -->
+  <string name="filtershow_dialog_title">Bộ lọc cá nhân</string>
+  <string name="filtershow_dialog_content">Cho phép bạn tạo một bộ lọc ảnh. \n\nChọn ảnh bạn thích và sử dụng nó làm bộ lọc cho các ảnh khác</string>
+  <string name="filtershow_dialog_original_photo">Ảnh gốc</string>
+  <string name="filtershow_dialog_apply_photo">Màu sắc để áp dụng</string>
+  <string name="filtershow_dialog_checkbox">Không hiện lại</string>
   <string name="filtershow_preset_title">Tùy chỉnh</string>
   <string name="filtershow_preset_rename">Đổi tên</string>
+  <string name="delete_before_exit">Xoá tập tin?</string>
+  <string name="rename_before_exit">Đổi tên bộ lọc</string>
+  <string name="filter_name">Tên bộ lọc</string>
+  <string name="filter_name_notification">Tên không thể để trống.</string>
+  <string name="filter_name_duplicate">Tên này đã tồn tại, hãy chọn một tên khác.</string>
   <string name="watermark_location">Vị trí</string>
   <string name="watermark_time">Thời gian</string>
+  <string name="watermark_weather">Thời tiết</string>
+  <string name="watermark_emotions">Cảm xúc</string>
+  <string name="watermark_food">Thực phẩm</string>
+  <string name="location_pin">LOCATION_PIN</string>
+  <string name="location_city">LOCATION_CITY</string>
+  <string name="location_hello">LOCATION_HELLO</string>
+  <string name="location_stamp">LOCATION_STAMP</string>
+  <string name="time_hourglass">TIME_HOURGLASS</string>
+  <string name="time_timestamp">TIME_TIMESTAMP</string>
+  <string name="time_sunrise">TIME_SUNRISE</string>
+  <string name="time_calendar">TIME_CALENDAR</string>
+  <string name="weather_rain">WEATHER_RAIN</string>
+  <string name="weather_snow">WEATHER_SNOW</string>
+  <string name="weather_sun">WEATHER_SUN</string>
+  <string name="weather_artistic_sun">WEATHER_ARTISTIC_SUN</string>
+  <string name="emotion_party">EMOTION_PARTY</string>
+  <string name="emotion_peace">EMOTION_PEACE</string>
+  <string name="emotion_cry">EMOTION_CRY</string>
+  <string name="emotion_happy">EMOTION_HAPPY</string>
+  <string name="food_fork_knife">FOOD_FORK_KNIFE</string>
+  <string name="food_tea_time">FOOD_TEA_TIME</string>
+  <string name="food_cheers">FOOD_CHEERS</string>
+  <string name="food_yum">FOOD_YUM</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">Không tìm thấy</string>
+  <string name="image_size_too_small">Kích cỡ hình ảnh quá nhỏ</string>
+  <string name="not_support_gif">không hỗ trợ phần mở rộng gif, vui lòng chọn lại</string>
 </resources>

@@ -17,25 +17,25 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Galéria</string>
   <!-- Title for picture frame gadget to show in list of all available gadgets -->
-  <string name="gadget_title">Rámec fotografie</string>
+  <string name="gadget_title">Rám fotografie</string>
   <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
   <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
   <!-- Activity label. This might show up in the activity-picker -->
   <string name="movie_view_label">Prehrávač videa</string>
   <!-- shown in the video player view while the video is being loaded, before it starts playing -->
-  <string name="loading_video">Prebieha načítavanie videa…</string>
-  <string name="loading_image">Prebieha načítavanie obrázka...</string>
+  <string name="loading_video">Načítavanie videa…</string>
+  <string name="loading_image">Načítavanie obrázku...</string>
   <!-- Message shown on the progress dialog to indicate we're loading the
             account info [CHAR LIMIT=30] -->
   <string name="loading_account">Načítavanie účtu…</string>
   <!-- Movie View Resume Playing dialog title -->
-  <string name="resume_playing_title">Obnoviť prehrávanie videa</string>
+  <string name="resume_playing_title">Pokračovať v prehrávaní videa</string>
   <!-- Movie View Start Playing dialog title -->
   <string name="resume_playing_message">Pokračovať v prehrávaní od %s?</string>
   <!-- Movie View Start Playing button "Resume from bookmark" -->
-  <string name="resume_playing_resume">Obnoviť prehrávanie</string>
+  <string name="resume_playing_resume">Pokračovať v prehrávaní</string>
   <!-- Displayed in the title of those albums that are being loaded -->
-  <string name="loading">Prebieha načítavanie…</string>
+  <string name="loading">Načítavanie...</string>
   <!-- Displayed in the title of those pictures that fails to be loaded
          [CHAR LIMIT=50]-->
   <string name="fail_to_load">Nepodarilo sa načítať</string>
@@ -57,7 +57,7 @@
   <!-- Hint that appears when cropping an image with more than one face -->
   <string name="multiface_crop_help">Začnite dotknutím sa tváre.</string>
   <!-- Toast/alert that the image is being saved to the SD card -->
-  <string name="saving_image">Prebieha ukladanie fotografie...</string>
+  <string name="saving_image">Ukladanie fotografie...</string>
   <!-- Toast/alert that the image is being saved after editing in filtershow [CHAR LIMIT=40]-->
   <string name="filtershow_saving_image">Obrázok sa ukladá do albumu <xliff:g id="ALBUM_NAME">%1$s</xliff:g> …</string>
   <!-- Eorror toast message that the image cannot be saved [CHAR LIMIT=40]-->
@@ -83,7 +83,7 @@
   <!-- Activity title for cropping picture and setting it as wallpaper [CHAR LIMIT=20] -->
   <string name="set_wallpaper">Nastaviť tapetu</string>
   <!-- Toast/alert after saving wallpaper -->
-  <string name="wallpaper">Prebieha nastavenie tapety...</string>
+  <string name="wallpaper">Nastavovanie tapety...</string>
   <string name="camera_setas_wallpaper">Tapeta</string>
   <!-- Details dialog "OK" button. Dismisses dialog. -->
   <string name="delete">Odstrániť</string>
@@ -153,7 +153,7 @@
          It means the pictures of the Picasa album is currently being
          transferred to local storage, so the pictures can later be viewed
          offline. [CHAR LIMIT=15] -->
-  <string name="caching_label">Do pamäte...</string>
+  <string name="caching_label">Ukladanie do medzipamäti...</string>
   <!-- The title of the menu item to let user crop the image. [CHAR LIMIT=15] -->
   <string name="crop_action">Orezať</string>
   <!-- The title of the menu item to let user trim the video. [CHAR LIMIT=15] -->
@@ -229,7 +229,7 @@
             media set eg. 3 of 5 items [CHAR LIMIT=30] -->
   <string name="sequence_in_set">%1$d z %2$d položiek:</string>
   <!-- Text indicating the title of a media item in details window [CHAR LIMIT=14] -->
-  <string name="title">Titul</string>
+  <string name="title">Názov</string>
   <!-- Text indicating the description of a media item in details window [CHAR LIMIT=14] -->
   <string name="description">Popis</string>
   <!-- Text indicating the creation time of a media item in details window [CHAR LIMIT=14] -->
@@ -484,11 +484,11 @@
   <!-- Settings screen, camera selection dialog title. Users can select a camera from the phone (front-facing or back-facing). [CHAR LIMIT=20] -->
   <string name="pref_camera_id_title">Vybrať fotoaparát</string>
   <!-- In select camera setting, back facing camera. [CHAR LIMIT=14] -->
-  <string name="pref_camera_id_entry_back">Zozadu</string>
+  <string name="pref_camera_id_entry_back">Zadná</string>
   <!-- In select camera setting, front-facing camera. [CHAR LIMIT=14] -->
-  <string name="pref_camera_id_entry_front">Spredu</string>
+  <string name="pref_camera_id_entry_front">Predná</string>
   <!-- Settings screen, setting title text -->
-  <string name="pref_camera_recordlocation_title">Úložné miesto</string>
+  <string name="pref_camera_recordlocation_title">Úložisko</string>
   <!--  Label for record location preference [CHAR LIMIT=50] -->
   <string name="pref_camera_location_label">POLOHA</string>
   <!-- Title for countdown timer on camera settings screen [CHAR LIMIT=30]-->
@@ -523,7 +523,7 @@
   <!-- Settings screen, Camera setting category title -->
   <string name="pref_camera_settings_category">Nastavenia fotoaparátu</string>
   <!-- Settings screen, Camcorder setting category title -->
-  <string name="pref_camcorder_settings_category">Nastavenie videokamery</string>
+  <string name="pref_camcorder_settings_category">Nastavenia videokamery</string>
   <!-- Settings screen, Picture size title -->
   <string name="pref_camera_picturesize_title">Veľkosť fotografie</string>
   <!-- Settings screen, dialog choice for 13 megapixels picture size [CHAR LIMIT=15] -->
@@ -531,19 +531,19 @@
   <!-- Settings screen, dialog choice for 8 megapixels picture size [CHAR LIMIT=15] -->
   <string name="pref_camera_picturesize_entry_8mp">8 Mpx</string>
   <!-- Settings screen, dialog choice for 5 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_5mp">5 megapixlov</string>
+  <string name="pref_camera_picturesize_entry_5mp">5 Mpx</string>
   <!-- Settings screen, dialog choice for 4 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_4mp">4 MP</string>
+  <string name="pref_camera_picturesize_entry_4mp">4 Mpx</string>
   <!-- Settings screen, dialog choice for 3 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_3mp">3 megapixle</string>
+  <string name="pref_camera_picturesize_entry_3mp">3 Mpx</string>
   <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_2mp">2 megapixle</string>
+  <string name="pref_camera_picturesize_entry_2mp">2 Mpx</string>
   <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_2mp_wide">2 MP (16:9)</string>
+  <string name="pref_camera_picturesize_entry_2mp_wide">2 Mpx (16:9)</string>
   <!-- Settings screen, dialog choice for 1.3 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_1_3mp">1,3 megapixlov</string>
+  <string name="pref_camera_picturesize_entry_1_3mp">1,3 Mpx</string>
   <!-- Settings screen, dialog choice for 1 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_1mp">1 megapixel</string>
+  <string name="pref_camera_picturesize_entry_1mp">1 Mpx</string>
   <!-- Settings screen, dialog choice for VGA picture size [CHAR LIMIT=15] -->
   <string name="pref_camera_picturesize_entry_vga">VGA</string>
   <!-- Settings screen, dialog choice for QVGA picture size [CHAR LIMIT=15] -->
@@ -580,9 +580,9 @@
   <string name="pref_camera_whitebalance_label">VYVÁŽENIE BIELEJ</string>
   <!-- Settings screen, White balance dialog radio button choices -->
   <string name="pref_camera_whitebalance_entry_auto">Auto</string>
-  <string name="pref_camera_whitebalance_entry_incandescent">Žiariace</string>
+  <string name="pref_camera_whitebalance_entry_incandescent">Žiarovka</string>
   <string name="pref_camera_whitebalance_entry_daylight">Denné svetlo</string>
-  <string name="pref_camera_whitebalance_entry_fluorescent">Svetielkujúce</string>
+  <string name="pref_camera_whitebalance_entry_fluorescent">Žiarivka</string>
   <string name="pref_camera_whitebalance_entry_cloudy">Zamračené</string>
   <!-- Menu, White balance labels [CHAR LIMIT=50] -->
   <string name="pref_camera_whitebalance_label_auto">AUTO</string>
@@ -604,7 +604,7 @@
   <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=16] -->
   <string name="pref_camera_scenemode_entry_sunset">Západ slnka</string>
   <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=16] -->
-  <string name="pref_camera_scenemode_entry_party">Strana</string>
+  <string name="pref_camera_scenemode_entry_party">Párty</string>
   <!-- Settings menu, scene mode labels [CHAR LIMIT=50] -->
   <string name="pref_camera_scenemode_label_auto">ŽIADNE</string>
   <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=50] -->
@@ -614,7 +614,7 @@
   <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=50] -->
   <string name="pref_camera_scenemode_label_sunset">ZÁPAD SLNKA</string>
   <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=50] -->
-  <string name="pref_camera_scenemode_label_party">VEČIEROK</string>
+  <string name="pref_camera_scenemode_label_party">PÁRTY</string>
   <!-- Settings menu countdown timer labels [CHAR LIMIT=50] -->
   <string name="pref_camera_countdown_label">ČASOVAČ ODPOČÍTAVANIA</string>
   <!-- Settings menu countdown timer off [CHAR LIMIT=50] -->
