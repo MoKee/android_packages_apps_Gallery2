@@ -565,6 +565,7 @@
   <string name="pref_camera_scenemode_label_auto">WALA</string>
   <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=50] -->
   <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=50] -->
+  <string name="pref_camera_scenemode_label_night">Ang gabi</string>
   <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=50] -->
   <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=50] -->
   <!-- Settings menu countdown timer labels [CHAR LIMIT=50] -->
@@ -654,6 +655,7 @@
   <!-- Title of category for silly face effects. [CHAR LIMIT=26] -->
   <string name="effect_silly_faces">MGA KATAWA-TAWANG MUKHA</string>
   <!-- Title of category for background replacement effects. [CHAR LIMIT=26] -->
+  <string name="effect_background">Ang background</string>
   <!-- The shutter button. [CHAR LIMIT = NONE] -->
   <string name="accessibility_shutter_button">Button ng shutter</string>
   <!-- The menu button. [CHAR LIMIT = NONE] -->

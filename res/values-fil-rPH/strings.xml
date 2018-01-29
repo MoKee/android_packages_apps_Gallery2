@@ -153,25 +153,37 @@
   <!-- The title of the menu item to let user crop the image. [CHAR LIMIT=15] -->
   <string name="crop_action">I-crop</string>
   <!-- The title of the menu item to let user trim the video. [CHAR LIMIT=15] -->
+  <string name="trim_action">I-trim ang video</string>
   <!-- The title of the menu item to let user mute the video. [CHAR LIMIT=15] -->
+  <string name="mute_action">Walang tunog</string>
   <!-- The title of the menu item to let user set the image as background etc. [CHAR LIMIT=15] -->
+  <string name="set_as">Itakda ito bilang</string>
   <!-- String indicating an error when muting the video. [CHAR LIMIT=30] -->
+  <string name="video_mute_err">Hindi pwede na walang tunog ang video na ito.</string>
   <!-- String indicating an error when playing the video. [CHAR LIMIT=30] -->
+  <string name="video_err">Hindi masimulan ang video.</string>
   <!-- Strings for grouping operations in the menu. The photos can be grouped
          by their location, taken time, or tags. -->
   <!-- The title of the menu item to let user choose the grouping rule, when
          pressed, a submenu will shown and user can choose one grouping rule
          from the submenu. -->
   <!-- Title of a menu item to group photo by location [CHAR LIMIT=30] -->
+  <string name="group_by_location">Ang mga larawan ay mapapangkat base sa lokasyon, oras na nakunan, o sa tag</string>
   <!-- Title of a menu tiem to group photo by taken date [CHAR LIMIT=30]-->
+  <string name="group_by_time">Maipangkat sa pamamagitan ng kailan na nakunan ang larawan</string>
   <!-- Title of a menu item to group photo by tags [CHAR LIMIT=30]-->
+  <string name="group_by_tags">Maipangkat ang larawan sa pamamgitan ng tags na ginagamit</string>
   <!-- Title of a menu item to group photo by faces [CHAR LIMIT=30]-->
+  <string name="group_by_faces">Maipangkat ang larawan sa pamamagitan ng mukha</string>
   <!-- Title of a menu item to group photo by albums [CHAR LIMIT=30]-->
   <!-- Title of a menu item to group photo by size [CHAR LIMIT=30]-->
+  <string name="group_by_size">Maipangkat ang larawan sa pamamgitan nag laki nito</string>
   <!-- When grouping photos by tags, the label used for photos without tags
          [CHAR LIMIT=20]-->
+  <string name="untagged">Larawan kung walang tags</string>
   <!-- When grouping photos by locations, the label used for photos that don't
          have location information in them [CHAR LIMIT=20]-->
+  <string name="no_location">Walang lokasyon kung saan nakunan ang larawan</string>
   <!-- This toast message is shown when network connection is lost while doing clustering -->
   <!-- This toast message is shown when failed to load the album data. [CHAR LIMIT=NONE] -->
   <!-- The title of the menu item to let user choose the which portion of

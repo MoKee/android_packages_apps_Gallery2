@@ -32,6 +32,7 @@
   <!--  Text for filters that apply a border to a picture [CHAR LIMIT=20] -->
   <string name="borders" msgid="4461692156695893616">Mga Border</string>
   <!-- Text for the custom border filter [CHAR LIMIT=20] -->
+  <string name="custom_border">Custom</string>
   <!--  actionbar menu -->
   <!--  Text for the undo menu item [CHAR LIMIT=20] -->
   <string name="filtershow_undo">I-undo</string>
@@ -292,6 +293,7 @@
   <string name="filtershow_dialog_original_photo">Orihinal na Larawan</string>
   <string name="filtershow_dialog_apply_photo">Mga Kulay na I-a-apply</string>
   <string name="filtershow_dialog_checkbox">Huwag ipakitang muli</string>
+  <string name="filtershow_preset_title">Custom</string>
   <string name="filtershow_preset_rename">Palitan ang pangalan</string>
   <string name="delete_before_exit">Burahin ang Filter?</string>
   <string name="rename_before_exit">Palitan ang pangalan ng Filter</string>
