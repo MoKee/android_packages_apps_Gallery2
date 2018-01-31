@@ -136,7 +136,7 @@
   <string name="no_such_item">Impossible de trouver l\'élément.</string>
   <!-- String used as a menu label. The user can choose to edit the image
          [CHAR_LIMIT=20]-->
-  <string name="edit">Retoucher</string>
+  <string name="edit">Modifier</string>
   <!-- String used as a menu label. The user can choose to edit the image
          [CHAR_LIMIT=20]-->
   <string name="simple_edit">Modification simple</string>

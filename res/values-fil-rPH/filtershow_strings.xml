@@ -190,6 +190,7 @@
   <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
   <string name="motion">Ang galaw</string>
   <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="bw">Itim at puti</string>
   <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
   <string name="blackboard">Ang Blackboard</string>
   <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
@@ -348,7 +349,10 @@
   <string name="trueportrait">Ang orihinal na Portrait</string>
   <string name="foreground">Ang nasa harap na larawan</string>
   <string name="background">Ang nasa likod na larawan</string>
+  <string name="brush_size">Laki ng brush</string>
   <!--Filtershow dialog -->
+  <string name="filtershow_dialog_title">Pasadya na filter</string>
+  <string name="filtershow_dialog_content">Nagbibigay-daan para makagawa ng filter para sa isang larawan.\n\nPumili ng litrato na gusto at gamitin ito bilang filter sa ibang larawan</string>
   <string name="filtershow_dialog_original_photo">Orihinal na Larawan</string>
   <string name="filtershow_dialog_apply_photo">Ang mga kulay na angkop</string>
   <string name="filtershow_dialog_checkbox">Huwag ipakita pang muli</string>
