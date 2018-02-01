@@ -368,6 +368,10 @@
   <string name="watermark_weather">天气</string>
   <string name="watermark_emotions">情绪</string>
   <string name="watermark_food">食物</string>
+  <string name="location_city">位置_城市</string>
+  <string name="time_calendar">时间_日历表</string>
+  <string name="weather_rain">天气_雨</string>
+  <string name="weather_snow">雪_天气</string>
   <!--Filtershow Toast -->
   <string name="no_faces_found">无法识别到面孔</string>
   <string name="image_size_too_small">图片尺寸太小</string>
