@@ -299,6 +299,7 @@
   <string name="color">Warna</string>
   <!--Filtershow dialog -->
   <string name="filtershow_preset_title">Peribadi</string>
+  <string name="watermark_location">Lokasi</string>
   <string name="watermark_time">Masa</string>
   <!--Filtershow Toast -->
 </resources>

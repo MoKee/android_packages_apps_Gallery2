@@ -39,18 +39,52 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="loop">"Gelung"</string>
   <string name="single">"Tunggal"</string>
   <string name="stereo">"Stereo"</string>
+  <string name="speaker_on">Pembersar suara dihidupkan</string>
+  <string name="speaker_off">Pembesar suara dimatikan</string>
+  <string name="speaker_need_headset">Pasangkan fon kepala untuk menggunakan ciri ini.</string>
+  <string name="single_track">"Lagu tunggal"</string>
+  <string name="input_url">"Masukkan URL"</string>
+  <string name="streaming_settings">"Tetapan penstriman"</string>
   <string name="next">"Selepas"</string>
+  <string name="previous">"Sebelumnya"</string>
+  <string name="buffer_size">Saiz penimbal</string>
+  <string name="apn">APN yang diutamakan</string>
+  <string name="rtp_min_port">Port minimum</string>
+  <string name="rtp_max_port">Port maksimum</string>
+  <string name="set_rtp_min_port">Tetapkan port minimum</string>
+  <string name="set_rtp_max_port">Tetapkan port maksimum</string>
+  <string name="set_buffer_size">Tetepkan saiz penimbal</string>
+  <string name="set_apn">Pilih APN yang diutamakan</string>
   <string name="setting">Tetapan</string>
+  <string name="server_timeout_title">"Tamat masa pelayan"</string>
+  <string name="server_timeout_message">"Sambung semula kepada pelayan untuk mainkan video ini?"</string>
+  <string name="videoview_error_text_cannot_connect_retry">"Penyambungan telah gagal, sedang mencuba untuk menyambung semula ke %1$d\u2026"</string>
+  <string name="media_controller_live">Secara langsung</string>
+  <string name="media_controller_playing">Bermain</string>
+  <string name="media_controller_connecting">Menyambung\u2026</string>
+  <string name="bookmark_title">"Tajuk"</string>
+  <string name="bookmark_location">"Lokasi"</string>
+  <string name="delete_all">"Padam Semua"</string>
+  <string name="default_title">"Tajuk lalai"</string>
   <!-- A label describing to link website [CHAR LIMIT=30] -->
+  <string name="more_image">Lebih banyak imej</string>
   <!-- Toast if the muted video is not supported. [CHAR LIMIT=80] -->
   <!-- The message is shown in toast when click showOnMap Menu and there is no map app -->
   <!-- Toast message for share items -->
+  <string name="cannot_share_items">Maksimum pilihan item untuk dikongsi adalah 300</string>
+  <string name="share_dialogue_title">Kongsi melalui</string>
   <!-- When grouping photos by peoples, the label used for photos that don't
          have people information in them [CHAR LIMIT=20]-->
   <!-- The tips of trimming video -->
+  <string name="fail_trim">Harap maaf, fail video ini tidak boleh dipangkas</string>
+  <string name="can_not_trim">Hanya fail mp4 dan 3gp boleh dipangkas</string>
+  <string name="drm_license_info">Maklumat Lesen DRM</string>
   <!-- Timeline screen title -->
+  <string name="timeline_title">Garis masa</string>
   <!-- Albums screen title -->
   <string name="albums_title">Album</string>
   <!-- Videos screen title -->
+  <string name="tvEmptyAlbum">Tiada gambar yang dijumpai</string>
+  <string name="tvEmptyVideos">Tiada video yang dijumpai</string>
   <string name="trim_video_exit_title">Adakah anda ingin simpan sebelum keluar?</string>
 </resources>
