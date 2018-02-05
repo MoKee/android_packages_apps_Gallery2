@@ -66,7 +66,6 @@
   <string name="save_before_exit">Vill du spara innan du avslutar?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Spara och avsluta</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Bearbetar högupplöst bild …</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -111,9 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Tiny Planet</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <!--  HazeBuster button -->
-  <!--  SeeStraight button -->
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Exponering</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -171,29 +167,6 @@
   <string name="downsample">Nedsampla</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Övertonad</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Fokus</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Fusion</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Zooma</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Rörelse</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">S/V</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Whiteboard</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Färgreduk.</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negativ</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Rörelseoskärpa</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Ljusstyrka</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -315,29 +288,4 @@
   <string name="filtershow_exif_exposure_time">Exponeringstid</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Upphovsrätt</string>
-  <string name="fusion_pick_point">Välj segment</string>
-  <string name="dualcam_no_segment_toast">Inget segment hittades vid denna punkt</string>
-  <string name="do_not_show_again">Visa inte igen</string>
-  <string name="fusion_pick_background">Välj bakgrundsfoto</string>
-  <string name="color">Färg</string>
-  <string name="ok_continue">Fortsätt</string>
-  <string name="foreground">Förgrund</string>
-  <string name="background">Bakgrund</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Anpassat filter</string>
-  <string name="filtershow_dialog_original_photo">Originalfoto</string>
-  <string name="filtershow_dialog_apply_photo">Färger att applicera</string>
-  <string name="filtershow_dialog_checkbox">Visa inte igen</string>
-  <string name="filtershow_preset_title">Anpassat</string>
-  <string name="filtershow_preset_rename">Byt namn</string>
-  <string name="delete_before_exit">Ta bort filter?</string>
-  <string name="rename_before_exit">Byt namn på filter</string>
-  <string name="filter_name">Filternamn</string>
-  <string name="filter_name_notification">Namnet får inte vara NULL.</string>
-  <string name="watermark_location">Plats</string>
-  <string name="watermark_time">Tid</string>
-  <string name="watermark_weather">Väder</string>
-  <string name="watermark_emotions">Känslor</string>
-  <string name="watermark_food">Mat</string>
-  <!--Filtershow Toast -->
 </resources>

@@ -66,8 +66,6 @@
   <string name="save_before_exit">Balewalain ang mga pagbabago?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">I-save at umalis</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Alisin</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Pagproseso sa buong resolusyon ng larawan...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Maliliit na planeta</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">Tunay na iskaner</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Ang Haze Buster</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Tingnan ng Straight</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Pagkakalantad</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Ang Downsample</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Ang natapos</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Ang focus</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Ang fusion</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Ang Sketch</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Ang halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Ang palakihin</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Ang galaw</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Itim at puti</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Ang Blackboard</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Ang whiteboard</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Ang Posterize</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Ang negatibo</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Ang malabo</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Ang galaw na malabo</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Ang kaliwanagan</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,49 +290,4 @@
   <string name="filtershow_exif_exposure_time">Ang Oras ng pagkakalantad</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Ang Karapatang magpalathala</string>
-  <string name="fusion_pick_point">Pumili ng Segment</string>
-  <string name="fusion_pick_underlay">Pumili ng Underlay</string>
-  <string name="dual_camera_effects">Mga iba\'t ibang magagamit na palamuti ng isang dalawang camera</string>
-  <string name="dual_camera_effects_intro">Pwedeng gumamit ng palamuti para sa background, katulad ng \"Galaw\" at \"Guhit\". Pwede ring gawin na isama ang dalawang larawan para magkaroon pa ng mas magandang larawan. Ang ganitong palamuti ay napakaganda gamitin kapag nilapit mo ang camera at ang pinakasubject mo sa iyong larawan.</string>
-  <string name="dualcam_no_segment_toast">Walang makikita na eksena dito</string>
-  <string name="dualcam_filter_not_supported">Hindi pwede ang ganitong klase na larawan dito sa dalawang camera na effects</string>
-  <string name="trueportrait_intro">Maaaring gamitin ito para pagandahin ang mga larawan ng tao. Pwedeng mabago ang background gamit ang mga palamuti, katulad lamang ng \"Paglabo\" at \"Guhit\". Kung kukuha ng potrait na larawan maaring isama ang dalawang larawan para magkaroon ng mas kawili-wiling background.</string>
-  <string name="trueportrait_no_face">Sa larawang ito hindi ma gagamit ang orihinal na palamuti ng portrait.</string>
-  <string name="trueportrait_edit_intro">Kung gagamit ng Touch-Up, ma i-edit ang harap at ang background ng larawan. Maaring gamitin ang mga daliri sa pagpinta ng kahit saan sa harap o background ng larawan na nawawala.</string>
-  <string name="trueportrait_edit_foreground_toast">Gamitin ang daliri upang pinatahan ang anumang lugar sa harapan na nalampasan.</string>
-  <string name="trueportrait_edit_background_toast">Gamitin ang daliri upang pinatahan ang anumang lugar sa likuran na nalampasan.</string>
-  <string name="trueportrait_edit_help">Para palakihin ang larawan, gumamit ng dalawang daliri upang maipisil ito ng ma palaki at mapaliit. Pindutin ang larawan ng dalawang daliri kung gustong ilipat sa ibang posisyon. Ito ang pinaka ma inam na solusyun sa kahit anong problema.</string>
-  <string name="trueportrait_fusion_intro">Ang nasa harap na larawan ay pwedeng kopyahin at ilagay sa anumang larawan sa gallery. Maari ding subukan na gumamit ng iba\'t ibag background na larawan ng makagawa pa ng bago at nakahuhumaling na larawan.</string>
-  <string name="dualcam_fusion_intro">Ang nasa harap na larawan ay pwedeng kopyahin at ilagay sa anumang larawan sa gallery. \n\nMaari ding subukan na gumamit ng iba\'t ibag background na larawan ng makagawa pa ng bago at nakahuhumaling na larawan.</string>
-  <string name="do_not_show_again">Huwag ipakita pang muli</string>
-  <string name="trueportrait_touch_up">Mag-ayos na kagamitan</string>
-  <string name="fusion_pick_background">Pumili ng isang larawan na ilalagay sa background</string>
-  <string name="color">Kulay</string>
-  <string name="ok_continue">Magpatuloy</string>
-  <string name="frames">Mga frames</string>
-  <string name="beautify">Pagandahin</string>
-  <string name="dualcam">Dalawang camera na pinagsama bilang iisa</string>
-  <string name="trueportrait">Ang orihinal na Portrait</string>
-  <string name="foreground">Ang nasa harap na larawan</string>
-  <string name="background">Ang nasa likod na larawan</string>
-  <string name="brush_size">Laki ng brush</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Pasadya na filter</string>
-  <string name="filtershow_dialog_content">Nagbibigay-daan para makagawa ng filter para sa isang larawan.\n\nPumili ng litrato na gusto at gamitin ito bilang filter sa ibang larawan</string>
-  <string name="filtershow_dialog_original_photo">Orihinal na Larawan</string>
-  <string name="filtershow_dialog_apply_photo">Ang mga kulay na angkop</string>
-  <string name="filtershow_dialog_checkbox">Huwag ipakita pang muli</string>
-  <string name="filtershow_preset_title">Custom</string>
-  <string name="filtershow_preset_rename">Baguhin ang pangalan</string>
-  <string name="delete_before_exit">Burahin ang Filter?</string>
-  <string name="rename_before_exit">Palitan ang Pangalan ng Filter</string>
-  <string name="filter_name">Pangalan ng Filter</string>
-  <string name="filter_name_notification">Ang pangalan ay hindi maaaring BLANGKO.</string>
-  <string name="filter_name_duplicate">Mayroon nang pangalan na ganito, mangyaring maglagay ng iba pa.</string>
-  <string name="watermark_location">Lokasyon</string>
-  <string name="watermark_time">Oras</string>
-  <string name="watermark_weather">Lagay ng panahon</string>
-  <string name="watermark_emotions">Emosyon</string>
-  <string name="watermark_food">Pagkain</string>
-  <!--Filtershow Toast -->
 </resources>

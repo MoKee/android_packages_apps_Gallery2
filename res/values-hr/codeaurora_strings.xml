@@ -86,5 +86,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="albums_title">Albumi</string>
   <!-- Videos screen title -->
   <string name="truescanner_normal">Normalan</string>
+  <string name="truescanner_white">Bijela ploča</string>
   <string name="trim_video_exit_title">Želite li spremiti prije nego što iziđete?</string>
 </resources>

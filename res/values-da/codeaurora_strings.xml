@@ -98,6 +98,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_whiten">Blegning</string>
   <string name="text_makeup_Soften">Blødgøring</string>
   <string name="truescanner_normal">Normal</string>
+  <string name="truescanner_white">Hvid tavle</string>
   <string name="truescanner_remove_glare">Fjern genskin</string>
   <string name="seestraight_acts">Se lige</string>
   <string name="seestraight_input_image_is_small">Input-billedet er for lille til at behandle.</string>

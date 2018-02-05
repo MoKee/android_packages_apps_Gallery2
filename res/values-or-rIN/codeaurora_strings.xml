@@ -88,4 +88,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Albums screen title -->
   <!-- Videos screen title -->
   <string name="truescanner_normal">ସାଧାରଣ</string>
+  <string name="truescanner_white">ଧଳାବୋର୍ଡ୍‍</string>
 </resources>

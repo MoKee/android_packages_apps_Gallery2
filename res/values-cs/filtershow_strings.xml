@@ -66,8 +66,6 @@
   <string name="save_before_exit">Chcete před ukončením uložit změny?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Uložit a ukončit</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Zrušit</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Zpracovávání fotografie v plném rozlišení...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Malá planeta</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">True Scanner</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Haze Buster</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Viz přímo</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Expozice</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Zmenšit</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Stupňování</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Zaměřování</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Fusion</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Skica</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">HALO</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Zoom</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Pohyb</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Černobílé</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Černá tabule</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Bílá tabule</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Poster.</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negativ</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Rozmazání</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Rozmazání při pohybu</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Jas</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,72 +290,4 @@
   <string name="filtershow_exif_exposure_time">Expoziční čas</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Autorská práva</string>
-  <string name="fusion_pick_point">Vybrat segment</string>
-  <string name="fusion_pick_underlay">Vybrat podklad</string>
-  <string name="dual_camera_effects">Efekty duálního fotoaparátu</string>
-  <string name="dual_camera_effects_intro">Umožňuje použít efekty pozadí, jako například \"Motion\" a \"Sketch\". Zajímavých efektů dosáhnete také sloučením dvou fotografií. Tato funkce funguje nejlépe, když je vzdálenost mezi fotoaparátem a hlavním objektem malá.</string>
-  <string name="dualcam_no_segment_toast">V tomto okamžiku nebyly nalezeny žádné segmenty</string>
-  <string name="dualcam_filter_not_supported">Filtry duálního fotoaparátu nejsou podporovány pro tento obrázek</string>
-  <string name="trueportrait_intro">Umožňuje vylepšit fotografie osob. Můžete použít efekty na pozadí, jako například \"rozostření\" nebo \"skica\". Také můžete sloučit dvě fotografie a vytvořit zajímavé pozadí pro fotografie portrétů.</string>
-  <string name="trueportrait_no_face">Efekt portrétů nemůže být použit na tomto obrázku. Tvář není detekována.</string>
-  <string name="trueportrait_edit_intro">Pomocí nástroje retušování můžete upravovat popředí i pozadí. Můžete také použít prst na malování v jakékoli oblasti popředí nebo pozadí, která byla vynechána.</string>
-  <string name="trueportrait_edit_foreground_toast">Použijte prst na malování v jakékoli oblasti popředí, která byla vynechána.</string>
-  <string name="trueportrait_edit_background_toast">Použijte prst na malování v jakékoli oblasti pozadí, která byla vynechána.</string>
-  <string name="trueportrait_edit_help">Pro přiblížení použijte gesto roztažení dvou prstů. Také můžete potáhnout dvěma prsty pro přesunutí obrázku. Můžete tak snadno opravit případné problémové oblasti.</string>
-  <string name="trueportrait_fusion_intro">Osobu z popředí můžete zkopírovat a vložit do libovolného obrázku v Galerii. Můžete zkusit použít různé obrázky pozadí, vytvořit nové a zajímavé portréty.</string>
-  <string name="dualcam_fusion_intro">Objekt z popředí můžete zkopírovat a vložit do libovolného obrázku v Galerii. Můžete zkusit použít různé obrázky pozadí, vytvořit nové a zajímavé fotografie.</string>
-  <string name="do_not_show_again">Znovu nezobrazovat</string>
-  <string name="trueportrait_touch_up">Retušovat</string>
-  <string name="fusion_pick_background">Vyberte obrázek pozadí</string>
-  <string name="color">Barva</string>
-  <string name="ok_continue">Pokračovat</string>
-  <string name="frames">Okraje</string>
-  <string name="beautify">Zkrášlení</string>
-  <string name="dualcam">Duální fotoaparát</string>
-  <string name="trueportrait">Portrét</string>
-  <string name="foreground">Popředí</string>
-  <string name="background">Pozadí</string>
-  <string name="brush_size">Velikost štětce</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Vlastní filtr</string>
-  <string name="filtershow_dialog_content">Umožňuje vytvořit filtr fotografie.\n\nVyberte fotografii, která se použije jako filtr pro další fotografie</string>
-  <string name="filtershow_dialog_original_photo">Původní fotografie</string>
-  <string name="filtershow_dialog_apply_photo">Použít barvy</string>
-  <string name="filtershow_dialog_checkbox">Znovu nezobrazovat</string>
-  <string name="filtershow_preset_title">Vlastní</string>
-  <string name="filtershow_preset_rename">Přejmenovat</string>
-  <string name="delete_before_exit">Vymazat filtr?</string>
-  <string name="rename_before_exit">Přejmenovat filtr</string>
-  <string name="filter_name">Název Filtru</string>
-  <string name="filter_name_notification">Název nesmí být prázdný.</string>
-  <string name="filter_name_duplicate">Tento název již existuje, prosím zadejte jiný.</string>
-  <string name="watermark_location">Místo</string>
-  <string name="watermark_time">Čas</string>
-  <string name="watermark_weather">Počasí</string>
-  <string name="watermark_emotions">Emoce</string>
-  <string name="watermark_food">Jídlo</string>
-  <string name="location_pin">LOCATION_PIN</string>
-  <string name="location_city">LOCATION_CITY</string>
-  <string name="location_hello">LOCATION_HELLO</string>
-  <string name="location_stamp">LOCATION_STAMP</string>
-  <string name="time_hourglass">TIME_HOURGLASS</string>
-  <string name="time_timestamp">TIME_TIMESTAMP</string>
-  <string name="time_sunrise">TIME_SUNRISE</string>
-  <string name="time_calendar">TIME_CALENDAR</string>
-  <string name="weather_rain">WEATHER_RAIN</string>
-  <string name="weather_snow">WEATHER_SNOW</string>
-  <string name="weather_sun">WEATHER_SUN</string>
-  <string name="weather_artistic_sun">WEATHER_ARTISTIC_SUN</string>
-  <string name="emotion_party">EMOTION_PARTY</string>
-  <string name="emotion_peace">EMOTION_PEACE</string>
-  <string name="emotion_cry">EMOTION_CRY</string>
-  <string name="emotion_happy">EMOTION_HAPPY</string>
-  <string name="food_fork_knife">FOOD_FORK_KNIFE</string>
-  <string name="food_tea_time">FOOD_TEA_TIME</string>
-  <string name="food_cheers">FOOD_CHEERS</string>
-  <string name="food_yum">FOOD_YUM</string>
-  <!--Filtershow Toast -->
-  <string name="no_faces_found">Nenalezeny žádné tváře</string>
-  <string name="image_size_too_small">Velikost obrázku je příliš malá</string>
-  <string name="not_support_gif">nepodporuje rozšíření gif, vyberte prosím znovu</string>
 </resources>

@@ -66,8 +66,6 @@
   <string name="save_before_exit">Souhaitez-vous enregistrer les modifications avant de fermer le programme ?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Enregistrer et quitter</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Annuler</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Traitement de l\'image haute résolution en cours…</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,11 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Petite planète</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Filtre anti-brume</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Voir directement</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Exposition</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -176,32 +169,6 @@
   <string name="downsample">Réduction</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Graduation</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Mise au point</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Fusion</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Esquisse</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Zoom</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Mouvements</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Noir et blanc</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Tableau noir</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Tableau blanc</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Posteriser</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Négatif</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Flou</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Mouvement Flou</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Luminosité</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -323,69 +290,4 @@
   <string name="filtershow_exif_exposure_time">Temps d\'exposition</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Droits d\'auteur</string>
-  <string name="fusion_pick_point">Choisir un Segment</string>
-  <string name="fusion_pick_underlay">Choisir la sous-couche</string>
-  <string name="dual_camera_effects">Effets pour double capteur d\'appareils photo</string>
-  <string name="dual_camera_effects_intro">Permet d\'appliquer des effets d\'arrière-plan, tels que \"Motion\" et \"Sketch\". Vous pouvez également fusionner deux photos pour obtenir des effets intéressants. Cette fonctionnalité marche mieux lorsqu\'il y a une courte distance entre votre appareil photo et le sujet principal de la photo.</string>
-  <string name="dualcam_no_segment_toast">Aucun segment trouvé à ce stade</string>
-  <string name="dualcam_filter_not_supported">Le Filtres double caméra ne sont pas pris en charge pour cette image</string>
-  <string name="trueportrait_intro">Permet d\'améliorer les photos de personnes. Vous pouvez appliquer des effets à l\'arrière-plan, tels que «flou» et «croquis». Vous pouvez également fusionner deux photos ensemble pour créer des arrière-plans intéressants pour vos photos portrait.</string>
-  <string name="trueportrait_no_face">Les effets «Portrait fidèle» ne peuvent pas être appliqués à cette photo. Aucun visage détectée.</string>
-  <string name="trueportrait_edit_intro">Avec l\'outil de Retouche, vous pouvez modifier l\'avant-plan et l\'arrière-plan. Vous pouvez utiliser votre doigt pour peindre dans les zones de l\'avant-plan ou d\'arrière-plan qui ont été perdus.</string>
-  <string name="trueportrait_edit_foreground_toast">Utiliser votre doigt pour peindre dans les zones de l\'avant-plan qui ont été effacés.</string>
-  <string name="trueportrait_edit_background_toast">Utiliser votre doigt pour peindre dans toutes les zones de l’arrière-plan qui ont été manqués.</string>
-  <string name="trueportrait_edit_help">Pour zoomer, utilisez deux doigts pincer ouverte ou fermée. Vous pouvez également faire glisser avec deux doigts pour repositionner l’image. Cela peut rendre plus facile la résolution des zones à problèmes.</string>
-  <string name="trueportrait_fusion_intro">Le sujet de l\'avant-plan peut être copié et collé sur n\'importe quelle photo de votre galerie. Vous pouvez essayer d\'utiliser différents fond de photo pour créer de nouveaux portraits intéressants.</string>
-  <string name="dualcam_fusion_intro">L\'avant-plan peut être copié et collé sur n\'importe quelle photo de votre galerie.\n\nVous pouvez essayer d\'utiliser différents fond de photo pour créer de nouveaux portraits intéressants.</string>
-  <string name="do_not_show_again">Ne plus montrer</string>
-  <string name="trueportrait_touch_up">Retoucher</string>
-  <string name="fusion_pick_background">Sélectionner l\'arrière-plan</string>
-  <string name="color">Couleur</string>
-  <string name="ok_continue">Poursuivre</string>
-  <string name="frames">Cadres</string>
-  <string name="beautify">Embellir</string>
-  <string name="dualcam">Double caméra</string>
-  <string name="trueportrait">Portrait fidèle</string>
-  <string name="foreground">Avant-plan</string>
-  <string name="background">Arrière plan</string>
-  <string name="brush_size">Taille du pinceau</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Filtre personnalisé</string>
-  <string name="filtershow_dialog_content">Permet de créer un filtre photo.\n\nSélectionnez une photo que vous aimez et utilisez-la comme filtre pour d\'autres photos</string>
-  <string name="filtershow_dialog_original_photo">Photo originale</string>
-  <string name="filtershow_dialog_apply_photo">Couleurs à appliquer</string>
-  <string name="filtershow_dialog_checkbox">Ne plus montrer</string>
-  <string name="filtershow_preset_title">Personnalisé</string>
-  <string name="filtershow_preset_rename">Renommer</string>
-  <string name="delete_before_exit">Supprimer le filtre?</string>
-  <string name="rename_before_exit">Renommez le filtre</string>
-  <string name="filter_name">Nom du filtre</string>
-  <string name="filter_name_notification">Le nom ne peut pas être vide.</string>
-  <string name="filter_name_duplicate">Nom déjà existant, veuillez en saisir un autre.</string>
-  <string name="watermark_location">Position</string>
-  <string name="watermark_time">Heure</string>
-  <string name="watermark_weather">Météo</string>
-  <string name="watermark_emotions">Émotions</string>
-  <string name="watermark_food">Nourriture</string>
-  <string name="location_hello">EMPLACEMENT_SALUT</string>
-  <string name="location_stamp">EMPLACEMENT_TIMBRE</string>
-  <string name="time_hourglass">TEMPS_SABLIER</string>
-  <string name="time_sunrise">TEMPS_LEVE_DU_SOLEIL</string>
-  <string name="time_calendar">TEMPS_CALENDRIER</string>
-  <string name="weather_rain">METEO_PLUIE</string>
-  <string name="weather_snow">METEO_NEIGE</string>
-  <string name="weather_sun">METEO_ENSOLEILLE</string>
-  <string name="weather_artistic_sun">METEO_SOLEIL_MAGNIFIQUE</string>
-  <string name="emotion_party">EMOTION_FETE</string>
-  <string name="emotion_peace">EMOTION_PAIX</string>
-  <string name="emotion_cry">EMOTION_PLEUR</string>
-  <string name="emotion_happy">EMOTION_JOIE</string>
-  <string name="food_fork_knife">NOURRITURE_COUVERT</string>
-  <string name="food_tea_time">NOURRITURE_L\'HEURE_DU_THE</string>
-  <string name="food_cheers">NOURRITURE_TCHIN</string>
-  <string name="food_yum">NOURRITURE_MIAM</string>
-  <!--Filtershow Toast -->
-  <string name="no_faces_found">Aucun visage trouvé</string>
-  <string name="image_size_too_small">Image trop petite</string>
-  <string name="not_support_gif">ne supporte pas l’extension \"gif\" , veuillez choisir de nouveau</string>
 </resources>

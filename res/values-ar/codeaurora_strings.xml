@@ -91,5 +91,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="albums_title">ألبومات</string>
   <!-- Videos screen title -->
   <string name="truescanner_normal">عادي</string>
+  <string name="truescanner_white">لوح المعلومات</string>
   <string name="trim_video_exit_title">هل تريد الحفظ قبل الخروج؟</string>
 </resources>

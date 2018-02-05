@@ -66,8 +66,6 @@
   <string name="save_before_exit">Искате ли да запазите преди изход?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Запазване и изход</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Отхвърли</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Изображението с пълна разделителна способност се обработва...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,9 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Мини планета</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <!--  HazeBuster button -->
-  <!--  SeeStraight button -->
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Експониране</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -174,30 +169,6 @@
   <string name="downsample">Редуциране</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Преливане</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Фокус</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Скица</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Приближаване</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Движение</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Ч/Б</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Черна дъска</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Бяла дъска</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Плакат</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Негатив</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Замъгли</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Ярко</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -319,13 +290,4 @@
   <string name="filtershow_exif_exposure_time">Експонация</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Авторски права</string>
-  <string name="color">Цвят</string>
-  <string name="ok_continue">Продължи</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_preset_title">Персонализирано</string>
-  <string name="filtershow_preset_rename">Преименуване</string>
-  <string name="watermark_location">Местоположение</string>
-  <string name="watermark_time">Час</string>
-  <string name="watermark_weather">Прогноза за времето</string>
-  <!--Filtershow Toast -->
 </resources>

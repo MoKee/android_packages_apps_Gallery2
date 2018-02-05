@@ -66,8 +66,6 @@
   <string name="save_before_exit">捨棄變更？</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">儲存並結束</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">捨棄</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">正在處理完整解析度圖片...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">小星球</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">真實掃描</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Haze Buster</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">參考直線</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">曝光</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">縮小取樣</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">漸層</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">聚焦</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">融合</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">素描</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">光暈</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">縮放</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">運動</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">黑白</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">黑板</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">白板</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">色調分離</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">負片效果</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">模糊</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">運動模糊</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">亮度</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,72 +290,4 @@
   <string name="filtershow_exif_exposure_time">曝光時間</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">版權</string>
-  <string name="fusion_pick_point">選擇部分</string>
-  <string name="fusion_pick_underlay">選擇底層</string>
-  <string name="dual_camera_effects">雙鏡頭效果</string>
-  <string name="dual_camera_effects_intro">允許您將套用背景效果，例如「運動」和「素描」等。您也可以合併兩張相片在一起的有趣的效果。當您的相機距離較近時，此功能效果最佳，並且您的照片主要主題。</string>
-  <string name="dualcam_no_segment_toast">此時沒有找到分段</string>
-  <string name="dualcam_filter_not_supported">此圖片不支援雙鏡頭濾鏡</string>
-  <string name="trueportrait_intro">此功能用於增強人像照。您可以將效果套用於照片背景，例如「模糊」和「素描」。您也可以將兩張照片拼在一起來給您的人像照建立一個有趣的背景。</string>
-  <string name="trueportrait_no_face">真實肖像效果無法套用於此相片。 未檢測到臉部。</string>
-  <string name="trueportrait_edit_intro">使用觸控式工具，您可以編輯前景和背景。 您可以使用手指在前景或背景的任何缺失區域繪製。</string>
-  <string name="trueportrait_edit_foreground_toast">使用手指在前景中被遺漏的任何區域進行繪製。</string>
-  <string name="trueportrait_edit_background_toast">使用手指在背景的任何被遺漏的地方繪製。</string>
-  <string name="trueportrait_edit_help">要進行縮放，請使用兩隻手指滑動或關閉。 您也可以用兩個手指拖動以重新定位圖片。 這可以使得更容易修復任何問題區域。</string>
-  <string name="trueportrait_fusion_intro">您的前景人物可以複製並貼上到您的圖片庫中的任何相片上。 您可以嘗試使用不同的背景照片建立新的和有趣的肖像。</string>
-  <string name="dualcam_fusion_intro">您的前景可以複製並貼上到圖片庫中的任何照片上。\n\n您可以嘗試使用不同的背景照片來建立新的和有趣的肖像。</string>
-  <string name="do_not_show_again">不再顯示</string>
-  <string name="trueportrait_touch_up">潤色</string>
-  <string name="fusion_pick_background">選擇背景圖片</string>
-  <string name="color">濾鏡</string>
-  <string name="ok_continue">繼續</string>
-  <string name="frames">相框</string>
-  <string name="beautify">美肌</string>
-  <string name="dualcam">雙鏡頭</string>
-  <string name="trueportrait">真實肖像</string>
-  <string name="foreground">前景</string>
-  <string name="background">背景</string>
-  <string name="brush_size">筆刷尺寸</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">自訂濾鏡</string>
-  <string name="filtershow_dialog_content">允許您建立照片濾鏡。\n\n選擇您喜歡的照片，並將其用作其他照片的濾鏡</string>
-  <string name="filtershow_dialog_original_photo">原始照片</string>
-  <string name="filtershow_dialog_apply_photo">套用顏色</string>
-  <string name="filtershow_dialog_checkbox">不再顯示</string>
-  <string name="filtershow_preset_title">自訂</string>
-  <string name="filtershow_preset_rename">重新命名</string>
-  <string name="delete_before_exit">刪除濾鏡？</string>
-  <string name="rename_before_exit">重新命名濾鏡</string>
-  <string name="filter_name">濾鏡名稱</string>
-  <string name="filter_name_notification">名稱不能為空白。</string>
-  <string name="filter_name_duplicate">名稱已經存在，請輸入另一個。</string>
-  <string name="watermark_location">位置</string>
-  <string name="watermark_time">時間</string>
-  <string name="watermark_weather">天氣</string>
-  <string name="watermark_emotions">表情</string>
-  <string name="watermark_food">食物</string>
-  <string name="location_pin">LOCATION_PIN</string>
-  <string name="location_city">LOCATION_CITY</string>
-  <string name="location_hello">LOCATION_HELLO</string>
-  <string name="location_stamp">LOCATION_STAMP</string>
-  <string name="time_hourglass">TIME_HOURGLASS</string>
-  <string name="time_timestamp">TIME_TIMESTAMP</string>
-  <string name="time_sunrise">TIME_SUNRISE</string>
-  <string name="time_calendar">TIME_CALENDAR</string>
-  <string name="weather_rain">WEATHER_RAIN</string>
-  <string name="weather_snow">WEATHER_SNOW</string>
-  <string name="weather_sun">WEATHER_SUN</string>
-  <string name="weather_artistic_sun">WEATHER_ARTISTIC_SUN</string>
-  <string name="emotion_party">EMOTION_PARTY</string>
-  <string name="emotion_peace">EMOTION_PEACE</string>
-  <string name="emotion_cry">EMOTION_CRY</string>
-  <string name="emotion_happy">EMOTION_HAPPY</string>
-  <string name="food_fork_knife">FOOD_FORK_KNIFE</string>
-  <string name="food_tea_time">FOOD_TEA_TIME</string>
-  <string name="food_cheers">FOOD_CHEERS</string>
-  <string name="food_yum">FOOD_YUM</string>
-  <!--Filtershow Toast -->
-  <string name="no_faces_found">沒有發現臉孔</string>
-  <string name="image_size_too_small">圖片尺寸太小</string>
-  <string name="not_support_gif">不支援 gif 檔，請再次選擇</string>
 </resources>

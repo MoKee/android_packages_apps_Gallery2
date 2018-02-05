@@ -88,5 +88,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Albums screen title -->
   <!-- Videos screen title -->
   <string name="truescanner_normal">సాధారణం</string>
+  <string name="truescanner_white">వైట్‌బోర్డ్</string>
   <string name="trim_video_exit_title">మీరు నిష్క్రమించే ముందు సేవ్ చేయాలనుకుంటున్నారా?</string>
 </resources>

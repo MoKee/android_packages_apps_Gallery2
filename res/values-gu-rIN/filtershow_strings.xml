@@ -65,7 +65,6 @@
   <string name="save_before_exit">શું તમે બહાર નીકળતા પહેલા સાચવવા માંગો છો?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">સાચવો અને બહાર નીકળો</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">પૂર્ણ રિઝોલ્યૂશન છબી પર પ્રક્રિયા કરી રહ્યું છે...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -103,9 +102,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">નાનું પ્લેનેટ</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <!--  HazeBuster button -->
-  <!--  SeeStraight button -->
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">પ્રદર્શન</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -164,21 +160,6 @@
   <!--  Label for the image downsampling effect (makes image smaller) [CHAR LIMIT=15] -->
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">ગેજ્યુએટેડ</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">પોસ્ટરાઇઝ</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">નેગેટિવ</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">તેજ</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -298,9 +279,4 @@
   <string name="filtershow_exif_exposure_time">પ્રદર્શન સમય</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">કોપિરાઇટ</string>
-  <string name="color">રંગ</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_preset_title">કસ્ટમ</string>
-  <string name="watermark_location">&quot;સ્થાન&quot;</string>
-  <!--Filtershow Toast -->
 </resources>

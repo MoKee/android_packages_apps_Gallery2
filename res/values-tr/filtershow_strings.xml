@@ -66,8 +66,6 @@
   <string name="save_before_exit">Çıkmadan önce kaydetmek ister misiniz?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Kaydet ve Çık</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Kaydetme</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Tam çözünürlüklü resim işleniyor...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Küçük Gezegen</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">Gerçek Tarama</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Hale Giderici</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Düz Bak</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Pozlama</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Küçült</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Geçişli</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Odaklan</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Füzyon</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Çiz</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Hale</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Yakınlaştırma</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Hareket</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Siyah Beyaz</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Kara tahta</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Beyaz tahta</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Poster Efekti</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negatif</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Bulanıklık</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Hareket Bulanıklığı</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Parlaklık</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,72 +290,4 @@
   <string name="filtershow_exif_exposure_time">Pozlama Süresi</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Telif Hakkı</string>
-  <string name="fusion_pick_point">Segment Seç</string>
-  <string name="fusion_pick_underlay">Alt katman seç</string>
-  <string name="dual_camera_effects">Çift kamera efektleri</string>
-  <string name="dual_camera_effects_intro">\"Hareket\" ve \"Eskiz\" gibi arka plan efektleri uygulamanıza izin verir. İlginç efektler için iki fotoğrafı bir araya getirebilirsiniz. Bu özellik, fotoğraf makinenize ve ana resminize kısa mesafede olduğunuzda en iyi sonucu verir.</string>
-  <string name="dualcam_no_segment_toast">Bu noktada segment bulunamadı</string>
-  <string name="dualcam_filter_not_supported">Çift kamera filtreleri, bu resim için desteklenmemektedir</string>
-  <string name="trueportrait_intro">Kişilerin fotoğraflarını iyileştirmenize izin verir. Arka plana \"Bulanıklık\" ve \"Çiz\" gibi efektler uygulayabilirsiniz. Ayrıca portre fotoğraflarınız için ilginç arka planlar yaratmak amacıyla iki fotoğrafı birleştirebilirsiniz.</string>
-  <string name="trueportrait_no_face">Gerçek Portre efektleri, bu fotoğrafa uygulanamaz. Yüz tespit edilemedi.</string>
-  <string name="trueportrait_edit_intro">Rötuş aracı ile ön ve arka planları düzenleyebilirsiniz. Parmağınızı kullanarak ön ve arka planı boyayabilirsiniz.</string>
-  <string name="trueportrait_edit_foreground_toast">Ön planı boyamak için parmağınızı kullanın.</string>
-  <string name="trueportrait_edit_background_toast">Arka planı boyamak için parmağınızı kullanın.</string>
-  <string name="trueportrait_edit_help">Yakınlaştırma/uzaklaştırma için iki parmağınızı açın/kapatın. Resmin pozisyonunu değiştirmek içinse resmi iki parmağınızla sürükleyebilirsiniz. Bu, problemli bölgeleri düzeltmeyi kolaylaştırabilir.</string>
-  <string name="trueportrait_fusion_intro">Ön plan kişiniz, kopyalanarak galerinizdeki herhangi bir fotoğrafın üzerine yapıştırılabilir. Yeni ve ilginç portreler yaratmak için farklı arka plan fotoğrafları kullanabilirsiniz.</string>
-  <string name="dualcam_fusion_intro">Ön planınız Galeri\'deki herhangi bir fotoğrafta kopyalanabilir ve üzerine yapıştırabilir.\n\nYeni ve ilginç portreler oluşturmak için farklı arka plan fotoğrafları kullanmayı deneyebilirsiniz.</string>
-  <string name="do_not_show_again">Tekrar gösterme</string>
-  <string name="trueportrait_touch_up">Rötuş</string>
-  <string name="fusion_pick_background">Arka plan fotoğrafını seç</string>
-  <string name="color">Renk</string>
-  <string name="ok_continue">Devam</string>
-  <string name="frames">Çerçeveler</string>
-  <string name="beautify">Güzelleştir</string>
-  <string name="dualcam">Çift Kamera</string>
-  <string name="trueportrait">Gerçek Portre</string>
-  <string name="foreground">Ön plan</string>
-  <string name="background">Arka plan</string>
-  <string name="brush_size">Fırça boyutu</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Özel süzgeçler</string>
-  <string name="filtershow_dialog_content">Bir fotoğraf filtresi oluşturmanıza izin verir.\n\nSevdiğiniz bir fotoğrafı seçin ve bu fotoğrafı diğer fotoğraflar için filtre olarak kullanın</string>
-  <string name="filtershow_dialog_original_photo">Orjinal Resim</string>
-  <string name="filtershow_dialog_apply_photo">Renkleri uygulamak için</string>
-  <string name="filtershow_dialog_checkbox">Tekrar gösterme</string>
-  <string name="filtershow_preset_title">Özel</string>
-  <string name="filtershow_preset_rename">Yeniden adlandır</string>
-  <string name="delete_before_exit">Filtreleri Sil?</string>
-  <string name="rename_before_exit">Filtre yeniden adlandırma</string>
-  <string name="filter_name">Filtre adı</string>
-  <string name="filter_name_notification">Adı boş olamaz.</string>
-  <string name="filter_name_duplicate">Bu ad zaten var, lütfen başka bir tane seçin.</string>
-  <string name="watermark_location">Konum</string>
-  <string name="watermark_time">Zaman</string>
-  <string name="watermark_weather">Hava durumu</string>
-  <string name="watermark_emotions">Duygular</string>
-  <string name="watermark_food">Yiyecek</string>
-  <string name="location_pin">LOCATION_PIN</string>
-  <string name="location_city">LOCATION_CITY</string>
-  <string name="location_hello">LOCATION_HELLO</string>
-  <string name="location_stamp">LOCATION_STAMP</string>
-  <string name="time_hourglass">TIME_HOURGLASS</string>
-  <string name="time_timestamp">TIME_TIMESTAMP</string>
-  <string name="time_sunrise">TIME_SUNRISE</string>
-  <string name="time_calendar">TIME_CALENDAR</string>
-  <string name="weather_rain">WEATHER_RAIN</string>
-  <string name="weather_snow">WEATHER_SNOW</string>
-  <string name="weather_sun">WEATHER_SUN</string>
-  <string name="weather_artistic_sun">WEATHER_ARTISTIC_SUN</string>
-  <string name="emotion_party">EMOTION_PARTY</string>
-  <string name="emotion_peace">EMOTION_PEACE</string>
-  <string name="emotion_cry">EMOTION_CRY</string>
-  <string name="emotion_happy">EMOTION_HAPPY</string>
-  <string name="food_fork_knife">FOOD_FORK_KNIFE</string>
-  <string name="food_tea_time">FOOD_TEA_TIME</string>
-  <string name="food_cheers">FOOD_CHEERS</string>
-  <string name="food_yum">FOOD_YUM</string>
-  <!--Filtershow Toast -->
-  <string name="no_faces_found">Yüz Eşleşmesi Bulunamadı</string>
-  <string name="image_size_too_small">Resim boyutu çok küçük</string>
-  <string name="not_support_gif">gif uzantısı desteklenmiyor, lütfen tekrar seçin</string>
 </resources>

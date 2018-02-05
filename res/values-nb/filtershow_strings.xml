@@ -64,7 +64,6 @@
   <string name="save_before_exit">Vil du lagre før du avslutter?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Lagre og avslutt</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Behandler bilde i full oppløsning ...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -102,9 +101,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Liten planet</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <!--  HazeBuster button -->
-  <!--  SeeStraight button -->
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Eksponering</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -163,22 +159,6 @@
   <string name="downsample">Forminske</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Gradert</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Svart/hvitt</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Plakat</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negativ</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Lysstyrke</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -293,11 +273,4 @@
   <string name="filtershow_exif_exposure_time">Eksponeringstid</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Opphavsrett</string>
-  <string name="color">Farge</string>
-  <string name="ok_continue">Fortsett</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_preset_title">Spesialtilpasset</string>
-  <string name="watermark_location">Posisjon</string>
-  <string name="watermark_time">Tid</string>
-  <!--Filtershow Toast -->
 </resources>

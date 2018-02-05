@@ -89,4 +89,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="albums_title">سۈرەت توپلىمى</string>
   <!-- Videos screen title -->
   <string name="truescanner_normal">نورمال</string>
+  <string name="truescanner_white">ئاق تاختا</string>
 </resources>

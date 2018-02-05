@@ -66,8 +66,6 @@
   <string name="save_before_exit">¿Quieres guardar antes de salir?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Guardar y salir</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Rechazar</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Procesando imagen con resolución completa...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Pequeño planeta</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">Scaneo Real</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Destructor de muros</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Ver atraves</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Exposición</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Reducir calidad</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Graduada</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Enfocar</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Fusión</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Dibujo</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Aumentar/Disminuir</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Movimiento</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">B/N</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Pizarra</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Pizarra blanca</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Posterizar</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negativo</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Borroso</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Movimiento borroso</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Brillo</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,49 +290,4 @@
   <string name="filtershow_exif_exposure_time">Tiempo de exposición</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Derechos de autor</string>
-  <string name="fusion_pick_point">Escoge segmento</string>
-  <string name="fusion_pick_underlay">Selección de arpillera</string>
-  <string name="dual_camera_effects">Efectos de cámara doble</string>
-  <string name="dual_camera_effects_intro">Le permite aplicar efectos de fondo, tales como \"Movimiento\" y \"Sketch\". También puede combinar dos fotos juntos para efectos interesantes. Esta característica funciona mejor cuando tienes a poca distancia la cámara y el sujeto principal de tú imagen.</string>
-  <string name="dualcam_no_segment_toast">Ningún segmento encontrado en este punto</string>
-  <string name="dualcam_filter_not_supported">Filtros de doble cámara no admite esta imagen</string>
-  <string name="trueportrait_intro">Permite mejorar fotos de personas. Puede aplicar efectos a un segundo plano, como \"Desenfoque\" y \"sketch\". También puede combinar dos fotos juntos para crear interesantes fondos para tus fotos de retrato.</string>
-  <string name="trueportrait_no_face">Efectos de retrato verdadero no pueden aplicarse a esta foto. Cara no detectada.</string>
-  <string name="trueportrait_edit_intro">Con la herramienta de retoque, puede editar el primero plano y el fondo. Puede usuario su dedo para pintar en todas las áreas del primer plano o de fondo que fueron faltadas.</string>
-  <string name="trueportrait_edit_foreground_toast">Utilizar el dedo para pintar en áreas de primer plano que faltaron.</string>
-  <string name="trueportrait_edit_background_toast">Utilizar el dedo para pintar en áreas de primer plano que faltaron.</string>
-  <string name="trueportrait_edit_help">Para acercar, use dos dedos para pellizcar abriendo o cerrando. También puede arrastrar con dos dedos para volver a colocar la imagen. Esto puede hacer más fácil solucionar cualquier área de problema.</string>
-  <string name="trueportrait_fusion_intro">Su retrato puede copiarse y pegarse sobre cualquier foto en su galería. Puedes probar con fotos de fondo diferente para crear nuevas e interesantes retratos.</string>
-  <string name="dualcam_fusion_intro">Su retrato puede copiarse y pegarse sobre cualquier foto en su galería. Puedes probar con fotos de fondo diferente para crear nuevas e interesantes retratos.</string>
-  <string name="do_not_show_again">No mostrar de nuevo</string>
-  <string name="trueportrait_touch_up">Tocar de nuevo</string>
-  <string name="fusion_pick_background">Seleccionar imagen de fondo</string>
-  <string name="color">Color</string>
-  <string name="ok_continue">Continuar</string>
-  <string name="frames">Cuadros</string>
-  <string name="beautify">Embellecer</string>
-  <string name="dualcam">Doble cámara</string>
-  <string name="trueportrait">Retrato auténtico</string>
-  <string name="foreground">Primer plano</string>
-  <string name="background">Fondo de pantalla</string>
-  <string name="brush_size">Tamaño del pincel</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Filtro Personalizado</string>
-  <string name="filtershow_dialog_content">Le permite crear un filtro de fotos. Seleccione una foto que le guste y utilicelo como un filtro para otras fotos</string>
-  <string name="filtershow_dialog_original_photo">Foto original</string>
-  <string name="filtershow_dialog_apply_photo">Colores a aplicar</string>
-  <string name="filtershow_dialog_checkbox">No mostrar de nuevo</string>
-  <string name="filtershow_preset_title">Personalizado</string>
-  <string name="filtershow_preset_rename">Renombrar</string>
-  <string name="delete_before_exit">¿Eliminar filtro?</string>
-  <string name="rename_before_exit">Renombrar filtro</string>
-  <string name="filter_name">Nombre del filtro</string>
-  <string name="filter_name_notification">El nombre no puede quedar en blanco.</string>
-  <string name="filter_name_duplicate">Este nombre ya existe, por favor, introduzca otro.</string>
-  <string name="watermark_location">Ubicación</string>
-  <string name="watermark_time">Hora</string>
-  <string name="watermark_weather">El Tiempo</string>
-  <string name="watermark_emotions">Emociones</string>
-  <string name="watermark_food">Comida</string>
-  <!--Filtershow Toast -->
 </resources>

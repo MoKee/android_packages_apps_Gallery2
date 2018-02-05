@@ -88,5 +88,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Albums screen title -->
   <!-- Videos screen title -->
   <string name="truescanner_normal">ಸಾಮಾನ್ಯ</string>
+  <string name="truescanner_white">ವೈಟ್‌ಬೋರ್ಡ್</string>
   <string name="trim_video_exit_title">ನೀವು ನಿರ್ಗಮಿಸುವುದಕ್ಕೂ ಮೊದಲು ಉಳಿಸಲು ಬಯಸುತ್ತೀರಾ?</string>
 </resources>

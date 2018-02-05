@@ -66,9 +66,6 @@
   <string name="save_before_exit">Wil je opslaan voordat je afsluit?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Opslaan en sluiten</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Wijzigingen negeren
-</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Afbeelding met volledige resolutie verwerken...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -113,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Kleine planeet</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">Echte scanner</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Waas verwijderen</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Rechtuit kijken</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Belichting</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -178,32 +169,6 @@
   <string name="downsample">Beeldversimpeling</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Gegradueerd</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Focus</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Fusie</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Schets</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Zoomen</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Beweging</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Z/W</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Schoolbord</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Magneetbord</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Postereffect</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negatief</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Vervagen</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Bewegingsonscherpte</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Helderheid</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -325,49 +290,4 @@
   <string name="filtershow_exif_exposure_time">Belichtingstijd</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Auteursrecht</string>
-  <string name="fusion_pick_point">Kies segment</string>
-  <string name="fusion_pick_underlay">Kies onderlegger</string>
-  <string name="dual_camera_effects">Dual Camera-effecten</string>
-  <string name="dual_camera_effects_intro">U kunt effecten van de achtergrond, zoals \"Motion\" en \"Schets\" toepassen. U kunt twee foto\'s samenvoegen voor interessante effecten. Deze functie werkt het beste wanneer u over een korte afstand beschikt tussen uw camera en het hoofdonderwerp.</string>
-  <string name="dualcam_no_segment_toast">Geen segment gevonden op dit punt</string>
-  <string name="dualcam_filter_not_supported">Dual camera filters niet ondersteund voor dit beeld</string>
-  <string name="trueportrait_intro">U kunt foto\'s van mensen verbeteren. U kunt effecten toepassen op de achtergrond, zoals \"blur\" en \"schets\". Ook kunt u twee foto\'s samenvoegen om interessante achtergronden voor uw portretfoto\'s te maken.</string>
-  <string name="trueportrait_no_face">Ware portret effecten kunnen niet worden toegepast op deze foto. Gezicht niet gedetecteerd.</string>
-  <string name="trueportrait_edit_intro">Met de Touch-Up tool kunt u de voorgrond en de achtergrond bewerken. Door middel van uw vinger kunt in alle gebieden beschilderen van de voorgrond- of achtergrondkleur die werden gemist.</string>
-  <string name="trueportrait_edit_foreground_toast">Gebruik uw vinger om in alle gebieden van de voorgrond te schilderen die werden gemist.</string>
-  <string name="trueportrait_edit_background_toast">Gebruik uw vinger om in alle gebieden van de achtergrond te schilderen die werden gemist.</string>
-  <string name="trueportrait_edit_help">Om in te zoomen gebruikt u twee vingers om te knijpen open of gesloten. U kunt ook slepen met twee vingers om opnieuw de positie van de afbeelding te bepalen. Dit kan gemakkelijker om eventuele probleemgebieden op te lossen.</string>
-  <string name="trueportrait_fusion_intro">Uw voorgrond persoon kan worden gekopieerd en geplakt op een foto in uw galerij. U kunt andere achtergronden uitproberen om zodoende de foto naar wens samen te stellen.</string>
-  <string name="dualcam_fusion_intro">Je voorgrond kan worden gekopieerd en geplakt op een foto in uw galerij. En u kunt met behulp van verschillende achtergrond de foto\'s geheel naar wens samen te stellen.</string>
-  <string name="do_not_show_again">Niet meer weergeven</string>
-  <string name="trueportrait_touch_up">Retoucheren</string>
-  <string name="fusion_pick_background">Achtergrond kiezen</string>
-  <string name="color">Kleur</string>
-  <string name="ok_continue">Doorgaan</string>
-  <string name="frames">Kaders</string>
-  <string name="beautify">Verfraaien</string>
-  <string name="dualcam">Dual Camera</string>
-  <string name="trueportrait">Ware portret</string>
-  <string name="foreground">Voorgrond</string>
-  <string name="background">Achtergrond</string>
-  <string name="brush_size">Penseelgrootte</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Aangepast Filter</string>
-  <string name="filtershow_dialog_content">U kunt een foto filter.\n\nSelecteer de gewenste foto en gebruik het als een filter voor andere foto\'s</string>
-  <string name="filtershow_dialog_original_photo">Oorspronkelijke foto</string>
-  <string name="filtershow_dialog_apply_photo">Kleuren toepassen</string>
-  <string name="filtershow_dialog_checkbox">Niet meer weergeven</string>
-  <string name="filtershow_preset_title">Aangepast</string>
-  <string name="filtershow_preset_rename">Naam wijzigen</string>
-  <string name="delete_before_exit">Filter verwijderen?</string>
-  <string name="rename_before_exit">Filternaam wijzigen</string>
-  <string name="filter_name">Filternaam</string>
-  <string name="filter_name_notification">Naam mag niet leeg zijn.</string>
-  <string name="filter_name_duplicate">Gebruikersnaam bestaat al. Kies een andere.</string>
-  <string name="watermark_location">Locatie</string>
-  <string name="watermark_time">Tijd</string>
-  <string name="watermark_weather">Weer</string>
-  <string name="watermark_emotions">emoties</string>
-  <string name="watermark_food">Eten</string>
-  <!--Filtershow Toast -->
 </resources>

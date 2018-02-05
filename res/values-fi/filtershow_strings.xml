@@ -66,8 +66,6 @@
   <string name="save_before_exit">Haluatko tallentaa ennen sulkemista?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Tallenna ja sulje</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Hylkää</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Käsitellään korkearesoluutioista kuvaa…</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Pikkuplaneetta</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">Skanneri</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Sumun poisto</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Katso suoraan</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Valotus</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Pienennys</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Asteittainen</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Tarkennus</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Fusion</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Luonnos</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Zoomaa</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Liike</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">MV</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Liitutaulu</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Valkotaulu</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Posteris.</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negatiivi</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Himmennys</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Liikesumennus</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Kirkkaus</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,49 +290,4 @@
   <string name="filtershow_exif_exposure_time">Valotusaika</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Tekijänoikeudet</string>
-  <string name="fusion_pick_point">Valitse Segmentti</string>
-  <string name="fusion_pick_underlay">Valitse aluskate</string>
-  <string name="dual_camera_effects">Kaksoiskamera effektit</string>
-  <string name="dual_camera_effects_intro">Voit ottaa taustan tehosteiden, kuten \"Motion\" ja \"Luonnos\". Voit myös yhdistää kaksi kuvaa yhteen mielenkiintoisia tehosteita. Tämä ominaisuus toimii parhaiten kun olet lyhyen matkan kamerasta ja kuvan pääaihe.</string>
-  <string name="dualcam_no_segment_toast">Segmenttiä ei löytynyt</string>
-  <string name="dualcam_filter_not_supported">Dual kamera suodattimia ei tueta tämän kuvan</string>
-  <string name="trueportrait_intro">Voit lisätä henkilöiden valokuvia. Voit käyttää tehosteita taustalla, kuten \"hämärtää\" ja \"luonnos\". Voit myös yhdistää kaksi kuvia yhdessä luoda mielenkiintoisia taustoja muotokuva kuvia.</string>
-  <string name="trueportrait_no_face">Todellinen muotokuva vaikutukset ei voida soveltaa tähän kuva. Kasvot ei havaittu.</string>
-  <string name="trueportrait_edit_intro">Touch-Up-työkalulla voit muokata tulosaineiston ja tausta. Käyttäjä voi sormella maalata alueita, joilla edustalla tai taustalla jotka jäivät.</string>
-  <string name="trueportrait_edit_foreground_toast">Sormella maalin edustalla alueilla, jotka olivat jääneet.</string>
-  <string name="trueportrait_edit_background_toast">Sormella maalin edustalla alueilla, jotka olivat jääneet.</string>
-  <string name="trueportrait_edit_help">To zoom, use two fingers to pinch open or closed. You can also drag with two fingers to re-position the image. This can make it easier to fix any problem areas.</string>
-  <string name="trueportrait_fusion_intro">Your foreground person can be copied and pasted onto any photo in your Gallery. You can try using different background photos to create new and interesting portraits.</string>
-  <string name="dualcam_fusion_intro">Your foreground can be copied and pasted onto any photo in your Gallery. \n\nYou can try using different background photos to create new and interesting portraits.</string>
-  <string name="do_not_show_again">Älä näytä uudelleen</string>
-  <string name="trueportrait_touch_up">Touch Up</string>
-  <string name="fusion_pick_background">Valitse tausta</string>
-  <string name="color">Väri</string>
-  <string name="ok_continue">Jatka</string>
-  <string name="frames">Kehykset</string>
-  <string name="beautify">Kaunistus</string>
-  <string name="dualcam">Kaksoiskamera</string>
-  <string name="trueportrait">Todellinen muotokuva</string>
-  <string name="foreground">Etualalla</string>
-  <string name="background">Taustakuva</string>
-  <string name="brush_size">Siveltimen koko</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Mukautettu suodatin</string>
-  <string name="filtershow_dialog_content">Allows you to create a photo filter.\n\nSelect a photo you like and use it as a filter for other photos</string>
-  <string name="filtershow_dialog_original_photo">Alkuperäinen kuva</string>
-  <string name="filtershow_dialog_apply_photo">Colors to Apply</string>
-  <string name="filtershow_dialog_checkbox">Älä näytä uudelleen</string>
-  <string name="filtershow_preset_title">Muokattu</string>
-  <string name="filtershow_preset_rename">Nimeä uudelleen</string>
-  <string name="delete_before_exit">Poista suodatin?</string>
-  <string name="rename_before_exit">Nimeä suodatin</string>
-  <string name="filter_name">Suodattimen nimi</string>
-  <string name="filter_name_notification">Nimi ei voi olla NULL.</string>
-  <string name="filter_name_duplicate">Name already existed, please input another one.</string>
-  <string name="watermark_location">Sijainti</string>
-  <string name="watermark_time">Aika</string>
-  <string name="watermark_weather">Sää</string>
-  <string name="watermark_emotions">Hymiöt</string>
-  <string name="watermark_food">Ruoka</string>
-  <!--Filtershow Toast -->
 </resources>

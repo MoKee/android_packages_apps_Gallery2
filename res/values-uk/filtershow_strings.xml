@@ -66,8 +66,6 @@
   <string name="save_before_exit">Зберегти перед виходом?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Зберегти та вийти</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Скасувати</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Обробка зображення максимальної роздільної здатності…</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Мала планета</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">True Scanner</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Haze Buster</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Дивитися прямо</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Експозиція</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Зниж.якість</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Розмічений</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Фокус</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Fusion</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Ескіз</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Масштабування</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Рух</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Чорно-біле</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Чорна дошка</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Біла дошка</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Постер</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Негатив</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Розмиття</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Розмиття в русі</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Яскравість</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,49 +290,4 @@
   <string name="filtershow_exif_exposure_time">Час експозиції</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Авторські права</string>
-  <string name="fusion_pick_point">Вибрати сегмент</string>
-  <string name="fusion_pick_underlay">Вибрати підстилку</string>
-  <string name="dual_camera_effects">Ефекти подвійної камери</string>
-  <string name="dual_camera_effects_intro">Дозволяє застосувати ефекти фону, такі як \"Рух\" і \"Ескіз\". Можна також об\'єднати дві фотографії разом для цікавих ефектів. Ця функція найкраще працює, коли у вас є невелика відстань між камерою і основним обє\'ктом зображення.</string>
-  <string name="dualcam_no_segment_toast">Немає знайдених сегментів на даний момент</string>
-  <string name="dualcam_filter_not_supported">Фільтри подвійної камери не підтримуються для цього зображення</string>
-  <string name="trueportrait_intro">Дозволяє покращити фотографії людей. Можна застосувати ефекти до фону, наприклад, \"Розмиття\" та \"Ескіз\". Можна також об\'єднати дві фотографії разом, щоб створити цікаві фони для ваших портретних фото.</string>
-  <string name="trueportrait_no_face">Справжній портретні ефекти не можна застосувати для цієї фотографії. Обличчя не виявлено.</string>
-  <string name="trueportrait_edit_intro">За допомогою інструмента ретуш редагування переднього плану та фону. Ви можете використовувати свій палець, щоб фарбувати в будь-якій області переднього плану або фону, які були упущені.</string>
-  <string name="trueportrait_edit_foreground_toast">Пальцем можна пофарбувати в будь-яких областях переднього плану, які були упущені.</string>
-  <string name="trueportrait_edit_background_toast">Пальцем можна пофарбувати в будь-яких областях фону, які були упущені.</string>
-  <string name="trueportrait_edit_help">Для збільшення зображення, використовуйте щипок двома пальцями: відкриваючий або закриваючий. Також можна перетягнути двома пальцями, щоб повторно розташувати зображення. Це може полегшити виправлення будь-якої проблемної області.</string>
-  <string name="trueportrait_fusion_intro">Ваші особи з переднього плану можуть бути скопійовані і вставлені на будь-яку фотографію у вашу галерею. Ви можете спробувати використовувати фотографії з різними фонами для створення нових і цікавих портретів.</string>
-  <string name="dualcam_fusion_intro">Ваші особи з переднього плану можуть бути скопійовані і вставлені на будь-яку фотографію у вашу галерею. \n\nВи можете спробувати використовувати фотографії з різними фонами для створення нових і цікавих портретів.</string>
-  <string name="do_not_show_again">Не показувати знову</string>
-  <string name="trueportrait_touch_up">Підправити</string>
-  <string name="fusion_pick_background">Виберіть фотографію для фону</string>
-  <string name="color">Колір</string>
-  <string name="ok_continue">Продовжити</string>
-  <string name="frames">Кадри</string>
-  <string name="beautify">Прикрасити</string>
-  <string name="dualcam">Подвійна камера</string>
-  <string name="trueportrait">Справжній портрет</string>
-  <string name="foreground">Передній план</string>
-  <string name="background">Фон</string>
-  <string name="brush_size">Розмір пензля</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Користувальницький фільтр</string>
-  <string name="filtershow_dialog_content">Дозволяє створювати фотофільтр.\n\nВиберіть фото, яке вам подобається і використовуйте його як фільтр для інших фотографій</string>
-  <string name="filtershow_dialog_original_photo">Оригінальне фото</string>
-  <string name="filtershow_dialog_apply_photo">Кольори для застосування</string>
-  <string name="filtershow_dialog_checkbox">Не показувати знову</string>
-  <string name="filtershow_preset_title">Спеціальний</string>
-  <string name="filtershow_preset_rename">Перейменувати</string>
-  <string name="delete_before_exit">Видалити фільтр?</string>
-  <string name="rename_before_exit">Перейменувати фільтр</string>
-  <string name="filter_name">Назва фільтру</string>
-  <string name="filter_name_notification">Назва не може бути НЕВИЗНАЧЕНОЮ.</string>
-  <string name="filter_name_duplicate">Назва вже існувала, будь ласка, введіть ще іншу.</string>
-  <string name="watermark_location">Розташування</string>
-  <string name="watermark_time">Час</string>
-  <string name="watermark_weather">Погода</string>
-  <string name="watermark_emotions">Емоції</string>
-  <string name="watermark_food">Їжа</string>
-  <!--Filtershow Toast -->
 </resources>

@@ -103,6 +103,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_whiten">Paputiin</string>
   <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Tanggalin ang glare</string>
+  <string name="hazebuster_acts">Haze Buster</string>
+  <string name="seestraight_acts">Tingnan ng Deretso</string>
   <string name="seestraight_input_image_is_small">Ang input na larawan ay masyadong maliit upang i-proseso.</string>
   <string name="seestraight_process_fail">Hindi ma-proseso ang larawan.</string>
   <string name="trim_video_exit_title">Gusto mo bang mag-save bago lumabas?</string>

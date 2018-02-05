@@ -65,7 +65,6 @@
   <string name="save_before_exit">終了する前に保存しますか？</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">保存して終了</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">最大解像度の画像を処理しています...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -103,9 +102,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">小さな惑星</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <!--  HazeBuster button -->
-  <!--  SeeStraight button -->
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">露出</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -165,22 +161,6 @@
   <string name="downsample">縮小</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">段階的</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">モノクロ</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">ポスタライズ</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">白黒反転</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">明るさ</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -300,13 +280,4 @@
   <string name="filtershow_exif_exposure_time">露出時間</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">著作権</string>
-  <string name="color">色</string>
-  <string name="ok_continue">続行</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_preset_title">カスタム</string>
-  <string name="filtershow_preset_rename">名前の変更</string>
-  <string name="watermark_location">場所</string>
-  <string name="watermark_time">時刻</string>
-  <string name="watermark_weather">天気</string>
-  <!--Filtershow Toast -->
 </resources>

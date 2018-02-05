@@ -66,8 +66,6 @@
   <string name="save_before_exit">Szeretne menteni a kilépés előtt?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Mentés és kilépés</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Mégse</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Teljes felbontású kép feldolgozása...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,10 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Kisbolygó</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">Igazi Szkenner</string>
-  <!--  HazeBuster button -->
-  <!--  SeeStraight button -->
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Expozíció</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -175,27 +169,6 @@
   <string name="downsample">Kicsinyítés</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Átmenetes</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Fókusz</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Nagyítás</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Mozgás</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Fekete-fehér</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Poszterizálás</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negatív</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Elmosás</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Motion Blur</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Fényerő</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -317,33 +290,4 @@
   <string name="filtershow_exif_exposure_time">Expozíciós idő</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Szerzői jog</string>
-  <string name="fusion_pick_point">Válassza ki a szegmenst</string>
-  <string name="dual_camera_effects">Kettős fényképezőgép hatások</string>
-  <string name="dual_camera_effects_intro">Lehetővé teszi, hogy alkalmazza a háttér hatásokat, mint a \"Mozgás\" és a \"Vázlat\". Két fotót egyesíthet, érdekes hatás. Ez a szolgáltatás akkor működik a legjobban, ha van egy rövid távolság a kamera és a fő tárgy között a képen.</string>
-  <string name="dualcam_no_segment_toast">Nem található szegmens ezen a ponton</string>
-  <string name="dualcam_filter_not_supported">Kettős kamera szűrők nem támogatottak ezen a képen</string>
-  <string name="do_not_show_again">Ne mutassa újra</string>
-  <string name="fusion_pick_background">Háttér választása</string>
-  <string name="color">Szín</string>
-  <string name="ok_continue">Folytatás</string>
-  <string name="frames">Keretek</string>
-  <string name="dualcam">Kettős kamera</string>
-  <string name="brush_size">Ecset méret</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Egyéni szűrő</string>
-  <string name="filtershow_dialog_original_photo">Eredeti fotó</string>
-  <string name="filtershow_dialog_apply_photo">Színek alkalmazása</string>
-  <string name="filtershow_dialog_checkbox">Ne mutassa újra</string>
-  <string name="filtershow_preset_title">Egyéni</string>
-  <string name="filtershow_preset_rename">Átnevezés</string>
-  <string name="delete_before_exit">Szűrő törlése?</string>
-  <string name="rename_before_exit">Szűrő átnevezése</string>
-  <string name="filter_name">Szűrő neve</string>
-  <string name="filter_name_notification">Név nem lehet üres.</string>
-  <string name="filter_name_duplicate">Név foglalt, kérem válasszon másikat.</string>
-  <string name="watermark_location">Hely</string>
-  <string name="watermark_time">Idő</string>
-  <string name="watermark_emotions">Érzelmek</string>
-  <string name="watermark_food">Étel</string>
-  <!--Filtershow Toast -->
 </resources>

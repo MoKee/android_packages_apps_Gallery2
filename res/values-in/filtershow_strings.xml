@@ -66,8 +66,6 @@
   <string name="save_before_exit">Ingin menyimpan sebelum keluar?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Simpan dan Keluar</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Buang</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Memproses gambar resolusi penuh...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Planet Mini</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">True Scanner</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Memfoto sampai pinggang buram</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Melihat lurus</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Pencahayaan</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Sampel bawah</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Graduasi</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Fokus</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Perpaduan</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Sketsa</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Perbesar</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Gerakan</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">H/P</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Papan tulis hitam</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Papan tulis putih</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Posterisasi</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negatif</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Buram</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Gerakan buram</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Kecerahan</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,49 +290,4 @@
   <string name="filtershow_exif_exposure_time">Waktu Pencahayaan</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Hak Cipta</string>
-  <string name="fusion_pick_point">Pilih segmen</string>
-  <string name="fusion_pick_underlay">Pilih lapisan bawah</string>
-  <string name="dual_camera_effects">Efek dual kamera</string>
-  <string name="dual_camera_effects_intro">Memungkinkan Anda untuk menerapkan efek latar belakang, seperti \"Gerakan\" dan \"Sketsa\". Anda juga bisa Menggabungkan dua foto bersama-sama untuk efek yang menarik. Fitur ini bekerja lebih baik jika Anda memiliki kamera jauh dan subjek utama gambar Anda.</string>
-  <string name="dualcam_no_segment_toast">Tidak ada segmen yang ditemukan saat ini</string>
-  <string name="dualcam_filter_not_supported">Fitur Dual kamera tidak didukung untuk gambar ini</string>
-  <string name="trueportrait_intro">Memungkinkan Anda untuk menambahkan foto orang. Anda dapat menerapkan efek ke latar belakang, seperti \"buram\" dan \"sketsa\". Anda pun bisa Menggabungkan dua foto bersama-sama untuk menciptakan latar belakang yang menarik pada foto Anda.</string>
-  <string name="trueportrait_no_face">Efek potret yang sebenarnya tidak dapat diterapkan pada foto ini. Wajah tidak terdeteksi.</string>
-  <string name="trueportrait_edit_intro">Dengan alat Touch-Up, Anda dapat mengedit latar depan dan latar belakang. Anda dapat menggunakan jari Anda untuk melukis di daerah latar depan atau latar belakang yang hilang.</string>
-  <string name="trueportrait_edit_foreground_toast">Gunakan jari Anda untuk melukis di area latar depan yang hilang.</string>
-  <string name="trueportrait_edit_background_toast">Gunakan jari Anda untuk melukis di area latar belakang yang hilang.</string>
-  <string name="trueportrait_edit_help">Untuk memperbesar, gunakan dua jari untuk mencubit terbuka atau tertutup. Anda juga dapat menyeret dengan dua jari untuk memposisikan ulang gambar. Ini dapat mempermudah untuk memperbaiki masalah di area.</string>
-  <string name="trueportrait_fusion_intro">Orang di latar depan Anda dapat disalin dan disisipkan ke dalam foto di galeri Anda. Anda dapat coba menggunakan foto latar belakang yang berbeda untuk membuat potret yang baru dan menarik.</string>
-  <string name="dualcam_fusion_intro">Latar depan Anda dapat disalin dan disisipkan ke dalam foto di galeri Anda. Anda dapat coba menggunakan foto latar belakang yang berbeda untuk membuat potret yang baru dan menarik.</string>
-  <string name="do_not_show_again">Jangan tampilkan lagi</string>
-  <string name="trueportrait_touch_up">Memperindah</string>
-  <string name="fusion_pick_background">Pilih foto latar belakang</string>
-  <string name="color">Warna</string>
-  <string name="ok_continue">Lanjutkan</string>
-  <string name="frames">Bingkai</string>
-  <string name="beautify">Mempercantik</string>
-  <string name="dualcam">Dual Kamera</string>
-  <string name="trueportrait">Potret yang asli</string>
-  <string name="foreground">Latar depan</string>
-  <string name="background">Latar belakang</string>
-  <string name="brush_size">Ukuran kuas</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Penyaring kustom</string>
-  <string name="filtershow_dialog_content">Memungkinkan Anda untuk membuat penyaringan foto.\n\n pilih foto-foto yang Anda suka dan gunakan itu sebagai penyaring bagi foto lain</string>
-  <string name="filtershow_dialog_original_photo">Foto asli</string>
-  <string name="filtershow_dialog_apply_photo">Warna untuk menerapkan</string>
-  <string name="filtershow_dialog_checkbox">Jangan tampilkan lagi</string>
-  <string name="filtershow_preset_title">Khusus</string>
-  <string name="filtershow_preset_rename">Ganti nama</string>
-  <string name="delete_before_exit">Hapus filter?</string>
-  <string name="rename_before_exit">Merubah Filter</string>
-  <string name="filter_name">Nama Filter</string>
-  <string name="filter_name_notification">Nama tidak boleh NULL.</string>
-  <string name="filter_name_duplicate">Nama sudah ada, silahkan masukkan yang lain.</string>
-  <string name="watermark_location">Lokasi</string>
-  <string name="watermark_time">Waktu</string>
-  <string name="watermark_weather">Cuaca</string>
-  <string name="watermark_emotions">Emosi</string>
-  <string name="watermark_food">Makanan</string>
-  <!--Filtershow Toast -->
 </resources>

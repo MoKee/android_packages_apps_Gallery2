@@ -66,8 +66,6 @@
   <string name="save_before_exit">Ali želite pred zapiranjem shraniti?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Shrani in zapri</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Opusti</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Obdelava slike v polni ločljivosti ...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Planetek</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">Pravi skener</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Odstranjevanje peg</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Glejte naravnost</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Osvetlitev</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Zmanjšanje velikosti</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Stopenjsko</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Ostrenje</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Spojitev</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Skica</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Zoom</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Gibanja</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">ČB</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Črna tabla</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Bela tabla</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Poster</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negativ</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Zamegli</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Hitra megla</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Svetlost</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,44 +290,4 @@
   <string name="filtershow_exif_exposure_time">Čas osvetlitve</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Avtorske pravice</string>
-  <string name="fusion_pick_point">Izberi segment</string>
-  <string name="fusion_pick_underlay">Izberi podlogo</string>
-  <string name="dual_camera_effects">Učinki dvojne kamere</string>
-  <string name="dual_camera_effects_intro">Omogoča uporabo učinkiov, kot so \"Gibanja\" in \"Skica\". Prav tako lahko združite dve fotografiji skupaj za zanimive učinke. Ta funkcija deluje najbolje, ko je glavni predmet na sliki blizu fotoaparata.</string>
-  <string name="dualcam_filter_not_supported">Za to sliko filtri za dvojno kamero niso podprti</string>
-  <string name="trueportrait_no_face">Za to fotografijo ni mogoče uporabiti učinka pravi portret. Obraz ni zaznan.</string>
-  <string name="trueportrait_edit_intro">Z Touch-Up orodjem, lahko urejate v ospredju in ozadju. S prstom lahko barvete na katerem koli območju v ospredju ali ozadju, ki ste ga zgrešili.</string>
-  <string name="do_not_show_again">Ne prikaži ponovno</string>
-  <string name="trueportrait_touch_up">Touch Up</string>
-  <string name="fusion_pick_background">Izberite sliko za ozadje</string>
-  <string name="color">Barva</string>
-  <string name="ok_continue">Nadaljuj</string>
-  <string name="frames">Sličic</string>
-  <string name="beautify">Polepšaj</string>
-  <string name="dualcam">Dvojna kamera</string>
-  <string name="trueportrait">Pravi portret</string>
-  <string name="foreground">Ospredje</string>
-  <string name="background">Ozadje</string>
-  <string name="brush_size">Velikost čopiča</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Filtri po meri</string>
-  <string name="filtershow_dialog_content">Omogoči izdelavo foto filtra.
-\n
-\nIzberite fotgrafijo, ki vam je všeč in jo uporabite kot filter za druge fotografije</string>
-  <string name="filtershow_dialog_original_photo">Izvirna fotografija</string>
-  <string name="filtershow_dialog_apply_photo">Uporabi barve</string>
-  <string name="filtershow_dialog_checkbox">Ne prikaži ponovno</string>
-  <string name="filtershow_preset_title">Po meri</string>
-  <string name="filtershow_preset_rename">Preimenuj</string>
-  <string name="delete_before_exit">Brisanje filtra?</string>
-  <string name="rename_before_exit">Preimenuj filter</string>
-  <string name="filter_name">Ime filtra</string>
-  <string name="filter_name_notification">Ime ne more biti prazno.</string>
-  <string name="filter_name_duplicate">Ime že obstaja, prosim izberite drugo.</string>
-  <string name="watermark_location">Mesto</string>
-  <string name="watermark_time">Ura</string>
-  <string name="watermark_weather">Vreme</string>
-  <string name="watermark_emotions">Čustva</string>
-  <string name="watermark_food">Hrana</string>
-  <!--Filtershow Toast -->
 </resources>

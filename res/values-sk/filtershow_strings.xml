@@ -66,8 +66,6 @@
   <string name="save_before_exit">Chcete zmeny pred ukončením uložiť?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Uložiť a ukončiť</string>
-  <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
-  <string name="discard">Zrušiť</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_processing">Prebieha spracovávanie obrázku v plnom rozlíšení...</string>
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
@@ -76,7 +74,7 @@
   <!--  Text for the history panel title [CHAR LIMIT=50] -->
   <string name="history">História</string>
   <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
-  <string name="reset">Obnoviť</string>
+  <string name="reset">Resetovať</string>
   <!--  Text for the original image[CHAR LIMIT=20]-->
   <!--  Image state panel -->
   <!--  Text for the image state panel title [CHAR LIMIT=50] -->
@@ -112,12 +110,6 @@
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <string name="tinyplanet">Malá planéta</string>
   <!--  Filters buttons -->
-  <!--  True Effect button -->
-  <string name="trueScanner">True Scanner</string>
-  <!--  HazeBuster button -->
-  <string name="hazeBuster">Haze Buster</string>
-  <!--  SeeStraight button -->
-  <string name="seeStraight">Pozerať rovno</string>
   <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
   <string name="exposure" msgid="1229093066434614811">Expozícia</string>
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
@@ -177,32 +169,6 @@
   <string name="downsample">Zmenšiť</string>
   <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
   <string name="grad">Stupňovanie</string>
-  <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Zaostriť</string>
-  <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="fusion">Fusion</string>
-  <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="sketch">Náčrtok</string>
-  <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="halo">Halo</string>
-  <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Lupa</string>
-  <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="motion">Pohyb</string>
-  <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">ČB</string>
-  <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="blackboard">Čierna tabuľa</string>
-  <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="whiteboard">Biela tabuľa</string>
-  <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Posterizácia</string>
-  <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="dc_negative">Negatív</string>
-  <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="blur">Rozostrenie</string>
-  <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
-  <string name="motion_blur">Rozostrenie v pohybe</string>
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Jas</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
@@ -324,72 +290,4 @@
   <string name="filtershow_exif_exposure_time">Expozičný čas</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_copyright">Autorské práva</string>
-  <string name="fusion_pick_point">Vyberať segment</string>
-  <string name="fusion_pick_underlay">Vybrať podklad</string>
-  <string name="dual_camera_effects">Efekt Duálneho fotoaparátu</string>
-  <string name="dual_camera_effects_intro">Umožňuje použiť efekty pozadia, ako napríklad \"Motion\" a \"Sketch\". Zaujímavé efekty dosiahnete tiež zlúčením dvoch fotografií. Táto funkcia funguje najlepšie, keď je vzdialenosť medzi vašim fotoaparátom a hlavným objektom malá.</string>
-  <string name="dualcam_no_segment_toast">V tomto okamihu neboli nájdené žiadne segmenty</string>
-  <string name="dualcam_filter_not_supported">Filtre duálneho fotoaparátu nie sú podporované pre tento obrázok</string>
-  <string name="trueportrait_intro">Umožňuje zlepšiť fotografie ľudí. Môžete použiť efekty na pozadí, ako napríklad \"rozostrenie\" alebo \"skica\". Tiež môžete zlúčiť dve fotografie a vytvoriť zaujímavé pozadie pre portrétne fotografie.</string>
-  <string name="trueportrait_no_face">Portrétový efekt nemôže byť aplikovaný na tomto obrázku. Tvár nie je detekovaná.</string>
-  <string name="trueportrait_edit_intro">Pomocou nástroja retušovania môžete upravovať popredie aj pozadie. Môžete tiež použiť prst na maľovanie v akejkoľvek oblasti popredia alebo pozadia, ktorá bola vynechaná.</string>
-  <string name="trueportrait_edit_foreground_toast">Použite prst na maľovanie v akejkoľvek oblasti popredia, ktorá bola vynechaná.</string>
-  <string name="trueportrait_edit_background_toast">Použite prst na maľovanie v akejkoľvek oblasti pozadia, ktorá bola vynechaná.</string>
-  <string name="trueportrait_edit_help">Pre priblíženie použite gesto roztiahnutia dvoch prstov. Tiež môžete potiahnuť dvomi prstami pre presunutie obrázku. Takže môžete ľahko opraviť prípadné problémové oblasti.</string>
-  <string name="trueportrait_fusion_intro">Osobu z popredia môžete skopírovať a vložiť do ľubovoľného obrázku v Galérii. Môžete skúsiť použiť rôzne obrázky pozadia, vytvoriť nové a zaujímavé portréty.</string>
-  <string name="dualcam_fusion_intro">Objekt z popredia môžete skopírovať a vložiť do ľubovoľného obrázku v Galérii. Môžete skúsiť použiť rôzne obrázky pozadia, vytvoriť nové a zaujímavé fotografie.</string>
-  <string name="do_not_show_again">Už nezobrazovať</string>
-  <string name="trueportrait_touch_up">Kliknite v hornej časti</string>
-  <string name="fusion_pick_background">Vyberte obrázok pozadia</string>
-  <string name="color">Farba</string>
-  <string name="ok_continue">Pokračovať</string>
-  <string name="frames">Okraje</string>
-  <string name="beautify">Skrášlenie</string>
-  <string name="dualcam">Duálny fotoaparát</string>
-  <string name="trueportrait">Portrét</string>
-  <string name="foreground">Popredie</string>
-  <string name="background">Pozadie</string>
-  <string name="brush_size">Veľkosť štetca</string>
-  <!--Filtershow dialog -->
-  <string name="filtershow_dialog_title">Vlastný filter</string>
-  <string name="filtershow_dialog_content">Umožňuje vytvoriť foto filter.\n\nVyberte fotografiu, ktorá sa použije ako filter pre ďalšie fotografie</string>
-  <string name="filtershow_dialog_original_photo">Originálna fotografia</string>
-  <string name="filtershow_dialog_apply_photo">Použiť farby</string>
-  <string name="filtershow_dialog_checkbox">Už nezobrazovať</string>
-  <string name="filtershow_preset_title">Vlastný</string>
-  <string name="filtershow_preset_rename">Premenovať</string>
-  <string name="delete_before_exit">Odstrániť filter?</string>
-  <string name="rename_before_exit">Premenovať filter</string>
-  <string name="filter_name">Názov filtra</string>
-  <string name="filter_name_notification">Názov nemôže byť prázdny.</string>
-  <string name="filter_name_duplicate">Názov už existuje, Prosím zadajte iný.</string>
-  <string name="watermark_location">Miesto</string>
-  <string name="watermark_time">Čas</string>
-  <string name="watermark_weather">Počasie</string>
-  <string name="watermark_emotions">Emócie</string>
-  <string name="watermark_food">Jedlo</string>
-  <string name="location_pin">LOCATION_PIN</string>
-  <string name="location_city">LOCATION_CITY</string>
-  <string name="location_hello">LOCATION_HELLO</string>
-  <string name="location_stamp">LOCATION_STAMP</string>
-  <string name="time_hourglass">TIME_HOURGLASS</string>
-  <string name="time_timestamp">TIME_TIMESTAMP</string>
-  <string name="time_sunrise">TIME_SUNRISE</string>
-  <string name="time_calendar">TIME_CALENDAR</string>
-  <string name="weather_rain">WEATHER_RAIN</string>
-  <string name="weather_snow">WEATHER_SNOW</string>
-  <string name="weather_sun">WEATHER_SUN</string>
-  <string name="weather_artistic_sun">WEATHER_ARTISTIC_SUN</string>
-  <string name="emotion_party">EMOTION_PARTY</string>
-  <string name="emotion_peace">EMOTION_PEACE</string>
-  <string name="emotion_cry">EMOTION_CRY</string>
-  <string name="emotion_happy">EMOTION_HAPPY</string>
-  <string name="food_fork_knife">FOOD_FORK_KNIFE</string>
-  <string name="food_tea_time">FOOD_TEA_TIME</string>
-  <string name="food_cheers">FOOD_CHEERS</string>
-  <string name="food_yum">FOOD_YUM</string>
-  <!--Filtershow Toast -->
-  <string name="no_faces_found">Neboli nájdené žiadne tváre</string>
-  <string name="image_size_too_small">Veľkosť obrázku je príliš malá</string>
-  <string name="not_support_gif">nepodporuje GIF rozšírenie, vyberte prosím znovu</string>
 </resources>

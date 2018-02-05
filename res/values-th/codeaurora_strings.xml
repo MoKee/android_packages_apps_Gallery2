@@ -89,5 +89,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="albums_title">อัลบั้ม</string>
   <!-- Videos screen title -->
   <string name="truescanner_normal">ปกติ</string>
+  <string name="truescanner_white">กระดานขาว</string>
   <string name="trim_video_exit_title">คุณต้องการบันทึกก่อนที่จะออกหรือไม่</string>
 </resources>
