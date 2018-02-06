@@ -56,5 +56,6 @@
   <string name="filtershow_preset_rename">Redenumiţi</string>
   <string name="watermark_location">Locație</string>
   <string name="watermark_time">Oră</string>
+  <string name="watermark_weather">Vremea</string>
   <!--Filtershow Toast -->
 </resources>

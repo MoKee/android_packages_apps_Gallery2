@@ -103,4 +103,5 @@
   <!--Filtershow Toast -->
   <string name="no_faces_found">Không tìm thấy</string>
   <string name="image_size_too_small">Kích cỡ hình ảnh quá nhỏ</string>
+  <string name="not_support_gif">Các tệp Gif không được hỗ trợ, hãy chọn một ảnh khác</string>
 </resources>
