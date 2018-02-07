@@ -16,11 +16,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!--  Text for filters that apply a frame to a picture [CHAR LIMIT=20] -->
+  <string name="frame">Cadru <xliff:g id="number" example="7">%d</xliff:g></string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
   <string name="discard_message">Ați adus modificări imaginii pe care nu le-ați salvat.</string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
   <string name="discard_title">Renunțați la modificări?</string>
   <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
+  <string name="discard">Renunță</string>
   <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
   <string name="back_to_original">Resetaţi</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
@@ -30,15 +32,21 @@
   <!--  HazeBuster button -->
   <!--  SeeStraight button -->
   <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="focus">Focus</string>
   <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="fusion">Fuziune</string>
   <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
   <string name="sketch">Schițare</string>
   <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="halo">Efect halou</string>
   <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="zoom">Zoom</string>
   <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="motion">Mișcare</string>
   <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
   <string name="bw">Alb-negru</string>
   <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="blackboard">Efect Blackboard</string>
   <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
   <string name="whiteboard">Placă-albă</string>
   <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
@@ -46,16 +54,54 @@
   <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
   <string name="dc_negative">Negativ</string>
   <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="blur">Încețoșare</string>
   <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="motion_blur">Motion blur</string>
+  <string name="fusion_pick_point">Alege segment</string>
+  <string name="fusion_pick_underlay">Alege strat inferior</string>
+  <string name="dual_camera_effects">Efecte cameră duală</string>
+  <string name="dual_camera_effects_intro">Vă permite să aplicaţi efecte de fundal, cum ar fi \"Mişcare\" şi \"Schiţă\". De asemenea, puteţi uni două fotografii împreună pentru efecte interesante. Caracteristica funcționează cel mai bine atunci când aveţi o distanţă scurtă între aparatul de fotografiat şi subiectul imaginii.</string>
+  <string name="dualcam_no_segment_toast">Nici un segment găsit în acest moment</string>
+  <string name="dualcam_filter_not_supported">Filtrele cameră duală nu sunt suportate pentru această imagine</string>
+  <string name="trueportrait_intro">Permite îmbunătățirea fotografiilor cu oameni. Puteţi aplica efecte de fundal, cum ar fi \"Blur\" și \"Schiță\". De asemenea, puteţi fuziona două fotografii împreună pentru a crea fundaluri interesante pentru fotografiile de portret.</string>
+  <string name="trueportrait_no_face">Efectele TruePortrait nu pot fi aplicate la această fotografie. Fața nu a fost detectată.</string>
+  <string name="trueportrait_edit_intro">Cu instrumentul retuşare, puteţi edita prim-planul şi fundalul. Utilizaţi degetul pentru a picta în orice plan frontal sau de fundal care au fost ratat.</string>
+  <string name="trueportrait_edit_foreground_toast">Utilizaţi degetul pentru a picta zone prim-plan, care au fost ratate.</string>
+  <string name="trueportrait_edit_background_toast">Utilizaţi degetul pentru a picta zone fundal, care au fost ratate.</string>
+  <string name="trueportrait_edit_help">Pentru a mări/micșora, utilizaţi două degete pentru ciupire. De asemenea, puteţi trage cu două degete să repoziţionați imaginea. Acest lucru poate face mai uşoară remedierea oricăror zone problematice.</string>
+  <string name="trueportrait_fusion_intro">Persoana din prim-plan poate fi copiată şi lipită în orice fotografie din galeria dvs. Puteţi încerca să folosiți diferite fotografii de fundal pentru a crea portrete noi şi interesante.</string>
+  <string name="dualcam_fusion_intro">Persoana din prim-plan poate fi copiată şi lipită în orice fotografie din galeria dvs..\n\nPuteţi încerca să folosiți diferite fotografii de fundal pentru a crea portrete noi şi interesante.</string>
+  <string name="do_not_show_again">Nu mai afișa</string>
+  <string name="trueportrait_touch_up">Finisează</string>
+  <string name="fusion_pick_background">Selectaţi fotografia de fundal</string>
   <string name="color">Culoare</string>
   <string name="ok_continue">Continuați</string>
+  <string name="frames">Cadru</string>
   <string name="beautify">Înfrumusețare</string>
+  <string name="dualcam">Camera duală</string>
+  <string name="foreground">Prim-plan</string>
   <string name="background">Fundal</string>
+  <string name="brush_size">Dimensiunea pensulei</string>
   <!--Filtershow dialog -->
+  <string name="filtershow_dialog_title">Filtru personalizat</string>
+  <string name="filtershow_dialog_content">Vă permite să creaţi un filtru.\n\nSelectați o fotografie care vă place şi utilizaţi-l ca filtru pentru alte fotografii</string>
+  <string name="filtershow_dialog_original_photo">Fotografia originală</string>
+  <string name="filtershow_dialog_apply_photo">Culori pentru aplicare</string>
+  <string name="filtershow_dialog_checkbox">Nu mai afișa</string>
   <string name="filtershow_preset_title">Personalizat</string>
   <string name="filtershow_preset_rename">Redenumiţi</string>
+  <string name="delete_before_exit">Ştergeţi filtrul?</string>
+  <string name="rename_before_exit">Redenumiţi filtru</string>
+  <string name="filter_name">Nume filtru</string>
+  <string name="filter_name_notification">Numele nu poate fi gol.</string>
+  <string name="filter_name_duplicate">Nume deja existent, vă rugăm să introduceţi unul diferit.</string>
   <string name="watermark_location">Locație</string>
   <string name="watermark_time">Oră</string>
   <string name="watermark_weather">Vremea</string>
+  <string name="watermark_emotions">Emoţii</string>
+  <string name="watermark_food">Mâncare</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">Nu s-au găsit fețe</string>
+  <string name="image_size_too_small">Mărime imagine prea mică</string>
+  <string name="not_support_gif">Formatul de fișiere gif nu este suportat, vă rugăm alegeți altă poză</string>
 </resources>

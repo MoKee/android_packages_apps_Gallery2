@@ -56,6 +56,7 @@
   <!--  Text for size value tag [CHAR LIMIT=30] -->
   <string name="size">Dimensiune</string>
   <!--  Text for size x [CHAR LIMIT=1] -->
+  <string name="x">x</string>
   <!--  Name for the overflow menu item for settings [CHAR LIMIT=20] -->
   <string name="menu_settings">Setări</string>
   <!--  Exit Dialog -->
@@ -86,13 +87,21 @@
   <!--  Label for the reset effect button [CHAR LIMIT=15] -->
   <string name="reset_effect">Resetaţi</string>
   <!--  Label for aspect [CHAR LIMIT=15] -->
+  <string name="aspect">Aspect</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+  <string name="aspect1to1_effect">1:1</string>
   <!--  Label for the aspect 4:3 effect [CHAR LIMIT=15] -->
+  <string name="aspect4to3_effect">4:3</string>
   <!--  Label for the aspect 3:4 effect [CHAR LIMIT=15] -->
+  <string name="aspect3to4_effect">3:4</string>
   <!--  Label for the aspect 4:7 effect [CHAR LIMIT=15] -->
+  <string name="aspect4to6_effect">4:6</string>
   <!--  Label for the aspect 5:7 effect [CHAR LIMIT=15] -->
+  <string name="aspect5to7_effect">5:7</string>
   <!--  Label for the aspect 7:5 effect [CHAR LIMIT=15] -->
+  <string name="aspect7to5_effect">7:5</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+  <string name="aspect9to16_effect">16:9</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <string name="aspectNone_effect">Niciunul</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
@@ -106,6 +115,7 @@
   <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
   <string name="sharpness">Claritate</string>
   <!--  Label for the image contrast (color difference) filter button [CHAR LIMIT=10] -->
+  <string name="contrast">Contrast</string>
   <!--  Label for the image vibrance (strengthens colors) filter button [CHAR LIMIT=10] -->
   <string name="vibrance">Vibranță</string>
   <!--  Label for the image saturation (brightens colors) filter button [CHAR LIMIT=10] -->
@@ -131,6 +141,7 @@
   <!--  Label for the image vignette saturation parameter ui [CHAR LIMIT=15] -->
   <string name="vignette_saturation">Saturație</string>
   <!--  Label for the image vignette contrast fparameter ui [CHAR LIMIT=15] -->
+  <string name="vignette_contrast">Contrast</string>
   <!--  Label for the rate of change in brightness as it goes to the edge [CHAR LIMIT=15] -->
   <string name="vignette_falloff">Atenuare</string>
   <!--  Label for the image effect that removes redeye. [CHAR LIMIT=10] -->
@@ -161,6 +172,7 @@
   <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_brightness">Luminozitate</string>
   <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
+  <string name="editor_grad_contrast">Contrast</string>
   <!--  Label for the saturation effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_saturation">Saturație</string>
   <!--  Label for the Main or Master control for per channel saturation effect [CHAR LIMIT=20] -->
@@ -172,15 +184,18 @@
   <!--  Label for the green control for per channel saturation effect [CHAR LIMIT=20] -->
   <string name="editor_chan_sat_green">Verde</string>
   <!--  Label for the cyan control for per channel saturation effect [CHAR LIMIT=20] -->
+  <string name="editor_chan_sat_cyan">Cyan</string>
   <!--  Label for the blue control for per channel saturation effect [CHAR LIMIT=20] -->
   <string name="editor_chan_sat_blue">Albastru</string>
   <!--  Label for the Magenta control for per channel saturation effect [CHAR LIMIT=20] -->
+  <string name="editor_chan_sat_magenta">Magenta</string>
   <!--  Label for the image graduated filter effect  [CHAR LIMIT=20] -->
   <string name="editor_grad_style">Stil</string>
   <!-- new virtual graduated neutral density filter  [CHAR LIMIT=20] -->
   <string name="editor_grad_new">nou</string>
   <!--  Labels for the curves tool -->
   <!--  Label for the curves tool, all channels (RGB) [CHAR LIMIT=3] -->
+  <string name="curves_channel_rgb">RGB</string>
   <!--  Label for the curves tool, Red color channel [CHAR LIMIT=14] -->
   <string name="curves_channel_red">Roșu</string>
   <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->
@@ -202,6 +217,7 @@
   <!--  Label for the line style of drawing in [CHAR LIMIT=14] -->
   <string name="draw_style_line">Linii</string>
   <!--  Label for the Marker brush style of drawing in [CHAR LIMIT=14] -->
+  <string name="draw_style_brush_spatter">Marcaj</string>
   <!--  Label for the Spatter brush style of drawing in [CHAR LIMIT=14] -->
   <string name="draw_style_brush_marker">Stropire</string>
   <!--  Label for the removing drawing from screen [CHAR LIMIT=14] -->
@@ -257,16 +273,19 @@
   <!-- Label for the Current version in the versions panel [CHAR LIMIT=30] -->
   <string name="filtershow_version_current">Actual</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+  <string name="filtershow_exif_model">Model</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_aperture">Apertură</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_focal_length">Distanța focală</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+  <string name="filtershow_exif_iso">ISO</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_subject_distance">Distanța subiectului</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_date">Data realizării</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+  <string name="filtershow_exif_f_stop">F Stop</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <string name="filtershow_exif_exposure_time">Timp de expunere</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->

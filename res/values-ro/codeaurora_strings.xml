@@ -38,6 +38,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="setp_option_six_second">6 secunde</string>
   <string name="loop">"Buclă"</string>
   <string name="single">"Singur"</string>
+  <string name="stereo">"Stereo"</string>
   <string name="speaker_on">Difuzor pornit</string>
   <string name="speaker_off">Difuzor oprit</string>
   <string name="speaker_need_headset">Conectați căștile pentru a utiliza această caracteristică.</string>
@@ -58,6 +59,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="server_timeout_title">"Expirare server"</string>
   <string name="server_timeout_message">"Reconectați la server pentru a reda video?"</string>
   <string name="videoview_error_text_cannot_connect_retry">"Conexiunea a eșuat, se încearcă reconectarea la %1$d\u2026"</string>
+  <string name="media_controller_live">Live</string>
   <string name="media_controller_playing">Redând</string>
   <string name="media_controller_connecting">Se conectează\u2026</string>
   <string name="bookmark_add">"Adaugă semn de carte"</string>
@@ -104,7 +106,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_Soften">Înmuiere</string>
   <string name="text_makeup_trimface">Tăiere față</string>
   <string name="text_makeup_bigeye">Ochi mari</string>
+  <string name="truescanner_normal">Normal</string>
   <string name="truescanner_white">Placă-albă</string>
+  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Eliminare Orbire</string>
   <string name="hazebuster_acts">Distrugător de Ceață</string>
   <string name="seestraight_acts">Vedere Dreaptă</string>
