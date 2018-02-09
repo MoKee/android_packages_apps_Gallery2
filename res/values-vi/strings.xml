@@ -241,7 +241,7 @@
   <!-- Text indicating the mime type of a media item in details window [CHAR LIMIT=14] -->
   <string name="mimetype">Loại MIME</string>
   <!-- Text indicating the file size of a media item in details window [CHAR LIMIT=14] -->
-  <string name="file_size">Kích thước tệp</string>
+  <string name="file_size">Kích thước tập tin</string>
   <!-- Text indicating the maker of a media item in details window [CHAR LIMIT=14] -->
   <string name="maker">Trình tạo</string>
   <!-- Text indicating the model of a media item in details window [CHAR LIMIT=14] -->
@@ -335,7 +335,7 @@
          amounts, eg. "10MB", "100MB".
          [CHAR LIMIT=20]
     -->
-  <string name="size_between"><xliff:g id="MIN_SIZE">%1$s</xliff:g> tới <xliff:g id="MAX_SIZE">%2$s</xliff:g></string>
+  <string name="size_between"><xliff:g id="Min_SIZE">%1$s</xliff:g> tới <xliff:g id="Max_SIZE">%2$s</xliff:g></string>
   <!-- A label shown on the action bar. It indicates that the operation
          to import media item(s) [CHAR LIMIT=20] -->
   <string name="Import">Nhập</string>

@@ -20,7 +20,7 @@
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
   <string name="discard_message">У вас есть несохраненные изменения. Вы действительно хотите выйти?</string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
-  <string name="discard_title">Отменить изменения?</string>
+  <string name="discard_title">Сохранить изменения?</string>
   <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
   <string name="discard">Выход</string>
   <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
