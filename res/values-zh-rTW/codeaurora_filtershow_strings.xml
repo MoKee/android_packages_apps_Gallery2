@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!--  Text for filters that apply a frame to a picture [CHAR LIMIT=20] -->
-  <string name="frame">幀 <xliff:g id="number" example="1">%d</xliff:g></string>
+  <string name="frame">影格 <xliff:g id="number" example="1">%d</xliff:g></string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
   <string name="discard_message">這張圖片的變更尚未儲存。</string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->

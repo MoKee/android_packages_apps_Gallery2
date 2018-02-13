@@ -16,6 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!--  Text for filters that apply a frame to a picture [CHAR LIMIT=20] -->
+  <string name="frame">Okvir <xliff:g id="number" example="1">%d</xliff:g></string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
   <string name="discard_message">Spremembe te slike niso shranjene.</string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
@@ -55,24 +56,36 @@
   <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
   <string name="blur">Zamegli</string>
   <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="fusion_pick_point">Izberi segment</string>
+  <string name="fusion_pick_underlay">Izberi podlogo</string>
+  <string name="dual_camera_effects">Učinki dvojne kamere</string>
   <string name="dual_camera_effects_intro">Omogoča uporabo učinkiov, kot so \"Gibanja\" in \"Skica\". Prav tako lahko združite dve fotografiji skupaj za zanimive učinke. Ta funkcija deluje najbolje, ko je glavni predmet na sliki blizu fotoaparata.</string>
   <string name="dualcam_filter_not_supported">Za to sliko filtri za dvojno kamero niso podprti</string>
   <string name="do_not_show_again">Ne prikaži ponovno</string>
+  <string name="fusion_pick_background">Izberite sliko za ozadje</string>
   <string name="color">Barva</string>
   <string name="ok_continue">Nadaljuj</string>
   <string name="frames">Sličic</string>
   <string name="beautify">Polepšaj</string>
+  <string name="dualcam">Dvojna kamera</string>
   <string name="foreground">Ospredje</string>
   <string name="background">Ozadje</string>
   <string name="brush_size">Velikost čopiča</string>
   <!--Filtershow dialog -->
+  <string name="filtershow_dialog_title">Filter po meri</string>
   <string name="filtershow_dialog_content">Omogoči izdelavo foto filtra.
 \n
 \nIzberite fotgrafijo, ki vam je všeč in jo uporabite kot filter za druge fotografije</string>
+  <string name="filtershow_dialog_original_photo">Izvirna fotografija</string>
+  <string name="filtershow_dialog_apply_photo">Uporabi barve</string>
   <string name="filtershow_dialog_checkbox">Ne prikaži ponovno</string>
   <string name="filtershow_preset_title">Po meri</string>
   <string name="filtershow_preset_rename">Preimenuj</string>
+  <string name="delete_before_exit">Brisanje filtra?</string>
+  <string name="rename_before_exit">Preimenuj filter</string>
   <string name="filter_name">Ime filtra</string>
+  <string name="filter_name_notification">Ime ne sme biti prazno.</string>
+  <string name="filter_name_duplicate">To ime že obstaja, vnesite drugo ime.</string>
   <string name="watermark_location">Mesto</string>
   <string name="watermark_time">Ura</string>
   <string name="watermark_weather">Vreme</string>
