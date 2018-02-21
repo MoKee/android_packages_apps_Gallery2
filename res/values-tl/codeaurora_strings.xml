@@ -101,6 +101,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="tvEmptyAlbum">Walang natagpuan na mga larawan</string>
   <string name="tvEmptyVideos">Walang natagpuan na mga video</string>
   <string name="text_makeup_whiten">Paputiin</string>
+  <string name="text_makeup_Soften">Eksena pamamaraan</string>
   <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Tanggalin ang glare</string>
   <string name="hazebuster_acts">Haze Buster</string>
