@@ -88,11 +88,6 @@
   <!-- Details dialog "OK" button. Dismisses dialog. -->
   <string name="delete">Видалити</string>
   <!-- String Delete the selected media item(s) [CHAR LIMIT=50] -->
-  <plurals name="delete_selection">
-    <item quantity="one">Видалити вибраний елемент?</item>
-    <item quantity="few">Видалити вибрані елементи?</item>
-    <item quantity="other">Видалити вибрані елементи?</item>
-  </plurals>
   <string name="confirm">Підтвердити</string>
   <string name="cancel">Скасувати</string>
   <string name="share">Надісл.</string>
@@ -113,25 +108,10 @@
   <string name="switch_to_camera">Перейти до програми Камера</string>
   <!-- String indicating how many media item(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
-  <plurals name="number_of_items_selected">
-    <item quantity="one">Вибрано %1$d</item>
-    <item quantity="few">Вибрано %1$d</item>
-    <item quantity="other">Вибрано %1$d</item>
-  </plurals>
   <!-- String indicating how many media album(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
-  <plurals name="number_of_albums_selected">
-    <item quantity="one">Вибрано %1$d</item>
-    <item quantity="few">Вибрано %1$d</item>
-    <item quantity="other">Вибрано %1$d</item>
-  </plurals>
   <!-- String indicating how many media group(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
-  <plurals name="number_of_groups_selected">
-    <item quantity="one">Вибрано %1$d</item>
-    <item quantity="few">Вибрано %1$d</item>
-    <item quantity="other">Вибрано %1$d</item>
-  </plurals>
   <!-- String indicating timestamp of photo or video -->
   <string name="show_on_map">Показ. на карті</string>
   <string name="rotate_left">Поверн. вліво</string>
@@ -302,11 +282,6 @@
          (filtershow_fx_0008_washout_color) [CHAR LIMIT=10] -->
   <string name="ffx_washout_color">Літографія</string>
   <!-- Toast message shown after we make some album(s) available offline [CHAR LIMIT=50] -->
-  <plurals name="make_albums_available_offline">
-    <item quantity="one">Надання доступу до альбому в режимі офлайн.</item>
-    <item quantity="few">Надання доступу до альбомів у режимі офлайн.</item>
-    <item quantity="other">Надання доступу до альбомів в режимі офлайн.</item>
-  </plurals>
   <!-- Toast message shown after we try to make a local album available offline
          [CHAR LIMIT=150] -->
   <string name="try_to_set_local_album_available_offline">Цей елемент зберігається локально та доступний у режимі офлайн.</string>
@@ -428,17 +403,7 @@
   <!--  Text of notification message which is shown when user attaches camera -->
   <string name="ingest_scanning" msgid="2048262851775139720">Сканування вмісту...</string>
   <!-- String indicating how many media items from the camera have been scanned -->
-  <plurals name="ingest_number_of_items_scanned">
-    <item quantity="one">Проскановано елементів: %1$d</item>
-    <item quantity="few">Проскановано елементів: %1$d</item>
-    <item quantity="other">Проскановано елементів: %1$d</item>
-  </plurals>
   <!-- String indicating how many media items from the camera have been selected -->
-  <plurals name="ingest_number_of_items_selected">
-    <item quantity="one">%1$d вибраний елемент</item>
-    <item quantity="few">%1$d вибрані елементи</item>
-    <item quantity="other">вибрані елементи %1$d</item>
-  </plurals>
   <!--  Status message shown when content from the camera is being sorted -->
   <string name="ingest_sorting" msgid="624687230903648118">Сортування...</string>
   <!--  Status message shown when scanning the content from the camera has completed -->
@@ -494,11 +459,6 @@
   <!-- Title for countdown timer on camera settings screen [CHAR LIMIT=30]-->
   <string name="pref_camera_timer_title">Таймер зворотного відліку</string>
   <!-- Entry for countdown timer setting. e.g. 1 second, 10 seconds, etc. [CHAR LIMIT=30]-->
-  <plurals name="pref_camera_timer_entry">
-    <item quantity="one">1 с</item>
-    <item quantity="few">%d с</item>
-    <item quantity="other">%d с</item>
-  </plurals>
   <!-- Text followed by a checkbox to turn on/off sound effects during the countdown. [CHAR LIMIT = 16]-->
   <string name="pref_camera_timer_sound_title">Сигнал під час відліку</string>
   <!-- Entry of a on/off setting. The setting is turned off. [CHAR LIMIT=15] -->
@@ -880,9 +840,4 @@ CHAR LIMIT = NONE] -->
   <!-- settings label [CHAR LIMIT=50] -->
   <string name="camera_menu_settings_label">НАЛАШТУВАННЯ</string>
   <!-- String indicating how many photos are in an album [CHAR LIMIT=15] -->
-  <plurals name="number_of_photos">
-    <item quantity="one">%1$d фото</item>
-    <item quantity="few">%1$d фото</item>
-    <item quantity="other">%1$d фото</item>
-  </plurals>
 </resources>

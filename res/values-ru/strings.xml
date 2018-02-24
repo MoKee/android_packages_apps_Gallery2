@@ -91,6 +91,7 @@
   <plurals name="delete_selection">
     <item quantity="one">Удалить выбранный файл?</item>
     <item quantity="few">Удалить выбранные файлы?</item>
+    <item quantity="many">Удалить выбранные файлы?</item>
     <item quantity="other">Удалить выбранные файлы?</item>
   </plurals>
   <string name="confirm">Подтвердить</string>
@@ -116,6 +117,7 @@
   <plurals name="number_of_items_selected">
     <item quantity="one">%1$d выбрано</item>
     <item quantity="few">%1$d выбрано</item>
+    <item quantity="many">%1$d выбрано</item>
     <item quantity="other">%1$d выбрано</item>
   </plurals>
   <!-- String indicating how many media album(s) is(are) selected
@@ -123,6 +125,7 @@
   <plurals name="number_of_albums_selected">
     <item quantity="one">%1$d выбрано</item>
     <item quantity="few">%1$d выбрано</item>
+    <item quantity="many">%1$d выбрано</item>
     <item quantity="other">%1$d выбрано</item>
   </plurals>
   <!-- String indicating how many media group(s) is(are) selected
@@ -130,6 +133,7 @@
   <plurals name="number_of_groups_selected">
     <item quantity="one">%1$d выбрано</item>
     <item quantity="few">%1$d выбрано</item>
+    <item quantity="many">%1$d выбрано</item>
     <item quantity="other">%1$d выбрано</item>
   </plurals>
   <!-- String indicating timestamp of photo or video -->
@@ -305,6 +309,7 @@
   <plurals name="make_albums_available_offline">
     <item quantity="one">Загрузка альбома для офлайн-доступа</item>
     <item quantity="few">Загрузка альбомов для офлайн-доступа.</item>
+    <item quantity="many">Загрузка альбомов для офлайн-доступа.</item>
     <item quantity="other">Загрузка альбомов для офлайн-доступа.</item>
   </plurals>
   <!-- Toast message shown after we try to make a local album available offline
@@ -431,12 +436,14 @@
   <plurals name="ingest_number_of_items_scanned">
     <item quantity="one">Отсканировано: %1$d</item>
     <item quantity="few">Отсканировано: %1$d</item>
+    <item quantity="many">Отсканировано: %1$d</item>
     <item quantity="other">Отсканировано: %1$d</item>
   </plurals>
   <!-- String indicating how many media items from the camera have been selected -->
   <plurals name="ingest_number_of_items_selected">
     <item quantity="one">Выбран %1$d элемент</item>
     <item quantity="few">Выбрано %1$d элемента</item>
+    <item quantity="many">Выбрано %1$d элементов</item>
     <item quantity="other">Выбрано %1$d элементов</item>
   </plurals>
   <!--  Status message shown when content from the camera is being sorted -->
@@ -497,6 +504,7 @@
   <plurals name="pref_camera_timer_entry">
     <item quantity="one">1 сек.</item>
     <item quantity="few">%d сек.</item>
+    <item quantity="many">%d сек.</item>
     <item quantity="other">%d сек.</item>
   </plurals>
   <!-- Text followed by a checkbox to turn on/off sound effects during the countdown. [CHAR LIMIT = 16]-->
@@ -883,6 +891,7 @@ CHAR LIMIT = NONE] -->
   <plurals name="number_of_photos">
     <item quantity="one">%1$d фото</item>
     <item quantity="few">%1$d фото</item>
+    <item quantity="many">%1$d фото</item>
     <item quantity="other">%1$d фото</item>
   </plurals>
 </resources>
