@@ -3,6 +3,7 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
+Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -79,5 +80,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="fail_trim">කනගාටුයි, මෙම වීඩියෝ ගොනුව කොට කල නොහැක</string>
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
+  <string name="albums_title">ඇල්බම</string>
   <!-- Videos screen title -->
+  <string name="trim_video_exit_title">පිටවීමට පෙර සුරැකීමට ඔබට අවශ්‍යද?</string>
 </resources>

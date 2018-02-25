@@ -84,6 +84,7 @@
   <string name="set_wallpaper">Itakda ang wallpaper</string>
   <!-- Toast/alert after saving wallpaper -->
   <string name="wallpaper">Itinatakda ang wallpaper…</string>
+  <string name="camera_setas_wallpaper">Ang wolpeyper</string>
   <!-- Details dialog "OK" button. Dismisses dialog. -->
   <string name="delete">Tanggalin</string>
   <!-- String Delete the selected media item(s) [CHAR LIMIT=50] -->
@@ -103,6 +104,7 @@
   <!-- String indicating more actions are available -->
   <string name="select_all">Piliin lahat</string>
   <string name="deselect_all">Alisin sa pagkakapili ang lahat</string>
+  <string name="slideshow">Ipakita ang pagguho</string>
   <string name="details">Mga Detalye</string>
   <string name="details_title">%1$d sa %2$d (na) item:</string>
   <string name="close">Isara</string>
@@ -251,19 +253,24 @@
   <!-- Text indicating flash info of a media item in details window [CHAR LIMIT=14] -->
   <string name="flash">Kislap</string>
   <!-- Text indicating aperture of a media item in details window [CHAR LIMIT=14] -->
+  <string name="aperture">Ang siwang</string>
   <!-- Text indicating the focal length of a media item in details window [CHAR LIMIT=14] -->
   <string name="focal_length">Haba ng Focal</string>
   <!-- Text indicating the white balance of a media item in details window [CHAR LIMIT=14] -->
+  <string name="white_balance">Puting balanse</string>
   <!-- Text indicating the exposure time of a media item in details window [CHAR LIMIT=14] -->
   <string name="exposure_time">Tagal exposure</string>
   <!-- Text indicating the ISO speed rating of a media item in details window [CHAR LIMIT=14] -->
+  <string name="iso">ISO</string>
   <!-- String indicating the time units in seconds. [CHAR LIMIT=8] -->
   <!-- String indicating the length units in milli-meters. [CHAR LIMIT=8] -->
+  <string name="unit_mm">mm</string>
   <!-- String indicating how camera shooting feature is used. [CHAR LIMIT=8] -->
   <string name="manual">Mano-mano</string>
   <!-- String indicating how camera shooting feature is used. [CHAR LIMIT=8] -->
   <string name="auto">Awtomatiko</string>
   <!-- String indicating camera flash is fired. [CHAR LIMIT=14] -->
+  <string name="flash_on">Marangya ang magpaputok</string>
   <!-- String indicating camera flash is not used. [CHAR LIMIT=14] -->
   <string name="flash_off">Walang flash</string>
   <!-- String indicating image width or height is unknown. [CHAR LIMIT=14] -->
@@ -273,18 +280,23 @@
   <!-- String for brown-colored old-fashion looking filter (filtershow_fx_0000_vintage) [CHAR LIMIT=10] -->
   <string name="ffx_vintage">Antigo</string>
   <!-- String for filter that brightens colors like instant cameras(filtershow_fx_0001_instant) [CHAR LIMIT=10] -->
+  <string name="ffx_instant">Mahigpit</string>
   <!-- String for filter that washes out colors (filtershow_fx_0002_bleach) [CHAR LIMIT=10] -->
   <string name="ffx_bleach">Pampaputi</string>
   <!-- String for filter that makes colors a bluish (filtershow_fx_0003_blue_crush) [CHAR LIMIT=10] -->
   <string name="ffx_blue_crush">Asul</string>
   <!-- String for filter that makes image black & white (filtershow_fx_0004_bw_contrast) [CHAR LIMIT=10] -->
+  <string name="ffx_bw_contrast">B/W</string>
   <!-- String for filter that makes colors a yellowish (filtershow_fx_0005_punch) [CHAR LIMIT=10] -->
+  <string name="ffx_punch">Dunggulin</string>
   <!-- String for filter that mimics the cross-process technique in
          photography (makes colors bluish) (filtershow_fx_0006_x_process) [CHAR LIMIT=10] -->
   <string name="ffx_x_process">X Proseso</string>
   <!-- String for filter that makes image coffee-colored (filtershow_fx_0007_washout) [CHAR LIMIT=10] -->
+  <string name="ffx_washout">Latte</string>
   <!-- String for filter that makes colors washed out and brownish
          (filtershow_fx_0008_washout_color) [CHAR LIMIT=10] -->
+  <string name="ffx_washout_color">Litho</string>
   <!-- Toast message shown after we make some album(s) available offline [CHAR LIMIT=50] -->
   <plurals name="make_albums_available_offline">
     <item quantity="one">Ginagawang available ang album offline.</item>
@@ -352,6 +364,7 @@
   <!-- The title of the dialog for choosing the type of widget. [CHAR LIMIT=20] -->
   <string name="widget_type">Pumili mga larawan</string>
   <!-- Title of the Android Dreams slideshow screensaver. [CHAR LIMIT=20] -->
+  <string name="slideshow_dream_name">Ipakita ang pagguho</string>
   <!-- Group by Albums tab on Action Bar. [CHAR LIMIT=12] -->
   <string name="albums">Mga Album</string>
   <!-- Group by Times tab on Action Bar. [CHAR LIMIT=12] -->
@@ -369,6 +382,7 @@
   <!-- The title of menu item where user can add a new account -->
   <string name="add_account">Magdagdag ng account</string>
   <!-- The label for the folder contains pictures taken by the camera. [CHAR LIMIT=20]-->
+  <string name="folder_camera">Ang kamera</string>
   <!-- The label for the folder contains downloaded pictures. [CHAR LIMIT=20]-->
   <string name="folder_download">I-download</string>
   <!-- The label for the folder contains edited online pictures. [CHAR LIMIT=40]-->
@@ -385,7 +399,9 @@
   <!-- The message of a dialog showing there is no external storage. [CHAR LIMIT=none] -->
   <string name="no_external_storage">Walang available na panlabas na storage</string>
   <!-- Label for album filmstrip button -->
+  <string name="switch_photo_filmstrip">Tignan ang pelikula</string>
   <!-- Label for album grid button -->
+  <string name="switch_photo_grid">Tingnan ang parilya</string>
   <!-- Label for fullscreen button. [CHAR LIMIT=20] -->
   <string name="switch_photo_fullscreen">Fullscreen na view</string>
   <!-- The tilte of a dialog showing trimming in progress. [CHAR LIMIT=20] -->
@@ -437,6 +453,7 @@
   <!-- message for the dialog showing the camera is disabled because of security policies. Camera cannot be used. -->
   <string name="camera_disabled">Hindi na pinagana ang camera dahil sa mga patakaran sa seguridad.</string>
   <!-- label for the icon meaning 'show me all the images that were taken with the camera' -->
+  <string name="camera_label">Ang kamera</string>
   <!-- alert to the user to wait for some operation to complete -->
   <string name="wait">Pakihintay…</string>
   <!-- alert to the user that USB storage must be available before using the camera [CHAR LIMIT=NONE] -->
@@ -520,39 +537,58 @@
   <!-- Settings screen, dialog choice for 1 megapixels picture size [CHAR LIMIT=15] -->
   <string name="pref_camera_picturesize_entry_1mp">1M pixel</string>
   <!-- Settings screen, dialog choice for VGA picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_vga">VGA</string>
   <!-- Settings screen, dialog choice for QVGA picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_qvga">QVGA</string>
   <!-- Settings screen, Focus mode title -->
+  <string name="pref_camera_focusmode_title">Pokus sa pamamaraan</string>
   <!-- Settings screen, Focus mode dialog radio button choices -->
   <string name="pref_camera_focusmode_entry_auto">Awtomatiko</string>
   <string name="pref_camera_focusmode_entry_infinity">Walang Katapusan</string>
+  <string name="pref_camera_focusmode_entry_macro">Macro</string>
   <!-- Menu, focus mode labels [CHAR LIMIT=50] -->
+  <string name="pref_camera_focusmode_label_auto">KOTSE</string>
+  <string name="pref_camera_focusmode_label_infinity">ANG IMPINIDAD</string>
+  <string name="pref_camera_focusmode_label_macro">MACRO</string>
   <!-- Default flash mode setting.-->
   <!-- Value for flash off setting-->
   <!-- Settings screen, Flash mode title -->
   <string name="pref_camera_flashmode_title">Mode na naka-flash</string>
   <!-- flash label [CHAR LIMIT=50] -->
+  <string name="pref_camera_flashmode_label">PARAAN NA PASIKLABIN</string>
   <!-- Settings screen, Flash mode dialog radio button choices -->
   <string name="pref_camera_flashmode_entry_auto">Awtomatiko</string>
   <string name="pref_camera_flashmode_entry_on">Naka-on</string>
   <string name="pref_camera_flashmode_entry_off">Naka-off</string>
   <!-- Menu, flash mode labels [CHAR LIMIT=50] -->
+  <string name="pref_camera_flashmode_label_auto">PARAAN NG KOTSE</string>
   <string name="pref_camera_flashmode_label_on">NAKA-ON ANG FLASH</string>
   <string name="pref_camera_flashmode_label_off">NAKA-OFF ANG FLASH</string>
   <!-- Default videocamera flash mode setting.-->
   <!-- Default white balance setting. -->
   <!-- Settings screen, white balance title -->
+  <string name="pref_camera_whitebalance_title">Puting balanse</string>
   <!-- Menu, white balance label -->
+  <string name="pref_camera_whitebalance_label">PUTING BALANCE</string>
   <!-- Settings screen, White balance dialog radio button choices -->
   <string name="pref_camera_whitebalance_entry_auto">Awtomatiko</string>
   <string name="pref_camera_whitebalance_entry_incandescent">Napakaliwanag</string>
   <string name="pref_camera_whitebalance_entry_daylight">Liwanag ng araw</string>
+  <string name="pref_camera_whitebalance_entry_fluorescent">Ang mailaw</string>
   <string name="pref_camera_whitebalance_entry_cloudy">Maulap</string>
   <!-- Menu, White balance labels [CHAR LIMIT=50] -->
+  <string name="pref_camera_whitebalance_label_auto">KOTSE</string>
+  <string name="pref_camera_whitebalance_label_incandescent">Ang napakaliwanag</string>
+  <string name="pref_camera_whitebalance_label_daylight">Ang liwanag ng araw</string>
+  <string name="pref_camera_whitebalance_label_fluorescent">Mailaw</string>
+  <string name="pref_camera_whitebalance_label_cloudy">Makulimlim</string>
   <!-- Default scene mode setting. -->
   <!-- Settings screen, Select Scene mode -->
+  <string name="pref_camera_scenemode_title">Eksena ng paraan</string>
   <!-- Settings menu, scene mode choices [CHAR LIMIT=16] -->
   <string name="pref_camera_scenemode_entry_auto">Awtomatiko</string>
   <!-- Scene mode that uses HDR (high dynamic range) [CHAR LIMIT=16] -->
+  <string name="pref_camera_scenemode_entry_hdr">HDR</string>
   <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=16] -->
   <string name="pref_camera_scenemode_entry_action">Pagkilos</string>
   <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=16] -->
@@ -564,11 +600,15 @@
   <!-- Settings menu, scene mode labels [CHAR LIMIT=50] -->
   <string name="pref_camera_scenemode_label_auto">WALA</string>
   <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=50] -->
+  <string name="pref_camera_scenemode_label_action">Aksyon</string>
   <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=50] -->
   <string name="pref_camera_scenemode_label_night">Ang gabi</string>
   <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=50] -->
+  <string name="pref_camera_scenemode_label_sunset">Ang paglubog ng araw</string>
   <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=50] -->
+  <string name="pref_camera_scenemode_label_party">Pangkat</string>
   <!-- Settings menu countdown timer labels [CHAR LIMIT=50] -->
+  <string name="pref_camera_countdown_label">Bilang sa ibaba na timer</string>
   <!-- Settings menu countdown timer off [CHAR LIMIT=50] -->
   <string name="pref_camera_countdown_label_off">NAKA-OFF ANG TIMER</string>
   <!-- Settings menu countdown timer 1 second [CHAR LIMIT=50] -->
@@ -584,8 +624,10 @@
   <!-- Exposure settings in preference -->
   <string name="pref_exposure_title">Pagkakalantad</string>
   <!--  menu label exposure compensation [CHAR LIMIT=50] -->
+  <string name="pref_exposure_label">KAHULUGAN</string>
   <!-- Default HDR entry value -->
   <!-- HDR label ON [CHAR LIMIT=60] -->
+  <string name="pref_camera_hdr_label">HDR</string>
   <!-- switch camera label back [CHAR LIMIT=60] -->
   <string name="pref_camera_id_label_back">CAMERA SA HARAP</string>
   <!-- switch camera label front [CHAR LIMIT=60] -->
@@ -608,6 +650,7 @@
   <!-- The text shown in the dialog when panorama saving failed [CHAR LIMIT=40] -->
   <string name="pano_dialog_panorama_failed">Hindi ma-save ang panorama.</string>
   <!-- The text shown on the dialog title in the dialogs for Panorama [CHAR LIMIT=12] -->
+  <string name="pano_dialog_title">Panorama</string>
   <!-- The text shown on the top-left corner of the screen to indicate the capturing is on going [CHAR LIMIT=27] -->
   <string name="pano_capture_indication">Kinukunan ang panorama</string>
   <!-- The text shown in the progress dialog when waiting for previous panorama finishing [CHAR LIMIT=40] -->
@@ -624,6 +667,7 @@
   <!-- Effect setting item that clear the effect. [CHAR LIMIT=14] -->
   <string name="effect_none">Wala</string>
   <!-- Effect setting item that squeezes the face. [CHAR LIMIT=14] -->
+  <string name="effect_goofy_face_squeeze">Pisain</string>
   <!-- Effect setting item that makes eyes big. [CHAR LIMIT=14] -->
   <string name="effect_goofy_face_big_eyes">Malalaking mata</string>
   <!-- Effect setting item that makes mouth big. [CHAR LIMIT=14] -->
@@ -815,6 +859,7 @@ CHAR LIMIT = NONE] -->
   <!-- Positive answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
   <string name="remember_location_yes">Oo</string>
   <!-- Menu item to launch the camera app [CHAR LIMIT=25] -->
+  <string name="menu_camera">Ang kamera</string>
   <!-- Menu item to search for photos [CHAR LIMIT=25] -->
   <string name="menu_search">Maghanap</string>
   <!-- Title for the all photos tab [CHAR LIMIT=25] -->
