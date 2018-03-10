@@ -88,6 +88,14 @@
   <!-- Details dialog "OK" button. Dismisses dialog. -->
   <string name="delete">حذف</string>
   <!-- String Delete the selected media item(s) [CHAR LIMIT=50] -->
+  <plurals name="delete_selection">
+    <item quantity="zero">هل تريد حذف العنصر المحدد؟</item>
+    <item quantity="one">هل تريد حذف العناصر المحددة؟</item>
+    <item quantity="two">هل تريد حذف العناصر المحددة؟</item>
+    <item quantity="few">هل تريد حذف العناصر المحددة؟</item>
+    <item quantity="many">هل تريد حذف العناصر المحددة؟</item>
+    <item quantity="other">هل تريد حذف العناصر المحددة؟</item>
+  </plurals>
   <string name="confirm">تأكيد</string>
   <string name="cancel">إلغاء</string>
   <string name="share">مشاركة</string>
@@ -108,10 +116,34 @@
   <string name="switch_to_camera">تبديل إلى الكاميرا</string>
   <!-- String indicating how many media item(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
+  <plurals name="number_of_items_selected">
+    <item quantity="zero">‏تم تحديد %1$d</item>
+    <item quantity="one">‏تم تحديد %1$d</item>
+    <item quantity="two">‏تم تحديد %1$d</item>
+    <item quantity="few">تم تحديد %1$d</item>
+    <item quantity="many">تم تحديد %1$d</item>
+    <item quantity="other">تم تحديد %1$d</item>
+  </plurals>
   <!-- String indicating how many media album(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
+  <plurals name="number_of_albums_selected">
+    <item quantity="zero">‏تم تحديد %1$d</item>
+    <item quantity="one">‏تم تحديد %1$d</item>
+    <item quantity="two">‏تم تحديد %1$d</item>
+    <item quantity="few">تم تحديد %1$d</item>
+    <item quantity="many">تم تحديد %1$d</item>
+    <item quantity="other">تم تحديد %1$d</item>
+  </plurals>
   <!-- String indicating how many media group(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
+  <plurals name="number_of_groups_selected">
+    <item quantity="zero">‏تم تحديد %1$d</item>
+    <item quantity="one">‏تم تحديد %1$d</item>
+    <item quantity="two">‏تم تحديد %1$d</item>
+    <item quantity="few">تم تحديد %1$d</item>
+    <item quantity="many">تم تحديد %1$d</item>
+    <item quantity="other">تم تحديد %1$d</item>
+  </plurals>
   <!-- String indicating timestamp of photo or video -->
   <string name="show_on_map">عرض على الخريطة</string>
   <string name="rotate_left">تدوير لليسار</string>
@@ -262,22 +294,34 @@
   <!-- String for the empty not filtered image [CHAR LIMIT=10] -->
   <string name="ffx_original">أصلية</string>
   <!-- String for brown-colored old-fashion looking filter (filtershow_fx_0000_vintage) [CHAR LIMIT=10] -->
+  <string name="ffx_vintage">عتيق</string>
   <!-- String for filter that brightens colors like instant cameras(filtershow_fx_0001_instant) [CHAR LIMIT=10] -->
   <string name="ffx_instant">فوري</string>
   <!-- String for filter that washes out colors (filtershow_fx_0002_bleach) [CHAR LIMIT=10] -->
+  <string name="ffx_bleach">تبييض</string>
   <!-- String for filter that makes colors a bluish (filtershow_fx_0003_blue_crush) [CHAR LIMIT=10] -->
   <string name="ffx_blue_crush">أزرق</string>
   <!-- String for filter that makes image black & white (filtershow_fx_0004_bw_contrast) [CHAR LIMIT=10] -->
   <string name="ffx_bw_contrast">أبيض/أسود</string>
   <!-- String for filter that makes colors a yellowish (filtershow_fx_0005_punch) [CHAR LIMIT=10] -->
+  <string name="ffx_punch">لكمه</string>
   <!-- String for filter that mimics the cross-process technique in
          photography (makes colors bluish) (filtershow_fx_0006_x_process) [CHAR LIMIT=10] -->
+  <string name="ffx_x_process">معالج X</string>
   <!-- String for filter that makes image coffee-colored (filtershow_fx_0007_washout) [CHAR LIMIT=10] -->
   <string name="ffx_washout">تبييض</string>
   <!-- String for filter that makes colors washed out and brownish
          (filtershow_fx_0008_washout_color) [CHAR LIMIT=10] -->
   <string name="ffx_washout_color">صخري</string>
   <!-- Toast message shown after we make some album(s) available offline [CHAR LIMIT=50] -->
+  <plurals name="make_albums_available_offline">
+    <item quantity="zero">جارٍ جعل الألبوم متاحًا في وضع عدم الاتصال.</item>
+    <item quantity="one">جارٍ جعل الألبومات متاحة في وضع عدم الاتصال.</item>
+    <item quantity="two">جارٍ جعل الألبومات متاحة في وضع عدم الاتصال.</item>
+    <item quantity="few">جارٍ جعل الألبومات متاحة في وضع عدم الاتصال.</item>
+    <item quantity="many">جارٍ جعل الألبومات متاحة في وضع عدم الاتصال.</item>
+    <item quantity="other">جارٍ جعل الألبومات متاحة في وضع عدم الاتصال.</item>
+  </plurals>
   <!-- Toast message shown after we try to make a local album available offline
          [CHAR LIMIT=150] -->
   <string name="try_to_set_local_album_available_offline">هذا العنصر مخزن محليًا ومتاح في وضع عدم الاتصال.</string>
@@ -399,7 +443,23 @@
   <!--  Text of notification message which is shown when user attaches camera -->
   <string name="ingest_scanning" msgid="2048262851775139720">جارٍ مسح المحتوى ضوئيًا...</string>
   <!-- String indicating how many media items from the camera have been scanned -->
+  <plurals name="ingest_number_of_items_scanned">
+    <item quantity="zero">‏تم مسح %1$d من العناصر ضوئيًا</item>
+    <item quantity="one">‏تم مسح %1$d عنصر ضوئيًا</item>
+    <item quantity="two">‏تم مسح %1$d من العناصر ضوئيًا</item>
+    <item quantity="few">تم مسح %1$d من العناصر ضوئيًا</item>
+    <item quantity="many">تم مسح %1$d من العناصر ضوئيًا</item>
+    <item quantity="other">تم مسح %1$d من العناصر ضوئيًا</item>
+  </plurals>
   <!-- String indicating how many media items from the camera have been selected -->
+  <plurals name="ingest_number_of_items_selected">
+    <item quantity="zero">العناصر المحددة %1$d</item>
+    <item quantity="one">العناصر المحددة %1$d</item>
+    <item quantity="two">العناصر المحددة %1$d</item>
+    <item quantity="few">العناصر المحددة %1$d</item>
+    <item quantity="many">العناصر المحددة %1$d</item>
+    <item quantity="other">العناصر المحددة %1$d</item>
+  </plurals>
   <!--  Status message shown when content from the camera is being sorted -->
   <string name="ingest_sorting" msgid="624687230903648118">جارٍ التصنيف...</string>
   <!--  Status message shown when scanning the content from the camera has completed -->
@@ -455,6 +515,14 @@
   <!-- Title for countdown timer on camera settings screen [CHAR LIMIT=30]-->
   <string name="pref_camera_timer_title">مؤقت العد التنازلي</string>
   <!-- Entry for countdown timer setting. e.g. 1 second, 10 seconds, etc. [CHAR LIMIT=30]-->
+  <plurals name="pref_camera_timer_entry">
+    <item quantity="zero">ثانية واحدة</item>
+    <item quantity="one">‏%d ثانية</item>
+    <item quantity="two">%d ثوان</item>
+    <item quantity="few">%d ثوان</item>
+    <item quantity="many">%d ثوان</item>
+    <item quantity="other">%d ثوان</item>
+  </plurals>
   <!-- Text followed by a checkbox to turn on/off sound effects during the countdown. [CHAR LIMIT = 16]-->
   <string name="pref_camera_timer_sound_title">صفير أثناء العد التنازلي</string>
   <!-- Entry of a on/off setting. The setting is turned off. [CHAR LIMIT=15] -->
@@ -501,7 +569,9 @@
   <!-- Settings screen, dialog choice for 1 megapixels picture size [CHAR LIMIT=15] -->
   <string name="pref_camera_picturesize_entry_1mp">1 ميغا بكسل</string>
   <!-- Settings screen, dialog choice for VGA picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_vga">VGA</string>
   <!-- Settings screen, dialog choice for QVGA picture size [CHAR LIMIT=15] -->
+  <string name="pref_camera_picturesize_entry_qvga">QVGA</string>
   <!-- Settings screen, Focus mode title -->
   <string name="pref_camera_focusmode_title">وضع التركيز</string>
   <!-- Settings screen, Focus mode dialog radio button choices -->
@@ -834,4 +904,12 @@ CHAR LIMIT = NONE] -->
   <!-- settings label [CHAR LIMIT=50] -->
   <string name="camera_menu_settings_label">إعدادات</string>
   <!-- String indicating how many photos are in an album [CHAR LIMIT=15] -->
+  <plurals name="number_of_photos">
+    <item quantity="zero">‏%1$d صورة</item>
+    <item quantity="one">‏%1$d من الصور</item>
+    <item quantity="two">%1$d من الصور</item>
+    <item quantity="few">%1$d من الصور</item>
+    <item quantity="many">%1$d من الصور</item>
+    <item quantity="other">%1$d من الصور</item>
+  </plurals>
 </resources>

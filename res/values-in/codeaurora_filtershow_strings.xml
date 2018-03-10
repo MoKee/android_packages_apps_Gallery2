@@ -101,4 +101,7 @@
   <string name="watermark_emotions">Emosi</string>
   <string name="watermark_food">Makanan</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">Tidak ada wajah ditemukan</string>
+  <string name="image_size_too_small">Ukuran gambar terlalu kecil</string>
+  <string name="not_support_gif">Berkas Gif tidak didukung, silakan pilih foto lainnya</string>
 </resources>

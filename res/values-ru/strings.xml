@@ -487,7 +487,7 @@
   <!-- button in review mode indicating that the taken photo/video is OK to be attached/uploaded [CHAR LIMIT=10] -->
   <string name="review_ok">ГОТОВО</string>
   <!-- A label that overlays on top of the preview frame to indicate the camcorder is in time lapse mode [CHAR LIMIT=35] -->
-  <string name="time_lapse_title">Режим интервальной съёмки</string>
+  <string name="time_lapse_title">Режим покадровой съёмки</string>
   <!-- Settings screen, camera selection dialog title. Users can select a camera from the phone (front-facing or back-facing). [CHAR LIMIT=20] -->
   <string name="pref_camera_id_title">Выбор камеры</string>
   <!-- In select camera setting, back facing camera. [CHAR LIMIT=14] -->
@@ -527,7 +527,7 @@
   <string name="pref_video_quality_entry_low">Низкое качество</string>
   <!-- Describes the preference dialog for choosing interval between frame capture for
     time lapse recording. Appears at top of the dialog. [CHAR LIMIT=30] -->
-  <string name="pref_video_time_lapse_frame_interval_title">Интервальная съёмка</string>
+  <string name="pref_video_time_lapse_frame_interval_title">Покадровая съёмка</string>
   <!-- Settings screen, Camera setting category title -->
   <string name="pref_camera_settings_category">Настройки камеры</string>
   <!-- Settings screen, Camcorder setting category title -->
@@ -859,7 +859,7 @@ CHAR LIMIT = NONE] -->
   <!-- Title in time interval picker for setting time interval. [CHAR LIMIT = 30]-->
   <string name="set_time_interval">Задайте интервал</string>
   <!-- Help text that is shown when the time lapse feature is turned off. [CHAR LIMIT = 180]-->
-  <string name="set_time_interval_help">Сначала включите режим интервальной съёмки. После этого задайте интервал.</string>
+  <string name="set_time_interval_help">Сначала включите режим покадровой съёмки. После этого задайте интервал.</string>
   <!-- Help text that is shown when the countdown timer is turned off. [CHAR LIMIT = 180]-->
   <string name="set_timer_help">Чтобы камера фотографировала с задержкой, включите эту функцию.</string>
   <!-- Title in timer setting for setting the duration for the countdown timer. [CHAR LIMIT = 50]-->

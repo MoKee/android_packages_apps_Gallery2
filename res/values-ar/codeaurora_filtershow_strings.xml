@@ -16,8 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!--  Text for filters that apply a frame to a picture [CHAR LIMIT=20] -->
+  <string name="frame">Frame <xliff:g id="number" example="1">%d</xliff:g></string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
-  <string name="discard_message">هناك تغييرات في هذه الصورة لم يتم حفظها.</string>
+  <string name="discard_message">هناك تغييرات في هذه الصورة لم يتم حفظها؟</string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
   <string name="discard_title">هل تريد الحفظ قبل الخروج؟</string>
   <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
@@ -31,16 +32,21 @@
   <!--  HazeBuster button -->
   <!--  SeeStraight button -->
   <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="focus">تركيز</string>
   <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="fusion">الانصهار</string>
   <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
   <string name="sketch">رسم</string>
   <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="halo">هالو</string>
   <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
   <string name="zoom">تكبير/تصغير</string>
   <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="motion">الحركة</string>
   <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
   <string name="bw">أبيض/أسود</string>
   <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
+  <string name="blackboard">لوح أسود</string>
   <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
   <string name="whiteboard">لوح المعلومات</string>
   <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
@@ -48,14 +54,54 @@
   <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
   <string name="dc_negative">سالب</string>
   <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="blur">التمويه</string>
   <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="motion_blur">ضبابية الحركة</string>
+  <string name="fusion_pick_point">Pick segment</string>
+  <string name="fusion_pick_underlay">Pick underlay</string>
+  <string name="dual_camera_effects">آثار كاميرا مزدوجة</string>
+  <string name="dual_camera_effects_intro">يسمح لك بتطبيق تأثيرات الخلفية، مثل \"الحركة\" و \"الرسم\"يمكنك أيضا دمج صورتين معا لتأثيرات مثيرة للاهتمام. هذه الميزة تعمل بشكل أفضل عندما يكون لديك مسافة قصيرة بين الكاميرا والموضوع الرئيسي للصورة لك.</string>
+  <string name="dualcam_no_segment_toast">لا يوجد قطعة عند هذه النقطة</string>
+  <string name="dualcam_filter_not_supported">مرشحات الكاميرا المزدوجة غير معتمدة لهذه الصورة</string>
+  <string name="trueportrait_intro">يسمح لك بتحسين صور الناس. يمكنك تطبيق تأثيرات على الخلفية، مثل الضبابية والرسم يمكنك أيضا دمج صورتين معا لإنشاء خلفيات مثيرة للاهتمام للصور الفوتوغرافية.</string>
+  <string name="trueportrait_no_face">لا يمكن تطبيق تأثير TruePortrait على هذه الصورة. لم يتم الكشف عن الوجه.</string>
+  <string name="trueportrait_edit_intro">باستخدام أداة الاتصال والمتابعة، يمكنك تحرير الأمامية والخلفية. يمكنك استخدام الإصبع لطلاء في أي منطقة من المناطق الأمامية أو الخلفية التي فقدتها.</string>
+  <string name="trueportrait_edit_foreground_toast">استخدام الإصبع للطلاء في أي من مناطق الأمامية التي ضاعت.</string>
+  <string name="trueportrait_edit_background_toast">استخدام الإصبع للطلاء في أي من مناطق الأمامية التي ضاعت.</string>
+  <string name="trueportrait_edit_help">للتكبير أو التصغير، استخدام اصبعين للضغط. يمكنك أيضا السحب بأصبعين لإعادة تعيين موضع الصورة. هذا يمكن أن يجعل من الأسهل إصلاح أي مجالات إشكالية.</string>
+  <string name="trueportrait_fusion_intro">يمكن نسخ ولصق على أي صورة في معرض الصور الخاص بك يمكنك محاولة استخدام صور خلفية مختلفة لإنشاء صور جديدة ومثيرة للاهتمام.</string>
+  <string name="dualcam_fusion_intro">Your foreground can be copied and pasted onto any photo in your Gallery.\n\nYou can try using different background photos to create new and interesting portraits.</string>
+  <string name="do_not_show_again">لا تظهر مرة أخرى</string>
+  <string name="trueportrait_touch_up">على اتصال ومتابعة</string>
+  <string name="fusion_pick_background">حدد صورة الخلفية</string>
   <string name="color">اللون</string>
   <string name="ok_continue">متابعة</string>
+  <string name="frames">إطارات</string>
+  <string name="beautify">تجميل</string>
+  <string name="dualcam">كاميرا مزدوجة</string>
+  <string name="foreground">المقدمة</string>
   <string name="background">الخلفية</string>
+  <string name="brush_size">حجم الفرشاة</string>
   <!--Filtershow dialog -->
+  <string name="filtershow_dialog_title">الفلاتر المخصصة</string>
+  <string name="filtershow_dialog_content">Allows you to create a photo filter.\n\nSelect a photo you like and use it as a filter for other photos</string>
+  <string name="filtershow_dialog_original_photo">الصورة الأصلية</string>
+  <string name="filtershow_dialog_apply_photo">ألوان للتطبيق</string>
+  <string name="filtershow_dialog_checkbox">لا تظهر مرة أخرى</string>
   <string name="filtershow_preset_title">تخصيص</string>
   <string name="filtershow_preset_rename">إعادة تسمية</string>
+  <string name="delete_before_exit">حذف الفلتر؟</string>
+  <string name="rename_before_exit">إعادة تسمية الفلتر</string>
+  <string name="filter_name">اسم الفلتر</string>
+  <string name="filter_name_notification">الاسم لا يمكن أن يكون فارغاً.</string>
+  <string name="filter_name_duplicate">هذا الاسم موجود مسبقا، الرجاء إدخال اسمـًـا آخر مختلفــًا.</string>
   <string name="watermark_location">الموقع</string>
   <string name="watermark_time">الوقت</string>
+  <string name="watermark_weather">الطقس</string>
+  <string name="watermark_emotions">العواطف</string>
+  <string name="watermark_food">طعام</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">لا يوجد أيّ وجوه</string>
+  <string name="image_size_too_small">حجم الصورة صغير جدا</string>
+  <string name="not_support_gif">ملفات جيف Gif غير معتمدة، الرجاء اختيار صورة أخرى</string>
 </resources>

@@ -125,6 +125,7 @@
   <!-- A label of a menu item for user to sync the content [CHAR LIMIT=30] -->
   <!-- A label on a button. The user clicks this button after he has
          finished selection. [CHAR LIMIT=15] -->
+  <string name="done">Eginda</string>
   <!-- String indicating the sequence of currently selected item in the
             media set eg. 3 of 5 items [CHAR LIMIT=30] -->
   <!-- Text indicating the title of a media item in details window [CHAR LIMIT=14] -->
@@ -459,6 +460,7 @@ CHAR LIMIT = NONE] -->
   <!-- Minutes: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
   <!-- Hours: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
   <!-- The button to confirm time-lapse setting changes. [CHAR LIMIT = 20] -->
+  <string name="time_lapse_interval_set">Eginda</string>
   <!-- Title in time interval picker for setting time interval. [CHAR LIMIT = 30]-->
   <!-- Help text that is shown when the time lapse feature is turned off. [CHAR LIMIT = 180]-->
   <!-- Help text that is shown when the countdown timer is turned off. [CHAR LIMIT = 180]-->

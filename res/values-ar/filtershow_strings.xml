@@ -101,6 +101,7 @@
   <!--  Label for the aspect 7:5 effect [CHAR LIMIT=15] -->
   <string name="aspect7to5_effect">7:5</string>
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+  <string name="aspect9to16_effect">16:9</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <string name="aspectNone_effect">لا شيء</string>
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
@@ -194,6 +195,7 @@
   <string name="editor_grad_new">جديدة</string>
   <!--  Labels for the curves tool -->
   <!--  Label for the curves tool, all channels (RGB) [CHAR LIMIT=3] -->
+  <string name="curves_channel_rgb">RGB</string>
   <!--  Label for the curves tool, Red color channel [CHAR LIMIT=14] -->
   <string name="curves_channel_red">حمراء</string>
   <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->

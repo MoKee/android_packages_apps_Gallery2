@@ -16,6 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!--  Text for filters that apply a frame to a picture [CHAR LIMIT=20] -->
+  <string name="frame">Quadro <xliff:g id="number" example="1">%d</xliff:g></string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
   <string name="discard_message">Descartar as alterações feitas nessa imagem?</string>
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
@@ -55,30 +56,52 @@
   <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
   <string name="blur">Borrão</string>
   <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="motion_blur">Desfoque de movimento</string>
+  <string name="fusion_pick_point">Escolha o segmento</string>
+  <string name="fusion_pick_underlay">Escolha subjacente</string>
+  <string name="dual_camera_effects">Efeitos de câmera dupla</string>
   <string name="dual_camera_effects_intro">Permite aplicar efeitos de fundo, tais como \"Motion\" e \"Sketch\". Você também pode mesclar duas fotos juntas para obter efeitos interessantes. Este recurso funciona melhor quando há uma curta distância entre sua câmera e o objeto que pretende tirar a foto.</string>
   <string name="dualcam_no_segment_toast">Nenhum segmento encontrado neste momento</string>
   <string name="dualcam_filter_not_supported">Filtros de câmera dupla, não há suportados para esta imagem</string>
+  <string name="trueportrait_intro">Permite que você melhore fotos de pessoas. Você pode aplicar efeitos para o fundo, como \"borrão\" e \"esboço\". Você também pode mesclar duas fotos juntas para criar planos de fundo interessantes para suas fotos de retrato.</string>
+  <string name="trueportrait_no_face">Efeitos de retrato verdadeiros não podem ser aplicados para esta foto. Rosto não detectado.</string>
+  <string name="trueportrait_edit_intro">Com a ferramenta retoque, você pode editar o primeiro plano e o plano de fundo. Você pode usar seu dedo para pintar em todas as áreas do primeiro plano ou do fundo que foram perdidas.</string>
   <string name="trueportrait_edit_foreground_toast">Use o dedo para pintar em todas as áreas do primeiro plano que foram perdidas.</string>
   <string name="trueportrait_edit_background_toast">Use o dedo para pintar em todas as áreas do primeiro plano que foram perdidas.</string>
+  <string name="trueportrait_edit_help">Para ampliar, use dois dedos para beliscar aberto ou fechado. Você também pode arrastar com dois dedos para re-posicionar a imagem. Isto pode tornar mais fácil para corrigir quaisquer áreas de problema.</string>
   <string name="trueportrait_fusion_intro">Sua pessoa de primeiro plano pode ser copiada e colada em qualquer foto em sua Galeria. Você pode tentar usar fotos de fundo diferentes para criar retratos novos e interessantes.</string>
+  <string name="dualcam_fusion_intro">Seu primeiro plano pode ser copiado e colado sobre qualquer foto da sua galeria.\n\nVocê pode tentar usar fotos de plano de fundo diferente para criar retratos novos e interessantes.</string>
   <string name="do_not_show_again">Não exibir novamente</string>
+  <string name="trueportrait_touch_up">Toque acima</string>
+  <string name="fusion_pick_background">Selecione a foto do fundo</string>
   <string name="color">Cor</string>
   <string name="ok_continue">Continuar</string>
   <string name="frames">Quadros</string>
   <string name="beautify">Embelezar</string>
+  <string name="dualcam">Câmera dupla</string>
   <string name="foreground">Primeiro plano</string>
   <string name="background">Plano de fundo</string>
   <string name="brush_size">Tamanho do pincel</string>
   <!--Filtershow dialog -->
+  <string name="filtershow_dialog_title">Filtro personalizado</string>
   <string name="filtershow_dialog_content">Permite que você crie um filtro.\n\nSelecione uma foto que você gosta como um filtro para outras fotos</string>
+  <string name="filtershow_dialog_original_photo">Foto original</string>
+  <string name="filtershow_dialog_apply_photo">Cores para aplicar</string>
   <string name="filtershow_dialog_checkbox">Não exibir novamente</string>
   <string name="filtershow_preset_title">Personalizado</string>
   <string name="filtershow_preset_rename">Renomear</string>
+  <string name="delete_before_exit">Excluir o filtro?</string>
+  <string name="rename_before_exit">Renomear o filtro</string>
   <string name="filter_name">Nome do filtro</string>
+  <string name="filter_name_notification">Nome não pode estar vazio.</string>
+  <string name="filter_name_duplicate">Este nome já existe, por favor, digite um nome diferente.</string>
   <string name="watermark_location">Localização</string>
   <string name="watermark_time">Hora</string>
   <string name="watermark_weather">Previsão do tempo</string>
   <string name="watermark_emotions">Emoções</string>
   <string name="watermark_food">Comida</string>
   <!--Filtershow Toast -->
+  <string name="no_faces_found">Nenhum rosto encontrado</string>
+  <string name="image_size_too_small">Tamanho da imagem muito pequeno</string>
+  <string name="not_support_gif">Não há suporte para arquivos GIF, por favor, escolha outra foto</string>
 </resources>

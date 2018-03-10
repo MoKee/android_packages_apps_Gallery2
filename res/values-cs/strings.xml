@@ -92,7 +92,7 @@
     <item quantity="one">Smazat vybranou položku?</item>
     <item quantity="few">Smazat vybrané položky?</item>
     <item quantity="many">Smazat vybraných položek?</item>
-    <item quantity="other">Smazat vybrané položky?</item>
+    <item quantity="other">Smazat vybraných položek?</item>
   </plurals>
   <string name="confirm">Potvrdit</string>
   <string name="cancel">Zrušit</string>
@@ -118,7 +118,7 @@
     <item quantity="one">Vybráno: %1$d</item>
     <item quantity="few">Vybráno: %1$d</item>
     <item quantity="many">Vybráno: %1$d</item>
-    <item quantity="other">%1$d vybrány</item>
+    <item quantity="other">Vybráno: %1$d</item>
   </plurals>
   <!-- String indicating how many media album(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
@@ -126,7 +126,7 @@
     <item quantity="one">Vybráno: %1$d</item>
     <item quantity="few">Vybráno: %1$d</item>
     <item quantity="many">Vybráno: %1$d</item>
-    <item quantity="other">%1$d vybrány</item>
+    <item quantity="other">Vybráno: %1$d</item>
   </plurals>
   <!-- String indicating how many media group(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
@@ -134,7 +134,7 @@
     <item quantity="one">Vybráno: %1$d</item>
     <item quantity="few">Vybráno: %1$d</item>
     <item quantity="many">Vybráno: %1$d</item>
-    <item quantity="other">%1$d vybrány</item>
+    <item quantity="other">Vybráno: %1$d</item>
   </plurals>
   <!-- String indicating timestamp of photo or video -->
   <string name="show_on_map">Zobrazit na mapě</string>
@@ -307,10 +307,10 @@
   <string name="ffx_washout_color">Litografie</string>
   <!-- Toast message shown after we make some album(s) available offline [CHAR LIMIT=50] -->
   <plurals name="make_albums_available_offline">
-    <item quantity="one">Zpřístupňování alba offline</item>
-    <item quantity="few">Zpřístupnění alb offline</item>
+    <item quantity="one">Zpřístupňování alba offline.</item>
+    <item quantity="few">Zpřístupňování alb offline.</item>
     <item quantity="many">Zpřístupňování alb offline.</item>
-    <item quantity="other">Zpřístupnění alb offline.</item>
+    <item quantity="other">Zpřístupňování alb offline.</item>
   </plurals>
   <!-- Toast message shown after we try to make a local album available offline
          [CHAR LIMIT=150] -->
