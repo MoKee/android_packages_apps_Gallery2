@@ -2425,6 +2425,7 @@ public class FilterShowActivity extends AbstractPermissionActivity implements On
         mMasterImage.setFusionUnderlay(null);
         mMasterImage.resetTranslation();
         mMasterImage.setScaleFactor(1);
+        mMasterImage.setCurrentFilterRepresentation(null);
         ArrayList<FilterRepresentation> frList = FiltersManager.getManager().getTools();
         for (FilterRepresentation fr : frList) {
             if (fr instanceof FilterRotateRepresentation) {
@@ -2545,7 +2546,9 @@ public class FilterShowActivity extends AbstractPermissionActivity implements On
         if (resultCode == RESULT_OK) {
             if (requestCode == SELECT_PICTURE) {
                 Uri selectedImageUri = data.getData();
-                startLoadBitmap(selectedImageUri);
+                if (selectedImageUri != null) {
+                    startLoadBitmap(selectedImageUri);
+                }
             } else if (requestCode == SELECT_FUSION_UNDERLAY) {
                 Uri underlayImageUri = data.getData();
                 // find fusion representation
