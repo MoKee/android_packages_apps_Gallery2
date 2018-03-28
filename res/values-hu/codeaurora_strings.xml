@@ -103,9 +103,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="tvEmptyVideos">Nem találhatóak videók</string>
   <string name="text_makeup_whiten">Fehérítés</string>
   <string name="text_makeup_Soften">Lágyítás</string>
+  <string name="text_makeup_trimface">Trimface</string>
   <string name="text_makeup_bigeye">Nagyszemű</string>
   <string name="truescanner_normal">Normál</string>
   <string name="truescanner_white">Fehértábla</string>
+  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Ragyogás eltávolítása</string>
   <string name="hazebuster_acts">Homályosságszűrő</string>
   <string name="seestraight_input_image_is_small">Bemeneti kép túl kicsi a feldolgozáshoz.</string>

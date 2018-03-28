@@ -56,6 +56,7 @@
   <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
   <string name="blur">Zamegli</string>
   <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
+  <string name="motion_blur">Zamegljenost</string>
   <string name="fusion_pick_point">Izberi segment</string>
   <string name="fusion_pick_underlay">Izberi podlogo</string>
   <string name="dual_camera_effects">Učinki dvojne kamere</string>
