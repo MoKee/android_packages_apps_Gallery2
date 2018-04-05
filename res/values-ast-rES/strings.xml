@@ -15,6 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Galería</string>
   <!-- Title for picture frame gadget to show in list of all available gadgets -->
   <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
   <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
@@ -26,6 +27,7 @@
   <!-- Movie View Start Playing dialog title -->
   <!-- Movie View Start Playing button "Resume from bookmark" -->
   <!-- Displayed in the title of those albums that are being loaded -->
+  <string name="loading">Loading\u2026</string>
   <!-- Displayed in the title of those pictures that fails to be loaded
          [CHAR LIMIT=50]-->
   <!-- Used in a toast message when an image fails to be loaded
@@ -112,17 +114,13 @@
          appear and user can choose one of "show images only",
          "show videos only", or "show all" from the submenu. -->
   <!-- Title of a menu item to show images only [CHAR LIMIT=30]-->
-  <string name="show_images_only">Namái imáxenes</string>
   <!-- Title of a menu item to show videos only [CHAR LIMIT=30]-->
-  <string name="show_videos_only">Namái vídeos</string>
   <!-- Title of a menu item to show all (both images and videos) [CHAR LIMIT=30]-->
-  <string name="show_all">Imáxenes y vídeos</string>
   <!-- Title of the StackView AppWidget -->
   <!-- Text for the empty state of the StackView AppWidget [CHAR LIMIT=30] -->
   <!-- Toast message shown when the cropped image has been saved in the
          %s folder (string: folder_download) [CHAR LIMIT=50]-->
   <!-- Toast message shown when there is no albums available [CHAR LIMIT=50]-->
-  <string name="no_albums_alert">Nun hai álbumes disponibles.</string>
   <!-- Toast message shown when we close the AlbumPage because it is empty
             [CHAR LIMIT=50] -->
   <!-- Album label used to indicate the collection of PWA Buzz/Post photos -->
@@ -147,7 +145,6 @@
   <!-- Text indicating the file size of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating the maker of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating the model of a media item in details window [CHAR LIMIT=14] -->
-  <string name="model">Modelu</string>
   <!-- Text indicating flash info of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating aperture of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating the focal length of a media item in details window [CHAR LIMIT=14] -->
@@ -167,7 +164,6 @@
   <!-- String for filter that brightens colors like instant cameras(filtershow_fx_0001_instant) [CHAR LIMIT=10] -->
   <!-- String for filter that washes out colors (filtershow_fx_0002_bleach) [CHAR LIMIT=10] -->
   <!-- String for filter that makes colors a bluish (filtershow_fx_0003_blue_crush) [CHAR LIMIT=10] -->
-  <string name="ffx_blue_crush">Azul</string>
   <!-- String for filter that makes image black & white (filtershow_fx_0004_bw_contrast) [CHAR LIMIT=10] -->
   <!-- String for filter that makes colors a yellowish (filtershow_fx_0005_punch) [CHAR LIMIT=10] -->
   <!-- String for filter that mimics the cross-process technique in
@@ -250,11 +246,11 @@
   <!-- Toast if the trimmed video is too short to trim. [CHAR LIMIT=80] -->
   <!-- Text to show with progress bar while stitching in Gallery -->
   <!-- The label on the button that will save an edited image -->
-  <string name="save" msgid="8140440041190264400">Guardar</string>
   <!-- A label representing the action of importing media item(s) [CHAR LIMIT=20] -->
+  <string name="ingest_import">@string/Import</string>
   <!-- A label that indicates the media import operation completed [CHAR LIMIT=20] -->
+  <string name="ingest_import_complete">@string/import_complete</string>
   <!--  Text of notification message which is shown when user attaches camera -->
-  <string name="ingest_scanning" msgid="2048262851775139720">Analizando conteníu...</string>
   <!-- String indicating how many media items from the camera have been scanned -->
   <!-- String indicating how many media items from the camera have been selected -->
   <!--  Status message shown when content from the camera is being sorted -->
@@ -264,7 +260,9 @@
   <!--  Status message shown when there is no content available to be imported -->
   <!--  Status message shown when there is no MTP device connected  -->
   <!-- Label for album grid button -->
+  <string name="ingest_switch_photo_grid">@string/switch_photo_grid</string>
   <!-- Label for fullscreen button. [CHAR LIMIT=20] -->
+  <string name="ingest_switch_photo_fullscreen">@string/switch_photo_fullscreen</string>
   <!-- Camera resources below -->
   <!-- General strings -->
   <!-- title for the dialog showing the error of camera hardware -->
@@ -280,16 +278,12 @@
   <!-- alert to the user that the camera fails to read or write the USB storage. [CHAR LIMIT=NONE] -->
   <!-- alert to the user that the camera fails to read or write the SD card. -->
   <!-- button in review mode indicating that the photo taking, video recording, and panorama saving session should be canceled [CHAR LIMIT=10] -->
-  <string name="review_cancel">ENCABOXAR</string>
   <!-- button in review mode indicating that the taken photo/video is OK to be attached/uploaded [CHAR LIMIT=10] -->
-  <string name="review_ok">FECHO</string>
   <!-- A label that overlays on top of the preview frame to indicate the camcorder is in time lapse mode [CHAR LIMIT=35] -->
   <!-- Settings screen, camera selection dialog title. Users can select a camera from the phone (front-facing or back-facing). [CHAR LIMIT=20] -->
   <string name="pref_camera_id_title">Escoyer cámara</string>
   <!-- In select camera setting, back facing camera. [CHAR LIMIT=14] -->
-  <string name="pref_camera_id_entry_back">Trasera</string>
   <!-- In select camera setting, front-facing camera. [CHAR LIMIT=14] -->
-  <string name="pref_camera_id_entry_front">Delantera</string>
   <!-- Settings screen, setting title text -->
   <string name="pref_camera_recordlocation_title">Atroxar allugamientu</string>
   <!--  Label for record location preference [CHAR LIMIT=50] -->
@@ -317,34 +311,24 @@
   <!-- Describes the preference dialog for choosing interval between frame capture for
     time lapse recording. Appears at top of the dialog. [CHAR LIMIT=30] -->
   <!-- Settings screen, Camera setting category title -->
-  <string name="pref_camera_settings_category">Axustes de la cámara</string>
   <!-- Settings screen, Camcorder setting category title -->
   <!-- Settings screen, Picture size title -->
   <string name="pref_camera_picturesize_title">Tamañu d\'imaxe</string>
   <!-- Settings screen, dialog choice for 13 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_13mp">13 MP</string>
   <!-- Settings screen, dialog choice for 8 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_8mp">8 MP</string>
   <!-- Settings screen, dialog choice for 5 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_5mp">5 MP</string>
   <!-- Settings screen, dialog choice for 4 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_4mp">4 MP</string>
   <!-- Settings screen, dialog choice for 3 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_3mp">3 MP</string>
   <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_2mp">2 MP</string>
   <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_2mp_wide">2 MP (16:9)</string>
   <!-- Settings screen, dialog choice for 1.3 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_1_3mp">1,3 MP</string>
   <!-- Settings screen, dialog choice for 1 megapixels picture size [CHAR LIMIT=15] -->
-  <string name="pref_camera_picturesize_entry_1mp">1 MP</string>
   <!-- Settings screen, dialog choice for VGA picture size [CHAR LIMIT=15] -->
   <!-- Settings screen, dialog choice for QVGA picture size [CHAR LIMIT=15] -->
   <!-- Settings screen, Focus mode title -->
-  <string name="pref_camera_focusmode_title">Mou d\'enfoque</string>
   <!-- Settings screen, Focus mode dialog radio button choices -->
   <!-- Menu, focus mode labels [CHAR LIMIT=50] -->
+  <string name="pref_camera_focusmode_label_auto">AUTO</string>
   <!-- Default flash mode setting.-->
   <!-- Value for flash off setting-->
   <!-- Settings screen, Flash mode title -->
@@ -352,6 +336,7 @@
   <!-- flash label [CHAR LIMIT=50] -->
   <string name="pref_camera_flashmode_label">MOU FLAX</string>
   <!-- Settings screen, Flash mode dialog radio button choices -->
+  <string name="pref_camera_flashmode_entry_auto">Auto</string>
   <!-- Menu, flash mode labels [CHAR LIMIT=50] -->
   <string name="pref_camera_flashmode_label_auto">FLAX AUTOMÁTICU</string>
   <string name="pref_camera_flashmode_label_on">FLAX ACTIVÁU</string>
@@ -360,34 +345,28 @@
   <!-- Default white balance setting. -->
   <!-- Settings screen, white balance title -->
   <!-- Menu, white balance label -->
-  <string name="pref_camera_whitebalance_label">BALANCE DE BLANCOS</string>
   <!-- Settings screen, White balance dialog radio button choices -->
-  <string name="pref_camera_whitebalance_entry_incandescent">En caldia</string>
+  <string name="pref_camera_whitebalance_entry_auto">Auto</string>
   <!-- Menu, White balance labels [CHAR LIMIT=50] -->
+  <string name="pref_camera_whitebalance_label_auto">AUTO</string>
   <string name="pref_camera_whitebalance_label_incandescent">EN CALDIA</string>
-  <string name="pref_camera_whitebalance_label_fluorescent">FLUORESCENTE</string>
   <!-- Default scene mode setting. -->
   <!-- Settings screen, Select Scene mode -->
-  <string name="pref_camera_scenemode_title">Mou d\'escena</string>
   <!-- Settings menu, scene mode choices [CHAR LIMIT=16] -->
+  <string name="pref_camera_scenemode_entry_auto">Auto</string>
   <!-- Scene mode that uses HDR (high dynamic range) [CHAR LIMIT=16] -->
   <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=16] -->
-  <string name="pref_camera_scenemode_entry_action">Aición</string>
   <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=16] -->
   <string name="pref_camera_scenemode_entry_night">Nueche</string>
   <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=16] -->
   <string name="pref_camera_scenemode_entry_sunset">Aséu</string>
   <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=16] -->
-  <string name="pref_camera_scenemode_entry_party">Folixa</string>
   <!-- Settings menu, scene mode labels [CHAR LIMIT=50] -->
   <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=50] -->
-  <string name="pref_camera_scenemode_label_action">AICIÓN</string>
   <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=50] -->
-  <string name="pref_camera_scenemode_label_night">NUECHE</string>
   <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=50] -->
   <string name="pref_camera_scenemode_label_sunset">ASÉU</string>
   <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=50] -->
-  <string name="pref_camera_scenemode_label_party">FOLIXA</string>
   <!-- Settings menu countdown timer labels [CHAR LIMIT=50] -->
   <string name="pref_camera_countdown_label">CUENTA ATRÁS</string>
   <!-- Settings menu countdown timer off [CHAR LIMIT=50] -->
@@ -405,12 +384,11 @@
   <!-- Default HDR entry value -->
   <!-- HDR label ON [CHAR LIMIT=60] -->
   <!-- switch camera label back [CHAR LIMIT=60] -->
-  <string name="pref_camera_id_label_back">CÁMARA FRONTAL</string>
   <!-- switch camera label front [CHAR LIMIT=60] -->
-  <string name="pref_camera_id_label_front">CÁMARA TRASERA</string>
   <!-- Dialog "OK" button. Dismisses dialog. -->
   <string name="dialog_ok">ACEUTAR</string>
   <!-- Low-memory dialog message [CHAR LIMT=NONE] -->
+  <string name="spaceIsLow_content" product="nosdcard">Ta escosando l\'espaciu del almacenamientu USB. Camuda l\'axustes de calidá o desanicia delles imáxenes u ficheros.</string>
   <!-- Low-memory dialog message [CHAR LIMIT=NONE] -->
   <!-- Camera format string for new image files. Passed to java.text.SimpleDateFormat. -->
   <!-- Video Camera format string for new video files. Passed to java.text.SimpleDateFormat. -->
@@ -436,7 +414,6 @@
   <!-- Effect setting item that makes eyes small. [CHAR LIMIT=14] -->
   <!-- Effect setting item that replaces background with Android in Space. [CHAR LIMIT=14] -->
   <!-- Effect setting item that replaces background with a sunset. [CHAR LIMIT=14] -->
-  <string name="effect_backdropper_sunset">Aséu</string>
   <!-- Effect setting item that replaces background with video from gallery. [CHAR LIMIT=14] -->
   <!-- Message displayed in overlay during background replacement training [CHAR LIMIT=180]-->
   <!-- Toast telling users tapping on the viewfinder will take a picture [CHAR LIMIT=54] -->
@@ -556,15 +533,12 @@ CHAR LIMIT = NONE] -->
   <!-- Message for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = None] -->
   <!-- Negative answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
   <!-- Positive answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
-  <string name="remember_location_yes">Sí</string>
   <!-- Menu item to launch the camera app [CHAR LIMIT=25] -->
   <!-- Menu item to search for photos [CHAR LIMIT=25] -->
   <!-- Title for the all photos tab [CHAR LIMIT=25] -->
   <!-- Title for the albums tab [CHAR LIMIT=25] -->
   <!-- Camera menu labels -->
   <!-- more options label [CHAR LIMIT=50] -->
-  <string name="camera_menu_more_label">MÁS OPCIONES</string>
   <!-- settings label [CHAR LIMIT=50] -->
-  <string name="camera_menu_settings_label">AXUSTES</string>
   <!-- String indicating how many photos are in an album [CHAR LIMIT=15] -->
 </resources>

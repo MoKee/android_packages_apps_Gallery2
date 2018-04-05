@@ -3,7 +3,6 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
-Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -32,7 +31,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Strings for step option settins -->
-  <string name="next">"နောက်"</string>
   <!-- A label describing to link website [CHAR LIMIT=30] -->
   <!-- Toast if the muted video is not supported. [CHAR LIMIT=80] -->
   <!-- The message is shown in toast when click showOnMap Menu and there is no map app -->
@@ -43,5 +41,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
   <!-- Videos screen title -->
-  <string name="trim_video_exit_title">မထွက်ခင် သိမ်းဆည်းချင်ပါသလား?</string>
 </resources>

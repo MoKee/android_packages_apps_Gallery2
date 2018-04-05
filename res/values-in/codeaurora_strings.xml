@@ -3,7 +3,6 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
-Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -104,11 +103,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_Soften">Perhalus</string>
   <string name="text_makeup_trimface">Mempercantik wajah</string>
   <string name="text_makeup_bigeye">Mata besar</string>
-  <string name="truescanner_normal">Keadaan normal</string>
+  <string name="truescanner_normal">Normal</string>
   <string name="truescanner_white">Papan tulis putih</string>
-  <string name="truescanner">Scanner asli</string>
+  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Hapus kilauan</string>
-  <string name="hazebuster_acts">Memfoto sampai pinggang buram</string>
+  <string name="hazebuster_acts">Pembasmi Kabut</string>
   <string name="seestraight_acts">Melihat lurus</string>
   <string name="seestraight_input_image_is_small">Gambar masukan terlalu kecil untuk diproses.</string>
   <string name="seestraight_process_fail">Tidak dapat memproses gambar.</string>

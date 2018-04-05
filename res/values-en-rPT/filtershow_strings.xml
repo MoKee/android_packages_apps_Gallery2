@@ -45,7 +45,6 @@
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
-  <string name="exit">Exit</string>
   <!--  History Panel -->
   <!--  Text for the history panel title [CHAR LIMIT=50] -->
   <!--  Text for the history panel reset button [CHAR LIMIT=20]-->

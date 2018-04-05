@@ -3,7 +3,6 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
-Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -43,10 +42,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="speaker_off">Выкл. динамик</string>
   <string name="speaker_need_headset">Подключите наушники для использования этой функции.</string>
   <string name="single_track">"Один трек"</string>
-  <string name="input_url">"Ввести URL-адрес"</string>
-  <string name="streaming_settings">"Настройки потоковой передачи"</string>
-  <string name="next">"Следующее видео"</string>
-  <string name="previous">"Предыдущее видео"</string>
+  <string name="input_url">"Введите URL"</string>
+  <string name="streaming_settings">"Потоковая передача"</string>
+  <string name="next">"След."</string>
+  <string name="previous">"Пред."</string>
   <string name="buffer_size">Размер буфера передачи</string>
   <string name="apn">Точка доступа по умолчанию</string>
   <string name="rtp_min_port">Минимальный порт</string>
@@ -85,14 +84,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <item quantity="other">%1$d видео</item>
   </plurals>
   <!-- Toast message for share items -->
-  <string name="cannot_share_items">Максимальное количество файлов для отправки: 300</string>
-  <string name="share_dialogue_title">Поделиться</string>
+  <string name="cannot_share_items">Максимальное количество выбранных элементов для передачи 300</string>
+  <string name="share_dialogue_title">Способ отправки</string>
   <!-- When grouping photos by peoples, the label used for photos that don't
          have people information in them [CHAR LIMIT=20]-->
-  <string name="no_faces">Нет лиц</string>
+  <string name="no_faces">Без лиц</string>
   <!-- The tips of trimming video -->
   <string name="fail_trim">Этот видеофайл невозможно обрезать</string>
-  <string name="can_not_trim">Можно обрезать файлы только в формате MP4 и 3GP</string>
+  <string name="can_not_trim">Можно обрезать только файлы в форматах MP4 и 3GP</string>
   <string name="drm_license_info">Сведения о лицензии DRM</string>
   <!-- Timeline screen title -->
   <string name="timeline_title">Хронология</string>
@@ -116,6 +115,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="seestraight_input_image_is_small">Исходное изображение слишком мало для обработки.</string>
   <string name="seestraight_process_fail">Не удалось обработать изображение.</string>
   <string name="trim_video_exit_title">Отменить изменения?</string>
-  <string name="trim_video_exit_msg">Отменить изменения, внесённые в это видео?</string>
+  <string name="trim_video_exit_msg">Отменить изменения, внесенные в это видео?</string>
   <string name="trim_video_exit_discard">ОТМЕНИТЬ</string>
 </resources>

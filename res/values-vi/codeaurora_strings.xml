@@ -3,7 +3,6 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
-Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -33,7 +32,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Strings for step option settins -->
   <string name="setp_option_name">Bước</string>
-  <string name="step_option_desc">Tuỳ chỉnh tua lại/qua nhanh</string>
+  <string name="step_option_desc">Tuỳ chỉnh bước tới/lui nhanh</string>
   <string name="setp_option_three_second">3 giây</string>
   <string name="setp_option_six_second">16 giây</string>
   <string name="loop">"Lặp lại"</string>

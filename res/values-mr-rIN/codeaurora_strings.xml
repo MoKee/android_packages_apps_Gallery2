@@ -3,7 +3,6 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
-Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -87,7 +86,4 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
   <!-- Videos screen title -->
-  <string name="truescanner_normal">सामान्य</string>
-  <string name="truescanner_white">व्हाईटबोर्ड</string>
-  <string name="trim_video_exit_title">निर्गमन करण्यापूर्वी आपण जतन करु इच्छिता?</string>
 </resources>

@@ -17,7 +17,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Title for picture frame gadget to show in list of all available gadgets -->
   <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
+  <string name="details_ms">%1$02d:%2$02d</string>
   <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
+  <string name="details_hms">%1$d:%2$02d:%3$02d</string>
   <!-- Activity label. This might show up in the activity-picker -->
   <!-- shown in the video player view while the video is being loaded, before it starts playing -->
   <!-- Message shown on the progress dialog to indicate we're loading the

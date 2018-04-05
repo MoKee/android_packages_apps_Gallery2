@@ -3,7 +3,6 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
-Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -38,6 +37,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="setp_option_six_second">6 sekundes</string>
   <string name="loop">"Cilpa"</string>
   <string name="single">"Viens"</string>
+  <string name="stereo">"Stereo"</string>
   <string name="speaker_on">Skaļrunis ieslēgts</string>
   <string name="speaker_off">Skaļrunis izslēgts</string>
   <string name="speaker_need_headset">Lai lietotu šo iespēju, pievienojiet austiņas.</string>
@@ -84,7 +84,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="fail_trim">Atvainojiet, šo video failu nevar apgriezt</string>
   <!-- Timeline screen title -->
   <!-- Albums screen title -->
-  <string name="albums_title">Albumi</string>
   <!-- Videos screen title -->
-  <string name="trim_video_exit_title">Vai vēlaties saglabāt pirms iziešanas?</string>
 </resources>

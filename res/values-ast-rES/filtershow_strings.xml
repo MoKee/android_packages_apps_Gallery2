@@ -19,6 +19,7 @@
   <!--  String shown when we cannot load the image when starting the activity [CHAR LIMIT=NONE] -->
   <!--  String shown when cannot load the original image. We will edit selected image [CHAR LIMIT=NONE] -->
   <!--  String displayed when showing the original image [CHAR LIMIT=NONE] -->
+  <string name="original_picture_text">@string/original</string>
   <!--  String displayed when setting the homepage wallpaper in the background [CHAR LIMIT=NONE] -->
   <!--  generic strings -->
   <!--  Text for to display on a download failure [CHAR LIMIT=NONE] -->
@@ -43,7 +44,6 @@
   <!--  Exit Dialog -->
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
   <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
-  <string name="save_before_exit">¿Escartar cambeos?</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
   <string name="save_and_exit">Guardar y colar</string>
   <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
@@ -51,6 +51,7 @@
   <!--  History Panel -->
   <!--  Text for the history panel title [CHAR LIMIT=50] -->
   <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
+  <string name="reset">Reafitar</string>
   <!--  Text for the original image[CHAR LIMIT=20]-->
   <!--  Image state panel -->
   <!--  Text for the image state panel title [CHAR LIMIT=50] -->
@@ -69,6 +70,7 @@
   <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
   <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
+  <string name="aspectOriginal_effect">@string/original</string>
   <!-- Label for when the aspect ratio is fixed to a value [CHAR LIMIT=15] -->
   <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
   <!--  Filters buttons -->
@@ -112,7 +114,6 @@
   <!--  Label for the green control for per channel saturation effect [CHAR LIMIT=20] -->
   <!--  Label for the cyan control for per channel saturation effect [CHAR LIMIT=20] -->
   <!--  Label for the blue control for per channel saturation effect [CHAR LIMIT=20] -->
-  <string name="editor_chan_sat_blue">Azul</string>
   <!--  Label for the Magenta control for per channel saturation effect [CHAR LIMIT=20] -->
   <!--  Label for the image graduated filter effect  [CHAR LIMIT=20] -->
   <!-- new virtual graduated neutral density filter  [CHAR LIMIT=20] -->
@@ -121,7 +122,6 @@
   <!--  Label for the curves tool, Red color channel [CHAR LIMIT=14] -->
   <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->
   <!--  Label for the curves tool, Blue color channel [CHAR LIMIT=14] -->
-  <string name="curves_channel_blue">Azul</string>
   <!--  Label for the The style to draw in [CHAR LIMIT=14] -->
   <!--  Label for the size to draw in in [CHAR LIMIT=14] -->
   <!--  Label for the Hue to draw in [CHAR LIMIT=14] -->
@@ -160,7 +160,6 @@
   <!-- Label for the Original version in the versions panel [CHAR LIMIT=30] -->
   <!-- Label for the Current version in the versions panel [CHAR LIMIT=30] -->
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
-  <string name="filtershow_exif_model">Modelu</string>
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
   <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->

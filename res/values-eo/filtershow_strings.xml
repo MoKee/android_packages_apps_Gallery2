@@ -123,7 +123,6 @@
   <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->
   <!--  Label for the curves tool, Blue color channel [CHAR LIMIT=14] -->
   <!--  Label for the The style to draw in [CHAR LIMIT=14] -->
-  <string name="draw_style">Stilo</string>
   <!--  Label for the size to draw in in [CHAR LIMIT=14] -->
   <!--  Label for the Hue to draw in [CHAR LIMIT=14] -->
   <!--  Label for the color to draw in [CHAR LIMIT=14] -->

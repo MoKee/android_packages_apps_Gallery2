@@ -3,7 +3,6 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
-Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -42,7 +41,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="speaker_on">扬声器 开</string>
   <string name="speaker_off">扬声器 关</string>
   <string name="speaker_need_headset">插入耳机以使用此功能。</string>
-  <string name="single_track">"单声道"</string>
+  <string name="single_track">"单音轨"</string>
   <string name="input_url">"输入网址"</string>
   <string name="streaming_settings">"流媒体设置"</string>
   <string name="next">"下一个"</string>

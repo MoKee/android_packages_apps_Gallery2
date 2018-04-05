@@ -3,7 +3,6 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
-Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -105,7 +104,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="text_makeup_Soften">Suavizar</string>
   <string name="text_makeup_trimface">Retoque facial</string>
   <string name="text_makeup_bigeye">Ollos grandes</string>
+  <string name="truescanner_normal">Normal</string>
   <string name="truescanner_white">Encerado branco</string>
+  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Eliminar reflexos</string>
   <string name="hazebuster_acts">Axuste de brétema</string>
   <string name="seestraight_acts">Ver directamente</string>
