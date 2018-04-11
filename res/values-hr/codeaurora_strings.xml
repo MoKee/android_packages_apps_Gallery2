@@ -3,6 +3,7 @@
 <!--
 Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
 Copyright (C) 2014-2016 The CyanogenMod Project
+Copyright (C) 2014-2018 The MoKee Open Source Project
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -37,7 +38,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="setp_option_six_second">6 sekundi</string>
   <string name="loop">"Ponavljanje"</string>
   <string name="single">"Pojedinačna"</string>
-  <string name="stereo">"Stereo"</string>
   <string name="speaker_on">Zvučnik UKLJUČEN</string>
   <string name="speaker_off">Zvučnik ISKLJUČEN</string>
   <string name="speaker_need_headset">Priključite slušalice za korištenje ove mogućnosti.</string>
@@ -48,8 +48,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="previous">"Prethodni"</string>
   <string name="buffer_size">Veličina međuspremnika</string>
   <string name="apn">Preferirani APN</string>
-  <string name="rtp_min_port">Min port</string>
-  <string name="rtp_max_port">Max port</string>
   <string name="set_rtp_min_port">Postavi min port</string>
   <string name="set_rtp_max_port">Postaviti max port</string>
   <string name="set_buffer_size">Postavi veličinu međuspremnika</string>
@@ -103,14 +101,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="tvEmptyVideos">Nema pronađenih videozapisa</string>
   <string name="text_makeup_whiten">Izbjeljivanje</string>
   <string name="text_makeup_Soften">Omekšavanje</string>
-  <string name="text_makeup_trimface">Trimface</string>
   <string name="text_makeup_bigeye">Veliko oko</string>
   <string name="truescanner_normal">Normalno</string>
   <string name="truescanner_white">Bijela ploča</string>
-  <string name="truescanner">TrueScanner</string>
   <string name="truescanner_remove_glare">Ukloni odbljesak</string>
-  <string name="hazebuster_acts">Haze Buster</string>
-  <string name="seestraight_acts">See Straight</string>
   <string name="seestraight_input_image_is_small">Unesena slika je premala za obradu.</string>
   <string name="seestraight_process_fail">Ne mogu obraditi sliku.</string>
   <string name="trim_video_exit_title">Želite li odbaciti promjene?</string>

@@ -70,6 +70,7 @@
   <!-- Toast message prompted when the specified item is not found [CHAR LIMIT=40]-->
   <!-- String used as a menu label. The user can choose to edit the image
          [CHAR_LIMIT=20]-->
+  <string name="edit">ସମ୍ପାଦନ</string>
   <!-- String used as a menu label. The user can choose to edit the image
          [CHAR_LIMIT=20]-->
   <!-- String used as a title of a progress dialog. The user can
@@ -126,9 +127,11 @@
   <!-- String indicating the sequence of currently selected item in the
             media set eg. 3 of 5 items [CHAR LIMIT=30] -->
   <!-- Text indicating the title of a media item in details window [CHAR LIMIT=14] -->
+  <string name="title">&quot;ଟାଇଟଲ୍&quot;</string>
   <!-- Text indicating the description of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating the creation time of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating the location of a media item in details window [CHAR LIMIT=14] -->
+  <string name="location">&quot;ଅବସ୍ଥାନ&quot;</string>
   <!-- Text indicating the path of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating the width of a media item in details window [CHAR LIMIT=14] -->
   <!-- Text indicating the height of a media item in details window [CHAR LIMIT=14] -->
@@ -408,9 +411,11 @@ CHAR LIMIT = NONE] -->
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+  <string name="pref_video_time_lapse_frame_interval_3000">3 ସେକେଣ୍ଡ</string>
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+  <string name="pref_video_time_lapse_frame_interval_6000">6 ସେକେଣ୍ଡ</string>
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
   <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
