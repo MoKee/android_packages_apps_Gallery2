@@ -391,7 +391,7 @@
          external camera. [CHAR LIMIT=20]-->
   <string name="folder_imported">Importált</string>
   <!-- The label for the folder contains screenshot images. [CHAR LIMIT=20]-->
-  <string name="folder_screenshot">Képernyőkép</string>
+  <string name="folder_screenshot">Képernyőmentés</string>
   <!-- The title of the menu item which display online help in browser. [CHAR LIMIT=20]-->
   <string name="help">Súgó</string>
   <!-- The tilte of a dialog showing there is no external storage. [CHAR LIMIT=20] -->
