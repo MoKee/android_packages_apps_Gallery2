@@ -93,7 +93,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="can_not_trim">Sadece mp4 ve 3gp dosyaları kesilebilir</string>
   <string name="drm_license_info">DHY lisans bilgisi</string>
   <!-- Timeline screen title -->
-  <string name="timeline_title">Zaman Tüneli</string>
+  <string name="timeline_title">Zaman tüneli</string>
   <!-- Albums screen title -->
   <string name="albums_title">Albümler</string>
   <!-- Videos screen title -->
@@ -103,15 +103,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <string name="tvEmptyVideos">Video bulunamadı</string>
   <string name="text_makeup_whiten">Beyazlat</string>
   <string name="text_makeup_Soften">Yumuşat</string>
-  <string name="text_makeup_trimface">Yüz Kırpma</string>
+  <string name="text_makeup_trimface">Yüz kırpma</string>
   <string name="text_makeup_bigeye">Büyük göz</string>
   <string name="truescanner_normal">Normal</string>
   <string name="truescanner_white">Beyaz tahta</string>
-  <string name="truescanner">Gerçek Tarama</string>
-  <string name="truescanner_remove_glare">Parlamayı Kaldır</string>
-  <string name="hazebuster_acts">Pus Giderici</string>
-  <string name="seestraight_acts">Düz Bak</string>
-  <string name="seestraight_input_image_is_small">Resim, işlenemeyecek kadar küçük.</string>
+  <string name="truescanner">Gerçek tarama</string>
+  <string name="truescanner_remove_glare">Parlamayı kaldır</string>
+  <string name="hazebuster_acts">Pus giderici</string>
+  <string name="seestraight_acts">Düz bak</string>
+  <string name="seestraight_input_image_is_small">Resim işlenemeyecek kadar küçük.</string>
   <string name="seestraight_process_fail">Resim işlenemedi.</string>
   <string name="trim_video_exit_title">Değişiklikler iptal edilsin mi?</string>
   <string name="trim_video_exit_msg">Bu videoya yapılan değişiklikler iptal edilsin mi?</string>

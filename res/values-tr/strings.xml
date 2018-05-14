@@ -23,11 +23,11 @@
   <!-- Activity label. This might show up in the activity-picker -->
   <string name="movie_view_label">Video oynatıcı</string>
   <!-- shown in the video player view while the video is being loaded, before it starts playing -->
-  <string name="loading_video">Video yükleniyor...</string>
-  <string name="loading_image">Resim yükleniyor…</string>
+  <string name="loading_video">Video yükleniyor\u2026</string>
+  <string name="loading_image">Resim yükleniyor\u2026</string>
   <!-- Message shown on the progress dialog to indicate we're loading the
             account info [CHAR LIMIT=30] -->
-  <string name="loading_account">Hesap yükleniyor...</string>
+  <string name="loading_account">Hesap yükleniyor\u2026</string>
   <!-- Movie View Resume Playing dialog title -->
   <string name="resume_playing_title">Videoyu sürdür</string>
   <!-- Movie View Start Playing dialog title -->
@@ -35,7 +35,7 @@
   <!-- Movie View Start Playing button "Resume from bookmark" -->
   <string name="resume_playing_resume">Yürütmeyi sürdür</string>
   <!-- Displayed in the title of those albums that are being loaded -->
-  <string name="loading">Yükleniyor…</string>
+  <string name="loading">Yükleniyor\u2026</string>
   <!-- Displayed in the title of those pictures that fails to be loaded
          [CHAR LIMIT=50]-->
   <string name="fail_to_load">Yüklenemedi</string>
@@ -57,9 +57,9 @@
   <!-- Hint that appears when cropping an image with more than one face -->
   <string name="multiface_crop_help">Başlamak için bir yüze dokunun.</string>
   <!-- Toast/alert that the image is being saved to the SD card -->
-  <string name="saving_image">Resim kaydediliyor...</string>
+  <string name="saving_image">Resim kaydediliyor\u2026</string>
   <!-- Toast/alert that the image is being saved after editing in filtershow [CHAR LIMIT=40]-->
-  <string name="filtershow_saving_image">Resim <xliff:g id="ALBUM_NAME">%1$s</xliff:g> adlı albüme kaydediliyor…</string>
+  <string name="filtershow_saving_image">Resim <xliff:g id="album_name">%1$s</xliff:g> adlı albüme kaydediliyor\u2026</string>
   <!-- Eorror toast message that the image cannot be saved [CHAR LIMIT=40]-->
   <string name="save_error">Kırpılmış resim kaydedilemedi.</string>
   <!-- menu pick: crop the currently selected image [CHAR LIMIT=30]-->
@@ -68,23 +68,23 @@
   <string name="trim_label">Videoyu kes</string>
   <!-- Toast/alert that the face detection is being run -->
   <!-- Title prompted for user to choose a photo item [CHAR LIMIT=20] -->
-  <string name="select_image">Fotoğraf seçin</string>
+  <string name="select_image">Fotoğraf seç</string>
   <!-- Title prompted for user to choose a video item [CHAR LIMIT=20] -->
-  <string name="select_video">Video seçin</string>
+  <string name="select_video">Video seç</string>
   <!-- Title prompted for user to choose a media object [CHAR LIMIT=20] -->
-  <string name="select_item">Öğe seçin</string>
+  <string name="select_item">Öğe seç</string>
   <!-- Title prompted for user to choose an album [CHAR LIMIT=20] -->
-  <string name="select_album">Albüm seçin</string>
+  <string name="select_album">Albüm seç</string>
   <!-- Title prompted for user to choose a group [CHAR LIMIT=20] -->
-  <string name="select_group">Grup seçin</string>
+  <string name="select_group">Grup seç</string>
   <!-- Displayed in the title of the dialog for things to do with a picture
              that is to be "set as" (e.g. set as contact photo or set as wallpaper) -->
   <string name="set_image">Resmi şu şekilde ayarla:</string>
   <!-- Activity title for cropping picture and setting it as wallpaper [CHAR LIMIT=20] -->
-  <string name="set_wallpaper">Duvar kağıdını ayarla</string>
+  <string name="set_wallpaper">Duvar kağıdı ayarla</string>
   <!-- Toast/alert after saving wallpaper -->
-  <string name="wallpaper">Duvar kağıdı ayarlanıyor...</string>
-  <string name="camera_setas_wallpaper">Duvar Kağıdı</string>
+  <string name="wallpaper">Duvar kağıdı ayarlanıyor\u2026</string>
+  <string name="camera_setas_wallpaper">Duvar kağıdı</string>
   <!-- Details dialog "OK" button. Dismisses dialog. -->
   <string name="delete">Sil</string>
   <!-- String Delete the selected media item(s) [CHAR LIMIT=50] -->
@@ -103,13 +103,13 @@
   <string name="undo">GERİ AL</string>
   <!-- String indicating more actions are available -->
   <string name="select_all">Tümünü seç</string>
-  <string name="deselect_all">Tümünün seçimini kaldır</string>
-  <string name="slideshow">Slayt Gösterisi</string>
-  <string name="details">Ayrıntılar</string>
+  <string name="deselect_all">Tüm seçilenleri kaldır</string>
+  <string name="slideshow">Slayt gösterisi</string>
+  <string name="details">Detaylar</string>
   <string name="details_title">%1$d / %2$d öğe:</string>
   <string name="close">Kapat</string>
   <!-- Title of a menu item to switch from Gallery to Camera app [CHAR LIMIT=30] -->
-  <string name="switch_to_camera">Kameraya Geç</string>
+  <string name="switch_to_camera">Kameraya geç</string>
   <!-- String indicating how many media item(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
   <plurals name="number_of_items_selected">
@@ -322,31 +322,31 @@
          is a string representation of the amount of free space, eg. "20MB".
          [CHAR LIMIT=20]
     -->
-  <string name="free_space_format"><xliff:g id="BYTES">%s</xliff:g> boş</string>
+  <string name="free_space_format"><xliff:g id="bytes">%s</xliff:g> boş</string>
   <!-- Label of a group of pictures. The size of each picture in this group is
          less than a certain amount. The parameter is a string representation
          of that amount, eg. "10MB".
          [CHAR LIMIT=20]
     -->
-  <string name="size_below"><xliff:g id="SIZE">%1$s</xliff:g> veya daha küçük</string>
+  <string name="size_below"><xliff:g id="size">%1$s</xliff:g> veya daha küçük</string>
   <!-- Label of a group of pictures. The size of each picture in this group is
          more than a certain amount. The parameter is a string representation
          of that amount, eg. "10MB".
          [CHAR LIMIT=20]
     -->
-  <string name="size_above"><xliff:g id="SIZE">%1$s</xliff:g> veya daha büyük</string>
+  <string name="size_above"><xliff:g id="size">%1$s</xliff:g> veya daha büyük</string>
   <!-- Label of a group of pictures. The size of each picture in this group is
          between two amounts. The parameters are string representations of the two
          amounts, eg. "10MB", "100MB".
          [CHAR LIMIT=20]
     -->
-  <string name="size_between"><xliff:g id="MIN_SIZE">%1$s</xliff:g> - <xliff:g id="MAX_SIZE">%2$s</xliff:g></string>
+  <string name="size_between"><xliff:g id="min_size">%1$s</xliff:g> - <xliff:g id="max_size">%2$s</xliff:g></string>
   <!-- A label shown on the action bar. It indicates that the operation
          to import media item(s) [CHAR LIMIT=20] -->
   <string name="Import">İçe aktar</string>
   <!-- A label shown on the action bar. It indicates whether the import
          operation succeeds or fails. [CHAR LIMIT=20] -->
-  <string name="import_complete">İçe aktrm tamamlandı</string>
+  <string name="import_complete">İçe aktarma tamamlandı</string>
   <string name="import_fail">İçe aktarılamadı</string>
   <!-- A toast indicating a camera is connected to the device [CHAR LIMIT=30]-->
   <string name="camera_connected">Kamera bağlı.</string>

@@ -32,7 +32,7 @@
   <!--  HazeBuster button -->
   <!--  SeeStraight button -->
   <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="focus">Odaklan</string>
+  <string name="focus">Odakla</string>
   <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
   <string name="fusion">Füzyon</string>
   <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
@@ -40,17 +40,17 @@
   <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
   <string name="halo">Hale</string>
   <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="zoom">Yakınlaştırma</string>
+  <string name="zoom">Yakınlaştır</string>
   <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
   <string name="motion">Hareket</string>
   <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="bw">Siyah Beyaz</string>
+  <string name="bw">Siyah beyaz</string>
   <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
   <string name="blackboard">Kara tahta</string>
   <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
   <string name="whiteboard">Beyaz tahta</string>
   <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
-  <string name="posterize">Poster Efekti</string>
+  <string name="posterize">Poster efekti</string>
   <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
   <string name="dc_negative">Negatif</string>
   <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
@@ -73,9 +73,9 @@
   <string name="dualcam_fusion_intro">Ön planınız, galerinizdeki hergangi bir fotoğrafa kopyalanabilir ve üstüne yapıştırılabilir.\n\n İlginç ve yeni portreler yaratmak için farklı arka plan fotoğraflarını kullanmayı deneyebilirsiniz.</string>
   <string name="do_not_show_again">Tekrar gösterme</string>
   <string name="trueportrait_touch_up">Dokunma</string>
-  <string name="fusion_pick_background">Arka plan fotoğrafı seç</string>
+  <string name="fusion_pick_background">Arkaplan fotoğrafı seç</string>
   <string name="color">Renk</string>
-  <string name="ok_continue">Devam</string>
+  <string name="ok_continue">Devam et</string>
   <string name="frames">Çerçeveler</string>
   <string name="beautify">Güzelleştir</string>
   <string name="dualcam">Çift kamera</string>
