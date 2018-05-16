@@ -62,6 +62,7 @@
   <string name="filtershow_dialog_checkbox">Visa inte igen</string>
   <string name="filtershow_preset_title">Anpassat</string>
   <string name="filtershow_preset_rename">Byt namn</string>
+  <string name="rename_before_exit">Byt namn på filter</string>
   <string name="filter_name">Filternamn</string>
   <string name="watermark_location">Plats</string>
   <string name="watermark_time">Tid</string>
