@@ -35,22 +35,47 @@
   <string name="videos">Videók</string>
   <string name="gifs">GIF-ek</string>
   <string name="raw_images">RAW-képek</string>
+  <string name="no_media_with_filters">A kiválasztott szűrőkkel nem találhatóak médiafájlok.</string>
+  <string name="change_filters_underlined"><u>Szűrők változtatása</u></string>
   <!-- Hide / Exclude -->
   <string name="hide_folder_description">This function hides the folder by adding a \'.nomedia\' file into it, it will hide all subfolders too. You can see them by toggling the \'Show hidden folders\' option in Settings. Continue?</string>
+  <string name="exclude">Kizárás</string>
+  <string name="excluded_folders">Kizárt mappák</string>
+  <string name="manage_excluded_folders">Kizárt mappák kezelése</string>
+  <string name="exclude_folder_description">Ez csak az Egyszerű Galériából fogja kizárni a kiválasztottakat az almappáikkal együtt. A kizárt mappákat a Beállításokban kezelheti.</string>
+  <string name="exclude_folder_parent">Csak a főkönyvtárakat zárja ki?</string>
   <string name="excluded_activity_placeholder">Excluding folders will make them together with their subfolders hidden just in Simple Gallery, they will still be visible in other applications.\\n\\nIf you want to hide them from other apps too, use the Hide function.</string>
   <string name="remove_all">Az összes eltávolítása</string>
   <string name="remove_all_description">Eltávolítja az összes mappát a kizártak listájáról? Ez a mappákat nem fogja törölni.</string>
+  <string name="hidden_folders">Rejtett mappák</string>
+  <string name="manage_hidden_folders">Rejtett mappák kezelése</string>
+  <string name="hidden_folders_placeholder">Úgy tűnik, Önnek jelenleg nincs rejtett mappája \".nomedia\" fájllal.</string>
   <!-- Include folders -->
+  <string name="include_folders">Felvett mappák</string>
+  <string name="manage_included_folders">Felvett mappák kezelése</string>
+  <string name="add_folder">Mappa hozzáadása</string>
+  <string name="included_activity_placeholder">Ha van olyan mappája, amely médiafájlt tartalmaz, de az alkalmazás nem ismerte fel, itt manuálisan hozzáadhatja azokat.\n\nAz itt hozzáadott egyes elemek nem fognak kizárni más mappákat.</string>
   <!-- Resizing -->
   <string name="resize">Átméretezés</string>
+  <string name="resize_and_save">A kiválasztott terület átméretezése és mentése</string>
   <string name="width">Szélesség</string>
   <string name="height">Magasság</string>
+  <string name="keep_aspect_ratio">Méretarány megtartása</string>
+  <string name="invalid_values">Érvényes felbontást adjon meg</string>
   <!-- Editor -->
+  <string name="editor">Szerkesztő</string>
   <string name="save">Mentés</string>
   <string name="rotate">Forgatás</string>
   <string name="path">Elérési út</string>
+  <string name="invalid_image_path">A kép elérési útvonala érvénytelen</string>
+  <string name="image_editing_failed">A képszerkesztés meghiúsult</string>
+  <string name="edit_image_with">Képszerkesztés a következővel:</string>
+  <string name="no_editor_found">Nem található képszerkesztő</string>
+  <string name="unknown_file_location">A fájl helye ismeretlen</string>
+  <string name="error_saving_file">Nem írhatja felül a forrásfájlt</string>
   <string name="rotate_left">Forgatás balra</string>
   <string name="rotate_right">Forgatás jobbra</string>
+  <string name="rotate_one_eighty">180º-os elforgatás</string>
   <string name="flip">Átfordítás</string>
   <string name="flip_horizontally">Vízszintes átfordítás</string>
   <string name="flip_vertically">Függőleges átfordítása</string>
@@ -61,24 +86,104 @@
   <string name="simple_wallpaper">Egyszerű Háttérkép</string>
   <string name="set_as_wallpaper">Beállítás Háttérképként</string>
   <string name="set_as_wallpaper_failed">Meghiúsult a Háttérkép-beállítás</string>
+  <string name="set_as_wallpaper_with">Beállítás háttérképként ezzel:</string>
+  <string name="setting_wallpaper">Háttérkép beállítása&#8230;</string>
+  <string name="wallpaper_set_successfully">A Háttérkép sikeresen beállítva</string>
+  <string name="portrait_aspect_ratio">Képarány álló helyzetben</string>
+  <string name="landscape_aspect_ratio">Képarány fekvő helyzetben</string>
   <string name="home_screen">Főképernyő</string>
   <string name="lock_screen">Képernyőzár</string>
+  <string name="home_and_lock_screen">Főképernyő és képernyőzár</string>
   <!-- Slideshow -->
   <string name="slideshow">Diavetítés</string>
+  <string name="interval">Időköz (másodperc):</string>
+  <string name="include_photos">Képekkel együtt</string>
+  <string name="include_videos">Videókkal együtt</string>
+  <string name="include_gifs">GIF-ekkel együtt</string>
+  <string name="random_order">Véletlenszerű sorrendben</string>
+  <string name="use_fade">Elhalványuló animációk használata</string>
+  <string name="move_backwards">Mozgás hátrafelé</string>
+  <string name="loop_slideshow">Diavetítés végtelenítése</string>
+  <string name="slideshow_ended">A diavetítés véget ért</string>
+  <string name="no_media_for_slideshow">Nem található médiafájl a diavetítéshez</string>
   <!-- View types -->
+  <string name="change_view_type">A nézet típusának módosítása</string>
+  <string name="grid">Rács</string>
+  <string name="list">Lista</string>
+  <string name="group_direct_subfolders">Közvetlen almappák csoportosítása</string>
   <!-- Grouping at media thumbnails -->
   <string name="group_by">Csoportosítás</string>
+  <string name="do_not_group_files">Ne csoportosítson fájlokat</string>
   <string name="by_folder">Mappa</string>
+  <string name="by_last_modified">Utolsó módositás szerint</string>
   <string name="by_date_taken">Készítés dátuma</string>
+  <string name="by_file_type">Fájltípus szerint</string>
+  <string name="by_extension">Kiterjesztés szerint</string>
   <!-- Settings -->
+  <string name="autoplay_videos">Automatikus videólejátszás</string>
+  <string name="toggle_filename">Fájlnév láthatóságának kapcsolója</string>
+  <string name="loop_videos">Videók végtelenítése</string>
+  <string name="animate_gifs">Az indexképben is látszódjon a GIF animációja</string>
   <string name="max_brightness">Max brightness when viewing media</string>
+  <string name="crop_thumbnails">Indexképek négyzetre vágása</string>
+  <string name="screen_rotation_by">A teljes képernyős média elforgatása ezzel:</string>
+  <string name="screen_rotation_system_setting">Rendszerbeállítások</string>
+  <string name="screen_rotation_device_rotation">Az eszköz elforgatása</string>
+  <string name="screen_rotation_aspect_ratio">Képarány</string>
+  <string name="black_background_at_fullscreen">Teljes képernyős média esetén fekete a háttér és az állapotsor</string>
+  <string name="scroll_thumbnails_horizontally">Indexképek vízszintes görgetése</string>
+  <string name="hide_system_ui_at_fullscreen">Teljes képernyős média esetén automatikusan rejtse el a rendszer felhasználói felületét</string>
+  <string name="delete_empty_folders">Törölje az üres mappákat miután a tartalmuk eltávolításra került</string>
+  <string name="allow_photo_gestures">Fénykép függőleges vezérlőmozdulattal való fényerőszabályzásának engedélyezése</string>
+  <string name="allow_video_gestures">Videó függőleges vezérlőmozdulattal való hang- és fényerőszabályzásának engedélyezése</string>
+  <string name="show_media_count">A főnézetben jelenítse meg a mappa médiaszámlálóját</string>
+  <string name="replace_share_with_rotate">A teljes képernyő menüjében cserélje le a Megosztást a Forgatásra</string>
+  <string name="show_extended_details">A kiterjesztés részleteinek megjelenítése a teljes képernyő felett</string>
+  <string name="manage_extended_details">A kiterjesztés részleteinek kezelése</string>
+  <string name="one_finger_zoom">Teljes képernyős média esetén az egyujjas zoomolás engedélyezése</string>
+  <string name="allow_instant_change">Engedélyezze az azonnali médiaváltást a képernyő oldalán klikkeléssel</string>
+  <string name="replace_zoomable_images">Cserélje le a mélyebben nagyítható képeket jobb minőségű változattal</string>
+  <string name="hide_extended_details">A kiterjesztés részleteinek elrejtése, ha az állapotsor rejtett</string>
+  <string name="do_extra_check">Végezzen egy extra ellenőrzést az érvénytelen fájlok elkerülése érdekében</string>
+  <string name="show_at_bottom">A vezérlőgombokat a képernyő alján jeleníti meg</string>
+  <string name="show_recycle_bin">A mappák képernyőjén jelenítse meg a Lomtárat</string>
   <!-- Setting sections -->
+  <string name="thumbnails">Indexképek</string>
+  <string name="fullscreen_media">Teljes képernyős média</string>
+  <string name="extended_details">A kiterjesztés részletei</string>
+  <string name="bottom_actions">Alsó műveletek</string>
   <!-- Bottom actions -->
+  <string name="manage_bottom_actions">A látható alsó műveletek kezelése</string>
+  <string name="toggle_favorite">Kedvencek kapcsolója</string>
+  <string name="toggle_file_visibility">Fájlok láthatóságának kapcsolója</string>
   <!-- FAQ -->
+  <string name="faq_1_title">Hogyan változtathatom a készülék alapértelmezett galériáját Egyszerű Galériává?</string>
+  <string name="faq_1_text">Először meg kell találnia a jelenleg alapértelmezett galériát a készüléke beállításainak Alkalmazások menüjében, ott keresse a \"Megnyitás alapértelmezés szerint\" gombot, majd kattintson rá, végül válassza az \"Alapértelmezések törlése\" lehetőséget.
+        A következő alkalommal, amikor megpróbál megnyitni egy képet vagy videót, megjelenik az alkalmazásválasztó, ahol kiválaszthatja az Egyszerű Galériát, és alapértelmezetté teheti azt.</string>
+  <string name="faq_2_title">Jelszóval zártam le egy alkalmazást, de elfelejtettem. Mit tehetek?</string>
+  <string name="faq_2_text">Két megoldási lehetősége van. Vagy törli az alkalmazást a készülékéről, majd újratelepíti vagy megkeresi az alkalmazást a készülék beállításában és az \"Adatok törlése\" lehetőséget választja. Ez törli az alkalmazás összes beállítását, de nem törli a médiafájlokat.</string>
+  <string name="faq_3_title">Hogyan készíthetek olyan albumot, amely mindig legfelül jelenik meg?</string>
+  <string name="faq_3_text">Megnyomhatja hosszan a kívánt albumot és a felugró menüben az Ikonrögzítés-t választhatja, ez felülre rögzíti azt. Több összetett mappát is rögzíthet, a rögzített elemek az érvényben lévő rendezési sorrend szerint helyeződnek el.</string>
+  <string name="faq_4_title">Hogyan tekerhetem a videókat gyorsan előre?</string>
+  <string name="faq_4_text">A keresősáv közelében lévő aktuális vagy végső időt jelző szövegekre kattintva előre vagy hátra mozgathatja a videót.</string>
+  <string name="faq_5_title">Mi a különbség egy mappa elrejtése és egy mappa kizárása között?</string>
+  <string name="faq_5_text">A Kizárás csak az Egyszerű Galériában akadályozza meg a mappa megjelenítését, míg az Elrejtés rendszerszinten működik, és más galériák elől is elrejti a mappát. Úgy működik, hogy egy üres \".nomedia\" fájlt hoz létre az adott mappában, amelyet később bármely fájlkezelővel eltávolíthat.</string>
+  <string name="faq_6_title">Miért jelennek meg a mappák lemezborítókkal vagy matricákkal?</string>
+  <string name="faq_6_text">Előfordulhat, hogy néhány szokatlan albumot lát. Könnyedén kizárhatja őket, ha hosszan a mappára nyom és a megjelenő lehetőségek közül a Kizárást választja. A következő párbeszédablakban kiválaszthatja a főmappát, és ezzel valószínűleg megakadályozhatja, hogy a többi kapcsolódó album is megjelenjen.</string>
+  <string name="faq_7_title">Egy képeket tartalmazó mappa nem jelenik meg, mit tehetek?</string>
+  <string name="faq_7_text">Ennek többféle oka lehet, de a megoldás egyszerű. Csak menjen a Beállítások -&gt; Felvett mappák kezelése menübe, válassza a Plusz-t és navigáljon a szükséges mappához.</string>
+  <string name="faq_8_title">Mit tegyek, ha azt szeretném, hogy csak néhány egyedi mappa legyen látható?</string>
+  <string name="faq_8_text">A Felvett mappákhoz adás még nem zár ki automatikusan semmit. Be kell menni a Beállítások -&gt; Kizárt mappák kezelése menübe, ott zárja ki a \"/\" gyökérmappát, majd adja hozzá a kívánt mappákat a Beállítások -&gt; Felvett mappák kezelése menüben.
+        Ezzel csak a kijelölt mappák láthatók, mivel mind a kizárás, mind a felvétel rekurzív, és ha egy mappa kizárt is de felvett is, akkor megjelenik.</string>
+  <string name="faq_9_title">A teljes képernyős képeken vannak furcsa részletek, tudnám valahogy javítani a minőséget?</string>
+  <string name="faq_9_text">Igen, ott a \"Cserélje le a mélyebben nagyítható képeket jobb minőségű változattal\" nevű kapcsoló a Beállításokban, használhatja. Ez javítani fogja a képek minőségét, de túlzott nagyításnál ezek is elmosódottá válnak.</string>
   <string name="faq_10_title">Méretre tudom vágni a képet ezzel az alkalmazással?</string>
-  <string name="faq_10_text">Igen, a szerkesztő alkalmas a kép méretre vágására, a kép széleinek húzásával. Kétféleképpen juthat a szerkesztőbe; akár egy képbélyegkép hosszú megnyomásával, majd a Szerkesztés választásával, vagy teljes képernyős nézetben a Szerkesztés választásával.</string>
+  <string name="faq_10_text">Igen, a szerkesztő alkalmas a kép méretre vágására, a kép széleinek húzásával. Kétféleképpen juthat a szerkesztőbe; akár egy indexkép hosszú megnyomásával, majd a Szerkesztés választásával, vagy teljes képernyős nézetben a Szerkesztés választásával.</string>
+  <string name="faq_11_title">Össze tudom csoportosítani a médiafájlok indexképeit?</string>
+  <string name="faq_11_text">Persze, csak használnia kell a \"Csoportosítás\" menüt, amikor indexkép nézetben van. A fájlokat többféle kritérium alapján csoportosíthatja, ideértve a készítés dátumát is. Ha az \"Az összes mappa tartalmának megjelenítése\" funkciót használja, csoportosíthatja azok mappáit is.</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
+  <string name="app_short_description">Egy reklámmentes galéria a fényképek és videók megtekintéséhez.</string>
   <string name="app_long_description">
         A simple tool usable for viewing photos and videos. Items can be sorted by date, size, name both ascending or descending, photos can be zoomed in. Media files are shown in multiple columns depending on the size of the display, you can change the column count by pinch gestures. They can be renamed, shared, deleted, copied, moved. Images can also be cropped, rotated or set as Wallpaper directly from the app.
 

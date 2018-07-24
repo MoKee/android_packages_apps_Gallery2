@@ -4,8 +4,8 @@
   <string name="app_name">Jednoduchá galerie</string>
   <string name="app_launcher_name">Galerie</string>
   <string name="edit">Upravit</string>
-  <string name="open_camera">Spustit fotoaparát</string>
-  <string name="hidden">(skryté)</string>
+  <string name="open_camera">Otevřít fotoaparát</string>
+  <string name="hidden">(skryto)</string>
   <string name="excluded">(vyloučeno)</string>
   <string name="pin_folder">Připnout složku</string>
   <string name="unpin_folder">Odepnout složku</string>
@@ -18,6 +18,7 @@
   <string name="unknown_location">Neznámá poloha</string>
   <string name="increase_column_count">Zvýšit počet sloupců</string>
   <string name="reduce_column_count">Snížit počet sloupců</string>
+  <string name="change_cover_image">Změnit obal alba</string>
   <string name="select_photo">Vybrat fotografii</string>
   <string name="use_default">Použít výchozí</string>
   <string name="volume">Hlasitost</string>
@@ -44,7 +45,7 @@
   <string name="exclude_folder_description">Tato funkce vyloučí výběr včetně podsložek jen z Jednoduché galerie. V nastavení můžete spravovat vyloučené složky.</string>
   <string name="exclude_folder_parent">Chcete vyloučit rodičovskou složku?</string>
   <string name="excluded_activity_placeholder">Vyloučené složky budou spolu s podsložkami vyloučeny jen z Jednoduché Galerie, ostatní aplikace je nadále uvidí.\n\nPokud je chcete skrýt i před ostatními aplikacemi, použijte funkci Skrýt.</string>
-  <string name="remove_all">Odstranit všechny</string>
+  <string name="remove_all">Odstranit vše</string>
   <string name="remove_all_description">Odstranit všechny složky ze seznamu vyloučených? Tato operace neodstraní obsah složek.</string>
   <string name="hidden_folders">Skryté složky</string>
   <string name="manage_hidden_folders">Spravovat skryté složky</string>
@@ -87,13 +88,23 @@
   <string name="set_as_wallpaper_failed">Nastavení tapety selhalo</string>
   <string name="set_as_wallpaper_with">Nastavit jako tapetu pomocí:</string>
   <string name="setting_wallpaper">Nastavuje se tapeta&#8230;</string>
-  <string name="wallpaper_set_successfully">Tapeta byla úspěšně změněna</string>
+  <string name="wallpaper_set_successfully">Tapeta byla úspěšně nastavena</string>
   <string name="portrait_aspect_ratio">Poměr stran na výšku</string>
+  <string name="landscape_aspect_ratio">Poměr stran na šířku</string>
   <string name="home_screen">Domovská obrazovka</string>
   <string name="lock_screen">Zámek displeje</string>
+  <string name="home_and_lock_screen">Domovská a zamykací obrazovka</string>
   <!-- Slideshow -->
   <string name="slideshow">Prezentace</string>
+  <string name="interval">Interval (sekundy):</string>
+  <string name="include_photos">Zahrnout fotografie</string>
+  <string name="include_videos">Zahrnout videa</string>
+  <string name="include_gifs">Zahrnout GIFy</string>
+  <string name="random_order">Náhodné pořadí</string>
+  <string name="use_fade">Použít animace stmívání</string>
   <!-- View types -->
+  <string name="grid">Mřížka</string>
+  <string name="list">Seznam</string>
   <!-- Grouping at media thumbnails -->
   <string name="group_by">Seskupit podle...</string>
   <string name="by_folder">Složka</string>
@@ -103,23 +114,33 @@
   <string name="toggle_filename">Přepnout viditelnost názvů souborů</string>
   <string name="loop_videos">Přehrávat videa ve smyčce</string>
   <string name="animate_gifs">Animovat náhledy souborů GIF</string>
-  <string name="max_brightness">Nastavit jas obrazovky na max při zobrazení médií</string>
+  <string name="max_brightness">Maximální jas při prohlížení médií přes celou obrazovku</string>
+  <string name="screen_rotation_system_setting">Systémové nastavení</string>
+  <string name="screen_rotation_device_rotation">Otáčení zařízení</string>
+  <string name="screen_rotation_aspect_ratio">Poměr stran</string>
   <!-- Setting sections -->
   <!-- Bottom actions -->
   <!-- FAQ -->
+  <string name="faq_8_title">Co když chci vidět jen několik konkrétních složek?</string>
+  <string name="faq_9_title">Obrázky na celou obrazovku mají divné artefakty, mohu nějak zlepšit kvalitu?</string>
+  <string name="faq_9_text">Ano, v nastavení je přepínač s textem \"Nahradit hluboko priblížiteľné obrázky s obrázky s lepší kvalitou\", můžete to zkusit. Způsobí to vyšší kvalitu obrázků, po přiblížení se ale budou rozmazávat mnohem dříve.</string>
+  <string name="faq_10_title">Můžu s touto aplikací oříznout obrázky?</string>
+  <string name="faq_10_text">Ano, oříznutí je možné v editoru, potažením rohů obrázků. Do editoru se můžete dostat buď dlouhým podržením náhledu obrázku a zvolením menu položky Upravit nebo zvolením Upravit při celoobrazovkovém režimu.</string>
+  <string name="faq_11_title">Můžu nějak seskupit miniatury souborů médií?</string>
+  <string name="faq_11_text">Ano, použitím funkce \"Seskupit podle\" na menu obrazovky s náhledy. Seskupení je možné na základě různých kritérií včetně data vytvoření. Pokud použijete funkci \"Zobrazit obsah všech složek\", uvidíte je seskupené také podle složek.</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Galerie na prohlížení obrázků a videí bez reklam.</string>
   <string name="app_long_description">
-        Jednoduchý nástroj použitelný na prohlížení obrázků a videí. Položky mohou být seřazeny podle data, velikosti či názvu vzestupně i sestupně. Obrázky lze přiblížit. Položky jsou zobrazeny ve více sloupcích v závislosti na velikosti displeje, počet sloupců je možné měnit gestem. Soubory můžete přejmenovávat, sdílet, mazat, kopírovat i přesouvat. Obrázky lze ořezávat, otáčen, nebo nastavit jako tapetu přímo v aplikaci.
+        Jednoduchý nástroj použitelný na prohlížení obrázků a videí. Položky mohou být seřazeny podle data, velikosti či názvu vzestupně i sestupně. Obrázky lze přiblížit. Položky jsou zobrazeny ve více sloupcích v závislosti na velikosti obrazovky, počet sloupců je možné měnit gestem. Soubory můžete přejmenovávat, sdílet, mazat, kopírovat i přesouvat. Obrázky lze ořezávat, otáčet, nebo nastavit jako tapetu přímo v aplikaci.
 
         Galerie je též k disposici ostatním aplikacím za účelem zobrazení fotografií a videí a přidávání příloh v e-mailových klientech. Je vhodná ke každodennímu použití.
 
-        The fingerprint permission is needed for locking either hidden item visibility, or the whole app.
+        Oprávnění otisků prstů je zapotřebí k zablokování viditelnosti skrytých položek nebo celé aplikace.
 
         Neobsahuje žádné reklamy ani nepotřebná oprávnění a má otevřený zdrojový kód. Poskytuje možnost změny barev rozhraní.
 
-        Táto aplikace je jen jednou ze skupiny aplikací. Všechny tyto aplikace naleznete na https://www.simplemobiletools.com
+        Tato aplikace je jen jednou ze skupiny aplikací. Všechny tyto aplikace naleznete na https://www.simplemobiletools.com
     </string>
   <!--
         Haven't found some strings? There's more at
