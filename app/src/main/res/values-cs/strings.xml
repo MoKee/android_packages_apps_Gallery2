@@ -80,7 +80,7 @@
   <string name="flip_horizontally">Překlopit vodorovně</string>
   <string name="flip_vertically">Překlopit svisle</string>
   <string name="edit_with">Upravit s</string>
-  <string name="free_aspect_ratio">Žádný</string>
+  <string name="free_aspect_ratio">Volné</string>
   <!-- available as an option: 1:1, 4:3, 16:9, free -->
   <!-- Set wallpaper -->
   <string name="simple_wallpaper">Jednoduchá tapeta</string>
@@ -92,7 +92,7 @@
   <string name="portrait_aspect_ratio">Poměr stran na výšku</string>
   <string name="landscape_aspect_ratio">Poměr stran na šířku</string>
   <string name="home_screen">Domovská obrazovka</string>
-  <string name="lock_screen">Zámek displeje</string>
+  <string name="lock_screen">Zamykací obrazovka</string>
   <string name="home_and_lock_screen">Domovská a zamykací obrazovka</string>
   <!-- Slideshow -->
   <string name="slideshow">Prezentace</string>
@@ -103,12 +103,16 @@
   <string name="random_order">Náhodné pořadí</string>
   <string name="use_fade">Použít animace stmívání</string>
   <!-- View types -->
+  <string name="change_view_type">Změnit typ zobrazení</string>
   <string name="grid">Mřížka</string>
   <string name="list">Seznam</string>
   <!-- Grouping at media thumbnails -->
-  <string name="group_by">Seskupit podle...</string>
+  <string name="group_by">Seskupit podle</string>
   <string name="by_folder">Složka</string>
+  <string name="by_last_modified">Naposledy upraveno</string>
   <string name="by_date_taken">Datum pořízení</string>
+  <string name="by_file_type">Typ souboru</string>
+  <string name="by_extension">Přípona</string>
   <!-- Settings -->
   <string name="autoplay_videos">Automaticky přehrávat videa</string>
   <string name="toggle_filename">Přepnout viditelnost názvů souborů</string>
@@ -119,7 +123,12 @@
   <string name="screen_rotation_device_rotation">Otáčení zařízení</string>
   <string name="screen_rotation_aspect_ratio">Poměr stran</string>
   <!-- Setting sections -->
+  <string name="thumbnails">Náhledy</string>
+  <string name="extended_details">Rozšířené vlastnosti</string>
+  <string name="bottom_actions">Spodní akční tlačítka</string>
   <!-- Bottom actions -->
+  <string name="toggle_favorite">Přepnout oblíbené</string>
+  <string name="toggle_file_visibility">Přepnout viditelnost souborů</string>
   <!-- FAQ -->
   <string name="faq_8_title">Co když chci vidět jen několik konkrétních složek?</string>
   <string name="faq_9_title">Obrázky na celou obrazovku mají divné artefakty, mohu nějak zlepšit kvalitu?</string>
