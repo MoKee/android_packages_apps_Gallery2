@@ -72,6 +72,7 @@ fun SimpleActivity.launchAbout() {
             FAQItem(R.string.faq_9_title, R.string.faq_9_text),
             FAQItem(R.string.faq_10_title, R.string.faq_10_text),
             FAQItem(R.string.faq_11_title, R.string.faq_11_text),
+            FAQItem(R.string.faq_12_title, R.string.faq_12_text),
             FAQItem(R.string.faq_2_title_commons, R.string.faq_2_text_commons))
 
     startAboutActivity(R.string.app_name, LICENSE_GLIDE or LICENSE_CROPPER or LICENSE_MULTISELECT or LICENSE_RTL
@@ -235,7 +236,9 @@ fun BaseSimpleActivity.restoreRecycleBinPaths(paths: ArrayList<String>, callback
                 out = getFileOutputStreamSync(destination, source.getMimeType())
                 inputStream = getFileInputStreamSync(source)!!
                 inputStream.copyTo(out!!)
-                mediumDao.updateDeleted(destination, 0)
+                if (File(source).length() == File(destination).length()) {
+                    mediumDao.updateDeleted(destination, 0)
+                }
             } catch (e: Exception) {
                 showErrorToast(e)
             } finally {
