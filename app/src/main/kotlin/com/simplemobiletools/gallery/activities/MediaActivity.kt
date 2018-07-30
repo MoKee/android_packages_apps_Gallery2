@@ -39,7 +39,9 @@ import com.simplemobiletools.gallery.dialogs.ExcludeFolderDialog
 import com.simplemobiletools.gallery.dialogs.FilterMediaDialog
 import com.simplemobiletools.gallery.extensions.*
 import com.simplemobiletools.gallery.helpers.*
+import com.simplemobiletools.gallery.interfaces.DirectoryDao
 import com.simplemobiletools.gallery.interfaces.MediaOperationsListener
+import com.simplemobiletools.gallery.interfaces.MediumDao
 import com.simplemobiletools.gallery.models.Medium
 import com.simplemobiletools.gallery.models.ThumbnailItem
 import com.simplemobiletools.gallery.models.ThumbnailSection
@@ -75,6 +77,9 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
     private var mStoredTextColor = 0
     private var mStoredPrimaryColor = 0
 
+    private lateinit var mMediumDao: MediumDao
+    private lateinit var mDirectoryDao: DirectoryDao
+
     companion object {
         var mMedia = ArrayList<ThumbnailItem>()
     }
@@ -82,6 +87,10 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_media)
+
+        mMediumDao = galleryDB.MediumDao()
+        mDirectoryDao = galleryDB.DirectoryDao()
+
         intent.apply {
             mIsGetImageIntent = getBooleanExtra(GET_IMAGE_INTENT, false)
             mIsGetVideoIntent = getBooleanExtra(GET_VIDEO_INTENT, false)
@@ -445,9 +454,9 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
 
     private fun restoreAllFiles() {
         val paths = mMedia.filter { it is Medium }.map { (it as Medium).path } as ArrayList<String>
-        restoreRecycleBinPaths(paths) {
+        restoreRecycleBinPaths(paths, mMediumDao) {
             Thread {
-                galleryDB.DirectoryDao().deleteDirPath(RECYCLE_BIN)
+                mDirectoryDao.deleteDirPath(RECYCLE_BIN)
             }.start()
             finish()
         }
@@ -537,7 +546,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
 
         mIsGettingMedia = true
         if (!mLoadedInitialPhotos) {
-            getCachedMedia(mPath, mIsGetVideoIntent, mIsGetImageIntent) {
+            getCachedMedia(mPath, mIsGetVideoIntent, mIsGetImageIntent, mMediumDao) {
                 if (it.isEmpty()) {
                     runOnUiThread {
                         media_refresh_layout.isRefreshing = true
@@ -575,7 +584,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
 
             if (mPath == FAVORITES) {
                 Thread {
-                    galleryDB.DirectoryDao().deleteDirPath(FAVORITES)
+                    mDirectoryDao.deleteDirPath(FAVORITES)
                 }.start()
             }
 
@@ -588,7 +597,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
 
     private fun deleteDBDirectory() {
         Thread {
-            galleryDB.DirectoryDao().deleteDirPath(mPath)
+            mDirectoryDao.deleteDirPath(mPath)
         }.start()
     }
 
@@ -815,7 +824,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
         mLatestMediaDateId = getLatestMediaByDateId()
         if (!isFromCache) {
             val mediaToInsert = (mMedia).filter { it is Medium && it.deletedTS == 0L }.map { it as Medium }
-            galleryDB.MediumDao().insertAll(mediaToInsert)
+            mMediumDao.insertAll(mediaToInsert)
         }
     }
 
@@ -825,7 +834,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
         toast(deletingItems)
 
         if (config.useRecycleBin && !filtered.first().path.startsWith(filesDir.absolutePath)) {
-            movePathsInRecycleBin(filtered.map { it.path } as ArrayList<String>) {
+            movePathsInRecycleBin(filtered.map { it.path } as ArrayList<String>, mMediumDao) {
                 if (it) {
                     deleteFilteredFiles(filtered)
                 } else {
@@ -847,11 +856,10 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
             mMedia.removeAll { filtered.map { it.path }.contains((it as? Medium)?.path) }
 
             Thread {
-                val mediumDao = galleryDB.MediumDao()
                 val useRecycleBin = config.useRecycleBin
                 filtered.forEach {
                     if (!useRecycleBin) {
-                        mediumDao.deleteMediumPath(it.path)
+                        mMediumDao.deleteMediumPath(it.path)
                     }
                 }
             }.start()
