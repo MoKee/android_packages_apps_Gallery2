@@ -29,6 +29,9 @@
   <string name="force_portrait">Álló nézet kényszerítése</string>
   <string name="force_landscape">Fekvő nézet kényszerítése</string>
   <string name="use_default_orientation">Alapértelmezett tájolás használata</string>
+  <string name="fix_date_taken">Dátumbeállítás értékének rögzítése</string>
+  <string name="fixing">Rögzítés…</string>
+  <string name="dates_fixed_successfully">A dátumok sikeresen rögzítésre kerültek</string>
   <!-- Filter -->
   <string name="filter_media">Médiaszűrés</string>
   <string name="images">Képek</string>
@@ -181,6 +184,8 @@
   <string name="faq_10_text">Igen, a szerkesztő alkalmas a kép méretre vágására, a kép széleinek húzásával. Kétféleképpen juthat a szerkesztőbe; akár egy indexkép hosszú megnyomásával, majd a Szerkesztés választásával, vagy teljes képernyős nézetben a Szerkesztés választásával.</string>
   <string name="faq_11_title">Össze tudom csoportosítani a médiafájlok indexképeit?</string>
   <string name="faq_11_text">Persze, csak használnia kell a \"Csoportosítás\" menüt, amikor indexkép nézetben van. A fájlokat többféle kritérium alapján csoportosíthatja, ideértve a készítés dátumát is. Ha az \"Az összes mappa tartalmának megjelenítése\" funkciót használja, csoportosíthatja azok mappáit is.</string>
+  <string name="faq_12_title">A rendezés Dátumbeállítás szerint nem működik megfelelően, hogyan tudom korrigálni?</string>
+  <string name="faq_12_text">A hibát valószínűleg valahonnan másolt fájlok okozzák. Korrigálhatja a fájl-indexképének kiválasztása után a \'Dátumbeállítás értékének rögzítése\' lehetőségére kattintva.</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Egy reklámmentes galéria a fényképek és videók megtekintéséhez.</string>

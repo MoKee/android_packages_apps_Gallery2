@@ -29,6 +29,9 @@
   <string name="force_portrait">強制直向</string>
   <string name="force_landscape">強制橫向</string>
   <string name="use_default_orientation">使用預設方向</string>
+  <string name="fix_date_taken">修復日期取值</string>
+  <string name="fixing">修復中...</string>
+  <string name="dates_fixed_successfully">成功修復日期</string>
   <!-- Filter -->
   <string name="filter_media">篩選媒體檔案</string>
   <string name="images">圖片</string>
@@ -181,6 +184,8 @@
   <string name="faq_10_text">是的，能夠在編輯器內拉動圖片角落來裁剪圖片。要進入編輯器，可以長按圖片縮圖然後選擇 [編輯]，或是在全螢幕檢視下選擇 [編輯]。</string>
   <string name="faq_11_title">可以歸類媒體檔案的縮圖嗎？</string>
   <string name="faq_11_text">當然，只要在縮圖瀏覽中使用 [歸類] 選單項目就可以了。能依多種條件歸類檔案，包含拍照日期。如果你使用了 [資料夾內容全部顯示] 功能，還能以資料夾來歸類。</string>
+  <string name="faq_12_title">按日期排序似乎不能正常運作, 要如何修復？</string>
+  <string name="faq_12_text">這很可能是由從某處複製的檔引起的。可以透過選擇檔案縮略圖並選擇「修復日期取值」來修復。</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">一個用來瀏覽相片和影片，且沒有廣告的相簿。</string>

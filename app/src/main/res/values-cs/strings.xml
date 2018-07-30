@@ -29,6 +29,9 @@
   <string name="force_portrait">Vynutit orientaci na výšku</string>
   <string name="force_landscape">Vynutit orientaci na šířku</string>
   <string name="use_default_orientation">Použít výchozí orientaci</string>
+  <string name="fix_date_taken">Opravit datum pořízení</string>
+  <string name="fixing">Oprava…</string>
+  <string name="dates_fixed_successfully">Data byli úspěšně opravena</string>
   <!-- Filter -->
   <string name="filter_media">Filtr médií</string>
   <string name="images">Obrázky</string>
