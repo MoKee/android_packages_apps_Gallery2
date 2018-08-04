@@ -29,6 +29,9 @@
   <string name="force_portrait">Dikeye zorla</string>
   <string name="force_landscape">Yataya zorla</string>
   <string name="use_default_orientation">Varsayılan yönlendirme kullan</string>
+  <string name="fix_date_taken">Alınan tarih değerini düzeltme</string>
+  <string name="fixing">Düzeltiliyor…</string>
+  <string name="dates_fixed_successfully">Tarihler başarıyla düzeltildi</string>
   <!-- Filter -->
   <string name="filter_media">Medyayı filtrele</string>
   <string name="images">Görüntüler</string>
@@ -95,7 +98,7 @@
   <string name="lock_screen">Kilit ekranı</string>
   <string name="home_and_lock_screen">Ana ekran ve kilit ekranı</string>
   <!-- Slideshow -->
-  <string name="slideshow">Slayt Gösterisi</string>
+  <string name="slideshow">Slayt gösterisi</string>
   <string name="interval">Aralık (saniye):</string>
   <string name="include_photos">Fotoğrafları dahil et</string>
   <string name="include_videos">Videoları dahil et</string>
@@ -112,7 +115,7 @@
   <string name="list">Liste</string>
   <string name="group_direct_subfolders">Grup alt klasörleri</string>
   <!-- Grouping at media thumbnails -->
-  <string name="group_by">Grupla:</string>
+  <string name="group_by">Grupla</string>
   <string name="do_not_group_files">Dosyaları gruplama</string>
   <string name="by_folder">Klasör</string>
   <string name="by_last_modified">Son düzenleme</string>
@@ -181,6 +184,8 @@
   <string name="faq_10_text">Evet, görüntü köşelerini sürükleyerek editördeki görüntüleri kırpabilirsiniz. Editöre, bir resim küçük resmine uzun basıp Düzenleme\'yi seçerek veya tam ekran görünümünden Düzenle\'yi seçerek ulaşabilirsiniz.</string>
   <string name="faq_11_title">Medya dosyası küçük resimlerini bir şekilde gruplayabilir miyim?</string>
   <string name="faq_11_text">Tabii ki, küçük resim görünümünde sadece \"Grupla\" menü öğesini kullanın. Alınan tarih de dahil olmak üzere dosyaları çok kritere göre gruplayabilirsiniz. \"Tüm klasörleri göster\" işlevini kullanırsanız, bunları klasörlere de gruplayabilirsiniz.</string>
+  <string name="faq_12_title">Alınan tarihe göre sıralama düzgün çalışmıyor gibi görünüyor, nasıl düzeltme yapabilirim?</string>
+  <string name="faq_12_text">Büyük olasılıkla bir yerden kopyalanan dosyalardan kaynaklanır. Dosya küçük resimlerini seçerek ve \"Alınan tarih değerini düzeltme\" i seçerek düzeltebilirsiniz.</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Fotoğrafları ve videoları reklamsız görüntülemek için kullanılan bir galeri.</string>

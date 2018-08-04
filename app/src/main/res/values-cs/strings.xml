@@ -105,12 +105,18 @@
   <string name="include_gifs">Zahrnout GIFy</string>
   <string name="random_order">Náhodné pořadí</string>
   <string name="use_fade">Použít animace stmívání</string>
+  <string name="move_backwards">Pohyb zpět</string>
+  <string name="loop_slideshow">Opakování prezentace</string>
+  <string name="slideshow_ended">Prezentace skončila</string>
+  <string name="no_media_for_slideshow">Nebylo nalezeno žádné médium pro prezentaci</string>
   <!-- View types -->
   <string name="change_view_type">Změnit typ zobrazení</string>
   <string name="grid">Mřížka</string>
   <string name="list">Seznam</string>
+  <string name="group_direct_subfolders">Sloučit přímé podsložky</string>
   <!-- Grouping at media thumbnails -->
   <string name="group_by">Seskupit podle</string>
+  <string name="do_not_group_files">Neslučovat soubory</string>
   <string name="by_folder">Složka</string>
   <string name="by_last_modified">Naposledy upraveno</string>
   <string name="by_date_taken">Datum pořízení</string>
@@ -122,24 +128,64 @@
   <string name="loop_videos">Přehrávat videa ve smyčce</string>
   <string name="animate_gifs">Animovat náhledy souborů GIF</string>
   <string name="max_brightness">Maximální jas při prohlížení médií přes celou obrazovku</string>
+  <string name="crop_thumbnails">Oříznout miniatury na čtverce</string>
+  <string name="screen_rotation_by">Otočit média na celou obrazovku</string>
   <string name="screen_rotation_system_setting">Systémové nastavení</string>
   <string name="screen_rotation_device_rotation">Otáčení zařízení</string>
   <string name="screen_rotation_aspect_ratio">Poměr stran</string>
+  <string name="black_background_at_fullscreen">Černé pozadí a stavová lišta při médiích na celou obrazovku</string>
+  <string name="scroll_thumbnails_horizontally">Posunout miniatury horizontálně</string>
+  <string name="hide_system_ui_at_fullscreen">Automaticky skrývat systémové lišty při médiích přes celou obrazovku</string>
+  <string name="delete_empty_folders">Smazat prázdné složky po odstranění jejich obsahu</string>
+  <string name="allow_photo_gestures">Povolit ovládání jasu fotografií pomocí vertikálních gest</string>
+  <string name="allow_video_gestures">Povolit ovládání jasu a hlasitosti videí pomocí vertikálních gest</string>
+  <string name="show_media_count">Zobrazit počet složek médií v hlavním zobrazení</string>
+  <string name="replace_share_with_rotate">Nahradit možnost Sdílet s otočením v nabídce přes celou obrazovku</string>
+  <string name="show_extended_details">Zobrazit rozšířené podrobnosti o médiích přes celou obrazovku</string>
+  <string name="manage_extended_details">Správa rozšířených podrobností</string>
+  <string name="one_finger_zoom">Povolit přiblížení médií jedním prstem v režimu přes celou obrazovku</string>
+  <string name="allow_instant_change">Povolit okamžitě měnit média kliknutím na okraj obrazovky</string>
+  <string name="replace_zoomable_images">Nahradit hluboko priblížiteľné obrázky s obrázky s lepší kvalitou</string>
+  <string name="hide_extended_details">Skrýt rozšířené podrobnosti při skrytí stavové lišty</string>
+  <string name="do_extra_check">Provést další kontrolu pro zabránění zobrazování neplatných souborů</string>
+  <string name="show_at_bottom">Zobrazit některá tlačítka pro akce v dolní části obrazovky</string>
+  <string name="show_recycle_bin">Zobrazit koš na obrazovce se složkami</string>
   <!-- Setting sections -->
   <string name="thumbnails">Náhledy</string>
+  <string name="fullscreen_media">Média přes celou obrazovku</string>
   <string name="extended_details">Rozšířené vlastnosti</string>
   <string name="bottom_actions">Spodní akční tlačítka</string>
   <!-- Bottom actions -->
+  <string name="manage_bottom_actions">Správa viditelných spodních akcí</string>
   <string name="toggle_favorite">Přepnout oblíbené</string>
   <string name="toggle_file_visibility">Přepnout viditelnost souborů</string>
   <!-- FAQ -->
+  <string name="faq_1_title">Jak můžu udělat Jednoduchou Galerii výchozí galerií zařízení?</string>
+  <string name="faq_1_text">Nejprve musíte najít aktuální výchozí galerii v sekci Aplikace v nastavení zařízení. Vyhledat tlačítko, ve kterém je napsáno \"Otevřít ve výchozím nastavení\", klikněte na něj a poté klikněte na \"Vymazat výchozí hodnoty\".
+        Při příštím pokusu o otevření obrázku nebo videa by se měl zobrazit výběr aplikace, kde můžete vybrat položku Jednoduchá Galerie a nastavit ji jako výchozí aplikaci.</string>
+  <string name="faq_2_title">Uzamknul jsem aplikaci heslem, ale zapomněla jsem ho. Co můžu dělat?</string>
+  <string name="faq_2_text">Můžete to vyřešit dvěma způsoby. Aplikaci můžete buď přeinstalovat, nebo najít aplikaci v nastavení zařízení a vybrat možnost \"Vymazat data\". To obnoví všechna nastavení, ale neodstraní žádné mediální soubory.</string>
+  <string name="faq_3_title">Jak mohu vytvořit album, které se zobrazí vždy jako první?</string>
+  <string name="faq_3_text">Dlouhým stiskem požadovaného alba a v nabídce akce můžete zvolit ikonu připínáčku, která jej připne k vrcholu. Můžete také připojit více složek, zarovnané položky budou seřazeny podle výchozí metody třídění.</string>
+  <string name="faq_4_title">Jak mohu rychle posunout videa?</string>
+  <string name="faq_4_text">Klepnutím na texty aktuálního nebo maximálního trvání v blízkosti vyhledávacího panelu můžete posunout video zpětně nebo dopředu.</string>
+  <string name="faq_5_title">Jaký je rozdíl mezi skrytím a vyloučením složky?</string>
+  <string name="faq_5_text">Vyloučení zabraňuje zobrazování složky pouze v Jednoduché Galerii, zatímco skrytí funguje systémově a skrývá složku z jiných galerií. Funguje tak, že vytvoří prázdný soubor \".nomedia\" v dané složce, který můžete také odstranit v libovolném správci souborů.</string>
+  <string name="faq_6_title">Proč se zobrazují složky s obaly alba nebo nálepkami?</string>
+  <string name="faq_6_text">Může se stát, že uvidíte nějaká neobvyklá alba. Můžete je snadno vyloučit dlouhým stisknutím a vybráním možnosti Vyloučit. V dalším dialogovém okně pak můžete vybrat nadřazenou složku, pravděpodobně to zabrání tomu, aby se zobrazovaly další související alba.</string>
+  <string name="faq_7_title">Složka s obrázky se nezobrazuje, co můžu dělat?</string>
+  <string name="faq_7_text">To může mít několik důvodů, ale řešení je snadné. Stačí jít do Nastavení -&gt; Spravovat zahrnuté složky, vyberte možnost Plus a přejděte do požadované složky.</string>
   <string name="faq_8_title">Co když chci vidět jen několik konkrétních složek?</string>
+  <string name="faq_8_text">Přidání složky mezi Přidané složky automaticky nevyloučí ostatní. Můžete jít do Nastavení -&gt; Správa vyloučených složek, vyloučit kořenovou složku \"/\", potom přidat požadované složky v Nastavení -&gt; Správa zahrnutých složek.
+        To způsobí, že se zobrazí jen vybrané složky, protože jak vyloučené, tak zahrnuté jsou rekurzivní a pokud je složka vyloučena a zahrnuta, objeví se.</string>
   <string name="faq_9_title">Obrázky na celou obrazovku mají divné artefakty, mohu nějak zlepšit kvalitu?</string>
   <string name="faq_9_text">Ano, v nastavení je přepínač s textem \"Nahradit hluboko priblížiteľné obrázky s obrázky s lepší kvalitou\", můžete to zkusit. Způsobí to vyšší kvalitu obrázků, po přiblížení se ale budou rozmazávat mnohem dříve.</string>
   <string name="faq_10_title">Můžu s touto aplikací oříznout obrázky?</string>
   <string name="faq_10_text">Ano, oříznutí je možné v editoru, potažením rohů obrázků. Do editoru se můžete dostat buď dlouhým podržením náhledu obrázku a zvolením menu položky Upravit nebo zvolením Upravit při celoobrazovkovém režimu.</string>
   <string name="faq_11_title">Můžu nějak seskupit miniatury souborů médií?</string>
   <string name="faq_11_text">Ano, použitím funkce \"Seskupit podle\" na menu obrazovky s náhledy. Seskupení je možné na základě různých kritérií včetně data vytvoření. Pokud použijete funkci \"Zobrazit obsah všech složek\", uvidíte je seskupené také podle složek.</string>
+  <string name="faq_12_title">Třídění podle data nefunguje správně, jak to mohu opravit?</string>
+  <string name="faq_12_text">Je to pravděpodobně způsobeno tím, že jsou soubory někde zkopírovány. Můžete to vyřešit výběrem miniatur souborů a výběrem možnosti \"Oprava data vytvoření\".</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Galerie na prohlížení obrázků a videí bez reklam.</string>
