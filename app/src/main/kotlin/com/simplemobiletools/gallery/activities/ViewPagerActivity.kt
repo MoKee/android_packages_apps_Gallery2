@@ -2,6 +2,7 @@ package com.simplemobiletools.gallery.activities
 
 import android.animation.Animator
 import android.animation.ValueAnimator
+import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.app.Activity
 import android.content.Intent
@@ -70,14 +71,12 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     private var mAreSlideShowMediaVisible = false
     private var mIsOrientationLocked = false
 
-    private var mStoredReplaceZoomableImages = false
     private var mMediaFiles = ArrayList<Medium>()
     private var mFavoritePaths = ArrayList<String>()
 
     companion object {
         var screenWidth = 0
         var screenHeight = 0
-        var wasDecodedByGlide = false
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,7 +93,6 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             }
         }
 
-        storeStateVariables()
         initFavorites()
     }
 
@@ -112,11 +110,6 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             }
         } else {
             setTranslucentNavigation()
-        }
-
-        if (mStoredReplaceZoomableImages != config.replaceZoomableImages) {
-            mPrevHashcode = 0
-            refreshViewPager()
         }
 
         initBottomActions()
@@ -139,7 +132,6 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     override fun onPause() {
         super.onPause()
         stopSlideshow()
-        storeStateVariables()
     }
 
     override fun onDestroy() {
@@ -356,12 +348,6 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             else -> return super.onOptionsItemSelected(item)
         }
         return true
-    }
-
-    private fun storeStateVariables() {
-        config.apply {
-            mStoredReplaceZoomableImages = replaceZoomableImages
-        }
     }
 
     private fun updatePagerItems(media: MutableList<Medium>) {
@@ -980,9 +966,10 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         initBottomActionsLayout()
     }
 
+    @SuppressLint("NewApi")
     private fun measureScreen() {
         val metrics = DisplayMetrics()
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+        if (isJellyBean1Plus()) {
             windowManager.defaultDisplay.getRealMetrics(metrics)
             screenWidth = metrics.widthPixels
             screenHeight = metrics.heightPixels

@@ -1,5 +1,6 @@
 package com.simplemobiletools.gallery.fragments
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
 import android.graphics.Bitmap
@@ -9,35 +10,28 @@ import android.graphics.Matrix
 import android.graphics.drawable.ColorDrawable
 import android.media.ExifInterface.*
 import android.net.Uri
-import android.os.AsyncTask
 import android.os.Bundle
 import android.os.Handler
+import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.DataSource
-import com.bumptech.glide.load.DecodeFormat
-import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.load.engine.GlideException
-import com.bumptech.glide.request.RequestListener
-import com.bumptech.glide.request.RequestOptions
-import com.bumptech.glide.request.target.Target
 import com.davemorrissey.labs.subscaleview.ImageSource
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.OTG_PATH
+import com.simplemobiletools.commons.helpers.isJellyBean1Plus
 import com.simplemobiletools.commons.helpers.isLollipopPlus
 import com.simplemobiletools.gallery.R
 import com.simplemobiletools.gallery.activities.PanoramaActivity
 import com.simplemobiletools.gallery.activities.PhotoActivity
 import com.simplemobiletools.gallery.activities.ViewPagerActivity
 import com.simplemobiletools.gallery.extensions.*
-import com.simplemobiletools.gallery.helpers.GlideRotateTransformation
-import com.simplemobiletools.gallery.helpers.MEDIUM
-import com.simplemobiletools.gallery.helpers.PATH
-import com.simplemobiletools.gallery.helpers.ROTATE_BY_ASPECT_RATIO
+import com.simplemobiletools.gallery.helpers.*
 import com.simplemobiletools.gallery.models.Medium
+import com.squareup.picasso.Callback
+import com.squareup.picasso.Picasso
 import it.sephiroth.android.library.exif2.ExifInterface
 import kotlinx.android.synthetic.main.pager_photo_item.view.*
 import org.apache.sanselan.common.byteSources.ByteSourceInputStream
@@ -48,12 +42,11 @@ import java.io.FileOutputStream
 
 class PhotoFragment : ViewPagerFragment() {
     private val DEFAULT_DOUBLE_TAP_ZOOM = 2f
-    private val ZOOMABLE_VIEW_LOAD_DELAY = 1500L
+    private val ZOOMABLE_VIEW_LOAD_DELAY = 300L
 
     private var isFragmentVisible = false
     private var isFullscreen = false
     private var wasInit = false
-    private var useHalfResolution = false
     private var isPanorama = false
     private var imageOrientation = -1
     private var gifDrawable: GifDrawable? = null
@@ -86,6 +79,10 @@ class PhotoFragment : ViewPagerFragment() {
                     }
                 }
             }
+        }
+
+        if (ViewPagerActivity.screenWidth == 0 || ViewPagerActivity.screenHeight == 0) {
+            measureScreen()
         }
 
         storeStateVariables()
@@ -177,6 +174,20 @@ class PhotoFragment : ViewPagerFragment() {
         }
     }
 
+    @SuppressLint("NewApi")
+    private fun measureScreen() {
+        val metrics = DisplayMetrics()
+        if (isJellyBean1Plus()) {
+            activity!!.windowManager.defaultDisplay.getRealMetrics(metrics)
+            ViewPagerActivity.screenWidth = metrics.widthPixels
+            ViewPagerActivity.screenHeight = metrics.heightPixels
+        } else {
+            activity!!.windowManager.defaultDisplay.getMetrics(metrics)
+            ViewPagerActivity.screenWidth = metrics.widthPixels
+            ViewPagerActivity.screenHeight = metrics.heightPixels
+        }
+    }
+
     private fun gifFragmentVisibilityChanged(isVisible: Boolean) {
         if (isVisible) {
             gifDrawable?.start()
@@ -244,61 +255,25 @@ class PhotoFragment : ViewPagerFragment() {
     }
 
     private fun loadBitmap(degrees: Int = 0) {
-        if (degrees == 0) {
-            var targetWidth = if (ViewPagerActivity.screenWidth == 0) Target.SIZE_ORIGINAL else ViewPagerActivity.screenWidth
-            var targetHeight = if (ViewPagerActivity.screenHeight == 0) Target.SIZE_ORIGINAL else ViewPagerActivity.screenHeight
-            if (useHalfResolution) {
-                targetWidth /= 2
-                targetHeight /= 2
-            }
+        val picasso = Picasso.get()
+                .load(File(medium.path))
+                .centerInside()
+                .resize(ViewPagerActivity.screenWidth, ViewPagerActivity.screenHeight)
 
-            if (imageOrientation == ORIENTATION_ROTATE_90) {
-                targetWidth = targetHeight
-                targetHeight = Target.SIZE_ORIGINAL
-            }
-
-            val options = RequestOptions()
-                    .signature(medium.path.getFileSignature())
-                    .format(DecodeFormat.PREFER_ARGB_8888)
-                    .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-                    .override(targetWidth, targetHeight)
-
-            Glide.with(this)
-                    .asBitmap()
-                    .load(getPathToLoad(medium))
-                    .apply(options)
-                    .listener(object : RequestListener<Bitmap> {
-                        override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Bitmap>?, isFirstResource: Boolean): Boolean {
-                            if (!useHalfResolution && e?.rootCauses?.firstOrNull() is OutOfMemoryError) {
-                                useHalfResolution = true
-                                Handler().post {
-                                    if (activity?.isActivityDestroyed() == false) {
-                                        loadBitmap(degrees)
-                                    }
-                                }
-                            }
-                            return false
-                        }
-
-                        override fun onResourceReady(resource: Bitmap?, model: Any?, target: Target<Bitmap>?, dataSource: DataSource?, isFirstResource: Boolean): Boolean {
-                            if (isFragmentVisible) {
-                                scheduleZoomableView()
-                            }
-                            return false
-                        }
-                    }).into(view.photo_view)
-        } else {
-            val options = RequestOptions()
-                    .diskCacheStrategy(DiskCacheStrategy.NONE)
-                    .transform(GlideRotateTransformation(degrees))
-
-            Glide.with(this)
-                    .asBitmap()
-                    .load(getPathToLoad(medium))
-                    .thumbnail(0.2f)
-                    .apply(options)
-                    .into(view.photo_view)
+        if (degrees != 0) {
+            picasso.rotate(degrees.toFloat())
         }
+
+        picasso.into(view.photo_view, object : Callback {
+            override fun onSuccess() {
+                view.photo_view.isZoomable = degrees != 0
+                if (isFragmentVisible && degrees == 0) {
+                    scheduleZoomableView()
+                }
+            }
+
+            override fun onError(e: Exception) {}
+        })
     }
 
     private fun openPanorama() {
@@ -311,23 +286,24 @@ class PhotoFragment : ViewPagerFragment() {
     private fun scheduleZoomableView() {
         loadZoomableViewHandler.removeCallbacksAndMessages(null)
         loadZoomableViewHandler.postDelayed({
-            if (isFragmentVisible && !context!!.config.replaceZoomableImages && medium.isImage() && view.subsampling_view.isGone()) {
+            if (isFragmentVisible && medium.isImage() && view.subsampling_view.isGone()) {
                 addZoomableView()
             }
         }, ZOOMABLE_VIEW_LOAD_DELAY)
     }
 
     private fun addZoomableView() {
-        ViewPagerActivity.wasDecodedByGlide = false
+        val rotation = degreesForRotation(imageOrientation)
         view.subsampling_view.apply {
+            setBitmapDecoderFactory { PicassoDecoder(medium.path, Picasso.get(), rotation) }
+            setRegionDecoderFactory { PicassoRegionDecoder() }
             maxScale = 10f
             beVisible()
             isQuickScaleEnabled = context.config.oneFingerZoom
             setResetScaleOnSizeChange(context.config.screenRotation != ROTATE_BY_ASPECT_RATIO)
             setImage(ImageSource.uri(getPathToLoad(medium)))
-            orientation = if (imageOrientation == -1) SubsamplingScaleImageView.ORIENTATION_USE_EXIF else degreesForRotation(imageOrientation)
+            orientation = rotation
             setEagerLoadingEnabled(false)
-            setExecutor(AsyncTask.SERIAL_EXECUTOR)
             setOnImageEventListener(object : SubsamplingScaleImageView.OnImageEventListener {
                 override fun onImageLoaded() {
                 }
@@ -400,8 +376,6 @@ class PhotoFragment : ViewPagerFragment() {
 
         return if (context == null || bitmapAspectRatio == screenAspectRatio) {
             DEFAULT_DOUBLE_TAP_ZOOM
-        } else if (ViewPagerActivity.wasDecodedByGlide) {
-            1f
         } else if (context!!.portrait && bitmapAspectRatio <= screenAspectRatio) {
             ViewPagerActivity.screenHeight / height.toFloat()
         } else if (context!!.portrait && bitmapAspectRatio > screenAspectRatio) {
@@ -416,6 +390,7 @@ class PhotoFragment : ViewPagerFragment() {
     }
 
     fun rotateImageViewBy(degrees: Int) {
+        loadZoomableViewHandler.removeCallbacksAndMessages(null)
         view.subsampling_view.beGone()
         loadBitmap(degrees)
     }
