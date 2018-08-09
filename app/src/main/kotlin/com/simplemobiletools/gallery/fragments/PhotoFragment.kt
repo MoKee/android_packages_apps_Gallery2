@@ -200,6 +200,8 @@ class PhotoFragment : ViewPagerFragment() {
         if (isVisible) {
             scheduleZoomableView()
         } else {
+            view.subsampling_view.recycle()
+            view.subsampling_view.beGone()
             loadZoomableViewHandler.removeCallbacksAndMessages(null)
         }
     }
@@ -255,10 +257,19 @@ class PhotoFragment : ViewPagerFragment() {
     }
 
     private fun loadBitmap(degrees: Int = 0) {
+        var targetWidth = ViewPagerActivity.screenWidth
+        var targetHeight = ViewPagerActivity.screenHeight
+
+        if (context?.config?.allowZoomingImages == true) {
+            targetWidth = (targetWidth * 0.8).toInt()
+            targetHeight = (targetHeight * 0.8).toInt()
+        }
+
+        val pathToLoad = if (medium.path.startsWith("content://")) medium.path else "file://${medium.path}"
         val picasso = Picasso.get()
-                .load(File(medium.path))
+                .load(pathToLoad)
                 .centerInside()
-                .resize(ViewPagerActivity.screenWidth, ViewPagerActivity.screenHeight)
+                .resize(targetWidth, targetHeight)
 
         if (degrees != 0) {
             picasso.rotate(degrees.toFloat())
@@ -266,7 +277,7 @@ class PhotoFragment : ViewPagerFragment() {
 
         picasso.into(view.photo_view, object : Callback {
             override fun onSuccess() {
-                view.photo_view.isZoomable = degrees != 0
+                view.photo_view.isZoomable = degrees != 0 || context?.config?.allowZoomingImages == false
                 if (isFragmentVisible && degrees == 0) {
                     scheduleZoomableView()
                 }
@@ -286,7 +297,7 @@ class PhotoFragment : ViewPagerFragment() {
     private fun scheduleZoomableView() {
         loadZoomableViewHandler.removeCallbacksAndMessages(null)
         loadZoomableViewHandler.postDelayed({
-            if (isFragmentVisible && medium.isImage() && view.subsampling_view.isGone()) {
+            if (isFragmentVisible && context?.config?.allowZoomingImages == true && medium.isImage() && view.subsampling_view.isGone()) {
                 addZoomableView()
             }
         }, ZOOMABLE_VIEW_LOAD_DELAY)
@@ -295,6 +306,7 @@ class PhotoFragment : ViewPagerFragment() {
     private fun addZoomableView() {
         val rotation = degreesForRotation(imageOrientation)
         view.subsampling_view.apply {
+            background = ColorDrawable(Color.TRANSPARENT)
             setBitmapDecoderFactory { PicassoDecoder(medium.path, Picasso.get(), rotation) }
             setRegionDecoderFactory { PicassoRegionDecoder() }
             maxScale = 10f
@@ -322,6 +334,7 @@ class PhotoFragment : ViewPagerFragment() {
                 }
 
                 override fun onImageLoadError(e: Exception) {
+                    view.photo_view.isZoomable = true
                     background = ColorDrawable(Color.TRANSPARENT)
                     beGone()
                 }
