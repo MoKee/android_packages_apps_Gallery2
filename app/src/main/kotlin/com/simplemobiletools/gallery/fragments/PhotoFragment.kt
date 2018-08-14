@@ -17,6 +17,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.DecodeFormat
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.RequestOptions
 import com.davemorrissey.labs.subscaleview.ImageSource
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import com.simplemobiletools.commons.extensions.*
@@ -149,6 +155,7 @@ class PhotoFragment : ViewPagerFragment() {
             photo_brightness_controller.beVisibleIf(allowPhotoGestures)
             instant_prev_item.beVisibleIf(allowInstantChange)
             instant_next_item.beVisibleIf(allowInstantChange)
+            photo_view.setAllowFingerDragZoom(activity!!.config.oneFingerZoom)
         }
 
         storeStateVariables()
@@ -265,26 +272,64 @@ class PhotoFragment : ViewPagerFragment() {
             targetHeight = (targetHeight * 0.8).toInt()
         }
 
-        val pathToLoad = if (medium.path.startsWith("content://")) medium.path else "file://${medium.path}"
-        val picasso = Picasso.get()
-                .load(pathToLoad)
-                .centerInside()
-                .resize(targetWidth, targetHeight)
+        var pathToLoad = if (medium.path.startsWith("content://")) medium.path else "file://${medium.path}"
+        pathToLoad = pathToLoad.replace("%", "%25").replace("#", "%23")
 
-        if (degrees != 0) {
-            picasso.rotate(degrees.toFloat())
-        }
+        try {
+            val picasso = Picasso.get()
+                    .load(pathToLoad)
+                    .centerInside()
+                    .resize(targetWidth, targetHeight)
 
-        picasso.into(view.photo_view, object : Callback {
-            override fun onSuccess() {
-                view.photo_view.isZoomable = degrees != 0 || context?.config?.allowZoomingImages == false
-                if (isFragmentVisible && degrees == 0) {
-                    scheduleZoomableView()
-                }
+            if (degrees != 0) {
+                picasso.rotate(degrees.toFloat())
             }
 
-            override fun onError(e: Exception) {}
-        })
+            picasso.into(view.photo_view, object : Callback {
+                override fun onSuccess() {
+                    view.photo_view.isZoomable = degrees != 0 || context?.config?.allowZoomingImages == false
+                    if (isFragmentVisible && degrees == 0) {
+                        scheduleZoomableView()
+                    }
+                }
+
+                override fun onError(e: Exception) {
+                    tryLoadingWithGlide()
+                }
+            })
+        } catch (ignored: Exception) {
+        }
+    }
+
+    private fun tryLoadingWithGlide() {
+        var targetWidth = if (ViewPagerActivity.screenWidth == 0) com.bumptech.glide.request.target.Target.SIZE_ORIGINAL else ViewPagerActivity.screenWidth
+        var targetHeight = if (ViewPagerActivity.screenHeight == 0) com.bumptech.glide.request.target.Target.SIZE_ORIGINAL else ViewPagerActivity.screenHeight
+
+        if (imageOrientation == ORIENTATION_ROTATE_90) {
+            targetWidth = targetHeight
+            targetHeight = com.bumptech.glide.request.target.Target.SIZE_ORIGINAL
+        }
+
+        val options = RequestOptions()
+                .signature(medium.path.getFileSignature())
+                .format(DecodeFormat.PREFER_ARGB_8888)
+                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+                .override(targetWidth, targetHeight)
+
+        Glide.with(this)
+                .asBitmap()
+                .load(getPathToLoad(medium))
+                .apply(options)
+                .listener(object : RequestListener<Bitmap> {
+                    override fun onLoadFailed(e: GlideException?, model: Any?, target: com.bumptech.glide.request.target.Target<Bitmap>?, isFirstResource: Boolean): Boolean = false
+
+                    override fun onResourceReady(resource: Bitmap?, model: Any?, target: com.bumptech.glide.request.target.Target<Bitmap>?, dataSource: DataSource?, isFirstResource: Boolean): Boolean {
+                        if (isFragmentVisible) {
+                            scheduleZoomableView()
+                        }
+                        return false
+                    }
+                }).into(view.photo_view)
     }
 
     private fun openPanorama() {
@@ -432,7 +477,6 @@ class PhotoFragment : ViewPagerFragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         if (activity?.isActivityDestroyed() == false) {
-            Glide.with(context!!).clear(view.photo_view)
             view.subsampling_view.recycle()
         }
         loadZoomableViewHandler.removeCallbacksAndMessages(null)
