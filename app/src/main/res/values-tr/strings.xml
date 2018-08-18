@@ -145,6 +145,7 @@
   <string name="manage_extended_details">Genişletilmiş ayrıntıları yönet</string>
   <string name="one_finger_zoom">Tam ekran ortamlarda bir parmak yakınlaştırmasına izin ver</string>
   <string name="allow_instant_change">Ekran kenarlarına tıklayarak anında medya değiştirmeye izin ver</string>
+  <string name="allow_deep_zooming_images">Derin yakınlaştırma görüntülerine izin ver</string>
   <string name="hide_extended_details">Durum çubuğu gizlendiğinde genişletilmiş ayrıntıları gizle</string>
   <string name="do_extra_check">Geçersiz dosyaları göstermekten kaçınmak için ekstra bir kontrol yapın</string>
   <string name="show_at_bottom">Ekranın altındaki bazı eylem tuşlarını göster</string>
