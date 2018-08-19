@@ -145,6 +145,7 @@
   <string name="manage_extended_details">A kiterjesztés részleteinek kezelése</string>
   <string name="one_finger_zoom">Teljes képernyős média esetén az egyujjas zoomolás engedélyezése</string>
   <string name="allow_instant_change">Engedélyezze az azonnali médiaváltást a képernyő oldalán klikkeléssel</string>
+  <string name="allow_deep_zooming_images">Lehetővé teszi a képek erőteljesebb ráközelítését (zoomolását)</string>
   <string name="hide_extended_details">A kiterjesztés részleteinek elrejtése, ha az állapotsor rejtett</string>
   <string name="do_extra_check">Végezzen egy extra ellenőrzést az érvénytelen fájlok elkerülése érdekében</string>
   <string name="show_at_bottom">A vezérlőgombokat a képernyő alján jeleníti meg</string>
