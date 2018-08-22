@@ -174,7 +174,7 @@ class Config(context: Context) : BaseConfig(context) {
         set(darkBackground) = prefs.edit().putBoolean(DARK_BACKGROUND, darkBackground).apply()
 
     var filterMedia: Int
-        get() = prefs.getInt(FILTER_MEDIA, TYPE_IMAGES or TYPE_VIDEOS or TYPE_GIFS or TYPE_RAWS)
+        get() = prefs.getInt(FILTER_MEDIA, TYPE_IMAGES or TYPE_VIDEOS or TYPE_GIFS or TYPE_RAWS or TYPE_SVGS)
         set(filterMedia) = prefs.edit().putInt(FILTER_MEDIA, filterMedia).apply()
 
     var dirColumnCnt: Int
@@ -345,6 +345,10 @@ class Config(context: Context) : BaseConfig(context) {
     var wasRecycleBinPinned: Boolean
         get() = prefs.getBoolean(WAS_RECYCLE_BIN_PINNED, false)
         set(wasRecycleBinPinned) = prefs.edit().putBoolean(WAS_RECYCLE_BIN_PINNED, wasRecycleBinPinned).apply()
+
+    var wasSVGShowingHandled: Boolean
+        get() = prefs.getBoolean(WAS_SVG_SHOWING_HANDLED, false)
+        set(wasSVGShowingHandled) = prefs.edit().putBoolean(WAS_SVG_SHOWING_HANDLED, wasSVGShowingHandled).apply()
 
     var groupBy: Int
         get() = prefs.getInt(GROUP_BY, GROUP_BY_NONE)

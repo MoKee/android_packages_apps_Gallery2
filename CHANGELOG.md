@@ -1,6 +1,19 @@
 Changelog
 ==========
 
+Version 4.6.1 *(2018-08-21)*
+----------------------------
+
+ * Added a crashfix at loading fullscreen images
+
+Version 4.6.0 *(2018-08-20)*
+----------------------------
+
+ * Added support for SVGs
+ * Improved fullscreen image quality and performance
+ * Properly show files with hastags and percentage signs in their paths
+ * Many other smaller UX improvements
+
 Version 4.5.2 *(2018-08-08)*
 ----------------------------
 

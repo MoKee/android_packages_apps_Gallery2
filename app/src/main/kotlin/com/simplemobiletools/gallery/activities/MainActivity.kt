@@ -133,6 +133,13 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             config.saveFolderGrouping(SHOW_ALL, GROUP_BY_DATE_TAKEN or GROUP_DESCENDING)
         }
 
+        if (!config.wasSVGShowingHandled) {
+            config.wasSVGShowingHandled = true
+            if (config.filterMedia and TYPE_SVGS == 0) {
+                config.filterMedia += TYPE_SVGS
+            }
+        }
+
         checkRecycleBinItems()
     }
 
@@ -423,7 +430,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             val pathsToDelete = ArrayList<String>()
             fileDirItems.filter { it.isDirectory }.forEach {
                 val files = File(it.path).listFiles()
-                files?.filter { it.absolutePath.isImageVideoGif() }?.mapTo(pathsToDelete) { it.absolutePath }
+                files?.filter { it.absolutePath.isMediaFile() }?.mapTo(pathsToDelete) { it.absolutePath }
             }
 
             movePathsInRecycleBin(pathsToDelete, mMediumDao) {
@@ -909,7 +916,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 invalidDirs.add(it)
             } else if (it.path != config.tempFolderPath) {
                 val children = if (it.path.startsWith(OTG_PATH)) getOTGFolderChildrenNames(it.path) else File(it.path).list()?.asList()
-                val hasMediaFile = children?.any { it.isImageVideoGif() } ?: false
+                val hasMediaFile = children?.any { it.isMediaFile() } ?: false
                 if (!hasMediaFile) {
                     invalidDirs.add(it)
                 }

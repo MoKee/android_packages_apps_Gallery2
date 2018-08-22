@@ -533,7 +533,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
     }
 
     private fun deleteDirectoryIfEmpty() {
-        val fileDirItem = FileDirItem(mPath, mPath.getFilenameFromPath())
+        val fileDirItem = FileDirItem(mPath, mPath.getFilenameFromPath(), true)
         if (config.deleteEmptyFolders && !fileDirItem.isDownloadsFolder() && fileDirItem.isDirectory && fileDirItem.getProperFileCount(applicationContext, true) == 0) {
             tryDeleteFileDirItem(fileDirItem, true, true)
         }
@@ -832,7 +832,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
     }
 
     override fun tryDeleteFiles(fileDirItems: ArrayList<FileDirItem>) {
-        val filtered = fileDirItems.filter { it.path.isImageVideoGif() } as ArrayList
+        val filtered = fileDirItems.filter { it.path.isMediaFile() } as ArrayList
         val deletingItems = resources.getQuantityString(R.plurals.deleting_items, filtered.size, filtered.size)
         toast(deletingItems)
 

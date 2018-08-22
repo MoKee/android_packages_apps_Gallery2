@@ -59,6 +59,7 @@ const val GROUP_BY = "group_by"
 const val EVER_SHOWN_FOLDERS = "ever_shown_folders"
 const val SHOW_RECYCLE_BIN_AT_FOLDERS = "show_recycle_bin_at_folders"
 const val ALLOW_ZOOMING_IMAGES = "allow_zooming_images"
+const val WAS_SVG_SHOWING_HANDLED = "was_svg_showing_handled"
 
 // slideshow
 const val SLIDESHOW_INTERVAL = "slideshow_interval"
@@ -120,6 +121,7 @@ const val TYPE_IMAGES = 1
 const val TYPE_VIDEOS = 2
 const val TYPE_GIFS = 4
 const val TYPE_RAWS = 8
+const val TYPE_SVGS = 16
 
 const val LOCAITON_INTERNAL = 1
 const val LOCATION_SD = 2
