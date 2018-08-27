@@ -38,6 +38,7 @@
   <string name="videos">Videa</string>
   <string name="gifs">GIFy</string>
   <string name="raw_images">Obrázky RAW</string>
+  <string name="svgs">SVG</string>
   <string name="no_media_with_filters">Se zvolenými filtry nebyly nalezeny žádné mediální soubory.</string>
   <string name="change_filters_underlined"><u>Změnit filtry</u></string>
   <!-- Hide / Exclude -->

@@ -38,6 +38,7 @@
   <string name="videos">Videók</string>
   <string name="gifs">GIF-ek</string>
   <string name="raw_images">RAW-képek</string>
+  <string name="svgs">SVG-k</string>
   <string name="no_media_with_filters">A kiválasztott szűrőkkel nem találhatóak médiafájlok.</string>
   <string name="change_filters_underlined"><u>Szűrők változtatása</u></string>
   <!-- Hide / Exclude -->
