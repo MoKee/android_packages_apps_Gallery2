@@ -6,6 +6,7 @@
   <string name="edit">Chỉnh sửa</string>
   <string name="open_camera">Mở máy ảnh</string>
   <string name="hidden">(ẩn)</string>
+  <string name="excluded">(loại trừ)</string>
   <string name="pin_folder">Ghim Mục</string>
   <string name="unpin_folder">Bỏ Ghim</string>
   <string name="pin_to_the_top">Ghim ở đầu trang</string>
@@ -31,7 +32,17 @@
   <string name="gifs">Ảnh GIF</string>
   <string name="raw_images">Ảnh RAW</string>
   <!-- Hide / Exclude -->
+  <string name="exclude">Loại trừ</string>
+  <string name="excluded_folders">Loại trừ các thư mục</string>
+  <string name="remove_all">Xóa tất cả</string>
+  <string name="remove_all_description">Loại bỏ tất cả các thư mục từ danh sách loại trừ? Điều này sẽ không xóa các thư mục.</string>
+  <string name="hidden_folders">Ẩn thư mục</string>
+  <string name="manage_hidden_folders">Quản lý các thư mục ẩn</string>
+  <string name="hidden_folders_placeholder">Có vẻ như bạn không có bất kỳ thư mục nào ẩn với một tập tin \".nomedia\".</string>
   <!-- Include folders -->
+  <string name="include_folders">Bao gồm các thư mục</string>
+  <string name="manage_included_folders">Quản lý bao gồm các thư mục</string>
+  <string name="add_folder">Thêm thư mục</string>
   <!-- Resizing -->
   <string name="resize">Đổi kích thước</string>
   <string name="width">Chiều rộng</string>
