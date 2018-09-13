@@ -26,14 +26,25 @@
   <string name="lock_orientation">Khóa xoay màn hình</string>
   <string name="unlock_orientation">Mở khóa xoay màn hình</string>
   <string name="change_orientation">Xoay màn hình</string>
+  <string name="force_portrait">Chân dung</string>
+  <string name="force_landscape">Phong cảnh</string>
+  <string name="use_default_orientation">Hướng mặc định</string>
+  <string name="fixing">Đang sửa…</string>
+  <string name="dates_fixed_successfully">Đã sửa ngày</string>
   <!-- Filter -->
+  <string name="filter_media">Bộ lọc</string>
   <string name="images">Hình ảnh</string>
   <string name="videos">Video</string>
   <string name="gifs">Ảnh GIF</string>
   <string name="raw_images">Ảnh RAW</string>
+  <string name="svgs">Svgs</string>
+  <string name="no_media_with_filters">Không tìm thấy dữ liệu với bộ lọc đã chọn.</string>
+  <string name="change_filters_underlined">Đổi bộ lọc</string>
   <!-- Hide / Exclude -->
+  <string name="hide_folder_description">Ẩn thư mục bằng cách thêm\'.nomedia\' vào, nó sẽ ẩn tất cả tệp con trong thư mục. Bạn có thể thấy lại bằng cách truy cập \' Hiển thị mục ẩn\' trong cài đặt. Tiếp tục?</string>
   <string name="exclude">Loại trừ</string>
   <string name="excluded_folders">Loại trừ các thư mục</string>
+  <string name="manage_excluded_folders">Quản lý các thư mục ẩn</string>
   <string name="remove_all">Xóa tất cả</string>
   <string name="remove_all_description">Loại bỏ tất cả các thư mục từ danh sách loại trừ? Điều này sẽ không xóa các thư mục.</string>
   <string name="hidden_folders">Ẩn thư mục</string>
@@ -45,21 +56,55 @@
   <string name="add_folder">Thêm thư mục</string>
   <!-- Resizing -->
   <string name="resize">Đổi kích thước</string>
+  <string name="resize_and_save">Thay đổi kích cỡ và lưu</string>
   <string name="width">Chiều rộng</string>
   <string name="height">Chiều cao</string>
+  <string name="keep_aspect_ratio">Giữ tỉ lệ</string>
+  <string name="invalid_values">Hãy nhập tên miền hợp lệ</string>
   <!-- Editor -->
+  <string name="editor">Trình biên tập</string>
   <string name="save">Lưu</string>
   <string name="rotate">Xoay</string>
   <string name="path">Đường dẫn</string>
+  <string name="invalid_image_path">Ảnh không hợp lệ</string>
+  <string name="image_editing_failed">Chỉnh sửa hình ảnh thất bại</string>
+  <string name="edit_image_with">Chỉnh sửa hình ảnh với:</string>
+  <string name="no_editor_found">Không tìm thấy trình biên tập ảnh</string>
+  <string name="unknown_file_location">Không xác định vị trí tệp</string>
+  <string name="error_saving_file">Không thể ghi đè lên các tập tin nguồn</string>
   <string name="rotate_left">Xoay trái</string>
   <string name="rotate_right">Xoay phải</string>
+  <string name="rotate_one_eighty">Xoay 180º</string>
+  <string name="flip">Đảo ngược</string>
+  <string name="flip_horizontally">Lật theo chiều ngang</string>
+  <string name="flip_vertically">Lật theo chiều dọc</string>
+  <string name="edit_with">Chỉnh sửa với</string>
   <string name="free_aspect_ratio">Không có</string>
   <!-- available as an option: 1:1, 4:3, 16:9, free -->
   <!-- Set wallpaper -->
+  <string name="simple_wallpaper">Hiển thị hình nền</string>
+  <string name="set_as_wallpaper">Đặt làm hình nền</string>
+  <string name="set_as_wallpaper_failed">Thiết lập làm hình nền thất bại</string>
+  <string name="set_as_wallpaper_with">Đặt làm hình nền với:</string>
+  <string name="setting_wallpaper">Đang đặt hình nền</string>
+  <string name="wallpaper_set_successfully">Thiết lập hình nền thành công</string>
+  <string name="portrait_aspect_ratio">Chân dung</string>
+  <string name="landscape_aspect_ratio">Phong cảnh</string>
   <string name="home_screen">Màn hình chính</string>
   <string name="lock_screen">Màn hình khóa</string>
+  <string name="home_and_lock_screen">Trang chủ và màn hình khoá</string>
   <!-- Slideshow -->
   <string name="slideshow">Trình chiếu</string>
+  <string name="interval">Khoảng (giây):</string>
+  <string name="include_photos">Bao gồm hình ảnh</string>
+  <string name="include_videos">Bao gồm video</string>
+  <string name="include_gifs">Bao gồm ảnh động</string>
+  <string name="random_order">Ngẫu nhiên</string>
+  <string name="use_fade">Sử dụng hoạt ảnh mờ</string>
+  <string name="move_backwards">Di chuyển về phía sau</string>
+  <string name="loop_slideshow">Trình chiếu</string>
+  <string name="slideshow_ended">Kết thúc trình chiếu</string>
+  <string name="no_media_for_slideshow">Không tìm thấy dữ liệu cho trình chiếu</string>
   <!-- View types -->
   <!-- Grouping at media thumbnails -->
   <string name="group_by">Nhóm theo</string>
@@ -69,6 +114,13 @@
   <!-- Setting sections -->
   <!-- Bottom actions -->
   <!-- FAQ -->
+  <string name="faq_2_text">Bạn có thể giải quyết nó trong 2 cách. Bạn có thể hoặc cài đặt lại ứng dụng này, hoặc tìm các ứng dụng trong cài đặt thiết bị của bạn và chọn \"Xóa dữ liệu\". Nó sẽ thiết lập lại tất cả các cài đặt của bạn, nó sẽ không loại bỏ bất kỳ dữ liệu.</string>
+  <string name="faq_3_title">Làm thế nào có thể làm cho một album luôn xuất hiện ở đầu trang?</string>
+  <string name="faq_3_text">Bạn có thể bấm giữ album bạn muốn và chọn biểu tượng ghim trên menu công cụ, nó sẽ ghim vào đầu trang. Bạn có thể ghim nhiều thư mục hơn, ghim các mục sẽ được sắp xếp theo phương pháp phân loại mặc định.</string>
+  <string name="faq_4_title">Làm thế nào có thể tua nhanh video?</string>
+  <string name="faq_6_title">Tại sao làm thư mục với bìa đĩa nhạc hoặc dán Hiển thị?</string>
+  <string name="faq_7_title">Thư mục không thể hiển thị ảnh, bạn có thể làm gì?</string>
+  <string name="faq_10_title">Có thể cắt ảnh với ứng dụng?</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <!--

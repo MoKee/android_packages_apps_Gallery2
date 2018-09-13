@@ -13,6 +13,8 @@
   <string name="free_aspect_ratio">ಯಾವುದೂ ಇಲ್ಲ</string>
   <!-- available as an option: 1:1, 4:3, 16:9, free -->
   <!-- Set wallpaper -->
+  <string name="home_screen">ಮುಖ್ಯ ಪರದೆ</string>
+  <string name="lock_screen">ಪರದೆ ಲಾಕ್ ಮಾಡಿ</string>
   <!-- Slideshow -->
   <!-- View types -->
   <!-- Grouping at media thumbnails -->

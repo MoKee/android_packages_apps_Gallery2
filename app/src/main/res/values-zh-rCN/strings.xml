@@ -29,12 +29,16 @@
   <string name="force_portrait">强制竖屏</string>
   <string name="force_landscape">强制横屏</string>
   <string name="use_default_orientation">使用默认方向</string>
+  <string name="fix_date_taken">修正日期取值</string>
+  <string name="fixing">正在修正……</string>
+  <string name="dates_fixed_successfully">成功修正日期</string>
   <!-- Filter -->
   <string name="filter_media">要显示的媒体文件</string>
   <string name="images">图片</string>
   <string name="videos">视频</string>
   <string name="gifs">GIF动图</string>
   <string name="raw_images">RAW 图片</string>
+  <string name="svgs">SVG</string>
   <string name="no_media_with_filters">所选的过滤器没有找到媒体文件。</string>
   <string name="change_filters_underlined"><u>更改过滤器</u></string>
   <!-- Hide / Exclude -->
@@ -142,6 +146,7 @@
   <string name="manage_extended_details">要显示的详细信息项目</string>
   <string name="one_finger_zoom">单指缩放</string>
   <string name="allow_instant_change">通过单击屏幕边缘来切换媒体</string>
+  <string name="allow_deep_zooming_images">允许深度缩放图像</string>
   <string name="hide_extended_details">当状态栏隐藏时隐藏扩展详情</string>
   <string name="do_extra_check">额外检查以避免显示无效的文件</string>
   <string name="show_at_bottom">在屏幕底部显示一些操作按钮</string>
@@ -178,6 +183,8 @@
   <string name="faq_10_text">当然，通过长按图片缩略图并选择编辑，或在全屏视图中选择编辑来打开编辑器。你可以通过拖动图片边角来剪裁图像。</string>
   <string name="faq_11_title">我能将媒体文件缩略图分组吗？</string>
   <string name="faq_11_text">当然，只需在缩略图视图中使用\"分组依据\"菜单项即可。您可以依据多个条件对文件进行分组，包括拍摄日期。如果您使用了\"显示所有文件夹内容\"功能，则可以按文件夹对它们进行分组。</string>
+  <string name="faq_12_title">按日期排序似乎不能正常工作, 要怎样修复它？</string>
+  <string name="faq_12_text">这很可能是由从某处复制的文件引起的。您可以通过选择文件缩略图并选择 \"修正日期取值\" 来修复它。</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">一个没有广告，用来观看照片及视频的相册。</string>

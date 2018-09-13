@@ -38,7 +38,7 @@
   <string name="videos">ビデオ</string>
   <string name="gifs">GIF</string>
   <string name="raw_images">RAW</string>
-  <string name="no_media_with_filters">条件に該当するメディアがありません。</string>
+  <string name="no_media_with_filters">条件に該当するメディアがありません</string>
   <string name="change_filters_underlined"><u>絞り込み条件を変更</u></string>
   <!-- Hide / Exclude -->
   <string name="hide_folder_description">対象のフォルダに「.nomedia」ファイルを作成し、フォルダを非表示にします。そのフォルダの中にあるすべてのサブフォルダも非表示となります。非表示のフォルダを見るには、「設定」の中にある「非表示のフォルダを表示」で切り替えてください。このフォルダを非表示にしますか？</string>
@@ -46,18 +46,18 @@
   <string name="excluded_folders">除外フォルダ</string>
   <string name="manage_excluded_folders">除外フォルダの管理</string>
   <string name="exclude_folder_description">選択したフォルダとそのサブフォルダを、Simple Galleyの一覧から除外します。除外したフォルダは「設定」で確認できます。</string>
-  <string name="exclude_folder_parent">親フォルダを選択して除外することもできます。</string>
+  <string name="exclude_folder_parent">親フォルダを選択して除外することもできます</string>
   <string name="excluded_activity_placeholder">フォルダを除外すると、サブフォルダも含めSimple Galleyの一覧から除外します。他のアプリでは引き続き表示されます。\\n\\n他のアプリでも非表示にしたい場合は、「非表示」機能を使用してください。</string>
   <string name="remove_all">すべて解除</string>
   <string name="remove_all_description">除外するフォルダの登録をすべて解除しますか? フォルダ自体は削除されません。</string>
   <string name="hidden_folders">非表示フォルダ</string>
   <string name="manage_hidden_folders">非表示フォルダの管理</string>
-  <string name="hidden_folders_placeholder">\".nomedia\"で隠されたフォルダはありません。</string>
+  <string name="hidden_folders_placeholder">\".nomedia\"で隠されたフォルダはありません</string>
   <!-- Include folders -->
   <string name="include_folders">追加フォルダ</string>
   <string name="manage_included_folders">追加フォルダの管理</string>
   <string name="add_folder">フォルダを追加</string>
-  <string name="included_activity_placeholder">メディア入りのフォルダがアプリで認識されない場合は手動で追加します。</string>
+  <string name="included_activity_placeholder">メディア入りのフォルダがアプリで認識されない場合は手動で追加します</string>
   <!-- Resizing -->
   <string name="resize">リサイズ</string>
   <string name="resize_and_save">選択領域をリサイズして保存</string>
@@ -160,7 +160,7 @@
   <string name="toggle_file_visibility">表示/非表示の切替</string>
   <!-- FAQ -->
   <string name="faq_4_title">動画を早送りするにはどうすればよいですか？</string>
-  <string name="faq_4_text">シークバーの隣にある経過時間または最大時間の表示を押すごとに早送り、または巻き戻しが作動します。</string>
+  <string name="faq_4_text">シークバーの隣にある経過時間または最大時間の表示を押すごとに早送りや巻き戻しが作動します</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">写真やビデオを見るためのギャラリー。広告はありません。</string>
