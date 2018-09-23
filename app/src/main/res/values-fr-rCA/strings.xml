@@ -24,6 +24,11 @@
   <string name="brightness">Luminosité</string>
   <string name="lock_orientation">Verrouiller la rotation</string>
   <string name="unlock_orientation">Déverrouiller la rotation</string>
+  <string name="force_landscape">Paysage de force</string>
+  <string name="use_default_orientation">Utiliser l\'orientation par défaut</string>
+  <string name="fix_date_taken">Fixe Date Valeur prise</string>
+  <string name="fixing">Fixation....</string>
+  <string name="dates_fixed_successfully">Dates fixées avec succès</string>
   <!-- Filter -->
   <string name="filter_media">Filtrer les médias</string>
   <string name="videos">Vidéos</string>
@@ -103,10 +108,14 @@
   <string name="change_view_type">Changer le type de vue</string>
   <string name="grid">Grille</string>
   <string name="list">Liste</string>
+  <string name="group_direct_subfolders">Sous-dossiers de groupe direct</string>
   <!-- Grouping at media thumbnails -->
   <string name="group_by">Grouper par</string>
+  <string name="do_not_group_files">Ne pas regrouper les fichiers</string>
   <string name="by_folder">Dossier</string>
+  <string name="by_last_modified">Dernière modification</string>
   <string name="by_date_taken">Date de création</string>
+  <string name="by_file_type">Type de fichier</string>
   <!-- Settings -->
   <string name="autoplay_videos">Lecture automatique des vidéos</string>
   <string name="toggle_filename">Permuter la visibilité des noms de fichier</string>
@@ -130,13 +139,20 @@
   <string name="manage_extended_details">Gérer les détails supplémentaires</string>
   <string name="one_finger_zoom">Autoriser le zoom avec un doigt sur un média en plein écran</string>
   <string name="allow_instant_change">Autoriser le changement instantané de média en cliquant sur les côtés de l\'écran</string>
+  <string name="allow_deep_zooming_images">Permet de zoomer en profondeur</string>
   <string name="hide_extended_details">Masquer les détails supplémentaires lorsque la barre d\'état est masquée</string>
   <string name="do_extra_check">Faire une vérification supplémentaire pour éviter de montrer des fichiers invalides</string>
+  <string name="show_at_bottom">Afficher quelques boutons d\'action en bas de l\'écran</string>
+  <string name="show_recycle_bin">Afficher la corbeille à l\'écran Dossiers</string>
   <!-- Setting sections -->
   <string name="thumbnails">Vignettes</string>
   <string name="fullscreen_media">Média plein écran</string>
   <string name="extended_details">Détails supplémentaires</string>
+  <string name="bottom_actions">Actions en bas</string>
   <!-- Bottom actions -->
+  <string name="manage_bottom_actions">Gérer les actions  visible du bas</string>
+  <string name="toggle_favorite">Basculer favori</string>
+  <string name="toggle_file_visibility">Changer la visibilité des fichiers</string>
   <!-- FAQ -->
   <string name="faq_1_title">Comment faire de Simple Galerie ma galerie par défaut ?</string>
   <string name="faq_1_text">Il faut dans un premier temps trouver la galerie par défaut dans la section « Applications » des paramètres du téléphone, puis toucher « Ouvrir par défaut » et enfin selectionner « Réinitialiser les paramètres par défaut ».
@@ -159,6 +175,10 @@
   <string name="faq_9_text">Oui, il existe dans « Paramètres » une option « Remplacer les images zoomables profondes par des images de meilleure qualité », mais les images seront alors floues si vous zoomez trop.</string>
   <string name="faq_10_title">Puis-je recadrer des images avec cette application?</string>
   <string name="faq_10_text">Oui, vous pouvez recadrer les images dans l\'éditeur en faisant glisser les coins de l\'image. Vous pouvez accéder à l\'éditeur en appuyant longuement sur une vignette d\'image et en sélectionnant Modifier, ou en sélectionnant Modifier en mode plein écran.</string>
+  <string name="faq_11_title">Puis-je en quelque sorte regrouper les vignettes des fichiers multimédias ?</string>
+  <string name="faq_11_text">Bien sûr, il vous suffit d\'utiliser l\'option de menu \"Grouper par\" lorsque vous êtes dans l\'affichage des vignettes. Vous pouvez regrouper les fichiers selon plusieurs critères, y compris la date de prise de vue. Si vous utilisez la fonction \"Afficher le contenu de tous les dossiers\", vous pouvez également les regrouper par dossiers.</string>
+  <string name="faq_12_title">Le tri par date prise ne semble pas fonctionner correctement, comment puis-je le corriger ?</string>
+  <string name="faq_12_text">Il est très probablement causé par les fichiers copiés quelque part. Vous pouvez le corriger en sélectionnant les vignettes du fichier et en sélectionnant \"Fix Date Taken value\".</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Un album pour visionner photos et vidéos sans publicité.</string>

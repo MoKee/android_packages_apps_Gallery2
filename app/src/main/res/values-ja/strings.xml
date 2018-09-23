@@ -10,8 +10,8 @@
   <string name="pin_folder">フォルダをピン留めする</string>
   <string name="unpin_folder">フォルダのピン留めを外す</string>
   <string name="pin_to_the_top">トップにピン留めする</string>
-  <string name="show_all">すべてを表示</string>
-  <string name="all_folders">すべてのフォルダ</string>
+  <string name="show_all">全てを表示</string>
+  <string name="all_folders">全てのフォルダ</string>
   <string name="folder_view">フォルダを選択する</string>
   <string name="other_folder">その他のフォルダ</string>
   <string name="show_on_map">地図上で表示</string>
@@ -38,18 +38,19 @@
   <string name="videos">ビデオ</string>
   <string name="gifs">GIF</string>
   <string name="raw_images">RAW</string>
+  <string name="svgs">SVGs</string>
   <string name="no_media_with_filters">条件に該当するメディアがありません</string>
   <string name="change_filters_underlined"><u>絞り込み条件を変更</u></string>
   <!-- Hide / Exclude -->
-  <string name="hide_folder_description">対象のフォルダに「.nomedia」ファイルを作成し、フォルダを非表示にします。そのフォルダの中にあるすべてのサブフォルダも非表示となります。非表示のフォルダを見るには、「設定」の中にある「非表示のフォルダを表示」で切り替えてください。このフォルダを非表示にしますか？</string>
+  <string name="hide_folder_description">対象のフォルダに「.nomedia」ファイルを作成し、フォルダを非表示にします。そのフォルダの中にある全てのサブフォルダも非表示となります。非表示のフォルダを見るには、「設定」の中にある「非表示のフォルダを表示」で切り替えて下さい。このフォルダを非表示にしますか？</string>
   <string name="exclude">除外する</string>
   <string name="excluded_folders">除外フォルダ</string>
   <string name="manage_excluded_folders">除外フォルダの管理</string>
   <string name="exclude_folder_description">選択したフォルダとそのサブフォルダを、Simple Galleyの一覧から除外します。除外したフォルダは「設定」で確認できます。</string>
   <string name="exclude_folder_parent">親フォルダを選択して除外することもできます</string>
-  <string name="excluded_activity_placeholder">フォルダを除外すると、サブフォルダも含めSimple Galleyの一覧から除外します。他のアプリでは引き続き表示されます。\\n\\n他のアプリでも非表示にしたい場合は、「非表示」機能を使用してください。</string>
-  <string name="remove_all">すべて解除</string>
-  <string name="remove_all_description">除外するフォルダの登録をすべて解除しますか? フォルダ自体は削除されません。</string>
+  <string name="excluded_activity_placeholder">フォルダを除外すると、サブフォルダも含めSimple Galleyの一覧から除外します。他のアプリでは引き続き表示されます。\\n\\n他のアプリでも非表示にしたい場合は、「非表示」機能を使用して下さい。</string>
+  <string name="remove_all">全て解除</string>
+  <string name="remove_all_description">除外するフォルダの登録を全て解除しますか？フォルダ自体は削除されません。</string>
   <string name="hidden_folders">非表示フォルダ</string>
   <string name="manage_hidden_folders">非表示フォルダの管理</string>
   <string name="hidden_folders_placeholder">\".nomedia\"で隠されたフォルダはありません</string>
@@ -64,7 +65,7 @@
   <string name="width">幅</string>
   <string name="height">高さ</string>
   <string name="keep_aspect_ratio">縦横比を固定</string>
-  <string name="invalid_values">解像度を正しく入力してください</string>
+  <string name="invalid_values">解像度を正しく入力して下さい</string>
   <!-- Editor -->
   <string name="editor">画像編集</string>
   <string name="save">保存</string>
@@ -145,6 +146,7 @@
   <string name="manage_extended_details">詳細表示を管理する</string>
   <string name="one_finger_zoom">メディアを指ひとつでズーム可能にする</string>
   <string name="allow_instant_change">画面の端を押してメディアをスライドする</string>
+  <string name="allow_deep_zooming_images">ディープズーム画像を許可する</string>
   <string name="hide_extended_details">ステータスバーが非表示の時は詳細を隠す</string>
   <string name="do_extra_check">無効なファイルを見せない調整を行う</string>
   <string name="show_at_bottom">画面下部にアクションボタンを表示する</string>
@@ -159,8 +161,30 @@
   <string name="toggle_favorite">お気に入り</string>
   <string name="toggle_file_visibility">表示/非表示の切替</string>
   <!-- FAQ -->
+  <string name="faq_1_title">シンプルギャラリーを規定の端末のギャラリーにするにはどうすればよいですか？</string>
+  <string name="faq_1_text">まず端末設定の「アプリケーション」セクションで現在の端末のギャラリーを見つけ、「デフォルトで開く」のようなボタンを探し、それをクリックしてから「デフォルトをクリア」を選択します。次回に画像やビデオを開く時にシンプルギャラリーを選択したら、既定のアプリに設定できるアプリ選択ツールが表示されます。</string>
+  <string name="faq_2_title">私はパスワードでアプリをロックしましたが忘れてしまいました。私は何ができますか？</string>
+  <string name="faq_2_text">あなたは2つの方法で解決することができます。アプリを再インストールするか、端末の設定でアプリを見つけて「データを消去」を選択することです。 すべての設定がリセットされメディアファイルは削除されません。</string>
+  <string name="faq_3_title">アルバムを常にトップに表示させるにはどうしたらいいですか？</string>
+  <string name="faq_3_text">あなたは目的のアルバムをロングタップしてアクションメニューでピンアイコンを選択しまう。ピンアイコンはトップに固定されます。複数のフォルダを固定することもできます。固定されたアイテムはデフォルトのソート方法でソートされます。</string>
   <string name="faq_4_title">動画を早送りするにはどうすればよいですか？</string>
   <string name="faq_4_text">シークバーの隣にある経過時間または最大時間の表示を押すごとに早送りや巻き戻しが作動します</string>
+  <string name="faq_5_title">フォルダの非表示と除外の違いは何ですか？</string>
+  <string name="faq_5_text">「除外」を選択すると「シンプルギャラリー」にのみフォルダが表示されますが、「非表示」はシステム単位で表示され、他のギャラリーからもフォルダは非表示になります。これは指定されたフォルダに空の \".nomedia\"ファイルを作成することで動作します。このファイルは任意のファイルマネージャでも削除できます。</string>
+  <string name="faq_6_title">アルバムカバーアートやステッカーが入ったフォルダが表示されるのはなぜですか？</string>
+  <string name="faq_6_text">見慣れないアルバムがいくつか現れることがあります。長押しして「除外」を選択すると簡単に除外できます。次のダイアログで親フォルダを選択すると他の関連するアルバムも表示されなくなります。</string>
+  <string name="faq_7_title">画像を含むフォルダが表示されない場合はどうすればよいですか？</string>
+  <string name="faq_7_text">複数の理由がありますが、解決するのは簡単です。 「設定」> 「追加フォルダの管理」へ進み、「追加」を選択して必要なフォルダに移動します。</string>
+  <string name="faq_8_title">特定のフォルダだけを表示したい場合はどうすればよいですか？</string>
+  <string name="faq_8_text">「追加フォルダ」にフォルダを追加しても自動的に何も除外されません。手順は、「設定」>「除外フォルダを管理」に移動しルートフォルダ（ / ）を除外してから、「設定」>「追加フォルダを管理」に移動し希望のフォルダを追加します。除外と追加の両方が再帰的なので選択されたフォルダのみが表示され、除外と追加ならばフォルダは表示されます。</string>
+  <string name="faq_9_title">フルスクリーン画像に変なものがありますが、何とか品質を改善できますか？</string>
+  <string name="faq_9_text">はい。設定の中に「ディープズーム可能な画像をより高画質の画像に置き換える」というトグルがありこれを使用できます。 画像の品質が向上しますが、ズームしすぎるとぼやけてしまいます。</string>
+  <string name="faq_10_title">このアプリで画像をトリミングすることはできますか？</string>
+  <string name="faq_10_text">はい。画像コーナーをドラッグして、エディタで画像をトリミングすることができます。 画像のサムネイルを長押しして編集を選択するか、全画面表示から編集を選択することで、エディタにアクセスできます。</string>
+  <string name="faq_11_title">何とかメディアファイルのサムネイルをグループ化できますか？</string>
+  <string name="faq_11_text">もちろんです。サムネイル表示の時に「グループ化」のメニュー項目を使用してください。 撮影日を含む複数の条件でファイルをグループ化できます。 「全てのフォルダの内容を表示」機能を使用するとフォルダごとにグループ化することもできます。</string>
+  <string name="faq_12_title">撮影日による並べ替えが正しく機能していないようですが、どうすれば修正できますか？</string>
+  <string name="faq_12_text">ファイルがどこかからコピーされている可能性が最も高いです。ファイルのサムネイルを選択し、「撮影日を修正」を選択することで修正できます。</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">写真やビデオを見るためのギャラリー。広告はありません。</string>
