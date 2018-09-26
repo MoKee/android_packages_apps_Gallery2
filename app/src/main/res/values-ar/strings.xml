@@ -6,8 +6,10 @@
   <string name="edit">تعديل</string>
   <string name="open_camera">فتح الكاميرا</string>
   <string name="hidden">(مخفية)</string>
+  <string name="excluded">(استُبعدت)</string>
   <string name="pin_folder">تثبيت المجلد</string>
   <string name="unpin_folder">ازالة تثبيت الملف</string>
+  <string name="pin_to_the_top">تثبيت بأعلى الصفحة</string>
   <string name="show_all">عرض كل محتوى المجلدات</string>
   <string name="all_folders">كل المجلدات</string>
   <string name="folder_view">التبديل إلى عرض المجلد</string>
@@ -23,11 +25,20 @@
   <string name="brightness">السطوع</string>
   <string name="lock_orientation">غلق الاتجاه</string>
   <string name="unlock_orientation">فتح الاتجاه</string>
+  <string name="change_orientation">تغيير الاتجاه</string>
+  <string name="force_portrait">فرض العرض العمودي</string>
+  <string name="force_landscape">فرض العرض الأفقي</string>
+  <string name="use_default_orientation">تعين الاتجاه الإفتراضي</string>
+  <string name="fix_date_taken">إصلاح قيمة تاريخ الالتقاط</string>
+  <string name="fixing">اصلاح…</string>
+  <string name="dates_fixed_successfully">تم حل التواريخ بنجاح</string>
   <!-- Filter -->
   <string name="filter_media">فلتر الميديا</string>
   <string name="images">الصور</string>
   <string name="videos">الفديوهات</string>
   <string name="gifs">الصور المتحركة</string>
+  <string name="raw_images">صور RAW</string>
+  <string name="svgs">SVGs</string>
   <string name="no_media_with_filters">لم يتم العثور على ملفات وسائط مع الفلاتر المحددة</string>
   <string name="change_filters_underlined"><u>تغيير الفلاتر</u></string>
   <!-- Hide / Exclude -->
@@ -107,10 +118,15 @@
   <string name="change_view_type">تغيير طريقة العرض</string>
   <string name="grid">الشبكة</string>
   <string name="list">القائمة</string>
+  <string name="group_direct_subfolders">مجلدات فرعية مباشرة</string>
   <!-- Grouping at media thumbnails -->
   <string name="group_by">تجميع بحسب</string>
+  <string name="do_not_group_files">لا تقم بتجميع الملفات</string>
   <string name="by_folder">مجلد</string>
+  <string name="by_last_modified">آخر تعديل</string>
   <string name="by_date_taken">تاريخ الالتقاط</string>
+  <string name="by_file_type">نوع الملف</string>
+  <string name="by_extension">الإضافة</string>
   <!-- Settings -->
   <string name="autoplay_videos">تشغيل الفديوهات تلقائيا</string>
   <string name="toggle_filename">تبديل رؤية اسم الملف</string>
@@ -134,13 +150,20 @@
   <string name="manage_extended_details">إدارة المجلدات المستبعدة</string>
   <string name="one_finger_zoom">السماح بتكبير الوسائط بأصبع واحد في وضع ملء الشاشة</string>
   <string name="allow_instant_change">السماح بتغيير الوسائط على الفور من خلال النقر على جوانب الشاشة</string>
+  <string name="allow_deep_zooming_images">السماح بالتكبير العميق للصور</string>
   <string name="hide_extended_details">إخفاء التفاصيل الموسعة عند إخفاء شريط الحالة</string>
   <string name="do_extra_check">قم بإجراء فحص إضافي لتجنب إظهار الملفات التالفة</string>
+  <string name="show_at_bottom">إظهار بعض أزرار الإجراءات في الجزء السفلي من الشاشة</string>
+  <string name="show_recycle_bin">إظهار \"سلة المحذوفات\" في شاشة المجلدات</string>
   <!-- Setting sections -->
   <string name="thumbnails">المصغرات</string>
   <string name="fullscreen_media">وسائط ملء الشاشة</string>
   <string name="extended_details">تفاصيل موسعة</string>
+  <string name="bottom_actions">شريط أوامر سُفلي</string>
   <!-- Bottom actions -->
+  <string name="manage_bottom_actions">إدارة مرئية الإجراءات السفلية</string>
+  <string name="toggle_favorite">تبديل المفضلات</string>
+  <string name="toggle_file_visibility">تبديل رؤية الملف</string>
   <!-- FAQ -->
   <string name="faq_1_title">كيف يمكنني جعل الاستوديو البسيط معرض الأجهزة الافتراضي؟</string>
   <string name="faq_1_text">أولاً ، عليك العثور على المعرض الافتراضي حاليًا في قسم التطبيقات في إعدادات جهازك ، ابحث عن زر يقول مثلا \"فتح افتراضيًا\" ، وانقر عليه ، ثم حدد \"مسح الإعدادات الافتراضية\". في المرة التالية التي ستحاول فيها فتح صورة أو فيديو ، يجب أن تذهب الى منتقي التطبيقات ، حيث يمكنك اختيار تطبيق الاستوديو البسيط وجعله التطبيق الافتراضي.</string>
@@ -162,6 +185,10 @@
   <string name="faq_9_text">نعم ، هناك تبديل في الإعدادات يقول \"استبدل صورًا ذات زووم عميق بجودة أفضل منها\" ، يمكنك استخدام ذلك. سيؤدي ذلك إلى تحسين جودة الصور ، ولكن ستظهر بشكل واضح عند محاولة التكبير كثيرًا.</string>
   <string name="faq_10_title">هل يمكنني قص الصور باستخدام هذا التطبيق؟</string>
   <string name="faq_10_text">نعم ، يمكنك اقتصاص الصور في المحرر ، عن طريق سحب زوايا الصورة. يمكنك الوصول إلى المحرر إما عن طريق الضغط لفترة طويلة على صورة مصغرة وتحديد تحرير ، أو تحديد تحرير من العرض بملء الشاشة.</string>
+  <string name="faq_11_title">هل يمكنني بطريقة ما تجميع الصور المصغرة لملفات الوسائط؟</string>
+  <string name="faq_11_text">بالتأكيد ، ما عليك سوى استخدام عنصر القائمة \"تجميع حسب\" أثناء عرض الصور المصغرة. يمكنك تجميع الملفات وفقًا لمعايير متعددة ، بما في ذلك تاريخ الالتقاط. إذا كنت تستخدم وظيفة \"إظهار جميع محتويات المجلدات\" ، فيمكنك تجميعها حسب المجلدات أيضًا.</string>
+  <string name="faq_12_title">يبدو أن الفرز حسب تاريخ الالتقاط لا يعمل بشكل صحيح ، كيف يمكنني إصلاحه؟</string>
+  <string name="faq_12_text">على الأرجح بسبب الملفات التي يتم نسخها من مكان ما. يمكنك إصلاحه عن طريق تحديد الصور المصغرة للملفات وتحديد \"إصلاح قيمة تاريخ الالتقاط\".</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">استوديو لعرض الصور والفيديو بدون اعلانات.</string>
