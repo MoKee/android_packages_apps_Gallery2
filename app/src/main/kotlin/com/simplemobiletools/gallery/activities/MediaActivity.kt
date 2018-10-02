@@ -214,7 +214,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
 
             findItem(R.id.folder_view).isVisible = mShowAll
             findItem(R.id.open_camera).isVisible = mShowAll
-            findItem(R.id.about).isVisible = mShowAll
+//            findItem(R.id.about).isVisible = mShowAll
 
             findItem(R.id.temporarily_show_hidden).isVisible = !config.shouldShowHidden
             findItem(R.id.stop_showing_hidden).isVisible = config.temporarilyShowHidden
@@ -249,7 +249,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
             R.id.increase_column_count -> increaseColumnCount()
             R.id.reduce_column_count -> reduceColumnCount()
             R.id.settings -> launchSettings()
-            R.id.about -> launchAbout()
+//            R.id.about -> launchAbout()
             else -> return super.onOptionsItemSelected(item)
         }
         return true
