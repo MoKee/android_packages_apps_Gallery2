@@ -189,6 +189,10 @@
   <string name="faq_11_text">當然，只要在縮圖瀏覽中使用 [歸類] 選單項目就可以了。能依多種條件歸類檔案，包含拍照日期。如果你使用了 [資料夾內容全部顯示] 功能，還能以資料夾來歸類。</string>
   <string name="faq_12_title">按日期排序似乎不能正常運作, 要如何修復？</string>
   <string name="faq_12_text">這很可能是由從某處複製的檔引起的。可以透過選擇檔案縮略圖並選擇「修復日期取值」來修復。</string>
+  <string name="faq_13_title">我在圖片上看到一些彩色的條紋，我怎樣才能提高品質呢？</string>
+  <string name="faq_13_text">目前用於顯示圖像的解決方案在大多數情況下都能很好地工作，但是如果你想要更好的圖像畫質，你可以在「可縮放圖像」部分的應用程式設定中啟用「顯示圖像的最高畫質」。</string>
+  <string name="faq_14_title">我已經隱藏了一個檔案/資料夾。如何取消隱藏？</string>
+  <string name="faq_14_text">你可以在主螢幕上按下「臨時顯示隱藏項」選單，或者在應用程式設定中切換「顯示隱藏項」來檢視隱藏項。如果你想要隱藏它，只要長按它並選擇「隱藏」。資料夾隱藏通過新增一個隱藏的「.nomedia」來隱藏。你也可以用任何檔案管理器刪除檔案。</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">一個用來瀏覽相片和影片，且沒有廣告的相簿。</string>

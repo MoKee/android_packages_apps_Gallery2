@@ -42,7 +42,7 @@
   <string name="no_media_with_filters">A kiválasztott szűrőkkel nem találhatóak médiafájlok.</string>
   <string name="change_filters_underlined"><u>Szűrők változtatása</u></string>
   <!-- Hide / Exclude -->
-  <string name="hide_folder_description">This function hides the folder by adding a \'.nomedia\' file into it, it will hide all subfolders too. You can see them by toggling the \'Show hidden folders\' option in Settings. Continue?</string>
+  <string name="hide_folder_description">Ez a funkció úgy működik, hogy az elrejtendő mappában egy \'.nomedia\' fájlt hoz létre, ez el fogja rejteni az almappákat is. Ahhoz, hogy újra láthassa őket, kapcsolja át az alkalmazásbeállításokban a \"Rejtett elemek megjelenítése\" kapcsolóval. Folytatja?</string>
   <string name="exclude">Kizárás</string>
   <string name="excluded_folders">Kizárt mappák</string>
   <string name="manage_excluded_folders">Kizárt mappák kezelése</string>
@@ -151,6 +151,8 @@
   <string name="do_extra_check">Végezzen egy extra ellenőrzést az érvénytelen fájlok elkerülése érdekében</string>
   <string name="show_at_bottom">A vezérlőgombokat a képernyő alján jeleníti meg</string>
   <string name="show_recycle_bin">A mappák képernyőjén jelenítse meg a Lomtárat</string>
+  <string name="deep_zoomable_images">Mélyen nagyítható képek</string>
+  <string name="show_highest_quality">Képek megjelenítése a lehető legmagasabb felbontásban</string>
   <!-- Setting sections -->
   <string name="thumbnails">Indexképek</string>
   <string name="fullscreen_media">Teljes képernyős média</string>
@@ -187,6 +189,10 @@
   <string name="faq_11_text">Persze, csak használnia kell a \"Csoportosítás\" menüt, amikor indexkép nézetben van. A fájlokat többféle kritérium alapján csoportosíthatja, ideértve a készítés dátumát is. Ha az \"Az összes mappa tartalmának megjelenítése\" funkciót használja, csoportosíthatja azok mappáit is.</string>
   <string name="faq_12_title">A rendezés Dátumbeállítás szerint nem működik megfelelően, hogyan tudom korrigálni?</string>
   <string name="faq_12_text">A hibát valószínűleg valahonnan másolt fájlok okozzák. Korrigálhatja a fájl-indexképének kiválasztása után a \'Dátumbeállítás értékének rögzítése\' lehetőségére kattintva.</string>
+  <string name="faq_13_title">Látok néhány színcsíkot a képeken. Hogyan javíthatnám a minőséget?</string>
+  <string name="faq_13_text">Az esetek túlnyomó többségében a képmegjelenítés jelenlegi formája jól működik, de ha még jobb képminőséget szeretne, engedélyezheti a \"Képek megjelenítése a lehető legmagasabb felbontásban\" lehetőséget az alkalmazásbeállításokban, a \"Mélyen nagyítható képek\" részben.</string>
+  <string name="faq_14_title">Van néhány rejtett fájlom/mappám. Hogyan tehetem ezeket láthatóvá?</string>
+  <string name="faq_14_text">Két lehetőség közül választhat; nyomja meg a \"Rejtett elemek ideiglenes megjelenítése\" lehetőséget az elemek menüjében a főképernyőn vagy az alkalmazásbeállításokban a \"Rejtett elemek megjelenítése\" kapcsolóval. Ha meg szeretné szüntetni az elrejtést, nyomjon az elemre hosszan és válassza a \"Rejtés megszüntetése\" lehetőséget. A mappákat egy \".nomedia\" fájl hozzáadásával rejtették el, a fájlt bármelyik fájlkezelővel is törölheti.</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Egy reklámmentes galéria a fényképek és videók megtekintéséhez.</string>
