@@ -119,7 +119,6 @@
   <string name="allow_instant_change">Tillad skift af medie ved klik på skærmens sider</string>
   <string name="hide_extended_details">Skjul udvidede oplysninger når statuslinjen er skjult</string>
   <string name="do_extra_check">Tjek en ekstra gang for at undgå visning af ugyldige filer</string>
-    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="extended_details">Flere oplysninger</string>
   <!-- Bottom actions -->

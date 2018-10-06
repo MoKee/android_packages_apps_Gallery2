@@ -152,7 +152,6 @@
   <string name="show_at_bottom">在螢幕底部顯示一些操作按鈕</string>
   <string name="show_recycle_bin">在資料夾畫面顯示回收桶</string>
   <string name="deep_zoomable_images">深度可縮放的圖像</string>
-    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <string name="show_highest_quality">以最高品質顯示圖像</string>
   <!-- Setting sections -->
   <string name="thumbnails">縮圖</string>

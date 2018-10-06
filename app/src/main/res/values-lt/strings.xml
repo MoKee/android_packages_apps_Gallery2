@@ -133,7 +133,6 @@
   <string name="allow_instant_change">Leiskite akimirksniu keisti mediją spustelėdami ekrano šonuose</string>
   <string name="hide_extended_details">Slėpti išsamią informaciją, kai būsenos juosta yra paslėpta</string>
   <string name="do_extra_check">Atlikti papildomą patikrinimą, kad nebūtų rodomos sugadintos bylos</string>
-    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Miniatiūros</string>
   <string name="fullscreen_media">Viso ekrano medija</string>

@@ -130,7 +130,6 @@
   <string name="allow_instant_change">Salli median selaaminen ruudun reunoja koskettamalla</string>
   <string name="hide_extended_details">Piilota yksityiskohtaiset tiedot kun tilapalkki on piilotettu</string>
   <string name="do_extra_check">Tee ylimääräinen tarkistus rikkinäisten tiedostojen varalta</string>
-    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Esikatselukuvat</string>
   <string name="fullscreen_media">Täyden näytön media</string>

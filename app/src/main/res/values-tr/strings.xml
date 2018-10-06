@@ -151,7 +151,9 @@
   <string name="do_extra_check">Geçersiz dosyaları göstermekten kaçınmak için ekstra bir kontrol yapın</string>
   <string name="show_at_bottom">Ekranın altındaki bazı eylem tuşlarını göster</string>
   <string name="show_recycle_bin">Klasörler ekranındaki geri dönüşüm kutusu\'nu gösterme</string>
-    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
+  <string name="deep_zoomable_images">Derin yakınlaştırılabilir görüntüler</string>
+  <string name="show_highest_quality">Resimleri mümkün olan en yüksek kalitede gösterin</string>
+  <string name="show_recycle_bin_last">Ana ekrandaki son öğe olarak geri dönüşüm kutusunu göster</string>
   <!-- Setting sections -->
   <string name="thumbnails">Önizleme resimleri</string>
   <string name="fullscreen_media">Tam ekran medya</string>
@@ -188,6 +190,10 @@
   <string name="faq_11_text">Tabii ki, küçük resim görünümünde sadece \"Grupla\" menü öğesini kullanın. Alınan tarih de dahil olmak üzere dosyaları çok kritere göre gruplayabilirsiniz. \"Tüm klasörleri göster\" işlevini kullanırsanız, bunları klasörlere de gruplayabilirsiniz.</string>
   <string name="faq_12_title">Alınan tarihe göre sıralama düzgün çalışmıyor gibi görünüyor, nasıl düzeltme yapabilirim?</string>
   <string name="faq_12_text">Büyük olasılıkla bir yerden kopyalanan dosyalardan kaynaklanır. Dosya küçük resimlerini seçerek ve \"Alınan tarih değerini düzeltme\" i seçerek düzeltebilirsiniz.</string>
+  <string name="faq_13_title">Görüntülerde renk şeritleri görüyorum. Kaliteyi nasıl geliştirebilirim?</string>
+  <string name="faq_13_text">Görüntülerin görüntülenmesi için mevcut çözüm, büyük bir çoğunluğun içinde iyi çalışır, ancak daha iyi görüntü kalitesi istiyorsanız, \"Derin yakınlaştırılabilir görüntüler\" bölümünde, uygulama ayarlarında \"Resimleri mümkün olan en yüksek kalitede göster\" seçeneğini etkinleştirebilirsiniz.</string>
+  <string name="faq_14_title">Bir dosya/klasör gizledim. Nasıl gösterebilirim?</string>
+  <string name="faq_14_text">Ana ekrandaki \"Geçici öğeleri geçici olarak göster\" menü öğesine basabilir veya gizli öğeyi görmek için uygulama ayarlarında \"Gizli öğeleri göster\" seçeneğini değiştirebilirsiniz. Göstermek isterseniz, sadece uzun basın ve \"Göster\" seçeneğini seçin. Klasörler gizli bir \".nomedia\" dosyası ekleyerek gizlenir, dosyayı herhangi bir dosya yöneticisi ile de silebilirsiniz.</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Fotoğrafları ve videoları reklamsız görüntülemek için kullanılan bir galeri.</string>

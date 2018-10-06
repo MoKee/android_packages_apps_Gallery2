@@ -151,7 +151,6 @@
   <string name="do_extra_check">Fai un controllo ulteriore per evitare di mostrare file non validi</string>
   <string name="show_at_bottom">Mostra alcuni pulsanti azione in fondo allo schermo</string>
   <string name="show_recycle_bin">Mostra il cestino nella schermata delle cartelle</string>
-    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Miniature</string>
   <string name="fullscreen_media">Media a schermo intero</string>

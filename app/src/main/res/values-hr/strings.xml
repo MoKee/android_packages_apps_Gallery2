@@ -148,7 +148,6 @@
   <string name="do_extra_check">Napravite dodatnu provjeru da biste izbjegli prikazivanje nevažećih datoteka</string>
   <string name="show_at_bottom">Pokažite neke gumbe za radnju pri dnu zaslona</string>
   <string name="show_recycle_bin">Prikažite koš za smeće na zaslonu mapa</string>
-    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Sličice</string>
   <string name="fullscreen_media">Mediji na cijelom zaslonu</string>

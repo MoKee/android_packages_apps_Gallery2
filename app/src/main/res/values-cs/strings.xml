@@ -153,7 +153,6 @@
   <string name="show_recycle_bin">Zobrazit koš na obrazovce se složkami</string>
   <string name="deep_zoomable_images">Hluboko přiblížitelné obrázky</string>
   <string name="show_highest_quality">Zobrazit obrázky v nejvyšší možné kvalitě</string>
-    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Náhledy</string>
   <string name="fullscreen_media">Média přes celou obrazovku</string>
