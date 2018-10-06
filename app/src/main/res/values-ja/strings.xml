@@ -152,6 +152,7 @@
   <string name="show_at_bottom">画面下部にアクションボタンを表示する</string>
   <string name="show_recycle_bin">フォルダ画面にごみ箱を表示する</string>
   <string name="deep_zoomable_images">深くズーム可能な画像</string>
+    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <string name="show_highest_quality">できるだけ高画質に画像を表示する</string>
   <!-- Setting sections -->
   <string name="thumbnails">サムネイル設定</string>

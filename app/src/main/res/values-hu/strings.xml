@@ -153,6 +153,7 @@
   <string name="show_recycle_bin">A mappák képernyőjén jelenítse meg a Lomtárat</string>
   <string name="deep_zoomable_images">Mélyen nagyítható képek</string>
   <string name="show_highest_quality">Képek megjelenítése a lehető legmagasabb felbontásban</string>
+    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Indexképek</string>
   <string name="fullscreen_media">Teljes képernyős média</string>

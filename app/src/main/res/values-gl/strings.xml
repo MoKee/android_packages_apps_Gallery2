@@ -135,6 +135,7 @@
   <string name="allow_instant_change">Permitir o cambio instantáneo de medios pulsando nos lados da pantalla</string>
   <string name="hide_extended_details">Agochar detalles extendidos cando a barra de estado está oculta</string>
   <string name="do_extra_check">Facer unha comprobación extra para evitar mostrar ficheiros non válidos</string>
+    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Iconas</string>
   <string name="fullscreen_media">Medios a pantalla completa</string>

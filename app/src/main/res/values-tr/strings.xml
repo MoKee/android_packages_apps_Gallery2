@@ -151,6 +151,7 @@
   <string name="do_extra_check">Geçersiz dosyaları göstermekten kaçınmak için ekstra bir kontrol yapın</string>
   <string name="show_at_bottom">Ekranın altındaki bazı eylem tuşlarını göster</string>
   <string name="show_recycle_bin">Klasörler ekranındaki geri dönüşüm kutusu\'nu gösterme</string>
+    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Önizleme resimleri</string>
   <string name="fullscreen_media">Tam ekran medya</string>

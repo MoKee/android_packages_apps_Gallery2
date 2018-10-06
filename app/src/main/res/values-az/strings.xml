@@ -35,6 +35,7 @@
   <string name="group_by">Qruplaşdırın</string>
   <string name="by_date_taken">Çəkilmə tarixi</string>
   <!-- Settings -->
+    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <!-- Bottom actions -->
   <!-- FAQ -->

@@ -148,6 +148,7 @@
   <string name="do_extra_check">Gjør en ekstra sjekk for å unngå visning av ugyldige filer</string>
   <string name="show_at_bottom">Vis noen handlingsknapper nederst på skjermen</string>
   <string name="show_recycle_bin">Vis papirkurven på mappeskjermen</string>
+    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Minibilder</string>
   <string name="fullscreen_media">Mediavisning</string>

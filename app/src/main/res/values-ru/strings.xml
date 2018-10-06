@@ -153,6 +153,7 @@
   <string name="show_recycle_bin">Отображать корзину на экране папок</string>
   <string name="deep_zoomable_images">Масштабируемые изображения</string>
   <string name="show_highest_quality">Показывать изображения с максимально высоким качеством</string>
+    <string name="show_recycle_bin_last">Show the Recycle Bin as the last item on the main screen</string>
   <!-- Setting sections -->
   <string name="thumbnails">Миниатюры</string>
   <string name="fullscreen_media">Полноэкранный режим</string>
