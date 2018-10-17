@@ -768,7 +768,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
 
         val foldersToScan = mediaFetcher.getFoldersToScan()
         foldersToScan.add(FAVORITES)
-        if (config.showRecycleBinAtFolders) {
+        if (config.useRecycleBin && config.showRecycleBinAtFolders) {
             foldersToScan.add(RECYCLE_BIN)
         } else {
             foldersToScan.remove(RECYCLE_BIN)
@@ -833,8 +833,8 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     }
 
     private fun showSortedDirs(dirs: ArrayList<Directory>) {
-        var sortedDirs = getSortedDirectories(dirs)
-        sortedDirs = sortedDirs.distinctBy { it.path.getDistinctPath() } as ArrayList<Directory>
+        var sortedDirs = dirs.distinctBy { it.path.getDistinctPath() } as ArrayList<Directory>
+        sortedDirs = getSortedDirectories(sortedDirs)
 
         runOnUiThread {
             (directories_grid.adapter as? DirectoryAdapter)?.updateDirs(sortedDirs)
@@ -992,7 +992,10 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             config.lastBinCheck = System.currentTimeMillis()
             Handler().postDelayed({
                 Thread {
-                    mMediumDao.deleteOldRecycleBinItems(System.currentTimeMillis() - MONTH_MILLISECONDS)
+                    try {
+                        mMediumDao.deleteOldRecycleBinItems(System.currentTimeMillis() - MONTH_MILLISECONDS)
+                    } catch (e: Exception) {
+                    }
                 }.start()
             }, 3000L)
         }
