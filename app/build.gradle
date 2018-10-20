@@ -48,7 +48,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.1.4.1'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.1.6.1'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
     implementation 'androidx.multidex:multidex:2.0.0'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
@@ -70,7 +70,7 @@ dependencies {
     implementation 'com.github.tibbi:subsampling-scale-image-view:v3.10.1-fork'
 
     // implementation 'com.github.chrisbanes:PhotoView:2.1.4'
-    implementation 'com.github.tibbi:PhotoView:2.2.0-fork'
+    implementation 'com.github.tibbi:PhotoView:2.2.1-fork'
 }
 
 Properties props = new Properties()
