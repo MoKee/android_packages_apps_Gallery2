@@ -66,12 +66,13 @@ class DirectoryAdapter(activity: BaseSimpleActivity, var dirs: ArrayList<Directo
             return
         }
 
+        val isOneItemSelected = isOneItemSelected()
         menu.apply {
-            findItem(R.id.cab_rename).isVisible = isOneItemSelected() && !selectedPaths.contains(FAVORITES) && !selectedPaths.contains(RECYCLE_BIN)
-            findItem(R.id.cab_change_cover_image).isVisible = isOneItemSelected()
+            findItem(R.id.cab_rename).isVisible = isOneItemSelected && !selectedPaths.contains(FAVORITES) && !selectedPaths.contains(RECYCLE_BIN)
+            findItem(R.id.cab_change_cover_image).isVisible = isOneItemSelected
 
-            findItem(R.id.cab_empty_recycle_bin).isVisible = isOneItemSelected() && selectedPaths.first() == RECYCLE_BIN
-            findItem(R.id.cab_empty_disable_recycle_bin).isVisible = isOneItemSelected() && selectedPaths.first() == RECYCLE_BIN
+            findItem(R.id.cab_empty_recycle_bin).isVisible = isOneItemSelected && selectedPaths.first() == RECYCLE_BIN
+            findItem(R.id.cab_empty_disable_recycle_bin).isVisible = isOneItemSelected && selectedPaths.first() == RECYCLE_BIN
 
             checkHideBtnVisibility(this, selectedPaths)
             checkPinBtnVisibility(this, selectedPaths)
@@ -118,34 +119,14 @@ class DirectoryAdapter(activity: BaseSimpleActivity, var dirs: ArrayList<Directo
     }
 
     private fun checkHideBtnVisibility(menu: Menu, selectedPaths: ArrayList<String>) {
-        var hiddenCnt = 0
-        var unhiddenCnt = 0
-        selectedPaths.forEach {
-            if (File(it).doesThisOrParentHaveNoMedia()) {
-                hiddenCnt++
-            } else {
-                unhiddenCnt++
-            }
-        }
-
-        menu.findItem(R.id.cab_hide).isVisible = unhiddenCnt > 0
-        menu.findItem(R.id.cab_unhide).isVisible = hiddenCnt > 0
+        menu.findItem(R.id.cab_hide).isVisible = selectedPaths.any { !File(it).doesThisOrParentHaveNoMedia() }
+        menu.findItem(R.id.cab_unhide).isVisible = selectedPaths.any { File(it).doesThisOrParentHaveNoMedia() }
     }
 
     private fun checkPinBtnVisibility(menu: Menu, selectedPaths: ArrayList<String>) {
         val pinnedFolders = config.pinnedFolders
-        var pinnedCnt = 0
-        var unpinnedCnt = 0
-        selectedPaths.forEach {
-            if (pinnedFolders.contains(it)) {
-                pinnedCnt++
-            } else {
-                unpinnedCnt++
-            }
-        }
-
-        menu.findItem(R.id.cab_pin).isVisible = unpinnedCnt > 0
-        menu.findItem(R.id.cab_unpin).isVisible = pinnedCnt > 0
+        menu.findItem(R.id.cab_pin).isVisible = selectedPaths.any { !pinnedFolders.contains(it) }
+        menu.findItem(R.id.cab_unpin).isVisible = selectedPaths.any { pinnedFolders.contains(it) }
     }
 
     private fun showProperties() {
@@ -316,10 +297,9 @@ class DirectoryAdapter(activity: BaseSimpleActivity, var dirs: ArrayList<Directo
             config.removePinnedFolders(getSelectedPaths().toHashSet())
         }
 
+        currentDirectoriesHash = 0
         pinnedFolders = config.pinnedFolders
         listener?.recheckPinnedFolders()
-        notifyDataSetChanged()
-        finishActMode()
     }
 
     private fun copyMoveTo(isCopyOperation: Boolean) {
