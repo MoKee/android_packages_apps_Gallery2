@@ -153,6 +153,7 @@
   <string name="show_recycle_bin">Zobrazit koš na obrazovce se složkami</string>
   <string name="deep_zoomable_images">Hluboko přiblížitelné obrázky</string>
   <string name="show_highest_quality">Zobrazit obrázky v nejvyšší možné kvalitě</string>
+  <string name="show_recycle_bin_last">Zobrazit koš jako poslední položku na hlavní obrazovce</string>
   <!-- Setting sections -->
   <string name="thumbnails">Náhledy</string>
   <string name="fullscreen_media">Média přes celou obrazovku</string>
@@ -189,6 +190,8 @@
   <string name="faq_11_text">Ano, použitím funkce \"Seskupit podle\" na menu obrazovky s náhledy. Seskupení je možné na základě různých kritérií včetně data vytvoření. Pokud použijete funkci \"Zobrazit obsah všech složek\", uvidíte je seskupené také podle složek.</string>
   <string name="faq_12_title">Třídění podle data nefunguje správně, jak to mohu opravit?</string>
   <string name="faq_12_text">Je to pravděpodobně způsobeno tím, že jsou soubory někde zkopírovány. Můžete to vyřešit výběrem miniatur souborů a výběrem možnosti \"Oprava data vytvoření\".</string>
+  <string name="faq_13_title">Vidím nějaké barevné pruhy na obrázcích. Jak mohu zlepšit kvalitu?</string>
+  <string name="faq_14_title">Mám skrytý soubor/složku. Jak je zobrazím?</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Galerie na prohlížení obrázků a videí bez reklam.</string>

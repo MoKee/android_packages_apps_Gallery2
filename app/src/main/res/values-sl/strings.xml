@@ -157,6 +157,7 @@ Dodajanje predmetov tukaj, ne izključuje nobene druge mape.</string>
   <string name="show_recycle_bin">Pokaži koš za smeti na zaslonu z mapami</string>
   <string name="deep_zoomable_images">Globoko povečane slike</string>
   <string name="show_highest_quality">Prikaz slik v najvišji možni kakovosti</string>
+  <string name="show_recycle_bin_last">Pokaži koš za smeti kot zadnji element na glavnem zaslonu</string>
   <!-- Setting sections -->
   <string name="thumbnails">Sličice</string>
   <string name="fullscreen_media">Celozaslonski mediji</string>
@@ -195,6 +196,9 @@ Izboljšala se bo kakovost posnetkov, vendar se bodo močno zameglili, ko jih bo
   <string name="faq_11_text">Seveda samo s postavko menija »Razvrsti po« med prikazom sličic. Datoteke lahko združite po več kriterijih, vključno z datumom. Če uporabljate funkcijo »Pokaži vse mape«, jih lahko tudi združite z mapami.</string>
   <string name="faq_12_title">Sortiranje po datum posnetka ne deluje pravilno, kako lahko to popravim?</string>
   <string name="faq_12_text">Najverjetneje jo povzročajo datoteke, ki so bile kopirane od nekje. To lahko popravite tako, da izberete sličice datoteke in izberete \"Popravi datum posnetka\".</string>
+  <string name="faq_13_title">Na slikah vidim nekaj barvnih trakov. Kako lahko izboljšam kakovost?</string>
+  <string name="faq_14_title">Skril sem datoteko / mapo. Kako naj to razveljavim?</string>
+  <string name="faq_14_text">Na glavnem zaslonu lahko pritisnete gumb »Začasno prikaži skrite predmete« ali pa v nastavitvah aplikacije preklopite »Prikaži skrite predmete« in si oglejte skriti element. Če ga želite razkriti, ga preprosto pritisnite in izberite »ne skrij«. Mape so skrite tako, da jim dodate skrito datoteko.nomedia, lahko datoteko tudi izbrišete s katerimkoli datotečnim upraviteljem.</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Galerija za ogled fotografij in videoposnetkov brez oglasov.</string>
