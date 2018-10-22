@@ -73,6 +73,7 @@ class PhotoFragment : ViewPagerFragment() {
     private var storedAllowDeepZoomableImages = false
     private var storedShowHighestQuality = false
     private var storedAllowOneFingerZoom = false
+    private var mOriginalSubsamplingScale = 0f
     private var storedExtendedDetails = 0
 
     lateinit var view: ViewGroup
@@ -97,6 +98,20 @@ class PhotoFragment : ViewPagerFragment() {
                     } else {
                         photo_view.sendFakeClick(x, y)
                     }
+                }
+            }
+
+            if (context.config.allowDownGesture) {
+                gif_view.setOnTouchListener { v, event ->
+                    handleEvent(event)
+                    false
+                }
+
+                subsampling_view.setOnTouchListener { v, event ->
+                    if (view.subsampling_view.scale == mOriginalSubsamplingScale) {
+                        handleEvent(event)
+                    }
+                    false
                 }
             }
         }
@@ -383,6 +398,7 @@ class PhotoFragment : ViewPagerFragment() {
                     val useWidth = if (imageOrientation == ORIENTATION_ROTATE_90 || imageOrientation == ORIENTATION_ROTATE_270) sHeight else sWidth
                     val useHeight = if (imageOrientation == ORIENTATION_ROTATE_90 || imageOrientation == ORIENTATION_ROTATE_270) sWidth else sHeight
                     setDoubleTapZoomScale(getDoubleTapZoomScale(useWidth, useHeight))
+                    mOriginalSubsamplingScale = scale
                 }
 
                 override fun onTileLoadError(e: Exception?) {
