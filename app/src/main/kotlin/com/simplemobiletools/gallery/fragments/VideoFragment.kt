@@ -30,18 +30,14 @@ import com.simplemobiletools.gallery.R
 import com.simplemobiletools.gallery.activities.PanoramaVideoActivity
 import com.simplemobiletools.gallery.activities.VideoActivity
 import com.simplemobiletools.gallery.extensions.*
-import com.simplemobiletools.gallery.helpers.MEDIUM
-import com.simplemobiletools.gallery.helpers.MediaSideScroll
-import com.simplemobiletools.gallery.helpers.PATH
+import com.simplemobiletools.gallery.helpers.*
 import com.simplemobiletools.gallery.models.Medium
+import kotlinx.android.synthetic.main.bottom_video_time_holder.view.*
 import kotlinx.android.synthetic.main.pager_video_item.view.*
 import java.io.File
 
 class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, SeekBar.OnSeekBarChangeListener {
     private val PROGRESS = "progress"
-    private val MIN_SKIP_LENGTH = 2000
-    private val HIDE_PAUSE_DELAY = 2000L
-    private val PLAY_PAUSE_VISIBLE_ALPHA = 0.8f
 
     private var mTextureView: TextureView? = null
     private var mCurrTimeView: TextView? = null
@@ -50,7 +46,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
     private var mExoPlayer: SimpleExoPlayer? = null
     private var mVideoSize = Point(0, 0)
     private var mTimerHandler = Handler()
-    private var mHidePauseHandler = Handler()
+    private var mHidePlayPauseHandler = Handler()
 
     private var mIsPlaying = false
     private var mIsDragged = false
@@ -88,6 +84,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
             mTimeHolder = video_time_holder
             mBrightnessSideScroll = video_brightness_controller
             mVolumeSideScroll = video_volume_controller
+            mCurrTimeView = video_curr_time
         }
 
         storeStateVariables()
@@ -320,7 +317,6 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
 
         mTimeHolder.setPadding(left, top, right, bottom)
 
-        mCurrTimeView = mView!!.video_curr_time
         mSeekBar = mView!!.video_seekbar
         mSeekBar!!.setOnSeekBarChangeListener(this)
         mTimeHolder.beInvisibleIf(mIsFullscreen)
@@ -394,7 +390,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
             return
 
         mIsPlaying = !mIsPlaying
-        mHidePauseHandler.removeCallbacksAndMessages(null)
+        mHidePlayPauseHandler.removeCallbacksAndMessages(null)
         if (mIsPlaying) {
             playVideo()
         } else {
@@ -419,6 +415,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
         mIsPlaying = true
         mExoPlayer?.playWhenReady = true
         mView!!.video_play_outline.setImageResource(R.drawable.ic_pause)
+        mView!!.video_play_outline.alpha = PLAY_PAUSE_VISIBLE_ALPHA
         activity!!.window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         schedulePlayPauseFadeOut()
     }
@@ -440,10 +437,10 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
     }
 
     private fun schedulePlayPauseFadeOut() {
-        mHidePauseHandler.removeCallbacksAndMessages(null)
-        mHidePauseHandler.postDelayed({
+        mHidePlayPauseHandler.removeCallbacksAndMessages(null)
+        mHidePlayPauseHandler.postDelayed({
             mView!!.video_play_outline.animate().alpha(0f).start()
-        }, HIDE_PAUSE_DELAY)
+        }, HIDE_PLAY_PAUSE_DELAY)
     }
 
     private fun videoEnded() = mExoPlayer?.currentPosition ?: 0 >= mExoPlayer?.duration ?: 0
@@ -499,7 +496,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
         releaseExoPlayer()
         mSeekBar?.progress = 0
         mTimerHandler.removeCallbacksAndMessages(null)
-        mHidePauseHandler.removeCallbacksAndMessages(null)
+        mHidePlayPauseHandler.removeCallbacksAndMessages(null)
         mTextureView = null
     }
 
@@ -606,10 +603,10 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
         if (mExoPlayer == null)
             return
 
-        if (!mIsPlaying) {
-            togglePlayPause()
-        } else {
+        if (mIsPlaying) {
             mExoPlayer!!.playWhenReady = true
+        } else {
+            togglePlayPause()
         }
 
         mIsDragged = false

@@ -12,6 +12,7 @@ import android.widget.RelativeLayout
 import com.google.vr.sdk.widgets.pano.VrPanoramaEventListener
 import com.google.vr.sdk.widgets.pano.VrPanoramaView
 import com.simplemobiletools.commons.extensions.beVisible
+import com.simplemobiletools.commons.extensions.onGlobalLayout
 import com.simplemobiletools.commons.extensions.showErrorToast
 import com.simplemobiletools.commons.extensions.toast
 import com.simplemobiletools.commons.helpers.PERMISSION_WRITE_STORAGE
@@ -24,7 +25,7 @@ import kotlinx.android.synthetic.main.activity_panorama_photo.*
 open class PanoramaPhotoActivity : SimpleActivity() {
     private val CARDBOARD_DISPLAY_MODE = 3
 
-    private var isFullScreen = false
+    private var isFullscreen = false
     private var isExploreEnabled = true
     private var isRendering = false
 
@@ -131,7 +132,7 @@ open class PanoramaPhotoActivity : SimpleActivity() {
         }
 
         window.decorView.setOnSystemUiVisibilityChangeListener { visibility ->
-            isFullScreen = visibility and View.SYSTEM_UI_FLAG_FULLSCREEN != 0
+            isFullscreen = visibility and View.SYSTEM_UI_FLAG_FULLSCREEN != 0
             toggleButtonVisibility()
         }
     }
@@ -159,26 +160,30 @@ open class PanoramaPhotoActivity : SimpleActivity() {
     }
 
     private fun setupButtonMargins() {
+        val navBarHeight = navigationBarHeight
         (cardboard.layoutParams as RelativeLayout.LayoutParams).apply {
-            bottomMargin = navigationBarHeight
+            bottomMargin = navBarHeight
             rightMargin = navigationBarWidth
         }
 
         (explore.layoutParams as RelativeLayout.LayoutParams).bottomMargin = navigationBarHeight
+
+        cardboard.onGlobalLayout {
+            panorama_gradient_background.layoutParams.height = navBarHeight + cardboard.height
+        }
     }
 
     private fun toggleButtonVisibility() {
-        cardboard.animate().alpha(if (isFullScreen) 0f else 1f)
-        cardboard.isClickable = !isFullScreen
-
-        explore.animate().alpha(if (isFullScreen) 0f else 1f)
-        explore.isClickable = !isFullScreen
+        arrayOf(cardboard, explore, panorama_gradient_background).forEach {
+            it.animate().alpha(if (isFullscreen) 0f else 1f)
+            it.isClickable = !isFullscreen
+        }
     }
 
     private fun handleClick() {
-        isFullScreen = !isFullScreen
+        isFullscreen = !isFullscreen
         toggleButtonVisibility()
-        if (isFullScreen) {
+        if (isFullscreen) {
             hideSystemUI(false)
         } else {
             showSystemUI(false)
