@@ -24,6 +24,8 @@
   <string name="brightness">Luminosité</string>
   <string name="lock_orientation">Verrouiller la rotation</string>
   <string name="unlock_orientation">Déverrouiller la rotation</string>
+  <string name="change_orientation">Orientation</string>
+  <string name="force_portrait">Forcer la vue portrait</string>
   <string name="force_landscape">Paysage de force</string>
   <string name="use_default_orientation">Utiliser l\'orientation par défaut</string>
   <string name="fix_date_taken">Fixe Date Valeur prise</string>
@@ -33,6 +35,7 @@
   <string name="filter_media">Filtrer les médias</string>
   <string name="videos">Vidéos</string>
   <string name="gifs">GIF</string>
+  <string name="raw_images">Images RAW</string>
   <string name="no_media_with_filters">Aucun fichier média trouvé avec les filtres sélectionnés.</string>
   <string name="change_filters_underlined"><u>Changer les filtres</u></string>
   <!-- Hide / Exclude -->
@@ -144,6 +147,10 @@
   <string name="do_extra_check">Faire une vérification supplémentaire pour éviter de montrer des fichiers invalides</string>
   <string name="show_at_bottom">Afficher quelques boutons d\'action en bas de l\'écran</string>
   <string name="show_recycle_bin">Afficher la corbeille à l\'écran Dossiers</string>
+  <string name="deep_zoomable_images">Niveau de zoom maximal des images</string>
+  <string name="show_highest_quality">Afficher les images avec la meilleur qualité possible</string>
+  <string name="show_recycle_bin_last">Afficher la corbeille en dernière place sur l\'écran principal</string>
+  <string name="allow_down_gesture">Fermeture de la vue plein écran par un geste vers le bas</string>
   <!-- Setting sections -->
   <string name="thumbnails">Vignettes</string>
   <string name="fullscreen_media">Média plein écran</string>
@@ -179,6 +186,10 @@
   <string name="faq_11_text">Bien sûr, il vous suffit d\'utiliser l\'option de menu \"Grouper par\" lorsque vous êtes dans l\'affichage des vignettes. Vous pouvez regrouper les fichiers selon plusieurs critères, y compris la date de prise de vue. Si vous utilisez la fonction \"Afficher le contenu de tous les dossiers\", vous pouvez également les regrouper par dossiers.</string>
   <string name="faq_12_title">Le tri par date prise ne semble pas fonctionner correctement, comment puis-je le corriger ?</string>
   <string name="faq_12_text">Il est très probablement causé par les fichiers copiés quelque part. Vous pouvez le corriger en sélectionnant les vignettes du fichier et en sélectionnant \"Fix Date Taken value\".</string>
+  <string name="faq_13_title">Je vois des bandes de couleurs sur les images. Comment puis-je améliorer la qualité ?</string>
+  <string name="faq_13_text">La solution actuelle d\'affichage des images fonctionne bien dans la grande majorité des cas, mais si vous voulez une qualité d\'image encore meilleure, vous pouvez activer l\'option \"Afficher les images avec la plus haute qualité possible\" dans la section \"Niveau de zoom maximal des images\" des paramètres de l\'application.</string>
+  <string name="faq_14_title">J\'ai masqué un fichier ou un dossier. Comment puis-je en rétablir l\'affichage ?</string>
+  <string name="faq_14_text">Vous pouvez soit appuyer sur l\'option \"Afficher les fichiers masqués\" du menu de l\'écran principal, ou appuyer sur le bouton \"Afficher les éléments masqués\" dans les paramètres de l\'application. Si vous voulez rétablir leur affichage, effectuez un appui prolongé dessus et appuyez sur le symbole \"Œil\" permettant l\'affichage. Les dossiers sont masqués en ajoutant un fichier \".nomedia\" à leur racine, vous pouvez également supprimer ce fichier avec n\’importe quel explorateur de fichiers.</string>
   <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
   <!-- Short description has to have less than 80 chars -->
   <string name="app_short_description">Un album pour visionner photos et vidéos sans publicité.</string>
