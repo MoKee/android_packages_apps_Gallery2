@@ -158,6 +158,7 @@
   <string name="deep_zoomable_images">الصور القابلة للتكبير العميق</string>
   <string name="show_highest_quality">إظهار الصور في أعلى جودة ممكنة</string>
   <string name="show_recycle_bin_last">إظهار \"سلة المحذوفات\" كأخر عنصر في الشاشة الرئيسية</string>
+  <string name="allow_down_gesture">اسمح بإغلاق عرض ملء الشاشة باستخدام إيماءة سفلية</string>
   <!-- Setting sections -->
   <string name="thumbnails">المصغرات</string>
   <string name="fullscreen_media">وسائط ملء الشاشة</string>

@@ -154,6 +154,7 @@
   <string name="deep_zoomable_images">Mélyen nagyítható képek</string>
   <string name="show_highest_quality">Képek megjelenítése a lehető legmagasabb felbontásban</string>
   <string name="show_recycle_bin_last">A \"Lomtár\" a fő képernyő utolsó elemeként megjelenítésre kerül</string>
+  <string name="allow_down_gesture">Engedélyezi a teljes képernyős nézet lefelé mozdulattal való bezárását</string>
   <!-- Setting sections -->
   <string name="thumbnails">Indexképek</string>
   <string name="fullscreen_media">Teljes képernyős média</string>

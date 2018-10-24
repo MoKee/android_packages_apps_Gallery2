@@ -154,7 +154,7 @@
   <string name="deep_zoomable_images">Масштабируемые изображения</string>
   <string name="show_highest_quality">Показывать изображения с максимально высоким качеством</string>
   <string name="show_recycle_bin_last">Отображать корзину как последний объект на главном экране</string>
-  <string name="allow_down_gesture">Выходить из полноэкранного режима жестом вниз</string>
+  <string name="allow_down_gesture">Разрешить закрытие полноэкранного просмотра жестом вниз</string>
   <!-- Setting sections -->
   <string name="thumbnails">Миниатюры</string>
   <string name="fullscreen_media">Полноэкранный режим</string>
