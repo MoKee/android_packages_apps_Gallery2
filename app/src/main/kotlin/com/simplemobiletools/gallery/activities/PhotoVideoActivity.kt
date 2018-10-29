@@ -9,11 +9,13 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.WindowManager
 import com.simplemobiletools.commons.dialogs.PropertiesDialog
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.IS_FROM_GALLERY
 import com.simplemobiletools.commons.helpers.PERMISSION_WRITE_STORAGE
 import com.simplemobiletools.commons.helpers.REAL_FILE_PATH
+import com.simplemobiletools.commons.helpers.isPiePlus
 import com.simplemobiletools.gallery.R
 import com.simplemobiletools.gallery.extensions.*
 import com.simplemobiletools.gallery.fragments.PhotoFragment
@@ -62,25 +64,34 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
         mUri = intent.data ?: return
         if (intent.extras?.containsKey(REAL_FILE_PATH) == true) {
             val realPath = intent.extras.getString(REAL_FILE_PATH)
-            sendViewPagerIntent(realPath)
-            finish()
-            return
+            if (realPath?.getFilenameFromPath()?.contains('.') == true) {
+                sendViewPagerIntent(realPath)
+                finish()
+                return
+            }
         }
 
         mIsFromGallery = intent.getBooleanExtra(IS_FROM_GALLERY, false)
         if (mUri!!.scheme == "file") {
-            scanPathRecursively(mUri!!.path)
-            sendViewPagerIntent(mUri!!.path)
-            finish()
-            return
+            if (mUri!!.path?.getFilenameFromPath()?.contains('.') == true) {
+                scanPathRecursively(mUri!!.path)
+                sendViewPagerIntent(mUri!!.path)
+                finish()
+                return
+            }
         } else {
             val path = applicationContext.getRealPathFromURI(mUri!!) ?: ""
-            if (path != mUri.toString() && path.isNotEmpty() && mUri!!.authority != "mms") {
+            if (path != mUri.toString() && path.isNotEmpty() && mUri!!.authority != "mms" && mUri!!.path.getFilenameFromPath().contains('.')) {
                 scanPathRecursively(mUri!!.path)
                 sendViewPagerIntent(path)
                 finish()
                 return
             }
+        }
+
+        if (isPiePlus()) {
+            window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         }
 
         showSystemUI(true)
@@ -181,7 +192,8 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
     }
 
     private fun initBottomActionButtons() {
-        arrayListOf(bottom_favorite, bottom_delete, bottom_rotate, bottom_properties, bottom_change_orientation, bottom_slideshow, bottom_show_on_map, bottom_toggle_file_visibility).forEach {
+        arrayListOf(bottom_favorite, bottom_delete, bottom_rotate, bottom_properties, bottom_change_orientation, bottom_slideshow, bottom_show_on_map,
+                bottom_toggle_file_visibility, bottom_rename).forEach {
             it.beGone()
         }
 

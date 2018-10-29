@@ -8,6 +8,7 @@ import android.provider.MediaStore
 import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.adapters.MyRecyclerViewAdapter
@@ -81,7 +82,7 @@ class MediaAdapter(activity: BaseSimpleActivity, var media: MutableList<Thumbnai
             visibleItemPaths.add(tmbItem.path)
         }
 
-        val allowLongPress = !allowMultiplePicks && tmbItem is Medium
+        val allowLongPress = (!isAGetIntent || allowMultiplePicks) && tmbItem is Medium
         holder.bindView(tmbItem, tmbItem is Medium, allowLongPress) { itemView, adapterPosition ->
             if (tmbItem is Medium) {
                 setupThumbnail(itemView, tmbItem)
@@ -115,7 +116,7 @@ class MediaAdapter(activity: BaseSimpleActivity, var media: MutableList<Thumbnai
             findItem(R.id.cab_rename).isVisible = selectedItems.firstOrNull()?.getIsInRecycleBin() == false
             findItem(R.id.cab_open_with).isVisible = isOneItemSelected
             findItem(R.id.cab_confirm_selection).isVisible = isAGetIntent && allowMultiplePicks && selectedKeys.isNotEmpty()
-            findItem(R.id.cab_restore_recycle_bin_files).isVisible = selectedPaths.all { it.startsWith(activity.filesDir.absolutePath) }
+            findItem(R.id.cab_restore_recycle_bin_files).isVisible = selectedPaths.all { it.startsWith(activity.recycleBinPath) }
 
             checkHideBtnVisibility(this, selectedItems)
             checkFavoriteBtnVisibility(this, selectedItems)
@@ -277,9 +278,18 @@ class MediaAdapter(activity: BaseSimpleActivity, var media: MutableList<Thumbnai
     private fun copyMoveTo(isCopyOperation: Boolean) {
         val paths = getSelectedPaths()
 
-        val fileDirItems = paths.map {
+        val recycleBinPath = activity.recycleBinPath
+        val fileDirItems = paths.asSequence().filter { isCopyOperation || !it.startsWith(recycleBinPath) }.map {
             FileDirItem(it, it.getFilenameFromPath())
-        } as ArrayList
+        }.toMutableList() as ArrayList
+
+        if (!isCopyOperation && paths.any { it.startsWith(recycleBinPath) }) {
+            activity.toast(R.string.moving_recycle_bin_items_disabled, Toast.LENGTH_LONG)
+        }
+
+        if (fileDirItems.isEmpty()) {
+            return
+        }
 
         activity.tryCopyMoveFilesTo(fileDirItems, isCopyOperation) {
             config.tempFolderPath = ""
@@ -350,7 +360,7 @@ class MediaAdapter(activity: BaseSimpleActivity, var media: MutableList<Thumbnai
 
     private fun askConfirmDelete() {
         val items = resources.getQuantityString(R.plurals.delete_items, selectedKeys.size, selectedKeys.size)
-        val isRecycleBin = getSelectedPaths().first().startsWith(activity.filesDir.absolutePath)
+        val isRecycleBin = getSelectedPaths().first().startsWith(activity.recycleBinPath)
         val baseString = if (config.useRecycleBin && !isRecycleBin) R.string.move_to_recycle_bin_confirmation else R.string.deletion_confirmation
         val question = String.format(resources.getString(baseString), items)
         DeleteWithRememberDialog(activity, question) {

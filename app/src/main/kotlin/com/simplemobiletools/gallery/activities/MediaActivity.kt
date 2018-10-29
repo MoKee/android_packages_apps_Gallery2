@@ -249,11 +249,24 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
             R.id.stop_showing_hidden -> tryToggleTemporarilyShowHidden()
             R.id.increase_column_count -> increaseColumnCount()
             R.id.reduce_column_count -> reduceColumnCount()
+            R.id.slideshow -> startSlideshow()
             R.id.settings -> launchSettings()
 //            R.id.about -> launchAbout()
             else -> return super.onOptionsItemSelected(item)
         }
         return true
+    }
+
+    private fun startSlideshow() {
+        if (mMedia.isNotEmpty()) {
+            Intent(this, ViewPagerActivity::class.java).apply {
+                val item = mMedia.firstOrNull { it is Medium } as? Medium ?: return
+                putExtra(PATH, item.path)
+                putExtra(SHOW_ALL, mShowAll)
+                putExtra(SLIDESHOW_START_ON_ENTER, true)
+                startActivity(this)
+            }
+        }
     }
 
     private fun storeStateVariables() {
@@ -838,7 +851,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
             return
         }
 
-        if (config.useRecycleBin && !filtered.first().path.startsWith(filesDir.absolutePath)) {
+        if (config.useRecycleBin && !filtered.first().path.startsWith(recycleBinPath)) {
             val movingItems = resources.getQuantityString(R.plurals.moving_items_into_bin, filtered.size, filtered.size)
             toast(movingItems)
 

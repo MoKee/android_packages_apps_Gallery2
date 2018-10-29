@@ -25,6 +25,7 @@ import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import android.view.animation.DecelerateInterpolator
+import android.widget.Toast
 import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
 import com.simplemobiletools.commons.dialogs.PropertiesDialog
@@ -68,6 +69,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     private var mSlideshowMoveBackwards = false
     private var mSlideshowMedia = mutableListOf<Medium>()
     private var mAreSlideShowMediaVisible = false
+
     private var mIsOrientationLocked = false
 
     private var mMediaFiles = ArrayList<Medium>()
@@ -154,6 +156,78 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_viewpager, menu)
+        val currentMedium = getCurrentMedium() ?: return true
+        currentMedium.isFavorite = mFavoritePaths.contains(currentMedium.path)
+        val visibleBottomActions = if (config.bottomActions) config.visibleBottomActions else 0
+
+        menu.apply {
+            findItem(R.id.menu_show_on_map).isVisible = visibleBottomActions and BOTTOM_ACTION_SHOW_ON_MAP == 0
+            findItem(R.id.menu_slideshow).isVisible = visibleBottomActions and BOTTOM_ACTION_SLIDESHOW == 0
+            findItem(R.id.menu_properties).isVisible = visibleBottomActions and BOTTOM_ACTION_PROPERTIES == 0
+            findItem(R.id.menu_delete).isVisible = visibleBottomActions and BOTTOM_ACTION_DELETE == 0
+            findItem(R.id.menu_share).isVisible = visibleBottomActions and BOTTOM_ACTION_SHARE == 0
+            findItem(R.id.menu_edit).isVisible = visibleBottomActions and BOTTOM_ACTION_EDIT == 0 && !currentMedium.isSVG()
+            findItem(R.id.menu_rename).isVisible = visibleBottomActions and BOTTOM_ACTION_RENAME == 0 && !currentMedium.getIsInRecycleBin()
+            findItem(R.id.menu_rotate).isVisible = currentMedium.isImage() && visibleBottomActions and BOTTOM_ACTION_ROTATE == 0
+            findItem(R.id.menu_set_as).isVisible = visibleBottomActions and BOTTOM_ACTION_SET_AS == 0
+            findItem(R.id.menu_save_as).isVisible = mRotationDegrees != 0
+            findItem(R.id.menu_hide).isVisible = !currentMedium.isHidden() && visibleBottomActions and BOTTOM_ACTION_TOGGLE_VISIBILITY == 0 && !currentMedium.getIsInRecycleBin()
+            findItem(R.id.menu_unhide).isVisible = currentMedium.isHidden() && visibleBottomActions and BOTTOM_ACTION_TOGGLE_VISIBILITY == 0 && !currentMedium.getIsInRecycleBin()
+            findItem(R.id.menu_add_to_favorites).isVisible = !currentMedium.isFavorite && visibleBottomActions and BOTTOM_ACTION_TOGGLE_FAVORITE == 0
+            findItem(R.id.menu_remove_from_favorites).isVisible = currentMedium.isFavorite && visibleBottomActions and BOTTOM_ACTION_TOGGLE_FAVORITE == 0
+            findItem(R.id.menu_restore_file).isVisible = currentMedium.path.startsWith(recycleBinPath)
+            findItem(R.id.menu_change_orientation).isVisible = mRotationDegrees == 0 && visibleBottomActions and BOTTOM_ACTION_CHANGE_ORIENTATION == 0
+            findItem(R.id.menu_change_orientation).icon = resources.getDrawable(getChangeOrientationIcon())
+            findItem(R.id.menu_rotate).setShowAsAction(
+                    if (mRotationDegrees != 0) {
+                        MenuItem.SHOW_AS_ACTION_ALWAYS
+                    } else {
+                        MenuItem.SHOW_AS_ACTION_IF_ROOM
+                    })
+        }
+
+        if (visibleBottomActions != 0) {
+            updateBottomActionIcons(currentMedium)
+        }
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (getCurrentMedium() == null)
+            return true
+
+        when (item.itemId) {
+            R.id.menu_set_as -> setAs(getCurrentPath())
+            R.id.menu_slideshow -> initSlideshow()
+            R.id.menu_copy_to -> copyMoveTo(true)
+            R.id.menu_move_to -> copyMoveTo(false)
+            R.id.menu_open_with -> openPath(getCurrentPath(), true)
+            R.id.menu_hide -> toggleFileVisibility(true)
+            R.id.menu_unhide -> toggleFileVisibility(false)
+            R.id.menu_share -> shareMediumPath(getCurrentPath())
+            R.id.menu_delete -> checkDeleteConfirmation()
+            R.id.menu_rename -> renameFile()
+            R.id.menu_edit -> openEditor(getCurrentPath())
+            R.id.menu_properties -> showProperties()
+            R.id.menu_show_on_map -> showOnMap()
+            R.id.menu_rotate_right -> rotateImage(90)
+            R.id.menu_rotate_left -> rotateImage(270)
+            R.id.menu_rotate_one_eighty -> rotateImage(180)
+            R.id.menu_add_to_favorites -> toggleFavorite()
+            R.id.menu_remove_from_favorites -> toggleFavorite()
+            R.id.menu_restore_file -> restoreFile()
+            R.id.menu_force_portrait -> toggleOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+            R.id.menu_force_landscape -> toggleOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
+            R.id.menu_default_orientation -> toggleOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED)
+            R.id.menu_save_as -> saveImageAs()
+            R.id.menu_settings -> launchSettings()
+            else -> return super.onOptionsItemSelected(item)
+        }
+        return true
+    }
+
     private fun initViewPager() {
         measureScreen()
         val uri = intent.data
@@ -222,6 +296,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             if (!isDestroyed) {
                 if (mMediaFiles.isNotEmpty()) {
                     gotMedia(mMediaFiles as ArrayList<ThumbnailItem>)
+                    checkSlideshowOnEnter()
                 }
             }
         }
@@ -285,78 +360,6 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.menu_viewpager, menu)
-        val currentMedium = getCurrentMedium() ?: return true
-        currentMedium.isFavorite = mFavoritePaths.contains(currentMedium.path)
-        val visibleBottomActions = if (config.bottomActions) config.visibleBottomActions else 0
-
-        menu.apply {
-            findItem(R.id.menu_show_on_map).isVisible = visibleBottomActions and BOTTOM_ACTION_SHOW_ON_MAP == 0
-            findItem(R.id.menu_slideshow).isVisible = visibleBottomActions and BOTTOM_ACTION_SLIDESHOW == 0
-            findItem(R.id.menu_properties).isVisible = visibleBottomActions and BOTTOM_ACTION_PROPERTIES == 0
-            findItem(R.id.menu_delete).isVisible = visibleBottomActions and BOTTOM_ACTION_DELETE == 0
-            findItem(R.id.menu_share).isVisible = visibleBottomActions and BOTTOM_ACTION_SHARE == 0
-            findItem(R.id.menu_edit).isVisible = visibleBottomActions and BOTTOM_ACTION_EDIT == 0 && !currentMedium.isSVG()
-            findItem(R.id.menu_rename).isVisible = visibleBottomActions and BOTTOM_ACTION_RENAME == 0 && !currentMedium.getIsInRecycleBin()
-            findItem(R.id.menu_rotate).isVisible = currentMedium.isImage() && visibleBottomActions and BOTTOM_ACTION_ROTATE == 0
-            findItem(R.id.menu_set_as).isVisible = visibleBottomActions and BOTTOM_ACTION_SET_AS == 0
-            findItem(R.id.menu_save_as).isVisible = mRotationDegrees != 0
-            findItem(R.id.menu_hide).isVisible = !currentMedium.isHidden() && visibleBottomActions and BOTTOM_ACTION_TOGGLE_VISIBILITY == 0 && !currentMedium.getIsInRecycleBin()
-            findItem(R.id.menu_unhide).isVisible = currentMedium.isHidden() && visibleBottomActions and BOTTOM_ACTION_TOGGLE_VISIBILITY == 0 && !currentMedium.getIsInRecycleBin()
-            findItem(R.id.menu_add_to_favorites).isVisible = !currentMedium.isFavorite && visibleBottomActions and BOTTOM_ACTION_TOGGLE_FAVORITE == 0
-            findItem(R.id.menu_remove_from_favorites).isVisible = currentMedium.isFavorite && visibleBottomActions and BOTTOM_ACTION_TOGGLE_FAVORITE == 0
-            findItem(R.id.menu_restore_file).isVisible = currentMedium.path.startsWith(filesDir.absolutePath)
-            findItem(R.id.menu_change_orientation).isVisible = mRotationDegrees == 0 && visibleBottomActions and BOTTOM_ACTION_CHANGE_ORIENTATION == 0
-            findItem(R.id.menu_change_orientation).icon = resources.getDrawable(getChangeOrientationIcon())
-            findItem(R.id.menu_rotate).setShowAsAction(
-                    if (mRotationDegrees != 0) {
-                        MenuItem.SHOW_AS_ACTION_ALWAYS
-                    } else {
-                        MenuItem.SHOW_AS_ACTION_IF_ROOM
-                    })
-        }
-
-        if (visibleBottomActions != 0) {
-            updateBottomActionIcons(currentMedium)
-        }
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (getCurrentMedium() == null)
-            return true
-
-        when (item.itemId) {
-            R.id.menu_set_as -> setAs(getCurrentPath())
-            R.id.menu_slideshow -> initSlideshow()
-            R.id.menu_copy_to -> copyMoveTo(true)
-            R.id.menu_move_to -> copyMoveTo(false)
-            R.id.menu_open_with -> openPath(getCurrentPath(), true)
-            R.id.menu_hide -> toggleFileVisibility(true)
-            R.id.menu_unhide -> toggleFileVisibility(false)
-            R.id.menu_share -> shareMediumPath(getCurrentPath())
-            R.id.menu_delete -> checkDeleteConfirmation()
-            R.id.menu_rename -> renameFile()
-            R.id.menu_edit -> openEditor(getCurrentPath())
-            R.id.menu_properties -> showProperties()
-            R.id.menu_show_on_map -> showOnMap()
-            R.id.menu_rotate_right -> rotateImage(90)
-            R.id.menu_rotate_left -> rotateImage(270)
-            R.id.menu_rotate_one_eighty -> rotateImage(180)
-            R.id.menu_add_to_favorites -> toggleFavorite()
-            R.id.menu_remove_from_favorites -> toggleFavorite()
-            R.id.menu_restore_file -> restoreFile()
-            R.id.menu_force_portrait -> toggleOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
-            R.id.menu_force_landscape -> toggleOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
-            R.id.menu_default_orientation -> toggleOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED)
-            R.id.menu_save_as -> saveImageAs()
-            R.id.menu_settings -> launchSettings()
-            else -> return super.onOptionsItemSelected(item)
-        }
-        return true
-    }
-
     private fun updatePagerItems(media: MutableList<Medium>) {
         val pagerAdapter = MyPagerAdapter(this, supportFragmentManager, media)
         if (!isDestroyed) {
@@ -366,6 +369,12 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
                 removeOnPageChangeListener(this@ViewPagerActivity)
                 addOnPageChangeListener(this@ViewPagerActivity)
             }
+        }
+    }
+
+    private fun checkSlideshowOnEnter() {
+        if (intent.getBooleanExtra(SLIDESHOW_START_ON_ENTER, false)) {
+            initSlideshow()
         }
     }
 
@@ -444,9 +453,9 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     private fun slideshowEnded(forward: Boolean) {
         if (config.loopSlideshow) {
             if (forward) {
-                view_pager.setCurrentItem(view_pager.adapter!!.count - 1, false)
-            } else {
                 view_pager.setCurrentItem(0, false)
+            } else {
+                view_pager.setCurrentItem(view_pager.adapter!!.count - 1, false)
             }
         } else {
             stopSlideshow()
@@ -516,6 +525,11 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
 
     private fun copyMoveTo(isCopyOperation: Boolean) {
         val currPath = getCurrentPath()
+        if (!isCopyOperation && currPath.startsWith(recycleBinPath)) {
+            toast(R.string.moving_recycle_bin_items_disabled, Toast.LENGTH_LONG)
+            return
+        }
+
         val fileDirItems = arrayListOf(FileDirItem(currPath, currPath.getFilenameFromPath()))
         tryCopyMoveFilesTo(fileDirItems, isCopyOperation) {
             config.tempFolderPath = ""
@@ -586,7 +600,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             }
         }
 
-        val tmpPath = "${filesDir.absolutePath}/.tmp_${newPath.getFilenameFromPath()}"
+        val tmpPath = "$recycleBinPath/.tmp_${newPath.getFilenameFromPath()}"
         val tmpFileDirItem = FileDirItem(tmpPath, tmpPath.getFilenameFromPath())
         try {
             getFileOutputStream(tmpFileDirItem) {
@@ -990,7 +1004,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     }
 
     private fun gotMedia(thumbnailItems: ArrayList<ThumbnailItem>) {
-        val media = thumbnailItems.filter { it is Medium }.map { it as Medium } as ArrayList<Medium>
+        val media = thumbnailItems.asSequence().filter { it is Medium }.map { it as Medium }.toMutableList() as ArrayList<Medium>
         if (isDirEmpty(media) || media.hashCode() == mPrevHashcode) {
             return
         }
