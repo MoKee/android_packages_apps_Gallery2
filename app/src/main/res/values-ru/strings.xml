@@ -199,7 +199,7 @@
     <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
     <!-- Short description has to have less than 80 chars -->
     <string name="app_short_description">Галерея для просмотра изображений и видео. Без рекламы.</string>
-    <string name="app_long_description">Высоко настраиваемая галерея, способная отображать множество различных типов изображений и видео, включая SVG, RAW, панорамные фотографии и видео.
+    <string name="app_long_description">        Высоко настраиваемая галерея, способная отображать множество различных типов изображений и видео, включая SVG, RAW, панорамные фотографии и видео.
 
         Приложение с открытым исходным кодом, не содержит рекламы или ненужных разрешений.
 
@@ -223,7 +223,7 @@
 
         Разрешение отпечатка пальца необходимо для блокировки видимости скрытого элемента, всего приложения или защиты файлов от их удаления.
 
-        Это приложение - всего лишь одна часть большой серии приложений. Вы можете найти остальные из них по адресу https://www.simplemobiletools.com</string>
+        Это приложение - всего лишь одна часть большой серии приложений. Вы можете найти остальные из них по адресу https://www.simplemobiletools.com    </string>
     <!--
         Haven't found some strings? There's more at
         https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
