@@ -125,6 +125,7 @@
     <string name="by_extension">Estensione</string>
     <!-- Settings -->
     <string name="autoplay_videos">Riproduci i video automaticamente</string>
+    <string name="remember_last_video_position">Ricorda la posizione di riproduzione dell\'ultimo video</string>
     <string name="toggle_filename">Visibilità nome del file</string>
     <string name="loop_videos">Ripeti i video</string>
     <string name="animate_gifs">Anima le GIF in miniatura</string>
