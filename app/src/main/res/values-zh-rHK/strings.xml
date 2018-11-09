@@ -125,6 +125,7 @@
     <string name="by_extension">副檔名</string>
     <!-- Settings -->
     <string name="autoplay_videos">自動播放影片</string>
+    <string name="remember_last_video_position">記住上次影片播放位置</string>
     <string name="toggle_filename">顯示檔案名稱</string>
     <string name="loop_videos">影片循環播放</string>
     <string name="animate_gifs">縮圖顯示 GIF 動畫</string>

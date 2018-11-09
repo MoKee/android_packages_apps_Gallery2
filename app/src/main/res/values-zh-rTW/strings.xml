@@ -125,6 +125,7 @@
     <string name="by_extension">副檔名</string>
     <!-- Settings -->
     <string name="autoplay_videos">自動播放影片</string>
+    <string name="remember_last_video_position">記住上次影片播放位置</string>
     <string name="toggle_filename">顯示檔案名稱</string>
     <string name="loop_videos">影片循環播放</string>
     <string name="animate_gifs">縮圖顯示 GIF 動畫</string>
@@ -198,6 +199,32 @@
     <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
     <!-- Short description has to have less than 80 chars -->
     <string name="app_short_description">一個用來瀏覽相片和影片，且沒有廣告的相簿。</string>
+    <string name="app_long_description">一個高度可自訂的圖片庫，支援許多的圖像和影片類型，包括 SVG，RAW，全景照片和影片。
+
+        本應用程式為開放原始碼，無廣告以及不必要的權限。
+
+        列舉一些值得一提的功能：
+        1.搜尋
+        2.投影片
+        3.支援留海螢幕
+        4.固定資料夾到頂部
+        5.按類型過濾媒體檔案
+        6.回收桶 (可用於還原檔案)
+        7.全螢幕視圖方向鎖定
+        8.標註收藏檔案以便於存取
+        9.使用下滑手勢關閉全螢幕視圖
+        10.圖片編輯器，可用餘修改圖像和套用濾鏡
+        11.密碼保護，可用於保護應用程式和隱藏項目
+        12.可使用手勢或選單按鈕來更改縮略圖列數
+        13.可自訂全螢幕視圖中的底部操作按鈕，方便快速
+        14.在全螢幕視圖下顯示檔案屬性具有的擴充詳細資訊
+        15.按照不同的方式對項目進行排序或分組，包括遞增和遞減
+        16.隱藏資料夾 (會影響其他應用程式)，排除資料夾 (僅影響本應用程式)
+
+        如需鎖定隱藏項目的可見性，或是鎖定本應用程式，或是保護檔案不被刪除，則需要指紋權限。
+
+        此應用程式只是一個更大的應用程式系列的一小部分。您可以在 https://www.simplemobiletools.com 找到其他的應用程式。
+    </string>
     <!--
         Haven't found some strings? There's more at
         https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
