@@ -150,6 +150,11 @@
     <string name="do_extra_check">Gör en extra kontroll för att hindra ogiltiga filer från att visas</string>
     <string name="show_at_bottom">Visa några åtgärdsknappar längst ned på skärmen</string>
     <string name="show_recycle_bin">Visa Papperskorgen i mappvyn</string>
+    <string name="deep_zoomable_images">Djupt zoombara bilder</string>
+    <string name="show_highest_quality">Visa bilder i högsta möjliga kvalitet</string>
+    <string name="show_recycle_bin_last">Visa Papperskorgen som det sista objektet i huvudvyn</string>
+    <string name="allow_down_gesture">Allow closing the fullscreen view with a down gesture</string>
+
     <!-- Setting sections -->
     <string name="thumbnails">Miniatyrer</string>
     <string name="fullscreen_media">Visning av media i helskärmsläge</string>
