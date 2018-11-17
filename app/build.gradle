@@ -57,7 +57,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.3.9.1'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.3.17.2'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
     implementation 'androidx.multidex:multidex:2.0.0'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
