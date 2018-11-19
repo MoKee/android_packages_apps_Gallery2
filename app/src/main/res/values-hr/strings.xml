@@ -128,6 +128,7 @@
     <string name="animate_gifs">Prikaz animacije GIF-ova na sličicama</string>
     <string name="max_brightness">Maksimalna svjetlina pri pregledu datoteka</string>
     <string name="crop_thumbnails">Izreži sličice u kvadrate</string>
+    <string name="show_thumbnail_video_duration">Show video durations</string>
     <string name="screen_rotation_by">Rotiraj datoteku u punom zaslonu za</string>
     <string name="screen_rotation_system_setting">Postavke sustava</string>
     <string name="screen_rotation_device_rotation">Rotacija uređaja</string>

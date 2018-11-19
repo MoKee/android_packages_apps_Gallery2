@@ -117,8 +117,16 @@ class Config(context: Context) : BaseConfig(context) {
     }
 
     var excludedFolders: MutableSet<String>
-        get() = prefs.getStringSet(EXCLUDED_FOLDERS, HashSet<String>())
+        get() = prefs.getStringSet(EXCLUDED_FOLDERS, getDataFolder())
         set(excludedFolders) = prefs.edit().remove(EXCLUDED_FOLDERS).putStringSet(EXCLUDED_FOLDERS, excludedFolders).apply()
+
+    private fun getDataFolder(): Set<String> {
+        val folders = HashSet<String>()
+        val dataFolder = context.externalCacheDir?.parentFile?.parent?.trimEnd('/') ?: ""
+        if (dataFolder.endsWith("data"))
+            folders.add(dataFolder)
+        return folders
+    }
 
     fun addIncludedFolder(path: String) {
         val currIncludedFolders = HashSet<String>(includedFolders)
@@ -151,6 +159,10 @@ class Config(context: Context) : BaseConfig(context) {
     var cropThumbnails: Boolean
         get() = prefs.getBoolean(CROP_THUMBNAILS, true)
         set(cropThumbnails) = prefs.edit().putBoolean(CROP_THUMBNAILS, cropThumbnails).apply()
+
+    var showThumbnailVideoDuration: Boolean
+        get() = prefs.getBoolean(SHOW_THUMBNAIL_VIDEO_DURATION, false)
+        set(showThumbnailVideoDuration) = prefs.edit().putBoolean(SHOW_THUMBNAIL_VIDEO_DURATION, showThumbnailVideoDuration).apply()
 
     var screenRotation: Int
         get() = prefs.getInt(SCREEN_ROTATION, ROTATE_BY_SYSTEM_SETTING)
