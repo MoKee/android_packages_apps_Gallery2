@@ -1,6 +1,19 @@
 Changelog
 ==========
 
+Version 6.0.2 *(2018-11-19)*
+----------------------------
+
+ * Adding a crashfix related to showing video duration
+
+Version 6.0.1 *(2018-11-19)*
+----------------------------
+
+ * Added optional displaying video duration on thumbnails
+ * Fixed keeping last_modified value at copy/move in some cases
+ * Exclude the Data folder by default
+ * Many translation, UX and stability improvements
+
 Version 6.0.0 *(2018-11-04)*
 ----------------------------
 
