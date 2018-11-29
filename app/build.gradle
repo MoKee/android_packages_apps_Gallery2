@@ -18,7 +18,11 @@ android {
         versionCode 210
         versionName "6.0.2"
         multiDexEnabled true
-        setProperty("archivesBaseName", "gallery")
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "Gallery2.apk"
+            }
+        }
     }
 
     signingConfigs {
