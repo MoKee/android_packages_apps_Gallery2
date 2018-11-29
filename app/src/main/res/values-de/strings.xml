@@ -130,7 +130,6 @@
     <string name="animate_gifs">Kacheln von GIFs animieren</string>
     <string name="max_brightness">Helligkeit beim Betrachten maximieren</string>
     <string name="crop_thumbnails">Kacheln quadratisch zuschneiden</string>
-    <string name="show_thumbnail_video_duration">Show video durations</string>
     <string name="screen_rotation_by">Im Vollbild ausrichten nach:</string>
     <string name="screen_rotation_system_setting">Systemeinstellung</string>
     <string name="screen_rotation_device_rotation">Gerätedrehung</string>
@@ -156,9 +155,8 @@
     <string name="show_highest_quality">Zeige Bilder in der höchstmöglichen Qualität</string>
     <string name="show_recycle_bin_last">Zeige den Papierkorb als letztes Element auf dem Hauptbildschirm</string>
     <string name="allow_down_gesture">Erlaube das Schließen der Vollbildansicht mit einer Abwärtsgeste</string>
-
     <!-- Setting sections -->
-    <string name="thumbnails">Thumbnails</string>
+    <string name="thumbnails">Vorschau</string>
     <string name="fullscreen_media">Vollbild-Anzeige von Medien</string>
     <string name="extended_details">Erweiterte Details</string>
     <string name="bottom_actions">Funktionen am unteren Bildschirmrand</string>
