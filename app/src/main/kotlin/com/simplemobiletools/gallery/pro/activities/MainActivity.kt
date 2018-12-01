@@ -801,7 +801,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                     return
                 }
 
-                val curMedia = mediaFetcher.getFilesFrom(directory.path, getImagesOnly, getVideosOnly, getProperDateTaken, favoritePaths)
+                val curMedia = mediaFetcher.getFilesFrom(directory.path, getImagesOnly, getVideosOnly, getProperDateTaken, favoritePaths, false)
                 val newDir = if (curMedia.isEmpty()) {
                     if (directory.path != tempFolderPath) {
                         dirPathsToRemove.add(directory.path)
@@ -874,7 +874,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 return
             }
 
-            val newMedia = mediaFetcher.getFilesFrom(folder, getImagesOnly, getVideosOnly, getProperDateTaken, favoritePaths)
+            val newMedia = mediaFetcher.getFilesFrom(folder, getImagesOnly, getVideosOnly, getProperDateTaken, favoritePaths, false)
             if (newMedia.isEmpty()) {
                 continue
             }
@@ -928,15 +928,15 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     }
 
     private fun showSortedDirs(dirs: ArrayList<Directory>) {
-        val updatedDirs = getUniqueSortedDirs(dirs)
+        val updatedDirs = getUniqueSortedDirs(dirs).toMutableList() as ArrayList
         runOnUiThread {
             (directories_grid.adapter as? DirectoryAdapter)?.updateDirs(updatedDirs)
         }
     }
 
     private fun getUniqueSortedDirs(dirs: ArrayList<Directory>): ArrayList<Directory> {
-        val sortedDirs = dirs.distinctBy { it.path.getDistinctPath() } as ArrayList<Directory>
-        return getSortedDirectories(sortedDirs)
+        val distinctDirs = dirs.distinctBy { it.path.getDistinctPath() } as ArrayList<Directory>
+        return getSortedDirectories(distinctDirs)
     }
 
     private fun createDirectoryFromMedia(path: String, curMedia: ArrayList<Medium>, albumCovers: ArrayList<AlbumCover>, hiddenString: String,
