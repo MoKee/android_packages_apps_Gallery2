@@ -131,6 +131,7 @@
     <string name="animate_gifs">Küçük resimlerde GIF\'leri canlandırın</string>
     <string name="max_brightness">Ortam görüntülerken azami parlaklık</string>
     <string name="crop_thumbnails">Küçük resimleri karelere kırp</string>
+    <string name="show_thumbnail_video_duration">Video süreleri göster</string>
     <string name="screen_rotation_by">Tarafından tam ekran medyayı döndür</string>
     <string name="screen_rotation_system_setting">Sistem ayarı</string>
     <string name="screen_rotation_device_rotation">Cihaz döndürme</string>
