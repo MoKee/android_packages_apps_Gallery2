@@ -28,6 +28,8 @@
     <string name="rotate_right">Павярнуць направа</string>
     <string name="free_aspect_ratio">Вольна</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">Іншы</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="home_screen">Хатні экран</string>
     <string name="lock_screen">Экран блакіроўкі</string>

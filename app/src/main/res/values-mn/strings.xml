@@ -19,6 +19,7 @@
     <string name="rotate_right">Баруун эргүүлэх</string>
     <string name="free_aspect_ratio">Байхгүй</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <!-- Slideshow -->
     <string name="slideshow">Слайд харуулах</string>

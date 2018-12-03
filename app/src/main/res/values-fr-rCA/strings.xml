@@ -83,6 +83,8 @@
     <string name="edit_with">Éditer avec</string>
     <string name="free_aspect_ratio">Aucun</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">Autres</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="simple_wallpaper">Simple fond d\'écran</string>
     <string name="set_as_wallpaper">Définir comme fond d\'écran</string>

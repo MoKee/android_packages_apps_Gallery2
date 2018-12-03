@@ -23,6 +23,8 @@
     <string name="rotate_right">Rodar para a direita</string>
     <string name="free_aspect_ratio">Nenhum</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">Outro</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="home_screen">Ecrã Principal</string>
     <string name="lock_screen">Ecrã de Bloqueio</string>

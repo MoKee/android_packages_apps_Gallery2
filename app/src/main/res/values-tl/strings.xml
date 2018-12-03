@@ -22,6 +22,8 @@
     <string name="rotate_right">I-rotate pakanan</string>
     <string name="free_aspect_ratio">Wala</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">Iba pa</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="home_screen">Home screen</string>
     <string name="lock_screen">Lock screen</string>

@@ -19,6 +19,7 @@
     <string name="rotate_right">दायाँ घुमाउनुहोस्</string>
     <string name="free_aspect_ratio">कुनै पनि होइन</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <!-- Slideshow -->
     <string name="slideshow">स्लाइड प्रदर्शन</string>

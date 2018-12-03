@@ -23,6 +23,8 @@
     <string name="rotate_right">Завъртане надясно</string>
     <string name="free_aspect_ratio">Без</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">Други</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="home_screen">Начален екран</string>
     <string name="lock_screen">Екран за заключване</string>

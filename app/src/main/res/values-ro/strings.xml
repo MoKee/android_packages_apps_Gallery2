@@ -23,6 +23,8 @@
     <string name="rotate_right">Rotiţi spre dreapta</string>
     <string name="free_aspect_ratio">Niciunul</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">Altele</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="home_screen">Ecran principal</string>
     <string name="lock_screen">Ecranul de blocare</string>

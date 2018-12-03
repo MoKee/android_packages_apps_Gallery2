@@ -12,6 +12,7 @@
     <string name="rotate">Rrotullo</string>
     <string name="free_aspect_ratio">Asnjë</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <!-- Slideshow -->
     <!-- View types -->

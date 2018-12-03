@@ -20,6 +20,8 @@
     <string name="rotate_right">หมุนไปทางขวา</string>
     <string name="free_aspect_ratio">ไม่มี</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">อื่น ๆ</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="lock_screen">ล็อคหน้าจอ</string>
     <!-- Slideshow -->

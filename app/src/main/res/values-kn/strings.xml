@@ -21,6 +21,8 @@
     <string name="rotate_right">ಬಲಕ್ಕೆ ತಿರುಗಿಸಿ</string>
     <string name="free_aspect_ratio">ಯಾವುದೂ ಇಲ್ಲ</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">ಇತರೆ</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="home_screen">ಮುಖ್ಯ ಪರದೆ</string>
     <string name="lock_screen">ಪರದೆ ಲಾಕ್ ಮಾಡಿ</string>

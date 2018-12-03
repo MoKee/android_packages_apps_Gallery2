@@ -23,6 +23,8 @@
     <string name="rotate_right">오른쪽으로 회전</string>
     <string name="free_aspect_ratio">선택 안함</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">추가 사항</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <string name="home_screen">홈 화면</string>
     <string name="lock_screen">잠금화면</string>

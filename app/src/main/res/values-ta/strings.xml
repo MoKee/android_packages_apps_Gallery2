@@ -11,6 +11,8 @@
     <string name="rotate">சுழற்று</string>
     <string name="free_aspect_ratio">ஏதுமில்லை</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">பிற</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
     <!-- Set wallpaper -->
     <!-- Slideshow -->
     <!-- View types -->
