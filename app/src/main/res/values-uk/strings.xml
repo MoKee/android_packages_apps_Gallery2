@@ -85,8 +85,9 @@
     <string name="edit_with">Редагувати за допомогою</string>
     <string name="free_aspect_ratio">Вільне</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
-    <string name="other_aspect_ratio">Інший</string>
+    <string name="other_aspect_ratio">Інше</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
+
     <!-- Set wallpaper -->
     <string name="set_as_wallpaper">Встановити як шпалери</string>
     <string name="set_as_wallpaper_failed">Не вдалося встановити шпалери</string>
@@ -131,6 +132,7 @@
     <string name="animate_gifs">Анімувати ескізи GIF-файлів</string>
     <string name="max_brightness">Максимальна яскравість екрану при повноекранному перегляді медіафайлу</string>
     <string name="crop_thumbnails">Обрізати ескізи у квадрат</string>
+    <string name="show_thumbnail_video_duration">Показувати тривалість відео</string>
     <string name="screen_rotation_by">При повноекранному перегляді обертати за…</string>
     <string name="screen_rotation_system_setting">системними налаштуваннями</string>
     <string name="screen_rotation_device_rotation">поворотом пристрою</string>
