@@ -17,6 +17,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.MenuItemCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.simplemobiletools.commons.dialogs.ConfirmationDialog
 import com.simplemobiletools.commons.dialogs.CreateNewFolderDialog
 import com.simplemobiletools.commons.dialogs.FilePickerDialog
 import com.simplemobiletools.commons.extensions.*
@@ -356,8 +357,10 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         Thread {
             if (hasOTGConnected()) {
                 runOnUiThread {
-                    handleOTGPermission {
-                        config.addIncludedFolder(OTG_PATH)
+                    ConfirmationDialog(this, getString(R.string.otg_detected), positive = R.string.ok, negative = 0) {
+                        handleOTGPermission {
+                            config.addIncludedFolder(OTG_PATH)
+                        }
                     }
                 }
                 config.wasOTGHandled = true
@@ -954,10 +957,35 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
 
     private fun getDirsToShow(dirs: ArrayList<Directory>): ArrayList<Directory> {
         return if (config.groupDirectSubfolders) {
+            dirs.forEach {
+                it.subfoldersCount = 1
+                it.subfoldersMediaCount = it.mediaCnt
+            }
+
             val dirFolders = dirs.map { it.path }.sorted().toMutableSet() as HashSet<String>
             val foldersToShow = getDirectParentSubfolders(dirFolders)
-            dirs.filter { foldersToShow.contains(it.path) } as ArrayList<Directory>
+            val newDirs = dirs.filter { foldersToShow.contains(it.path) } as ArrayList<Directory>
+
+            // update the directory media counts, add all subfolder media counts to it
+            dirs.forEach {
+                val mainDir = it
+                var longestSharedPath = ""
+                newDirs.forEach {
+                    if (it.path != mainDir.path && mainDir.path.startsWith(it.path, true) && it.path.length > longestSharedPath.length) {
+                        it.subfoldersCount += 1
+                        longestSharedPath = it.path
+                    }
+                }
+
+                val mainFolder = newDirs.firstOrNull { it.path == longestSharedPath }
+                if (mainFolder != null) {
+                    mainFolder.subfoldersMediaCount += mainDir.mediaCnt
+                }
+            }
+
+            newDirs
         } else {
+            dirs.forEach { it.subfoldersMediaCount = it.mediaCnt }
             dirs
         }
     }
@@ -1000,15 +1028,18 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             initZoomListener()
             val fastscroller = if (config.scrollHorizontally) directories_horizontal_fastscroller else directories_vertical_fastscroller
             DirectoryAdapter(this, dirsToShow, this, directories_grid, isPickIntent(intent) || isGetAnyContentIntent(intent), fastscroller) {
-                val path = (it as Directory).path
-                if (path != config.tempFolderPath) {
-                    itemClicked(path)
+                val clickedDir = it as Directory
+                if (clickedDir.subfoldersCount == 1 || !config.groupDirectSubfolders) {
+                    val path = clickedDir.path
+                    if (path != config.tempFolderPath) {
+                        itemClicked(path)
+                    }
                 }
-                measureRecyclerViewContent(dirsToShow)
             }.apply {
                 setupZoomListener(mZoomListener)
                 directories_grid.adapter = this
             }
+            measureRecyclerViewContent(dirsToShow)
             setupScrollDirection()
         } else {
             if (textToSearch.isNotEmpty()) {
