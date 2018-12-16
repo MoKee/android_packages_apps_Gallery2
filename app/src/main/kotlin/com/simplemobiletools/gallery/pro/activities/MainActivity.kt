@@ -67,6 +67,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     private var mIsSearchOpen = false
     private var mLatestMediaId = 0L
     private var mLatestMediaDateId = 0L
+    private var mCurrentPathPrefix = ""     // used at "Group direct subfolders" for navigation
     private var mLastMediaHandler = Handler()
     private var mTempShowHiddenHandler = Handler()
     private var mZoomListener: MyRecyclerView.MyZoomListener? = null
@@ -920,8 +921,12 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         val currentPaths = LinkedHashSet<String>()
         folders.forEach {
             val path = it
-            if (path != internalPath && path != sdPath) {
-                if (folders.any { it != path && (File(path).parent == it || File(it).parent == File(path).parent) }) {
+            if (!path.equals(internalPath, true) && !path.equals(sdPath, true)) {
+                if (mCurrentPathPrefix.isNotEmpty()) {
+                    if (File(path).parent.equals(mCurrentPathPrefix, true) || path == mCurrentPathPrefix) {
+                        currentPaths.add(path)
+                    }
+                } else if (folders.any { !it.equals(path, true) && (File(path).parent.equals(it, true) || File(it).parent.equals(File(path).parent, true)) }) {
                     val parent = File(path).parent
                     currentPaths.add(parent)
                 } else {
@@ -934,10 +939,14 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         currentPaths.forEach {
             val path = it
             currentPaths.forEach {
-                if (it != path && File(it).parent == path) {
+                if (!it.equals(path) && File(it).parent.equals(path)) {
                     areDirectSubfoldersAvailable = true
                 }
             }
+        }
+
+        if (folders.size == currentPaths.size) {
+            return currentPaths
         }
 
         folders.clear()
@@ -958,35 +967,54 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     private fun getDirsToShow(dirs: ArrayList<Directory>): ArrayList<Directory> {
         return if (config.groupDirectSubfolders) {
             dirs.forEach {
-                it.subfoldersCount = 1
+                it.subfoldersCount = 0
                 it.subfoldersMediaCount = it.mediaCnt
             }
 
             val dirFolders = dirs.map { it.path }.sorted().toMutableSet() as HashSet<String>
             val foldersToShow = getDirectParentSubfolders(dirFolders)
-            val newDirs = dirs.filter { foldersToShow.contains(it.path) } as ArrayList<Directory>
+            val parentDirs = dirs.filter { foldersToShow.contains(it.path) } as ArrayList<Directory>
+            updateSubfolderCounts(dirs, parentDirs)
 
-            // update the directory media counts, add all subfolder media counts to it
-            dirs.forEach {
-                val mainDir = it
-                var longestSharedPath = ""
-                newDirs.forEach {
-                    if (it.path != mainDir.path && mainDir.path.startsWith(it.path, true) && it.path.length > longestSharedPath.length) {
-                        it.subfoldersCount += 1
-                        longestSharedPath = it.path
-                    }
-                }
-
-                val mainFolder = newDirs.firstOrNull { it.path == longestSharedPath }
-                if (mainFolder != null) {
-                    mainFolder.subfoldersMediaCount += mainDir.mediaCnt
+            // show the current folder as an available option too, not just subfolders
+            if (mCurrentPathPrefix.isNotEmpty()) {
+                val currentFolder = mDirs.firstOrNull { parentDirs.firstOrNull { it.path == mCurrentPathPrefix } == null && it.path == mCurrentPathPrefix }
+                currentFolder?.apply {
+                    subfoldersCount = 1
+                    parentDirs.add(this)
                 }
             }
 
-            newDirs
+            parentDirs
         } else {
             dirs.forEach { it.subfoldersMediaCount = it.mediaCnt }
             dirs
+        }
+    }
+
+    private fun updateSubfolderCounts(children: ArrayList<Directory>, parentDirs: ArrayList<Directory>) {
+        for (child in children) {
+            var longestSharedPath = ""
+            for (parentDir in parentDirs) {
+                if (parentDir.path == child.path) {
+                    longestSharedPath = child.path
+                    continue
+                }
+
+                if (child.path.startsWith(parentDir.path, true) && parentDir.path.length > longestSharedPath.length) {
+                    longestSharedPath = parentDir.path
+                }
+            }
+
+            // make sure we count only the proper direct subfolders, grouped the same way as on the main screen
+            parentDirs.firstOrNull { it.path == longestSharedPath }?.apply {
+                if (path.equals(child.path, true) || path.equals(File(child.path).parent, true) || children.any { it.path.equals(File(child.path).parent, true) }) {
+                    subfoldersCount++
+                    if (path != child.path) {
+                        subfoldersMediaCount += child.mediaCnt
+                    }
+                }
+            }
         }
     }
 
@@ -1029,11 +1057,14 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             val fastscroller = if (config.scrollHorizontally) directories_horizontal_fastscroller else directories_vertical_fastscroller
             DirectoryAdapter(this, dirsToShow, this, directories_grid, isPickIntent(intent) || isGetAnyContentIntent(intent), fastscroller) {
                 val clickedDir = it as Directory
+                val path = clickedDir.path
                 if (clickedDir.subfoldersCount == 1 || !config.groupDirectSubfolders) {
-                    val path = clickedDir.path
                     if (path != config.tempFolderPath) {
                         itemClicked(path)
                     }
+                } else {
+                    mCurrentPathPrefix = path
+                    setupAdapter(mDirs, "")
                 }
             }.apply {
                 setupZoomListener(mZoomListener)
