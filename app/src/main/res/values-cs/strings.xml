@@ -133,6 +133,7 @@
     <string name="animate_gifs">Animovat náhledy souborů GIF</string>
     <string name="max_brightness">Maximální jas při prohlížení médií přes celou obrazovku</string>
     <string name="crop_thumbnails">Oříznout miniatury na čtverce</string>
+    <string name="show_thumbnail_video_duration">Zobrazit dobu trvání videa</string>
     <string name="screen_rotation_by">Otočit média na celou obrazovku</string>
     <string name="screen_rotation_system_setting">Systémové nastavení</string>
     <string name="screen_rotation_device_rotation">Otáčení zařízení</string>
