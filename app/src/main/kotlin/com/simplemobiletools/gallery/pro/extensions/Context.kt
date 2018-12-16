@@ -1,5 +1,7 @@
 package com.simplemobiletools.gallery.pro.extensions
 
+import android.appwidget.AppWidgetManager
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
@@ -25,6 +27,7 @@ import com.simplemobiletools.gallery.pro.databases.GalleryDatabase
 import com.simplemobiletools.gallery.pro.helpers.*
 import com.simplemobiletools.gallery.pro.interfaces.DirectoryDao
 import com.simplemobiletools.gallery.pro.interfaces.MediumDao
+import com.simplemobiletools.gallery.pro.interfaces.WidgetsDao
 import com.simplemobiletools.gallery.pro.models.Directory
 import com.simplemobiletools.gallery.pro.models.Medium
 import com.simplemobiletools.gallery.pro.models.ThumbnailItem
@@ -103,6 +106,10 @@ fun Context.launchSettings() {
 val Context.config: Config get() = Config.newInstance(applicationContext)
 
 val Context.galleryDB: GalleryDatabase get() = GalleryDatabase.getInstance(applicationContext)
+
+val Context.widgetsDB: WidgetsDao get() = GalleryDatabase.getInstance(applicationContext).WidgetsDao()
+
+val Context.directoryDB: DirectoryDao get() = GalleryDatabase.getInstance(applicationContext).DirectoryDao()
 
 val Context.recycleBin: File get() = filesDir
 
@@ -234,10 +241,21 @@ fun Context.storeDirectoryItems(items: ArrayList<Directory>, directoryDao: Direc
 }
 
 fun Context.checkAppendingHidden(path: String, hidden: String, includedFolders: MutableSet<String>): String {
-    val dirName = when (path) {
+    val dirName = getFolderNameFromPath(path)
+    return if (File(path).doesThisOrParentHaveNoMedia() && !path.isThisOrParentIncluded(includedFolders)) {
+        "$dirName $hidden"
+    } else {
+        dirName
+    }
+}
+
+fun Context.getFolderNameFromPath(path: String): String {
+    return when (path) {
         internalStoragePath -> getString(R.string.internal)
         sdCardPath -> getString(R.string.sd_card)
         OTG_PATH -> getString(R.string.otg)
+        FAVORITES -> getString(R.string.favorites)
+        RECYCLE_BIN -> getString(R.string.recycle_bin)
         else -> {
             if (path.startsWith(OTG_PATH)) {
                 path.trimEnd('/').substringAfterLast('/')
@@ -245,12 +263,6 @@ fun Context.checkAppendingHidden(path: String, hidden: String, includedFolders: 
                 path.getFilenameFromPath()
             }
         }
-    }
-
-    return if (File(path).doesThisOrParentHaveNoMedia() && !path.isThisOrParentIncluded(includedFolders)) {
-        "$dirName $hidden"
-    } else {
-        dirName
     }
 }
 
@@ -481,4 +493,15 @@ fun Context.getUpdatedDeletedMedia(mediumDao: MediumDao): ArrayList<Medium> {
 
 fun Context.deleteDBPath(mediumDao: MediumDao, path: String) {
     mediumDao.deleteMediumPath(path.replaceFirst(recycleBinPath, RECYCLE_BIN))
+}
+
+fun Context.updateWidgets() {
+    val widgetIDs = AppWidgetManager.getInstance(applicationContext).getAppWidgetIds(ComponentName(applicationContext, MyWidgetProvider::class.java))
+    if (widgetIDs.isNotEmpty()) {
+        Intent(applicationContext, MyWidgetProvider::class.java).apply {
+            action = AppWidgetManager.ACTION_APPWIDGET_UPDATE
+            putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, widgetIDs)
+            sendBroadcast(this)
+        }
+    }
 }

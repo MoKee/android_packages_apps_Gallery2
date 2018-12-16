@@ -67,7 +67,8 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     private var mIsSearchOpen = false
     private var mLatestMediaId = 0L
     private var mLatestMediaDateId = 0L
-    private var mCurrentPathPrefix = ""     // used at "Group direct subfolders" for navigation
+    private var mCurrentPathPrefix = ""                 // used at "Group direct subfolders" for navigation
+    private var mOpenedSubfolders = arrayListOf("")     // used at "Group direct subfolders" for navigating Up with the back button
     private var mLastMediaHandler = Handler()
     private var mTempShowHiddenHandler = Handler()
     private var mZoomListener: MyRecyclerView.MyZoomListener? = null
@@ -144,6 +145,8 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 config.filterMedia += TYPE_SVGS
             }
         }
+
+        updateWidgets()
     }
 
     override fun onStart() {
@@ -240,6 +243,20 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             if (!config.showAll) {
                 GalleryDatabase.destroyInstance()
             }
+        }
+    }
+
+    override fun onBackPressed() {
+        if (config.groupDirectSubfolders) {
+            if (mCurrentPathPrefix.isEmpty()) {
+                super.onBackPressed()
+            } else {
+                mOpenedSubfolders.removeAt(mOpenedSubfolders.size - 1)
+                mCurrentPathPrefix = mOpenedSubfolders.last()
+                setupAdapter(mDirs)
+            }
+        } else {
+            super.onBackPressed()
         }
     }
 
@@ -806,7 +823,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 }
 
                 // we are looping through the already displayed folders looking for changes, do not do anything if nothing changed
-                if (directory == newDir) {
+                if (directory.copy(subfoldersCount = 0, subfoldersMediaCount = 0) == newDir) {
                     continue
                 }
 
@@ -1031,18 +1048,13 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             }
         }
 
-        val mediaTypes = curMedia.getDirMediaTypes()
-        val dirName = when (path) {
-            FAVORITES -> getString(R.string.favorites)
-            RECYCLE_BIN -> getString(R.string.recycle_bin)
-            else -> checkAppendingHidden(path, hiddenString, includedFolders)
-        }
-
         val firstItem = curMedia.first()
         val lastItem = curMedia.last()
+        val dirName = checkAppendingHidden(path, hiddenString, includedFolders)
         val lastModified = if (isSortingAscending) Math.min(firstItem.modified, lastItem.modified) else Math.max(firstItem.modified, lastItem.modified)
         val dateTaken = if (isSortingAscending) Math.min(firstItem.taken, lastItem.taken) else Math.max(firstItem.taken, lastItem.taken)
         val size = curMedia.sumByLong { it.size }
+        val mediaTypes = curMedia.getDirMediaTypes()
         return Directory(null, path, thumbnail, dirName, curMedia.size, lastModified, dateTaken, size, getPathLocation(path), mediaTypes)
     }
 
@@ -1064,6 +1076,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                     }
                 } else {
                     mCurrentPathPrefix = path
+                    mOpenedSubfolders.add(path)
                     setupAdapter(mDirs, "")
                 }
             }.apply {
