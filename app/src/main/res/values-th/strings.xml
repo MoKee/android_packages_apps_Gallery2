@@ -30,6 +30,7 @@
     <!-- Grouping at media thumbnails -->
     <string name="group_by">จัดกลุ่มตาม</string>
     <string name="by_date_taken">วันที่ถ่าย</string>
+    <!-- Widgets -->
     <!-- Settings -->
     <!-- Setting sections -->
     <!-- Bottom actions -->

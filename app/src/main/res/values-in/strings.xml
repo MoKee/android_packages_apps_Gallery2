@@ -87,6 +87,7 @@
     <string name="group_by">Kelompokkan menurut</string>
     <string name="by_folder">Folder</string>
     <string name="by_date_taken">Tanggal diambil</string>
+    <!-- Widgets -->
     <!-- Settings -->
     <string name="crop_thumbnails">Potong thumbnail menjadi kotak</string>
     <string name="screen_rotation_aspect_ratio">Aspek rasio</string>

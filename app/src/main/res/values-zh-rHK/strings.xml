@@ -125,6 +125,7 @@
     <string name="by_date_taken">拍攝日期</string>
     <string name="by_file_type">檔案類型</string>
     <string name="by_extension">副檔名</string>
+    <!-- Widgets -->
     <!-- Settings -->
     <string name="autoplay_videos">自動播放影片</string>
     <string name="remember_last_video_position">記住上次影片播放位置</string>
