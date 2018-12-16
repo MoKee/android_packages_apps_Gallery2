@@ -161,6 +161,7 @@ class WidgetConfigureActivity : SimpleActivity() {
     private fun updateFolderImage(folderPath: String) {
         mFolderPath = folderPath
         runOnUiThread {
+            folder_picker_value.text = getFolderNameFromPath(folderPath)
             config_folder_name.text = getFolderNameFromPath(folderPath)
         }
 
