@@ -130,6 +130,8 @@
     <string name="by_file_type">نوع الملف</string>
     <string name="by_extension">الإضافة</string>
     <!-- Widgets -->
+    <string name="folder_on_widget">المجلد الظاهر على الأدات المصغرة:</string>
+    <string name="show_folder_name">إظهار اسم المجلد</string>
     <!-- Settings -->
     <string name="autoplay_videos">تشغيل الفديوهات تلقائيا</string>
     <string name="remember_last_video_position">تذكر موقع اخر فيديو مشغل</string>
