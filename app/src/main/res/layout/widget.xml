@@ -10,13 +10,15 @@
         android:id="@+id/widget_imageview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/widget_folder_name"
+        android:paddingTop="@dimen/tiny_margin"
         tools:src="@mipmap/ic_launcher"/>
 
     <TextView
         android:id="@+id/widget_folder_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/widget_imageview"
+        android:layout_alignParentBottom="true"
         android:ellipsize="end"
         android:gravity="center"
         android:lines="1"
