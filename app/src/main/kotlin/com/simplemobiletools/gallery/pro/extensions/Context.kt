@@ -170,6 +170,10 @@ fun Context.getSortedDirectories(source: ArrayList<Directory>): ArrayList<Direct
             else -> o1.taken.compareTo(o2.taken)
         }
 
+        if (result == 0) {
+            result = AlphanumericComparator().compare(o1.path.toLowerCase(), o2.path.toLowerCase())
+        }
+
         if (sorting and SORT_DESCENDING != 0) {
             result *= -1
         }
@@ -371,7 +375,7 @@ fun Context.getFolderNameFromPath(path: String): String {
     return when (path) {
         internalStoragePath -> getString(R.string.internal)
         sdCardPath -> getString(R.string.sd_card)
-        OTG_PATH -> getString(R.string.otg)
+        OTG_PATH -> getString(R.string.usb)
         FAVORITES -> getString(R.string.favorites)
         RECYCLE_BIN -> getString(R.string.recycle_bin)
         else -> {

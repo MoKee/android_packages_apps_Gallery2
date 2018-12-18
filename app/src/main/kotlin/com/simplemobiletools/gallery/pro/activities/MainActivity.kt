@@ -375,7 +375,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         Thread {
             if (hasOTGConnected()) {
                 runOnUiThread {
-                    ConfirmationDialog(this, getString(R.string.otg_detected), positive = R.string.ok, negative = 0) {
+                    ConfirmationDialog(this, getString(R.string.usb_detected), positive = R.string.ok, negative = 0) {
                         handleOTGPermission {
                             config.addIncludedFolder(OTG_PATH)
                         }
@@ -1227,6 +1227,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             add(Release(201, R.string.release_201))
             add(Release(202, R.string.release_202))
             add(Release(206, R.string.release_206))
+            add(Release(213, R.string.release_213))
             checkWhatsNew(this, BuildConfig.VERSION_CODE)
         }
     }

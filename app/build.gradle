@@ -15,8 +15,8 @@ android {
         applicationId "com.simplemobiletools.gallery.pro"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 212
-        versionName "6.0.4"
+        versionCode 213
+        versionName "6.1.0"
         multiDexEnabled true
         android.applicationVariants.all { variant ->
             variant.outputs.all {
@@ -61,15 +61,15 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.5.16.2'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.5.18.1'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'androidx.multidex:multidex:2.0.0'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
     implementation 'com.google.android.exoplayer:exoplayer-core:2.9.2'
-    implementation 'com.google.vr:sdk-panowidget:1.170.0'
-    implementation 'com.google.vr:sdk-videowidget:1.170.0'
+    implementation 'com.google.vr:sdk-panowidget:1.180.0'
+    implementation 'com.google.vr:sdk-videowidget:1.180.0'
     implementation 'org.apache.sanselan:sanselan:0.97-incubator'
     implementation 'info.androidhive:imagefilters:1.0.7'
     implementation 'com.squareup.picasso:picasso:2.71828'
@@ -84,6 +84,6 @@ dependencies {
     //implementation 'com.github.tibbi:subsampling-scale-image-view:v3.10.1-fork'
     implementation 'com.github.tibbi:subsampling-scale-image-view:4.0.0'
 
-    // implementation 'com.github.chrisbanes:PhotoView:2.1.4'
-    implementation 'com.github.tibbi:PhotoView:2.2.1-fork'
+    // implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.github.tibbi:PhotoView:2.3.0-fork'
 }
