@@ -984,10 +984,12 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 }
             }.apply {
                 setupZoomListener(mZoomListener)
-                directories_grid.adapter = this
+                runOnUiThread {
+                    directories_grid.adapter = this
+                    setupScrollDirection()
+                }
             }
             measureRecyclerViewContent(dirsToShow)
-            setupScrollDirection()
         } else {
             if (textToSearch.isNotEmpty()) {
                 dirsToShow = dirsToShow.filter { it.name.contains(textToSearch, true) }.sortedBy { !it.name.startsWith(textToSearch, true) }.toMutableList() as ArrayList
