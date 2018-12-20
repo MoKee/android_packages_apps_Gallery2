@@ -15,6 +15,7 @@
     <string name="width">ಅಗಲ</string>
     <string name="height">ಎತ್ತರ</string>
     <!-- Editor -->
+    <string name="save">ಉಳಿಸಿ</string>
     <string name="rotate">ತಿರುಗಿಸು</string>
     <string name="path">ಪಥ</string>
     <string name="rotate_left">ಎಡಕ್ಕೆ ತಿರುಗಿಸಿ</string>
