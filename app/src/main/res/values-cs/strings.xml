@@ -126,6 +126,8 @@
     <string name="by_file_type">Typ souboru</string>
     <string name="by_extension">Přípona</string>
     <!-- Widgets -->
+    <string name="folder_on_widget">Složka zobrazená na widgetu:</string>
+    <string name="show_folder_name">Zobrazit název složky</string>
     <!-- Settings -->
     <string name="autoplay_videos">Automaticky přehrávat videa</string>
     <string name="remember_last_video_position">Zapamatovat pozici posledního přehraného videa</string>
