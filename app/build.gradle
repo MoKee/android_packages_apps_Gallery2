@@ -15,8 +15,8 @@ android {
         applicationId "com.simplemobiletools.gallery.pro"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 214
-        versionName "6.1.1"
+        versionCode 215
+        versionName "6.1.2"
         multiDexEnabled true
         android.applicationVariants.all { variant ->
             variant.outputs.all {
@@ -61,9 +61,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.5.18.1'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.6.0.1'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
-    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
@@ -82,7 +82,7 @@ dependencies {
 
     //implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
     //implementation 'com.github.tibbi:subsampling-scale-image-view:v3.10.1-fork'
-    implementation 'com.github.tibbi:subsampling-scale-image-view:fcb724fb0a'
+    implementation 'com.github.tibbi:subsampling-scale-image-view:4.0.1'
 
     // implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'com.github.tibbi:PhotoView:2.3.0-fork'
