@@ -126,6 +126,8 @@
     <string name="by_file_type">檔案類型</string>
     <string name="by_extension">副檔名</string>
     <!-- Widgets -->
+    <string name="folder_on_widget">小工具上顯示的資料夾：</string>
+    <string name="show_folder_name">顯示資料夾名稱</string>
     <!-- Settings -->
     <string name="autoplay_videos">自動播放影片</string>
     <string name="remember_last_video_position">記住上次影片播放位置</string>
