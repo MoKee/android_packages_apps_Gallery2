@@ -32,7 +32,6 @@ class SettingsActivity : SimpleActivity() {
     override fun onResume() {
         super.onResume()
 
-        setupCustomizeColors()
         setupUseEnglish()
         setupManageIncludedFolders()
         setupManageExcludedFolders()
@@ -84,12 +83,6 @@ class SettingsActivity : SimpleActivity() {
         arrayListOf(visibility_label, videos_label, thumbnails_label, scrolling_label, fullscreen_media_label, security_label,
                 file_operations_label, deep_zoomable_images_label, extended_details_label, bottom_actions_label, recycle_bin_label).forEach {
             it.setTextColor(adjustedPrimaryColor)
-        }
-    }
-
-    private fun setupCustomizeColors() {
-        settings_customize_colors_holder.setOnClickListener {
-            startCustomizationActivity()
         }
     }
 
