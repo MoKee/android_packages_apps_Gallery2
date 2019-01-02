@@ -33,6 +33,7 @@
     <string name="dates_fixed_successfully">Dates corrigées</string>
     <!-- Filter -->
     <string name="filter_media">Filtrer les médias</string>
+    <string name="images">Images</string>
     <string name="videos">Vidéos</string>
     <string name="gifs">GIF</string>
     <string name="raw_images">Images RAW</string>
