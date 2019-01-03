@@ -153,7 +153,7 @@ class Config(context: Context) : BaseConfig(context) {
         set(includedFolders) = prefs.edit().remove(INCLUDED_FOLDERS).putStringSet(INCLUDED_FOLDERS, includedFolders).apply()
 
     var autoplayVideos: Boolean
-        get() = prefs.getBoolean(AUTOPLAY_VIDEOS, false)
+        get() = prefs.getBoolean(AUTOPLAY_VIDEOS, true)
         set(autoplay) = prefs.edit().putBoolean(AUTOPLAY_VIDEOS, autoplay).apply()
 
     var animateGifs: Boolean
@@ -280,14 +280,6 @@ class Config(context: Context) : BaseConfig(context) {
     var slideshowInterval: Int
         get() = prefs.getInt(SLIDESHOW_INTERVAL, SLIDESHOW_DEFAULT_INTERVAL)
         set(slideshowInterval) = prefs.edit().putInt(SLIDESHOW_INTERVAL, slideshowInterval).apply()
-
-    var slideshowIncludePhotos: Boolean
-        get() = prefs.getBoolean(SLIDESHOW_INCLUDE_PHOTOS, true)
-        set(slideshowIncludePhotos) = prefs.edit().putBoolean(SLIDESHOW_INCLUDE_PHOTOS, slideshowIncludePhotos).apply()
-
-    var slideshowIncludeVideos: Boolean
-        get() = prefs.getBoolean(SLIDESHOW_INCLUDE_VIDEOS, false)
-        set(slideshowIncludeVideos) = prefs.edit().putBoolean(SLIDESHOW_INCLUDE_VIDEOS, slideshowIncludeVideos).apply()
 
     var slideshowIncludeGIFs: Boolean
         get() = prefs.getBoolean(SLIDESHOW_INCLUDE_GIFS, false)
