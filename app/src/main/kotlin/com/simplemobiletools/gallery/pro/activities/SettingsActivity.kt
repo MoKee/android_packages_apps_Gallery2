@@ -64,6 +64,7 @@ class SettingsActivity : SimpleActivity() {
         setupAllowZoomingImages()
         setupShowHighestQuality()
         setupOneFingerZoom()
+        setupAllowOneToOneZoom()
         setupAllowInstantChange()
         setupShowExtendedDetails()
         setupHideExtendedDetails()
@@ -370,6 +371,7 @@ class SettingsActivity : SimpleActivity() {
     private fun updateDeepZoomToggleButtons() {
         settings_one_finger_zoom_holder.beVisibleIf(config.allowZoomingImages)
         settings_show_highest_quality_holder.beVisibleIf(config.allowZoomingImages)
+        settings_allow_one_to_one_zoom_holder.beVisibleIf(config.allowZoomingImages)
     }
 
     private fun setupShowHighestQuality() {
@@ -385,6 +387,14 @@ class SettingsActivity : SimpleActivity() {
         settings_one_finger_zoom_holder.setOnClickListener {
             settings_one_finger_zoom.toggle()
             config.oneFingerZoom = settings_one_finger_zoom.isChecked
+        }
+    }
+
+    private fun setupAllowOneToOneZoom() {
+        settings_allow_one_to_one_zoom.isChecked = config.allowOneToOneZoom
+        settings_allow_one_to_one_zoom_holder.setOnClickListener {
+            settings_allow_one_to_one_zoom.toggle()
+            config.allowOneToOneZoom = settings_allow_one_to_one_zoom.isChecked
         }
     }
 
