@@ -1,5 +1,7 @@
 package com.simplemobiletools.gallery.pro.activities
 
+import android.app.Activity
+import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.content.res.Configuration
 import android.graphics.Color
@@ -161,6 +163,12 @@ open class VideoPlayerActivity : SimpleActivity(), SeekBar.OnSeekBarChangeListen
         video_curr_time.setOnClickListener { skip(false) }
         video_duration.setOnClickListener { skip(true) }
         video_toggle_play_pause.setOnClickListener { togglePlayPause() }
+
+        video_next_file.beVisibleIf(intent.getBooleanExtra(SHOW_NEXT_ITEM, false))
+        video_next_file.setOnClickListener { handleNextFile() }
+
+        video_prev_file.beVisibleIf(intent.getBooleanExtra(SHOW_PREV_ITEM, false))
+        video_prev_file.setOnClickListener { handlePrevFile() }
 
         video_player_holder.setOnTouchListener { view, event ->
             handleEvent(event)
@@ -419,11 +427,11 @@ open class VideoPlayerActivity : SimpleActivity(), SeekBar.OnSeekBarChangeListen
         }
 
         val newAlpha = if (isFullScreen) 0f else 1f
-        arrayOf(video_toggle_play_pause, video_curr_time, video_seekbar, video_duration, top_shadow, video_bottom_gradient).forEach {
+        arrayOf(video_prev_file, video_toggle_play_pause, video_next_file, video_curr_time, video_seekbar, video_duration, top_shadow, video_bottom_gradient).forEach {
             it.animate().alpha(newAlpha).start()
         }
         video_seekbar.setOnSeekBarChangeListener(if (mIsFullscreen) null else this)
-        arrayOf(video_curr_time, video_duration).forEach {
+        arrayOf(video_prev_file, video_next_file, video_curr_time, video_duration).forEach {
             it.isClickable = !mIsFullscreen
         }
     }
@@ -538,6 +546,22 @@ open class VideoPlayerActivity : SimpleActivity(), SeekBar.OnSeekBarChangeListen
                 mIsDragged = false
             }
         }
+    }
+
+    private fun handleNextFile() {
+        Intent().apply {
+            putExtra(GO_TO_NEXT_ITEM, true)
+            setResult(Activity.RESULT_OK, this)
+        }
+        finish()
+    }
+
+    private fun handlePrevFile() {
+        Intent().apply {
+            putExtra(GO_TO_PREV_ITEM, true)
+            setResult(Activity.RESULT_OK, this)
+        }
+        finish()
     }
 
     private fun resetPlayWhenReady() {
