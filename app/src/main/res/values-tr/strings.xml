@@ -126,6 +126,8 @@
     <string name="by_file_type">Dosya tipi</string>
     <string name="by_extension">Eklenti</string>
     <!-- Widgets -->
+    <string name="folder_on_widget">Witged öğesinde gösterilen klasör:</string>
+    <string name="show_folder_name">Klasör adını göster</string>
     <!-- Settings -->
     <string name="autoplay_videos">Videoları otomatik olarak oynat</string>
     <string name="remember_last_video_position">Son video oynatma konumunu hatırla</string>
@@ -179,6 +181,7 @@
     <string name="faq_3_text">İstediğiniz albüme uzun süre basabilir ve aksiyon menüsündeki Pin simgesini seçebilir, bu da en üste sabitleyecektir. Birden çok klasörü de sabitleyebilirsiniz, sabitlenmiş öğeler varsayılan sıralama yöntemine göre sıralanır.</string>
     <string name="faq_4_title">Videoları nasıl hızlı ileri sürdürebilirim?</string>
     <string name="faq_4_text">Videoyu geriye ya da ileriye taşıyacak olan arama çubuğunun yakınındaki geçerli veya maksimum süre metinlerini tıklayabilirsiniz.</string>
+    <string name="faq_4_text_old">Videoyu geriye ya da ileriye taşıyacak olan arama çubuğunun yakınındaki geçerli veya maksimum süre metinlerini tıklayabilirsiniz.</string>
     <string name="faq_5_title">Klasörün gizlenmesi ve hariç tutulması arasındaki fark nedir?</string>
     <string name="faq_5_text">Gizle, klasörü yalnızca Simple Galeri\'de görüntülemeyi engellerken, Gizle sistem genelinde çalışır ve klasörü diğer galerilerden gizler. Verilen klasörde boş bir \".nomedia\" dosyası oluşturarak çalışır, daha sonra herhangi bir dosya yöneticisi ile kaldırabilirsiniz.</string>
     <string name="faq_6_title">Neden müzik kapaklı sanat veya çıkartma içeren klasörler görünür?</string>
