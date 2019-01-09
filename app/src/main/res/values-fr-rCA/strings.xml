@@ -21,6 +21,7 @@
     <string name="change_cover_image">Changer l\'image de couverture</string>
     <string name="select_photo">Sélectionner photo</string>
     <string name="use_default">Utiliser par défaut</string>
+    <string name="volume">Volume</string>
     <string name="brightness">Luminosité</string>
     <string name="lock_orientation">Verrouiller la rotation</string>
     <string name="unlock_orientation">Déverrouiller la rotation</string>
@@ -33,9 +34,11 @@
     <string name="dates_fixed_successfully">Dates fixées avec succès</string>
     <!-- Filter -->
     <string name="filter_media">Filtrer les médias</string>
+    <string name="images">Images</string>
     <string name="videos">Vidéos</string>
     <string name="gifs">GIF</string>
     <string name="raw_images">Images RAW</string>
+    <string name="svgs">SVGs</string>
     <string name="no_media_with_filters">Aucun fichier média trouvé avec les filtres sélectionnés.</string>
     <string name="change_filters_underlined"><u>Changer les filtres</u></string>
     <!-- Hide / Exclude -->
@@ -109,6 +112,7 @@
     <string name="loop_slideshow">Diaporama en boucle</string>
     <string name="slideshow_ended">Diaporama terminé</string>
     <string name="no_media_for_slideshow">Aucun média trouvé pour le diaporama</string>
+    <string name="use_crossfade_animation">Utiliser un fondu d\'animation</string>
     <!-- View types -->
     <string name="change_view_type">Changer le type de vue</string>
     <string name="grid">Grille</string>
@@ -121,14 +125,19 @@
     <string name="by_last_modified">Dernière modification</string>
     <string name="by_date_taken">Date de création</string>
     <string name="by_file_type">Type de fichier</string>
+    <string name="by_extension">Extension</string>
     <!-- Widgets -->
+    <string name="folder_on_widget">Afficher le dossier sur le Widget:</string>
+    <string name="show_folder_name">Afficher le nom du dossier</string>
     <!-- Settings -->
     <string name="autoplay_videos">Lecture automatique des vidéos</string>
+    <string name="remember_last_video_position">Se rappeler de la position de lecture vidéo</string>
     <string name="toggle_filename">Permuter la visibilité des noms de fichier</string>
     <string name="loop_videos">Lire en boucle les vidéos</string>
     <string name="animate_gifs">GIF animés sur les miniatures</string>
     <string name="max_brightness">Luminosité maximale lors de l\'affichage de media</string>
     <string name="crop_thumbnails">Rogner les miniatures en carrés</string>
+    <string name="show_thumbnail_video_duration">Afficher la durée de la vidéo</string>
     <string name="screen_rotation_by">Pivoter les medias plein écran selon</string>
     <string name="screen_rotation_system_setting">Paramètres système</string>
     <string name="screen_rotation_device_rotation">Rotation de l\'appareil</string>
@@ -154,6 +163,7 @@
     <string name="show_highest_quality">Afficher les images avec la meilleur qualité possible</string>
     <string name="show_recycle_bin_last">Afficher la corbeille en dernière place sur l\'écran principal</string>
     <string name="allow_down_gesture">Fermeture de la vue plein écran par un geste vers le bas</string>
+    <string name="allow_one_to_one_zoom">Permettre le zoom avant 1:1 avec le double-tape</string>
     <!-- Setting sections -->
     <string name="thumbnails">Vignettes</string>
     <string name="fullscreen_media">Média plein écran</string>
@@ -173,6 +183,7 @@
     <string name="faq_3_text">Vous avez juste à faire un appui long sur l\'album en question et choisir l\'icône « Epingler » dans le menu d\'actions. Vous pouvez en épingler plusieurs, les éléments épinglés seront alors triés dans l\'ordre par défaut.</string>
     <string name="faq_4_title">Comment avancer rapidement dans les vidéos ?</string>
     <string name="faq_4_text">Vous pouvez appuyer sur le temps actuel ou la durée totale de la vidéo sur la barre de progression, la vidéo reculera ou avancera selon votre choix.</string>
+    <string name="faq_4_text_old">Vous pouvez appuyer sur le temps actuel ou la durée totale de la vidéo sur la barre de progression, la vidéo reculera ou avancera selon votre choix.</string>
     <string name="faq_5_title">Quelle est la différence entre cacher et exclure un répertoire ?</string>
     <string name="faq_5_text">Exclure n\'affiche pas le dossier dans Simple Galerie uniquement, alors que Cacher le cache pour l\'intégralité du système, y compris les autres galeries. Dans le dernier cas, un fichier \".nomedia\" est créé dans le répertoire caché, et peut s\'enlever avec n\'importe quel explorateur de fichiers.</string>
     <string name="faq_6_title">Pourquoi des répertoires avec des pochettes d\'albums musicaux ou des miniatures d\'images sont affichés ?</string>
