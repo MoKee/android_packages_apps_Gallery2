@@ -15,8 +15,8 @@ android {
         applicationId "com.simplemobiletools.gallery.pro"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 219
-        versionName "6.2.1"
+        versionCode 220
+        versionName "6.2.2"
         multiDexEnabled true
         android.applicationVariants.all { variant ->
             variant.outputs.all {
@@ -82,7 +82,7 @@ dependencies {
 
     //implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
     //implementation 'com.github.tibbi:subsampling-scale-image-view:v3.10.1-fork'
-    implementation 'com.github.tibbi:subsampling-scale-image-view:7a000e651e'
+    implementation 'com.github.tibbi:subsampling-scale-image-view:9e9a393cc3'
 
     // implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'com.github.tibbi:PhotoView:2.3.0-fork'
