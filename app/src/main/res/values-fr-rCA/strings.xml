@@ -183,7 +183,6 @@
     <string name="faq_3_text">Vous avez juste à faire un appui long sur l\'album en question et choisir l\'icône « Epingler » dans le menu d\'actions. Vous pouvez en épingler plusieurs, les éléments épinglés seront alors triés dans l\'ordre par défaut.</string>
     <string name="faq_4_title">Comment avancer rapidement dans les vidéos ?</string>
     <string name="faq_4_text">Vous pouvez appuyer sur le temps actuel ou la durée totale de la vidéo sur la barre de progression, la vidéo reculera ou avancera selon votre choix.</string>
-    <string name="faq_4_text_old">Vous pouvez appuyer sur le temps actuel ou la durée totale de la vidéo sur la barre de progression, la vidéo reculera ou avancera selon votre choix.</string>
     <string name="faq_5_title">Quelle est la différence entre cacher et exclure un répertoire ?</string>
     <string name="faq_5_text">Exclure n\'affiche pas le dossier dans Simple Galerie uniquement, alors que Cacher le cache pour l\'intégralité du système, y compris les autres galeries. Dans le dernier cas, un fichier \".nomedia\" est créé dans le répertoire caché, et peut s\'enlever avec n\'importe quel explorateur de fichiers.</string>
     <string name="faq_6_title">Pourquoi des répertoires avec des pochettes d\'albums musicaux ou des miniatures d\'images sont affichés ?</string>
