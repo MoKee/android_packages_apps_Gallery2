@@ -3,10 +3,12 @@ package com.simplemobiletools.gallery.pro.views
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
+import com.simplemobiletools.gallery.pro.R
 import com.simplemobiletools.gallery.pro.extensions.config
 import com.simplemobiletools.gallery.pro.models.MyPath
 import com.simplemobiletools.gallery.pro.models.PaintOptions
@@ -44,9 +46,7 @@ class EditorDrawCanvas(context: Context, attrs: AttributeSet) : View(context, at
         canvas.save()
 
         if (backgroundBitmap != null) {
-            val left = (width - backgroundBitmap!!.width) / 2
-            val top = (height - backgroundBitmap!!.height) / 2
-            canvas.drawBitmap(backgroundBitmap!!, left.toFloat(), top.toFloat(), null)
+            canvas.drawBitmap(backgroundBitmap!!, 0f, 0f, null)
         }
 
         for ((key, value) in mPaths) {
@@ -123,8 +123,20 @@ class EditorDrawCanvas(context: Context, attrs: AttributeSet) : View(context, at
         mPaintOptions.color = newColor
     }
 
+    fun updateBrushSize(newBrushSize: Int) {
+        mPaintOptions.strokeWidth = resources.getDimension(R.dimen.full_brush_size) * (newBrushSize / 100f)
+    }
+
     fun updateBackgroundBitmap(bitmap: Bitmap) {
         backgroundBitmap = bitmap
         invalidate()
+    }
+
+    fun getBitmap(): Bitmap {
+        val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+        val canvas = Canvas(bitmap)
+        canvas.drawColor(Color.WHITE)
+        draw(canvas)
+        return bitmap
     }
 }

@@ -242,31 +242,42 @@ class EditActivity : SimpleActivity(), CropImageView.OnCropImageCompleteListener
         default_image_view.beGone()
         crop_image_view.beGone()
         editor_draw_canvas.beVisible()
+        editor_draw_canvas.onGlobalLayout {
+            Thread {
+                fillCanvasBackground()
+            }.start()
+        }
+    }
 
-        Thread {
-            val size = Point()
-            windowManager.defaultDisplay.getSize(size)
-            val options = RequestOptions()
-                    .format(DecodeFormat.PREFER_ARGB_8888)
-                    .skipMemoryCache(true)
-                    .diskCacheStrategy(DiskCacheStrategy.NONE)
-                    .fitCenter()
+    private fun fillCanvasBackground() {
+        val size = Point()
+        windowManager.defaultDisplay.getSize(size)
+        val options = RequestOptions()
+                .format(DecodeFormat.PREFER_ARGB_8888)
+                .skipMemoryCache(true)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .fitCenter()
 
-            try {
-                val builder = Glide.with(applicationContext)
-                        .asBitmap()
-                        .load(uri)
-                        .apply(options)
-                        .into(size.x, size.y)
+        try {
+            val builder = Glide.with(applicationContext)
+                    .asBitmap()
+                    .load(uri)
+                    .apply(options)
+                    .into(editor_draw_canvas.width, editor_draw_canvas.height)
 
-                val bitmap = builder.get()
-                runOnUiThread {
-                    editor_draw_canvas.updateBackgroundBitmap(bitmap)
+            val bitmap = builder.get()
+            runOnUiThread {
+                editor_draw_canvas.apply {
+                    updateBackgroundBitmap(bitmap)
+                    layoutParams.width = bitmap.width
+                    layoutParams.height = bitmap.height
+                    (layoutParams as RelativeLayout.LayoutParams).removeRule(RelativeLayout.ABOVE)
+                    requestLayout()
                 }
-            } catch (e: Exception) {
-                showErrorToast(e)
             }
-        }.start()
+        } catch (e: Exception) {
+            showErrorToast(e)
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.N)
@@ -284,6 +295,18 @@ class EditActivity : SimpleActivity(), CropImageView.OnCropImageCompleteListener
 
         if (crop_image_view.isVisible()) {
             crop_image_view.getCroppedImageAsync()
+        } else if (editor_draw_canvas.isVisible()) {
+            val bitmap = editor_draw_canvas.getBitmap()
+            if (saveUri.scheme == "file") {
+                SaveAsDialog(this, saveUri.path, true) {
+                    saveBitmapToFile(bitmap, it, true)
+                }
+            } else if (saveUri.scheme == "content") {
+                val filePathGetter = getNewFilePath()
+                SaveAsDialog(this, filePathGetter.first, filePathGetter.second) {
+                    saveBitmapToFile(bitmap, it, true)
+                }
+            }
         } else {
             val currentFilter = getFiltersAdapter()?.getCurrentFilter() ?: return
             val filePathGetter = getNewFilePath()
@@ -422,13 +445,28 @@ class EditActivity : SimpleActivity(), CropImageView.OnCropImageCompleteListener
 
     private fun setupDrawButtons() {
         updateDrawColor(config.lastEditorDrawColor)
-        bottom_draw_color.setOnClickListener {
+        bottom_draw_width.progress = config.lastEditorBrushSize
+        updateBrushSize(config.lastEditorBrushSize)
+
+        bottom_draw_color_clickable.setOnClickListener {
             ColorPickerDialog(this, drawColor) { wasPositivePressed, color ->
                 if (wasPositivePressed) {
                     updateDrawColor(color)
                 }
             }
         }
+
+        bottom_draw_width.onSeekBarChangeListener {
+            config.lastEditorBrushSize = it
+            updateBrushSize(it)
+        }
+    }
+
+    private fun updateBrushSize(percent: Int) {
+        editor_draw_canvas.updateBrushSize(percent)
+        val scale = Math.max(0.03f, percent / 100f)
+        bottom_draw_color.scaleX = scale
+        bottom_draw_color.scaleY = scale
     }
 
     private fun updatePrimaryActionButtons() {
@@ -599,15 +637,16 @@ class EditActivity : SimpleActivity(), CropImageView.OnCropImageCompleteListener
 
     override fun onCropImageComplete(view: CropImageView, result: CropImageView.CropResult) {
         if (result.error == null) {
+            val bitmap = result.bitmap
             if (isCropIntent) {
                 if (saveUri.scheme == "file") {
-                    saveBitmapToFile(result.bitmap, saveUri.path, true)
+                    saveBitmapToFile(bitmap, saveUri.path, true)
                 } else {
                     var inputStream: InputStream? = null
                     var outputStream: OutputStream? = null
                     try {
                         val stream = ByteArrayOutputStream()
-                        result.bitmap.compress(CompressFormat.JPEG, 100, stream)
+                        bitmap.compress(CompressFormat.JPEG, 100, stream)
                         inputStream = ByteArrayInputStream(stream.toByteArray())
                         outputStream = contentResolver.openOutputStream(saveUri)
                         inputStream.copyTo(outputStream)
@@ -625,12 +664,12 @@ class EditActivity : SimpleActivity(), CropImageView.OnCropImageCompleteListener
                 }
             } else if (saveUri.scheme == "file") {
                 SaveAsDialog(this, saveUri.path, true) {
-                    saveBitmapToFile(result.bitmap, it, true)
+                    saveBitmapToFile(bitmap, it, true)
                 }
             } else if (saveUri.scheme == "content") {
                 val filePathGetter = getNewFilePath()
                 SaveAsDialog(this, filePathGetter.first, filePathGetter.second) {
-                    saveBitmapToFile(result.bitmap, it, true)
+                    saveBitmapToFile(bitmap, it, true)
                 }
             } else {
                 toast(R.string.unknown_file_location)
