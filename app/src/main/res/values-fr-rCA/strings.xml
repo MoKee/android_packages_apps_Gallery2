@@ -83,7 +83,6 @@
     <string name="flip">Retourner</string>
     <string name="flip_horizontally">Retourner horizontalement</string>
     <string name="flip_vertically">Retourner verticalement</string>
-    <string name="edit_with">Éditer avec</string>
     <string name="free_aspect_ratio">Aucun</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Autres</string>
@@ -164,6 +163,7 @@
     <string name="show_recycle_bin_last">Afficher la corbeille en dernière place sur l\'écran principal</string>
     <string name="allow_down_gesture">Fermeture de la vue plein écran par un geste vers le bas</string>
     <string name="allow_one_to_one_zoom">Permettre le zoom avant 1:1 avec le double-tape</string>
+    <string name="open_videos_on_separate_screen">Toujours ouvrir les vidéos sur un écran séparé avec de nouveaux gestes horizontaux</string>
     <!-- Setting sections -->
     <string name="thumbnails">Vignettes</string>
     <string name="fullscreen_media">Média plein écran</string>
@@ -191,8 +191,6 @@
     <string name="faq_7_text">Cela peut arriver pour de multiples raisons, mais c\'est facile à résoudre. Allez dans « Paramètres » puis « Gérer les dossiers inclus », sélectionnez le plus et sélectionnez le dossier voulu.</string>
     <string name="faq_8_title">Comment faire apparaître uniquement certains dossiers ?</string>
     <string name="faq_8_text">Ajouter un répértoire dans les dossiers inclus n\'exclut rien automatiquement. Pour ce faire, il faut aller dans « Paramètres » puis « Gérer les dossiers exclus », exclure le répertoire racine \"/\", puis ajouter les répertoires souhaités dans « Paramètres » puis « Gérer les répertoires inclus ». Seuls les répertoires selectionnés seront visibles, du fait que les exclusions et inclusions sont récursives, et si un répertoire est à la fois exclus et inclus, il sera affiché.</string>
-    <string name="faq_9_title">Les images en plein écran contiennent des artéfacts, est-ce possible d\'améliorer la qualité ?</string>
-    <string name="faq_9_text">Oui, il existe dans « Paramètres » une option « Remplacer les images zoomables profondes par des images de meilleure qualité », mais les images seront alors floues si vous zoomez trop.</string>
     <string name="faq_10_title">Puis-je recadrer des images avec cette application?</string>
     <string name="faq_10_text">Oui, vous pouvez recadrer les images dans l\'éditeur en faisant glisser les coins de l\'image. Vous pouvez accéder à l\'éditeur en appuyant longuement sur une vignette d\'image et en sélectionnant Modifier, ou en sélectionnant Modifier en mode plein écran.</string>
     <string name="faq_11_title">Puis-je en quelque sorte regrouper les vignettes des fichiers multimédias ?</string>

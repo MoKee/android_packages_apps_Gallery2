@@ -83,7 +83,6 @@
     <string name="flip">反転</string>
     <string name="flip_horizontally">水平方向に反転</string>
     <string name="flip_vertically">垂直方向に反転</string>
-    <string name="edit_with">他のアプリで編集</string>
     <string name="free_aspect_ratio">なし</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">その他</string>
@@ -183,8 +182,6 @@
     <string name="faq_7_text">複数の理由がありますが、解決するのは簡単です。 「設定」&gt; 「追加フォルダの管理」へ進み、「追加」を選択して必要なフォルダに移動します。</string>
     <string name="faq_8_title">特定のフォルダだけを表示したい場合はどうすればよいですか？</string>
     <string name="faq_8_text">「追加フォルダ」にフォルダを追加しても自動的に何も除外されません。手順は、「設定」&gt;「除外フォルダを管理」に移動しルートフォルダ（ / ）を除外してから、「設定」&gt;「追加フォルダを管理」に移動し希望のフォルダを追加します。除外と追加の両方が再帰的なので選択されたフォルダのみが表示され、除外と追加ならばフォルダは表示されます。</string>
-    <string name="faq_9_title">フルスクリーン画像に変なものがありますが、何とか品質を改善できますか？</string>
-    <string name="faq_9_text">はい。設定の中に「ディープズーム可能な画像をより高画質の画像に置き換える」というトグルがありこれを使用できます。 画像の品質が向上しますが、ズームしすぎるとぼやけてしまいます。</string>
     <string name="faq_10_title">このアプリで画像をトリミングすることはできますか？</string>
     <string name="faq_10_text">はい。画像コーナーをドラッグして、エディタで画像をトリミングすることができます。 画像のサムネイルを長押しして編集を選択するか、全画面表示から編集を選択することで、エディタにアクセスできます。</string>
     <string name="faq_11_title">何とかメディアファイルのサムネイルをグループ化できますか？</string>

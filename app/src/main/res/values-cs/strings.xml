@@ -83,7 +83,6 @@
     <string name="flip">Překlopit</string>
     <string name="flip_horizontally">Překlopit vodorovně</string>
     <string name="flip_vertically">Překlopit svisle</string>
-    <string name="edit_with">Upravit s</string>
     <string name="free_aspect_ratio">Volné</string>
     <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Ostatní</string>
@@ -192,8 +191,6 @@
     <string name="faq_8_title">Co když chci vidět jen několik konkrétních složek?</string>
     <string name="faq_8_text">Přidání složky mezi Přidané složky automaticky nevyloučí ostatní. Můžete jít do Nastavení -&gt; Správa vyloučených složek, vyloučit kořenovou složku \"/\", potom přidat požadované složky v Nastavení -&gt; Správa zahrnutých složek.
         To způsobí, že se zobrazí jen vybrané složky, protože jak vyloučené, tak zahrnuté jsou rekurzivní a pokud je složka vyloučena a zahrnuta, objeví se.</string>
-    <string name="faq_9_title">Obrázky na celou obrazovku mají divné artefakty, mohu nějak zlepšit kvalitu?</string>
-    <string name="faq_9_text">Ano, v nastavení je přepínač s textem \"Nahradit hluboko priblížiteľné obrázky s obrázky s lepší kvalitou\", můžete to zkusit. Způsobí to vyšší kvalitu obrázků, po přiblížení se ale budou rozmazávat mnohem dříve.</string>
     <string name="faq_10_title">Můžu s touto aplikací oříznout obrázky?</string>
     <string name="faq_10_text">Ano, oříznutí je možné v editoru, potažením rohů obrázků. Do editoru se můžete dostat buď dlouhým podržením náhledu obrázku a zvolením menu položky Upravit nebo zvolením Upravit při celoobrazovkovém režimu.</string>
     <string name="faq_11_title">Můžu nějak seskupit miniatury souborů médií?</string>
