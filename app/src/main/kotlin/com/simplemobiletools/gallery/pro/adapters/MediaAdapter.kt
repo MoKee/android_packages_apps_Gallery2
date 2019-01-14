@@ -1,6 +1,5 @@
 package com.simplemobiletools.gallery.pro.adapters
 
-import android.media.MediaMetadataRetriever
 import android.os.Handler
 import android.os.Looper
 import android.view.Menu
@@ -137,6 +136,9 @@ class MediaAdapter(activity: BaseSimpleActivity, var media: MutableList<Thumbnai
             R.id.cab_remove_from_favorites -> toggleFavorites(false)
             R.id.cab_restore_recycle_bin_files -> restoreFiles()
             R.id.cab_share -> shareMedia()
+            R.id.cab_rotate_right -> rotateSelection(90)
+            R.id.cab_rotate_left -> rotateSelection(270)
+            R.id.cab_rotate_one_eighty -> rotateSelection(180)
             R.id.cab_copy_to -> copyMoveTo(true)
             R.id.cab_move_to -> moveFilesTo()
             R.id.cab_select_all -> selectAll()
@@ -271,6 +273,25 @@ class MediaAdapter(activity: BaseSimpleActivity, var media: MutableList<Thumbnai
         } else if (selectedKeys.size > 1) {
             activity.shareMediaPaths(getSelectedPaths())
         }
+    }
+
+    private fun rotateSelection(degrees: Int) {
+        activity.toast(R.string.saving)
+        Thread {
+            val paths = getSelectedPaths()
+            var fileCnt = paths.size
+            paths.forEach {
+                activity.saveRotatedImageToFile(it, it, degrees) {
+                    fileCnt--
+                    if (fileCnt == 0) {
+                        activity.runOnUiThread {
+                            listener?.refreshItems()
+                            finishActMode()
+                        }
+                    }
+                }
+            }
+        }.start()
     }
 
     private fun moveFilesTo() {
@@ -463,14 +484,5 @@ class MediaAdapter(activity: BaseSimpleActivity, var media: MutableList<Thumbnai
             thumbnail_section.text = section.title
             thumbnail_section.setTextColor(textColor)
         }
-    }
-
-    private fun getFormattedVideoLength(medium: Medium): String {
-        if (medium.isVideo()) {
-            val retriever = MediaMetadataRetriever()
-            retriever.setDataSource(medium.path)
-            return Math.round(retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION).toInt() / 1000f).getFormattedDuration()
-        }
-        return ""
     }
 }
