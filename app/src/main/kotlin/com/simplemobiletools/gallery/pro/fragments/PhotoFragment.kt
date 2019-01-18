@@ -14,6 +14,8 @@ import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.alexvasilkov.gestures.GestureController
+import com.alexvasilkov.gestures.State
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.load.engine.DiskCacheStrategy
@@ -69,6 +71,7 @@ class PhotoFragment : ViewPagerFragment() {
     private var mIoadZoomableViewHandler = Handler()
     private var mScreenWidth = 0
     private var mScreenHeight = 0
+    private var mCurrentGestureViewZoom = 1f
 
     private var mStoredShowExtendedDetails = false
     private var mStoredHideExtendedDetails = false
@@ -83,7 +86,7 @@ class PhotoFragment : ViewPagerFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         mView = (inflater.inflate(R.layout.pager_photo_item, container, false) as ViewGroup).apply {
             subsampling_view.setOnClickListener { photoClicked() }
-            photo_view.setOnClickListener { photoClicked() }
+            gestures_view.setOnClickListener { photoClicked() }
             gif_view.setOnClickListener { photoClicked() }
             instant_prev_item.setOnClickListener { listener?.goToPrevItem() }
             instant_next_item.setOnClickListener { listener?.goToNextItem() }
@@ -97,19 +100,29 @@ class PhotoFragment : ViewPagerFragment() {
                     if (subsampling_view.isVisible()) {
                         subsampling_view.sendFakeClick(x, y)
                     } else {
-                        photo_view.sendFakeClick(x, y)
+                        gestures_view.sendFakeClick(x, y)
                     }
                 }
             }
 
             if (context.config.allowDownGesture) {
-                gif_view.setOnTouchListener { v, event ->
-                    handleEvent(event)
+                gestures_view.controller.addOnStateChangeListener(object : GestureController.OnStateChangeListener {
+                    override fun onStateReset(oldState: State, newState: State) {}
+
+                    override fun onStateChanged(state: State) {
+                        mCurrentGestureViewZoom = state.zoom
+                    }
+                })
+
+                gestures_view.setOnTouchListener { v, event ->
+                    if (mCurrentGestureViewZoom == 1f) {
+                        handleEvent(event)
+                    }
                     false
                 }
 
                 subsampling_view.setOnTouchListener { v, event ->
-                    if (mView.subsampling_view.scale == mOriginalSubsamplingScale) {
+                    if (subsampling_view.scale == mOriginalSubsamplingScale) {
                         handleEvent(event)
                     }
                     false
@@ -195,7 +208,6 @@ class PhotoFragment : ViewPagerFragment() {
             photo_brightness_controller.beVisibleIf(allowPhotoGestures)
             instant_prev_item.beVisibleIf(allowInstantChange)
             instant_next_item.beVisibleIf(allowInstantChange)
-            photo_view.setAllowFingerDragZoom(config.oneFingerZoom)
         }
 
         storeStateVariables()
@@ -307,11 +319,13 @@ class PhotoFragment : ViewPagerFragment() {
                 InputSource.FileSource(pathToLoad)
             }
 
-            mView.photo_view.beGone()
+            mView.gestures_view.beGone()
             val resolution = mMedium.path.getImageResolution() ?: Point(0, 0)
             mView.gif_view.apply {
                 setInputSource(source)
-                setupSizes(resolution.x, resolution.y, mScreenWidth, mScreenHeight)
+                setupGIFView(resolution.x, resolution.y, mScreenWidth, mScreenHeight) {
+                    activity?.supportFinishAfterTransition()
+                }
             }
         } catch (e: Exception) {
             loadBitmap()
@@ -321,11 +335,12 @@ class PhotoFragment : ViewPagerFragment() {
     }
 
     private fun loadSVG() {
+        setupGestureView()
         Glide.with(context!!)
                 .`as`(PictureDrawable::class.java)
                 .listener(SvgSoftwareLayerSetter())
                 .load(mMedium.path)
-                .into(mView.photo_view)
+                .into(mView.gestures_view)
     }
 
     private fun loadBitmap(degrees: Int = 0) {
@@ -343,9 +358,10 @@ class PhotoFragment : ViewPagerFragment() {
                 picasso.rotate(degrees.toFloat())
             }
 
-            picasso.into(mView.photo_view, object : Callback {
+            setupGestureView()
+            picasso.into(mView.gestures_view, object : Callback {
                 override fun onSuccess() {
-                    mView.photo_view.isZoomable = degrees != 0 || context?.config?.allowZoomingImages == false
+                    mView.gestures_view.controller.settings.isZoomEnabled = degrees != 0 || context?.config?.allowZoomingImages == false
                     if (mIsFragmentVisible && degrees == 0) {
                         scheduleZoomableView()
                     }
@@ -358,6 +374,13 @@ class PhotoFragment : ViewPagerFragment() {
                 }
             })
         } catch (ignored: Exception) {
+        }
+    }
+
+    private fun setupGestureView() {
+        mView.gestures_view.controller.apply {
+            settings.maxZoom = 3f
+            settings.overzoomFactor = 1.2f
         }
     }
 
@@ -389,7 +412,7 @@ class PhotoFragment : ViewPagerFragment() {
                         }
                         return false
                     }
-                }).into(mView.photo_view)
+                }).into(mView.gestures_view)
     }
 
     private fun openPanorama() {
@@ -455,7 +478,7 @@ class PhotoFragment : ViewPagerFragment() {
                 }
 
                 override fun onImageLoadError(e: Exception) {
-                    mView.photo_view.isZoomable = true
+                    mView.gestures_view.controller.settings.isZoomEnabled = true
                     background = ColorDrawable(Color.TRANSPARENT)
                     mIsSubsamplingVisible = false
                     beGone()
