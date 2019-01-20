@@ -111,6 +111,7 @@
     <string name="loop_slideshow">Ponavljaj diaprojekcijo</string>
     <string name="slideshow_ended">Diaprojekcija se je zaključila</string>
     <string name="no_media_for_slideshow">Ne najdem datotek za diaprojekcijo</string>
+    <string name="use_crossfade_animation">Uporaba prepletenih animacij</string>
     <!-- View types -->
     <string name="change_view_type">Spremeni tip pogleda</string>
     <string name="grid">Mreža</string>
@@ -125,6 +126,8 @@
     <string name="by_file_type">Tip datoteke</string>
     <string name="by_extension">Končnica</string>
     <!-- Widgets -->
+    <string name="folder_on_widget">Mapa, prikazana v pripomočku:</string>
+    <string name="show_folder_name">Prikaži ime mape</string>
     <!-- Settings -->
     <string name="autoplay_videos">Avtomatično predvajaj videoposnetke</string>
     <string name="remember_last_video_position">Zapomni si zadnji položaj predvajanja</string>
@@ -159,6 +162,8 @@
     <string name="show_highest_quality">Prikaži slike v največji možni kvaliteti</string>
     <string name="show_recycle_bin_last">Prikaži Koš kot zadnji element na glavnem zaslonu</string>
     <string name="allow_down_gesture">Dovoli zapiranje celozaslonskega načina z gesto navzdol</string>
+    <string name="allow_one_to_one_zoom">Dovoli povečavo 1:1 z dvojnim tapom</string>
+    <string name="open_videos_on_separate_screen">Video posnetke vedno odpri na ločenem zaslonu z novimi vodoravnimi potezami</string>
     <!-- Setting sections -->
     <string name="thumbnails">Sličice</string>
     <string name="fullscreen_media">Celozaslonski prikaz</string>

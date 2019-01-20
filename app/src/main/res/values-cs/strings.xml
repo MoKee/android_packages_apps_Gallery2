@@ -163,6 +163,7 @@
     <string name="show_recycle_bin_last">Zobrazit koš jako poslední položku na hlavní obrazovce</string>
     <string name="allow_down_gesture">Povolit zavírání celoobrazovkového režimu tažením prstu dolů</string>
     <string name="allow_one_to_one_zoom">Povolit přiblížení 1:1 pomocí dvou dvojitých klepnutí</string>
+    <string name="open_videos_on_separate_screen">Vždy spustit videa na samostatné obrazovce pomocí nových horizontálních gest</string>
     <!-- Setting sections -->
     <string name="thumbnails">Náhledy</string>
     <string name="fullscreen_media">Média přes celou obrazovku</string>
