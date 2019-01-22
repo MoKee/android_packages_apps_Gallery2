@@ -23,7 +23,6 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
-import com.davemorrissey.labs.subscaleview.ImageSource
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import com.davemorrissey.labs.subscaleview.decoder.DecoderFactory
 import com.davemorrissey.labs.subscaleview.decoder.ImageDecoder
@@ -335,7 +334,6 @@ class PhotoFragment : ViewPagerFragment() {
     }
 
     private fun loadSVG() {
-        setupGestureView()
         Glide.with(context!!)
                 .`as`(PictureDrawable::class.java)
                 .listener(SvgSoftwareLayerSetter())
@@ -356,9 +354,10 @@ class PhotoFragment : ViewPagerFragment() {
 
             if (degrees != 0) {
                 picasso.rotate(degrees.toFloat())
+            } else {
+                degreesForRotation(mImageOrientation).toFloat()
             }
 
-            setupGestureView()
             picasso.into(mView.gestures_view, object : Callback {
                 override fun onSuccess() {
                     mView.gestures_view.controller.settings.isZoomEnabled = degrees != 0 || context?.config?.allowZoomingImages == false
@@ -374,13 +373,6 @@ class PhotoFragment : ViewPagerFragment() {
                 }
             })
         } catch (ignored: Exception) {
-        }
-    }
-
-    private fun setupGestureView() {
-        mView.gestures_view.controller.apply {
-            settings.maxZoom = 3f
-            settings.overzoomFactor = 1.2f
         }
     }
 
@@ -449,17 +441,15 @@ class PhotoFragment : ViewPagerFragment() {
             setMaxTileSize(if (config.showHighestQuality) Integer.MAX_VALUE else 4096)
             setMinimumTileDpi(if (config.showHighestQuality) -1 else getMinTileDpi())
             background = ColorDrawable(Color.TRANSPARENT)
-            setBitmapDecoderFactory(bitmapDecoder)
-            setRegionDecoderFactory(regionDecoder)
+            bitmapDecoderFactory = bitmapDecoder
+            regionDecoderFactory = regionDecoder
             maxScale = 10f
             beVisible()
             isQuickScaleEnabled = config.oneFingerZoom
             isOneToOneZoomEnabled = config.allowOneToOneZoom
-            setResetScaleOnSizeChange(false)
-            setImage(ImageSource.uri(path))
-            setOrientation(rotation)
-            setEagerLoadingEnabled(false)
-            setOnImageEventListener(object : SubsamplingScaleImageView.OnImageEventListener {
+            orientation = rotation
+            setImage(path)
+            onImageEventListener = object : SubsamplingScaleImageView.OnImageEventListener {
                 override fun onImageLoaded() {
                 }
 
@@ -467,14 +457,11 @@ class PhotoFragment : ViewPagerFragment() {
                     background = ColorDrawable(if (config.blackBackground) Color.BLACK else config.backgroundColor)
                     val useWidth = if (mImageOrientation == ORIENTATION_ROTATE_90 || mImageOrientation == ORIENTATION_ROTATE_270) sHeight else sWidth
                     val useHeight = if (mImageOrientation == ORIENTATION_ROTATE_90 || mImageOrientation == ORIENTATION_ROTATE_270) sWidth else sHeight
-                    setDoubleTapZoomScale(getDoubleTapZoomScale(useWidth, useHeight))
+                    doubleTapZoomScale = getDoubleTapZoomScale(useWidth, useHeight)
                     mOriginalSubsamplingScale = scale
                 }
 
                 override fun onTileLoadError(e: Exception) {
-                }
-
-                override fun onPreviewReleased() {
                 }
 
                 override fun onImageLoadError(e: Exception) {
@@ -483,13 +470,7 @@ class PhotoFragment : ViewPagerFragment() {
                     mIsSubsamplingVisible = false
                     beGone()
                 }
-
-                override fun onPreviewLoadError(e: Exception) {
-                    background = ColorDrawable(Color.TRANSPARENT)
-                    mIsSubsamplingVisible = false
-                    beGone()
-                }
-            })
+            }
         }
     }
 
