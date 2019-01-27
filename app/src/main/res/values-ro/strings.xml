@@ -3,6 +3,7 @@
 <resources>
     <string name="app_launcher_name">Galerie</string>
     <string name="edit">Editare</string>
+    <string name="all_folders">Toate dosarele</string>
     <string name="show_on_map">Afişaţi pe hartă</string>
     <string name="select_photo">Selectaţi fotografie</string>
     <string name="brightness">Luminozitate</string>
@@ -10,12 +11,16 @@
     <string name="images">Imagini</string>
     <string name="videos">Videoclipuri</string>
     <!-- Hide / Exclude -->
+    <string name="exclude">Excludeţi</string>
+    <string name="remove_all">Șterge tot</string>
     <!-- Include folders -->
+    <string name="add_folder">Adaugă dosar</string>
     <!-- Resizing -->
     <string name="resize">Redimensionați</string>
     <string name="width">Lăţime</string>
     <string name="height">Înălţime</string>
     <!-- Editor -->
+    <string name="editor">Editor</string>
     <string name="save">Salvaţi</string>
     <string name="rotate">Rotire</string>
     <string name="path">Cale</string>
@@ -31,10 +36,14 @@
     <!-- Slideshow -->
     <string name="slideshow">Prezentare</string>
     <!-- View types -->
+    <string name="grid">Grilă</string>
+    <string name="list">Listă</string>
     <!-- Grouping at media thumbnails -->
     <string name="group_by">Grupaţi după</string>
     <string name="by_folder">Dosar</string>
     <string name="by_date_taken">Data realizării</string>
+    <string name="by_file_type">Tip fişier</string>
+    <string name="by_extension">Extensie</string>
     <!-- Widgets -->
     <!-- Settings -->
     <!-- Setting sections -->

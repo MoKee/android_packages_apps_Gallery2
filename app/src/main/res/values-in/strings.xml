@@ -148,7 +148,6 @@
     <string name="allow_photo_gestures">Izinkan mengontrol kecerahan foto dengan gerakan vertikal</string>
     <string name="allow_video_gestures">Izinkan mengontrol volume dan kecerahan video dengan gerakan vertikal</string>
     <string name="show_media_count">Tampilkan jumlah media folder pada tampilan utama</string>
-    <string name="replace_share_with_rotate">Ganti Bagikan dengan Putar di menu layar penuh</string>
     <string name="show_extended_details">Tampilkan detail lengkap melalui media layar penuh</string>
     <string name="manage_extended_details">Kelola detail yang diperluas</string>
     <string name="one_finger_zoom">Izinkan zoom satu jari pada media layar penuh</string>
