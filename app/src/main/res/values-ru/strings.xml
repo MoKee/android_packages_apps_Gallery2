@@ -148,7 +148,6 @@
     <string name="allow_photo_gestures">Управлять яркостью при просмотре изображения с помощью вертикальных жестов</string>
     <string name="allow_video_gestures">Управлять громкостью и яркостью при просмотре видео с помощью вертикальных жестов</string>
     <string name="show_media_count">Показывать количество файлов в папках</string>
-    <string name="replace_share_with_rotate">Заменить \"Поделиться\" на \"Повернуть\" в меню при просмотре изображения</string>
     <string name="show_extended_details">Показывать подробности о файле</string>
     <string name="manage_extended_details">Выбрать подробности файла</string>
     <string name="one_finger_zoom">Масштабирование одним пальцем при просмотре изображения</string>

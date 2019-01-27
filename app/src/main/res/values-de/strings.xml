@@ -111,6 +111,7 @@
     <string name="loop_slideshow">Endlos abspielen</string>
     <string name="slideshow_ended">Diashow beendet.</string>
     <string name="no_media_for_slideshow">Keine Medien für Diashow gefunden.</string>
+    <string name="use_crossfade_animation">Crossfade Animationen verwenden</string>
     <!-- View types -->
     <string name="change_view_type">Darstellung ändern</string>
     <string name="grid">Gitternetz</string>
@@ -147,7 +148,6 @@
     <string name="allow_photo_gestures">Fotohelligkeit mit vertikalen Gesten ändern</string>
     <string name="allow_video_gestures">Gesten für Videolautstärke/Helligkeit zulassen</string>
     <string name="show_media_count">Medienanzahl bei Ordnern anzeigen</string>
-    <string name="replace_share_with_rotate">Teilen/Drehen im Vollbild-Menü vertauschen</string>
     <string name="show_extended_details">Dateieigenschaften in Vollbild-Anzeige einblenden</string>
     <string name="manage_extended_details">Eigenschaften auswählen</string>
     <string name="one_finger_zoom">Ein-Finger-Zoom im Vollbild zulassen</string>
@@ -161,6 +161,8 @@
     <string name="show_highest_quality">Zeige Bilder in der höchstmöglichen Qualität</string>
     <string name="show_recycle_bin_last">Zeige den Papierkorb als letztes Element auf dem Hauptbildschirm</string>
     <string name="allow_down_gesture">Erlaube das Schließen der Vollbildansicht mit einer Abwärtsgeste</string>
+    <string name="allow_one_to_one_zoom">1:1 Zoomen durch Doppel-Tippen erlauben</string>
+    <string name="open_videos_on_separate_screen">Videos auf einem separaten Bildschirm immer mit horizontalen Gesten öffnen</string>
     <!-- Setting sections -->
     <string name="thumbnails">Thumbnails</string>
     <string name="fullscreen_media">Vollbild-Anzeige von Medien</string>

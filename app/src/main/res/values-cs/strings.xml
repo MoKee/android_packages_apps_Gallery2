@@ -148,7 +148,6 @@
     <string name="allow_photo_gestures">Povolit ovládání jasu fotografií pomocí vertikálních gest</string>
     <string name="allow_video_gestures">Povolit ovládání jasu a hlasitosti videí pomocí vertikálních gest</string>
     <string name="show_media_count">Zobrazit počet složek médií v hlavním zobrazení</string>
-    <string name="replace_share_with_rotate">Nahradit možnost Sdílet s otočením v nabídce přes celou obrazovku</string>
     <string name="show_extended_details">Zobrazit rozšířené podrobnosti o médiích přes celou obrazovku</string>
     <string name="manage_extended_details">Správa rozšířených podrobností</string>
     <string name="one_finger_zoom">Povolit přiblížení médií jedním prstem v režimu přes celou obrazovku</string>
