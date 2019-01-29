@@ -15,8 +15,8 @@ android {
         applicationId "com.simplemobiletools.gallery.pro"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 224
-        versionName "6.3.2"
+        versionCode 225
+        versionName "6.4.0"
         multiDexEnabled true
         android.applicationVariants.all { variant ->
             variant.outputs.all {
@@ -65,7 +65,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.7.2.1'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.7.3.1'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
