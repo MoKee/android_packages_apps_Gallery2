@@ -142,6 +142,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         currentMedium.isFavorite = mFavoritePaths.contains(currentMedium.path)
         val visibleBottomActions = if (config.bottomActions) config.visibleBottomActions else 0
 
+        getCurrentPhotoFragment()?.mCurrentRotationDegrees = mRotationDegrees
         menu.apply {
             findItem(R.id.menu_show_on_map).isVisible = visibleBottomActions and BOTTOM_ACTION_SHOW_ON_MAP == 0
             findItem(R.id.menu_slideshow).isVisible = visibleBottomActions and BOTTOM_ACTION_SLIDESHOW == 0
@@ -551,10 +552,19 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     }
 
     private fun rotateImage(degrees: Int) {
-        mRotationDegrees = (mRotationDegrees + degrees) % 360
-        getCurrentFragment()?.let {
-            (it as? PhotoFragment)?.rotateImageViewBy(mRotationDegrees)
+        val currentPath = getCurrentPath()
+        if (needsStupidWritePermissions(currentPath)) {
+            handleSAFDialog(currentPath) {
+                rotateBy(degrees)
+            }
+        } else {
+            rotateBy(degrees)
         }
+    }
+
+    private fun rotateBy(degrees: Int) {
+        mRotationDegrees = (mRotationDegrees + degrees) % 360
+        getCurrentPhotoFragment()?.rotateImageViewBy(mRotationDegrees)
         supportInvalidateOptionsMenu()
     }
 
@@ -582,15 +592,18 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             handleSAFDialog(it) {
                 toast(R.string.saving)
                 Thread {
-                    saveRotatedImageToFile(currPath, it, mRotationDegrees) {
+                    saveRotatedImageToFile(currPath, it, mRotationDegrees, true) {
                         toast(R.string.file_saved)
                         mRotationDegrees = 0
+                        getCurrentPhotoFragment()?.mCurrentRotationDegrees = 0
                         invalidateOptionsMenu()
                     }
                 }.start()
             }
         }
     }
+
+    private fun getCurrentPhotoFragment() = getCurrentFragment() as? PhotoFragment
 
     private fun isShowHiddenFlagNeeded(): Boolean {
         val file = File(mPath)
