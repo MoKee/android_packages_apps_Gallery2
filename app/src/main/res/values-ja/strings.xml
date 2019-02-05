@@ -111,6 +111,7 @@
     <string name="loop_slideshow">スライドショーをリピート再生する</string>
     <string name="slideshow_ended">スライドショーが終了しました</string>
     <string name="no_media_for_slideshow">スライドショーに表示するメディアがありません</string>
+    <string name="use_crossfade_animation">フェードアニメーションを使用する</string>
     <!-- View types -->
     <string name="change_view_type">表示形式の変更</string>
     <string name="grid">グリッド</string>
@@ -125,13 +126,17 @@
     <string name="by_file_type">ファイル形式</string>
     <string name="by_extension">拡張子</string>
     <!-- Widgets -->
+    <string name="folder_on_widget">ウィジェットに表示されるフォルダ：</string>
+    <string name="show_folder_name">フォルダー名を表示します。</string>
     <!-- Settings -->
     <string name="autoplay_videos">ビデオを自動再生</string>
+    <string name="remember_last_video_position">最後のビデオの再生位置を記憶する</string>
     <string name="toggle_filename">ファイル名の表示を切り替え</string>
     <string name="loop_videos">ビデオを繰り返し再生</string>
     <string name="animate_gifs">アニメーションGIFを動かす</string>
     <string name="max_brightness">再生時には明るさを最大にする</string>
     <string name="crop_thumbnails">サムネイルを正方形に切り取る</string>
+    <string name="show_thumbnail_video_duration">動画の長さを表示</string>
     <string name="screen_rotation_by">フルスクリーン再生の表示切り替え</string>
     <string name="screen_rotation_system_setting">システム設定に従う</string>
     <string name="screen_rotation_device_rotation">端末の向きに従う</string>

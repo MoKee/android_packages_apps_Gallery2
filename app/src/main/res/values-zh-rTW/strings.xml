@@ -32,6 +32,7 @@
     <string name="fix_date_taken">修復日期取值</string>
     <string name="fixing">修復中...</string>
     <string name="dates_fixed_successfully">成功修復日期</string>
+    <string name="share_resized">分享更改版本</string>
     <!-- Filter -->
     <string name="filter_media">篩選媒體檔案</string>
     <string name="images">圖片</string>
@@ -161,6 +162,8 @@
     <string name="show_highest_quality">以最高品質顯示圖像</string>
     <string name="show_recycle_bin_last">回收桶顯示在主畫面最後一項</string>
     <string name="allow_down_gesture">允許使用向下手勢關閉全螢幕視圖</string>
+    <string name="allow_one_to_one_zoom">允許雙擊等比放大</string>
+    <string name="open_videos_on_separate_screen">始終以獨立的橫向窗口打開視頻</string>
     <!-- Setting sections -->
     <string name="thumbnails">縮圖</string>
     <string name="fullscreen_media">全螢幕媒體檔案</string>

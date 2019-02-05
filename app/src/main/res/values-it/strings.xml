@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Correggi valore Data acquisizione</string>
     <string name="fixing">Correzione…</string>
     <string name="dates_fixed_successfully">Date aggiornate correttamente</string>
+    <string name="share_resized">Condividi la versione modificata</string>
     <!-- Filter -->
     <string name="filter_media">Filtra i media</string>
     <string name="images">Immagini</string>
@@ -162,6 +163,8 @@
     <string name="show_recycle_bin_last">Mostra il cestino come ultimo elemento nella schermata principale</string>
     <string name="allow_down_gesture">Chiudi la visuale a schermo intero con un gesto verso il basso</string>
     <string name="allow_one_to_one_zoom">Eseguire zoom 1:1 con doppio tap</string>
+    <string name="open_videos_on_separate_screen">Všdy spustit videa na samostatné obrazovce pomocí nových horizontálních gest</string>
+    <string name="show_notch">Monstra un notch se disponibile</string>
     <!-- Setting sections -->
     <string name="thumbnails">Miniature</string>
     <string name="fullscreen_media">Media a schermo intero</string>

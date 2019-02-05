@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Исправить дату снимку</string>
     <string name="fixing">Исправление…</string>
     <string name="dates_fixed_successfully">Даты исправлены</string>
+    <string name="share_resized">Поделиться измененной версией</string>
     <!-- Filter -->
     <string name="filter_media">Фильтр медиа</string>
     <string name="images">Изображения</string>
@@ -163,6 +164,7 @@
     <string name="allow_down_gesture">Разрешить закрытие полноэкранного просмотра жестом вниз</string>
     <string name="allow_one_to_one_zoom">Разрешить масштабирование 1:1 с помощью двух двойных нажатий</string>
     <string name="open_videos_on_separate_screen">Всегда открывать видео на отдельном экране с новыми горизонтальными жестами</string>
+    <string name="show_notch">Показывать вырез, если доступно</string>
     <!-- Setting sections -->
     <string name="thumbnails">Миниатюры</string>
     <string name="fullscreen_media">Полноэкранный режим</string>

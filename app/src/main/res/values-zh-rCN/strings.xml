@@ -32,6 +32,7 @@
     <string name="fix_date_taken">修复拍摄日期</string>
     <string name="fixing">正在修复…</string>
     <string name="dates_fixed_successfully">日期修复成功</string>
+    <string name="share_resized">分享更改版本</string>
     <!-- Filter -->
     <string name="filter_media">要显示的媒体文件</string>
     <string name="images">图片</string>
@@ -161,6 +162,8 @@
     <string name="show_highest_quality">以最高质量显示图像</string>
     <string name="show_recycle_bin_last">在主屏幕界面的最后一项显示回收站</string>
     <string name="allow_down_gesture">使用下滑手势关闭全屏视图</string>
+    <string name="allow_one_to_one_zoom">允许双击等比放大</string>
+    <string name="open_videos_on_separate_screen">始终以独立的横向窗口打开视频</string>
     <!-- Setting sections -->
     <string name="thumbnails">缩略图</string>
     <string name="fullscreen_media">全屏显示媒体</string>

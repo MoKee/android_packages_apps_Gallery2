@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Alınan tarih değerini düzeltme</string>
     <string name="fixing">Düzeltiliyor…</string>
     <string name="dates_fixed_successfully">Tarihler başarıyla düzeltildi</string>
+    <string name="share_resized">Yeniden boyutlandırılmış bir sürümü paylaş</string>
     <!-- Filter -->
     <string name="filter_media">Medyayı filtrele</string>
     <string name="images">Görüntüler</string>
@@ -163,6 +164,7 @@
     <string name="allow_down_gesture">Aşağı hareketle tam ekran görünümünü kapatmaya izin ver</string>
     <string name="allow_one_to_one_zoom">İki çift dokunuşla 1: 1 yakınlaştırmaya izin ver</string>
     <string name="open_videos_on_separate_screen">Videoları yeni yatay hareketlerle her zaman ayrı bir ekranda açın</string>
+    <string name="show_notch">Varsa bir çentik göster</string>
     <!-- Setting sections -->
     <string name="thumbnails">Önizleme resimleri</string>
     <string name="fullscreen_media">Tam ekran medya</string>

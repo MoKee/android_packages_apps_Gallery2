@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Fixe Date Valeur prise</string>
     <string name="fixing">Fixation....</string>
     <string name="dates_fixed_successfully">Dates fixées avec succès</string>
+    <string name="share_resized">Partager la version modifiée</string>
     <!-- Filter -->
     <string name="filter_media">Filtrer les médias</string>
     <string name="images">Images</string>

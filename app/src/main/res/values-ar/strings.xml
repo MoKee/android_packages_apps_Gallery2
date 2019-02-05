@@ -32,6 +32,7 @@
     <string name="fix_date_taken">إصلاح قيمة تاريخ الالتقاط</string>
     <string name="fixing">اصلاح…</string>
     <string name="dates_fixed_successfully">تم حل التواريخ بنجاح</string>
+    <string name="share_resized">مشاركة نسخة تم تغيير حجمها</string>
     <!-- Filter -->
     <string name="filter_media">فلتر الميديا</string>
     <string name="images">الصور</string>
@@ -167,6 +168,7 @@
     <string name="allow_down_gesture">اسمح بإغلاق عرض ملء الشاشة باستخدام إيماءة سفلية</string>
     <string name="allow_one_to_one_zoom">السماح بتكبير حجم 1:1 بنقرتين مزدوجتين</string>
     <string name="open_videos_on_separate_screen">افتح مقاطع الفيديو دائماً على شاشة منفصلة مع الإيماءات الأفقية الجديدة</string>
+    <string name="show_notch">عرض الحز إذا كان متاحاً</string>
     <!-- Setting sections -->
     <string name="thumbnails">المصغرات</string>
     <string name="fullscreen_media">وسائط ملء الشاشة</string>

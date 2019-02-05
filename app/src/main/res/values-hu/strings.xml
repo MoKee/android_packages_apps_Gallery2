@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Dátum javítása</string>
     <string name="fixing">Javítás…</string>
     <string name="dates_fixed_successfully">Sikeres dátumjavítás</string>
+    <string name="share_resized">Az átméretezett verzió megosztása</string>
     <!-- Filter -->
     <string name="filter_media">Médiaszűrés</string>
     <string name="images">Kép</string>
@@ -163,6 +164,7 @@
     <string name="allow_down_gesture">Engedélyezi a teljes képernyős nézetet a lefelé mozdulattal</string>
     <string name="allow_one_to_one_zoom">1:1 zoom engedélyezése kétszeres duplakoppal</string>
     <string name="open_videos_on_separate_screen">Vízszintes vezérlőmozdulatoknál mindig különálló képernyőn nyissa meg a videókat</string>
+    <string name="show_notch">Jelenítse meg a kivágást (notch) ha lehetséges</string>
     <!-- Setting sections -->
     <string name="thumbnails">Miniatűrök</string>
     <string name="fullscreen_media">Teljes képernyős média</string>

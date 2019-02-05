@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Opravit datum pořízení</string>
     <string name="fixing">Oprava…</string>
     <string name="dates_fixed_successfully">Data byli úspěšně opravena</string>
+    <string name="share_resized">Sdílet změněnou verzi</string>
     <!-- Filter -->
     <string name="filter_media">Filtr médií</string>
     <string name="images">Obrázky</string>
