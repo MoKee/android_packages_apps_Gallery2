@@ -349,8 +349,13 @@ fun Activity.fixDateTaken(paths: ArrayList<String>, callback: (() -> Unit)? = nu
 }
 
 fun BaseSimpleActivity.saveRotatedImageToFile(oldPath: String, newPath: String, degrees: Int, showToasts: Boolean, callback: () -> Unit) {
+    var newDegrees = degrees
+    if (newDegrees < 0) {
+        newDegrees += 360
+    }
+
     if (oldPath == newPath && oldPath.isJpg()) {
-        if (tryRotateByExif(oldPath, degrees, showToasts, callback)) {
+        if (tryRotateByExif(oldPath, newDegrees, showToasts, callback)) {
             return
         }
     }
@@ -369,11 +374,11 @@ fun BaseSimpleActivity.saveRotatedImageToFile(oldPath: String, newPath: String, 
             val oldLastModified = File(oldPath).lastModified()
             if (oldPath.isJpg()) {
                 copyFile(oldPath, tmpPath)
-                saveExifRotation(ExifInterface(tmpPath), degrees)
+                saveExifRotation(ExifInterface(tmpPath), newDegrees)
             } else {
                 val inputstream = getFileInputStreamSync(oldPath)
                 val bitmap = BitmapFactory.decodeStream(inputstream)
-                saveFile(tmpPath, bitmap, it as FileOutputStream, degrees)
+                saveFile(tmpPath, bitmap, it as FileOutputStream, newDegrees)
             }
 
             if (getDoesFilePathExist(newPath)) {
