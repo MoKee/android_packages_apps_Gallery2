@@ -25,15 +25,19 @@
     <string name="brightness">Brilho</string>
     <string name="lock_orientation">Travar orientação</string>
     <string name="unlock_orientation">Destravar orientação</string>
+    <string name="change_orientation">Alterar direção</string>
     <string name="force_portrait">Forçar modo retrato</string>
     <string name="force_landscape">Forçar modo paisagem</string>
     <string name="use_default_orientation">Usar orientação padrão</string>
+    <string name="fixing">Corrigindo…</string>
+    <string name="dates_fixed_successfully">Datas corrigidas com sucesso</string>
     <!-- Filter -->
     <string name="filter_media">Filtrar mídia</string>
     <string name="images">Imagens</string>
     <string name="videos">Vídeos</string>
     <string name="gifs">GIFs</string>
     <string name="raw_images">Imagens RAW</string>
+    <string name="svgs">SVGs</string>
     <string name="no_media_with_filters">Nenhum arquivo de mídia encontrado a partir dos filtros selecionados.</string>
     <string name="change_filters_underlined"><u>Mudar filtros</u></string>
     <!-- Hide / Exclude -->
@@ -106,10 +110,12 @@
     <string name="loop_slideshow">Apresentação em ciclo</string>
     <string name="slideshow_ended">Fim da apresentação</string>
     <string name="no_media_for_slideshow">Nenhuma mídia encontrada para a apresentação</string>
+    <string name="use_crossfade_animation">Usar animações crossfade</string>
     <!-- View types -->
     <string name="change_view_type">Alterar modo de visualização</string>
     <string name="grid">Grade</string>
     <string name="list">Lista</string>
+    <string name="group_direct_subfolders">Agrupar subpastas diretas</string>
     <!-- Grouping at media thumbnails -->
     <string name="group_by">Agrupar por</string>
     <string name="do_not_group_files">Não agrupar arquivos</string>
@@ -119,6 +125,7 @@
     <string name="by_file_type">Tipo de Arquivo</string>
     <string name="by_extension">Extensão</string>
     <!-- Widgets -->
+    <string name="folder_on_widget">Pasta mostrada no widget:</string>
     <string name="show_folder_name">Mostrar o nome da pasta</string>
     <!-- Settings -->
     <string name="autoplay_videos">Reproduzir vídeos automaticamente</string>
@@ -144,16 +151,35 @@
     <string name="manage_extended_details">Gerenciar detalhes extendidos</string>
     <string name="one_finger_zoom">Permitir zoom com um dedo quando em exibição de tela cheia</string>
     <string name="allow_instant_change">Permitir alternância instantânia de mídia clicando nas laterais da tela</string>
+    <string name="allow_deep_zooming_images">Permitir Deep Zoom nas imagens</string>
     <string name="hide_extended_details">Ocultar detalhes extendidos quando a barra de status estiver oculta</string>
     <string name="do_extra_check">Realizar verificação extra para evitar mostrar arquivos inválidos</string>
+    <string name="show_at_bottom">Mostrar alguns botões de ação na parte inferior da tela</string>
+    <string name="show_recycle_bin">Mostrar a Lixeira na tela de pastas</string>
+    <string name="deep_zoomable_images">Imagens com Deep Zoom</string>
+    <string name="show_highest_quality">Mostrar imagens na melhor qualidade possível</string>
+    <string name="show_recycle_bin_last">Mostrar a Lixeira como o último item da tela inicial</string>
+    <string name="allow_down_gesture">Permitir fechar a visão de tela cheia com um gesto para baixo</string>
+    <string name="allow_one_to_one_zoom">Permitir zoom 1:1 com dois toques duplos</string>
+    <string name="open_videos_on_separate_screen">Sempre abrir vídeos em uma tela separada com novos gestos horizontais</string>
     <!-- Setting sections -->
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Mídia em tela cheia</string>
     <string name="extended_details">Detalhes extendidos</string>
+    <string name="bottom_actions">Ações inferiores</string>
     <!-- Bottom actions -->
+    <string name="manage_bottom_actions">Gerenciar ações inferiores visíveis</string>
+    <string name="toggle_favorite">Ativar favorito</string>
+    <string name="toggle_file_visibility">Ativar visibilidade do arquivo</string>
     <!-- FAQ -->
+    <string name="faq_1_title">Como posso tornar Simple Gallery a galeria padrão do dispositivo?</string>
+    <string name="faq_2_title">Bloqueei o app com uma senha, mas esqueci-a. O que posso fazer?</string>
+    <string name="faq_2_text">Você pode resolver isso de duas formas. Reinstale o app ou encontre-o nas configurações do dispositivo e selecione \"Limpar dados\". Isso irá redefinir todas as suas configurações sem remover qualquer arquivo de mídia.</string>
+    <string name="faq_3_title">Como posso fazer um álbum sempre aparecer no topo?</string>
     <string name="faq_3_text">Você pode pressionar o álbum desejado, e selecione o ícone de pino no menu de ação, que irá fixá-lo ao topo. Você também pode fixar várias pastas. Itens fixados serão classificados pelo método de classificação padrão.</string>
     <string name="faq_4_title">Como posso avançar rapidamente os vídeos?</string>
+    <string name="faq_4_text">Você pode arrastar o dedo horizontalmente sobre o player de vídeo ou clicar no texto de duração atual ou máxima perto da barra de navegação. Isso irá mover o vídeo para trás ou para frente.</string>
+    <string name="faq_5_title">Qual é a diferença entre esconder e excluir uma pasta?</string>
     <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
     <!-- Short description has to have less than 80 chars -->
     <string name="app_short_description">Um aplicativo para visualizar fotos e vídeos.</string>
