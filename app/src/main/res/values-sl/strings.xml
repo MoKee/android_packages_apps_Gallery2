@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Popravi datum posnetka</string>
     <string name="fixing">Popravljam…</string>
     <string name="dates_fixed_successfully">Datumi uspešno popravljeni</string>
+    <string name="share_resized">Delite spremenjeno različico</string>
     <!-- Filter -->
     <string name="filter_media">Filtriranje datotek</string>
     <string name="images">Slike</string>
