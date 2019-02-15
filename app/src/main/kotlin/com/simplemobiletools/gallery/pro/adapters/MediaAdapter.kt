@@ -13,7 +13,6 @@ import com.simplemobiletools.commons.dialogs.PropertiesDialog
 import com.simplemobiletools.commons.dialogs.RenameItemDialog
 import com.simplemobiletools.commons.dialogs.RenameItemsDialog
 import com.simplemobiletools.commons.extensions.*
-import com.simplemobiletools.commons.helpers.OTG_PATH
 import com.simplemobiletools.commons.models.FileDirItem
 import com.simplemobiletools.commons.views.FastScroller
 import com.simplemobiletools.commons.views.MyRecyclerView
@@ -456,11 +455,7 @@ class MediaAdapter(activity: BaseSimpleActivity, var media: MutableList<Thumbnai
                 medium_check?.background?.applyColorFilter(primaryColor)
             }
 
-            var path = medium.path
-            if (hasOTGConnected && path.startsWith(OTG_PATH)) {
-                path = path.getOTGPublicPath(context)
-            }
-
+            val path = medium.path
             if (loadImageInstantly) {
                 activity.loadImage(medium.type, path, medium_thumbnail, scrollHorizontally, animateGifs, cropThumbnails, rotatedImagePaths)
             } else {
