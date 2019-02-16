@@ -165,6 +165,7 @@
     <string name="allow_one_to_one_zoom">允许双击等比放大</string>
     <string name="open_videos_on_separate_screen">始终以独立的横向窗口打开视频</string>
     <string name="show_notch">显示一个凹槽 (如果可用)</string>
+    <string name="allow_rotating_gestures">允许使用手势旋转图像</string>
     <!-- Setting sections -->
     <string name="thumbnails">缩略图</string>
     <string name="fullscreen_media">全屏显示媒体</string>

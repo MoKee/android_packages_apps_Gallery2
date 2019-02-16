@@ -165,6 +165,7 @@
     <string name="allow_one_to_one_zoom">1:1 zoom engedélyezése kétszeres duplakoppal</string>
     <string name="open_videos_on_separate_screen">Vízszintes vezérlőmozdulatoknál mindig különálló képernyőn nyissa meg a videókat</string>
     <string name="show_notch">Jelenítse meg a kivágást (notch) ha lehetséges</string>
+    <string name="allow_rotating_gestures">Lehetővé teszi a képek kézmozdulattal való forgatását</string>
     <!-- Setting sections -->
     <string name="thumbnails">Miniatűrök</string>
     <string name="fullscreen_media">Teljes képernyős média</string>

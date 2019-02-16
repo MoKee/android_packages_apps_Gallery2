@@ -165,6 +165,7 @@
     <string name="allow_one_to_one_zoom">Povolit přiblížení 1:1 pomocí dvou dvojitých klepnutí</string>
     <string name="open_videos_on_separate_screen">Vždy spustit videa na samostatné obrazovce pomocí nových horizontálních gest</string>
     <string name="show_notch">Zobrazit výřez, je-li k dispozici</string>
+    <string name="allow_rotating_gestures">Povolit otáčení obrázků pomocí gest</string>
     <!-- Setting sections -->
     <string name="thumbnails">Náhledy</string>
     <string name="fullscreen_media">Média přes celou obrazovku</string>
