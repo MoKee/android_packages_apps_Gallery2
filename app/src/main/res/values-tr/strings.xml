@@ -165,6 +165,7 @@
     <string name="allow_one_to_one_zoom">İki çift dokunuşla 1: 1 yakınlaştırmaya izin ver</string>
     <string name="open_videos_on_separate_screen">Videoları yeni yatay hareketlerle her zaman ayrı bir ekranda açın</string>
     <string name="show_notch">Varsa bir çentik göster</string>
+    <string name="allow_rotating_gestures">Hareketli görüntülerin döndürülmesine izin ver</string>
     <!-- Setting sections -->
     <string name="thumbnails">Önizleme resimleri</string>
     <string name="fullscreen_media">Tam ekran medya</string>

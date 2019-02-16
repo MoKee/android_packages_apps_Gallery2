@@ -29,6 +29,7 @@
     <string name="force_portrait">Forçar modo retrato</string>
     <string name="force_landscape">Forçar modo paisagem</string>
     <string name="use_default_orientation">Usar orientação padrão</string>
+    <string name="fix_date_taken">Fix Date Taken value</string>
     <string name="fixing">Corrigindo…</string>
     <string name="dates_fixed_successfully">Datas corrigidas com sucesso</string>
     <!-- Filter -->
@@ -173,6 +174,8 @@
     <string name="toggle_file_visibility">Ativar visibilidade do arquivo</string>
     <!-- FAQ -->
     <string name="faq_1_title">Como posso tornar Simple Gallery a galeria padrão do dispositivo?</string>
+    <string name="faq_1_text">First you have to find the currently default gallery in the Apps section of your device settings, look for a button that says something like \"Open by default\", click on it, then select \"Clear defaults\".
+        The next time you will try opening an image or video you should see an app picker, where you can select Simple Gallery and make it the default app.</string>
     <string name="faq_2_title">Bloqueei o app com uma senha, mas esqueci-a. O que posso fazer?</string>
     <string name="faq_2_text">Você pode resolver isso de duas formas. Reinstale o app ou encontre-o nas configurações do dispositivo e selecione \"Limpar dados\". Isso irá redefinir todas as suas configurações sem remover qualquer arquivo de mídia.</string>
     <string name="faq_3_title">Como posso fazer um álbum sempre aparecer no topo?</string>
@@ -180,6 +183,9 @@
     <string name="faq_4_title">Como posso avançar rapidamente os vídeos?</string>
     <string name="faq_4_text">Você pode arrastar o dedo horizontalmente sobre o player de vídeo ou clicar no texto de duração atual ou máxima perto da barra de navegação. Isso irá mover o vídeo para trás ou para frente.</string>
     <string name="faq_5_title">Qual é a diferença entre esconder e excluir uma pasta?</string>
+    <string name="faq_5_text">Exclude prevents displaying the folder only in Simple Gallery, while Hide works system-wise and it hides the folder from other galleries too. It works by creating an empty \".nomedia\" file in the given folder, which you can then remove with any file manager too.</string>
+    <string name="faq_6_title">Why do folders with music cover art or stickers show up?</string>
+    <string name="faq_6_text">Pode acontecer que você verá alguns álbuns incomuns aparecer. Você pode facilmente excluí-los pressionando-os e selecionando exclusão. Na próxima caixa de diálogo você pode selecionar a pasta pai, as chances serão impedidas de que outros álbuns relacionados apareçam também.</string>
     <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
     <!-- Short description has to have less than 80 chars -->
     <string name="app_short_description">Um aplicativo para visualizar fotos e vídeos.</string>

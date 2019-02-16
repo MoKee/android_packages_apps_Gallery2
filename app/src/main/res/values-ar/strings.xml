@@ -169,6 +169,7 @@
     <string name="allow_one_to_one_zoom">السماح بتكبير حجم 1:1 بنقرتين مزدوجتين</string>
     <string name="open_videos_on_separate_screen">افتح مقاطع الفيديو دائماً على شاشة منفصلة مع الإيماءات الأفقية الجديدة</string>
     <string name="show_notch">عرض الحز إذا كان متاحاً</string>
+    <string name="allow_rotating_gestures">السماح بتدوير الصور باستخدام الإيماءات</string>
     <!-- Setting sections -->
     <string name="thumbnails">المصغرات</string>
     <string name="fullscreen_media">وسائط ملء الشاشة</string>
