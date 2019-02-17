@@ -165,6 +165,7 @@
     <string name="allow_one_to_one_zoom">Разрешить масштабирование 1:1 с помощью двух двойных нажатий</string>
     <string name="open_videos_on_separate_screen">Всегда открывать видео на отдельном экране с новыми горизонтальными жестами</string>
     <string name="show_notch">Показывать вырез, если доступно</string>
+    <string name="allow_rotating_gestures">Разрешить вращение изображений с помощью жестов</string>
     <!-- Setting sections -->
     <string name="thumbnails">Миниатюры</string>
     <string name="fullscreen_media">Полноэкранный режим</string>
