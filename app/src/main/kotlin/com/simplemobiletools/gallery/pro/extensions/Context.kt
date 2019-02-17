@@ -42,6 +42,7 @@ import java.util.HashSet
 import java.util.LinkedHashSet
 import kotlin.Comparator
 import kotlin.collections.ArrayList
+import kotlin.random.Random
 
 val Context.portrait get() = resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT
 val Context.audioManager get() = getSystemService(Context.AUDIO_SERVICE) as AudioManager
@@ -564,16 +565,24 @@ fun Context.getCachedMedia(path: String, getVideosOnly: Boolean = false, getImag
         val grouped = mediaFetcher.groupMedia(media, pathToUse)
         callback(grouped.clone() as ArrayList<ThumbnailItem>)
 
-        val mediaToDelete = ArrayList<Medium>()
-        media.filter { !File(it.path).exists() }.forEach {
-            if (it.path.startsWith(recycleBinPath)) {
-                deleteDBPath(mediumDao, it.path)
-            } else {
-                mediaToDelete.add(it)
+        val value = Random.nextInt(5)
+        if (value == 1) {
+            val mediaToDelete = ArrayList<Medium>()
+            media.filter { !File(it.path).exists() }.forEach {
+                if (it.path.startsWith(recycleBinPath)) {
+                    deleteDBPath(mediumDao, it.path)
+                } else {
+                    mediaToDelete.add(it)
+                }
+            }
+
+            try {
+                if (mediaToDelete.isNotEmpty()) {
+                    mediumDao.deleteMedia(*mediaToDelete.toTypedArray())
+                }
+            } catch (ignored: Exception) {
             }
         }
-
-        mediumDao.deleteMedia(*mediaToDelete.toTypedArray())
     }.start()
 }
 
@@ -594,7 +603,13 @@ fun Context.updateDBDirectory(directory: Directory, directoryDao: DirectoryDao) 
     directoryDao.updateDirectory(directory.path, directory.tmb, directory.mediaCnt, directory.modified, directory.taken, directory.size, directory.types)
 }
 
-fun Context.getFavoritePaths() = galleryDB.MediumDao().getFavoritePaths() as ArrayList<String>
+fun Context.getFavoritePaths(): ArrayList<String> {
+    return try {
+        galleryDB.MediumDao().getFavoritePaths() as ArrayList<String>
+    } catch (e: Exception) {
+        ArrayList()
+    }
+}
 
 // remove the "recycle_bin" from the file path prefix, replace it with real bin path /data/user...
 fun Context.getUpdatedDeletedMedia(mediumDao: MediumDao): ArrayList<Medium> {
