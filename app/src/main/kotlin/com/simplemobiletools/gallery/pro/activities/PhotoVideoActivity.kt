@@ -133,6 +133,12 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
             fragment_holder.background = ColorDrawable(Color.BLACK)
         }
 
+        if (config.maxBrightness) {
+            val attributes = window.attributes
+            attributes.screenBrightness = 1f
+            window.attributes = attributes
+        }
+
         window.decorView.setOnSystemUiVisibilityChangeListener { visibility ->
             val isFullscreen = visibility and View.SYSTEM_UI_FLAG_FULLSCREEN != 0
             mFragment?.fullscreenToggled(isFullscreen)
@@ -245,7 +251,7 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
 
     private fun initBottomActionButtons() {
         arrayListOf(bottom_favorite, bottom_delete, bottom_rotate, bottom_properties, bottom_change_orientation, bottom_slideshow, bottom_show_on_map,
-                bottom_toggle_file_visibility, bottom_rename, bottom_copy).forEach {
+                bottom_toggle_file_visibility, bottom_rename, bottom_copy, bottom_move).forEach {
             it.beGone()
         }
 
