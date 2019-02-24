@@ -165,6 +165,7 @@
     <string name="allow_one_to_one_zoom">Eseguire zoom 1:1 con doppio tap</string>
     <string name="open_videos_on_separate_screen">Všdy spustit videa na samostatné obrazovce pomocí nových horizontálních gest</string>
     <string name="show_notch">Monstra un notch se disponibile</string>
+    <string name="allow_rotating_gestures">Consenti la rotazione delle immagini con i gesti</string>
     <!-- Setting sections -->
     <string name="thumbnails">Miniature</string>
     <string name="fullscreen_media">Media a schermo intero</string>
