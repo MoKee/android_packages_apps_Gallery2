@@ -694,7 +694,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 var resultUri: Uri? = null
                 if (mIsThirdPartyIntent) {
                     when {
-                        intent.extras?.containsKey(MediaStore.EXTRA_OUTPUT) == true -> {
+                        intent.extras?.containsKey(MediaStore.EXTRA_OUTPUT) == true && intent.flags and Intent.FLAG_GRANT_WRITE_URI_PERMISSION != 0 -> {
                             resultUri = fillExtraOutput(resultData)
                         }
                         resultData.extras?.containsKey(PICKED_PATHS) == true -> fillPickedPaths(resultData, resultIntent)
@@ -917,10 +917,10 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             setupAdapter(dirs)
             try {
                 mDirectoryDao.insert(newDir)
+                if (folder != RECYCLE_BIN) {
+                    mMediumDao.insertAll(newMedia)
+                }
             } catch (ignored: Exception) {
-            }
-            if (folder != RECYCLE_BIN) {
-                mMediumDao.insertAll(newMedia)
             }
         }
 
