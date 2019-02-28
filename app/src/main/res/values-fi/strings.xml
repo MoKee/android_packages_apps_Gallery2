@@ -130,7 +130,6 @@
     <string name="one_finger_zoom">Salli lähentäminen yhdellä sormella täyden ruudun tilassa</string>
     <string name="allow_instant_change">Salli median selaaminen ruudun reunoja koskettamalla</string>
     <string name="hide_extended_details">Piilota yksityiskohtaiset tiedot kun tilapalkki on piilotettu</string>
-    <string name="do_extra_check">Tee ylimääräinen tarkistus rikkinäisten tiedostojen varalta</string>
     <!-- Setting sections -->
     <string name="thumbnails">Esikatselukuvat</string>
     <string name="fullscreen_media">Täyden näytön media</string>
