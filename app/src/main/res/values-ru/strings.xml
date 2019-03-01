@@ -155,7 +155,6 @@
     <string name="allow_instant_change">Мгновенное переключение медиафайлов нажатием по краю экрана</string>
     <string name="allow_deep_zooming_images">Включить глубокое масштабирование изображений</string>
     <string name="hide_extended_details">Не показывать подробности при скрытой строке состояния</string>
-    <string name="do_extra_check">Делать дополнительную проверку, чтобы избежать показа неподдерживаемых файлов</string>
     <string name="show_at_bottom">Показывать кнопки действий в нижней части экрана</string>
     <string name="show_recycle_bin">Отображать корзину на экране папок</string>
     <string name="deep_zoomable_images">Масштабируемые изображения</string>
@@ -166,6 +165,10 @@
     <string name="open_videos_on_separate_screen">Всегда открывать видео на отдельном экране с новыми горизонтальными жестами</string>
     <string name="show_notch">Показывать вырез, если доступно</string>
     <string name="allow_rotating_gestures">Разрешить вращение изображений с помощью жестов</string>
+    <string name="file_loading_priority">Приоритет загрузки файла</string>
+    <string name="speed">Скорость</string>
+    <string name="compromise">Компромисс</string>
+    <string name="avoid_showing_invalid_files">Не отображать недопустимые файлы</string>
     <!-- Setting sections -->
     <string name="thumbnails">Миниатюры</string>
     <string name="fullscreen_media">Полноэкранный режим</string>

@@ -155,7 +155,6 @@
     <string name="allow_instant_change">允許輕觸螢幕邊緣來快速切換媒體檔案</string>
     <string name="allow_deep_zooming_images">允許深度縮放圖像</string>
     <string name="hide_extended_details">狀態列隱藏時，同時隱藏詳細資訊</string>
-    <string name="do_extra_check">進行額外檢查，避免顯示無效的檔案</string>
     <string name="show_at_bottom">在螢幕底部顯示一些操作按鈕</string>
     <string name="show_recycle_bin">在資料夾畫面顯示回收桶</string>
     <string name="deep_zoomable_images">深度可縮放的圖像</string>
@@ -166,6 +165,9 @@
     <string name="open_videos_on_separate_screen">始終以獨立的橫向窗口打開視頻</string>
     <string name="show_notch">顯示瀏海（如果可用）</string>
     <string name="allow_rotating_gestures">允許使用手勢旋轉圖片</string>
+    <string name="file_loading_priority">檔案載入順序</string>
+    <string name="speed">速度</string>
+    <string name="avoid_showing_invalid_files">避免顯示無效檔案</string>
     <!-- Setting sections -->
     <string name="thumbnails">縮圖</string>
     <string name="fullscreen_media">全螢幕媒體檔案</string>

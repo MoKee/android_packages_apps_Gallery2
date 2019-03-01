@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Napraw datę utworzenia</string>
     <string name="fixing">Naprawiam…</string>
     <string name="dates_fixed_successfully">Daty zostały naprawione</string>
+    <string name="share_resized">Podziel się przeskalowanym obrazem</string>
     <!-- Filter -->
     <string name="filter_media">Filtruj multimedia</string>
     <string name="images">Obrazy</string>
@@ -154,7 +155,6 @@
     <string name="allow_instant_change">Zezwalaj na natychmiastową zmianę multimediów po kliknięciu boków ekranu</string>
     <string name="allow_deep_zooming_images">Zezwalaj na duże powiększanie obrazów</string>
     <string name="hide_extended_details">Ukrywaj dodatkowe szczegóły, gdy pasek stanu jest ukryty</string>
-    <string name="do_extra_check">Dodatkowe sprawdzenie w celu uniknięcia pokazywania niewłaściwych plików</string>
     <string name="show_at_bottom">Pokazuj niektóre przyciski akcji na dole ekranu</string>
     <string name="show_recycle_bin">Pokazuj kosz w widoku folderów</string>
     <string name="deep_zoomable_images">Duże powiększanie obrazów</string>
@@ -163,6 +163,8 @@
     <string name="allow_down_gesture">Zezwalaj na zamykanie pełnoekranowego widoku gestem pociągnięcia w dół</string>
     <string name="allow_one_to_one_zoom">Zezwalaj na powiększanie 1:1 za pomocą dwóch podwójnych kliknięć</string>
     <string name="open_videos_on_separate_screen">Zawsze otwieraj filmy na oddzielnym ekranie z nowymi gestami poziomymi</string>
+    <string name="show_notch">Pokaż notch\'a, jeśli jest dostępny</string>
+    <string name="allow_rotating_gestures">Obracanie zdjęć za pomocą gestów</string>
     <!-- Setting sections -->
     <string name="thumbnails">Miniatury</string>
     <string name="fullscreen_media">Widok pełnoekranowy</string>
