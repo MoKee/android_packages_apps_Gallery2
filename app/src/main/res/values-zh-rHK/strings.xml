@@ -33,7 +33,6 @@
     <string name="fixing">修復中...</string>
     <string name="dates_fixed_successfully">成功修復日期</string>
     <string name="share_resized">分享更改版本</string>
-    <!-- Filter -->
     <string name="filter_media">篩選媒體檔案</string>
     <string name="images">圖片</string>
     <string name="videos">影片</string>
@@ -42,7 +41,6 @@
     <string name="svgs">SVGs</string>
     <string name="no_media_with_filters">選擇的篩選條件未發現媒體檔案。</string>
     <string name="change_filters_underlined"><u>更改篩選條件</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">這功能藉由新增一個「.nomedia」檔案，來隱藏資料夾和所有子資料夾。您可以透過 [設定] 中的「顯示隱藏的項目」選項來檢視。\n是否繼續？</string>
     <string name="exclude">排除</string>
     <string name="excluded_folders">排除資料夾</string>
@@ -55,19 +53,16 @@
     <string name="hidden_folders">隱藏資料夾</string>
     <string name="manage_hidden_folders">管理隱藏資料夾</string>
     <string name="hidden_folders_placeholder">您似乎沒有用「.nomedia」檔案來隱藏的資料夾</string>
-    <!-- Include folders -->
     <string name="include_folders">包含資料夾</string>
     <string name="manage_included_folders">管理包含資料夾</string>
     <string name="add_folder">增加資料夾</string>
     <string name="included_activity_placeholder">如果有些資料夾含有媒體檔案，卻沒被辨識到，您可以在此手動加入。</string>
-    <!-- Resizing -->
     <string name="resize">重新調整大小</string>
     <string name="resize_and_save">縮放所選區域並儲存</string>
     <string name="width">寬度</string>
     <string name="height">高度</string>
     <string name="keep_aspect_ratio">保持長寬比</string>
     <string name="invalid_values">請輸入有效的解析度</string>
-    <!-- Editor -->
     <string name="editor">編輯器</string>
     <string name="save">儲存</string>
     <string name="rotate">旋轉</string>
@@ -85,22 +80,18 @@
     <string name="flip_horizontally">水平翻轉</string>
     <string name="flip_vertically">垂直翻轉</string>
     <string name="free_aspect_ratio">無</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">其他</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">簡易桌布</string>
     <string name="set_as_wallpaper">設為桌布</string>
     <string name="set_as_wallpaper_failed">設為桌布失敗</string>
     <string name="set_as_wallpaper_with">用其他程式設為桌布：</string>
-    <string name="setting_wallpaper">桌布設定中&#8230;</string>
+    <string name="setting_wallpaper">桌布設定中…</string>
     <string name="wallpaper_set_successfully">成功設為桌布</string>
     <string name="portrait_aspect_ratio">直向長寬比</string>
     <string name="landscape_aspect_ratio">橫向長寬比</string>
     <string name="home_screen">主畫面</string>
     <string name="lock_screen">鎖定畫面</string>
     <string name="home_and_lock_screen">主畫面及鎖定畫面</string>
-    <!-- Slideshow -->
     <string name="slideshow">投影播放</string>
     <string name="interval">間隔 (秒)：</string>
     <string name="include_photos">包含相片</string>
@@ -113,12 +104,10 @@
     <string name="slideshow_ended">投影片結束</string>
     <string name="no_media_for_slideshow">找不到投影片的媒體檔案</string>
     <string name="use_crossfade_animation">使用交叉漸變動畫</string>
-    <!-- View types -->
     <string name="change_view_type">改變瀏覽類型</string>
     <string name="grid">格狀</string>
     <string name="list">清單</string>
     <string name="group_direct_subfolders">歸類子資料夾</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">分組依據</string>
     <string name="do_not_group_files">不歸類檔案</string>
     <string name="by_folder">資料夾</string>
@@ -126,10 +115,9 @@
     <string name="by_date_taken">拍攝日期</string>
     <string name="by_file_type">檔案類型</string>
     <string name="by_extension">副檔名</string>
-    <!-- Widgets -->
+    <string name="grouping_and_sorting">請注意，分組和排序是兩個獨立的欄位</string>
     <string name="folder_on_widget">小工具上顯示的資料夾：</string>
     <string name="show_folder_name">顯示資料夾名稱</string>
-    <!-- Settings -->
     <string name="autoplay_videos">自動播放影片</string>
     <string name="remember_last_video_position">記住上次影片播放位置</string>
     <string name="toggle_filename">顯示檔案名稱</string>
@@ -167,17 +155,15 @@
     <string name="allow_rotating_gestures">允許使用手勢旋轉圖片</string>
     <string name="file_loading_priority">檔案載入順序</string>
     <string name="speed">速度</string>
+    <string name="compromise">妥協</string>
     <string name="avoid_showing_invalid_files">避免顯示無效檔案</string>
-    <!-- Setting sections -->
     <string name="thumbnails">縮圖</string>
     <string name="fullscreen_media">全螢幕媒體檔案</string>
     <string name="extended_details">詳細資訊</string>
     <string name="bottom_actions">底部操作</string>
-    <!-- Bottom actions -->
     <string name="manage_bottom_actions">管理可見的底部操作</string>
     <string name="toggle_favorite">加入/移除我的最愛</string>
     <string name="toggle_file_visibility">檔案顯示/隱藏</string>
-    <!-- FAQ -->
     <string name="faq_1_title">我如何將簡易相簿設為預設相簿？</string>
     <string name="faq_1_text">首先您必須先在裝置設定中應用程式部分尋找目前預設相簿，找到一個像是「預設開啟」的按鈕，點下去，然後選擇「清除預設」。
         下次您要開啟圖片或影片時應該會看到程式選擇器，您可以在那裡選擇簡易相簿並設為預設程式。</string>
@@ -206,20 +192,58 @@
     <string name="faq_13_text">目前用於顯示圖像的解決方案在大多數情況下都能很好地工作，但是如果你想要更好的圖像畫質，你可以在「可縮放圖像」部分的應用程式設定中啟用「顯示圖像的最高畫質」。</string>
     <string name="faq_14_title">我已經隱藏了一個檔案/資料夾。如何取消隱藏？</string>
     <string name="faq_14_text">你可以在主螢幕上按下「臨時顯示隱藏項」選單，或者在應用程式設定中切換「顯示隱藏項」來檢視隱藏項。如果你想要隱藏它，只要長按它並選擇「隱藏」。資料夾隱藏通過新增一個隱藏的「.nomedia」來隱藏。你也可以用任何檔案管理器刪除檔案。</string>
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">一個用來瀏覽相片和影片，且沒有廣告的相簿。</string>
-    <string name="app_long_description">一個用來瀏覽相片和影片的簡單工具。可以根據日期、大小、名稱來遞增或遞減排序項目，相片能被縮放。媒體檔案會依畫面大小呈現在數個欄位內，可以使用縮放手勢來改變欄數。媒體檔案可以重新命名、分享、刪除、複製、移動；圖片還能縮放、旋轉、翻轉，或者直接設為桌布。
-		
-        這相簿也支援第三方使用，像是預覽圖片/影片、添加電子信箱附件…等功能，日常使用上相當適合。
+    <string name="app_short_description">離線相簿無廣告。整理、編輯、恢復和保護照片及影片</string>
+    <string name="app_long_description">        簡易圖片庫是一個高度可定製的離線相簿。整理和編輯您的照片，恢復已刪除的檔案與回收站，保護和隱藏檔案和檢視大量不同的照片和影片格式包括 RAW、SVG……等。
 
-        指紋權限用來鎖定隱藏的項目或是整個程式。
 
-        不包含廣告及非必要的權限，而且完全開放原始碼，並提供自訂顏色。
-		
-        這程式只是一系列眾多應用程式的其中一項，你可以在這發現更多 https://www.simplemobiletools.com</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
+        該應用程式不包含廣告和不必要的許可權。由於該應用程式也不需要網際網路接入，你的隱私是受保護的。
+
+        -------------------------------------------------
+        <b>簡易圖片庫－功能</b>
+        -------------------------------------------------
+
+        •離線相簿，沒有廣告或彈出視窗
+        •簡單的相簿照片編輯器-裁剪，旋轉，調整大小，繪製，過濾器……等
+        •不需要網路，給你更多的隱私和安全
+        •沒有不必要的許可權
+        •快速搜尋圖片，影片和檔案
+        •開啟、檢視許多不同的照片和影片型別（RAW, SVG，全景……等）
+        •多種直觀的手勢，方便編輯和整理檔案
+        •有很多方法可以過濾、分組和整理檔案
+        •定製簡易圖片庫的外觀
+        •有32種語言版本
+        •將檔案標記為收藏夾，以便快速訪問
+        •使用圖案、Pin 碼或指紋保護你的照片和影片
+        •使用 Pin 碼，圖案和指紋還可以保護應用程式的啟動或特定功能
+        •從回收站內恢復已刪除的照片和影片
+        •切換檔案的可見性，以隱藏照片和影片
+        •建立可定製的檔案幻燈片
+        •檢視檔案的詳細資訊(解析度、EXIF 值等)
+        •簡易圖片庫是開源的
+        還有更多!
+
+        <b>相簿編輯</b>
+        簡易圖片庫可以輕鬆地動態編輯圖片。裁剪、翻轉、旋轉和調整圖片的大小。如果你有更多的創意，你可以新增濾鏡，在你的照片上畫畫!
+
+        <b>支援多種檔案型別</b>
+        不像其他相簿， 簡易圖片庫支援大量不同的檔案型別，包括 JPEG、PNG、MP4、MKV、RAW、SVG、全景照片和全景影片……等。
+
+        <b>高度可定製的相簿管理器</b>
+        從 UI 到工具欄底部的按鈕，簡易圖片庫是高度可定製的，可以按照您希望的方式工作。沒有其他相簿管理器有這種靈活性!由於是開源的，我們還可以使用32種語言!
+
+        <b>恢復已刪除照片和影片</b>
+        不小心刪除了珍貴的照片或影片?別擔心! 簡易圖片庫功能，方便的回收站，您可以很容易地恢復刪除的照片或影片。
+
+        <b>保護,隱藏照片，影片和檔案</b>
+        使用 Pin 碼，圖案和指紋，你可以保護和隱藏照片，影片和整個專輯。你可以保護應用程式本身，也可以對應用程式的特定功能進行鎖定。例如：你不能在沒有指紋掃瞄的情況下刪除檔案，這有助於保護你的檔案不被意外刪除。
+
+        <b>在這裡檢視完整的簡單工具套件：</b>
+        https://www.simplemobiletools.com
+
+        <b>Facebook：</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit：</b>
+        https://www.reddit.com/r/SimpleMobileTools
+    </string>
 </resources>

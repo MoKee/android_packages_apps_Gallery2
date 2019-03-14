@@ -31,7 +31,6 @@
     <string name="fix_date_taken">Korriger Dato tatt-verdi</string>
     <string name="fixing">Korrigerer…</string>
     <string name="dates_fixed_successfully">Datoer er korrigerte</string>
-    <!-- Filter -->
     <string name="filter_media">Filtrer media</string>
     <string name="images">Bilder</string>
     <string name="videos">Videoer</string>
@@ -40,7 +39,6 @@
     <string name="svgs">SVG-bilder</string>
     <string name="no_media_with_filters">Ingen media-filer er funnet med de valgte filtrene.</string>
     <string name="change_filters_underlined"><u>Endre filtere</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">Denne funksjonen skjuler mappen ved å legge til filen \'.nomedia\' i den. Alle undermapper blir også skjult. Du kan se dem ved å aktivere alternativet \'Vis skjulte elementer\' i innstillinger. Fortsette?</string>
     <string name="exclude">Ekskluder</string>
     <string name="excluded_folders">Ekskluderte mapper</string>
@@ -53,19 +51,16 @@
     <string name="hidden_folders">Skjulte mapper</string>
     <string name="manage_hidden_folders">Håndter skjulte mapper</string>
     <string name="hidden_folders_placeholder">Ser ut til at du ikke har skjult noen mapper med en \".nomedia\"-fil.</string>
-    <!-- Include folders -->
     <string name="include_folders">Inkluderte mapper</string>
     <string name="manage_included_folders">Håndter inkluderte mapper</string>
     <string name="add_folder">Legg til mappe</string>
     <string name="included_activity_placeholder">Hvis du har noen mapper som inneholder media, men ikke ble gjenkjent av appen, kan du legge dem til manuelt her.\n\nÅ legge til noen elementer her, ekskluderer ikke noen annen mappe.</string>
-    <!-- Resizing -->
     <string name="resize">Endre størrelse</string>
     <string name="resize_and_save">Endre størrelse og lagre</string>
     <string name="width">Bredde</string>
     <string name="height">Høyde</string>
     <string name="keep_aspect_ratio">Behold sideforhold</string>
     <string name="invalid_values">Oppfør en gyldig oppløsning</string>
-    <!-- Editor -->
     <string name="editor">Redigering</string>
     <string name="save">Lagre</string>
     <string name="rotate">Roter</string>
@@ -83,22 +78,18 @@
     <string name="flip_horizontally">Speilvend horisontalt</string>
     <string name="flip_vertically">Speilvend vertikalt</string>
     <string name="free_aspect_ratio">Fri</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Annet</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">Bakgrunnsbilde</string>
     <string name="set_as_wallpaper">Sett som bakgrunnsbilde</string>
     <string name="set_as_wallpaper_failed">Å sette som bakgrunnsbilde feilet</string>
     <string name="set_as_wallpaper_with">Sett som bakgrunnsbilde med:</string>
-    <string name="setting_wallpaper">Stiller inn bakgrunnsbilde&#8230;</string>
+    <string name="setting_wallpaper">Stiller inn bakgrunnsbilde…</string>
     <string name="wallpaper_set_successfully">Bakgrunnsbilde vellykket stilt inn</string>
     <string name="portrait_aspect_ratio">Portrett-sideforhold</string>
     <string name="landscape_aspect_ratio">Landskap-sideforhold</string>
     <string name="home_screen">Startskjerm</string>
     <string name="lock_screen">Låseskjerm</string>
     <string name="home_and_lock_screen">Start- og låseskjerm</string>
-    <!-- Slideshow -->
     <string name="slideshow">Lysbildeshow</string>
     <string name="interval">Intervall (sekunder):</string>
     <string name="include_photos">Inkluder bilder</string>
@@ -110,11 +101,9 @@
     <string name="loop_slideshow">Gjenta lysbildeshow</string>
     <string name="slideshow_ended">Lysbildeshowet er slutt</string>
     <string name="no_media_for_slideshow">Ingen media for lysbildeshowet er funnet</string>
-    <!-- View types -->
     <string name="change_view_type">Endre visningstype</string>
     <string name="grid">Rutenett</string>
     <string name="list">Liste</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Grupper etter</string>
     <string name="do_not_group_files">Ikke grupper filer</string>
     <string name="by_folder">Mappe</string>
@@ -122,8 +111,6 @@
     <string name="by_date_taken">Dato tatt</string>
     <string name="by_file_type">Filtype</string>
     <string name="by_extension">Endelse</string>
-    <!-- Widgets -->
-    <!-- Settings -->
     <string name="autoplay_videos">Avspill videoer automatisk</string>
     <string name="remember_last_video_position">Husk siste videoavspillingsposisjon</string>
     <string name="toggle_filename">Vis/skjul filnavn</string>
@@ -155,20 +142,11 @@
     <string name="show_highest_quality">Vis bilder i høyest mulig kvalitet</string>
     <string name="show_recycle_bin_last">Vis papirkurven som siste element på hovedskjermen</string>
     <string name="allow_down_gesture">Tillat lukking av mediavisningen med en nedoverbevegelse</string>
-    <!-- Setting sections -->
     <string name="thumbnails">Minibilder</string>
     <string name="fullscreen_media">Mediavisning</string>
     <string name="extended_details">Utvidede detaljer</string>
     <string name="bottom_actions">Handlinger nederst</string>
-    <!-- Bottom actions -->
     <string name="manage_bottom_actions">Behandle nedre handlingsknapper</string>
     <string name="toggle_favorite">Favoritt av/på</string>
     <string name="toggle_file_visibility">Filsynlighet av/på</string>
-    <!-- FAQ -->
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

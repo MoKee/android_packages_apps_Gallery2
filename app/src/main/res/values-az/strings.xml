@@ -12,40 +12,17 @@
     <string name="show_on_map">Xəritədə göstər</string>
     <string name="select_photo">Foto seçin</string>
     <string name="brightness">Parlaqlıq</string>
-    <!-- Filter -->
-    <!-- Hide / Exclude -->
-    <!-- Include folders -->
-    <!-- Resizing -->
     <string name="resize">Ölçüsünü dəyişin</string>
     <string name="width">Enlilik</string>
     <string name="height">Hündürlük</string>
-    <!-- Editor -->
     <string name="save">Yadda saxla</string>
     <string name="rotate">Fırlat</string>
     <string name="path">Cığır</string>
     <string name="rotate_left">Sola fırlat</string>
     <string name="rotate_right">Sağa fırladın</string>
     <string name="free_aspect_ratio">Heç biri</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Digər</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
-    <!-- Slideshow -->
     <string name="slideshow">Slaydşou</string>
-    <!-- View types -->
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Qruplaşdırın</string>
     <string name="by_date_taken">Çəkilmə tarixi</string>
-    <!-- Widgets -->
-    <!-- Settings -->
-    <!-- Setting sections -->
-    <!-- Bottom actions -->
-    <!-- FAQ -->
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">Şəkil və videolara baxmaq üçün reklamsız qalereya.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

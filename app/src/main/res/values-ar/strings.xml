@@ -33,7 +33,6 @@
     <string name="fixing">اصلاح…</string>
     <string name="dates_fixed_successfully">تم حل التواريخ بنجاح</string>
     <string name="share_resized">مشاركة نسخة تم تغيير حجمها</string>
-    <!-- Filter -->
     <string name="filter_media">فلتر الميديا</string>
     <string name="images">الصور</string>
     <string name="videos">الفديوهات</string>
@@ -42,7 +41,6 @@
     <string name="svgs">SVGs</string>
     <string name="no_media_with_filters">لم يتم العثور على ملفات وسائط مع الفلاتر المحددة</string>
     <string name="change_filters_underlined"><u>تغيير الفلاتر</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">هذه الميزة تخفي المجلد عن طريق إضافة ملف \'.nomedia\' بداخله، فإنه سيتم إخفاء كافة المجلدات الفرعية أيضا. يمكنك رؤيتها عن طريق تبديل الخيار \"إظهار العناصر المخفية\" في الإعدادات. استمر؟</string>
     <string name="exclude">استبعد</string>
     <string name="excluded_folders">المجلدات المستبعدة</string>
@@ -57,21 +55,18 @@
     <string name="hidden_folders">المجلدات المخفية</string>
     <string name="manage_hidden_folders">إدارة المجلدات المخفية</string>
     <string name="hidden_folders_placeholder">يبدو أنك لا تملك أي مجلد مخفي بملف \".nomedia\".</string>
-    <!-- Include folders -->
     <string name="include_folders">المجلدات المضمنة</string>
     <string name="manage_included_folders">إدارة المجلدات المضمنة</string>
     <string name="add_folder">اضافة مجلد</string>
     <string name="included_activity_placeholder">إذا كان لديك بعض المجلدات التي تحتوي على الملتيميديا ، ولكن لم يتم التعرف عليها من قبل التطبيق، يمكنك إضافتها يدويا هنا.\n
   \n
   لن تؤدي إضافة بعض العناصر هنا إلى استبعاد أي مجلد آخر.</string>
-    <!-- Resizing -->
     <string name="resize">تحجيم</string>
     <string name="resize_and_save">تغيير حجم التحديد وحفظ</string>
     <string name="width">العرض</string>
     <string name="height">الارتفاع</string>
     <string name="keep_aspect_ratio">إبقاء نسبة القياس</string>
     <string name="invalid_values">الرجاء إدخال درجة دقة صحيحة</string>
-    <!-- Editor -->
     <string name="editor">تعديل</string>
     <string name="save">حفظ</string>
     <string name="rotate">التدوير</string>
@@ -89,10 +84,7 @@
     <string name="flip_horizontally">قلب أفقيا</string>
     <string name="flip_vertically">قلب عموديا</string>
     <string name="free_aspect_ratio">لا شيء</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">آخرى</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">خلفية بسيطة</string>
     <string name="set_as_wallpaper">تعيين كخلفية الشاشة</string>
     <string name="set_as_wallpaper_failed">فشل الإعداد كخلفية</string>
@@ -104,7 +96,6 @@
     <string name="home_screen">الشاشة الرئيسية</string>
     <string name="lock_screen">شاشة القفل</string>
     <string name="home_and_lock_screen">الرئيسية وشاشة القفل</string>
-    <!-- Slideshow -->
     <string name="slideshow">عرض الشرائح</string>
     <string name="interval">الفاصل الزمني (بالثواني):</string>
     <string name="include_photos">تضمين الصور</string>
@@ -117,12 +108,10 @@
     <string name="slideshow_ended">انتهى عرض الشرائح</string>
     <string name="no_media_for_slideshow">لم يتم العثور على وسائط لعرض الشرائح</string>
     <string name="use_crossfade_animation">إستخدام التأثيرات الحركية المتقاطعة</string>
-    <!-- View types -->
     <string name="change_view_type">تغيير طريقة العرض</string>
     <string name="grid">الشبكة</string>
     <string name="list">القائمة</string>
     <string name="group_direct_subfolders">مجلدات فرعية مباشرة</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">تجميع بحسب</string>
     <string name="do_not_group_files">لا تقم بتجميع الملفات</string>
     <string name="by_folder">مجلد</string>
@@ -130,10 +119,9 @@
     <string name="by_date_taken">تاريخ الالتقاط</string>
     <string name="by_file_type">نوع الملف</string>
     <string name="by_extension">الإضافة</string>
-    <!-- Widgets -->
+    <string name="grouping_and_sorting">يرجى ملاحظة أن التجميع والفرز هما حقلين مستقلين</string>
     <string name="folder_on_widget">المجلد الظاهر على الأدات المصغرة:</string>
     <string name="show_folder_name">إظهار اسم المجلد</string>
-    <!-- Settings -->
     <string name="autoplay_videos">تشغيل الفديوهات تلقائيا</string>
     <string name="remember_last_video_position">تذكر موقع اخر فيديو مشغل</string>
     <string name="toggle_filename">تبديل رؤية اسم الملف</string>
@@ -169,16 +157,17 @@
     <string name="open_videos_on_separate_screen">افتح مقاطع الفيديو دائماً على شاشة منفصلة مع الإيماءات الأفقية الجديدة</string>
     <string name="show_notch">عرض الحز إذا كان متاحاً</string>
     <string name="allow_rotating_gestures">السماح بتدوير الصور باستخدام الإيماءات</string>
-    <!-- Setting sections -->
+    <string name="file_loading_priority">أولوية تحميل الملف</string>
+    <string name="speed">السرعة</string>
+    <string name="compromise">المرونة</string>
+    <string name="avoid_showing_invalid_files">تجنب إظهار الملفات غير الصحيحة</string>
     <string name="thumbnails">المصغرات</string>
     <string name="fullscreen_media">وسائط ملء الشاشة</string>
     <string name="extended_details">تفاصيل موسعة</string>
     <string name="bottom_actions">شريط أوامر سُفلي</string>
-    <!-- Bottom actions -->
     <string name="manage_bottom_actions">إدارة مرئية الإجراءات السفلية</string>
     <string name="toggle_favorite">تبديل المفضلات</string>
     <string name="toggle_file_visibility">تبديل رؤية الملف</string>
-    <!-- FAQ -->
     <string name="faq_1_title">كيف يمكنني جعل الاستوديو البسيط معرض الأجهزة الافتراضي؟</string>
     <string name="faq_1_text">أولاً ، عليك العثور على المعرض الافتراضي حاليًا في قسم التطبيقات في إعدادات جهازك ، ابحث عن زر يقول مثلا \"فتح افتراضيًا\" ، وانقر عليه ، ثم حدد \"مسح الإعدادات الافتراضية\". في المرة التالية التي ستحاول فيها فتح صورة أو فيديو ، يجب أن تذهب الى منتقي التطبيقات ، حيث يمكنك اختيار تطبيق الاستوديو البسيط وجعله التطبيق الافتراضي.</string>
     <string name="faq_2_title">أغلقت التطبيق بكلمة مرور ، لكني نسيت ذلك. ماذا افعل؟</string>
@@ -205,36 +194,5 @@
     <string name="faq_13_text">يعمل الحل الحالي لعرض الصور بشكل جيد في الغالبية العظمى من الحالات ، ولكن إذا كنت ترغب في الحصول على جودة صورة أفضل ، فيمكنك تمكين \"عرض الصور بأعلى جودة ممكنة\" في إعدادات التطبيق ، في قسم \"الصور القابلة للتكبير العميق\".</string>
     <string name="faq_14_title">لقد أخفيت ملفاً / مجلداً. كيف يمكنني إظهاره؟</string>
     <string name="faq_14_text">يمكنك إما الضغط على عنصر القائمة \"إظهار العناصر المخفية مؤقتًا\" على الشاشة الرئيسية ، أو تبديل \"إظهار العناصر المخفية\" في إعدادات التطبيق لرؤية العنصر المخفي. إذا كنت تريد إظهاره ، فاضغط عليه طويلاً وحدد \"إظهار\". يتم إخفاء المجلدات عن طريق إضافة ملف \".nomedia\" مخفي إليهم ، يمكنك حذف الملف مع أي مدير ملفات أيضًا.</string>
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">استوديو لعرض الصور والفيديو بدون اعلانات.</string>
-    <string name="app_long_description">معرض قابل للتخصيص بدرجة عالية قادر على عرض العديد من أنواع الصور والفيديو المختلفة بما في ذلك SVGs و RAW والصور البانورامية ومقاطع الفيديو.
-
-        وهو مفتوح المصدر ولا يحتوي على إعلانات أو أذونات غير ضرورية.
-
-        دعونا نسرد بعض خصائصه الجديرة بالذكر:
-        1. البحث
-        2. عرض الشرائح
-        3. دعم النوتش
-        4. تثبيت المجلدات إلى الأعلى
-        5. تصفية ملفات الوسائط حسب النوع
-        6. سلة المهملات لسهولة استرداد الملفات
-        7. قفل اتجاه عرض ملء الشاشة
-        8. تعليم الملفات المفضلة لسهولة الوصول إليها
-        9. إغلاق الوسائط التي تملئ الشاشة بسرعة مع ايماءة السحب لأسفل
-        10. محرر لتعديل الصور وتطبيق الفلاتر
-        11. كلمة السر لحماية العناصر المخفية أو التطبيق كله
-        12. تغيير عدد أعمدة الصور المصغرة باستخدام إيماءات أو أزرار القائمة
-        13. إجراءات الاسفل القابلة للتخصيص في عرض ملء الشاشة للوصول السريع
-        14. عرض التفاصيل الممتدة على وسائط بملء الشاشة باستخدام الملف المطلوب...
-15. عدة طرق مختلفة لفرز أو تجميع العناصر ، سواء تصاعدي أو تنازلي
-        16. إخفاء المجلدات (يؤثر على التطبيقات الأخرى أيضًا) ، باستثناء المجلدات (التي تؤثر على المعرض البسيط فقط)
-
-        يلزم الحصول على إذن بصمة الإصبع من أجل القفل إما رؤية العنصر المخفي أو التطبيق بأكمله أو حماية الملفات من الحذف.
-
-        هذا التطبيق هو مجرد قطعة واحدة من سلسلة أكبر من التطبيقات. يمكنك العثور على الباقي منهم على https://www.simplemobiletools.com</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
+    <string name="app_short_description">معرض غير متصل دون إعلانات. تنظيم الصور واشرطة الفيديو وتعديلها واستعادتها وحمايتها</string>
 </resources>

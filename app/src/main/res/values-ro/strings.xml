@@ -7,19 +7,14 @@
     <string name="show_on_map">Afişaţi pe hartă</string>
     <string name="select_photo">Selectaţi fotografie</string>
     <string name="brightness">Luminozitate</string>
-    <!-- Filter -->
     <string name="images">Imagini</string>
     <string name="videos">Videoclipuri</string>
-    <!-- Hide / Exclude -->
     <string name="exclude">Excludeţi</string>
     <string name="remove_all">Șterge tot</string>
-    <!-- Include folders -->
     <string name="add_folder">Adaugă dosar</string>
-    <!-- Resizing -->
     <string name="resize">Redimensionați</string>
     <string name="width">Lăţime</string>
     <string name="height">Înălţime</string>
-    <!-- Editor -->
     <string name="editor">Editor</string>
     <string name="save">Salvaţi</string>
     <string name="rotate">Rotire</string>
@@ -27,32 +22,15 @@
     <string name="rotate_left">Rotiţi spre stânga</string>
     <string name="rotate_right">Rotiţi spre dreapta</string>
     <string name="free_aspect_ratio">Niciunul</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Altele</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="home_screen">Ecran principal</string>
     <string name="lock_screen">Ecranul de blocare</string>
-    <!-- Slideshow -->
     <string name="slideshow">Prezentare</string>
-    <!-- View types -->
     <string name="grid">Grilă</string>
     <string name="list">Listă</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Grupaţi după</string>
     <string name="by_folder">Dosar</string>
     <string name="by_date_taken">Data realizării</string>
     <string name="by_file_type">Tip fişier</string>
     <string name="by_extension">Extensie</string>
-    <!-- Widgets -->
-    <!-- Settings -->
-    <!-- Setting sections -->
-    <!-- Bottom actions -->
-    <!-- FAQ -->
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

@@ -31,7 +31,6 @@
     <string name="use_default_orientation">Koristi zadanu orijentaciju slike</string>
     <string name="fix_date_taken">Ispravi vrijednost datuma snimanja</string>
     <string name="fixing">Popravljam…</string>
-    <!-- Filter -->
     <string name="filter_media">Filtriranje medija</string>
     <string name="images">Slike</string>
     <string name="videos">Video</string>
@@ -40,7 +39,6 @@
     <string name="svgs">SVG-ovi</string>
     <string name="no_media_with_filters">Nije pronađena nijedna datoteka s odabranim filtrom.</string>
     <string name="change_filters_underlined"><u>Promijeni filter</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">Ova funkcija skriva mapu dodavanjem \'.nomedia\' datoteke u njega. Također će sakriti i sve podmape. Možete ih vidjeti uključivanjem opcije \'Prikaži skrivene mape\' u Postavkama. Nastaviti?</string>
     <string name="exclude">Izuzmi</string>
     <string name="excluded_folders">Izuzete mape</string>
@@ -53,19 +51,16 @@
     <string name="hidden_folders">Skrivene mape</string>
     <string name="manage_hidden_folders">Upravljanje skrivenim mapama</string>
     <string name="hidden_folders_placeholder">Čini se da nemate skrivenih mapa s \".nomedia\" datotekom.</string>
-    <!-- Include folders -->
     <string name="include_folders">Uključene mape</string>
     <string name="manage_included_folders">Upravljajte uključenim mapama</string>
     <string name="add_folder">Dodaj mapu</string>
     <string name="included_activity_placeholder">Ako imate neke mape koje sadrže medije, ali ih aplikacija nije prepoznala, ručno ih možete dodati ovdje.\n\nDodavanjem nekih stavki ovdje nećete izuzeti bilo koju drugu mapu.</string>
-    <!-- Resizing -->
     <string name="resize">Promjeni veličinu</string>
     <string name="resize_and_save">Promjeni veličinu odabranog i spremi</string>
     <string name="width">Širina</string>
     <string name="height">Visina</string>
     <string name="keep_aspect_ratio">Zadrži omjer slike</string>
     <string name="invalid_values">Molim unesite valjanu rezoluciju</string>
-    <!-- Editor -->
     <string name="editor">Uređivač</string>
     <string name="save">Spremi</string>
     <string name="rotate">Rotiraj</string>
@@ -83,22 +78,18 @@
     <string name="flip_horizontally">Okreni horizontalno</string>
     <string name="flip_vertically">Okreni vertikalno</string>
     <string name="free_aspect_ratio">Slobodan odabir</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Ostalo</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">Jednostavna pozadina</string>
     <string name="set_as_wallpaper">Postavi kao pozadinu</string>
     <string name="set_as_wallpaper_failed">Postavljanje pozadine nije uspjelo</string>
     <string name="set_as_wallpaper_with">Postavi kao pozadinu pomoću:</string>
-    <string name="setting_wallpaper">Postavljanje pozadine&#8230;</string>
+    <string name="setting_wallpaper">Postavljanje pozadine…</string>
     <string name="wallpaper_set_successfully">Postavljanje pozadine uspješno</string>
     <string name="portrait_aspect_ratio">Portretni omjer slike</string>
     <string name="landscape_aspect_ratio">Pejzažni omjer slike</string>
     <string name="home_screen">Početni zaslon</string>
     <string name="lock_screen">Zaključani zaslon</string>
     <string name="home_and_lock_screen">Početni i zaključani zaslon</string>
-    <!-- Slideshow -->
     <string name="slideshow">Dijaprojekcija</string>
     <string name="interval">Interval (sekunde):</string>
     <string name="include_photos">Dodaj slike</string>
@@ -110,11 +101,9 @@
     <string name="loop_slideshow">Prikaži dijaprojekciju kao petlju</string>
     <string name="slideshow_ended">Kraj dijaprojekcije</string>
     <string name="no_media_for_slideshow">Nema datoteka za dijaprojekciju</string>
-    <!-- View types -->
     <string name="change_view_type">Promijeni vrstu prikaza</string>
     <string name="grid">Mreža</string>
     <string name="list">Lista</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Grupiraj po</string>
     <string name="do_not_group_files">Nemoj grupirati ove datoteke</string>
     <string name="by_folder">Mapa</string>
@@ -122,8 +111,6 @@
     <string name="by_date_taken">Datum snimanja</string>
     <string name="by_file_type">Tip datoteke</string>
     <string name="by_extension">Vrsta datoteke</string>
-    <!-- Widgets -->
-    <!-- Settings -->
     <string name="autoplay_videos">Automatsko pokretanje videa</string>
     <string name="toggle_filename">Uključi prikaz naziva datoteka</string>
     <string name="loop_videos">Ponavljanje videa</string>
@@ -148,16 +135,13 @@
     <string name="hide_extended_details">Sakrij proširene pojedinosti kada je traka statusa skrivena</string>
     <string name="show_at_bottom">Pokažite neke gumbe za radnju pri dnu zaslona</string>
     <string name="show_recycle_bin">Prikažite koš za smeće na zaslonu mapa</string>
-    <!-- Setting sections -->
     <string name="thumbnails">Sličice</string>
     <string name="fullscreen_media">Mediji na cijelom zaslonu</string>
     <string name="extended_details">Proširene pojedinosti</string>
     <string name="bottom_actions">Radnju pri dnu zaslona</string>
-    <!-- Bottom actions -->
     <string name="manage_bottom_actions">Upravljaj radnjama pri dnu zaslona</string>
     <string name="toggle_favorite">Uključi/isključi favorite</string>
     <string name="toggle_file_visibility">Uključi/isključi vidljivost datoteka</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Kako mogu postaviti Jednostavnu galeriju kao zadanu galeriju uređaja?</string>
     <string name="faq_1_text">Prvo morate pronaći trenutačno zadanu galeriju u odjeljku Aplikacije, u Postavkama uređaja, potražite gumb koji kaže nešto poput opcije \"Otvori prema zadanim postavkama\", kliknite na tu opciju, a zatim odaberite \"Izbriši zadane postavke\".
         Sljedeći put kada pokušate otvoriti sliku ili video, trebali biste vidjeti alat za odabir aplikacija, gdje možete odabrati Jednostavnu galeriju i postaviti je kao zadanu aplikaciju.</string>
@@ -182,11 +166,4 @@
     <string name="faq_11_text">Naravno, koristeći stavku izbornika \"Grupiraj po\" u prikazu sličica. Možete grupirati datoteke prema više kriterija, uključujući datum snimanja. Ako koristite funkciju \"Prikaži sve sadržaje mape\", možete ih grupirati i mapama.</string>
     <string name="faq_12_title">Sortiranje po datumu nije točno, kako to mogu ispraviti?</string>
     <string name="faq_12_text">Vjerojatno uzrok tome da su Vaše slike kopirane s drugih mjesta. U tom slučaju trebali biste dugo dodirnuti sličice prikazanih slika, a zatim u izborniku u gornjem desnom kutu, odabrati funkciju \'Ispravi vrijednost datuma snimanja\'.</string>
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">Galerija za gledanje fotografija i videozapisa bez oglasa.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>
