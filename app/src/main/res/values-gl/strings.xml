@@ -23,13 +23,11 @@
     <string name="brightness">Brillo</string>
     <string name="lock_orientation">Fixar orientación</string>
     <string name="unlock_orientation">Desbloquear orientación</string>
-    <!-- Filter -->
     <string name="filter_media">Filtrar medios</string>
     <string name="images">Imaxes</string>
     <string name="videos">Vídeos</string>
     <string name="no_media_with_filters">Non se atoparon medios dos indicados polo filtro.</string>
     <string name="change_filters_underlined"><u>Cambiar filtro</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">Esta función oculta o cartafol engadindolle ficheiro \'.nomedia\', tamén ocultará os subcartafoles. Pode velos pulsando a opción \'Mostrar elementos ocultos\' nos Axustes. Continuar?</string>
     <string name="exclude">Excluír</string>
     <string name="excluded_folders">Cartafoles excluídos</string>
@@ -42,19 +40,16 @@
     <string name="hidden_folders">Cartafoles ocultos</string>
     <string name="manage_hidden_folders">Xestionar cartafoles ocultos</string>
     <string name="hidden_folders_placeholder">Semella que non ten ningún cartafol oculto con un ficheiro \".nomedia\".</string>
-    <!-- Include folders -->
     <string name="include_folders">Cartafoles incluídos</string>
     <string name="manage_included_folders">Xestionar cartafoles incluídos</string>
     <string name="add_folder">Engadir cartafol</string>
     <string name="included_activity_placeholder">Si ten algún cartafol con medios, mais non foi recoñecido polo aplicativo, pódeo engadir manualmente.\n\nEngadindo aquí elementos non eliminará outros.</string>
-    <!-- Resizing -->
     <string name="resize">Redimensionar</string>
     <string name="resize_and_save">Selección da redimensión e gardar</string>
     <string name="width">Ancho</string>
     <string name="height">Alto</string>
     <string name="keep_aspect_ratio">Manter proporcións</string>
     <string name="invalid_values">Por favor introduza unha resolución válida</string>
-    <!-- Editor -->
     <string name="save">Gardar</string>
     <string name="rotate">Rotar</string>
     <string name="path">Ruta</string>
@@ -71,22 +66,18 @@
     <string name="flip_horizontally">Voltear horizontalmente</string>
     <string name="flip_vertically">Voltear verticalmente</string>
     <string name="free_aspect_ratio">Ningún</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Outro</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">Fondo de pantalla</string>
     <string name="set_as_wallpaper">Establecer como fondo de pantalla</string>
     <string name="set_as_wallpaper_failed">Fallou establecer fondo de pantalla</string>
     <string name="set_as_wallpaper_with">Establecer fondo de pantalla con:</string>
-    <string name="setting_wallpaper">Establecendo fondo de pantalla&#8230;</string>
+    <string name="setting_wallpaper">Establecendo fondo de pantalla…</string>
     <string name="wallpaper_set_successfully">Fondo de pantalla establecido correctamente</string>
     <string name="portrait_aspect_ratio">Proporción de Retrato</string>
     <string name="landscape_aspect_ratio">Proporción de Paisaxe</string>
     <string name="home_screen">Pantalla de incio</string>
     <string name="lock_screen">Pantalla de bloqueo</string>
     <string name="home_and_lock_screen">Pantallas de inicio e bloqueo</string>
-    <!-- Slideshow -->
     <string name="slideshow">Presentación</string>
     <string name="interval">Intervalo (segundos):</string>
     <string name="include_photos">Incluír fotos</string>
@@ -98,12 +89,10 @@
     <string name="loop_slideshow">Reproducir en bucle</string>
     <string name="slideshow_ended">Rematou a presentación</string>
     <string name="no_media_for_slideshow">Non se atoparon medios para a presentación</string>
-    <!-- View types -->
     <string name="change_view_type">Cambiar o tipo de vista</string>
     <string name="grid">Grella</string>
     <string name="list">Lista</string>
     <string name="group_direct_subfolders">Agrupar subcartafoles directos</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Agrupar por</string>
     <string name="do_not_group_files">Non agrupar ficheiros</string>
     <string name="by_folder">Cartafol</string>
@@ -111,8 +100,6 @@
     <string name="by_date_taken">Data de captura</string>
     <string name="by_file_type">Tipo de ficheior</string>
     <string name="by_extension">Extensión</string>
-    <!-- Widgets -->
-    <!-- Settings -->
     <string name="autoplay_videos">Reproducir vídeos automticamente</string>
     <string name="toggle_filename">Mudar a visibilidade do ficheiro</string>
     <string name="loop_videos">videos en bucle</string>
@@ -135,12 +122,9 @@
     <string name="one_finger_zoom">Permitir zoom con un dedo a pantalla completa</string>
     <string name="allow_instant_change">Permitir o cambio instantáneo de medios pulsando nos lados da pantalla</string>
     <string name="hide_extended_details">Agochar detalles extendidos cando a barra de estado está oculta</string>
-    <!-- Setting sections -->
     <string name="thumbnails">Iconas</string>
     <string name="fullscreen_media">Medios a pantalla completa</string>
     <string name="extended_details">Detalles ampliados</string>
-    <!-- Bottom actions -->
-    <!-- FAQ -->
     <string name="faq_1_title">Cómo podo facer que Simple Gallery sexa a galería por omisión no dispositivo?</string>
     <string name="faq_1_text">Primeiro debe atopar a galería por omsión actual na sección de App nos axustes do dispositivo, buscar un botón que diga algo como \"Abrir por omisión\", pulsalo e despois seleccionar \"Limpar por omisión\".
         A próxima vez que intente abrir unha imaxe ou vídeo aparecerá un selector de aplicativos onde pode escoller Simple Gallery e facela o aplicativo por omisión.</string>
@@ -159,11 +143,4 @@
     <string name="faq_8_title">E qué pasa si só quero que sexan visibles certos cartafoles</string>
     <string name="faq_8_text">Engadir un cartafol a Cartafoles incluídos non exclúe nada de xeito automático. O que pode facer é ir a Axustes -&gt; Xestionar cartafoles incluídos, excluír o cartafol root \"/\", e despóis engadir os cartafoles desexados con Axustes -&gt; Xestionar Cartafoles Incluídos.
         Esto fará visibles só aos cartafoles escollidos, como tanto excluír e incluír son recursivos e si está excluído e logo incluído, será mostrado.</string>
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">Unha galería para ver fotos e videos, pero non publicidade.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

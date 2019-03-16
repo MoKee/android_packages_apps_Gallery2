@@ -24,14 +24,12 @@
     <string name="brightness">Ryškumas</string>
     <string name="lock_orientation">Užrakinti orientaciją</string>
     <string name="unlock_orientation">Atrakinti orientaciją</string>
-    <!-- Filter -->
     <string name="filter_media">Filtruoti mediją</string>
     <string name="images">Atvaizdai</string>
     <string name="videos">Vaizdo įrašai</string>
     <string name="gifs">GIF\'ai</string>
     <string name="no_media_with_filters">Su pasirinktais filtrais nerasta medijos bylų.</string>
     <string name="change_filters_underlined"><u>Pakeisti filtrus</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">Ši funkcija slepia aplanką, pridedant į jį \'. Nomedia \' bylą, jis taip pat slėps visus subaplankus. Galite juos peržiūrėti, perjunkite parinktį \"Rodyti paslėptus elementus \" skiltyje Nustatymai. Tęsti?</string>
     <string name="exclude">Išskirti</string>
     <string name="excluded_folders">Išskirti aplankai</string>
@@ -44,19 +42,16 @@
     <string name="hidden_folders">Paslėpti aplankai</string>
     <string name="manage_hidden_folders">Tvarkyti paslėptus aplankus</string>
     <string name="hidden_folders_placeholder">Atrodo, kad neturite jokių aplankų, paslėptų \". Nomedia \" bylos.</string>
-    <!-- Include folders -->
     <string name="include_folders">Įtraukti aplankai</string>
     <string name="manage_included_folders">Tvarkyti įtrauktus aplankus</string>
     <string name="add_folder">Įtraukti aplanką</string>
     <string name="included_activity_placeholder">Jei turite tam tikrų aplankų, kuriuose yra medijos , bet kurių neneatpažįsta programėlė, galite juos pridėti rankiniu būdu. \ N \ nPridedant kai kuriuos elementus, neišskirsite jokio kito aplanko.</string>
-    <!-- Resizing -->
     <string name="resize">Keisti dydį</string>
     <string name="resize_and_save">Pakeisti pasirinkto dydį ir išsaugoti</string>
     <string name="width">Plotis</string>
     <string name="height">Aukštis</string>
     <string name="keep_aspect_ratio">Išlaikyti proporcijas</string>
     <string name="invalid_values">Prašome įvesti tinkamą raišką</string>
-    <!-- Editor -->
     <string name="editor">Redaktorius</string>
     <string name="save">Saugoti</string>
     <string name="rotate">Sukti</string>
@@ -74,22 +69,18 @@
     <string name="flip_horizontally">Apversti horizontaliai</string>
     <string name="flip_vertically">Apversti vertikaliai</string>
     <string name="free_aspect_ratio">Nėra</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Kita</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">Paprastas darbalaukio fonas</string>
     <string name="set_as_wallpaper">Nustatyti kaip darbalaukio foną</string>
     <string name="set_as_wallpaper_failed">Nustatyti darbalaukio fono nepavyko</string>
     <string name="set_as_wallpaper_with">Nustatyti kaip darbalaukio paveikslėlį su:</string>
-    <string name="setting_wallpaper">Nustatomas darbalaukio paveikslėlis&#8230;</string>
+    <string name="setting_wallpaper">Nustatomas darbalaukio paveikslėlis…</string>
     <string name="wallpaper_set_successfully">Darbalaukio foną nustatyti pavyko</string>
     <string name="portrait_aspect_ratio">Portreto formato santykis</string>
     <string name="landscape_aspect_ratio">Peizažo formato santykis</string>
     <string name="home_screen">Pagrindinis ekranas</string>
     <string name="lock_screen">Užrakto ekranas</string>
     <string name="home_and_lock_screen">Pagrindinis ir užrakto ekranas</string>
-    <!-- Slideshow -->
     <string name="slideshow">Skaidrių demonstracija</string>
     <string name="interval">Intervalas (sekundėmis):</string>
     <string name="include_photos">Įtraukti nuotraukas</string>
@@ -101,16 +92,12 @@
     <string name="loop_slideshow">Klipuoti skaidrių demonstraciją</string>
     <string name="slideshow_ended">Skaidrių demonstracija pasibaigė</string>
     <string name="no_media_for_slideshow">Nerasta medijos skaidrių demonstracijai</string>
-    <!-- View types -->
     <string name="change_view_type">Keisti peržiūros tipą</string>
     <string name="grid">Tinklelis</string>
     <string name="list">Sąrašas</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Grupuoti pagal</string>
     <string name="by_folder">Aplankalas</string>
     <string name="by_date_taken">Fotografavimo data</string>
-    <!-- Widgets -->
-    <!-- Settings -->
     <string name="autoplay_videos">Groti vaizdo įrašus automatiškai</string>
     <string name="toggle_filename">Perjungti bylos pavadinimo matomumą</string>
     <string name="loop_videos">Klipuoti vaizdo įrašus</string>
@@ -133,12 +120,9 @@
     <string name="one_finger_zoom">Leisti vienu pirštu pritraukti viso ekrano rėžime</string>
     <string name="allow_instant_change">Leiskite akimirksniu keisti mediją spustelėdami ekrano šonuose</string>
     <string name="hide_extended_details">Slėpti išsamią informaciją, kai būsenos juosta yra paslėpta</string>
-    <!-- Setting sections -->
     <string name="thumbnails">Miniatiūros</string>
     <string name="fullscreen_media">Viso ekrano medija</string>
     <string name="extended_details">Išsami informacija</string>
-    <!-- Bottom actions -->
-    <!-- FAQ -->
     <string name="faq_1_title">Kaip galiu padaryti paprastą galeriją kaip numatytąją įrenginio galeriją?</string>
     <string name="faq_1_text">Pirmiausia turite rasti numatytąją galeriją savo prietaiso nustatymų skyriuje \"Programėlės\", ieškoti mygtuko panašaus į \ \"Atidaryti pagal numatytuosius \", spustelėkite jį, tada pasirinkite \ \"Išvalyti numatytuosius \". 
 	Kitą kartą, kai bandysite atidaryti atvaizdą ar vaizdo įrašą, turėtumėte pamatyti programos parinkiklį, kuriame galite pasirinkti Paprastą galeriją ir padaryti ją numatytaja.</string>
@@ -159,11 +143,4 @@
          Tai leis matyti tik tuos pasirinktus aplankus, nes abu atmetami ir įtraukti yra rekursyvūs, ir jei aplankas yra išskirtas ir įtrauktas, jis bus rodomas.</string>
     <string name="faq_10_title">Ar galiu apkarpyti vaizdus naudojant šią programėlę?</string>
     <string name="faq_10_text">Taip, redaguodami vaizdus, galite juos apkarpyti, vilkdami vaizdo kampus. Galite patekti į redaktorių ilgai paspaudę vaizdo miniatiūrą ir pasirinkę \"Redaguoti\" arba iš viso ekrano rodinio pasirinkę \"Redaguoti\".</string>
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">Galerija, skirta peržiūrėti nuotraukas ir vaizdo įrašus be reklamų.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

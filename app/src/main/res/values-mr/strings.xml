@@ -4,37 +4,15 @@
     <string name="edit">संपादित करा</string>
     <string name="show_on_map">नकाशावर दर्शवा</string>
     <string name="brightness">चमक</string>
-    <!-- Filter -->
-    <!-- Hide / Exclude -->
-    <!-- Include folders -->
-    <!-- Resizing -->
     <string name="resize">आकार बदला</string>
     <string name="width">रुंदी</string>
     <string name="height">उंची</string>
-    <!-- Editor -->
     <string name="save">जतन करा</string>
     <string name="rotate">चक्राकृती फिरवा</string>
     <string name="path">मार्ग</string>
     <string name="rotate_left">डावीकडे फिरवा</string>
     <string name="rotate_right">उजवीकडे फिरवा</string>
     <string name="free_aspect_ratio">काहीही नाही</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">अन्य</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
-    <!-- Slideshow -->
-    <!-- View types -->
-    <!-- Grouping at media thumbnails -->
     <string name="by_date_taken">तारीख घेतली</string>
-    <!-- Widgets -->
-    <!-- Settings -->
-    <!-- Setting sections -->
-    <!-- Bottom actions -->
-    <!-- FAQ -->
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

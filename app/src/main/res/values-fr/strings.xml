@@ -33,7 +33,6 @@
     <string name="fixing">Correction en cours....</string>
     <string name="dates_fixed_successfully">Dates corrigées</string>
     <string name="share_resized">Partager la version modifiée</string>
-    <!-- Filter -->
     <string name="filter_media">Filtrer les médias</string>
     <string name="images">Images</string>
     <string name="videos">Vidéos</string>
@@ -42,7 +41,6 @@
     <string name="svgs">SVGs</string>
     <string name="no_media_with_filters">Aucun fichier média trouvé avec les filtres sélectionnés</string>
     <string name="change_filters_underlined"><u>Changer les filtres</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">Cette option masque le dossier en ajoutant un fichier \".nomedia\" à l\'intérieur, cela masquera aussi tous les sous-dossiers. Vous pouvez les voir en appuyant sur le symbole \"Œil\" (permettant l\'affichage) depuis les paramètres. Continuer ?</string>
     <string name="exclude">Exclure</string>
     <string name="excluded_folders">Dossiers exclus</string>
@@ -55,19 +53,16 @@
     <string name="hidden_folders">Dossiers masqués</string>
     <string name="manage_hidden_folders">Gérer les dossiers masqués</string>
     <string name="hidden_folders_placeholder">Il semblerait que vous n\'ayez pas de dossier masqués avec un fichier \".nomedia\".</string>
-    <!-- Include folders -->
     <string name="include_folders">Dossiers ajoutés</string>
     <string name="manage_included_folders">Gérer les dossiers ajoutés</string>
     <string name="add_folder">Ajouter un dossier</string>
     <string name="included_activity_placeholder">Si vous avez des dossiers contenant des médias qui ne sont pas affichés dans l\'application, vous pouvez les ajouter manuellement ici.\n\nCet ajout n\'exclura aucun autre dossier.</string>
-    <!-- Resizing -->
     <string name="resize">Redimensionner</string>
     <string name="resize_and_save">Redimensionner la sélection et enregistrer</string>
     <string name="width">Largeur</string>
     <string name="height">Hauteur</string>
     <string name="keep_aspect_ratio">Conserver le rapport d\'affichage</string>
     <string name="invalid_values">Veuillez entrer une résolution valide</string>
-    <!-- Editor -->
     <string name="editor">Éditeur</string>
     <string name="save">Sauvegarder</string>
     <string name="rotate">Pivoter</string>
@@ -85,10 +80,7 @@
     <string name="flip_horizontally">Retourner horizontalement</string>
     <string name="flip_vertically">Retourner verticalement</string>
     <string name="free_aspect_ratio">Libre</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Autres</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">Fond d\'écran simple</string>
     <string name="set_as_wallpaper">Définir comme fond d\'écran</string>
     <string name="set_as_wallpaper_failed">Échec de la définition en tant que fond d\'écran</string>
@@ -100,7 +92,6 @@
     <string name="home_screen">Écran d\'accueil</string>
     <string name="lock_screen">Écran de déverrouillage</string>
     <string name="home_and_lock_screen">Écran d\'accueil et écran de déverrouillage</string>
-    <!-- Slideshow -->
     <string name="slideshow">Diaporama</string>
     <string name="interval">Intervalle (secondes) :</string>
     <string name="include_photos">Inclure photos</string>
@@ -113,12 +104,10 @@
     <string name="slideshow_ended">Diaporama terminé</string>
     <string name="no_media_for_slideshow">Aucun média trouvé pour le diaporama</string>
     <string name="use_crossfade_animation">Utiliser un fondu d\'animation</string>
-    <!-- View types -->
     <string name="change_view_type">Changer de mode d\'affichage</string>
     <string name="grid">Grille</string>
     <string name="list">Liste</string>
     <string name="group_direct_subfolders">Sous-dossiers de groupe direct</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Grouper par</string>
     <string name="do_not_group_files">Ne pas grouper les fichiers</string>
     <string name="by_folder">Dossier</string>
@@ -126,10 +115,8 @@
     <string name="by_date_taken">Date de prise</string>
     <string name="by_file_type">Type de fichier</string>
     <string name="by_extension">Extension</string>
-    <!-- Widgets -->
     <string name="folder_on_widget">Afficher le dossier sur le Widget:</string>
     <string name="show_folder_name">Afficher le nom du dossier</string>
-    <!-- Settings -->
     <string name="autoplay_videos">Lecture automatique des vidéos</string>
     <string name="remember_last_video_position">Se rappeler de la position de lecture vidéo</string>
     <string name="toggle_filename">Permuter la visibilité des noms de fichier</string>
@@ -163,16 +150,13 @@
     <string name="allow_down_gesture">Fermeture de la vue plein écran par un geste vers le bas</string>
     <string name="allow_one_to_one_zoom">Permettre le zoom avant 1:1 avec le double-tape</string>
     <string name="open_videos_on_separate_screen">Toujours ouvrir les vidéos sur un écran séparé avec de nouveaux gestes horizontaux</string>
-    <!-- Setting sections -->
     <string name="thumbnails">Miniatures</string>
     <string name="fullscreen_media">Affichage en plein écran</string>
     <string name="extended_details">Détails supplémentaires</string>
     <string name="bottom_actions">Menu d\'actions sur la bas de l\'écran</string>
-    <!-- Bottom actions -->
     <string name="manage_bottom_actions">Gérer le menu d\'actions</string>
     <string name="toggle_favorite">Ajouter aux favoris</string>
     <string name="toggle_file_visibility">Changer la visibilité des fichiers</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Comment faire de Simple Gallery ma galerie par défaut ?</string>
     <string name="faq_1_text">Il faut dans un premier temps, trouver l\'application \"galerie\" par défaut dans la section \"Applications\" des paramètres de l\'appareil, puis appuyer sur \"Ouvrir par défaut\", et enfin sélectionner \"Réinitialiser les paramètres par défaut\". 		La prochaine fois que vous ouvrirez une image ou une vidéo, il vous sera proposé de choisir une application, choisissez \"Simple Gallery\" puis \"Toujours\".</string>
     <string name="faq_2_title">J\'ai verrouillé l\'application avec un mot de passe et je ne m\'en rappelle plus. Que faire ?</string>
@@ -199,36 +183,4 @@
     <string name="faq_13_text">La solution actuelle d\'affichage des images fonctionne bien dans la grande majorité des cas, mais si vous voulez une qualité d\'image encore meilleure, vous pouvez activer l\'option \"Afficher les images avec la plus haute qualité possible\" dans la section \"Niveau de zoom maximal des images\" des paramètres de l\'application.</string>
     <string name="faq_14_title">J\'ai masqué un fichier ou un dossier. Comment puis-je en rétablir l\'affichage ?</string>
     <string name="faq_14_text">Vous pouvez soit appuyer sur l\'option \"Afficher les fichiers masqués\" du menu de l\'écran principal, ou appuyer sur le bouton \"Afficher les éléments masqués\" dans les paramètres de l\'application. Si vous voulez rétablir leur affichage, effectuez un appui prolongé dessus et appuyez sur le symbole \"Œil\" permettant l\'affichage. Les dossiers sont masqués en ajoutant un fichier \".nomedia\" à leur racine, vous pouvez également supprimer ce fichier avec n\’importe quel explorateur de fichiers.</string>
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">Une galerie pour visionner photos et vidéos sans publicité.</string>
-    <string name="app_long_description">A highly customizable gallery capable of displaying many different image and video types including SVGs, RAWs, panoramic photos and videos.
-
-        It is open source, contains no ads or unnecessary permissions.
-
-        Let\'s list some of its features worth mentioning:
-        1. Search
-        2. Slideshow
-        3. Notch support
-        4. Pinning folders to the top
-        5. Filtering media files by type
-        6. Recycle bin for easy file recovery
-        7. Fullscreen view orientation locking
-        8. Marking favorite files for easy access
-        9. Quick fullscreen media closing with down gesture
-        10. An editor for modifying images and applying filters
-        11. Password protection for protecting hidden items or the whole app
-        12. Changing the thumbnail column count with gestures or menu buttons
-        13. Customizable bottom actions at the fullscreen view for quick access
-        14. Showing extended details over fullscreen media with desired file properties
-        15. Several different ways of sorting or grouping items, both ascending and descending
-        16. Hiding folders (affects other apps too), excluding folders (affects only Simple Gallery)
-
-        The fingerprint permission is needed for locking either hidden item visibility, the whole app, or protecting files from being deleted.
-
-        This app is just one piece of a bigger series of apps. You can find the rest of them at https://www.simplemobiletools.com</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

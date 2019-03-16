@@ -33,7 +33,6 @@
     <string name="fixing">Naprawiam…</string>
     <string name="dates_fixed_successfully">Daty zostały naprawione</string>
     <string name="share_resized">Podziel się przeskalowanym obrazem</string>
-    <!-- Filter -->
     <string name="filter_media">Filtruj multimedia</string>
     <string name="images">Obrazy</string>
     <string name="videos">Filmy</string>
@@ -42,7 +41,6 @@
     <string name="svgs">Obrazy SVG</string>
     <string name="no_media_with_filters">Nie znaleziono multimediów zgodnych z zastosowanymi filtrami.</string>
     <string name="change_filters_underlined"><u>Zmień filtry</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">Ta funkcja ukrywa foldery, dodając do nich pusty plik \'.nomedia\'. Aby móc je zobaczyć, należy włączyć opcję \'Pokazuj ukryte foldery\' w ustawieniach. Kontynuować?</string>
     <string name="exclude">Wyklucz</string>
     <string name="excluded_folders">Wykluczone foldery</string>
@@ -55,19 +53,16 @@
     <string name="hidden_folders">Ukryte foldery</string>
     <string name="manage_hidden_folders">Zarządzaj ukrytymi folderami</string>
     <string name="hidden_folders_placeholder">Zdaje się, że nie masz żadnych folderów z plikiem \'.nomedia\'.</string>
-    <!-- Include folders -->
     <string name="include_folders">Dołączone foldery</string>
     <string name="manage_included_folders">Zarządzaj dołączonymi folderami</string>
     <string name="add_folder">Dodaj folder</string>
     <string name="included_activity_placeholder">Jeśli masz jakieś foldery z multimediami, ale aplikacja ich nie wykryła, możesz je dodać ręcznie tutaj.</string>
-    <!-- Resizing -->
     <string name="resize">Zmień rozmiar</string>
     <string name="resize_and_save">Zmień i zapisz</string>
     <string name="width">Szerokość</string>
     <string name="height">Wysokość</string>
     <string name="keep_aspect_ratio">Zachowaj proporcje</string>
     <string name="invalid_values">Podaj poprawną rozdzielczość</string>
-    <!-- Editor -->
     <string name="editor">Edycja</string>
     <string name="save">Zapisz</string>
     <string name="rotate">Obróć</string>
@@ -85,22 +80,18 @@
     <string name="flip_horizontally">Przewróć w poziomie</string>
     <string name="flip_vertically">Przewróć w pionie</string>
     <string name="free_aspect_ratio">Wolne</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Inny</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">Tapeta</string>
     <string name="set_as_wallpaper">Ustaw jako tapetę</string>
     <string name="set_as_wallpaper_failed">Ustawienie tapety nie powiodło się</string>
     <string name="set_as_wallpaper_with">Ustaw jako tapetę w:</string>
-    <string name="setting_wallpaper">Ustawiam tapetę&#8230;</string>
+    <string name="setting_wallpaper">Ustawiam tapetę…</string>
     <string name="wallpaper_set_successfully">Tapeta została ustawiona</string>
     <string name="portrait_aspect_ratio">Proporcje ekranu w trybie pionowym</string>
     <string name="landscape_aspect_ratio">Proporcje ekranu w trybie poziomym</string>
     <string name="home_screen">Pulpit</string>
     <string name="lock_screen">Ekran blokady</string>
     <string name="home_and_lock_screen">Pulpit i ekran blokady</string>
-    <!-- Slideshow -->
     <string name="slideshow">Pokaz slajdów</string>
     <string name="interval">Przedział (sekundy):</string>
     <string name="include_photos">Dołączaj zdjęcia</string>
@@ -113,12 +104,10 @@
     <string name="slideshow_ended">Pokaz slajdów zakończony</string>
     <string name="no_media_for_slideshow">Nie znalazłem multimediów do pokazu slajdów</string>
     <string name="use_crossfade_animation">Użyj przenikających animacji</string>
-    <!-- View types -->
     <string name="change_view_type">Zmień typ widoku</string>
     <string name="grid">Siatka</string>
     <string name="list">Lista</string>
     <string name="group_direct_subfolders">Grupuj bezpośrednie podfoldery</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Grupuj według</string>
     <string name="do_not_group_files">Nie grupuj plików</string>
     <string name="by_folder">Folderu</string>
@@ -126,10 +115,8 @@
     <string name="by_date_taken">Daty utworzenia</string>
     <string name="by_file_type">Typu</string>
     <string name="by_extension">Rozszerzenia</string>
-    <!-- Widgets -->
     <string name="folder_on_widget">Folder widoczny na widżecie:</string>
     <string name="show_folder_name">Pokaż nazwę folderu</string>
-    <!-- Settings -->
     <string name="autoplay_videos">Odtwarzaj filmy automatycznie</string>
     <string name="remember_last_video_position">Pamiętaj ostatni moment odtwarzania filmów</string>
     <string name="toggle_filename">Pokazuj / ukrywaj nazwy plików</string>
@@ -165,16 +152,13 @@
     <string name="open_videos_on_separate_screen">Zawsze otwieraj filmy na oddzielnym ekranie z nowymi gestami poziomymi</string>
     <string name="show_notch">Pokaż notch\'a, jeśli jest dostępny</string>
     <string name="allow_rotating_gestures">Obracanie zdjęć za pomocą gestów</string>
-    <!-- Setting sections -->
     <string name="thumbnails">Miniatury</string>
     <string name="fullscreen_media">Widok pełnoekranowy</string>
     <string name="extended_details">Dodatkowe szczegóły</string>
     <string name="bottom_actions">Przyciski na dolnym pasku</string>
-    <!-- Bottom actions -->
     <string name="manage_bottom_actions">Zarządzaj przyciskami na dolnym pasku</string>
     <string name="toggle_favorite">Ulubione</string>
     <string name="toggle_file_visibility">Widoczność plików</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Jak mogę ustawić tą aplikację jako domyślną aplikację galerii?</string>
     <string name="faq_1_text">Znajdź obecną domyślną aplikację galerii w ustawieniach systemowych (sekcja \'Aplikacje\'). Na ekranie z informacjami o niej kliknij \'Otwórz domyślnie\', a następnie \'Wyczyść domyślne\'. Gdy podczas następnej próby otwarcia zdjęcia czy filmu system zapyta Cię jaką aplikacją to zrobić, wybierz Prostą Galerię i opcję zapamiętania tego wyboru.</string>
     <string name="faq_2_title">Zablokowałem(-am) aplikację hasłem i wyleciało mi ono z głowy. Co mogę zrobić?</string>
@@ -201,37 +185,4 @@
     <string name="faq_13_text">Obecne rozwiązanie służące wyświetlaniu obrazów działa jak powinno w większości w przypadków. Jeśli jednak tak nie jest, pomocna może okazać się opcja \'Pokazuj obrazy w najwyższej możliwej jakości\' w sekcji \'Duże powiększanie obrazów\'.</string>
     <string name="faq_14_title">Mam ukryte pliki i / lub foldery. Jak mogę zobaczyć?</string>
     <string name="faq_14_text">Możesz to zrobić albo wybierając opcję \'Tymczasowo pokaż ukryte multimedia\' w menu na ekranie głównym, lub \'Pokazuj ukryte elementy\' w ustawieniach. Foldery są ukrywane poprzez dodanie do nich pustego, ukrytego pliku \'.nomedia\'. Usunąć go możesz dowolnym menedżerem plików.</string>
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">Prosta galeria bez reklam do przeglądania obrazów i filmów.</string>
-    <string name="app_long_description">        Wysoce konfigurowalna galeria obsługująca wiele formatów obrazów i filmów, w tym SVG, RAW oraz multimedia panoramiczne.
-        
-        Jest otwartoźródłowa, nie zawiera reklam i nie potrzebuje masy uprawnień.
-
-        Oto lista wartych wspomnienia funkcji:
-        1. Wyszukiwanie
-        2. Pokazy slajdów
-        3. Wsparcie dla wcięć w ekranach
-        4. Przypinanie folderów
-        5. Filtrowanie plików według typu
-        6. Kosz dla łatwego odzyskiwania plików
-        7. Blokowanie orientacji ekranu w widoku pełnoekranowym
-        8. Oznaczanie plików jako ulubione dla łatwiejszego do nich dostępu
-        9. Szybkie zamykanie pełnoekranowego widoku gestem pociągnięcia w dół
-        10. Edytor do szybkich modyfikacji i poprawek
-        11. Ochrona plików i/lub całej aplikacji hasłem
-        12. Zmiana ilości kolumn w widoku miniatur gestami lub w menu
-        13. Konfigurowalne przyciski akcji w widoku pełnoekranowym
-        14. Rozszerzone informacje o multimediach w widoku pełnoekranowym
-        15. Wiele sposobów sortowania i grupowania plików i folderów, rosnąco i malejąco
-        16. Ukrywanie folderów (wszędzie) i ich wykluczanie (tylko w obrębie tej aplikacji)
-
-        Uprawnienie odnośnie odcisków palców potrzebne jest do blokowania widoczności plików i folderów, do ochrony przed ich usunięciem i do blokowania dostępu do aplikacji.
-
-        Aplikacja ta jest tylko częścią serii. Pozostałe znajdziesz tutaj: https://www.simplemobiletools.com
-    </string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>

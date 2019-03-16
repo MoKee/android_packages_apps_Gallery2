@@ -32,7 +32,6 @@
     <string name="fix_date_taken">ಖಚಿತ ದಿನಾಂಕ ತೆಗೆದುಕೊಂಡ ಬೆಲೆ</string>
     <string name="fixing">ಖಚಿತಪಡಿಸುವಿಕೆ…</string>
     <string name="dates_fixed_successfully">ದಿನಾಂಕಗಳು ಯಶಸ್ವಿಯಾಗಿ ಸರಿಪಡಿಸಲ್ಪಟ್ಟಿವೆ</string>
-    <!-- Filter -->
     <string name="filter_media">ಮಾಧ್ಯಮ ಶೋಧಿಸು</string>
     <string name="videos">ದೃಶ್ಯಗಳು</string>
     <string name="gifs">GIF ಗಳು</string>
@@ -40,22 +39,24 @@
     <string name="svgs">SVG ಗಳು</string>
     <string name="no_media_with_filters">ಆಯ್ಕೆ ಮಾಡಿದ ಶೋಧಕಗಳಿಂದ ಯಾವುದೇ ಮಾಧ್ಯಮ ಕಡತಗಳು ಕಂಡುಬಂದಿಲ್ಲ.</string>
     <string name="change_filters_underlined"><u>ಶೋಧಕ ಬದಲಾಯಿಸು</u></string>
-    <!-- Hide / Exclude -->
     <string name="exclude">ಹೊರತುಪಡಿಸಿ</string>
     <string name="excluded_folders">ಹೊರತುಪಡಿಸಿದ ಕಡತಕೋಶಗಳು</string>
     <string name="manage_excluded_folders">ಹೊರತುಪಡಿಸಿದ ಕಡತಕೋಶಗಳನ್ನು ನಿರ್ವಹಿಸು</string>
+    <string name="exclude_folder_parent">ಬದಲಾಗಿ ಪಾಲಕರನ್ನು ಹೊರತುಪಡಿಸಬೇಕೆ?</string>
     <string name="remove_all">ಎಲ್ಲವನ್ನೂ ತೆಗೆದುಹಾಕಿ</string>
+    <string name="remove_all_description">ಹೊರತುಪಡಿಸಿದ ಪಟ್ಟಿಯಲ್ಲಿಯ ಎಲ್ಲ ಕಡತಕೋಶಗಳನ್ನು ತೆಗೆದುಹಾಕಬೇಕೆ? ಇದು ಕಡತಕೋಶಗಳನ್ನು ಅಳಿಸುವುದಿಲ್ಲ.</string>
     <string name="hidden_folders">ಮರೆ ಮಾಡಿದ ಕಡತಕೋಶಗಳು</string>
     <string name="manage_hidden_folders">ಮರೆಯಾದ ಕಡತಕೋಶಗಳನ್ನು ನಿರ್ವಹಿಸಿ</string>
-    <!-- Include folders -->
+    <string name="hidden_folders_placeholder">ನೀವು \".nomedia\" ನೊಂದಿಗಿರುವ ಕಾಣದ ಯಾವುದೇ ಕಡತಕೋಶಗಳನ್ನು ಹೊಂದಿಲ್ಲವೆಂದು ಕಾಣಿಸುತ್ತದೆ.</string>
     <string name="include_folders">ಸೇರಿಸಿದ ಕಡತಕೋಶಗಳು</string>
     <string name="manage_included_folders">ಸೇರಿಸಿದ ಕಡತಕೋಶಗಳನ್ನು ನಿರ್ವಹಿಸು</string>
     <string name="add_folder">ಕಡತಕೋಶ ಸೇರಿಸಿ</string>
-    <!-- Resizing -->
     <string name="resize">ಮರುಗಾತ್ರ</string>
+    <string name="resize_and_save">ಆಯ್ಕೆಮಾಡಿರುವುದನ್ನು ಮರುಗಾತ್ರಗೊಳಿಸಸಿ ಮತ್ತು ಉಳಿಸಿ</string>
     <string name="width">ಅಗಲ</string>
     <string name="height">ಎತ್ತರ</string>
-    <!-- Editor -->
+    <string name="keep_aspect_ratio">ಆಕಾರ ಅನುಪಾತ ಕಾಪಾಡು</string>
+    <string name="invalid_values">ದಯಮಾಡಿ ಮಾನ್ಯವಿರುವ ವಿಶ್ಲೇಷಣೆಯನ್ನು ನಮೂದಿಸು</string>
     <string name="editor">ಪರಿಷ್ಕರಕ</string>
     <string name="save">ಉಳಿಸಿ</string>
     <string name="rotate">ತಿರುಗಿಸು</string>
@@ -64,30 +65,54 @@
     <string name="image_editing_failed">ಚಿತ್ರದ ಪರಿಷ್ಕರಣೆ ವಿಫಲಗೊಂಡಿದೆ</string>
     <string name="edit_image_with">ಇದರೊಂದಿಗೆ ಚಿತ್ರವನ್ನು ಪರಿಷ್ಕರಿಸು:</string>
     <string name="no_editor_found">ಯಾವುದೇ ಚಿತ್ರದ ಪರಿಷ್ಕರಕ ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="unknown_file_location">ಅಪರಿಚಿತ ಕಡತ ಸ್ಥಳ</string>
+    <string name="error_saving_file">ಮೂಲ ಕಡತದ ಮೇಲೆ ಮರುನಮೂದಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ</string>
     <string name="rotate_left">ಎಡಕ್ಕೆ ತಿರುಗಿಸಿ</string>
     <string name="rotate_right">ಬಲಕ್ಕೆ ತಿರುಗಿಸಿ</string>
+    <string name="rotate_one_eighty">180º ಗೆ ತಿರುಗಿಸು</string>
+    <string name="flip">ತಿರುಗಿಸು</string>
+    <string name="flip_horizontally">ಅಡ್ಡವಾಗಿ ತಿರುಗಿಸು</string>
+    <string name="flip_vertically">ಲಂಬವಾಗಿ ತಿರುಗಿಸು</string>
     <string name="free_aspect_ratio">ಯಾವುದೂ ಇಲ್ಲ</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">ಇತರೆ</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
+    <string name="simple_wallpaper">ಚಿಕ್ಕ ಹಿನ್ನೆಲೆಚಿತ್ರ</string>
+    <string name="set_as_wallpaper">ಹಿನ್ನೆಲೆಚಿತ್ರವಾಗಿ ಹೊಂದಿಸು</string>
+    <string name="set_as_wallpaper_failed">ಹಿನ್ನೆಲೆ ಚಿತ್ರವನ್ನು ಸಂಯೋಜಿಸುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="set_as_wallpaper_with">ಇದರೊಂದಿಗೆ ಹಿನ್ನೆಲೆ ಚಿತ್ರ ಸಂಯೋಜಿಸು:</string>
+    <string name="setting_wallpaper">ಹಿನ್ನೆಲೆ ಚಿತ್ರ ಸಂಯೋಜಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="wallpaper_set_successfully">ಹಿನ್ನೆಲೆ ಚಿತ್ರ ಯಶಸ್ವಿಯಾಗಿ ಸಂಯೋಜಿಸಲಾಗಿದೆ</string>
+    <string name="portrait_aspect_ratio">ಭಾವಚಿತ್ರ ಆಕಾರದ ಅನುಪಾತ</string>
+    <string name="landscape_aspect_ratio">ಭೂವಿನ್ಯಾಸದ ಆಕಾರದ ಅನುಪಾತ</string>
     <string name="home_screen">ಮುಖ್ಯ ಪರದೆ</string>
     <string name="lock_screen">ಪರದೆ ಲಾಕ್ ಮಾಡಿ</string>
-    <!-- Slideshow -->
+    <string name="home_and_lock_screen">ಮುಖ್ಯ ಮತ್ತು ಪರದೆ ಕೀಲಿಗಳು</string>
     <string name="slideshow">ಸ್ಲೈಡ್ ಶೋ</string>
-    <!-- View types -->
-    <!-- Grouping at media thumbnails -->
+    <string name="interval">ವಿರಾಮ(ಸೆಕೆಂಡುಗಳು):</string>
+    <string name="include_photos">ಚಿತ್ರಗಳನ್ನು ಸೇರಿಸು</string>
+    <string name="include_videos">ದೃಶ್ಯಗಳನ್ನು ಸೇರಿಸು</string>
+    <string name="include_gifs">GIF ಗಳನ್ನು ಸೇರಿಸು</string>
+    <string name="random_order">ಸ್ವೇಚ್ಛೆಯಾದ ಕ್ರಮ</string>
+    <string name="use_fade">ಬಣ್ಣಗುಂದಿದ ಅನಿಮೇಷನ್ ಗಳನ್ನು ಬಳಸು</string>
+    <string name="move_backwards">ಹಿಮ್ಮುಖವಾಗಿ ಚಲಿಸು</string>
+    <string name="loop_slideshow">ಚಕ್ರಿಯ ಸ್ಲೈಡ್ ವೀಕ್ಷಣೆ</string>
+    <string name="slideshow_ended">ಸ್ಲೈಡ್ ವೀಕ್ಷಣೆ ಕೊನೆಗೊಂಡಿದೆ</string>
+    <string name="no_media_for_slideshow">ಸ್ಲೈಡ್ ವೀಕ್ಷಣೆಗೆ ಯಾವುದೇ ಮಾಧ್ಯಮಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="use_crossfade_animation">ಅಡ್ಡಮಿಶ್ರಿತ ಬಣ್ಣಗುಂದಿದ ಅನಿಮೇಷನ್ ಗಳನ್ನು ಬಳಸು</string>
+    <string name="change_view_type">ನೋಟದ ರೀತಿ ಬದಲಾಯಿಸು</string>
+    <string name="grid">ಚೌಕಾಕಾರದ ಕ್ರಮ</string>
+    <string name="list">ಪಟ್ಟಿ ಕ್ರಮ</string>
+    <string name="group_direct_subfolders">ಗುಂಪಿನ ನೇರ ಉಪಕಡತಕೋಶಗಳು</string>
     <string name="group_by">ಗುಂಪಿನ ಮೂಲಕ</string>
+    <string name="do_not_group_files">ಕಡತಗಳನ್ನು ಗುಂಪು ಮಾಡಬೇಡಿ</string>
+    <string name="by_last_modified">ಕೊನೆಯ ಬಾರಿ ಮಾರ್ಪಡಿಸಿದುದು</string>
     <string name="by_date_taken">ತೆಗೆದಿರುವ ದಿನಾಂಕ</string>
-    <!-- Widgets -->
-    <!-- Settings -->
-    <!-- Setting sections -->
-    <!-- Bottom actions -->
-    <!-- FAQ -->
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
+    <string name="by_file_type">ಕಡತದ ವಿಧ</string>
+    <string name="by_extension">ವಿಸ್ತರಣೆ</string>
+    <string name="folder_on_widget">ವಿಜೆಟ್ ನಲ್ಲಿ ತೋರಿಸಲಾದ್ ಫೋಲ್ಡರ್:</string>
+    <string name="show_folder_name">ಫೋಲ್ಡರಿನ ಹೆಸರು ತೋರಿಸು</string>
+    <string name="autoplay_videos">ವಿಡಿಯೋಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಚಾಲಿಸಿ</string>
+    <string name="screen_rotation_aspect_ratio">ಆಕಾರ ಅನುಪಾತ</string>
+    <string name="manage_extended_details">ವಿಸ್ತರಿಸಿದ ವಿವರಗಳನ್ನು ನಿರ್ವಹಿಸಿ</string>
+    <string name="fullscreen_media">ಪೂರ್ಣಪರದೆ ಮಾಧ್ಯಮ</string>
+    <string name="extended_details">ವಿಸ್ತರಿಸಿದ ವಿವರಗಳು</string>
 </resources>

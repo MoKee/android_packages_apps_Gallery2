@@ -33,7 +33,6 @@
     <string name="fixing">Menetapkan…</string>
     <string name="dates_fixed_successfully">Tanggal berhasil diperbaiki</string>
     <string name="share_resized">Share a resized version</string>
-    <!-- Filter -->
     <string name="filter_media">Sortir media</string>
     <string name="images">Gambar</string>
     <string name="videos">Video</string>
@@ -42,7 +41,6 @@
     <string name="svgs">SVG</string>
     <string name="no_media_with_filters">Tidak ada file media yang ditemukan dengan filter yang dipilih.</string>
     <string name="change_filters_underlined"><u>Ubah filter</u></string>
-    <!-- Hide / Exclude -->
     <string name="hide_folder_description">Fungsi ini menyembunyikan folder dengan menambahkan file \'.nomedia\' ke dalamnya, ia juga akan menyembunyikan semua subfolder. Anda dapat melihatnya dengan mengaktifkan opsi \'Tampilkan item yang tersembunyi\' di Pengaturan. Lanjutkan?</string>
     <string name="exclude">Kecualikan</string>
     <string name="excluded_folders">Kecualikan folder</string>
@@ -55,19 +53,16 @@
     <string name="hidden_folders">Berkas Tersembunyi</string>
     <string name="manage_hidden_folders">Mengelola folder tersembunyi</string>
     <string name="hidden_folders_placeholder">Sepertinya Anda tidak memiliki folder apa pun yang disembunyikan dengan file \".nomedia\".</string>
-    <!-- Include folders -->
     <string name="include_folders">Folder yang disertakan</string>
     <string name="manage_included_folders">Kelola folder yang disertakan</string>
     <string name="add_folder">Tambahkan folder</string>
     <string name="included_activity_placeholder">Jika Anda memiliki beberapa folder yang berisi media, tetapi itu tidak dibaca oleh aplikasi, Anda dapat menambahkan secara manual.\n\nMenambahkan beberapa item di sini tidak akan mengecualikan folder lain.</string>
-    <!-- Resizing -->
     <string name="resize">Ubah ukuran</string>
     <string name="resize_and_save">Ubah ukuran dan simpan</string>
     <string name="width">Lebar</string>
     <string name="height">Tinggi</string>
     <string name="keep_aspect_ratio">Simpan aspek rasio</string>
     <string name="invalid_values">Masukkan sebuah resolusi yang benar</string>
-    <!-- Editor -->
     <string name="editor">Penyunting</string>
     <string name="save">Simpan</string>
     <string name="rotate">Putar</string>
@@ -85,22 +80,18 @@
     <string name="flip_horizontally">Balik secara horizontal</string>
     <string name="flip_vertically">Balik secara vertikal</string>
     <string name="free_aspect_ratio">Tidak ada</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free -->
     <string name="other_aspect_ratio">Lainnya</string>
-    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
-    <!-- Set wallpaper -->
     <string name="simple_wallpaper">Wallpaper sederhana</string>
     <string name="set_as_wallpaper">Atur sebagai Wallpaper</string>
     <string name="set_as_wallpaper_failed">Penyetelan sebagai Wallpaper gagal</string>
     <string name="set_as_wallpaper_with">Setel sebagai wallpaper dengan:</string>
-    <string name="setting_wallpaper">Pengaturan wallpaper&#8230;</string>
+    <string name="setting_wallpaper">Pengaturan wallpaper…</string>
     <string name="wallpaper_set_successfully">Wallpaper berhasil disetel</string>
     <string name="portrait_aspect_ratio">Aspek rasio potret</string>
     <string name="landscape_aspect_ratio">Aspek rasio lanskap</string>
     <string name="home_screen">Layar utama</string>
     <string name="lock_screen">Layar kunci</string>
     <string name="home_and_lock_screen">Layar utama dan layar kunci</string>
-    <!-- Slideshow -->
     <string name="slideshow">Rangkai slide</string>
     <string name="interval">Interval (detik):</string>
     <string name="include_photos">Sertakan foto</string>
@@ -113,12 +104,10 @@
     <string name="slideshow_ended">Tampilan slide berakhir</string>
     <string name="no_media_for_slideshow">Tidak ada media untuk tampilan slide yang ditemukan</string>
     <string name="use_crossfade_animation">Gunakan animasi crossfade</string>
-    <!-- View types -->
     <string name="change_view_type">Ubah jenis tampilan</string>
     <string name="grid">Kotak</string>
     <string name="list">Daftar</string>
     <string name="group_direct_subfolders">Kelompokan subfolder langsung</string>
-    <!-- Grouping at media thumbnails -->
     <string name="group_by">Kelompokkan menurut</string>
     <string name="do_not_group_files">Jangan mengelompokkan file</string>
     <string name="by_folder">Folder</string>
@@ -126,10 +115,8 @@
     <string name="by_date_taken">Tanggal diambil</string>
     <string name="by_file_type">Jenis file</string>
     <string name="by_extension">Ekstensi</string>
-    <!-- Widgets -->
     <string name="folder_on_widget">Folder yang ditampilkan pada widget:</string>
     <string name="show_folder_name">Tampilkan nama folder</string>
-    <!-- Settings -->
     <string name="autoplay_videos">Putar video secara otomatis</string>
     <string name="remember_last_video_position">Ingat posisi pemutaran video terakhir</string>
     <string name="toggle_filename">Beralih visibilitas nama file</string>
@@ -163,16 +150,13 @@
     <string name="allow_down_gesture">Izinkan menutup tampilan layar penuh dengan gerakan ke bawah</string>
     <string name="allow_one_to_one_zoom">Izinkan memperbesar 1:1 dengan dua ketukan ganda</string>
     <string name="open_videos_on_separate_screen">Selalu buka video di layar terpisah dengan gerakan horizontal baru</string>
-    <!-- Setting sections -->
     <string name="thumbnails">Thumbnail</string>
     <string name="fullscreen_media">Media layar penuh</string>
     <string name="extended_details">Detail yang diperluas</string>
     <string name="bottom_actions">Tindakan bawah</string>
-    <!-- Bottom actions -->
     <string name="manage_bottom_actions">Kelola tindakan bawah yang terlihat</string>
     <string name="toggle_favorite">Beralih favorit</string>
     <string name="toggle_file_visibility">Alihkan visibilitas file</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Bagaimana saya bisa mengatur Galeri Sederhana untuk menjadi galeri bawaan perangkat?</string>
     <string name="faq_1_text">Pertama Anda harus menemukan galeri default saat ini di bagian Aplikasi pengaturan perangkat Anda, cari tombol yang mengatakan sesuatu seperti \"Buka secara default\", klik, lalu pilih \"Hapus default\".
         Lalu Anda akan mencoba membuka gambar atau video, Anda akan melihat pemilih aplikasi, di mana Anda dapat memilih Galeri Sederhana dan menjadikannya aplikasi default.</string>
@@ -201,37 +185,4 @@
     <string name="faq_13_text">Solusi saat ini untuk menampilkan gambar berfungsi dengan baik di sebagian besar kasus, tetapi jika Anda menginginkan kualitas gambar yang lebih baik, Anda dapat mengaktifkan \"Tampilkan gambar dengan kualitas setinggi mungkin\" di pengaturan aplikasi, di bagian \"Gambar yang dapat diperbesar\".</string>
     <string name="faq_14_title">Saya telah menyembunyikan file / folder. Bagaimana saya bisa memunculkannya?</string>
     <string name="faq_14_text">Anda dapat menekan item menu \"Tampilkan sementara item tersembunyi\" di layar utama, atau beralih \"Tampilkan item tersembunyi\" di pengaturan aplikasi untuk melihat item yang tersembunyi. Jika Anda ingin menyembunyikannya, cukup tekan dan pilih \"Munculkan\". Folder disembunyikan dengan menambahkan file \".nomedia\" yang tersembunyi ke dalamnya, Anda juga dapat menghapus file dengan pengelola file apa pun.</string>
-    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
-    <!-- Short description has to have less than 80 chars -->
-    <string name="app_short_description">Galeri offline untuk mengelola file Anda tanpa iklan, menjaga privasi Anda.</string>
-    <string name="app_long_description">Galeri yang sangat dapat disesuaikan yang mampu menampilkan banyak jenis gambar dan video yang berbeda termasuk SVG, RAW, foto panorama, dan video.
-
-        Ini adalah open source, tidak mengandung iklan atau izin yang tidak perlu.
-
-        Mari kita daftar beberapa fiturnya yang perlu disebutkan:
-        1. Cari
-        2. Tampilan slide
-        3. Dukungan notch
-        4. Menjepit folder ke atas
-        5. Memfilter file media berdasarkan jenis
-        6. Recycle bin untuk pemulihan file yang mudah
-        7. Penguncian orientasi tampilan layar penuh
-        8. Menandai file favorit untuk akses mudah 
-        9. Media cepat layar penuh ditutup dengan gerakan turun 
-        10. Editor untuk memodifikasi gambar dan menerapkan filter 
-        11. Perlindungan kata sandi untuk melindungi item yang tersembunyi atau seluruh aplikasi 
-        12. Mengubah jumlah kolom thumbnail dengan gerakan atau menu tombol 
-        13. Tindakan bawah yang dapat disesuaikan pada tampilan layar penuh untuk akses cepat 
-        14. Menampilkan detail yang diperluas pada media layar penuh dengan properti file yang diinginkan 
-        15. Beberapa cara yang berbeda untuk mengurutkan atau mengelompokkan item, baik naik maupun turun 
-        16. Menyembunyikan folder (mempengaruhi aplikasi lain juga), tidak termasuk folder (hanya memengaruhi Galeri Sederhana)
-
-        Izin sidik jari diperlukan untuk mengunci baik visibilitas item tersembunyi, seluruh aplikasi, atau melindungi file agar tidak dihapus. 
-
-        Aplikasi ini hanyalah satu bagian dari rangkaian aplikasi yang lebih besar. Anda dapat menemukan sisanya di https://www.simplemobiletools.com
-    </string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
-    -->
 </resources>
