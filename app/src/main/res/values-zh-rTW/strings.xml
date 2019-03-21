@@ -192,7 +192,7 @@
     <string name="faq_13_text">目前顯示圖片的處理方法，在大部分情況下都能正常運行。但如果你想要更好的圖片品質，你可以在程式設定中[可深度縮放的圖片]部分，啟用[以最高品質顯示圖片]。</string>
     <string name="faq_14_title">我隱藏了一個檔案/資料夾。我如何取消隱藏?</string>
     <string name="faq_14_text">你可以在主螢幕上按下「臨時顯示隱藏項」選單，或者在應用程式設定中切換「顯示隱藏項」來檢視隱藏項。如果你想要隱藏它，只要長按它並選擇「隱藏」。資料夾隱藏通過新增一個隱藏的「.nomedia」來隱藏。你也可以用任何檔案管理器刪除檔案。</string>
-    <string name="app_short_description">離線相簿無廣告。整理、編輯、恢復和保護照片&amp; 影片</string>
+    <string name="app_short_description">離線相簿無廣告。整理、編輯、恢復和保護照片及影片</string>
     <string name="app_long_description">        簡易圖片庫是一個高度可定製的離線相簿。整理和編輯您的照片，恢復已刪除的檔案與回收站，保護和隱藏檔案和檢視大量不同的照片和影片格式包括 RAW、SVG……等。
 
 

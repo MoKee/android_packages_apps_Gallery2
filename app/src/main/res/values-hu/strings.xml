@@ -155,7 +155,7 @@
     <string name="allow_rotating_gestures">Lehetővé teszi a képek kézmozdulattal való forgatását</string>
     <string name="file_loading_priority">Fájlbetöltési sorrend</string>
     <string name="speed">Sebesség</string>
-    <string name="compromise">Kompromisszum</string>
+    <string name="compromise">Átmenet</string>
     <string name="avoid_showing_invalid_files">Az érvénytelen fájlok elkerülése érdekében</string>
     <string name="thumbnails">Miniatűrök</string>
     <string name="fullscreen_media">Teljes képernyős média</string>
