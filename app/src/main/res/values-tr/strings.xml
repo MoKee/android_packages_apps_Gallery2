@@ -192,4 +192,56 @@
     <string name="faq_13_text">Görüntülerin görüntülenmesi için mevcut çözüm, büyük bir çoğunluğun içinde iyi çalışır, ancak daha iyi görüntü kalitesi istiyorsanız, \"Derin yakınlaştırılabilir görüntüler\" bölümünde, uygulama ayarlarında \"Resimleri mümkün olan en yüksek kalitede göster\" seçeneğini etkinleştirebilirsiniz.</string>
     <string name="faq_14_title">Bir dosya/klasör gizledim. Nasıl gösterebilirim?</string>
     <string name="faq_14_text">Ana ekrandaki \"Geçici öğeleri geçici olarak göster\" menü öğesine basabilir veya gizli öğeyi görmek için uygulama ayarlarında \"Gizli öğeleri göster\" seçeneğini değiştirebilirsiniz. Göstermek isterseniz, sadece uzun basın ve \"Göster\" seçeneğini seçin. Klasörler gizli bir \".nomedia\" dosyası ekleyerek gizlenir, dosyayı herhangi bir dosya yöneticisi ile de silebilirsiniz.</string>
+    <string name="app_short_description">Reklamlar olmadan çevrimdışı galeri. Fotoğrafları ve videoları düzenleyin, düzeltin, kurtarın ve koruyun</string>
+    <string name="app_long_description">Basit galeri pro, özelleştirilebilir bir çevrimdışı galeridir. Düzenle ve fotoğraflarınızı düzenleyin, silinen dosyaları geri dönüşüm kutusuyla kurtarın, koruyun ve dosyaları gizle ve çok çeşitli farklı fotoğraflara bak ve RAW, SVG ve daha fazlasını içeren video formatları.
+
+        Uygulamaya hiçbir reklam ve gereksiz izinler içeriyor. Uygulama ya internet erişimi gerektirmediğinden gizliliğiniz korunur.
+
+        -------------------------------------------------
+        <b>BASİT GALERİ PRO - ÖZELLİKLER</b>
+        -------------------------------------------------
+
+        • Reklamsız veya açılan pencereli çevrimdışı galeri
+        • Basit galeri fotoğraf editörü - kırpın, döndürün, yeniden boyutlandırın, çizin, filtreler ve Daha
+        • İnternet erişimi gerekmez, size daha fazla gizlilik ve güvenlik sunar
+        • Gereksiz izin gerekmez
+        • Görüntüleri, videoları ve ampülleri hızlıca arayın. Dosyalar
+        • Aç ve birçok farklı fotoğraf ve video türünü görüntüleyin (RAW, SVG, panoramik vb.)
+        • Kolayca düzenlemek için çeşitli sezgisel hareketleri ve dosyaları düzenle
+        • Filtreleme, gruplandırma ve dosyaları sırala
+        • Simple galeri pro\'nun görünümünü kişiselleştirme
+        • 32 dilde mevcut
+        • Hızlı erişim için dosyaları sık kullanılanlar olarak işaretleyin
+        • Fotoğraflarınızı koruyun ve desen, iğne veya parmak izi olan videolar
+        • Pim, desen ve uygulama lansmanını veya belirli işlevleri de korumak için parmak izi
+        • Silinen fotoğrafları kurtarma ve geri dönüşüm kutusundan videolar
+        • Fotoğrafları ve videoları gizlemek için dosyaların görünürlüğünü değiştir
+        • Dosyalarınızın özelleştirilebilir bir slayt gösterisi oluşturun
+        • Dosyalarınızın ayrıntılı bilgilerini görüntüleyin (çözünürlük, EXIF ​​değerleri vb.)
+        • Simple galeri pro açık kaynak kodlu
+        … ve çok daha fazlası!
+
+        <b>FOTO GALERİ EDİTÖRÜ</b>
+        Basit galeri pro, fotoğraflarınızı anında düzenlemenizi kolaylaştırır. Resimlerinizi kırpın, çevirin, döndürün ve yeniden boyutlandırın. Kendinizi daha yaratıcı hissediyorsanız, filtre ekleyebilir ve resimlerinizi çizebilirsiniz!
+
+        <b>BİRÇOK DOSYA TÜRÜ İÇİN DESTEK</b>
+        Diğer bazı galeri izleyicilerinden farklı olarak ve fotoğraf düzenleyicileri olan Basit galeri pro, JPEG, PNG, MP4, MKV, RAW, SVG, Panoramik fotoğraflar, Panoramik videolar ve daha pek çok farklı dosya türünü destekler.
+
+        <b>ÇOK ÖZELLEŞTİRİLEN GALERİ MÜDÜRÜ</b>
+        Kullanıcı arabiriminden alt araç çubuğundaki işlev tuşlarına kadar, Basit galeri pro oldukça özelleştirilebilir ve istediğiniz şekilde çalışır. Başka hiçbir galeri yöneticisi bu tür bir esnekliğe sahip değil! Açık kaynak olması sayesinde 32 dilde de hazırız!
+
+        <b>KURTARMA SİLEN FOTOĞRAFLAR ve VİDEOLAR</b>
+        Yanlışlıkla değerli bir fotoğraf veya video silindi? Endişelenme! basit galeri pro silinen fotoğrafları kurtarabileceğiniz kullanışlı bir geri dönüşüm kutusu sunar
+
+        <b>KORUMA VE GİZLEME FOTOĞRAFLARI, VİDEOLARI VE DOSYALARI</b>
+        İğne, desen veya cihazınızın parmak izi tarayıcısını kullanarak, fotoğrafları, videoları ve içerikleri koruyabilir ve gizleyebilirsiniz. tüm albümler. Uygulamanın kendisini koruyabilir veya uygulamanın belirli işlevlerine kilitler yerleştirebilirsiniz. Örneğin, parmak izi taraması olmadan bir dosyayı silemez ve dosyalarınızı yanlışlıkla silinmekten koruyabilirsiniz.
+
+        <b>Tüm basit araçlar paketine buradan göz atın:</b>
+        https://www.simplemobiletools.com
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools    </string>
 </resources>
