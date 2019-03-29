@@ -33,6 +33,7 @@
     <string name="fixing">Javítás…</string>
     <string name="dates_fixed_successfully">Sikeres dátumjavítás</string>
     <string name="share_resized">Az átméretezett verzió megosztása</string>
+    <string name="upgraded_from_free">Hé!\n\núgy tűnik, mintha a régi ingyenes alkalmazásból frissített volna. Most már eltávolíthatja a régi verziót, amelynek a „Frissítés Pro verzióra” gombja az alkalmazás beállításainak tetején található.\n\nCsak a Lomtár elemei törlődnek, a kedvenc elemek nem jelennek meg, és vissza kell állítania az alkalmazás beállításait is.\n\nKöszönjük!</string>
     <string name="filter_media">Médiaszűrés</string>
     <string name="images">Kép</string>
     <string name="videos">Videó</string>
