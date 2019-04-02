@@ -49,11 +49,14 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
     private var mIsPlaying = false
     private var mIsDragged = false
     private var mWasVideoStarted = false
+    private var mWasPlayerInited = false
+    private var mWasLastPositionRestored = false
     private var mCurrTime = 0
     private var mDuration = 0
+    private var mPositionWhenInit = 0
 
     private var mExoPlayer: SimpleExoPlayer? = null
-    private var mVideoSize = Point(0, 0)
+    private var mVideoSize = Point(1, 1)
     private var mTimerHandler = Handler()
 
     private var mStoredShowExtendedDetails = false
@@ -135,7 +138,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
         initTimeHolder()
         checkIfPanorama()
 
-        mMedium.path.getVideoResolution()?.apply {
+        activity?.getVideoResolution(mMedium.path)?.apply {
             mVideoSize.x = x
             mVideoSize.y = y
         }
@@ -157,10 +160,7 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
             }
 
             mWasFragmentInit = true
-
-            if (mVideoSize.x != 0 && mVideoSize.y != 0) {
-                setVideoSize()
-            }
+            setVideoSize()
 
             mView.apply {
                 mBrightnessSideScroll.initialize(activity!!, slide_info, true, container) { x, y ->
@@ -496,6 +496,9 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
 
     override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
         if (mExoPlayer != null && fromUser) {
+            if (!mWasPlayerInited) {
+                mPositionWhenInit = progress
+            }
             setPosition(progress)
         }
     }
@@ -553,7 +556,8 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
             setPosition(0)
         }
 
-        if (mStoredRememberLastVideoPosition) {
+        if (mStoredRememberLastVideoPosition && !mWasLastPositionRestored) {
+            mWasLastPositionRestored = true
             restoreLastVideoSavedPosition()
         }
 
@@ -614,6 +618,12 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
                 playVideo()
             }
         }
+
+        if (mPositionWhenInit != 0 && !mWasPlayerInited) {
+            setPosition(mPositionWhenInit)
+            mPositionWhenInit = 0
+        }
+        mWasPlayerInited = true
     }
 
     private fun videoCompleted() {
