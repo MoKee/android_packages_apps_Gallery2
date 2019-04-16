@@ -33,6 +33,7 @@
     <string name="fixing">修復中...</string>
     <string name="dates_fixed_successfully">成功修復日期</string>
     <string name="share_resized">分享更改版本</string>
+    <string name="upgraded_from_free">嘿，\n \n似乎你從舊的免費應用程序升級。 您現在可以卸載舊版本，該版本在應用程序設置的頂部有一個“升級到專業版”按鈕。\n \n您只會刪除回收站項目，未標記喜愛的項目，您還必須重置您的應用程序設置。\n\nThanks！</string>
     <string name="filter_media">篩選媒體檔案</string>
     <string name="images">圖片</string>
     <string name="videos">影片</string>
@@ -192,6 +193,9 @@
     <string name="faq_13_text">目前用於顯示圖像的解決方案在大多數情況下都能很好地工作，但是如果你想要更好的圖像畫質，你可以在「可縮放圖像」部分的應用程式設定中啟用「顯示圖像的最高畫質」。</string>
     <string name="faq_14_title">我已經隱藏了一個檔案/資料夾。如何取消隱藏？</string>
     <string name="faq_14_text">你可以在主螢幕上按下「臨時顯示隱藏項」選單，或者在應用程式設定中切換「顯示隱藏項」來檢視隱藏項。如果你想要隱藏它，只要長按它並選擇「隱藏」。資料夾隱藏通過新增一個隱藏的「.nomedia」來隱藏。你也可以用任何檔案管理器刪除檔案。</string>
+    <string name="faq_15_title">為什麼應用佔用了這麼多空間？</string>
+    <string name="faq_15_text">應用緩存可能佔用多達 250MB，確保更快的圖像加載。如果應用程序正在佔用更多的空間，它很可能是由您在回收站裡擁有的項目造成的。這些文件計數在應用程序大小。您可以通過打開並刪除所有文件或從應用程序設置清除回收站。每個文件都將在30天后自動刪除。</string>
+    <string name="app_title">簡單圖庫專業版: 照片管理器 &amp; 編輯器</string>
     <string name="app_short_description">離線相簿無廣告。整理、編輯、恢復和保護照片及影片</string>
     <string name="app_long_description">        簡易圖片庫是一個高度可定製的離線相簿。整理和編輯您的照片，恢復已刪除的檔案與回收站，保護和隱藏檔案和檢視大量不同的照片和影片格式包括 RAW、SVG……等。
 

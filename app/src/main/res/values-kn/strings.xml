@@ -45,6 +45,7 @@
     <string name="manage_excluded_folders">ಹೊರತುಪಡಿಸಿದ ಕಡತಕೋಶಗಳನ್ನು ನಿರ್ವಹಿಸು</string>
     <string name="exclude_folder_description">ಇದು ಸರಳ ಗ್ಯಾಲರಿಯಿಂದ ಮಾತ್ರ ಅದರ ಉಪಕಡತಕೋಶಗಳೊಂದಿಗೆ ಆಯ್ಕೆಯನ್ನು ಹೊರತುಪಡಿಸುತ್ತದೆ. ಸಂಯೋಜನೆಗಳಲ್ಲಿ ನೀವು ಹೊರತುಪಡಿಸಿದ ಕಡತಕೋಶಗಳನ್ನು ನಿರ್ವಹಿಸಬಹುದು.</string>
     <string name="exclude_folder_parent">ಬದಲಾಗಿ ಪಾಲಕರನ್ನು ಹೊರತುಪಡಿಸಬೇಕೆ?</string>
+    <string name="excluded_activity_placeholder">ಸರಳ ಗ್ಯಾಲರಿಯಲ್ಲಿ ಕಡತಕೋಶಗಳನ್ನು ಹೊರತುಪಡಿಸಿದಾಗ ಅವುಗಳೊಂದಿಗೆ ಉಪಕಡತಕೋಶಗಳನ್ನೂ ಅಡಗಿಸಲಾಗುತ್ತದೆ, ಅವು ಇತರೆ ತಂತ್ರಾಂಶಗಳಲ್ಲಿ ಗೋಚರಿಸುತ್ತವೆ.\n\nlf ನೀವು ಅವುಗಳನ್ನು ಇತರೆ ತಂತ್ರಾಂಶಗಳಲ್ಲಿಯೂ ಕೂಡ ಮರೆಮಾಡಬೇಕೆಂದರೆ ಅಡಗಿಸಿ ಕಾರ್ಯವನ್ನು ಬಳಸಿ.</string>
     <string name="remove_all">ಎಲ್ಲವನ್ನೂ ತೆಗೆದುಹಾಕಿ</string>
     <string name="remove_all_description">ಹೊರತುಪಡಿಸಿದ ಪಟ್ಟಿಯಲ್ಲಿಯ ಎಲ್ಲ ಕಡತಕೋಶಗಳನ್ನು ತೆಗೆದುಹಾಕಬೇಕೆ? ಇದು ಕಡತಕೋಶಗಳನ್ನು ಅಳಿಸುವುದಿಲ್ಲ.</string>
     <string name="hidden_folders">ಮರೆ ಮಾಡಿದ ಕಡತಕೋಶಗಳು</string>
@@ -53,6 +54,7 @@
     <string name="include_folders">ಸೇರಿಸಿದ ಕಡತಕೋಶಗಳು</string>
     <string name="manage_included_folders">ಸೇರಿಸಿದ ಕಡತಕೋಶಗಳನ್ನು ನಿರ್ವಹಿಸು</string>
     <string name="add_folder">ಕಡತಕೋಶ ಸೇರಿಸಿ</string>
+    <string name="included_activity_placeholder">ಒಂದು ವೇಳೆ ನೀವು ಕೆಲವು ಮಾಧ್ಯಮಗಳಿರುವ ಕಡತಕೋಶಗಳನ್ನು ಹೊಂದಿದ್ದಲ್ಲಿ, ಆದರೆ ಅವು ಕಿರುತಂತ್ರಾಂಶಗಳಲ್ಲಿ ಗುರುತಿಸಲ್ಪಡದಿದ್ದರೆ, ನೀವು ಅವುಗಳನ್ನು ಇಲ್ಲಿ ದೈಹಿಕವಾಗಿ ಸೇರಿಸಬಹುದು.\n\n ಕೆಲವು ಅಂಶಗಳನ್ನು ಇಲ್ಲಿ ಸೇರಿಸುವುದರಿಂದ ಇತರೆ ಕಡತಕೋಶಗಳು ಹೊರತುಪಡುವುದಿಲ್ಲ.</string>
     <string name="resize">ಮರುಗಾತ್ರ</string>
     <string name="resize_and_save">ಆಯ್ಕೆಮಾಡಿರುವುದನ್ನು ಮರುಗಾತ್ರಗೊಳಿಸಸಿ ಮತ್ತು ಉಳಿಸಿ</string>
     <string name="width">ಅಗಲ</string>
@@ -113,6 +115,8 @@
     <string name="folder_on_widget">ವಿಜೆಟ್ ನಲ್ಲಿ ತೋರಿಸಲಾದ್ ಫೋಲ್ಡರ್:</string>
     <string name="show_folder_name">ಫೋಲ್ಡರಿನ ಹೆಸರು ತೋರಿಸು</string>
     <string name="autoplay_videos">ವಿಡಿಯೋಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಚಾಲಿಸಿ</string>
+    <string name="remember_last_video_position">ಕೊನೆಯ ದೃಶ‍್ಯ ಹಿನ್ನೆಲೆ ಚಲನೆಯ ಸ್ಥಿತಿಯನ್ನು ನೆನಪಿಡಿ</string>
+    <string name="toggle_filename">ಕಡತಹೆಸರು ಗೋಚರಿಕೆಯನ್ನು ಟಾಗಲ್ ಮಾಡಿ</string>
     <string name="loop_videos">ಚಕ್ರಿಯ ದೃಶ್ಯಗಳು</string>
     <string name="animate_gifs">GIF ಗಳನ್ನು ಚಿಕ್ಕಚಿತ್ರಗಳಲ್ಲಿ ಚಲಿತ ಚಿತ್ರಗೊಳಿಸು</string>
     <string name="max_brightness">ಪೂರ್ಣಪರದೆ ಮಾಧ್ಯಮ ವೀಕ್ಷಿಸುವಾಗ ಗರಿಷ್ಠ ಪ್ರಕಾಶಮಾನ</string>
@@ -127,7 +131,24 @@
     <string name="hide_system_ui_at_fullscreen">ಪೂರ್ಣಪರದೆ ಮಾ‍ಧ್ಯಮದಲ್ಲಿ ವ್ಯವಸ್ಥೆಯ UI ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಡಗಿಸು</string>
     <string name="delete_empty_folders">ವಿಷಯಗಳನ್ನು ಅಳಿಸಿದ ನಂತರ ಖಾಲಿ ಕಡತಕೋಶಗಳನ್ನು ಅಳಿಸು</string>
     <string name="allow_photo_gestures">ಚಿತ್ರಗಳ ಪ್ರಕಾಶಮಾನವನ್ನು ಲಂಬ ರೇಖೆಗಳಿಗನುಗುಣವಾಗಿ ನಿಯಂತ್ರಿಸಲು ಅನುಮತಿಸು</string>
+    <string name="allow_video_gestures">ದೃಶ್ಯಗಳ ಪ್ರಕಾಶಮಾನವನ್ನು ಲಂಬ ರೇಖೆಗಳಿಗನುಗುಣವಾಗಿ ನಿಯಂತ್ರಿಸಲು ಅನುಮತಿಸು</string>
+    <string name="show_media_count">ಮಾಧ್ಯಮ ಕಡತಗಳ ಎಣಿಕೆಯನ್ನು ಮುಖ್ಯ ವೀಕ್ಷಣೆಯಲ್ಲಿ ತೋರಿಸು</string>
+    <string name="show_extended_details">ಪೂರ್ಣಪರದೆ ಮಾಧ್ಯಮದ ಮೇಲೆ ವಿಸ್ತೃತ ವಿವರಗಳನ್ನು ತೋರಿಸು</string>
     <string name="manage_extended_details">ವಿಸ್ತರಿಸಿದ ವಿವರಗಳನ್ನು ನಿರ್ವಹಿಸಿ</string>
+    <string name="one_finger_zoom">ಪೂರ್ಣಪರದೆ ಮಾಧ್ಯಮದಲ್ಲಿ ಒಂದೇ ಬೆರಳಿನಿಂದ ಗಾತ್ರಬದಲಾವಣೆ ಅನುಮತಿಸು</string>
+    <string name="allow_instant_change">ಪರದೆ ಪಕ್ಕದಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡುವುದರ ಮೂಲಕ ತಕ್ಷಣ ಮಾಧ್ಯಮ ಬದಲಾವಣೆ ಅನುಮತಿಸು</string>
+    <string name="allow_deep_zooming_images">ಚಿತ್ರಗಳ ಆಳವಾದ ಗಾತ್ರ ಬದಲಾವಣೆ ಅನುಮತಿಸು</string>
+    <string name="hide_extended_details">ಸ್ಥಿತಿ ಪಟ್ಟಿ ಅಡಗಿದಾಗ ವಿಸ್ತೃತ ವಿವರಗಳನ್ನು ಅಡಗಿಸು</string>
+    <string name="show_at_bottom">ಪರದೆಯ ಕೆಳಗಡೆ ಕೆಲವು ಕಾರ್ಯಗಳ ಗುಂಡಿಗಳನ್ನು ತೋರಿಸು</string>
+    <string name="show_recycle_bin">ಕಡತಕೋಶಗಳ ಪರದೆಯಲ್ಲಿ ಮರುಬಳಕೆ ಡಬ್ಬವನ್ನು ತೋರಿಸು</string>
+    <string name="deep_zoomable_images">ಆಳವಾದ ಗಾತ್ರಬದಲಾವಣೆಯ ಚಿತ್ರಗಳು</string>
+    <string name="show_highest_quality">ಅತ್ಯುತ್ತಮ ಸಾಧ್ಯತೆಯ ಗುಣಮಟ್ಟದಲ್ಲಿ ಚಿತ್ರಗಳನ್ನು ತೋರಿಸು</string>
+    <string name="thumbnails">ಚಿಕ್ಕಚಿತ್ರಗಳು</string>
     <string name="fullscreen_media">ಪೂರ್ಣಪರದೆ ಮಾಧ್ಯಮ</string>
     <string name="extended_details">ವಿಸ್ತರಿಸಿದ ವಿವರಗಳು</string>
+    <string name="bottom_actions">ಕೆಳಭಾಗದ ಕ್ರಿಯೆಗಳು</string>
+    <string name="manage_bottom_actions">ಗೋಚರಿತ ಕೆಳಗಿನ ಕ್ರಿಯೆಗಳನ್ನು ನಿರ್ವಹಿಸು</string>
+    <string name="toggle_favorite">ಮೆಚ್ಚಿನವುಗಳನ್ನು ಟಾಗಲ್ ಮಾಡು</string>
+    <string name="toggle_file_visibility">ಕಡತ ಗೋಚರಿಕೆಯನ್ನು ಟಾಗಲ್ ಮಾಡು</string>
+    <string name="faq_1_title">ನಾನು ಹೇಗೆ ಸರಳ ಗ್ಯಾಲರಿಯನ್ನು ಸಾಧನದ ಪೂರ್ವನಿಯೋಜಿತ ಗ್ಯಾಲರಿಯನ್ನಾಗಿಸಲಿ?</string>
 </resources>

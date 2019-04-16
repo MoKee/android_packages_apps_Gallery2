@@ -33,6 +33,7 @@
     <string name="fixing">اصلاح…</string>
     <string name="dates_fixed_successfully">تم حل التواريخ بنجاح</string>
     <string name="share_resized">مشاركة نسخة تم تغيير حجمها</string>
+    <string name="upgraded_from_free">Hey,\n\nseems like you upgraded from the old free app. You can now uninstall the old version, which has an \'Upgrade to Pro\' button at the top of the app settings.\n\nYou will only have the Recycle bin items deleted, favorite items unmarked and you will also have to reset your app settings.\n\nThanks!</string>
     <string name="filter_media">فلتر الميديا</string>
     <string name="images">الصور</string>
     <string name="videos">الفديوهات</string>
@@ -194,6 +195,9 @@
     <string name="faq_13_text">يعمل الحل الحالي لعرض الصور بشكل جيد في الغالبية العظمى من الحالات ، ولكن إذا كنت ترغب في الحصول على جودة صورة أفضل ، فيمكنك تمكين \"عرض الصور بأعلى جودة ممكنة\" في إعدادات التطبيق ، في قسم \"الصور القابلة للتكبير العميق\".</string>
     <string name="faq_14_title">لقد أخفيت ملفاً / مجلداً. كيف يمكنني إظهاره؟</string>
     <string name="faq_14_text">يمكنك إما الضغط على عنصر القائمة \"إظهار العناصر المخفية مؤقتًا\" على الشاشة الرئيسية ، أو تبديل \"إظهار العناصر المخفية\" في إعدادات التطبيق لرؤية العنصر المخفي. إذا كنت تريد إظهاره ، فاضغط عليه طويلاً وحدد \"إظهار\". يتم إخفاء المجلدات عن طريق إضافة ملف \".nomedia\" مخفي إليهم ، يمكنك حذف الملف مع أي مدير ملفات أيضًا.</string>
+    <string name="faq_15_title">لماذا يشغل التطبيق مساحة كبيرة؟</string>
+    <string name="faq_15_text">ذاكرة التخزين المؤقت للتطبيق يمكن أن تصل إلى 250 ميغا بايت، فإنه يضمن تحميل الصورة أسرع. إذا كان التطبيق يأخذ مساحة أكبر، الأكثر احتمالاً وجود عناصر في \"سلة المحذوفات\". تلك الملفات تعول على حجم التطبيق. يمكنك مسح سلة المحذوفات بفتحها وحذف كافة الملفات، أو من إعدادات التطبيق. يتم حذف كل ملف في المحذوفات تلقائياً بعد 30 يوماً.</string>
+    <string name="app_title">المعرض البسيط: محرر و مدير الصور</string>
     <string name="app_short_description">معرض غير متصل دون إعلانات. تنظيم الصور واشرطة الفيديو وتعديلها واستعادتها وحمايتها</string>
     <string name="app_long_description">        Simple Gallery Pro is a highly customizable offline gallery. Organize &amp; edit your photos, recover deleted files with the recycle bin, protect &amp; hide files and view a huge variety of different photo &amp; video formats including RAW, SVG and much more.
 

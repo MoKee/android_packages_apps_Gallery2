@@ -33,6 +33,7 @@
     <string name="fixing">Fixation....</string>
     <string name="dates_fixed_successfully">Dates fixées avec succès</string>
     <string name="share_resized">Partager la version modifiée</string>
+    <string name="upgraded_from_free">Hé,\n\nil semble que vous avez mis à jour depuis l\'ancienne application gratuite. Vous pouvez maintenant désinstaller l\'ancienne version, qui a un bouton \'Mettre à niveau vers Pro\' en haut de la liste des paramètres de l\'application.\n\nVous n\'aurez que les éléments de la corbeille supprimés, les éléments favoris non marqués et vous devrez également réinitialiser vos paramètres d\'application.\n\nMerci!</string>
     <string name="filter_media">Filtrer les médias</string>
     <string name="images">Images</string>
     <string name="videos">Vidéos</string>
@@ -115,6 +116,7 @@
     <string name="by_date_taken">Date de création</string>
     <string name="by_file_type">Type de fichier</string>
     <string name="by_extension">Extension</string>
+    <string name="grouping_and_sorting">Veuillez noter que le regroupement et le tri sont deux champs indépendants</string>
     <string name="folder_on_widget">Afficher le dossier sur le Widget:</string>
     <string name="show_folder_name">Afficher le nom du dossier</string>
     <string name="autoplay_videos">Lecture automatique des vidéos</string>
@@ -150,6 +152,12 @@
     <string name="allow_down_gesture">Fermeture de la vue plein écran par un geste vers le bas</string>
     <string name="allow_one_to_one_zoom">Permettre le zoom avant 1:1 avec le double-tape</string>
     <string name="open_videos_on_separate_screen">Toujours ouvrir les vidéos sur un écran séparé avec de nouveaux gestes horizontaux</string>
+    <string name="show_notch">Afficher l\'encoche si disponible</string>
+    <string name="allow_rotating_gestures">Autoriser les images rotatives avec des gestes</string>
+    <string name="file_loading_priority">Priorité de chargement des fichiers</string>
+    <string name="speed">Vitesse</string>
+    <string name="compromise">Compromis</string>
+    <string name="avoid_showing_invalid_files">Éviter d\'afficher des fichiers invalides</string>
     <string name="thumbnails">Vignettes</string>
     <string name="fullscreen_media">Média plein écran</string>
     <string name="extended_details">Détails supplémentaires</string>
@@ -184,4 +192,8 @@
     <string name="faq_13_text">La solution actuelle d\'affichage des images fonctionne bien dans la grande majorité des cas, mais si vous voulez une qualité d\'image encore meilleure, vous pouvez activer l\'option \"Afficher les images avec la plus haute qualité possible\" dans la section \"Niveau de zoom maximal des images\" des paramètres de l\'application.</string>
     <string name="faq_14_title">J\'ai masqué un fichier ou un dossier. Comment puis-je en rétablir l\'affichage ?</string>
     <string name="faq_14_text">Vous pouvez soit appuyer sur l\'option \"Afficher les fichiers masqués\" du menu de l\'écran principal, ou appuyer sur le bouton \"Afficher les éléments masqués\" dans les paramètres de l\'application. Si vous voulez rétablir leur affichage, effectuez un appui prolongé dessus et appuyez sur le symbole \"Œil\" permettant l\'affichage. Les dossiers sont masqués en ajoutant un fichier \".nomedia\" à leur racine, vous pouvez également supprimer ce fichier avec n\’importe quel explorateur de fichiers.</string>
+    <string name="faq_15_title">Pourquoi l\'application prend-elle tant d\'espace ?</string>
+    <string name="faq_15_text">Le cache d\'application peut prendre jusqu\'à 250MB, il assure un chargement d\'image plus rapide. Si l\'application prend encore plus d\'espace, il est très probable que vous ayez des éléments dans la corbeille. Ces fichiers comptent sur la taille de l\'application. Vous pouvez effacer la corbeille en l\'ouvrant et en supprimant tous les fichiers, ou des paramètres de l\'application. Chaque fichier dans la corbeille est supprimé automatiquement après 30 jours.</string>
+    <string name="app_title">Galerie simple Pro : Gestionnaire de photos &amp; Éditeur</string>
+    <string name="app_short_description">Galerie hors ligne sans publicité. Organiser, éditer, récupérer et protéger les photos &amp; vidéos</string>
 </resources>
