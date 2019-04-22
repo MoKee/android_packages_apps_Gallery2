@@ -102,6 +102,7 @@
     <string name="loop_slideshow">Presentación de diapositivas</string>
     <string name="slideshow_ended">La diapositiva terminó</string>
     <string name="no_media_for_slideshow">No se han encontrado medios para la presentación de diapositivas</string>
+    <string name="use_crossfade_animation">Usar animaciones crossfade</string>
     <string name="change_view_type">Cambiar tipo de vista</string>
     <string name="grid">Cuadrícula</string>
     <string name="list">Lista</string>
@@ -146,6 +147,8 @@
     <string name="show_highest_quality">Muestra imágenes con la mayor calidad posible</string>
     <string name="show_recycle_bin_last">Mostrar la Papelera de reciclaje como el último elemento en la pantalla principal</string>
     <string name="allow_down_gesture">Permite cerrar la vista de pantalla completa con un gesto hacia abajo.</string>
+    <string name="allow_one_to_one_zoom">Permitir 1:1 zoom con dos pulsaciones</string>
+    <string name="open_videos_on_separate_screen">Siempre abrir vídeos en una pantalla separada con nuevos gestos horizontales</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Medios a pantalla compelta</string>
     <string name="extended_details">Detalles ampliados</string>
