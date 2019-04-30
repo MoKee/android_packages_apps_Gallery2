@@ -33,6 +33,7 @@
     <string name="fixing">Oprava…</string>
     <string name="dates_fixed_successfully">Data byli úspěšně opravena</string>
     <string name="share_resized">Sdílet změněnou verzi</string>
+    <string name="upgraded_from_free">Zdravím,\n\nvypadá to tak, že jste ze staré bezplatné aplikace přešli na novou, placenou. Nyní můžete starou aplikaci, která má na vrchu nastavení tlačítko \'Upgradovat na Pro\' odinstalovat.\n\nBudou smazány pouze položky v Koši a položky, které nejsou označeny. Budete také muset obnovit nastavení aplikace.\n\nDíky!</string>
     <string name="filter_media">Filtr médií</string>
     <string name="images">Obrázky</string>
     <string name="videos">Videa</string>
@@ -193,6 +194,8 @@
     <string name="faq_14_title">Mám skrytý soubor/složku. Jak je zobrazím?</string>
     <string name="faq_14_text">Můžete buď použít tlačítko \"Dočasně zobrazit skryté položky\" na hlavní obrazovce, nebo v nastavení aplikace zapnout možnost \"Zobrazit skryté položky\", tím se skryté položky zobrazí. Pokud je chcete odkrýt, stačí je dlouho podržet a zvolit možnost \"Odkrýt\". Složky jsou skrývané přidáním skrytého souboru \".nomedia\", ten můžete vymazat v libovolném správci souborů.</string>
     <string name="faq_15_title">Proč aplikace zabírá tolik místa?</string>
+    <string name="faq_15_text">Mezipaměť aplikace může mít až 250 MB, což zajišťuje rychlejší načítání obrázků. Pokud aplikace zabírá ještě více místa, je to s největší pravděpodobností způsobeno tím, že máte položky v Koši. Tyto soubory se počítají do velikosti aplikace. Koš můžete vysypat otevřením a odstraněním všech souborů nebo z nastavení aplikace. 
+Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
     <string name="app_title">Simple Gallery Pro: Správce fotografií &amp; editor</string>
     <string name="app_short_description">Offline galerie bez reklam. Uspořádejte, upravujte, obnovujte a chraňte fotografie &amp; videa</string>
     <string name="app_long_description">        Simple Gallery Pro je vysoce přizpůsobitelná offline galerie. Uspořádejte &amp; upravte své fotografie, obnovte smazané soubory pomocí koše, chraňte skryté soubory a zobrazte obrovskou škálu různých fotografií &amp; video formátů včetně RAW, SVG a mnoho dalších.
