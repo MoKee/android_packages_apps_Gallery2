@@ -170,7 +170,6 @@
     <string name="faq_2_title">我用密码锁定了本应用，但我忘记了密码。该怎么办？</string>
     <string name="faq_2_text">有两种方法。你可以重新安装本应用，也可以在设置中清除此应用的数据，这将会会重置你的所有设置，但不会删除任何媒体文件。</string>
     <string name="faq_3_title">如何让某个相册始终显示在最上面？</string>
-    <string name="faq_3_text">你可以长按该相册并在操作栏中点击图钉图标，这样 就可以将其固定在顶部了。你也可以固定多个文件夹，固定项目将按照默认排序方法排序。</string>
     <string name="faq_4_title">如何快进/快退视频？</string>
     <string name="faq_4_text">可以点击底栏进度条两侧的时间文本，或拖动进度条。</string>
     <string name="faq_5_title">文件夹的隐藏和排除有什么区别？</string>

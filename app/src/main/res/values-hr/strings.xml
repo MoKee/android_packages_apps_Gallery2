@@ -148,7 +148,6 @@
     <string name="faq_2_title">Zaključao sam aplikaciju zaporkom, ali zaboravio sam. Što mogu učiniti?</string>
     <string name="faq_2_text">Može se riješiti na dva načina. Možete ponovno instalirati aplikaciju ili pronaći aplikaciju u postavkama uređaja i odabrati \"\Izbriši podatke\". Navedeno će resetirati sve postavke, ali neće ukloniti nikakve medijske datoteke.</string>
     <string name="faq_3_title">Kako postići da je album uvijek na vrhu?</string>
-    <string name="faq_3_text">Dugo pritisnute željeni album i odaberite ikonu igle na akcijskom izborniku, koji će ga pričvrstiti na vrh. Možete prikvačiti više mapa odjednom, prikvačene stavke će biti razvrstane prema zadanom načinu razvrstavanja.</string>
     <string name="faq_4_title">Kako mogu ubrzati video?</string>
     <string name="faq_4_text">Možete pritisnuti trenutačno vrijeme ili ukupno trajanje videozapisa na traci napretka, videozapis će se prema Vašem izboru pomicati unatrag ili prema naprijed.</string>
     <string name="faq_5_title">Koja je razlika između skrivanja i izuzimanja mape?</string>

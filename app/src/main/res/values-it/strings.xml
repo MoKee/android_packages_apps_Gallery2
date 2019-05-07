@@ -170,7 +170,6 @@
     <string name="faq_2_title">Ho bloccato l\'app con una password, ma l\'ho dimenticata. Cosa posso fare?</string>
     <string name="faq_2_text">Puoi risolvere in 2 modi. Puoi reinstallare l\'app, oppure trova l\'app nelle impostazioni del dispositivo e seleziona \"Cancella dati\". Tutte le impostazioni verranno ripristinate, nessun file multimediale verrà rimosso.</string>
     <string name="faq_3_title">Come posso fare apparire un album sempre in cima?</string>
-    <string name="faq_3_text">Puoi toccare a lungo l\'album desiderato e selezionare l\'icona puntina nel menù azioni, ciò lo fisserà in cima. Puoi anche fissare varie cartelle, gli elementi fissati verranno ordinati dal metodo di ordinamento predefinito.</string>
     <string name="faq_4_title">Come avanzo velocemente nei video?</string>
     <string name="faq_4_text">Puoi cliccare sui testi di durata attuale o massima vicino alla barra di avanzamento, ciò avanzerà o riavvolgerà il video.</string>
     <string name="faq_5_title">Che differenza c\'è tra nascondere ed escludere una cartella?</string>

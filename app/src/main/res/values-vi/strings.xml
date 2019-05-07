@@ -102,7 +102,6 @@
     <string name="by_date_taken">Ngày chụp</string>
     <string name="faq_2_text">Bạn có thể giải quyết nó trong 2 cách. Bạn có thể hoặc cài đặt lại ứng dụng này, hoặc tìm các ứng dụng trong cài đặt thiết bị của bạn và chọn \"Xóa dữ liệu\". Nó sẽ thiết lập lại tất cả các cài đặt của bạn, nó sẽ không loại bỏ bất kỳ dữ liệu.</string>
     <string name="faq_3_title">Làm thế nào có thể làm cho một album luôn xuất hiện ở đầu trang?</string>
-    <string name="faq_3_text">Bạn có thể bấm giữ album bạn muốn và chọn biểu tượng ghim trên menu công cụ, nó sẽ ghim vào đầu trang. Bạn có thể ghim nhiều thư mục hơn, ghim các mục sẽ được sắp xếp theo phương pháp phân loại mặc định.</string>
     <string name="faq_4_title">Làm thế nào có thể tua nhanh video?</string>
     <string name="faq_6_title">Tại sao làm thư mục với bìa đĩa nhạc hoặc dán Hiển thị?</string>
     <string name="faq_7_title">Thư mục không thể hiển thị ảnh, bạn có thể làm gì?</string>

@@ -129,7 +129,6 @@
     <string name="faq_2_title">Aš užrakinau programėlę su slaptažodžiu, bet pamiršau jį. Ką aš galiu padaryti?</string>
     <string name="faq_2_text">Tai galite išspręsti dviem būdais. Galite arba iš naujo įdiegti programėlę, arba rasti programėlę savo įrenginio nustatymuose ir pasirinkti \ \"Išvalyti duomenis \". Jis iš naujo nustatys visus jūsų nustatymus, bet nepašalins jokių medijos bylų.</string>
     <string name="faq_3_title">Kaip aš galiu padaryti albumą visada rodomą viršuje?</string>
-    <string name="faq_3_text">Galite ilgai paspausti norimą albumą ir pasirinkti \"Prisegti\" piktogramą, esančią meniu \"Veiksmo meniu\", viršuje. Galite prisegti kelis aplankus, prisegti elementai bus rūšiuojami pagal numatytąjį rūšiavimo metodą.</string>
     <string name="faq_4_title">Kaip galėčiau greitai prasukti vaizdo įrašus?</string>
     <string name="faq_4_text">Galite spustelėti  tekstus šalia slinkties juostos, kad būtų perkeltas vaizdo įrašas atgal arba į priekį.</string>
     <string name="faq_5_title">Koks skirtumas tarp slėpimo ir išskyrimo iš aplanko?</string>

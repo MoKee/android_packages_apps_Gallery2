@@ -164,7 +164,6 @@
     <string name="faq_2_title">Zablokowałem(-am) aplikację hasłem i wyleciało mi ono z głowy. Co mogę zrobić?</string>
     <string name="faq_2_text">Masz dwie opcje: przeinstalowanie aplikacji lub wyczyszczenie jej ustawień. Niezależnie od wyboru, pliki pozostaną nienaruszone.</string>
     <string name="faq_3_title">Jak sprawić, aby album(y) zawsze pojawiał(y) się na górze?</string>
-    <string name="faq_3_text">Przytrzymaj album(y) i wybierz ikonę przypięcia w pasku akcji.</string>
     <string name="faq_4_title">Jak mogę przwijać filmy?</string>
     <string name="faq_4_text">Kliknij na napisie z czasem trwania filmu, bądź tym z obecnym momentem filmu.</string>
     <string name="faq_5_title">Jaka jest różnica między ukryciem, a wykluczeniem folderu?</string>

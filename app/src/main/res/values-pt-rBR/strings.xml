@@ -162,7 +162,6 @@
     <string name="faq_2_title">Bloqueei o app com uma senha, mas esqueci-a. O que posso fazer?</string>
     <string name="faq_2_text">Você pode resolver isso de duas formas. Reinstale o app ou encontre-o nas configurações do dispositivo e selecione \"Limpar dados\". Isso irá redefinir todas as suas configurações sem remover qualquer arquivo de mídia.</string>
     <string name="faq_3_title">Como posso fazer um álbum sempre aparecer no topo?</string>
-    <string name="faq_3_text">Você pode pressionar o álbum desejado, e selecione o ícone de pino no menu de ação, que irá fixá-lo ao topo. Você também pode fixar várias pastas. Itens fixados serão classificados pelo método de classificação padrão.</string>
     <string name="faq_4_title">Como posso avançar rapidamente os vídeos?</string>
     <string name="faq_4_text">Você pode arrastar o dedo horizontalmente sobre o player de vídeo ou clicar no texto de duração atual ou máxima perto da barra de navegação. Isso irá mover o vídeo para trás ou para frente.</string>
     <string name="faq_5_title">Qual é a diferença entre esconder e excluir uma pasta?</string>

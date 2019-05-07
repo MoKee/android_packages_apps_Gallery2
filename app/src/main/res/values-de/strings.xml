@@ -162,7 +162,6 @@
     <string name="faq_2_title">Ich habe die App mit einem Passwort geschützt und es vergessen. Was kann ich tun?</string>
     <string name="faq_2_text">Es gibt zwei Möglichkeiten: Entweder du installierst die App erneut oder du wählst in den Geräteeinstellungen \'Apps\' aus und dann \"Daten löschen\". Alle Einstellungen werden zurückgesetzt, alle Mediendateien bleiben unberührt.</string>
     <string name="faq_3_title">Wie kann ich ein Album immer zuoberst erscheinen lassen?</string>
-    <string name="faq_3_text">Du kannst lange auf das gewünschte Album drücken und im Aktionsmenü das Stecknadelsymbol auswählen; es wird nun zuoberst angepinnt. Ebenso kannst du mehrere Ordner anpinnen. Angepinnte Objekte werden nach der Standardmethode sortiert.</string>
     <string name="faq_4_title">Wie kann ich in Videos vor- oder zurückspringen?</string>
     <string name="faq_4_text">Du kannst auf den Text der aktuellen oder der maximalen Dauer nahe der Suchleiste drücken, um im Video vor- oder zurück zu springen.</string>
     <string name="faq_5_title">Was ist der Unterschied zwischen \'Verstecken\' und \'Ausschließen\' eines Ordners?</string>

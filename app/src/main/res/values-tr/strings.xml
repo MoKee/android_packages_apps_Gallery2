@@ -171,7 +171,7 @@
     <string name="faq_2_title">Uygulamayı bir şifre ile kilitledim ama unuttum. Ne yapabilirim?</string>
     <string name="faq_2_text">Bunu 2 şekilde çözebilirsiniz. Uygulamayı yeniden yükleyebilir veya uygulamayı cihaz ayarlarınızdan bulabilir ve \"Verileri temizle\" yi seçebilirsiniz. Tüm ayarlarınızı sıfırlar, herhangi bir medya dosyasını kaldırmaz.</string>
     <string name="faq_3_title">Bir albümün her zaman en üstte nasıl görünmesini sağlayabilirim?</string>
-    <string name="faq_3_text">İstediğiniz albüme uzun süre basabilir ve aksiyon menüsündeki Pin simgesini seçebilir, bu da en üste sabitleyecektir. Birden çok klasörü de sabitleyebilirsiniz, sabitlenmiş öğeler varsayılan sıralama yöntemine göre sıralanır.</string>
+    <string name="faq_3_text">İstediğiniz albüme uzun süre basabilir ve eylemler menüsünde üste yerleştirecek olan pin simgesini seçebilirsiniz. Birden fazla klasörü de sabitleyebilirsiniz, sabitlenmiş öğeler varsayılan sıralama yöntemine göre sıralanır.</string>
     <string name="faq_4_title">Videoları nasıl hızlı ileri sürdürebilirim?</string>
     <string name="faq_4_text">Videoyu geriye ya da ileriye taşıyacak olan arama çubuğunun yakınındaki geçerli veya maksimum süre metinlerini tıklayabilirsiniz.</string>
     <string name="faq_5_title">Klasörün gizlenmesi ve hariç tutulması arasındaki fark nedir?</string>

@@ -170,7 +170,6 @@
     <string name="faq_2_title">J\'ai verrouillé l\'application avec un mot de passe et je ne m\'en rappelle plus. Que faire ?</string>
     <string name="faq_2_text">Il y a deux façons de procéder. Soit vous réinstallez l\'application, soit vous recherchez l\'application dans les paramètres de l\'appareil et appuyez sur \"Effacer les données\". Cela va seulement réinitialiser les paramètres de l\'application et ne supprimera pas vos fichiers.</string>
     <string name="faq_3_title">Comment faire pour qu\'un album soit toujours affiché tout en haut ?</string>
-    <string name="faq_3_text">Vous devez simplement à effectuer un appui prolongé sur l\'album en question et choisir l\'icône \"Épingler\" dans le menu d\'actions. Vous pouvez en épingler plusieurs. Les éléments épinglés seront alors triés selon l\'ordre par défaut.</string>
     <string name="faq_4_title">Comment avancer rapidement dans les vidéos ?</string>
     <string name="faq_4_text">Vous pouvez appuyer sur la durée actuelle ou totale de la vidéo sur la barre de progression, la vidéo reculera ou avancera selon votre choix.</string>
     <string name="faq_5_title">Quelle est la différence entre masquer et exclure un dossier ?</string>

@@ -131,7 +131,6 @@
     <string name="faq_2_title">Asegurei o aplicativo con un contrasinal, pero esquecino. Qué podo facer?</string>
     <string name="faq_2_text">Pode solucionado de dous xeitos. Ou ben reinstalar o aplicativo ou buscar o aplicativo nos axustes do dispositivo e escoller \"Limpar datos\". Restablecerá todos os seus axustes, mais non eliminará ficheiros de medios.</string>
     <string name="faq_3_title">Cómo podo facer que un álbume apareza sempre arriba de todo?</string>
-    <string name="faq_3_text">Pode manter premido o álbume e escoller a icona de Fixar no menú de accións, esto fixarao arriba. Pode fixar varios cartafoles tambén, os elementos fixados estarán ordenados polo criterio por omisión.</string>
     <string name="faq_4_title">Cómo podo aumentar a velocidade de reprodución de vídeo?</string>
     <string name="faq_4_text">Pode pulsar no texto de duración actual ou máxima preto da barra de busca, esto moverá ou vídeo hacia adiante ou atrás.</string>
     <string name="faq_5_title">Cal é a diferenza entre agochar e excluír un cartafol?</string>

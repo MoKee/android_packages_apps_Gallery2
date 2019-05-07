@@ -162,7 +162,6 @@
     <string name="faq_2_title">Uzamkol som apku heslom, ale zabudol som ho. Čo môžem spraviť?</string>
     <string name="faq_2_text">Viete to vyriešǐť 2 spôsobmi. Môžete apku buď preinštalovať, alebo ju nájsť v nastaveniach zariadenia a zvoliť \"Vymazať údaje\". Vymaže to iba nastavenia, nie súbory.</string>
     <string name="faq_3_title">Ako môžem dosiahnuť, aby bol daný album stále zobrazený prvý?</string>
-    <string name="faq_3_text">Môžete označiť daný priečinok dlhým podržaním a zvoliť tlačidlo s obrázkom pripinačky, to ho pripne na vrch. Môžete pripnúť aj viacero priečinkov, budú zoradené podľa zvoleného radenia.</string>
     <string name="faq_4_title">Ako viem posunúť video vpred?</string>
     <string name="faq_4_text">Môžete kliknúť na texty súčasnej, alebo maximálnej dĺžky videa, ktoré sú vedľa indikátora súčasného progresu. To posunie video buď vpred, alebo vzad.</string>
     <string name="faq_5_title">Aký je rozdiel medzi Skrytím a Vylúčením priečinka?</string>

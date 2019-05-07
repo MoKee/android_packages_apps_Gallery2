@@ -165,7 +165,6 @@
     <string name="faq_2_title">Aplikacijo sem zaklenil z geslom, ki se ga ne spomnim več. Kaj lahko naredimo?</string>
     <string name="faq_2_text">To lahko rešite na 2 načina. Lahko ali ponovno namestite aplikacijo ali pa jo poiščete v nastavitvah in kliknete \"Počisti podatke\". To bo ponastavilo vaše nastavitve, ne bo pa izbrisalo nobenih datotek.</string>
     <string name="faq_3_title">Kako nastaviti, da se določen album vedno prikaže na vrhu?</string>
-    <string name="faq_3_text">Z dolgim pritiskom na album se vam prikaže meni, v katerem je na voljo bucika, s katero pripnete album na željeno mesto. Na ta način lahko pripnete več albumov, ki bodo razvrščeni v skladu s privzetim načinom razvrščanja.</string>
     <string name="faq_4_title">Ali lahko hitro predvajam videoposnetke?</string>
     <string name="faq_4_text">Lahko kliknete na napis trenutnega ali maksimalnega trajanja poleg vrstice položaja, kar premakne/preskoči video naprej ali nazaj.</string>
     <string name="faq_5_title">Kakšna je razlika med skrivanjem in izključevanjem mape?</string>

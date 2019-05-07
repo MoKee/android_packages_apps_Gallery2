@@ -163,7 +163,6 @@
     <string name="faq_2_title">Saya mengunci aplikasi dengan kata sandi, tetapi saya lupa. Apa yang harus saya lakukan?</string>
     <string name="faq_2_text">Anda dapat menyelesaikannya dengan 2 cara. Anda dapat menginstal ulang aplikasi, atau menemukan aplikasi di pengaturan perangkat Anda dan pilih \"Hapus data\". Ini akan mengatur ulang semua pengaturan Anda, itu tidak akan menghapus file media apa pun.</string>
     <string name="faq_3_title">Bagaimana saya bisa membuat album selalu muncul di atas?</string>
-    <string name="faq_3_text">Anda dapat menekan lama album yang diinginkan dan memilih ikon Pin di menu tindakan, yang akan menyematkannya ke atas. Anda juga dapat menyematkan banyak folder, item yang disematkan akan disortir dengan metode penyortiran default.</string>
     <string name="faq_4_title">Bagaimana saya bisa mempercepat video?</string>
     <string name="faq_4_text">Anda dapat menyeret jari secara horizontal ke atas pemutar video, atau mengklik teks durasi saat ini atau maksimum di dekat bilah pencarian. Itu akan memindahkan video mundur, atau maju.</string>
     <string name="faq_5_title">Apa perbedaan antara menyembunyikan dan mengecualikan folder?</string>

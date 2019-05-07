@@ -171,7 +171,7 @@
     <string name="faq_2_title">我用密碼鎖住了這應用程式，但我忘記了。怎麼辦？</string>
     <string name="faq_2_text">有兩個解決方法。您可以重新安裝應用程式，或者在裝置設定中找到這程式然後選擇「清除資料」。這將重設您程式內所有設定，不會移除任何媒體檔案。</string>
     <string name="faq_3_title">我如何讓某個相簿總是出現在頂端？</string>
-    <string name="faq_3_text">您可以長按想要的相簿，然後在操作選單中選擇 [圖釘] 的圖示，就會釘選於頂端。也能釘選多個資料夾，釘選的項目會依預設的排序方法來排序。</string>
+    <string name="faq_3_text">您可以長按想要的相簿，然後在操作選單中選擇 「圖釘」 的圖示，就會釘選於頂端。也能釘選多個資料夾，釘選的項目會依預設的排序方法來排序。</string>
     <string name="faq_4_title">我如何快轉影片？</string>
     <string name="faq_4_text">您可以輕觸進度條附近的目前或總時長文字，影片就會快轉或倒轉。</string>
     <string name="faq_5_title">隱藏和排除資料夾，兩者有什麼不同？</string>
