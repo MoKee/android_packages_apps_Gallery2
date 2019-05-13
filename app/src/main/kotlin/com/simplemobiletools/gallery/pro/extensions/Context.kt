@@ -213,7 +213,7 @@ fun Context.getDirsToShow(dirs: ArrayList<Directory>, allDirs: ArrayList<Directo
             }
         }
 
-        parentDirs
+        getSortedDirectories(parentDirs)
     } else {
         dirs.forEach { it.subfoldersMediaCount = it.mediaCnt }
         dirs
@@ -274,7 +274,7 @@ fun Context.getDirectParentSubfolders(dirs: ArrayList<Directory>, currentPathPre
                     val directory = Directory(newDirId++,
                             parent,
                             subDirs.first().tmb,
-                            parent.getFilenameFromPath(),
+                            getFolderNameFromPath(parent),
                             subDirs.sumBy { it.mediaCnt },
                             lastModified,
                             dateTaken,
