@@ -143,7 +143,6 @@ fun BaseSimpleActivity.removeNoMedia(path: String, callback: (() -> Unit)? = nul
     }
 
     tryDeleteFileDirItem(file.toFileDirItem(applicationContext), false, false) {
-        scanPathRecursively(file.parent)
         callback?.invoke()
     }
 }
@@ -411,7 +410,7 @@ fun BaseSimpleActivity.saveRotatedImageToFile(oldPath: String, newPath: String, 
             }
 
             copyFile(tmpPath, newPath)
-            scanPathRecursively(newPath)
+            rescanPaths(arrayListOf(newPath))
             fileRotatedSuccessfully(newPath, oldLastModified)
 
             it.flush()
