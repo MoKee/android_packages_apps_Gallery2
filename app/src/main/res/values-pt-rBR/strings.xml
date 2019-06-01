@@ -149,6 +149,7 @@
     <string name="allow_down_gesture">Permitir fechar a visão de tela cheia com um gesto para baixo</string>
     <string name="allow_one_to_one_zoom">Permitir zoom 1:1 com dois toques duplos</string>
     <string name="open_videos_on_separate_screen">Sempre abrir vídeos em uma tela separada com novos gestos horizontais</string>
+    <string name="speed">Velocidade</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Mídia em tela cheia</string>
     <string name="extended_details">Detalhes extendidos</string>
