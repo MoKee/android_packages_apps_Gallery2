@@ -68,6 +68,7 @@
     <string name="flip_vertically">Pyöräytä pystysuoraan</string>
     <string name="free_aspect_ratio">Ei mitään</string>
     <string name="other_aspect_ratio">Muu</string>
+    <string name="simple_wallpaper">Galleria</string>
     <string name="set_as_wallpaper">Aseta taustakuvaksi</string>
     <string name="set_as_wallpaper_failed">Taustakuvan asetus epäonnistui</string>
     <string name="set_as_wallpaper_with">Aseta taustakuvaksi sovelluksella:</string>

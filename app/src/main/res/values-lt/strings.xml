@@ -70,7 +70,6 @@
     <string name="flip_vertically">Apversti vertikaliai</string>
     <string name="free_aspect_ratio">Nėra</string>
     <string name="other_aspect_ratio">Kita</string>
-    <string name="simple_wallpaper">Paprastas darbalaukio fonas</string>
     <string name="set_as_wallpaper">Nustatyti kaip darbalaukio foną</string>
     <string name="set_as_wallpaper_failed">Nustatyti darbalaukio fono nepavyko</string>
     <string name="set_as_wallpaper_with">Nustatyti kaip darbalaukio paveikslėlį su:</string>

@@ -23,6 +23,7 @@
     <string name="rotate_right">Rotiţi spre dreapta</string>
     <string name="free_aspect_ratio">Niciunul</string>
     <string name="other_aspect_ratio">Altele</string>
+    <string name="simple_wallpaper">Galerie</string>
     <string name="home_screen">Ecran principal</string>
     <string name="lock_screen">Ecranul de blocare</string>
     <string name="slideshow">Prezentare</string>

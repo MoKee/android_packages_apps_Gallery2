@@ -80,7 +80,7 @@
     <string name="flip_vertically">Vertikal spiegeln</string>
     <string name="free_aspect_ratio">Beliebiges</string>
     <string name="other_aspect_ratio">Anderes</string>
-    <string name="simple_wallpaper">Schlichter Hintergrund</string>
+    <string name="simple_wallpaper">Galerie</string>
     <string name="set_as_wallpaper">Als Hintergrund festlegen</string>
     <string name="set_as_wallpaper_failed">Hintergrundbild festlegen fehlgeschlagen.</string>
     <string name="set_as_wallpaper_with">Als Hintergrund festlegen mit</string>

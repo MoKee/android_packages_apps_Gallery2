@@ -81,7 +81,7 @@
     <string name="flip_vertically">Przewróć w pionie</string>
     <string name="free_aspect_ratio">Wolne</string>
     <string name="other_aspect_ratio">Inny</string>
-    <string name="simple_wallpaper">Tapeta</string>
+    <string name="simple_wallpaper">Galeria</string>
     <string name="set_as_wallpaper">Ustaw jako tapetę</string>
     <string name="set_as_wallpaper_failed">Ustawienie tapety nie powiodło się</string>
     <string name="set_as_wallpaper_with">Ustaw jako tapetę w:</string>

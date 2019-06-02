@@ -75,7 +75,7 @@
     <string name="flip_vertically">Lật theo chiều dọc</string>
     <string name="free_aspect_ratio">Không có</string>
     <string name="other_aspect_ratio">Khác</string>
-    <string name="simple_wallpaper">Hiển thị hình nền</string>
+    <string name="simple_wallpaper">Thư viện</string>
     <string name="set_as_wallpaper">Đặt làm hình nền</string>
     <string name="set_as_wallpaper_failed">Thiết lập làm hình nền thất bại</string>
     <string name="set_as_wallpaper_with">Đặt làm hình nền với:</string>

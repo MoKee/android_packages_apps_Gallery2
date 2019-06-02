@@ -17,6 +17,7 @@
     <string name="rotate_right">I-rotate pakanan</string>
     <string name="free_aspect_ratio">Wala</string>
     <string name="other_aspect_ratio">Iba pa</string>
+    <string name="simple_wallpaper">Gallery</string>
     <string name="home_screen">Home screen</string>
     <string name="lock_screen">Lock screen</string>
     <string name="slideshow">Ipakita ang pagguho</string>

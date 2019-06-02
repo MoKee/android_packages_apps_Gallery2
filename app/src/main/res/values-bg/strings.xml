@@ -18,6 +18,7 @@
     <string name="rotate_right">Завъртане надясно</string>
     <string name="free_aspect_ratio">Без</string>
     <string name="other_aspect_ratio">Други</string>
+    <string name="simple_wallpaper">Галерия</string>
     <string name="home_screen">Начален екран</string>
     <string name="lock_screen">Екран за заключване</string>
     <string name="slideshow">Слайдшоу</string>

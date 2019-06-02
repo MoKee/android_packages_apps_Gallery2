@@ -3,4 +3,5 @@
 <resources>
     <string name="app_launcher_name">Gailearaidh</string>
     <string name="save">Sàbhail</string>
+    <string name="simple_wallpaper">Gailearaidh</string>
 </resources>

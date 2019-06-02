@@ -38,6 +38,7 @@
     <string name="rotate_right">오른쪽으로 회전</string>
     <string name="free_aspect_ratio">선택 안함</string>
     <string name="other_aspect_ratio">추가 사항</string>
+    <string name="simple_wallpaper">갤러리</string>
     <string name="landscape_aspect_ratio">가로 방향 비율</string>
     <string name="home_screen">홈 화면</string>
     <string name="lock_screen">잠금화면</string>

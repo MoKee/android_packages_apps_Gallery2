@@ -81,7 +81,7 @@
     <string name="flip_vertically">Zrcali vertikalno</string>
     <string name="free_aspect_ratio">Prosto</string>
     <string name="other_aspect_ratio">Drugo</string>
-    <string name="simple_wallpaper">Simple ozadje</string>
+    <string name="simple_wallpaper">Galerija</string>
     <string name="set_as_wallpaper">Nastavi kot ozadje</string>
     <string name="set_as_wallpaper_failed">Nastavljanje ozadja ni uspelo</string>
     <string name="set_as_wallpaper_with">Nastavi kot ozadje z:</string>

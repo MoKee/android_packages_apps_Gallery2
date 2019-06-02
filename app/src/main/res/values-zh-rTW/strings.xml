@@ -58,6 +58,7 @@
     <string name="manage_included_folders">管理包含資料夾</string>
     <string name="add_folder">增加資料夾</string>
     <string name="included_activity_placeholder">如果有些資料夾含有媒體檔案，卻沒被辨識到，您可以在此手動加入。</string>
+    <string name="no_media_add_included">沒有發現任何媒體檔案。您可以通過手動新增包含媒體檔案的資料夾來解決這個問題。</string>
     <string name="resize">縮放</string>
     <string name="resize_and_save">縮放所選區域並儲存</string>
     <string name="width">寬度</string>
@@ -82,7 +83,7 @@
     <string name="flip_vertically">垂直翻轉</string>
     <string name="free_aspect_ratio">無</string>
     <string name="other_aspect_ratio">其它</string>
-    <string name="simple_wallpaper">簡易桌布</string>
+    <string name="simple_wallpaper">圖片庫</string>
     <string name="set_as_wallpaper">設為桌布</string>
     <string name="set_as_wallpaper_failed">設為桌布失敗</string>
     <string name="set_as_wallpaper_with">用其他程式設為桌布：</string>

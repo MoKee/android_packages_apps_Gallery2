@@ -82,7 +82,7 @@
     <string name="flip_vertically">Dikey</string>
     <string name="free_aspect_ratio">Hiçbiri</string>
     <string name="other_aspect_ratio">Diğer</string>
-    <string name="simple_wallpaper">Basit Duvar Kağıdı</string>
+    <string name="simple_wallpaper">Galeri</string>
     <string name="set_as_wallpaper">Duvar kağıdı olarak ayarla</string>
     <string name="set_as_wallpaper_failed">Duvar Kağıdı Olarak Ayarlanılamıyor</string>
     <string name="set_as_wallpaper_with">İle duvar kağıdı olarak ayarla:</string>

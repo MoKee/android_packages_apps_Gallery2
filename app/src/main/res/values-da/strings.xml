@@ -80,7 +80,6 @@
     <string name="flip_vertically">Spejlvend lodret</string>
     <string name="free_aspect_ratio">Free</string>
     <string name="other_aspect_ratio">Other</string>
-    <string name="simple_wallpaper">Simple Wallpaper</string>
     <string name="set_as_wallpaper">Sæt som baggrundsbillede</string>
     <string name="set_as_wallpaper_failed">Det mislykkedes at sætte billedet som baggrund</string>
     <string name="set_as_wallpaper_with">Sæt som baggrundsbillede med:</string>

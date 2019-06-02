@@ -82,7 +82,7 @@
     <string name="flip_vertically">По вертикали</string>
     <string name="free_aspect_ratio">Вручную</string>
     <string name="other_aspect_ratio">Другое</string>
-    <string name="simple_wallpaper">Простые обои</string>
+    <string name="simple_wallpaper">Галерея</string>
     <string name="set_as_wallpaper">Установить в качестве обоев</string>
     <string name="set_as_wallpaper_failed">Не удалось установить</string>
     <string name="set_as_wallpaper_with">Установить в качестве обоев в:</string>

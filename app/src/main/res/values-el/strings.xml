@@ -77,6 +77,7 @@
     <string name="flip_vertically">Κατακόρυφο αναποδογύρισμα</string>
     <string name="free_aspect_ratio">Ελεύθερο</string>
     <string name="other_aspect_ratio">Άλλο</string>
+    <string name="simple_wallpaper">Συλλογή</string>
     <string name="set_as_wallpaper">Εφαρμογή ως ταπετσαρία</string>
     <string name="set_as_wallpaper_failed">Η εφαρμογή ως ταπετσαρία απέτυχε</string>
     <string name="set_as_wallpaper_with">Εφαρμογή ως ταπετσαρία με:</string>

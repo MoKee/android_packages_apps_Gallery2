@@ -79,6 +79,7 @@
     <string name="flip_vertically">Віддзеркалити вертикально</string>
     <string name="free_aspect_ratio">Вільне</string>
     <string name="other_aspect_ratio">Інше</string>
+    <string name="simple_wallpaper">Галерея</string>
     <string name="set_as_wallpaper">Встановити як шпалери</string>
     <string name="set_as_wallpaper_failed">Не вдалося встановити шпалери</string>
     <string name="set_as_wallpaper_with">Встановити шпалери за допомогою:</string>

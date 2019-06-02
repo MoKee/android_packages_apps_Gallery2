@@ -80,7 +80,7 @@
     <string name="flip_vertically">Verticalmente</string>
     <string name="free_aspect_ratio">Livre</string>
     <string name="other_aspect_ratio">Outro</string>
-    <string name="simple_wallpaper">Papel de parede simples</string>
+    <string name="simple_wallpaper">Galeria</string>
     <string name="set_as_wallpaper">Definir como papel de parede</string>
     <string name="set_as_wallpaper_failed">Falha ao definir como papel de parede</string>
     <string name="set_as_wallpaper_with">Definir papel de parede com:</string>

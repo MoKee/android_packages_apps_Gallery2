@@ -80,7 +80,7 @@
     <string name="flip_vertically">Verticaal kantelen</string>
     <string name="free_aspect_ratio">Vrij</string>
     <string name="other_aspect_ratio">Anders</string>
-    <string name="simple_wallpaper">Achtergrond</string>
+    <string name="simple_wallpaper">Galerij</string>
     <string name="set_as_wallpaper">Als achtergrond instellen</string>
     <string name="set_as_wallpaper_failed">Achtergrond instellen mislukt</string>
     <string name="set_as_wallpaper_with">Achtergrond instellen met:</string>

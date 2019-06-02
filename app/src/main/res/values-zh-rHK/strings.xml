@@ -83,7 +83,7 @@
     <string name="flip_vertically">垂直翻轉</string>
     <string name="free_aspect_ratio">無</string>
     <string name="other_aspect_ratio">其他</string>
-    <string name="simple_wallpaper">簡易桌布</string>
+    <string name="simple_wallpaper">圖片庫</string>
     <string name="set_as_wallpaper">設為桌布</string>
     <string name="set_as_wallpaper_failed">設為桌布失敗</string>
     <string name="set_as_wallpaper_with">用其他程式設為桌布：</string>

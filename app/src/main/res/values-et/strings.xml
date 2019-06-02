@@ -69,7 +69,7 @@
     <string name="flip_vertically">Pööra vertikaalselt</string>
     <string name="free_aspect_ratio">Mitte ühtegi</string>
     <string name="other_aspect_ratio">Muud</string>
-    <string name="simple_wallpaper">Lisage GIF-id</string>
+    <string name="simple_wallpaper">Galerii</string>
     <string name="set_as_wallpaper">Lisa taustapildiks</string>
     <string name="set_as_wallpaper_failed">Taustapildi määramine ebaõnnestus</string>
     <string name="setting_wallpaper">Taustapildi määramine…</string>

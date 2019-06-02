@@ -82,7 +82,7 @@
     <string name="flip_vertically">Retourner verticalement</string>
     <string name="free_aspect_ratio">Aucun</string>
     <string name="other_aspect_ratio">Autres</string>
-    <string name="simple_wallpaper">Simple fond d\'écran</string>
+    <string name="simple_wallpaper">Galerie</string>
     <string name="set_as_wallpaper">Définir comme fond d\'écran</string>
     <string name="set_as_wallpaper_failed">Échec de la définition en tant que fond d\'écran.</string>
     <string name="set_as_wallpaper_with">Définir comme fond d\'écran avec :</string>

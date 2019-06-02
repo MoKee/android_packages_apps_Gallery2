@@ -81,7 +81,7 @@
     <string name="flip_vertically">Capovolgi verticalmente</string>
     <string name="free_aspect_ratio">Libero</string>
     <string name="other_aspect_ratio">Altro</string>
-    <string name="simple_wallpaper">Sfondo semplice</string>
+    <string name="simple_wallpaper">Galleria</string>
     <string name="set_as_wallpaper">Imposta come sfondo</string>
     <string name="set_as_wallpaper_failed">Impostazione sfondo non riuscita</string>
     <string name="set_as_wallpaper_with">Imposta come sfondo con:</string>

@@ -62,6 +62,7 @@
     <string name="included_activity_placeholder">إذا كان لديك بعض المجلدات التي تحتوي على الملتيميديا ، ولكن لم يتم التعرف عليها من قبل التطبيق، يمكنك إضافتها يدويا هنا.\n
   \n
   لن تؤدي إضافة بعض العناصر هنا إلى استبعاد أي مجلد آخر.</string>
+    <string name="no_media_add_included">لم يتم العثور على ملفات الوسائط. يمكنك حلها عن طريق إضافة المجلدات التي تحتوي على ملفات الوسائط يدويًا.</string>
     <string name="resize">تحجيم</string>
     <string name="resize_and_save">تغيير حجم التحديد وحفظ</string>
     <string name="width">العرض</string>
@@ -86,7 +87,7 @@
     <string name="flip_vertically">قلب عموديا</string>
     <string name="free_aspect_ratio">لا شيء</string>
     <string name="other_aspect_ratio">آخرى</string>
-    <string name="simple_wallpaper">خلفية بسيطة</string>
+    <string name="simple_wallpaper">المعرض</string>
     <string name="set_as_wallpaper">تعيين كخلفية الشاشة</string>
     <string name="set_as_wallpaper_failed">فشل الإعداد كخلفية</string>
     <string name="set_as_wallpaper_with">تعيين كخلفية بواسطة:</string>

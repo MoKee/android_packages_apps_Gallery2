@@ -82,7 +82,7 @@
     <string name="flip_vertically">Překlopit svisle</string>
     <string name="free_aspect_ratio">Volné</string>
     <string name="other_aspect_ratio">Ostatní</string>
-    <string name="simple_wallpaper">Jednoduchá tapeta</string>
+    <string name="simple_wallpaper">Galerie</string>
     <string name="set_as_wallpaper">Nastavit jako tapetu</string>
     <string name="set_as_wallpaper_failed">Nastavení tapety selhalo</string>
     <string name="set_as_wallpaper_with">Nastavit jako tapetu pomocí:</string>

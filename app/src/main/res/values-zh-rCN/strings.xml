@@ -82,7 +82,7 @@
     <string name="flip_vertically">垂直翻转</string>
     <string name="free_aspect_ratio">自由</string>
     <string name="other_aspect_ratio">其他</string>
-    <string name="simple_wallpaper">简约壁纸</string>
+    <string name="simple_wallpaper">图库</string>
     <string name="set_as_wallpaper">设为壁纸</string>
     <string name="set_as_wallpaper_failed">壁纸设置失败</string>
     <string name="set_as_wallpaper_with">设为壁纸...</string>

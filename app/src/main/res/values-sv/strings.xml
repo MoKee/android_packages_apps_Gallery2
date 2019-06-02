@@ -79,7 +79,7 @@
     <string name="flip_vertically">Vänd vertikalt</string>
     <string name="free_aspect_ratio">Fritt</string>
     <string name="other_aspect_ratio">Annan</string>
-    <string name="simple_wallpaper">Bakgrund</string>
+    <string name="simple_wallpaper">Galleri</string>
     <string name="set_as_wallpaper">Använd som bakgrund</string>
     <string name="set_as_wallpaper_failed">Det gick inte att ställa in bakgrunden</string>
     <string name="set_as_wallpaper_with">Ställ in som bakgrund med:</string>

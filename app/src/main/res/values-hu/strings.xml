@@ -83,7 +83,7 @@
     <string name="flip_vertically">Tükrözés függőlegesen</string>
     <string name="free_aspect_ratio">Kötetlen</string>
     <string name="other_aspect_ratio">Egyéb</string>
-    <string name="simple_wallpaper">Egyszerű Háttérkép</string>
+    <string name="simple_wallpaper">Galéria</string>
     <string name="set_as_wallpaper">Beállítás háttérképként</string>
     <string name="set_as_wallpaper_failed">Meghiúsult a Háttérkép-beállítás</string>
     <string name="set_as_wallpaper_with">Beállítás háttérképként ezzel:</string>

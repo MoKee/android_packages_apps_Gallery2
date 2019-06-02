@@ -16,5 +16,6 @@
     <string name="rotate_right">Biratu eskuinera</string>
     <string name="free_aspect_ratio">Bat ere ez</string>
     <string name="other_aspect_ratio">Beste bat</string>
+    <string name="simple_wallpaper">Galeria</string>
     <string name="by_date_taken">Ateratako data</string>
 </resources>

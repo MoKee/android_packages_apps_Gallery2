@@ -79,7 +79,6 @@
     <string name="flip_vertically">Okreni vertikalno</string>
     <string name="free_aspect_ratio">Slobodan odabir</string>
     <string name="other_aspect_ratio">Ostalo</string>
-    <string name="simple_wallpaper">Jednostavna pozadina</string>
     <string name="set_as_wallpaper">Postavi kao pozadinu</string>
     <string name="set_as_wallpaper_failed">Postavljanje pozadine nije uspjelo</string>
     <string name="set_as_wallpaper_with">Postavi kao pozadinu pomoću:</string>

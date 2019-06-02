@@ -61,7 +61,7 @@
     <string name="flip_vertically">Inverter verticalmente</string>
     <string name="free_aspect_ratio">Nenhum</string>
     <string name="other_aspect_ratio">Outro</string>
-    <string name="simple_wallpaper">Fundo Simples</string>
+    <string name="simple_wallpaper">Galeria</string>
     <string name="set_as_wallpaper">Definir como Fundo</string>
     <string name="set_as_wallpaper_failed">Falha ao definir como Fundo</string>
     <string name="set_as_wallpaper_with">Definir como fundo com:</string>

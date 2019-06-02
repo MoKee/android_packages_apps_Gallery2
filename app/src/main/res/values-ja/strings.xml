@@ -80,7 +80,7 @@
     <string name="flip_vertically">垂直方向に反転</string>
     <string name="free_aspect_ratio">なし</string>
     <string name="other_aspect_ratio">その他</string>
-    <string name="simple_wallpaper">シンプル壁紙</string>
+    <string name="simple_wallpaper">ギャラリー</string>
     <string name="set_as_wallpaper">壁紙に設定</string>
     <string name="set_as_wallpaper_failed">壁紙の設定に失敗しました</string>
     <string name="set_as_wallpaper_with">壁紙に設定:</string>
