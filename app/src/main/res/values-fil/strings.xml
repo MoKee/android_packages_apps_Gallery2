@@ -17,6 +17,7 @@
     <string name="rotate_right">Ikot sa kanan</string>
     <string name="free_aspect_ratio">Libre</string>
     <string name="other_aspect_ratio">Iba pa</string>
+    <string name="simple_wallpaper">App_pangalan_mk</string>
     <string name="home_screen">Home screen</string>
     <string name="lock_screen">Lock screen</string>
     <string name="slideshow">Slideshow</string>
