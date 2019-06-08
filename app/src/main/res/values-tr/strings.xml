@@ -58,6 +58,7 @@
     <string name="manage_included_folders">Dahil edilen klasörleri yönet</string>
     <string name="add_folder">Klasör ekle</string>
     <string name="included_activity_placeholder">Ortam içeren, ancak uygulama tarafından tanınmayan bazı klasörleriniz varsa, bunları el ile buradan ekleyebilirsiniz.</string>
+    <string name="no_media_add_included">Hiçbir medya dosyası bulunamadı. Medya dosyalarını içeren klasörleri manuel olarak ekleyerek çözebilirsiniz.</string>
     <string name="resize">Yeniden boyutlandır</string>
     <string name="resize_and_save">Seçimi yeniden boyutlandır ve kaydet</string>
     <string name="width">Genişlik</string>

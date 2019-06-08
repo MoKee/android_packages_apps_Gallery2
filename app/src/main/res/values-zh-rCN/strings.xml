@@ -58,6 +58,7 @@
     <string name="manage_included_folders">管理包含目录</string>
     <string name="add_folder">添加目录</string>
     <string name="included_activity_placeholder">如果您还有应用未扫描到的媒体文件，请添加所在目录路径。</string>
+    <string name="no_media_add_included">没有找到媒体文件。您可以手动添加包含媒体文件的文件夹来解决这个问题。</string>
     <string name="resize">缩放</string>
     <string name="resize_and_save">缩放选定区域并保存</string>
     <string name="width">宽度</string>
