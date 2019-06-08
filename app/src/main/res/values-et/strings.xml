@@ -27,9 +27,13 @@
     <string name="unlock_orientation">Avage orientatsioon</string>
     <string name="change_orientation">Muutke orientatsiooni</string>
     <string name="force_portrait">Force portree</string>
+    <string name="force_landscape">Sunniga horisontaalkuva</string>
     <string name="use_default_orientation">Kasutage vaikesuunitlust</string>
+    <string name="fix_date_taken">Fikseeritud jäädvustus kuup. väärtus</string>
     <string name="fixing">Kinnitamine…</string>
     <string name="dates_fixed_successfully">Kuupäevad fikseeriti edukalt</string>
+    <string name="share_resized">Jagage muudetud suurusega versiooni</string>
+    <string name="upgraded_from_free">Hei,\n\ntundub, et te uuendasite vanast tasuta rakendusest. Nüüd saate eemaldada vana versiooni, millel on rakenduse seadete ülaosas nupp „Upgrade to Pro”.\n\nTeil on kustutatud ainult prügikasti üksused, lemmikobjektid on märgistamata ja teil tuleb ka oma rakenduse seaded lähtestada.\n\nTäname!</string>
     <string name="filter_media">Meedia filter</string>
     <string name="images">Pildid</string>
     <string name="videos">Videod</string>
@@ -44,13 +48,17 @@
     <string name="manage_excluded_folders">Välistatud kaustade haldamine</string>
     <string name="exclude_folder_description">See välistab valiku koos selle alamkaustadega ainult lihtsast galeriist. Välistatud kaustu saate hallata menüüs Seaded.</string>
     <string name="exclude_folder_parent">Välista vanem välja?</string>
+    <string name="excluded_activity_placeholder">Kaustade väljaarvamine muudab need koos nende alamkaustadega, mis on peidetud lihtsalt galeriis, kuid need jäävad nähtavaks ka teistes rakendustes.\n\nKui soovite neid ka teistest rakendustest peita, kasutage Peida funktsioon.</string>
     <string name="remove_all">Eemalda kõik</string>
     <string name="remove_all_description">Eemaldage kõik kaustad väljajäetud loendist? See ei kustuta kaustu.</string>
     <string name="hidden_folders">Peidetud kaustad</string>
     <string name="manage_hidden_folders">Halda peidetud kaustu</string>
+    <string name="hidden_folders_placeholder">Tundub, et teil pole \".nomedia\" faililaiendigaga peidetud kaustu.</string>
     <string name="include_folders">Kaasatud kaustad</string>
     <string name="manage_included_folders">Halda lisatud kaustu</string>
     <string name="add_folder">Lisa kaust</string>
+    <string name="included_activity_placeholder">Kui teil on mõningaid kaustu, mis sisaldavad meediat, kuid mida rakendus ei tunnista, saate need siia käsitsi lisada.\n\nMõnede üksuste lisamine siia ei eemalda ühtegi teist kausta.</string>
+    <string name="no_media_add_included">Meediumifaile ei leitud. Selle saate lahendada meediumifaile sisaldavate kaustade käsitsi lisamisega.</string>
     <string name="resize">Muuda suurust</string>
     <string name="resize_and_save">Suuruse muutmine ja salvestamine</string>
     <string name="width">Laius</string>
@@ -94,6 +102,7 @@
     <string name="random_order">Juhuslik järjekord</string>
     <string name="use_fade">Kasutage tuhmunud animatsioone</string>
     <string name="move_backwards">Liigu tahapoole</string>
+    <string name="loop_slideshow">Tsükliline slaidiseanss</string>
     <string name="slideshow_ended">Slaidiseanss lõppes</string>
     <string name="no_media_for_slideshow">Slaidiseansi meediat pole leitud</string>
     <string name="use_crossfade_animation">Kasutage ristlõikega animatsioone</string>
@@ -108,11 +117,13 @@
     <string name="by_date_taken">Jäädvustamiskuupäev</string>
     <string name="by_file_type">Faili tüüp</string>
     <string name="by_extension">Laiendus</string>
+    <string name="grouping_and_sorting">Pange tähele, et rühmitamisel ja sortimisel on 2 sõltumatut välja</string>
     <string name="folder_on_widget">Vidinal näidatud kaust:</string>
     <string name="show_folder_name">Kuva kausta nimi</string>
     <string name="autoplay_videos">Videote esitamine automaatselt</string>
     <string name="remember_last_video_position">Pea meeles viimane video taasesitusasend</string>
     <string name="toggle_filename">Lülitab sisse failinime nähtavuse</string>
+    <string name="loop_videos">Tsüklilised videod</string>
     <string name="animate_gifs">GIF pisipiltide animeerimine</string>
     <string name="max_brightness">Maksimaalne täisekraani heledus meediumi vaatamisel</string>
     <string name="crop_thumbnails">Kärbi pisipildid ruutudeks</string>
@@ -140,7 +151,11 @@
     <string name="show_highest_quality">Näita pilte võimalikult kõrge kvaliteediga</string>
     <string name="show_recycle_bin_last">Näita prügikasti kui põhiekraani viimast üksust</string>
     <string name="allow_down_gesture">Luba täisekraanivaade sulgeda allapoole suunatud žestiga</string>
+    <string name="allow_one_to_one_zoom">Luba 1: 1 suumimine kahe topelt toksamisega</string>
     <string name="open_videos_on_separate_screen">Avage videod alati eraldi ekraanil, millel on uued horisontaalsed žestid</string>
+    <string name="show_notch">Näita taset, kui see on saadaval</string>
+    <string name="allow_rotating_gestures">Luba žestidega pöörlevad pildid</string>
+    <string name="file_loading_priority">Faili laadimise prioriteet</string>
     <string name="speed">Kiirus</string>
     <string name="compromise">Kompromiss</string>
     <string name="avoid_showing_invalid_files">Vältige vigaste failide esitamist</string>
@@ -152,20 +167,87 @@
     <string name="toggle_favorite">Lülitage lemmik sisse</string>
     <string name="toggle_file_visibility">Näita faili sisu</string>
     <string name="faq_1_title">Kuidas ma saan lihtsa galerii seadistada vaikeseadmete galeriiks?</string>
+    <string name="faq_1_text">Kõigepealt peate oma seadete jaotises Rakendused leidma vaikepildi, otsima nupu, mis ütleb \"Ava vaikimisi\", klõpsake seda ja seejärel valige \"Tühjenda vaikeväärtused\".
+        Järgmise kordi, kui proovite pilti või videot avada, peaksite nägema rakenduse valijat, kus saate valida galerii ja muuta see vaikimisi rakenduseks.</string>
     <string name="faq_2_title">Lukustasin rakenduse parooliga, kuid unustasin selle. Mida ma teha saan?</string>
     <string name="faq_2_text">Seda saab lahendada kahel viisil. Saate rakenduse uuesti installida või leida selle seadme seadetes ja valida \"Kustuta andmed\". See taastab kõik teie seaded, see ei eemalda meediumifaile.</string>
     <string name="faq_3_title">Kuidas saan albumi alati ülaosas kuvada?</string>
+    <string name="faq_3_text">Soovitud albumil saate pikka aega vajutades valida toimingute menüüs Pin-ikooni, mis kinnitaub selle ülemisele küljele. Saate lisada ka mitu kausta, kinnitatud elemendid sorteeritakse vaikimisi sorteerimismeetodi järgi.</string>
     <string name="faq_4_title">Kuidas videoid edasi saata?</string>
+    <string name="faq_4_text">Te saate lohistada sõrme horisontaalselt videopleieri kohal või klõpsta otsinguriba lähedal olevate või maksimaalse kestusega tekstidele. See viib video kas tagasi või edasi.</string>
     <string name="faq_5_title">Mis vahe on kausta peitmise ja välistamise vahel?</string>
+    <string name="faq_5_text">Välista see, et kaust kuvatakse ainult lihtsas galeriis, samas peidab töö süsteemi ja ka teiste galeriide kausta. See toimib, luues tühja kausta \".nomedia\" faili, mille saate seejärel eemaldada ka mis tahes failihalduriga.</string>
     <string name="faq_6_title">Miks ilmuvad muusikakaanega kaustad või kleebised?</string>
+    <string name="faq_6_text">Võib juhtuda, et näete mõnda ebatavalist albumit. Neid saab hõlpsasti välistada, vajutades sellel pikka aega ja valides Välista. Järgmises dialoogis saate seejärel valida vanemkausta, tõenäoliselt see takistab teiste seotud albumite ilmumist.</string>
     <string name="faq_7_title">Piltidega kaust ei kuvata või see ei näita kõiki üksusi. Mida ma teha saan?</string>
+    <string name="faq_7_text">Sellel võib olla mitu põhjust, kuid selle lahendamine on lihtne. Lihtsalt minge menüüsse Seaded -&gt; Kaasatud kaustade haldamine, valige Lisaks ja navigeerige soovitud kausta.</string>
     <string name="faq_8_title">Mis siis, kui tahan näha vaid mõningaid konkreetseid kaustu?</string>
+    <string name="faq_8_text">Kausta Lisamine kaustadesse ei välista automaatselt midagi. Mida saate teha, on minna menüüsse Sätted -&gt; Välistatud kaustade haldamine, jätke juurkaust \"/\" välja, seejärel lisage soovitud kaustad menüüs Seaded -&gt; Kaasatud kaustade haldamine.
+        See muudab ainult valitud kaustad nähtavaks, sest nii välistamine kui ka kaasamine on rekursiivsed ja kui kaust on nii välistatud kui ka kaasatud, kuvatakse see.</string>
     <string name="faq_10_title">Kas ma saan selle rakendusega pilte kärpida?</string>
     <string name="faq_10_text">Jah, saate redaktoris pilte kärpida lohistades. Redaktorisse pääsete kas pisipildi vajutamisega ja valides Redigeeri või valides täisekraani vaates Muuda.</string>
     <string name="faq_11_title">Kas ma saan kuidagi pisipilte grupeerida?</string>
+    <string name="faq_11_text">Muidugi, kasutage pisipiltide vaaamisel lihtsalt menüükäsku „Rühmapõhine”. Faile saab rühmitada mitme kriteeriumi alusel, kaasa arvatud kuupäev. Kui kasutate funktsiooni \"Näita kõikide kaustade sisu\", saate neid ka kaustadesse rühmitada.</string>
     <string name="faq_12_title">Sorteerimine kuupäeva järgi ei tundu korralikult töötavat, kuidas seda parandada?</string>
+    <string name="faq_12_text">See on tõenäoliselt põhjustatud sellest, et failid on kuskilt kopeeritud. Võite selle parandada, valides faili pisipildid ja \"Fikseeri jäädvustus kuup. väärtus\".</string>
     <string name="faq_13_title">Ma näen piltidel värvilahendust. Kuidas parandada kvaliteeti?</string>
+    <string name="faq_13_text">Piltide kuvamise praegune lahendus toimib hästi enamikul juhtudel, kuid kui soovite veelgi paremat pildikvaliteeti, saate rakenduse seadetes lubada \"Näita pilte võimalikult kõrgekvaliteediliselt\" jaotises \"Suured suumitavad pildid\".</string>
     <string name="faq_14_title">Olen peitnud faili / kausta. Kuidas ma saan seda näidata?</string>
+    <string name="faq_14_text">Saate vajutada põhikuval menüüelementi \"Näita peidetud objekte ajutiselt\" või lülitada peidetud üksuse nägemiseks rakenduse seadetes \"Näita peidetud objekte\". Kui soovite seda näidata, vajuta lihtsalt pikka aega ja vali \"Peida\". Kaustad on peidetud, lisades neile peidetud \".nomedia\" faili, kustutades faili ka mõne failihalduriga.</string>
     <string name="faq_15_title">Miks rakendus võtab nii palju ruumi?</string>
     <string name="faq_15_text">Rakenduse vahemälu võib võtta kuni 250 MB, see tagab kiirema pildi laadimise. Kui rakendus võtab rohkem ruumi, on see tõenäoliselt tingitud sellest, et teil on prügikastis üksusi. Need failid lisatakse rakenduse suurusele. Saate tühjendada prügikasti, avades selle ja kustutades kõik failid või rakenduse seadetest. Iga prügikasti fail kustutatakse 30 päeva pärast automaatselt.</string>
+    <string name="app_title">Simple Gallery Pro: Foto haldur &amp; redaktor</string>
+    <string name="app_short_description">Offline galerii ilma reklaamideta. Fotode &amp; videote korraldamine, muutmine, taastamine ja kaitsmine</string>
+    <string name="app_long_description">        Simple Gallery Pro on väga kohandatav offline galerii. Korraldage &amp; redigeerige oma fotosid, taastage kustutatud failid prügikastiga, kaitstes &amp; peitke faile ning vaadake suurt hulka erinevaid foto &amp; videoformaate, sealhulgas RAW, SVG ja palju muud.
+
+        Rakendus ei sisalda reklaame ega mittevajalikke õigusi. Kuna rakendus ei vaja ka internetiühendust, on teie privaatsus kaitstud.
+
+        -------------------------------------------------
+        <b>SIMPLE GALLERY PRO – OMADUSED</b>
+        -------------------------------------------------
+
+        • Offline gallery with no ads or popups
+        • Simple gallery photo editor – crop, rotate, resize, draw, filters &amp; more
+        • No internet access needed, giving you more privacy and security
+        • No unnecessary permissions required
+        • Quickly search images, videos &amp; files
+        • Open &amp; view many different photo and video types (RAW, SVG, panoramic etc)
+        • A variety of intuitive gestures to easily edit &amp; organize files
+        • Lots of ways to filter, group &amp; sort files
+        • Customize the appearance of Simple Gallery Pro
+        • Available in 32 languages
+        • Mark files as favorites for quick access
+        • Protect your photos &amp; videos with a pattern, pin or fingerprint
+        • Use pin, pattern &amp; fingerprint to protect the app launch or specific functions too
+        • Recover deleted photos &amp; videos from the recycle bin
+        • Toggle visibility of files to hide photos &amp; videos
+        • Create a customizable slideshow of your files
+        • View detailed information of your files (resolution, EXIF values etc)
+        • Simple Gallery Pro is open source
+        … and much much more!
+
+        <b>PILDIGALERII TOIMETAJA</b>
+        Simple Gallery Pro makes it easy to edit your pictures on the fly. Crop, flip, rotate and resize your pictures. If you’re feeling a little more creative you can add filters and draw on your pictures!
+
+        <b>PALJUDE FAILITÜÜPIDE TOETUS</b>
+        Unlike some other gallery viewers &amp; photo organizers, Simple Gallery Pro supports a huge range of different file types including JPEG, PNG, MP4, MKV, RAW, SVG, Panoramic photos, Panoramic videos and many more.
+
+        <b>IGATI KOHANDATAV GALERII HALDAJA</b>
+        From the UI to the function buttons on the bottom toolbar, Simple Gallery Pro is highly customizable and works the way you want it to. No other gallery manager has this kind of flexibility! Thanks to being open source, we’re also available in 32 languages!
+
+        <b>KUSTUTATUD FOTODE &amp; VIDEODE TAASTAMINE</b>
+        Accidentally deleted a precious photo or video? Don’t worry! Simple Gallery Pro features a handy recycle bin where you can recover deleted photos &amp; videos easily.
+
+        <b>KAITSKE &amp; PEITKE FOTOSID, VIDEOID &amp; FALE</b>
+        Using pin, pattern or your device’s fingerprint scanner you can protect and hide photos, videos &amp; entire albums. You can protect the app itself or place locks on specific functions of the app. For example, you can’t delete a file without a fingerprint scan, helping to protect your files from accidental deletion.
+
+        <b>Vaadake siin lihtsate tööriistade komplekti:</b>
+        https://www.simplemobiletools.com
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools
+    </string>
 </resources>
