@@ -114,7 +114,11 @@
     <string name="do_not_group_files">Neslučovat soubory</string>
     <string name="by_folder">Složka</string>
     <string name="by_last_modified">Naposledy upraveno</string>
+    <string name="by_last_modified_daily">Naposledy upraveno (denně)</string>
+    <string name="by_last_modified_monthly">Naposledy upraveno (měsíčně)</string>
     <string name="by_date_taken">Datum pořízení</string>
+    <string name="by_date_taken_daily">Datum pořízení (denně)</string>
+    <string name="by_date_taken_monthly">Datum pořízení (měsíčně)</string>
     <string name="by_file_type">Typ souboru</string>
     <string name="by_extension">Přípona</string>
     <string name="grouping_and_sorting">Vezměte prosím na vědomí, že seskupování a třídění jsou 2 nezávislé pole</string>
