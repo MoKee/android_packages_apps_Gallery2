@@ -33,6 +33,7 @@
     <string name="fixing">Correzione…</string>
     <string name="dates_fixed_successfully">Date aggiornate correttamente</string>
     <string name="share_resized">Condividi la versione modificata</string>
+    <string name="upgraded_from_free">Ehi,\n\nsembra che tu abbia aggiornato dalla vecchia app gratuita. Ora puoi disinstallare la vecchia versione, che ha un pulsante \'Aggiorna a Pro\' in cima alle impostazioni dell\'app.\n\nOtterrai solo gli elementi del cestino del riuso, gli elementi preferiti non registrati e dovrai anche reimpostare le impostazioni dell\'app.\n\nGrazie!</string>
     <string name="filter_media">Filtra i media</string>
     <string name="images">Immagini</string>
     <string name="videos">Video</string>
@@ -57,6 +58,7 @@
     <string name="manage_included_folders">Gestisci le cartelle incluse</string>
     <string name="add_folder">Aggiungi cartella</string>
     <string name="included_activity_placeholder">Se hai alcune cartelle che contengono media, ma non sono state riconosciute dall\'app, puoi aggiungerle manualmente qui.</string>
+    <string name="no_media_add_included">Nessun file multimediale trovato. Puoi risolverlo aggiungendo le cartelle che contengono file multimediali manualmente.</string>
     <string name="resize">Ridimensiona</string>
     <string name="resize_and_save">Ridimensiona la selezione e salva</string>
     <string name="width">Larghezza</string>
@@ -112,7 +114,11 @@
     <string name="do_not_group_files">Non raggruppare i file</string>
     <string name="by_folder">Cartella</string>
     <string name="by_last_modified">Ultima modifica</string>
+    <string name="by_last_modified_daily">Ultima modifica (giornaliero)</string>
+    <string name="by_last_modified_monthly">Ultima modifica (mensile)</string>
     <string name="by_date_taken">Data creazione</string>
+    <string name="by_date_taken_daily">Data di assunzione (giornaliero)</string>
+    <string name="by_date_taken_monthly">Data di assunzione (mensile)</string>
     <string name="by_file_type">Tipo di file</string>
     <string name="by_extension">Estensione</string>
     <string name="grouping_and_sorting">Fare attenzione: il raggruppamento e il riordinamento sono due cose indipendenti</string>
@@ -170,6 +176,7 @@
     <string name="faq_2_title">Ho bloccato l\'app con una password, ma l\'ho dimenticata. Cosa posso fare?</string>
     <string name="faq_2_text">Puoi risolvere in 2 modi. Puoi reinstallare l\'app, oppure trova l\'app nelle impostazioni del dispositivo e seleziona \"Cancella dati\". Tutte le impostazioni verranno ripristinate, nessun file multimediale verrà rimosso.</string>
     <string name="faq_3_title">Come posso fare apparire un album sempre in cima?</string>
+    <string name="faq_3_text">Puoi premere a lungo l\'album desiderato e selezionare l\'icona Pin nel menu azioni, che lo pin in alto. Puoi anche fissare più cartelle, gli elementi bloccati saranno ordinati con il metodo di ordinamento predefinito.</string>
     <string name="faq_4_title">Come avanzo velocemente nei video?</string>
     <string name="faq_4_text">Puoi cliccare sui testi di durata attuale o massima vicino alla barra di avanzamento, ciò avanzerà o riavvolgerà il video.</string>
     <string name="faq_5_title">Che differenza c\'è tra nascondere ed escludere una cartella?</string>
@@ -191,5 +198,8 @@
     <string name="faq_13_text">L\'attuale soluzione per visualizzare immagini funziona bene nella maggior parte dei casi, ma se vuoi una qualità ancora maggiore, puoi attivare \"Mostra le immagini alla massima qualità possibile\" nelle impostazioni dell\'app, nella sezione \"Immagini ingrandibili a fondo\".</string>
     <string name="faq_14_title">Ho nascosto un file/una cartella. Come posso mostrarlo/a di nuovo?</string>
     <string name="faq_14_text">Puoi premere \"Mostra temporaneamente nascosti\" nel menu della schermata principale, oppure attivare \"Mostra gli elementi nascosti\" nelle impostazioni dell\'app per vedere l\'elemento nascosto. Se vuoi che resti visibile, premilo a lungo e seleziona \"Non nascondere\". Le cartelle vengono nascoste aggiungendo un file nascosto \".nomedia\" all\'interno di esse, puoi anche eliminare il file con qualsiasi gestore di file.</string>
+    <string name="faq_15_title">Perché l\'app impiega così tanto spazio?</string>
+    <string name="faq_15_text">La cache dell\'app può richiedere fino a 250MB, garantisce un caricamento più rapido delle immagini. Se l\'app sta impiegando ancora più spazio, è molto probabile che tu abbia elementi nel Cestino. Questi file contano sulle dimensioni dell\'app. Puoi cancellare il cestino aprendo e cancellando tutti i file, o dalle impostazioni dell\'app. Ogni file nel Cestino viene eliminato automaticamente dopo 30 giorni.</string>
+    <string name="app_title">Semplice Galleria Pro: Gestore Foto &amp; Editor</string>
     <string name="app_short_description">Galleria offline senza pubblicità. Organizza, modifica, recupera e proteggi foto e video</string>
 </resources>

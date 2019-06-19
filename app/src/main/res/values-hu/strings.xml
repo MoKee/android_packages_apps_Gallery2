@@ -114,7 +114,11 @@
     <string name="do_not_group_files">Nincs csoportosítás</string>
     <string name="by_folder">Mappa</string>
     <string name="by_last_modified">Utolsó módosítás</string>
+    <string name="by_last_modified_daily">Utolsó módosítás (napi)</string>
+    <string name="by_last_modified_monthly">Utolsó módosítás (havi)</string>
     <string name="by_date_taken">Dátum</string>
+    <string name="by_date_taken_daily">Dátum (napi)</string>
+    <string name="by_date_taken_monthly">Dátum (havi)</string>
     <string name="by_file_type">Fájl típus</string>
     <string name="by_extension">Kiterjesztés</string>
     <string name="grouping_and_sorting">Felhívjuk a figyelmét, hogy a csoportosítás és a rendezés két különböző mező</string>
