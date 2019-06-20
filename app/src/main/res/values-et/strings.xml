@@ -114,7 +114,11 @@
     <string name="do_not_group_files">Ärge grupeerige faile</string>
     <string name="by_folder">Kaust</string>
     <string name="by_last_modified">Viimati muudetud</string>
+    <string name="by_last_modified_daily">Viimati muudetud (päev)</string>
+    <string name="by_last_modified_monthly">Viimati muudetud (kuu)</string>
     <string name="by_date_taken">Jäädvustamiskuupäev</string>
+    <string name="by_date_taken_daily">Kuupäev (iga päev)</string>
+    <string name="by_date_taken_monthly">Kuupäev (kuu)</string>
     <string name="by_file_type">Faili tüüp</string>
     <string name="by_extension">Laiendus</string>
     <string name="grouping_and_sorting">Pange tähele, et rühmitamisel ja sortimisel on 2 sõltumatut välja</string>

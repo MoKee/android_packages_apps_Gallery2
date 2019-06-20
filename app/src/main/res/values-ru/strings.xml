@@ -114,7 +114,11 @@
     <string name="do_not_group_files">Не группировать файлы</string>
     <string name="by_folder">Папка</string>
     <string name="by_last_modified">Последнее изменение</string>
+    <string name="by_last_modified_daily">По дате редактирования (по дням)</string>
+    <string name="by_last_modified_monthly">По дате редактирования (по месяцам)</string>
     <string name="by_date_taken">Дата съёмки</string>
+    <string name="by_date_taken_daily">Дата снимка (по дням)</string>
+    <string name="by_date_taken_monthly">Дата снимка (по месяцам)</string>
     <string name="by_file_type">Тип файла</string>
     <string name="by_extension">Расширение</string>
     <string name="grouping_and_sorting">Обратите внимание, что группировка и сортировка - это 2 независимых поля</string>

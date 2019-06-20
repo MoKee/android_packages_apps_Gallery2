@@ -118,7 +118,11 @@
     <string name="do_not_group_files">لا تقم بتجميع الملفات</string>
     <string name="by_folder">مجلد</string>
     <string name="by_last_modified">آخر تعديل</string>
+    <string name="by_last_modified_daily">آخر تعديل (يومي)</string>
+    <string name="by_last_modified_monthly">آخر تعديل (شهري)</string>
     <string name="by_date_taken">تاريخ الالتقاط</string>
+    <string name="by_date_taken_daily">تاريخ الاستلام (يومي)</string>
+    <string name="by_date_taken_monthly">تاريخ الاستلام (شهري)</string>
     <string name="by_file_type">نوع الملف</string>
     <string name="by_extension">الإضافة</string>
     <string name="grouping_and_sorting">يرجى ملاحظة أن التجميع والفرز هما حقلين مستقلين</string>
