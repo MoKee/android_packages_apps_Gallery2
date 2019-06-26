@@ -11,4 +11,5 @@
     <string name="rotate_left">বাওঁফালে ঘূৰোৱা</string>
     <string name="rotate_right">সোঁফালে ঘূৰোৱা</string>
     <string name="other_aspect_ratio">অন্যান্য</string>
+    <string name="no_animation">হাল্লা</string>
 </resources>

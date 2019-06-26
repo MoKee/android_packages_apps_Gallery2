@@ -14,5 +14,6 @@
     <string name="rotate_right">വലത്തേയ്ക്ക് തിരിക്കുക</string>
     <string name="free_aspect_ratio">ഒന്നുമില്ല</string>
     <string name="other_aspect_ratio">മറ്റുള്ളവ</string>
+    <string name="no_animation">ആരിൽ നിന്നും വേണ്ട</string>
     <string name="by_date_taken">എടുത്ത തീയതി</string>
 </resources>

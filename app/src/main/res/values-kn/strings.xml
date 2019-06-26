@@ -96,12 +96,11 @@
     <string name="include_videos">ದೃಶ್ಯಗಳನ್ನು ಸೇರಿಸು</string>
     <string name="include_gifs">GIF ಗಳನ್ನು ಸೇರಿಸು</string>
     <string name="random_order">ಸ್ವೇಚ್ಛೆಯಾದ ಕ್ರಮ</string>
-    <string name="use_fade">ಬಣ್ಣಗುಂದಿದ ಅನಿಮೇಷನ್ ಗಳನ್ನು ಬಳಸು</string>
     <string name="move_backwards">ಹಿಮ್ಮುಖವಾಗಿ ಚಲಿಸು</string>
     <string name="loop_slideshow">ಚಕ್ರಿಯ ಸ್ಲೈಡ್ ವೀಕ್ಷಣೆ</string>
+    <string name="no_animation">ಯಾವುದೂ ಇಲ್ಲ</string>
     <string name="slideshow_ended">ಸ್ಲೈಡ್ ವೀಕ್ಷಣೆ ಕೊನೆಗೊಂಡಿದೆ</string>
     <string name="no_media_for_slideshow">ಸ್ಲೈಡ್ ವೀಕ್ಷಣೆಗೆ ಯಾವುದೇ ಮಾಧ್ಯಮಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
-    <string name="use_crossfade_animation">ಅಡ್ಡಮಿಶ್ರಿತ ಬಣ್ಣಗುಂದಿದ ಅನಿಮೇಷನ್ ಗಳನ್ನು ಬಳಸು</string>
     <string name="change_view_type">ನೋಟದ ರೀತಿ ಬದಲಾಯಿಸು</string>
     <string name="grid">ಚೌಕಾಕಾರದ ಕ್ರಮ</string>
     <string name="list">ಪಟ್ಟಿ ಕ್ರಮ</string>

@@ -11,4 +11,5 @@
     <string name="rotate_left">ବାମକୁ ଘୁରିବା</string>
     <string name="rotate_right">ଡାହାଣକୁ ଘୁରିବା</string>
     <string name="other_aspect_ratio">ଅନ୍ୟାନ୍ୟ</string>
+    <string name="no_animation">କିଛି ନୁହେଁ</string>
 </resources>

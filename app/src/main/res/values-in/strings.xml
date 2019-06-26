@@ -98,12 +98,11 @@
     <string name="include_videos">Sertakan Video</string>
     <string name="include_gifs">Sertakan GIF</string>
     <string name="random_order">Urutan acak</string>
-    <string name="use_fade">Gunakan animasi fade</string>
     <string name="move_backwards">Bergerak mundur</string>
     <string name="loop_slideshow">Ulangi tayangan slide</string>
+    <string name="no_animation">Tidak ada</string>
     <string name="slideshow_ended">Tampilan slide berakhir</string>
     <string name="no_media_for_slideshow">Tidak ada media untuk tampilan slide yang ditemukan</string>
-    <string name="use_crossfade_animation">Gunakan animasi crossfade</string>
     <string name="change_view_type">Ubah jenis tampilan</string>
     <string name="grid">Kotak</string>
     <string name="list">Daftar</string>

@@ -9,5 +9,6 @@
     <string name="other_aspect_ratio">অন্যান্য</string>
     <string name="home_screen">Home screen</string>
     <string name="lock_screen">Lock screen</string>
+    <string name="no_animation">কোনো কিছুই নয়</string>
     <string name="by_date_taken">তোলার তারিখ</string>
 </resources>

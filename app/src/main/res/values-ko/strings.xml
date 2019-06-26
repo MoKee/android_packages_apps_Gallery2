@@ -49,12 +49,11 @@
     <string name="include_videos">비디오 추가하기</string>
     <string name="include_gifs">GIF 추가하기</string>
     <string name="random_order">무작위 순서</string>
-    <string name="use_fade">페이드 애니메이션 사용하기</string>
     <string name="move_backwards">뒤로 이동</string>
     <string name="loop_slideshow">슬라이드쇼 반복하기</string>
+    <string name="no_animation">없음</string>
     <string name="slideshow_ended">이 슬라이드 쇼는 종료되었습니다.</string>
     <string name="no_media_for_slideshow">슬라이드쇼를 위한 미디어를 찾지 못했습니다.</string>
-    <string name="use_crossfade_animation">크로스 페이드 애니메이션 사용하기</string>
     <string name="change_view_type">보기 방식 변경하기</string>
     <string name="grid">격자</string>
     <string name="list">목록</string>

@@ -17,6 +17,7 @@
     <string name="free_aspect_ratio">ບໍ່ໃຊ້</string>
     <string name="other_aspect_ratio">ອື່ນໆ</string>
     <string name="slideshow">ສະໄລ້ໂຊ</string>
+    <string name="no_animation">ບໍ່ມີ</string>
     <string name="group_by">ຈັດກຸ່ມຕາມ</string>
     <string name="by_date_taken">ວັນທີຖ່າຍ</string>
 </resources>

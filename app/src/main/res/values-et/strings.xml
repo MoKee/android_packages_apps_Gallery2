@@ -100,12 +100,11 @@
     <string name="include_videos">Lisage videod</string>
     <string name="include_gifs">Lisage GIF-id</string>
     <string name="random_order">Juhuslik järjekord</string>
-    <string name="use_fade">Kasutage tuhmunud animatsioone</string>
     <string name="move_backwards">Liigu tahapoole</string>
     <string name="loop_slideshow">Tsükliline slaidiseanss</string>
+    <string name="no_animation">Puudub</string>
     <string name="slideshow_ended">Slaidiseanss lõppes</string>
     <string name="no_media_for_slideshow">Slaidiseansi meediat pole leitud</string>
-    <string name="use_crossfade_animation">Kasutage ristlõikega animatsioone</string>
     <string name="change_view_type">Muuda vaatetüüpi</string>
     <string name="grid">Ruudustik</string>
     <string name="list">Loend</string>

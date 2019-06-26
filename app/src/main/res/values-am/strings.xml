@@ -15,6 +15,7 @@
     <string name="rotate_right">ወደ ቀኝ አሽከርክር</string>
     <string name="free_aspect_ratio">ምንም</string>
     <string name="slideshow">ስላይድ አሳይ</string>
+    <string name="no_animation">ምንም</string>
     <string name="group_by">በቡድን አስቀምጥ</string>
     <string name="by_date_taken">የተነሳበት ቀን</string>
 </resources>

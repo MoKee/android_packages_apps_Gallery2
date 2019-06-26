@@ -15,6 +15,7 @@
     <string name="rotate_right">दाएं घुमाएं</string>
     <string name="free_aspect_ratio">कुछ नहीं</string>
     <string name="slideshow">स्लाइडशो</string>
+    <string name="no_animation">कोई नहीं</string>
     <string name="group_by">इसके द्वारा समूहीकृत</string>
     <string name="by_folder">फ़ोल्डर</string>
     <string name="by_date_taken">फ़ोटो लेने का दिनांक</string>

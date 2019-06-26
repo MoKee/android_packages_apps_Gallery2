@@ -15,6 +15,7 @@
     <string name="rotate_right">Баруун эргүүлэх</string>
     <string name="free_aspect_ratio">Байхгүй</string>
     <string name="slideshow">Слайд харуулах</string>
+    <string name="no_animation">Хоосон</string>
     <string name="group_by">Груплэх</string>
     <string name="by_date_taken">Огноо</string>
 </resources>

@@ -92,9 +92,9 @@
     <string name="include_videos">Bao gồm video</string>
     <string name="include_gifs">Bao gồm ảnh động</string>
     <string name="random_order">Ngẫu nhiên</string>
-    <string name="use_fade">Sử dụng hoạt ảnh mờ</string>
     <string name="move_backwards">Di chuyển về phía sau</string>
     <string name="loop_slideshow">Trình chiếu</string>
+    <string name="no_animation">Không có</string>
     <string name="slideshow_ended">Kết thúc trình chiếu</string>
     <string name="no_media_for_slideshow">Không tìm thấy dữ liệu cho trình chiếu</string>
     <string name="group_by">Nhóm theo</string>

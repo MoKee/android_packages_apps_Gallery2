@@ -22,6 +22,7 @@
     <string name="home_screen">Начален екран</string>
     <string name="lock_screen">Екран за заключване</string>
     <string name="slideshow">Слайдшоу</string>
+    <string name="no_animation">Без</string>
     <string name="group_by">Групиране по</string>
     <string name="by_folder">Папка</string>
     <string name="by_date_taken">Дата на заснемане</string>

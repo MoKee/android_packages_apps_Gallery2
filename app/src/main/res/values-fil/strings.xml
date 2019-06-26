@@ -21,6 +21,7 @@
     <string name="home_screen">Home screen</string>
     <string name="lock_screen">Lock screen</string>
     <string name="slideshow">Slideshow</string>
+    <string name="no_animation">Wala</string>
     <string name="group_by">Grupo ng</string>
     <string name="by_folder">Folder</string>
     <string name="by_date_taken">Petsa ng pagkuha</string>

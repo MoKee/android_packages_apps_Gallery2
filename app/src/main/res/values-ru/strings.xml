@@ -100,12 +100,11 @@
     <string name="include_videos">Использовать видео</string>
     <string name="include_gifs">Использовать GIF</string>
     <string name="random_order">Случайный порядок</string>
-    <string name="use_fade">Эффект затухания</string>
     <string name="move_backwards">В обратном порядке</string>
     <string name="loop_slideshow">Зациклить</string>
+    <string name="no_animation">Без эффекта</string>
     <string name="slideshow_ended">Слайд-шоу закончилось</string>
     <string name="no_media_for_slideshow">Никаких медиафайлов для слайд-шоу не было найдено</string>
-    <string name="use_crossfade_animation">Эффект затухания</string>
     <string name="change_view_type">Режим отображения</string>
     <string name="grid">Сетка</string>
     <string name="list">Список</string>
@@ -114,8 +113,8 @@
     <string name="do_not_group_files">Не группировать файлы</string>
     <string name="by_folder">Папка</string>
     <string name="by_last_modified">Последнее изменение</string>
-    <string name="by_last_modified_daily">По дате редактирования (по дням)</string>
-    <string name="by_last_modified_monthly">По дате редактирования (по месяцам)</string>
+    <string name="by_last_modified_daily">Дата редактирования (по дням)</string>
+    <string name="by_last_modified_monthly">Дата редактирования (по месяцам)</string>
     <string name="by_date_taken">Дата съёмки</string>
     <string name="by_date_taken_daily">Дата снимка (по дням)</string>
     <string name="by_date_taken_monthly">Дата снимка (по месяцам)</string>

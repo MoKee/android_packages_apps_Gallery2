@@ -7,5 +7,6 @@
     <string name="rotate">လှည့်ရန်</string>
     <string name="free_aspect_ratio">တစ်ခုမှမဟုတ်ပါ</string>
     <string name="other_aspect_ratio">အခြား</string>
+    <string name="no_animation">တစ်ခုမှမဟုတ်ပါ</string>
     <string name="by_date_taken">ရိုက်ကူးခဲ့သောနေ့</string>
 </resources>

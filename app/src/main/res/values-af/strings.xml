@@ -16,6 +16,7 @@
     <string name="free_aspect_ratio">Geen</string>
     <string name="other_aspect_ratio">Ander</string>
     <string name="slideshow">Skyfievertoning</string>
+    <string name="no_animation">Geen</string>
     <string name="group_by">Groepeer volgens</string>
     <string name="by_date_taken">Datum geneem</string>
 </resources>

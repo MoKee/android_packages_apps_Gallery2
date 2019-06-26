@@ -17,6 +17,7 @@
     <string name="other_aspect_ratio">อื่น ๆ</string>
     <string name="lock_screen">ล็อคหน้าจอ</string>
     <string name="slideshow">การนำเสนอภาพนิ่ง</string>
+    <string name="no_animation">ไม่มี</string>
     <string name="group_by">จัดกลุ่มตาม</string>
     <string name="by_date_taken">วันที่ถ่าย</string>
 </resources>

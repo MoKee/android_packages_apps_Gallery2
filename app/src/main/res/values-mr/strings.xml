@@ -14,5 +14,6 @@
     <string name="rotate_right">उजवीकडे फिरवा</string>
     <string name="free_aspect_ratio">काहीही नाही</string>
     <string name="other_aspect_ratio">अन्य</string>
+    <string name="no_animation">काहीही नाही</string>
     <string name="by_date_taken">तारीख घेतली</string>
 </resources>

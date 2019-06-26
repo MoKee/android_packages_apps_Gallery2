@@ -32,6 +32,7 @@
     <string name="home_screen">Хатні экран</string>
     <string name="lock_screen">Экран блакіроўкі</string>
     <string name="slideshow">Слайдшоў</string>
+    <string name="no_animation">Няма</string>
     <string name="group_by">Групоўка па</string>
     <string name="by_folder">Тэчка</string>
     <string name="by_date_taken">Дата здымкі</string>

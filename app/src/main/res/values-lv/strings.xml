@@ -15,6 +15,7 @@
     <string name="rotate_right">Pagriezt pa labi</string>
     <string name="free_aspect_ratio">Nav</string>
     <string name="slideshow">Slaidrāde</string>
+    <string name="no_animation">Nav</string>
     <string name="group_by">Grupēt pēc:</string>
     <string name="by_date_taken">Uzņemšanas datums</string>
 </resources>

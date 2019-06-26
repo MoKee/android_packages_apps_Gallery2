@@ -13,5 +13,6 @@
     <string name="rotate_right">வலதுபுறம் சுழற்று</string>
     <string name="free_aspect_ratio">ஏதுமில்லை</string>
     <string name="other_aspect_ratio">பிற</string>
+    <string name="no_animation">ஏதுமில்லை</string>
     <string name="by_date_taken">எடுத்த தேதி</string>
 </resources>

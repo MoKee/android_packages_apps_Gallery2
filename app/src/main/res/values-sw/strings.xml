@@ -15,6 +15,7 @@
     <string name="rotate_right">Zungusha kulia</string>
     <string name="free_aspect_ratio">Bila</string>
     <string name="slideshow">Onyesho la slaidi</string>
+    <string name="no_animation">Hamna</string>
     <string name="group_by">Panga kwa kikundi na</string>
     <string name="by_date_taken">Tarehe iliyochukuliwa</string>
 </resources>

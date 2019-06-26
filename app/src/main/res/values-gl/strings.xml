@@ -84,9 +84,9 @@
     <string name="include_videos">Incluír vídeos</string>
     <string name="include_gifs">Incluír GIFs</string>
     <string name="random_order">Orde aleatoria</string>
-    <string name="use_fade">Utilizar animación esvaescente</string>
     <string name="move_backwards">Mover atrás</string>
     <string name="loop_slideshow">Reproducir en bucle</string>
+    <string name="no_animation">Ningún</string>
     <string name="slideshow_ended">Rematou a presentación</string>
     <string name="no_media_for_slideshow">Non se atoparon medios para a presentación</string>
     <string name="change_view_type">Cambiar o tipo de vista</string>

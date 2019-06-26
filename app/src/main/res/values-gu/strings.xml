@@ -14,5 +14,6 @@
     <string name="rotate_right">જમણે ભ્રમણ કરો</string>
     <string name="free_aspect_ratio">કોઈ નહીં</string>
     <string name="other_aspect_ratio">અન્ય</string>
+    <string name="no_animation">કોઈ નહીં</string>
     <string name="by_date_taken">લેવાયાની તારીખ</string>
 </resources>

@@ -76,6 +76,7 @@
     <string name="include_videos">Incluir vídeos</string>
     <string name="include_gifs">Incluir GIFs</string>
     <string name="random_order">Ordem aleatória</string>
+    <string name="no_animation">Nenhum</string>
     <string name="grid">Grelha</string>
     <string name="list">Lista</string>
     <string name="group_by">Agrupar por</string>

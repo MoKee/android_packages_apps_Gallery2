@@ -5,5 +5,6 @@
     <string name="resize">Өлчөмүн өзгөртүү</string>
     <string name="rotate">Буруу</string>
     <string name="free_aspect_ratio">Эч нерсе жок</string>
+    <string name="no_animation">Эч нерсе жок</string>
     <string name="by_date_taken">Тартылган күнү</string>
 </resources>

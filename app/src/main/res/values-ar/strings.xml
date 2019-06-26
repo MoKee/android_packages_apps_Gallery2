@@ -104,12 +104,11 @@
     <string name="include_videos">تضمين الفديو</string>
     <string name="include_gifs">تضمين GIF</string>
     <string name="random_order">ترتيب عشوائي</string>
-    <string name="use_fade">استخدام تاثير التلاشي</string>
     <string name="move_backwards">ارجع للخلف</string>
     <string name="loop_slideshow">حلقة عرض الشرائح</string>
+    <string name="no_animation">لا شيء</string>
     <string name="slideshow_ended">انتهى عرض الشرائح</string>
     <string name="no_media_for_slideshow">لم يتم العثور على وسائط لعرض الشرائح</string>
-    <string name="use_crossfade_animation">إستخدام التأثيرات الحركية المتقاطعة</string>
     <string name="change_view_type">تغيير طريقة العرض</string>
     <string name="grid">الشبكة</string>
     <string name="list">القائمة</string>

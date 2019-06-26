@@ -5,5 +5,6 @@
     <string name="resize">Өлшемін өзгерту</string>
     <string name="rotate">Айналдыру</string>
     <string name="free_aspect_ratio">Ешқандай</string>
+    <string name="no_animation">Ешқандай</string>
     <string name="by_date_taken">Түсіру мерзімі</string>
 </resources>

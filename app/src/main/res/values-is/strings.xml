@@ -5,5 +5,6 @@
     <string name="resize">Breyta stærð</string>
     <string name="rotate">Snúa</string>
     <string name="free_aspect_ratio">Ekkert</string>
+    <string name="no_animation">Engin</string>
     <string name="by_date_taken">Tökudagur</string>
 </resources>

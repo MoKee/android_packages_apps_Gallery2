@@ -20,6 +20,7 @@
     <string name="home_screen">Skrin utama</string>
     <string name="lock_screen">Kekunci Skrin</string>
     <string name="slideshow">Tayangan slaid</string>
+    <string name="no_animation">Tiada</string>
     <string name="group_by">Kumpulkan mengikut</string>
     <string name="by_date_taken">Tarikh diambil</string>
 </resources>

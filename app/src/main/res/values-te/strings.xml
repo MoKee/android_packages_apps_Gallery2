@@ -14,5 +14,6 @@
     <string name="rotate_right">కుడికి తిప్పు</string>
     <string name="free_aspect_ratio">ఏదీ వద్దు</string>
     <string name="other_aspect_ratio">ఇతరం</string>
+    <string name="no_animation">ఏదీ లేదు</string>
     <string name="by_date_taken">తీసిన తేదీ</string>
 </resources>

@@ -27,6 +27,7 @@
     <string name="home_screen">Ecran principal</string>
     <string name="lock_screen">Ecranul de blocare</string>
     <string name="slideshow">Prezentare</string>
+    <string name="no_animation">Niciunul</string>
     <string name="grid">Grilă</string>
     <string name="list">Listă</string>
     <string name="group_by">Grupaţi după</string>

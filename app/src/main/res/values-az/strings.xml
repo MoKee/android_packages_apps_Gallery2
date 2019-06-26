@@ -23,6 +23,7 @@
     <string name="free_aspect_ratio">Heç biri</string>
     <string name="other_aspect_ratio">Digər</string>
     <string name="slideshow">Slaydşou</string>
+    <string name="no_animation">Heç biri</string>
     <string name="group_by">Qruplaşdırın</string>
     <string name="by_date_taken">Çəkilmə tarixi</string>
 </resources>

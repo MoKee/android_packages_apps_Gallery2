@@ -15,6 +15,7 @@
     <string name="rotate_right">दायाँ घुमाउनुहोस्</string>
     <string name="free_aspect_ratio">कुनै पनि होइन</string>
     <string name="slideshow">स्लाइड प्रदर्शन</string>
+    <string name="no_animation">कुनै पनि होइन</string>
     <string name="group_by">द्वारा समूह</string>
     <string name="by_date_taken">मिति लिइयो</string>
 </resources>

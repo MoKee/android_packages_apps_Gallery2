@@ -14,5 +14,6 @@
     <string name="rotate_right">Rrotullo djathtas</string>
     <string name="free_aspect_ratio">Asnjë</string>
     <string name="other_aspect_ratio">Tjetër</string>
+    <string name="no_animation">Asnjë</string>
     <string name="by_date_taken">Data e realizimit:</string>
 </resources>
