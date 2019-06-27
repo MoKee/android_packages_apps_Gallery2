@@ -164,9 +164,9 @@ fun BaseSimpleActivity.toggleFileVisibility(oldPath: String, hide: Boolean, call
     val newPath = "$path/$filename"
     renameFile(oldPath, newPath) {
         callback?.invoke(newPath)
-        Thread {
+        ensureBackgroundThread {
             updateDBMediaPath(oldPath, newPath)
-        }.start()
+        }
     }
 }
 
@@ -186,12 +186,12 @@ fun BaseSimpleActivity.tryDeleteFileDirItem(fileDirItem: FileDirItem, allowDelet
                                             callback: ((wasSuccess: Boolean) -> Unit)? = null) {
     deleteFile(fileDirItem, allowDeleteFolder) {
         if (deleteFromDatabase) {
-            Thread {
+            ensureBackgroundThread {
                 deleteDBPath(galleryDB.MediumDao(), fileDirItem.path)
                 runOnUiThread {
                     callback?.invoke(it)
                 }
-            }.start()
+            }
         } else {
             callback?.invoke(it)
         }
@@ -199,7 +199,7 @@ fun BaseSimpleActivity.tryDeleteFileDirItem(fileDirItem: FileDirItem, allowDelet
 }
 
 fun BaseSimpleActivity.movePathsInRecycleBin(paths: ArrayList<String>, mediumDao: MediumDao = galleryDB.MediumDao(), callback: ((wasSuccess: Boolean) -> Unit)?) {
-    Thread {
+    ensureBackgroundThread {
         var pathsCnt = paths.size
         paths.forEach {
             val file = File(it)
@@ -220,7 +220,7 @@ fun BaseSimpleActivity.movePathsInRecycleBin(paths: ArrayList<String>, mediumDao
             }
         }
         callback?.invoke(pathsCnt == 0)
-    }.start()
+    }
 }
 
 fun BaseSimpleActivity.restoreRecycleBinPath(path: String, callback: () -> Unit) {
@@ -228,7 +228,7 @@ fun BaseSimpleActivity.restoreRecycleBinPath(path: String, callback: () -> Unit)
 }
 
 fun BaseSimpleActivity.restoreRecycleBinPaths(paths: ArrayList<String>, mediumDao: MediumDao = galleryDB.MediumDao(), callback: () -> Unit) {
-    Thread {
+    ensureBackgroundThread {
         val newPaths = ArrayList<String>()
         paths.forEach {
             val source = it
@@ -262,26 +262,30 @@ fun BaseSimpleActivity.restoreRecycleBinPaths(paths: ArrayList<String>, mediumDa
         }
 
         fixDateTaken(newPaths, false)
-    }.start()
+    }
 }
 
 fun BaseSimpleActivity.emptyTheRecycleBin(callback: (() -> Unit)? = null) {
-    Thread {
-        recycleBin.deleteRecursively()
-        galleryDB.MediumDao().clearRecycleBin()
-        galleryDB.DirectoryDao().deleteRecycleBin()
-        toast(R.string.recycle_bin_emptied)
-        callback?.invoke()
-    }.start()
+    ensureBackgroundThread {
+        try {
+            recycleBin.deleteRecursively()
+            galleryDB.MediumDao().clearRecycleBin()
+            galleryDB.DirectoryDao().deleteRecycleBin()
+            toast(R.string.recycle_bin_emptied)
+            callback?.invoke()
+        } catch (e: Exception) {
+            toast(R.string.unknown_error_occurred)
+        }
+    }
 }
 
 fun BaseSimpleActivity.emptyAndDisableTheRecycleBin(callback: () -> Unit) {
-    Thread {
+    ensureBackgroundThread {
         emptyTheRecycleBin {
             config.useRecycleBin = false
             callback()
         }
-    }.start()
+    }
 }
 
 fun BaseSimpleActivity.showRecycleBinEmptyingDialog(callback: () -> Unit) {
@@ -291,12 +295,12 @@ fun BaseSimpleActivity.showRecycleBinEmptyingDialog(callback: () -> Unit) {
 }
 
 fun BaseSimpleActivity.updateFavoritePaths(fileDirItems: ArrayList<FileDirItem>, destination: String) {
-    Thread {
+    ensureBackgroundThread {
         fileDirItems.forEach {
             val newPath = "$destination/${it.name}"
             updateDBMediaPath(it.path, newPath)
         }
-    }.start()
+    }
 }
 
 fun Activity.hasNavBar(): Boolean {
@@ -405,10 +409,6 @@ fun BaseSimpleActivity.saveRotatedImageToFile(oldPath: String, newPath: String, 
                 saveFile(tmpPath, bitmap, it as FileOutputStream, newDegrees)
             }
 
-            if (File(newPath).exists()) {
-                tryDeleteFileDirItem(FileDirItem(newPath, newPath.getFilenameFromPath()), false, true)
-            }
-
             copyFile(tmpPath, newPath)
             rescanPaths(arrayListOf(newPath))
             fileRotatedSuccessfully(newPath, oldLastModified)
@@ -489,7 +489,7 @@ fun saveFile(path: String, bitmap: Bitmap, out: FileOutputStream, degrees: Int) 
 }
 
 fun Activity.getShortcutImage(tmb: String, drawable: Drawable, callback: () -> Unit) {
-    Thread {
+    ensureBackgroundThread {
         val options = RequestOptions()
                 .format(DecodeFormat.PREFER_ARGB_8888)
                 .skipMemoryCache(true)
@@ -512,5 +512,5 @@ fun Activity.getShortcutImage(tmb: String, drawable: Drawable, callback: () -> U
         runOnUiThread {
             callback()
         }
-    }.start()
+    }
 }

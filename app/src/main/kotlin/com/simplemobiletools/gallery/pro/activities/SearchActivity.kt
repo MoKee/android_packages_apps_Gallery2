@@ -6,28 +6,32 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.ViewGroup
+import android.widget.RelativeLayout
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.MenuItemCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.simplemobiletools.commons.extensions.*
+import com.simplemobiletools.commons.helpers.ensureBackgroundThread
 import com.simplemobiletools.commons.models.FileDirItem
 import com.simplemobiletools.commons.views.MyGridLayoutManager
 import com.simplemobiletools.gallery.pro.R
 import com.simplemobiletools.gallery.pro.adapters.MediaAdapter
 import com.simplemobiletools.gallery.pro.asynctasks.GetMediaAsynctask
-import com.simplemobiletools.gallery.pro.extensions.config
-import com.simplemobiletools.gallery.pro.extensions.getCachedMedia
-import com.simplemobiletools.gallery.pro.extensions.openPath
+import com.simplemobiletools.gallery.pro.extensions.*
 import com.simplemobiletools.gallery.pro.helpers.*
 import com.simplemobiletools.gallery.pro.interfaces.MediaOperationsListener
 import com.simplemobiletools.gallery.pro.models.Medium
 import com.simplemobiletools.gallery.pro.models.ThumbnailItem
 import com.simplemobiletools.gallery.pro.models.ThumbnailSection
 import kotlinx.android.synthetic.main.activity_search.*
+import java.io.File
 
 class SearchActivity : SimpleActivity(), MediaOperationsListener {
     private var mIsSearchOpen = false
+    private var mLastSearchedText = ""
+
     private var mSearchMenuItem: MenuItem? = null
     private var mCurrAsyncTask: GetMediaAsynctask? = null
     private var mAllMedia = ArrayList<ThumbnailItem>()
@@ -61,6 +65,7 @@ class SearchActivity : SimpleActivity(), MediaOperationsListener {
 
                 override fun onQueryTextChange(newText: String): Boolean {
                     if (mIsSearchOpen) {
+                        mLastSearchedText = newText
                         textChanged(newText)
                     }
                     return true
@@ -78,6 +83,7 @@ class SearchActivity : SimpleActivity(), MediaOperationsListener {
             override fun onMenuItemActionCollapse(item: MenuItem?): Boolean {
                 if (mIsSearchOpen) {
                     mIsSearchOpen = false
+                    mLastSearchedText = ""
                 }
                 return true
             }
@@ -86,7 +92,7 @@ class SearchActivity : SimpleActivity(), MediaOperationsListener {
     }
 
     private fun textChanged(text: String) {
-        Thread {
+        ensureBackgroundThread {
             try {
                 val filtered = mAllMedia.filter { it is Medium && it.name.contains(text, true) } as ArrayList
                 filtered.sortBy { it is Medium && !it.name.startsWith(text, true) }
@@ -104,7 +110,7 @@ class SearchActivity : SimpleActivity(), MediaOperationsListener {
                 }
             } catch (ignored: Exception) {
             }
-        }.start()
+        }
     }
 
     private fun setupAdapter() {
@@ -120,7 +126,7 @@ class SearchActivity : SimpleActivity(), MediaOperationsListener {
             }
             setupLayoutManager()
         } else {
-            (currAdapter as MediaAdapter).updateMedia(MediaActivity.mMedia)
+            (currAdapter as MediaAdapter).updateMedia(mAllMedia)
         }
 
         measureRecyclerViewContent(mAllMedia)
@@ -153,13 +159,13 @@ class SearchActivity : SimpleActivity(), MediaOperationsListener {
 
     private fun setupGridLayoutManager() {
         val layoutManager = media_grid.layoutManager as MyGridLayoutManager
-        /*if (config.scrollHorizontally) {
+        if (config.scrollHorizontally) {
             layoutManager.orientation = RecyclerView.HORIZONTAL
-            media_refresh_layout.layoutParams = FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT)
+            media_grid.layoutParams = RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT)
         } else {
             layoutManager.orientation = RecyclerView.VERTICAL
-            media_refresh_layout.layoutParams = FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
-        }*/
+            media_grid.layoutParams = RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+        }
 
         layoutManager.spanCount = config.mediaColumnCnt
         val adapter = getMediaAdapter()
@@ -265,23 +271,68 @@ class SearchActivity : SimpleActivity(), MediaOperationsListener {
             runOnUiThread {
                 setupAdapter()
             }
-            startAsyncTask()
+            startAsyncTask(false)
         }
     }
 
-    private fun startAsyncTask() {
+    private fun startAsyncTask(updateItems: Boolean) {
         mCurrAsyncTask?.stopFetching()
         mCurrAsyncTask = GetMediaAsynctask(applicationContext, "", showAll = true) {
             mAllMedia = it.clone() as ArrayList<ThumbnailItem>
+            if (updateItems) {
+                textChanged(mLastSearchedText)
+            }
         }
 
         mCurrAsyncTask!!.execute()
     }
 
     override fun refreshItems() {
+        startAsyncTask(true)
     }
 
     override fun tryDeleteFiles(fileDirItems: ArrayList<FileDirItem>) {
+        val filtered = fileDirItems.filter { File(it.path).isFile && it.path.isMediaFile() } as ArrayList
+        if (filtered.isEmpty()) {
+            return
+        }
+
+        if (config.useRecycleBin && !filtered.first().path.startsWith(recycleBinPath)) {
+            val movingItems = resources.getQuantityString(R.plurals.moving_items_into_bin, filtered.size, filtered.size)
+            toast(movingItems)
+
+            movePathsInRecycleBin(filtered.map { it.path } as ArrayList<String>, galleryDB.MediumDao()) {
+                if (it) {
+                    deleteFilteredFiles(filtered)
+                } else {
+                    toast(R.string.unknown_error_occurred)
+                }
+            }
+        } else {
+            val deletingItems = resources.getQuantityString(R.plurals.deleting_items, filtered.size, filtered.size)
+            toast(deletingItems)
+            deleteFilteredFiles(filtered)
+        }
+    }
+
+    private fun deleteFilteredFiles(filtered: ArrayList<FileDirItem>) {
+        deleteFiles(filtered) {
+            if (!it) {
+                toast(R.string.unknown_error_occurred)
+                return@deleteFiles
+            }
+
+            mAllMedia.removeAll { filtered.map { it.path }.contains((it as? Medium)?.path) }
+
+            ensureBackgroundThread {
+                val useRecycleBin = config.useRecycleBin
+                filtered.forEach {
+                    if (it.path.startsWith(recycleBinPath) || !useRecycleBin) {
+                        deleteDBPath(galleryDB.MediumDao(), it.path)
+                    }
+                }
+            }
+        }
     }
 
     override fun selectedPaths(paths: ArrayList<String>) {

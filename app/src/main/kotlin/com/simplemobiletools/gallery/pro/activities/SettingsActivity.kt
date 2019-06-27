@@ -565,7 +565,7 @@ class SettingsActivity : SimpleActivity() {
     }
 
     private fun setupEmptyRecycleBin() {
-        Thread {
+        ensureBackgroundThread {
             try {
                 mRecycleBinContentSize = galleryDB.MediumDao().getDeletedMedia().sumByLong { it.size }
             } catch (ignored: Exception) {
@@ -573,7 +573,7 @@ class SettingsActivity : SimpleActivity() {
             runOnUiThread {
                 settings_empty_recycle_bin_size.text = mRecycleBinContentSize.formatSize()
             }
-        }.start()
+        }
 
         settings_empty_recycle_bin_holder.setOnClickListener {
             if (mRecycleBinContentSize == 0L) {
@@ -679,13 +679,13 @@ class SettingsActivity : SimpleActivity() {
     private fun setupImportSettings() {
         settings_import_holder.setOnClickListener {
             FilePickerDialog(this) {
-                Thread {
+                ensureBackgroundThread {
                     try {
                         parseFile(it)
                     } catch (e: Exception) {
                         showErrorToast(e)
                     }
-                }.start()
+                }
             }
         }
     }
