@@ -151,6 +151,7 @@
     <string name="open_videos_on_separate_screen">Video posnetke vedno odpri na ločenem zaslonu z novimi vodoravnimi potezami</string>
     <string name="show_notch">Prikaži zarezo, če je na voljo</string>
     <string name="allow_rotating_gestures">Dovoli sukanje slik s potezami</string>
+    <string name="speed">Hitrost</string>
     <string name="thumbnails">Sličice</string>
     <string name="fullscreen_media">Celozaslonski prikaz</string>
     <string name="extended_details">Razširjene podrobnosti</string>

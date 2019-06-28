@@ -15,6 +15,7 @@
     <string name="rotate_right">მარჯვნივ შეტრიალება</string>
     <string name="free_aspect_ratio">არც ერთი</string>
     <string name="slideshow">სლაიდშოუ</string>
+    <string name="no_animation">არც ერთი</string>
     <string name="group_by">დაჯგუფება:</string>
     <string name="by_date_taken">გადაღების თარიღი</string>
 </resources>

@@ -102,7 +102,10 @@
     <string name="random_order">隨機順序</string>
     <string name="move_backwards">反向播放</string>
     <string name="loop_slideshow">投影片循環</string>
+    <string name="animation">動畫</string>
     <string name="no_animation">無</string>
+    <string name="fade">淡入</string>
+    <string name="slide">滑動</string>
     <string name="slideshow_ended">投影片結束</string>
     <string name="no_media_for_slideshow">找不到投影片的媒體檔案</string>
     <string name="change_view_type">改變瀏覽類型</string>

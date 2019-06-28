@@ -102,7 +102,10 @@
     <string name="random_order">Véletlen sorrend</string>
     <string name="move_backwards">Áthelyezés hátra</string>
     <string name="loop_slideshow">Diavetítés ismétlése</string>
+    <string name="animation">Animáció</string>
     <string name="no_animation">Nincs</string>
+    <string name="fade">Halványulás</string>
+    <string name="slide">Csúszás</string>
     <string name="slideshow_ended">A diavetítés vége</string>
     <string name="no_media_for_slideshow">A diavetítéshez nem található média</string>
     <string name="change_view_type">Nézet típus változtatása</string>

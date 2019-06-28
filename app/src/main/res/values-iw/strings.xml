@@ -20,6 +20,7 @@
     <string name="home_screen">מסך הבית</string>
     <string name="lock_screen">מסך נעילה</string>
     <string name="slideshow">מצגת</string>
+    <string name="no_animation">ללא</string>
     <string name="group_by">קבץ לפי</string>
     <string name="by_folder">תיקייה</string>
     <string name="by_date_taken">תאריך הצילום</string>

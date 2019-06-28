@@ -5,5 +5,6 @@
     <string name="resize">ਮੁੜ ਆਕਾਰ ਦਿਓ</string>
     <string name="rotate">ਰੋਟੇਟ ਕਰੋ</string>
     <string name="free_aspect_ratio">ਕੋਈ ਨਹੀਂ</string>
+    <string name="no_animation">ਕੋਈ ਨਹੀਂ</string>
     <string name="by_date_taken">ਜਿਸ ਤਾਰੀਖ ਨੂੰ ਲਈ ਗਈ</string>
 </resources>

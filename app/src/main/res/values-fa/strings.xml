@@ -17,6 +17,7 @@
     <string name="free_aspect_ratio">هیچ‌کدام</string>
     <string name="other_aspect_ratio">غیره</string>
     <string name="slideshow">نمایش اسلاید</string>
+    <string name="no_animation">هیچ‌کدام</string>
     <string name="group_by">گروه بندی براساس</string>
     <string name="by_folder">پوشه</string>
     <string name="by_date_taken">تاریخ عکس‌برداری</string>

@@ -102,7 +102,10 @@
     <string name="random_order">Juhuslik järjekord</string>
     <string name="move_backwards">Liigu tahapoole</string>
     <string name="loop_slideshow">Tsükliline slaidiseanss</string>
+    <string name="animation">Animatsioon</string>
     <string name="no_animation">Puudub</string>
+    <string name="fade">Hajuv</string>
+    <string name="slide">Libisema</string>
     <string name="slideshow_ended">Slaidiseanss lõppes</string>
     <string name="no_media_for_slideshow">Slaidiseansi meediat pole leitud</string>
     <string name="change_view_type">Muuda vaatetüüpi</string>

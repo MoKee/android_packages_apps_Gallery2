@@ -102,7 +102,10 @@
     <string name="random_order">Náhodné pořadí</string>
     <string name="move_backwards">Pohyb zpět</string>
     <string name="loop_slideshow">Opakování prezentace</string>
+    <string name="animation">Animace</string>
     <string name="no_animation">Žádný</string>
+    <string name="fade">Slábnutí</string>
+    <string name="slide">Sklouznutí</string>
     <string name="slideshow_ended">Prezentace skončila</string>
     <string name="no_media_for_slideshow">Nebylo nalezeno žádné médium pro prezentaci</string>
     <string name="change_view_type">Změnit typ zobrazení</string>

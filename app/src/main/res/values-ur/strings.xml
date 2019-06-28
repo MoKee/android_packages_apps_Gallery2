@@ -5,5 +5,6 @@
     <string name="resize">سائز تبدیل کریں</string>
     <string name="rotate">گھمائیں</string>
     <string name="free_aspect_ratio">کوئی نہیں</string>
+    <string name="no_animation">کوئی نہیں</string>
     <string name="by_date_taken">لیے جانے کی تاریخ</string>
 </resources>

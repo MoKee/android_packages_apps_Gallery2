@@ -102,7 +102,10 @@
     <string name="random_order">Rasgele sırala</string>
     <string name="move_backwards">Geriye doğru git</string>
     <string name="loop_slideshow">Slayt döngü gösterisi</string>
+    <string name="animation">Animasyon</string>
     <string name="no_animation">Yok</string>
+    <string name="fade">Karart</string>
+    <string name="slide">Kaydır</string>
     <string name="slideshow_ended">Slayt gösterisi sona erdi</string>
     <string name="no_media_for_slideshow">Slayt gösterisi için ortam bulunamadı</string>
     <string name="change_view_type">Önizleme türünü değiştir</string>
