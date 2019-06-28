@@ -12,7 +12,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.mokee.gallery"
+        applicationId "com.simplemobiletools.gallery.pro"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 255
