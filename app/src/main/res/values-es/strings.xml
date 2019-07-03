@@ -146,6 +146,7 @@
     <string name="show_highest_quality">Muestra imágenes con la mayor calidad posible</string>
     <string name="show_recycle_bin_last">Mostrar la Papelera de reciclaje como el último elemento en la pantalla principal</string>
     <string name="allow_down_gesture">Permite cerrar la vista de pantalla completa con un gesto hacia abajo.</string>
+    <string name="open_videos_on_separate_screen">Siempre abre vídeos en una pantalla separada con nuevos gestos horizontales</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Medios a pantalla completa</string>
     <string name="extended_details">Detalles ampliados</string>
