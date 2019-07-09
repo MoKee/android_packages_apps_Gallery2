@@ -32,8 +32,8 @@
     <string name="fix_date_taken">修复拍摄日期</string>
     <string name="fixing">正在修复…</string>
     <string name="dates_fixed_successfully">日期修复成功</string>
-    <string name="share_resized">分享更改版本</string>
-    <string name="upgraded_from_free">嘿，\n\n您能免费从旧应用程序升级。您现在可以卸载旧版本，在应用程序设置顶部拥有”升级至专业版“按钮。\n\n升级将只删除丢弃到回收站的项目，收藏的项目将会变成未标记状态，并且您也必须重置您的应用设置。\n\n谢谢！</string>
+    <string name="share_resized">分享已更改大小的版本</string>
+    <string name="upgraded_from_free">嘿，\n\n您似乎是从旧版本升级的。您现在可以卸载旧版本，在应用程序设置顶部拥有”升级至专业版“按钮。\n\n升级将丢失移动到回收站的项目、收藏的项目将会变成未标记状态、并且您的应用设置也将被重置。\n\n谢谢！</string>
     <string name="filter_media">要显示的媒体文件</string>
     <string name="images">图片</string>
     <string name="videos">视频</string>
@@ -105,6 +105,7 @@
     <string name="animation">动画</string>
     <string name="no_animation">无</string>
     <string name="fade">淡入淡出</string>
+    <string name="slide">划入</string>
     <string name="slideshow_ended">幻灯片结束</string>
     <string name="no_media_for_slideshow">未发现可用媒体</string>
     <string name="change_view_type">更改视图类型</string>
@@ -115,7 +116,11 @@
     <string name="do_not_group_files">禁用文件分组</string>
     <string name="by_folder">目录</string>
     <string name="by_last_modified">最近修改</string>
+    <string name="by_last_modified_daily">上次修改时间 (按日)</string>
+    <string name="by_last_modified_monthly">上次修改时间 (按月)</string>
     <string name="by_date_taken">拍摄时间</string>
+    <string name="by_date_taken_daily">拍摄时间 (按日)</string>
+    <string name="by_date_taken_monthly">拍摄时间 (按月)</string>
     <string name="by_file_type">文件类型</string>
     <string name="by_extension">扩展</string>
     <string name="grouping_and_sorting">请注意，分组和排序是 2 个独立栏位</string>
