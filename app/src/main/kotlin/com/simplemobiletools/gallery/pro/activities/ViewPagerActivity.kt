@@ -210,7 +210,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             R.id.menu_print -> printFile()
             R.id.menu_edit -> openEditor(getCurrentPath())
             R.id.menu_properties -> showProperties()
-            R.id.menu_show_on_map -> showOnMap()
+            R.id.menu_show_on_map -> showFileOnMap(getCurrentPath())
             R.id.menu_rotate_right -> rotateImage(90)
             R.id.menu_rotate_left -> rotateImage(-90)
             R.id.menu_rotate_one_eighty -> rotateImage(180)
@@ -701,69 +701,6 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         }
     }
 
-    private fun showOnMap() {
-        val exif = try {
-            ExifInterface(getCurrentPath())
-        } catch (e: Exception) {
-            showErrorToast(e)
-            return
-        }
-
-        val lat = exif.getAttribute(ExifInterface.TAG_GPS_LATITUDE)
-        val latRef = exif.getAttribute(ExifInterface.TAG_GPS_LATITUDE_REF)
-        val lon = exif.getAttribute(ExifInterface.TAG_GPS_LONGITUDE)
-        val lonRef = exif.getAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF)
-
-        if (lat == null || latRef == null || lon == null || lonRef == null) {
-            toast(R.string.unknown_location)
-        } else {
-            val geoLat = if (latRef == "N") {
-                convertToDegree(lat)
-            } else {
-                -convertToDegree(lat)
-            }
-
-            val geoLon = if (lonRef == "E") {
-                convertToDegree(lon)
-            } else {
-                -convertToDegree(lon)
-            }
-
-            val uriBegin = "geo:$geoLat,$geoLon"
-            val query = "$geoLat, $geoLon"
-            val encodedQuery = Uri.encode(query)
-            val uriString = "$uriBegin?q=$encodedQuery&z=16"
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uriString))
-            val packageManager = packageManager
-            if (intent.resolveActivity(packageManager) != null) {
-                startActivity(intent)
-            } else {
-                toast(R.string.no_app_found)
-            }
-        }
-    }
-
-    private fun convertToDegree(stringDMS: String): Float {
-        val dms = stringDMS.split(",".toRegex(), 3).toTypedArray()
-
-        val stringD = dms[0].split("/".toRegex(), 2).toTypedArray()
-        val d0 = stringD[0].toDouble()
-        val d1 = stringD[1].toDouble()
-        val floatD = d0 / d1
-
-        val stringM = dms[1].split("/".toRegex(), 2).toTypedArray()
-        val m0 = stringM[0].toDouble()
-        val m1 = stringM[1].toDouble()
-        val floatM = m0 / m1
-
-        val stringS = dms[2].split("/".toRegex(), 2).toTypedArray()
-        val s0 = stringS[0].toDouble()
-        val s1 = stringS[1].toDouble()
-        val floatS = s0 / s1
-
-        return (floatD + floatM / 60 + floatS / 3600).toFloat()
-    }
-
     private fun initBottomActionsLayout() {
         bottom_actions.layoutParams.height = resources.getDimension(R.dimen.bottom_actions_height).toInt() + navigationBarHeight
         if (config.bottomActions) {
@@ -823,7 +760,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
 
         bottom_show_on_map.beVisibleIf(visibleBottomActions and BOTTOM_ACTION_SHOW_ON_MAP != 0)
         bottom_show_on_map.setOnClickListener {
-            showOnMap()
+            showFileOnMap(getCurrentPath())
         }
 
         bottom_toggle_file_visibility.beVisibleIf(visibleBottomActions and BOTTOM_ACTION_TOGGLE_VISIBILITY != 0)
