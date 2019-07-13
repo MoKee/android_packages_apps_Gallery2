@@ -34,6 +34,7 @@
     <string name="dates_fixed_successfully">تم حل التواريخ بنجاح</string>
     <string name="share_resized">مشاركة نسخة تم تغيير حجمها</string>
     <string name="upgraded_from_free">Hey,\n\nseems like you upgraded from the old free app. You can now uninstall the old version, which has an \'Upgrade to Pro\' button at the top of the app settings.\n\nYou will only have the Recycle bin items deleted, favorite items unmarked and you will also have to reset your app settings.\n\nThanks!</string>
+    <string name="switch_to_file_search">التبديل إلى بحث الملف عبر جميع المجلدات المرئية</string>
     <string name="filter_media">فلتر الميديا</string>
     <string name="images">الصور</string>
     <string name="videos">الفديوهات</string>

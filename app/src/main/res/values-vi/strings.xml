@@ -29,6 +29,7 @@
     <string name="force_portrait">Chân dung</string>
     <string name="force_landscape">Phong cảnh</string>
     <string name="use_default_orientation">Hướng mặc định</string>
+    <string name="fix_date_taken">Sửa ngày lấy giá trị</string>
     <string name="fixing">Đang sửa…</string>
     <string name="dates_fixed_successfully">Đã sửa ngày</string>
     <string name="filter_media">Bộ lọc</string>
@@ -43,6 +44,9 @@
     <string name="exclude">Loại trừ</string>
     <string name="excluded_folders">Loại trừ các thư mục</string>
     <string name="manage_excluded_folders">Quản lý các thư mục ẩn</string>
+    <string name="exclude_folder_description">Điều này sẽ loại trừ lựa chọn cùng với các thư mục con của nó khỏi Thư viện đơn giản. Bạn có thể quản lý các thư mục loại trừ trong Cài đặt.</string>
+    <string name="exclude_folder_parent">Loại trừ nguồn gốc thay thế ?</string>
+    <string name="excluded_activity_placeholder">Loại trừ các thư mục sẽ làm cho chúng cùng với các thư mục con của chúng bị ẩn chỉ trong Thư viện đơn giản, chúng vẫn sẽ hiển thị trong các ứng dụng khác.\n\nNếu bạn cũng muốn ẩn chúng khỏi các ứng dụng khác, hãy sử dụng chức năng Ẩn.</string>
     <string name="remove_all">Xóa tất cả</string>
     <string name="remove_all_description">Loại bỏ tất cả các thư mục từ danh sách loại trừ? Điều này sẽ không xóa các thư mục.</string>
     <string name="hidden_folders">Ẩn thư mục</string>
@@ -51,6 +55,7 @@
     <string name="include_folders">Bao gồm các thư mục</string>
     <string name="manage_included_folders">Quản lý bao gồm các thư mục</string>
     <string name="add_folder">Thêm thư mục</string>
+    <string name="included_activity_placeholder">Nếu bạn có một số thư mục chứa phương tiện, nhưng ứng dụng không nhận ra, bạn có thể thêm chúng theo cách thủ công tại đây.\n\nThêm một số mục ở đây sẽ không loại trừ bất kỳ thư mục nào khác.</string>
     <string name="resize">Đổi kích thước</string>
     <string name="resize_and_save">Thay đổi kích cỡ và lưu</string>
     <string name="width">Chiều rộng</string>
@@ -97,6 +102,9 @@
     <string name="no_animation">Không có</string>
     <string name="slideshow_ended">Kết thúc trình chiếu</string>
     <string name="no_media_for_slideshow">Không tìm thấy dữ liệu cho trình chiếu</string>
+    <string name="change_view_type">Thay đổi kiểu xem</string>
+    <string name="grid">Lưới</string>
+    <string name="list">Danh sách</string>
     <string name="group_by">Nhóm theo</string>
     <string name="by_folder">Thư mục</string>
     <string name="by_date_taken">Ngày chụp</string>

@@ -34,6 +34,7 @@
     <string name="dates_fixed_successfully">Data byli úspěšně opravena</string>
     <string name="share_resized">Sdílet změněnou verzi</string>
     <string name="upgraded_from_free">Zdravím,\n\nvypadá to tak, že jste ze staré bezplatné aplikace přešli na novou, placenou. Nyní můžete starou aplikaci, která má na vrchu nastavení tlačítko \'Upgradovat na Pro\' odinstalovat.\n\nBudou smazány pouze položky v Koši a položky, které nejsou označeny. Budete také muset obnovit nastavení aplikace.\n\nDíky!</string>
+    <string name="switch_to_file_search">Přepnout na vyhledávání souborů ve všech viditelných složkách</string>
     <string name="filter_media">Filtr médií</string>
     <string name="images">Obrázky</string>
     <string name="videos">Videa</string>
