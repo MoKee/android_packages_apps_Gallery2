@@ -34,6 +34,7 @@
     <string name="dates_fixed_successfully">成功修復日期</string>
     <string name="share_resized">分享更改版本</string>
     <string name="upgraded_from_free">嘿，\n \n似乎你從舊的免費應用程序升級。 您現在可以卸載舊版本，該版本在應用程序設置的頂部有一個“升級到專業版”按鈕。\n \n您只會刪除回收站項目，未標記喜愛的項目，您還必須重置您的應用程序設置。\n\nThanks！</string>
+    <string name="switch_to_file_search">切換到所有可見資料夾的檔案搜尋</string>
     <string name="filter_media">篩選媒體檔案</string>
     <string name="images">圖片</string>
     <string name="videos">影片</string>

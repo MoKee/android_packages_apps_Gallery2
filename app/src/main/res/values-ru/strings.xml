@@ -34,6 +34,7 @@
     <string name="dates_fixed_successfully">Даты исправлены</string>
     <string name="share_resized">Поделиться измененной версией</string>
     <string name="upgraded_from_free">Похоже,\n\nвы обновили старую бесплатную версию приложения. Теперь вы можете удалить старую версию, нажав на кнопку «Обновить до Pro» в верхней части настроек приложения.\n\nУ вас будут удалены только элементы корзины, избранные элементы не отмечены, и вам также придется сбросить настройки приложения.\n\nСпасибо!</string>
+    <string name="switch_to_file_search">Переключиться на поиск файлов по всем видимым папкам</string>
     <string name="filter_media">Фильтр медиа</string>
     <string name="images">Изображения</string>
     <string name="videos">Видео</string>

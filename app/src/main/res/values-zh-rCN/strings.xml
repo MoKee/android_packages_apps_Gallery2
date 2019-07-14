@@ -34,6 +34,7 @@
     <string name="dates_fixed_successfully">日期修复成功</string>
     <string name="share_resized">分享已更改大小的版本</string>
     <string name="upgraded_from_free">嘿，\n\n您似乎是从旧版本升级的。您现在可以卸载旧版本，在应用程序设置顶部拥有”升级至专业版“按钮。\n\n升级将丢失移动到回收站的项目、收藏的项目将会变成未标记状态、并且您的应用设置也将被重置。\n\n谢谢！</string>
+    <string name="switch_to_file_search">切换到所有可见的文件夹中的文件搜索</string>
     <string name="filter_media">要显示的媒体文件</string>
     <string name="images">图片</string>
     <string name="videos">视频</string>
