@@ -123,7 +123,6 @@
     <string name="screen_rotation_system_setting">Configuració del sistema</string>
     <string name="screen_rotation_device_rotation">Rotació del dispositiu</string>
     <string name="screen_rotation_aspect_ratio">Relació d\'aspecte</string>
-    <string name="black_background_at_fullscreen">Fons i barra d\'estat negre als mitjans de pantalla completa</string>
     <string name="scroll_thumbnails_horizontally">Desplaçar miniatures horizontalment</string>
     <string name="hide_system_ui_at_fullscreen">Ocultar automàticament la interficie de usuari del sistema a pantalla complerta</string>
     <string name="delete_empty_folders">Eliminar carpetes buides després d\'esborrar el seu contingut</string>

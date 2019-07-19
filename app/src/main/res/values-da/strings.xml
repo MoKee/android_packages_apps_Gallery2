@@ -126,7 +126,6 @@
     <string name="screen_rotation_system_setting">Systemindstilling</string>
     <string name="screen_rotation_device_rotation">Enhedens orientering</string>
     <string name="screen_rotation_aspect_ratio">Billedformat</string>
-    <string name="black_background_at_fullscreen">Sort baggrund og statuslinje ved medievisning i fuldskærm</string>
     <string name="scroll_thumbnails_horizontally">Scroll miniaturer vandret</string>
     <string name="hide_system_ui_at_fullscreen">Skjul automatisk systemets brugerflade ved fuldskærmsvisning af medier</string>
     <string name="delete_empty_folders">Slet tomme mapper efter sletning af deres indhold</string>

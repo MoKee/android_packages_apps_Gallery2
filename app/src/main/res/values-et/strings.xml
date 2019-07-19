@@ -34,6 +34,7 @@
     <string name="dates_fixed_successfully">Kuupäevad fikseeriti edukalt</string>
     <string name="share_resized">Jagage muudetud suurusega versiooni</string>
     <string name="upgraded_from_free">Hei,\n\ntundub, et te uuendasite vanast tasuta rakendusest. Nüüd saate eemaldada vana versiooni, millel on rakenduse seadete ülaosas nupp „Upgrade to Pro”.\n\nTeil on kustutatud ainult prügikasti üksused, lemmikobjektid on märgistamata ja teil tuleb ka oma rakenduse seaded lähtestada.\n\nTäname!</string>
+    <string name="switch_to_file_search">Lülitage kõik nähtavad kausta failid otsingusse</string>
     <string name="filter_media">Meedia filter</string>
     <string name="images">Pildid</string>
     <string name="videos">Videod</string>
@@ -138,7 +139,7 @@
     <string name="screen_rotation_system_setting">Süsteemi seade</string>
     <string name="screen_rotation_device_rotation">Seadme pööramine</string>
     <string name="screen_rotation_aspect_ratio">Kuvasuhe</string>
-    <string name="black_background_at_fullscreen">Must taust ja täisekraanil</string>
+    <string name="black_background_at_fullscreen">Must taust täisekraanil</string>
     <string name="scroll_thumbnails_horizontally">Kerige pisipilte horisontaalselt</string>
     <string name="hide_system_ui_at_fullscreen">Peida süsteemi kasutajaliides automaatselt täisekraanil</string>
     <string name="delete_empty_folders">Pärast nende sisu kustutamist kustutage tühjad kaustad</string>

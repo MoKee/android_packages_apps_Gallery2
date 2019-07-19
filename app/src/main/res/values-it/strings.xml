@@ -102,7 +102,10 @@
     <string name="random_order">Ordine sparso</string>
     <string name="move_backwards">Scorri al contrario</string>
     <string name="loop_slideshow">Ripeti presentazione</string>
+    <string name="animation">Animazione</string>
     <string name="no_animation">Nessuno</string>
+    <string name="fade">Dissolvenza</string>
+    <string name="slide">Scorri</string>
     <string name="slideshow_ended">La presentazione è terminata</string>
     <string name="no_media_for_slideshow">Nessun file trovato per la presentazione</string>
     <string name="change_view_type">Cambia modalità visualizzazione</string>
@@ -135,7 +138,6 @@
     <string name="screen_rotation_system_setting">Impostazione di sistema</string>
     <string name="screen_rotation_device_rotation">Rotazione dispositivo</string>
     <string name="screen_rotation_aspect_ratio">Proporzioni</string>
-    <string name="black_background_at_fullscreen">Sfondo e barra di stato neri con media a schermo intero</string>
     <string name="scroll_thumbnails_horizontally">Scorri le miniature orizzontalmente</string>
     <string name="hide_system_ui_at_fullscreen">Nascondi UI di sistema con media a schermo intero</string>
     <string name="delete_empty_folders">Elimina cartelle vuote dopo averne eliminato il contenuto</string>

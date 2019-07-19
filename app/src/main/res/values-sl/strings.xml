@@ -128,7 +128,6 @@
     <string name="screen_rotation_system_setting">Sistemska nastavitev</string>
     <string name="screen_rotation_device_rotation">Obračanje naprave</string>
     <string name="screen_rotation_aspect_ratio">Razmerje stranic</string>
-    <string name="black_background_at_fullscreen">Črno ozadje in statusna vrstica pri celozaslonskem mediju</string>
     <string name="scroll_thumbnails_horizontally">Horizontalno pomikanje sličic</string>
     <string name="hide_system_ui_at_fullscreen">Avtomatično skrij sistemski UI v celozaslonskem načinu</string>
     <string name="delete_empty_folders">Izbriši prazne mape po brisanju njihove vsebine</string>

@@ -107,7 +107,6 @@
     <string name="screen_rotation_system_setting">Sistemos nustatymai</string>
     <string name="screen_rotation_device_rotation">Įrenginio sukimas</string>
     <string name="screen_rotation_aspect_ratio">Padėties santykis</string>
-    <string name="black_background_at_fullscreen">Juodasis fonas ir būsenos juosta per visą ekraną</string>
     <string name="scroll_thumbnails_horizontally">Slinkti miniatiūras horizontaliai</string>
     <string name="hide_system_ui_at_fullscreen">Automatiškai slėpti sistemos vartotojo sąsają per visą ekraną</string>
     <string name="delete_empty_folders">Ištrinti tuščius aplankus po jų turinio ištrynimo</string>

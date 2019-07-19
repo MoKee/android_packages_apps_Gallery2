@@ -120,7 +120,6 @@
     <string name="screen_rotation_system_setting">Postavke sustava</string>
     <string name="screen_rotation_device_rotation">Rotacija uređaja</string>
     <string name="screen_rotation_aspect_ratio">Omjer slike</string>
-    <string name="black_background_at_fullscreen">Crna pozadina i statusna traka na zaslonu na cijelom zaslonu</string>
     <string name="scroll_thumbnails_horizontally">Listaj sličice horizontalno</string>
     <string name="hide_system_ui_at_fullscreen">Automatski sakrij sučelje sustava na medijima na cijelom zaslonu</string>
     <string name="delete_empty_folders">Izbrišite prazne mape nakon brisanja njihovog sadržaja</string>
