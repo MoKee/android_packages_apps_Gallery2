@@ -122,7 +122,6 @@
     <string name="screen_rotation_system_setting">Ρυθμίσεις συστήματος</string>
     <string name="screen_rotation_device_rotation">Περιστροφή συσκευής</string>
     <string name="screen_rotation_aspect_ratio">Αναλογία εικόνας</string>
-    <string name="black_background_at_fullscreen">Μαύρο φόντο και μπάρα κατάστασης σε πλήρη οθόνη</string>
     <string name="scroll_thumbnails_horizontally">Κύλιση εικονιδίων οριζόντια</string>
     <string name="hide_system_ui_at_fullscreen">Αυτόματη απόκρυψη στοιχείων συστήματος σε πλήρη οθόνη</string>
     <string name="delete_empty_folders">Διαγραφή άδειων φακέλων, όταν διαγραφεί το περιεχόμενό τους</string>

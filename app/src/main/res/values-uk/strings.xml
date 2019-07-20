@@ -124,7 +124,6 @@
     <string name="screen_rotation_system_setting">системними налаштуваннями</string>
     <string name="screen_rotation_device_rotation">поворотом пристрою</string>
     <string name="screen_rotation_aspect_ratio">співвідношенням сторін</string>
-    <string name="black_background_at_fullscreen">Чорне тло і рядок стану при повноекранному перегляді</string>
     <string name="scroll_thumbnails_horizontally">Гортати ескізи горизонтально</string>
     <string name="hide_system_ui_at_fullscreen">Автоматично приховувати системний інтерфейс при повноекранному перегляді</string>
     <string name="delete_empty_folders">Видаляти порожні теки після видалення їх вмісту</string>

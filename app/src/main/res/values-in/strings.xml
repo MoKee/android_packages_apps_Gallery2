@@ -128,7 +128,6 @@
     <string name="screen_rotation_system_setting">Setelan sistem</string>
     <string name="screen_rotation_device_rotation">Rotasi perangkat</string>
     <string name="screen_rotation_aspect_ratio">Aspek rasio</string>
-    <string name="black_background_at_fullscreen">Latar belakang hitam dan pada media layar penuh</string>
     <string name="scroll_thumbnails_horizontally">Gulir gambar mini secara horizontal</string>
     <string name="hide_system_ui_at_fullscreen">Secara otomatis menyembunyikan UI sistem pada media layar penuh</string>
     <string name="delete_empty_folders">Hapus folder kosong setelah menghapus kontennya</string>

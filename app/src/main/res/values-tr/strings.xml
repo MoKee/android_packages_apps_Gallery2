@@ -139,7 +139,7 @@
     <string name="screen_rotation_system_setting">Sistem ayarı</string>
     <string name="screen_rotation_device_rotation">Cihaz döndürme</string>
     <string name="screen_rotation_aspect_ratio">En-boy oranı</string>
-    <string name="black_background_at_fullscreen">Tam ekran medyada siyah arkaplan ve durum çubuğu</string>
+    <string name="black_background_at_fullscreen">Tam ekran medyada siyah arka plan</string>
     <string name="scroll_thumbnails_horizontally">Küçük resimleri yatay olarak kaydır</string>
     <string name="hide_system_ui_at_fullscreen">Tam ekran medyada sistem arayüzünü otomatik olarak gizle</string>
     <string name="delete_empty_folders">İçeriği sildikten sonra boş klasörleri silin</string>
