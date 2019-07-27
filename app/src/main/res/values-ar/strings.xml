@@ -143,6 +143,7 @@
     <string name="screen_rotation_system_setting">اعدادات النظام</string>
     <string name="screen_rotation_device_rotation">تدوير الجهاز</string>
     <string name="screen_rotation_aspect_ratio">الابعاد</string>
+    <string name="black_background_at_fullscreen">اجعل الخلفية وشريط الحالة باللون الاسود عند عرض المحتوى في كامل الشاشة</string>
     <string name="scroll_thumbnails_horizontally">قم بتمرير الصور المصغرة أفقيا</string>
     <string name="hide_system_ui_at_fullscreen">إخفاء واجهة النظام تلقائيا عند العرض في وضع ملء الشاشة</string>
     <string name="delete_empty_folders">احذف المجلدات الفارغة بعد حذف محتواها</string>
