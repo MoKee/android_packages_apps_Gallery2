@@ -205,51 +205,52 @@
     <string name="faq_15_text">Rakenduse vahemälu võib võtta kuni 250 MB, see tagab kiirema pildi laadimise. Kui rakendus võtab rohkem ruumi, on see tõenäoliselt tingitud sellest, et teil on prügikastis üksusi. Need failid lisatakse rakenduse suurusele. Saate tühjendada prügikasti, avades selle ja kustutades kõik failid või rakenduse seadetest. Iga prügikasti fail kustutatakse 30 päeva pärast automaatselt.</string>
     <string name="app_title">Simple Gallery Pro: Foto haldur &amp; redaktor</string>
     <string name="app_short_description">Offline galerii ilma reklaamideta. Fotode &amp; videote korraldamine, muutmine, taastamine ja kaitsmine</string>
-    <string name="app_long_description">        Simple Gallery Pro on väga kohandatav offline galerii. Korraldage &amp; redigeerige oma fotosid, taastage kustutatud failid prügikastiga, kaitstes &amp; peitke faile ning vaadake suurt hulka erinevaid foto &amp; videoformaate, sealhulgas RAW, SVG ja palju muud.
+    <string name="app_long_description">       Simple Gallery Pro on hõlpsasti kohandatav võrguühenduseta galerii. Korrastage &amp; redigeerige oma fotosid, taastage prügikasti abil kustutatud faqile, kaitske &amp; peitke faile ja vaadake tohutul hulgal erinevaid fotosid &amp; videoformaate (sealhulgas RAW, SVG) ja palju muud.
 
-        Rakendus ei sisalda reklaame ega mittevajalikke õigusi. Kuna rakendus ei vaja ka internetiühendust, on teie privaatsus kaitstud.
-
+        Rakendus ei sisalda reklaame ega tarbetuid lubasid. Kuna rakendus ei vaja ka Interneti-ühendust, on teie privaatsus kaitstud.
         -------------------------------------------------
         <b>SIMPLE GALLERY PRO – OMADUSED</b>
         -------------------------------------------------
 
-        • Offline gallery with no ads or popups
-        • Simple gallery photo editor – crop, rotate, resize, draw, filters &amp; more
-        • No internet access needed, giving you more privacy and security
-        • No unnecessary permissions required
-        • Quickly search images, videos &amp; files
-        • Open &amp; view many different photo and video types (RAW, SVG, panoramic etc)
-        • A variety of intuitive gestures to easily edit &amp; organize files
-        • Lots of ways to filter, group &amp; sort files
-        • Customize the appearance of Simple Gallery Pro
-        • Available in 32 languages
-        • Mark files as favorites for quick access
-        • Protect your photos &amp; videos with a pattern, pin or fingerprint
-        • Use pin, pattern &amp; fingerprint to protect the app launch or specific functions too
-        • Recover deleted photos &amp; videos from the recycle bin
-        • Toggle visibility of files to hide photos &amp; videos
-        • Create a customizable slideshow of your files
-        • View detailed information of your files (resolution, EXIF values etc)
-        • Simple Gallery Pro is open source
-        … and much much more!
+        • Võrguühenduseta galerii ilma reklaamide ja hüpikuteta
+        • Lihtne galerii fotoredaktor - kärpida, pöörata, muuta suurust, joonistada, filtreerida &amp; palju muud
+        • Interneti-ühendust pole vaja, mis annab teile rohkem privaatsust ja turvalisust
+        • Tarbetuid lubasid pole vaja
+        • Otsige kiiresti pilte, videoid &amp; faile
+        • Avada &amp; vaadata palju erinevaid foto- ja videotüüpe (RAW, SVG, panoraam jne)
+        • Mitmesuguseid intuitiivseid žeste hõlpsaks redigeerimiseks &amp; failide korraldamiseks
+        • Paljud võimalused filtreerimiseks, rühmitamiseks &amp; failide sorteerimiseks
+        • Kohandage Simple Gallery Pro välimust
+        • Saadaval 32 keeles
+        • Märkige failid kiireks juurdepääsuks lemmikute hulka
+        • Kaitske oma pilte &amp; videosid mustri, pin koodi või sõrmejäljega
+        • Rakenduse käivitamiseks või konkreetsete funktsioonide kaitsmiseks kasutage pin koodi, mustrit &amp; sõrmejälge
+        • Kustutatud fotode &amp; videode taastamine prügikastist
+        • Lülitab välja failide nähtavuse fotode &amp; videode peitmiseks
+        • Looge oma failidest kohandatav slaidiseanss
+        • Vaadake oma failide üksikasjalikku teavet (eraldusvõime, EXIF-väärtused jne)
+        • Simple Gallery Pro on avatud lähtekoodiga
+        … ja palju muud!
 
         <b>PILDIGALERII TOIMETAJA</b>
-        Simple Gallery Pro makes it easy to edit your pictures on the fly. Crop, flip, rotate and resize your pictures. If you’re feeling a little more creative you can add filters and draw on your pictures!
+        Simple Gallery Pro abil on piltide redigeerimine hõlpsalt teostatav. Kärpige, pöörake, pöörake ja muutke oma pilte. Kui tunnete end pisut loovamana, saate lisada filtreid ja oma pilte joonistada!
 
-        <b>PALJUDE FAILITÜÜPIDE TOETUS</b>
-        Unlike some other gallery viewers &amp; photo organizers, Simple Gallery Pro supports a huge range of different file types including JPEG, PNG, MP4, MKV, RAW, SVG, Panoramic photos, Panoramic videos and many more.
+        <b>TUGI MITMETELE FAILITÜÜPIDELE</b>
+        Erinevalt teistest galeriivaatajatest &amp; fotokorraldajatest toetab Simple Gallery Pro tohutut valikut erinevaid failitüüpe, sealhulgas JPEG, PNG, MP4, MKV, RAW, SVG, panoraamfotod, panoraamvideod ja palju muud.
 
         <b>IGATI KOHANDATAV GALERII HALDAJA</b>
-        From the UI to the function buttons on the bottom toolbar, Simple Gallery Pro is highly customizable and works the way you want it to. No other gallery manager has this kind of flexibility! Thanks to being open source, we’re also available in 32 languages!
+        Liidesest kuni alumise tööriistariba funktsiooninuppiteni on Simple Gallery Pro väga kohandatav ja töötab nii, nagu soovite. Ühelgi teisel galeriijuhil pole sellist paindlikkust! Tänu avatud lähtekoodiga olemisele oleme saadaval ka 32 keeles!
 
-        <b>KUSTUTATUD FOTODE &amp; VIDEODE TAASTAMINE</b>
-        Accidentally deleted a precious photo or video? Don’t worry! Simple Gallery Pro features a handy recycle bin where you can recover deleted photos &amp; videos easily.
+        <b>FOTODE &amp; VIDEODE TAASTAMINE </b>
+        Kustutasite juhuslikult väärtusliku foto või video? Ärge muretsege! Simple Gallery Pro-l on mugav prügikast, kust saate kustutatud fotosid &amp; videoid hõlpsalt taastada.
 
-        <b>KAITSKE &amp; PEITKE FOTOSID, VIDEOID &amp; FALE</b>
-        Using pin, pattern or your device’s fingerprint scanner you can protect and hide photos, videos &amp; entire albums. You can protect the app itself or place locks on specific functions of the app. For example, you can’t delete a file without a fingerprint scan, helping to protect your files from accidental deletion.
-
-        <b>Vaadake siin lihtsate tööriistade komplekti:</b>
+        <b>KAITSKE &amp; PEITKE, VIDEOID &amp; FAILE</b>
+        Pin koodi, mustri või seadme sõrmejäljeskanneri abil saate fotosid, videoid &amp; terveid albumeid kaitsta ja peita. Saate kaitsta rakendust ennast või panna lukud rakenduse konkreetsetele funktsioonidele. Näiteks ei saa faili ilma sõrmejälgede skannimiseta kustutada, see aitab kaitsta faile juhusliku kustutamise eest.
+        <b>Vaadake täieliku Simple Tools komplekti siit:</b>
         https://www.simplemobiletools.com
+
+        <b>Simple Gallery Pro veebisait:</b>
+        https://www.simplemobiletools.com/gallery
 
         <b>Facebook:</b>
         https://www.facebook.com/simplemobiletools

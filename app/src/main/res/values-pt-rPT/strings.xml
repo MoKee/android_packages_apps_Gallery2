@@ -76,10 +76,13 @@
     <string name="include_videos">Incluir vídeos</string>
     <string name="include_gifs">Incluir GIFs</string>
     <string name="random_order">Ordem aleatória</string>
+    <string name="move_backwards">Mover para trás</string>
     <string name="no_animation">Nenhum</string>
+    <string name="change_view_type">Alterar tipo de exibição</string>
     <string name="grid">Grelha</string>
     <string name="list">Lista</string>
     <string name="group_by">Agrupar por</string>
+    <string name="do_not_group_files">Não agrupar ficheiros</string>
     <string name="by_folder">Pasta</string>
     <string name="by_last_modified">Última modificação</string>
     <string name="by_date_taken">Data de captura</string>

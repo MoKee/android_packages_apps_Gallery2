@@ -205,51 +205,54 @@ Ezzel csak a kiválasztott mappák láthatók, mivel a kizárás és a befoglal�
     <string name="faq_15_text">Az alkalmazás gyorsítótára akár 250 MB is lehet, ez biztosítja a gyorsabb képbetöltést. Ha az alkalmazás még nagyobb helyet foglal, annak a legvalószínűbb oka, hogy nagy fájlok vannak a Lomtárban. Ezek a fájlok beleszámítódnak az alkalmazásméretbe. Megnyithatja a Lomtárat és törölheti a fájlokat, vagy megteheti ezt az alkalmazás beállításaiban. A Lomtárba került elemek csak 30 naponta törlődnek automatikusan.</string>
     <string name="app_title">Simple Galéria Pro - Fényképkezelő és Szerkesztő</string>
     <string name="app_short_description">Offline-galéria hirdetések nélkül. A fényképek és videók rendezésére, szerkesztésére, helyreállítására és védelmére</string>
-    <string name="app_long_description">        A Simple Gallery Pro egy remekül testreszabható offline-galéria. A fényképek rendezésére és szerkesztésére, a Lomtár segítségével a törölt fájlok helyreállítására, a fájlok védelmére és elrejtésére. Elérhető különböző fotó- és videóformátumok széles választéka, beleértve a RAW, az SVG és még sok másféle..
+    <string name="app_long_description">A Simple Gallery Pro egy remekül személyre szabható offline galéria. Fényképek rendezésér éa szerkesztésére, törölt fájlok hlyreállítására, fájlok védelmére és elrejtésére és fotó és videóformátumok széles skálájának megtekintésére, beleértve a RAW és SVG fromátumokat is.
 
-        Az alkalmazás nem tartalmaz hirdetéseket és nem kér felesleges engedélyeket. Mivel nem igényel internet-hozzáférést, a magánszférája is védett.
+        Ez az alkalmazás nem tartlamaz reklámot és nem igényel felesleges jogosultságokat. Mivel nem szükséges hozzá feltétlenül internet, így az Ön biztonságát is garantálja.
 
         -------------------------------------------------
         <b>SIMPLE GALLERY PRO – FUNKCIÓK</b>
         -------------------------------------------------
 
-        • Offline-galéria reklámok és felugró ablakok nélkül
-        • Könnyen kezelhetó fényképszerkesztő – kivágás, forgatás, átméretezés, rajzolás, filterek és egyebek
-        • Nem szükséges Internet, ez nagyobb biztonságot és védelmet ad Önnek 
+        • Offline galéria reklámok és felugró ablakok nélkül
+        • Könnyen kezelhető képszerkesztő – vágás, forgatás, méretezés, rajz és filterek
+        • Nem szükséges internet, így még kevésbé rejt veszélyeket
         • Nem kér felesleges engedélyeket
         • Gyors kép-, videó- és fájlkeresés
-        • Rengeteg kép- és videóformátum megnyitására és kezelésére képes (RAW, SVG, panoráma, stb.)
-        • Számos intuitív mozdulatvezérlés a fájlok szerkesztéséhez és rendezéséhez
-        • Számos mód a fájlok szűrésére, csoportosítására és rendezésére
-        • A Simple Gallery Pro kinézetének testreszabása
-        • Jelenleg 32 nyelv érhető el
-        • Megjelölhet fájlokat kedvencként a gyorseléréshez
-        • Fényképeit és videóit PIN, ujjlenyomat vagy feloldómintás védelemmel láthatja el
-        • PIN-kódot, feloldómintát vagy ujjlenyomatot használhat az alkalmazásindítás vagy a speciális funkciók védelméhez is
-        • A Lomtár segítségével helyreállíthatja törölt fényképeit és videóit
-        • A fájlok és videók elrejtéséhez módosíthatja a fájlok láthatóságát
-        • Személyre szabott diavetítést hozhat létre a fájljaiból
-        • A fájlok részletes információinak megtekintése (felbontás, EXIF-értékek stb.)
-        • A Simple Gallery Pro nyílt forráskódú
-        … és sok egyéb más!
+        • Számtalan különböző fotó és videóformátum (RAW, SVG, panoramic stb)
+        • Számtalan segítő vezérlő a fájlok könnyed szerkesztéséhez és rendezéséhez
+        • Számtalan lehetőség a fájlok szűrésére, csoportosítására, rendezésére
+        • A Simple Gallery Pro megjelenése tesztreszabható
+        • 32 beépített nyelv a rendszerfelülethez
+        • A fájlok megjelölhetők a könnyű gyorskereséshez
+        • Fényképeit és videóit PIN-kóddal, ujjlenyomattal vagy mintával védheti
+        • Egyéb más funkciók elindítását is levédheti PIN-kóddal, ujjlenyomattal vagy mintával
+        • A Lomtár segítségével visszaállíthatja véletlen törölt képeit és videóit
+        • Elrejtheti vagy újra láthatóvá teheti fényképeit és videóit
+        • Fájljaiból testreszabható diavetítést készíthet
+        • Megtekintheti fájljainak részletes adatait (felbontás, EXIF-értékek, stb)
+        • A Simple Gallery Pro nyílt forráskódú!
+        … éa még sorolhatnánk!
 
-        <b>PHOTO GALLERY SZERKESZTŐ</b>
-       A Simple Gallery Pro egyszerűvé teszi a képek szerkesztését, a képek kivágását, elforgatását, átfordítását és átméretezését. Ha egy kicsit kreatívabbnak érzi magát, akkor szűrőket adhat hozzá és rajzolhat is a képeire!
+        <b>FÉNYKÉPGALÉRIA ÉS SZERKESZTŐ</b>
+        A Simple Gallery Pro megkönnyíti a képek menet közbeni szerkesztését. Képeit vághatja, átfordíthatja, megfordíthatja. És ha még ennél is több kreativitás szorult Önbe, rajzolhat és filterezhet is!
 
-        <b>SOKFÉLE FÁJLFORMÁTUM-TÁMOGATÁS</b>
-        Más galéria-megjelenítőkkel és fényképszervezőkkel ellentétben a Simple Gallery Pro sok különböző fájltípusot támogat, beleértve a JPEG, PNG, MP4, MKV, RAW, SVG, panoráma-fényképeket, panoráma-videókat és még egyebeket is.
+        <b>FÁJLFORMÁTUM-TÁMOGATÁS</b>
+        Sok más képnézegető és rendszerező alkalmazással szemben a Simple Gallery Pro számtalan különböző fájlformátumot támogat, példáil: JPEG, PNG, MP4, MKV, RAW, SVG, Panoramikus fényképek, Panoramikus videók.
 
-        <b>RENDKÍVÜL TESTRESZABHATÓ GALÉRIAKEZELŐ</b>
-        A Simple Gallery Pro elképzelhetetlenül testreszabható az alsó eszköztár funkciógombjaitól egészen a teljes felhasználói felületig, és úgy működik, ahogy szeretné. Más galériakezelőnek nincs ilyen rugalmassága! A nyílt forráskódnak köszönhetően 32 nyelven érhető el!
+        <b>REMEKÜL SZEMÉLYRE SZABHATÓ GALÉRIA</b>
+        A rendszerfelülettől az alsó eszköztár funkciógombjaiig a Simple Gallery Pro nagymértékben testreszabható, és úgy működik, ahogy Ön kívánja. Nincs más galériavezérlő ilyen rugalmassággal! A nyílt forráskódnak köszönhetően 32 nyelven is elérhető!
 
-        <b>TÖRÖLT FÉNYKÉPEK ÉS VIDEÓK VISSZAÁLLÍTÁSA</b>
-        Véletlenül törölte a értékes fényképeit vagy videót? Ne aggódjon! A Simple Gallyery Pro egy hasznos Lomtárral rendelkezik, ahol egyszerűen helyreállíthatja a törölt fényképeket és videókat.
+        <b>VÉLETLEN TÖRLÉS VISSZAÁLLÍTHATÓSÁGA</b>
+        Véletlenül törölt egy értékes fényképet vagy videót? Ne aggódjon! A Simple Gallery Pro praktikus Lomtárat tartalmaz, ahol könnyen helyreállíthatja a törölt fényképeket és videókat.
 
-        <b>FÉNYKÉPEK, VIDEÓK ÉS FÁJLOK VÉDELME ÉS ELREJTÉSE</b>
-        PIN-kód, feloldóminta vagy készüléke ujjlenyomat-olvasója használatával megvédheti és elrejtheti a fényképeket, videókat vagy akár teljes albumokat. Megvédheti magát az alkalmazást vagy zárolhatja csak egy alkalmazás bizonyos funkcióit. Például nem törölhet egy fájlt az ujjlenyomat-beolvasása nélkül, ez segíthet megvédeni a fájlokat a véletlen törléstől.
+        <b>FOTÓK, VIDEÓK, FÁJLOK VÉDELME ÉS REJTÉSE</b>
+        PIN-kód, feloldóminta vagy ujjlenyomat-leolvasó segítségével megvédheti és elrejtheti fényképeit, videóit vagy egy egész albumot. Megvédheti magát az alkalmazást, vagy zárakat helyezhet az alkalmazás meghatározott funkcióira. Például nem törölhet fájlokat ujjlenyomat-beolvasás nélkül, ezáltal megvédi a fájlokat a véletlen törléstől.
 
-        <b>Nézze meg a Simple Tools teljes kiadását itt:</b>
+        <b>Keresse fel a Simple Tools teljes választékát itt:</b>
         https://www.simplemobiletools.com
+
+        <b>A Simple Gallery Pro különálló weboldalát itt:</b>
+        https://www.simplemobiletools.com/gallery
 
         <b>Facebook:</b>
         https://www.facebook.com/simplemobiletools

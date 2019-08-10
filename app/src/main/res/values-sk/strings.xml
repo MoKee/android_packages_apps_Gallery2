@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Opraviť dátum vytvorenia</string>
     <string name="fixing">Opravuje sa…</string>
     <string name="dates_fixed_successfully">Dátumy boli úspešne opravené</string>
+    <string name="share_resized">Zdieľať upravenú verziu</string>
     <string name="filter_media">Filter médií</string>
     <string name="images">Obrázky</string>
     <string name="videos">Videá</string>
