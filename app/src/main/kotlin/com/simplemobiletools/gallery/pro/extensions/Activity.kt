@@ -60,8 +60,8 @@ fun Activity.setAs(path: String) {
     setAsIntent(path, BuildConfig.APPLICATION_ID)
 }
 
-fun Activity.openPath(path: String, forceChooser: Boolean) {
-    openPathIntent(path, forceChooser, BuildConfig.APPLICATION_ID)
+fun Activity.openPath(path: String, forceChooser: Boolean, extras: HashMap<String, Boolean> = HashMap()) {
+    openPathIntent(path, forceChooser, BuildConfig.APPLICATION_ID, extras = extras)
 }
 
 fun Activity.openEditor(path: String, forceChooser: Boolean = false) {
@@ -230,10 +230,14 @@ fun BaseSimpleActivity.restoreRecycleBinPath(path: String, callback: () -> Unit)
 fun BaseSimpleActivity.restoreRecycleBinPaths(paths: ArrayList<String>, mediumDao: MediumDao = galleryDB.MediumDao(), callback: () -> Unit) {
     ensureBackgroundThread {
         val newPaths = ArrayList<String>()
-        paths.forEach {
-            val source = it
-            val destination = it.removePrefix(recycleBinPath)
+        for (source in paths) {
+            val destination = source.removePrefix(recycleBinPath)
             val lastModified = File(source).lastModified()
+
+            val isShowingSAF = handleSAFDialog(destination) {}
+            if (isShowingSAF) {
+                return@ensureBackgroundThread
+            }
 
             var inputStream: InputStream? = null
             var out: OutputStream? = null
