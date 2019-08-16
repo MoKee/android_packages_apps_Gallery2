@@ -205,55 +205,58 @@
     <string name="faq_15_text">Uygulama önbelleği 250 MB\'a kadar alabilir ve daha hızlı görüntü yükleme sağlar. Uygulama daha fazla yer kaplıyorsa, büyük olasılıkla Geri Dönüşüm Kutusu\'nda öğe bulundurmanızdan kaynaklanmaktadır. Bu dosyalar uygulama boyutuna göre sayılır. Geri Dönüşüm Kutusu\'nu açarak tüm dosyaları silebilirsiniz ya da uygulama ayarlarından temizleyebilirsiniz. Depodaki her dosya 30 gün sonra otomatik olarak silinir.</string>
     <string name="app_title">Simple Gallery Pro: Fotoğraf Yöneticisi ve &amp; Düzenleyicisi</string>
     <string name="app_short_description">Reklamlar olmadan çevrimdışı galeri. Fotoğrafları ve videoları düzenleyin, düzeltin, kurtarın ve koruyun</string>
-    <string name="app_long_description">Basit galeri pro, özelleştirilebilir bir çevrimdışı galeridir. Düzenle ve fotoğraflarınızı düzenleyin, silinen dosyaları geri dönüşüm kutusuyla kurtarın, koruyun ve dosyaları gizle ve çok çeşitli farklı fotoğraflara bak ve RAW, SVG ve daha fazlasını içeren video formatları.
+    <string name="app_long_description">Basit Galeri Pro, özelleştirilebilir bir çevrimdışı galeridir.  Düzenle &amp; fotoğraflarınızı düzenleyin, geri dönüşüm kutusuyla silinen dosyaları kurtarın, koruyun &amp; dosyaları gizle ve çok çeşitli farklı fotoğraflara bakın &amp; RAW, SVG ve daha fazlasını içeren video biçimleri.
 
-        Uygulamaya hiçbir reklam ve gereksiz izinler içeriyor. Uygulama ya internet erişimi gerektirmediğinden gizliliğiniz korunur.
+         Uygulamaya hiçbir reklam ve gereksiz izinler içeriyor. Uygulama ya internet erişimi gerektirmediğinden gizliliğiniz korunur.
 
-        -------------------------------------------------
-        <b>BASİT GALERİ PRO - ÖZELLİKLER</b>
-        -------------------------------------------------
+         -------------------------------------------------
+         <b>BASİT GALERİ PRO - ÖZELLİKLER</b>
+         -------------------------------------------------
 
-        • Reklamsız veya açılan pencereli çevrimdışı galeri
-        • Basit galeri fotoğraf editörü - kırpın, döndürün, yeniden boyutlandırın, çizin, filtreler ve Daha
-        • İnternet erişimi gerekmez, size daha fazla gizlilik ve güvenlik sunar
-        • Gereksiz izin gerekmez
-        • Görüntüleri, videoları ve ampülleri hızlıca arayın. Dosyalar
-        • Aç ve birçok farklı fotoğraf ve video türünü görüntüleyin (RAW, SVG, panoramik vb.)
-        • Kolayca düzenlemek için çeşitli sezgisel hareketleri ve dosyaları düzenle
-        • Filtreleme, gruplandırma ve dosyaları sırala
-        • Simple galeri pro\'nun görünümünü kişiselleştirme
-        • 32 dilde mevcut
-        • Hızlı erişim için dosyaları sık kullanılanlar olarak işaretleyin
-        • Fotoğraflarınızı koruyun ve desen, iğne veya parmak izi olan videolar
-        • Pim, desen ve uygulama lansmanını veya belirli işlevleri de korumak için parmak izi
-        • Silinen fotoğrafları kurtarma ve geri dönüşüm kutusundan videolar
-        • Fotoğrafları ve videoları gizlemek için dosyaların görünürlüğünü değiştir
-        • Dosyalarınızın özelleştirilebilir bir slayt gösterisi oluşturun
-        • Dosyalarınızın ayrıntılı bilgilerini görüntüleyin (çözünürlük, EXIF ​​değerleri vb.)
-        • Simple galeri pro açık kaynak kodlu
-        … ve çok daha fazlası!
+         • Reklamsız veya açılır pencereli çevrimdışı galeri
+         • Basit galeri fotoğraf editörü - kırpın, döndürün, yeniden boyutlandırın, çizin, filtreler &amp; Daha
+         • İnternet erişimi gerekmez, size daha fazla gizlilik ve güvenlik sunar
+         • Gereksiz izin gerekmez
+         • Hızlıca resim, video &amp; Dosyalar
+         • Aç &amp; birçok farklı fotoğraf ve video türünü görüntüleyin (RAW, SVG, panoramik vb.)
+         • Kolayca düzenlemek için çeşitli sezgisel hareketler &amp; dosyaları düzenle
+         • Filtreleme, gruplandırma &amp; dosyaları sırala
+         • Basit Galeri Pro\'nun görünümünü kişiselleştirme
+         • 32 dilde mevcut
+         • Hızlı erişim için dosyaları sık kullanılanlar olarak işaretleyin
+         • Fotoğraflarınızı koruyun &amp; desen, iğne veya parmak izi olan videolar
+         • Pin, desen ve &amp; Uygulama lansmanını veya belirli işlevleri de korumak için parmak izi
+         • Silinen fotoğrafları kurtarma &amp; geri dönüşüm kutusundan videolar
+         • Fotoğrafları gizlemek için dosyaların görünürlüğünü değiştir &amp; videolar
+         • Dosyalarınızın özelleştirilebilir bir slayt gösterisi oluşturun
+         • Dosyalarınızın ayrıntılı bilgilerini görüntüleyin (çözünürlük, EXIF ​​değerleri vb.)
+         • Basit Galeri Pro açık kaynak kodlu
+         … ve çok daha fazlası!
 
-        <b>FOTO GALERİ EDİTÖRÜ</b>
-        Basit galeri pro, fotoğraflarınızı anında düzenlemenizi kolaylaştırır. Resimlerinizi kırpın, çevirin, döndürün ve yeniden boyutlandırın. Kendinizi daha yaratıcı hissediyorsanız, filtre ekleyebilir ve resimlerinizi çizebilirsiniz!
+         <b>FOTO GALERİ EDİTÖRÜ</b>
+         Basit Galeri Pro, fotoğraflarınızı anında düzenlemenizi kolaylaştırır. Resimlerinizi kırpın, çevirin, döndürün ve yeniden boyutlandırın. Kendinizi daha yaratıcı hissediyorsanız, filtre ekleyebilir ve resimlerinizi çizebilirsiniz!
 
-        <b>BİRÇOK DOSYA TÜRÜ İÇİN DESTEK</b>
-        Diğer bazı galeri izleyicilerinden farklı olarak ve fotoğraf düzenleyicileri olan Basit galeri pro, JPEG, PNG, MP4, MKV, RAW, SVG, Panoramik fotoğraflar, Panoramik videolar ve daha pek çok farklı dosya türünü destekler.
+         <b>BİRÇOK DOSYA TÜRÜ İÇİN DESTEK</b>
+         Diğer bazı galeri izleyicilerinden farklı olarak &amp;  Fotoğraf organizatörleri Basit Galeri Pro, JPEG, PNG, MP4, MKV, RAW, SVG, Panoramik fotoğraflar, Panoramik videolar ve daha pek çok farklı dosya türünü destekler.
 
-        <b>ÇOK ÖZELLEŞTİRİLEN GALERİ MÜDÜRÜ</b>
-        Kullanıcı arabiriminden alt araç çubuğundaki işlev tuşlarına kadar, Basit galeri pro oldukça özelleştirilebilir ve istediğiniz şekilde çalışır. Başka hiçbir galeri yöneticisi bu tür bir esnekliğe sahip değil! Açık kaynak olması sayesinde 32 dilde de hazırız!
+         <b>ÇOK ÖZELLEŞTİRİLEN GALERİ MÜDÜRÜ</b>
+         Kullanıcı arabiriminden alt araç çubuğundaki işlev düğmelerine kadar, Basit Galeri Pro oldukça özelleştirilebilir ve istediğiniz şekilde çalışır. Başka hiçbir galeri yöneticisi bu tür bir esnekliğe sahip değil!  Açık kaynak olması sayesinde 32 dilde de hazırız!
 
-        <b>KURTARMA SİLEN FOTOĞRAFLAR ve VİDEOLAR</b>
-        Yanlışlıkla değerli bir fotoğraf veya video silindi? Endişelenme! basit galeri pro silinen fotoğrafları kurtarabileceğiniz kullanışlı bir geri dönüşüm kutusu sunar
+         <b>KURTARMA SİLİNEN FOTOĞRAFLAR &amp;  VİDEOLAR</b>
+         Yanlışlıkla değerli bir fotoğraf veya video silindi?  Endişelenme! Basit Galeri Pro, silinen fotoğrafları &amp; videoları kolayca kurtarabileceğiniz kullanışlı bir geri dönüşüm kutusuna sahiptir.
 
-        <b>KORUMA VE GİZLEME FOTOĞRAFLARI, VİDEOLARI VE DOSYALARI</b>
-        İğne, desen veya cihazınızın parmak izi tarayıcısını kullanarak, fotoğrafları, videoları ve içerikleri koruyabilir ve gizleyebilirsiniz. tüm albümler. Uygulamanın kendisini koruyabilir veya uygulamanın belirli işlevlerine kilitler yerleştirebilirsiniz. Örneğin, parmak izi taraması olmadan bir dosyayı silemez ve dosyalarınızı yanlışlıkla silinmekten koruyabilirsiniz.
+         <b>KORUMA &amp; FOTOĞRAFLARI GİZLE, VİDEOLAR &amp; DOSYALAR</b>
+         Pin, desen veya cihazınızın parmak izi tarayıcısını kullanarak, fotoğrafları, videoları ve videoları koruyabilir ve gizleyebilirsiniz. Uygulamanın kendisini koruyabilir veya uygulamanın belirli işlevlerine kilitler yerleştirebilirsiniz. Örneğin, parmak izi taraması olmadan bir dosyayı silemez ve dosyalarınızı yanlışlıkla silmeye karşı koruyabilirsiniz.
 
-        <b>Tüm basit araçlar paketine buradan göz atın:</b>
-        https://www.simplemobiletools.com
+         <b>Tüm Basit Araçlar grubuna buradan göz atın</b>
+         https://www.simplemobiletools.com
 
-        <b>Facebook:</b>
-        https://www.facebook.com/simplemobiletools
+         <b>Bağımsız Basit Galeri Pro web sitesi:</b>
+         https://www.simplemobiletools.com/gallery
 
-        <b>Reddit:</b>
-        https://www.reddit.com/r/SimpleMobileTools    </string>
+         <b>Facebook:</b>
+         https://www.facebook.com/simplemobiletools
+
+         <b>Reddit:</b>
+         https://www.reddit.com/r/SimpleMobileTools    </string>
 </resources>
