@@ -179,4 +179,6 @@
     <string name="faq_12_text">It is most likely caused by the files being copied from somewhere. You can fix it by selecting the file thumbnails and selecting \"Fix Date Taken value\".</string>
     <string name="faq_13_title">I see some color banding on the images. How can I improve the quality?</string>
     <string name="faq_13_text">The current solution for displaying images works fine in the vast majority of cases, but if you want even better image quality, you can enable the \"Show images in the highest possible quality\" at the app settings, in the \"Deep zoomable images\" section.</string>
+    <string name="faq_14_title">Tôi đã ẩn một tập tin / thư mục. Làm thế nào tôi có thể bỏ ẩn nó?</string>
+    <string name="faq_14_text">Bạn có thể nhấn mục menu \"Tạm thời hiển thị các mục bị ẩn\" ở màn hình chính hoặc chuyển đổi \"Hiển thị các mục bị ẩn\" trong cài đặt ứng dụng để xem mục bị ẩn. Nếu bạn muốn bỏ ẩn nó, chỉ cần nhấn và giữ \"Bỏ ẩn\". Các thư mục được ẩn bằng cách thêm tệp \".nomedia\" ẩn vào chúng, bạn cũng có thể xóa tệp với bất kỳ trình quản lý tệp nào.</string>
 </resources>
