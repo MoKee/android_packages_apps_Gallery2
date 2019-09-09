@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Fijar valor de fecha tomada</string>
     <string name="fixing">Fijando…</string>
     <string name="dates_fixed_successfully">Fechas fijadas con éxito</string>
+    <string name="switch_to_file_search">Cambiar a búsqueda de archivos en todas las carpetas visibles</string>
     <string name="filter_media">Filtro de medios</string>
     <string name="images">Imágenes</string>
     <string name="videos">Vídeos</string>
@@ -56,6 +57,7 @@
     <string name="manage_included_folders">Gestionar carpetas incluidas</string>
     <string name="add_folder">Agregar carpeta</string>
     <string name="included_activity_placeholder">Si tienes algunas carpetas que contienen los medios de comunicación, pero no fueron reconocidos por la aplicación, puede agregarlos manualmente here.\n\nAñadir algunos artículos aquí no excluye cualquier otra carpeta.</string>
+    <string name="no_media_add_included">No se han encontrado archivos multimedia. Puede resolverlos añadiendo las carpetas que contienen archivos multimedia manualmente.</string>
     <string name="resize">Ajustar tamaño</string>
     <string name="resize_and_save">Redimensionar la selección y guardar</string>
     <string name="width">Ancho</string>
@@ -99,7 +101,9 @@
     <string name="random_order">Orden aleatorio</string>
     <string name="move_backwards">Mover hacia atrás</string>
     <string name="loop_slideshow">Presentación de diapositivas</string>
+    <string name="animation">Animación</string>
     <string name="no_animation">Ninguno</string>
+    <string name="slide">Deslizar</string>
     <string name="slideshow_ended">La diapositiva terminó</string>
     <string name="no_media_for_slideshow">No se han encontrado medios para la presentación de diapositivas</string>
     <string name="change_view_type">Cambiar tipo de vista</string>
@@ -110,9 +114,12 @@
     <string name="do_not_group_files">No agrupar ficheros</string>
     <string name="by_folder">Carpeta</string>
     <string name="by_last_modified">Último modificado</string>
+    <string name="by_last_modified_daily">Última modificación (diario)</string>
+    <string name="by_last_modified_monthly">Última modificación (mensual)</string>
     <string name="by_date_taken">Fecha de creación</string>
     <string name="by_file_type">Tipo de fichero</string>
     <string name="by_extension">Extensión</string>
+    <string name="grouping_and_sorting">Por favor, tenga en cuenta que la agrupación y la ordenación son 2 campos independientes</string>
     <string name="folder_on_widget">Carpeta mostrada en el widget:</string>
     <string name="show_folder_name">Mostrar nombre de carpeta</string>
     <string name="autoplay_videos">Reproducir vídeos automáticamente</string>
@@ -127,6 +134,7 @@
     <string name="screen_rotation_system_setting">Configuración del sistema</string>
     <string name="screen_rotation_device_rotation">Rotación del dispositivo</string>
     <string name="screen_rotation_aspect_ratio">Relación de aspecto</string>
+    <string name="black_background_at_fullscreen">Fondo negro en pantalla completa</string>
     <string name="scroll_thumbnails_horizontally">Desplazar miniaturas horizontalmente</string>
     <string name="hide_system_ui_at_fullscreen">Ocultar automáticamente la interfaz de usuario del sistema en medios de pantalla completa</string>
     <string name="delete_empty_folders">Eliminar carpetas vacias despues de borrar su contenido</string>
@@ -147,6 +155,11 @@
     <string name="allow_down_gesture">Permite cerrar la vista de pantalla completa con un gesto hacia abajo.</string>
     <string name="allow_one_to_one_zoom">Permitir 1:1 zoom con dos pulsaciones</string>
     <string name="open_videos_on_separate_screen">Siempre abrir vídeos en una pantalla separada con nuevos gestos horizontales</string>
+    <string name="show_notch">Mostrar Notch si está disponible</string>
+    <string name="allow_rotating_gestures">Permitir rotar imágenes con gestos</string>
+    <string name="file_loading_priority">Prioridad de carga de archivos</string>
+    <string name="speed">Velocidad</string>
+    <string name="avoid_showing_invalid_files">Evitar mostrar archivos no válidos</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Medios a pantalla compelta</string>
     <string name="extended_details">Detalles ampliados</string>
@@ -181,4 +194,7 @@
     <string name="faq_13_text">La solución actual para la visualización de imágenes funciona bien en la mayoría de los casos, pero si quieres una mejor calidad de imagen, puede habilitar las \"mostrar imagenes en la mayor calidad posible\" en la configuración de la aplicación, en el \"Imagenes profundas aumentables\" sección.</string>
     <string name="faq_14_title">He escondido un archivo/carpeta. ¿Cómo lo puedo Mostrar?</string>
     <string name="faq_14_text">Puede pulsar la opción del menú \"Mostrar temporalmente elementos ocultos\" en la pantalla principal, o activar \"Mostrar elementos ocultos\" en la configuración de la aplicación para ver el elemento oculto. Si quieres mostrarlo justo presiónelo y seleccione \"Mostrar\". Carpetas se ocultan mediante la adición de un archivo \".nomedia\" escondidas en ellos, usted puede eliminar el archivo con cualquier gestor de archivos también.</string>
+    <string name="faq_15_title">¿Por qué la aplicación ocupa tanto espacio?</string>
+    <string name="app_title">Galería simple Pro: Gestor de fotos &amp; Editor</string>
+    <string name="app_short_description">Galería sin anuncios. Organizar, editar, recuperar y proteger fotos de &amp; vídeos</string>
 </resources>
