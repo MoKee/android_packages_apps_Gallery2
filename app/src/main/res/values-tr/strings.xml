@@ -166,6 +166,7 @@
     <string name="speed">Hız</string>
     <string name="compromise">Uzlaşma</string>
     <string name="avoid_showing_invalid_files">Geçersiz dosyaları göstermekten kaçının</string>
+    <string name="show_image_file_types">Görüntü dosyası türlerini göster</string>
     <string name="thumbnails">Önizleme resimleri</string>
     <string name="fullscreen_media">Tam ekran medya</string>
     <string name="extended_details">Genişletilmiş ayrıntılar</string>
