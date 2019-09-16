@@ -34,6 +34,7 @@
     <string name="dates_fixed_successfully">Date aggiornate correttamente</string>
     <string name="share_resized">Condividi la versione modificata</string>
     <string name="upgraded_from_free">Ehi,\n\nsembra che tu abbia aggiornato dalla vecchia app gratuita. Ora puoi disinstallare la vecchia versione, che ha un pulsante \'Aggiorna a Pro\' in cima alle impostazioni dell\'app.\n\nOtterrai solo gli elementi del cestino del riuso, gli elementi preferiti non registrati e dovrai anche reimpostare le impostazioni dell\'app.\n\nGrazie!</string>
+    <string name="switch_to_file_search">Passa alla ricerca di file in tutte le cartelle visibili</string>
     <string name="filter_media">Filtra i media</string>
     <string name="images">Immagini</string>
     <string name="videos">Video</string>
@@ -138,6 +139,7 @@
     <string name="screen_rotation_system_setting">Impostazione di sistema</string>
     <string name="screen_rotation_device_rotation">Rotazione dispositivo</string>
     <string name="screen_rotation_aspect_ratio">Proporzioni</string>
+    <string name="black_background_at_fullscreen">Sfondo nero su media a schermo intero</string>
     <string name="scroll_thumbnails_horizontally">Scorri le miniature orizzontalmente</string>
     <string name="hide_system_ui_at_fullscreen">Nascondi UI di sistema con media a schermo intero</string>
     <string name="delete_empty_folders">Elimina cartelle vuote dopo averne eliminato il contenuto</string>
@@ -164,6 +166,7 @@
     <string name="speed">Velocità</string>
     <string name="compromise">Compromesso</string>
     <string name="avoid_showing_invalid_files">Evita di mostrare file non validi</string>
+    <string name="show_image_file_types">Mostra tipi file immagine</string>
     <string name="thumbnails">Miniature</string>
     <string name="fullscreen_media">Media a schermo intero</string>
     <string name="extended_details">Dettagli estesi</string>
