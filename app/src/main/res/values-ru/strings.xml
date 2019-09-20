@@ -166,6 +166,7 @@
     <string name="speed">Скорость</string>
     <string name="compromise">Компромисс</string>
     <string name="avoid_showing_invalid_files">Не отображать недопустимые файлы</string>
+    <string name="show_image_file_types">Показать типы файлов изображений</string>
     <string name="thumbnails">Миниатюры</string>
     <string name="fullscreen_media">Полноэкранный режим</string>
     <string name="extended_details">Подробности</string>
