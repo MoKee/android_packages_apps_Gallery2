@@ -584,7 +584,8 @@ fun Context.getCachedDirectories(getVideosOnly: Boolean = false, getImagesOnly: 
                         (filterMedia and TYPE_VIDEOS != 0 && it.types and TYPE_VIDEOS != 0) ||
                         (filterMedia and TYPE_GIFS != 0 && it.types and TYPE_GIFS != 0) ||
                         (filterMedia and TYPE_RAWS != 0 && it.types and TYPE_RAWS != 0) ||
-                        (filterMedia and TYPE_SVGS != 0 && it.types and TYPE_SVGS != 0)
+                        (filterMedia and TYPE_SVGS != 0 && it.types and TYPE_SVGS != 0) ||
+                        (filterMedia and TYPE_PORTRAITS != 0 && it.types and TYPE_PORTRAITS != 0)
             }
         }) as ArrayList<Directory>
 
@@ -618,6 +619,17 @@ fun Context.getCachedMedia(path: String, getVideosOnly: Boolean = false, getImag
             media.addAll(getUpdatedDeletedMedia(mediumDao))
         }
 
+        if (config.filterMedia and TYPE_PORTRAITS != 0) {
+            val foldersToAdd = ArrayList<String>()
+            for (folder in foldersToScan) {
+                val allFiles = File(folder).listFiles() ?: continue
+                allFiles.filter { it.isDirectory && it.name.startsWith("img_", true) }.forEach {
+                    foldersToAdd.add(it.absolutePath)
+                }
+            }
+            foldersToScan.addAll(foldersToAdd)
+        }
+
         val shouldShowHidden = config.shouldShowHidden
         foldersToScan.filter { path.isNotEmpty() || !config.isFolderProtected(it) }.forEach {
             try {
@@ -640,7 +652,8 @@ fun Context.getCachedMedia(path: String, getVideosOnly: Boolean = false, getImag
                         (filterMedia and TYPE_VIDEOS != 0 && it.type == TYPE_VIDEOS) ||
                         (filterMedia and TYPE_GIFS != 0 && it.type == TYPE_GIFS) ||
                         (filterMedia and TYPE_RAWS != 0 && it.type == TYPE_RAWS) ||
-                        (filterMedia and TYPE_SVGS != 0 && it.type == TYPE_SVGS)
+                        (filterMedia and TYPE_SVGS != 0 && it.type == TYPE_SVGS) ||
+                        (filterMedia and TYPE_PORTRAITS != 0 && it.type == TYPE_PORTRAITS)
             }
         }) as ArrayList<Medium>
 

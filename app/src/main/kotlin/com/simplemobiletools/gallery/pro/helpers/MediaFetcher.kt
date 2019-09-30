@@ -206,8 +206,9 @@ class MediaFetcher(val context: Context) {
         val checkProperFileSize = getProperFileSize || config.fileLoadingPriority == PRIORITY_COMPROMISE
         val checkFileExistence = config.fileLoadingPriority == PRIORITY_VALIDITY
         val showHidden = config.shouldShowHidden
+        val showPortraits = filterMedia and TYPE_PORTRAITS != 0
         val dateTakens = if (getProperDateTaken && folder != FAVORITES && !isRecycleBin) getFolderDateTakens(folder) else HashMap()
-        val subdirs = ArrayList<File>()
+        val subdirs = ArrayList<File>() // used only for Portrait photos starting with "IMG_" for now
 
         val files = when (folder) {
             FAVORITES -> favoritePaths.filter { showHidden || !it.contains("/.") }.map { File(it) }.toMutableList() as ArrayList<File>
@@ -217,7 +218,9 @@ class MediaFetcher(val context: Context) {
                 val notDirs = ArrayList<File>()
                 allFiles.forEach {
                     if (it.isDirectory) {
-                        subdirs.add(it)
+                        if (showPortraits && it.name.startsWith("img_", true)) {
+                            subdirs.add(it)
+                        }
                     } else {
                         notDirs.add(it)
                     }
@@ -225,6 +228,12 @@ class MediaFetcher(val context: Context) {
 
                 notDirs
             }
+        }
+
+        for (subdir in subdirs) {
+            val portraitFiles = subdir.listFiles() ?: continue
+            val cover = portraitFiles.firstOrNull { it.name.contains("cover", true) } ?: portraitFiles.first()
+            files.add(cover)
         }
 
         for (file in files) {
@@ -296,6 +305,7 @@ class MediaFetcher(val context: Context) {
                 media.add(medium)
             }
         }
+
         return media
     }
 
