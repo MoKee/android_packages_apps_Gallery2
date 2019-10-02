@@ -135,7 +135,7 @@
     <string name="animate_gifs">Анимиране GIF-ове прикажи као сличице</string>
     <string name="max_brightness">Појачај до краја осветљење у приказу преко целог екрана</string>
     <string name="crop_thumbnails">Исечи сличице на ћошкове</string>
-    <string name="show_thumbnail_video_duration">Прикажи трајанје снимка</string>
+    <string name="show_thumbnail_video_duration">Прикажи трајање снимка</string>
     <string name="screen_rotation_by">Заокрени цео екран нумере за</string>
     <string name="screen_rotation_system_setting">Подешавања система</string>
     <string name="screen_rotation_device_rotation">Ротација уређаја</string>
@@ -162,7 +162,7 @@
     <string name="allow_one_to_one_zoom">Омогући 1:1 зумирање са дворстуким кликом</string>
     <string name="open_videos_on_separate_screen">Увек отвори видео у новом екрану са новом хоризонталном гестом</string>
     <string name="show_notch">Прикажи Нotch ако постоји</string>
-    <string name="allow_rotating_gestures">Дозволите окретанје сликама са гестама</string>
+    <string name="allow_rotating_gestures">Дозволите окретање слика са гестама</string>
     <string name="file_loading_priority">Приоритет учитавања датотека</string>
     <string name="speed">Брзина</string>
     <string name="compromise">Компромис</string>
@@ -184,7 +184,7 @@
     <string name="faq_4_title">Како да убрзам видео?</string>
     <string name="faq_4_text">Померањем прста по екрану лево-десно у видео плејеру убрзавате ии успоравате видео.</string>
     <string name="faq_5_title">У чему је разлика у опцијама скривања или занемаривања фолдера?</string>
-    <string name="faq_5_text">Занемаривање подразумева не приказивање фолдера само у Simple Gallery док скривањем скривамо фолдер у свим апликацијама за приказ слика.То радимо на тај начин да се у наведеном фолдеру креира празан фајл са именом \".nomedia\" који се по потреби може обрисати у сваком фалј менаџеру.</string>
+    <string name="faq_5_text">Занемаривање подразумева не приказивање фолдера само у Simple Gallery док скривањем скривамо фолдер у свим апликацијама за приказ слика.То радимо на тај начин да се у наведеном фолдеру креира празна датотека са именом \".nomedia\" која се по потреби може обрисати у сваком фајл менаџеру.</string>
     <string name="faq_6_title">Зашто се фолдери у којима се налази слика албума или песме приказани са налепницом?</string>
     <string name="faq_6_text">Могуће је да видите неке Албуме које не желите да видите: Можете их просто искључити са опцијом занемаривања (Exclude). Обратите пажњу да у њима нема додатних фолдера које ипак желите да видите.</string>
     <string name="faq_7_title">Фолдер са сликама се не приказује или не приказује све ставке. Шта могу да урадим?</string>
