@@ -12,17 +12,16 @@ import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.signature.ObjectKey
 import com.simplemobiletools.commons.extensions.getFileKey
 import com.simplemobiletools.gallery.pro.R
-import com.simplemobiletools.gallery.pro.extensions.realScreenSize
 import kotlinx.android.synthetic.main.portrait_photo_item.view.*
 import java.util.*
 
-class PortraitPhotosAdapter(val context: Context, val photos: ArrayList<String>, val itemClick: (Int) -> Unit) :
+class PortraitPhotosAdapter(val context: Context, val photos: ArrayList<String>, val sideElementWidth: Int, val itemClick: (Int, Int) -> Unit) :
         RecyclerView.Adapter<PortraitPhotosAdapter.ViewHolder>() {
 
-    private var currentSelection = photos.first()
+    var currentSelectionIndex = -1
+    var views = HashMap<Int, View>()
     private var strokeBackground = context.resources.getDrawable(R.drawable.stroke_background)
-    private val screenWidth = context.realScreenSize.x
-    private val itemWidth = context.resources.getDimension(R.dimen.portrait_photos_stripe_height) + context.resources.getDimension(R.dimen.one_dp)
+    private val itemWidth = context.resources.getDimension(R.dimen.portrait_photos_stripe_height).toInt()
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindView(photos[position], position)
@@ -35,21 +34,30 @@ class PortraitPhotosAdapter(val context: Context, val photos: ArrayList<String>,
 
     override fun getItemCount() = photos.size
 
-    fun getCurrentPhoto() = currentSelection
+    fun setCurrentPhoto(position: Int) {
+        if (currentSelectionIndex != position) {
+            currentSelectionIndex = position
+            notifyDataSetChanged()
+        }
+    }
+
+    fun performClickOn(position: Int) {
+        views[position]?.performClick()
+    }
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bindView(photo: String, position: Int): View {
             itemView.apply {
-                if (position == 0) {
-                    portrait_photo_item_holder.setPadding(getStripeSidePadding(), 0, 0, 0)
-                } else if (position == photos.size - 1) {
-                    portrait_photo_item_holder.setPadding(0, 0, getStripeSidePadding(), 0)
+                portrait_photo_item_thumbnail.layoutParams.width = if (position == 0 || position == photos.size - 1) {
+                    sideElementWidth
+                } else {
+                    itemWidth
                 }
 
-                portrait_photo_item_thumbnail.background = if (getCurrentPhoto() == photo) {
-                    strokeBackground
-                } else {
+                portrait_photo_item_thumbnail.background = if (photo.isEmpty() || position != currentSelectionIndex) {
                     null
+                } else {
+                    strokeBackground
                 }
 
                 val options = RequestOptions()
@@ -62,10 +70,18 @@ class PortraitPhotosAdapter(val context: Context, val photos: ArrayList<String>,
                         .transition(DrawableTransitionOptions.withCrossFade())
                         .apply(options)
                         .into(portrait_photo_item_thumbnail)
+
+                if (photo.isNotEmpty()) {
+                    views[position] = this
+                    setOnClickListener {
+                        itemClick(position, x.toInt())
+                        setCurrentPhoto(position)
+                    }
+                } else {
+                    setOnClickListener(null)
+                }
             }
             return itemView
         }
     }
-
-    private fun getStripeSidePadding() = screenWidth / 2 - (itemWidth / 2).toInt()
 }

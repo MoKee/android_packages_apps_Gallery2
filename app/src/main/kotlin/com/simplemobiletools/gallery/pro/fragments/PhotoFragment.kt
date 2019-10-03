@@ -16,6 +16,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.DisplayMetrics
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
@@ -56,6 +57,7 @@ import pl.droidsonroids.gif.InputSource
 import java.io.File
 import java.io.FileOutputStream
 import java.util.*
+import kotlin.math.ceil
 
 class PhotoFragment : ViewPagerFragment() {
     private val DEFAULT_DOUBLE_TAP_ZOOM = 2f
@@ -74,6 +76,7 @@ class PhotoFragment : ViewPagerFragment() {
     private var mWasInit = false
     private var mIsPanorama = false
     private var mIsSubsamplingVisible = false    // checking view.visibility is unreliable, use an extra variable for it
+    private var mCurrentPortraitPhotoPath = ""
     private var mImageOrientation = -1
     private var mLoadZoomableViewHandler = Handler()
     private var mScreenWidth = 0
@@ -339,15 +342,16 @@ class PhotoFragment : ViewPagerFragment() {
 
     private fun loadImage() {
         checkScreenDimensions()
+
+        if (mMedium.isPortrait() && context != null) {
+            showPortraitStripe()
+        }
+
         mImageOrientation = getImageOrientation()
         when {
             mMedium.isGIF() -> loadGif()
             mMedium.isSVG() -> loadSVG()
             else -> loadBitmap()
-        }
-
-        if (mMedium.isPortrait() && context != null) {
-            showPortraitStripe()
         }
     }
 
@@ -383,7 +387,7 @@ class PhotoFragment : ViewPagerFragment() {
     private fun loadBitmap(addZoomableView: Boolean = true) {
         val priority = if (mIsFragmentVisible) Priority.IMMEDIATE else Priority.NORMAL
         val options = RequestOptions()
-                .signature(mMedium.path.getFileSignature())
+                .signature(getFilePathToShow().getFileSignature())
                 .format(DecodeFormat.PREFER_ARGB_8888)
                 .priority(priority)
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
@@ -395,7 +399,7 @@ class PhotoFragment : ViewPagerFragment() {
         }
 
         Glide.with(context!!)
-                .load(mMedium.path)
+                .load(getFilePathToShow())
                 .apply(options)
                 .listener(object : RequestListener<Drawable> {
                     override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Drawable>?, isFirstResource: Boolean): Boolean {
@@ -416,7 +420,7 @@ class PhotoFragment : ViewPagerFragment() {
     }
 
     private fun tryLoadingWithPicasso(addZoomableView: Boolean) {
-        var pathToLoad = if (mMedium.path.startsWith("content://")) mMedium.path else "file://${mMedium.path}"
+        var pathToLoad = if (getFilePathToShow().startsWith("content://")) getFilePathToShow() else "file://${getFilePathToShow()}"
         pathToLoad = pathToLoad.replace("%", "%25").replace("#", "%23")
 
         try {
@@ -447,22 +451,109 @@ class PhotoFragment : ViewPagerFragment() {
     }
 
     private fun showPortraitStripe() {
+        val files = File(mMedium.parentPath).listFiles()?.toMutableList() as? ArrayList<File>
+        if (files != null) {
+            val screenWidth = context!!.realScreenSize.x
+            val itemWidth = context!!.resources.getDimension(R.dimen.portrait_photos_stripe_height).toInt() + context!!.resources.getDimension(R.dimen.one_dp).toInt()
+            val sideWidth = screenWidth / 2 - itemWidth / 2
+            val fakeItemsCnt = ceil(sideWidth / itemWidth.toDouble()).toInt()
+
+            val paths = fillPhotoPaths(files, fakeItemsCnt)
+            var curWidth = itemWidth
+            while (curWidth < screenWidth) {
+                curWidth += itemWidth
+            }
+
+            val sideElementWidth = curWidth - screenWidth
+            val adapter = PortraitPhotosAdapter(context!!, paths, sideElementWidth) { position, x ->
+                mView.photo_portrait_stripe.smoothScrollBy((x + itemWidth / 2) - screenWidth / 2, 0)
+                if (paths[position] != mCurrentPortraitPhotoPath) {
+                    mCurrentPortraitPhotoPath = paths[position]
+                    hideZoomableView()
+                    loadBitmap()
+                }
+            }
+
+            mView.photo_portrait_stripe.adapter = adapter
+            setupStripeBottomMargin()
+
+            val coverIndex = getCoverImageIndex(paths)
+            mCurrentPortraitPhotoPath = paths[coverIndex]
+            setupStripeUpListener(adapter, screenWidth, itemWidth)
+
+            mView.photo_portrait_stripe.onGlobalLayout {
+                mView.photo_portrait_stripe.scrollBy((coverIndex - fakeItemsCnt) * itemWidth, 0)
+                adapter.setCurrentPhoto(coverIndex)
+                mView.photo_portrait_stripe_wrapper.beVisible()
+            }
+        }
+    }
+
+    private fun fillPhotoPaths(files: ArrayList<File>, fakeItemsCnt: Int): ArrayList<String> {
+        val paths = ArrayList<String>()
+        for (i in 0 until fakeItemsCnt) {
+            paths.add("")
+        }
+
+        files.forEach {
+            paths.add(it.absolutePath)
+        }
+
+        for (i in 0 until fakeItemsCnt) {
+            paths.add("")
+        }
+        return paths
+    }
+
+    private fun setupStripeBottomMargin() {
         var bottomMargin = context!!.navigationBarHeight + context!!.resources.getDimension(R.dimen.normal_margin).toInt()
         if (context!!.config.bottomActions) {
             bottomMargin += context!!.resources.getDimension(R.dimen.bottom_actions_height).toInt()
         }
         (mView.photo_portrait_stripe_wrapper.layoutParams as RelativeLayout.LayoutParams).bottomMargin = bottomMargin
-        mView.photo_portrait_stripe_wrapper.beVisible()
+    }
 
-        val files = File(mMedium.parentPath).listFiles()?.toMutableList() as? ArrayList<File>
-        if (files != null) {
-            val paths = files.map { it.absolutePath }.toMutableList() as ArrayList<String>
-            val adapter = PortraitPhotosAdapter(context!!, paths) {
-
+    private fun getCoverImageIndex(paths: ArrayList<String>): Int {
+        var coverIndex = -1
+        paths.forEachIndexed { index, path ->
+            if (path.contains("cover", true)) {
+                coverIndex = index
             }
-            mView.photo_portrait_stripe.adapter = adapter
+        }
+
+        if (coverIndex == -1) {
+            paths.forEachIndexed { index, path ->
+                if (path.isNotEmpty()) {
+                    coverIndex = index
+                }
+            }
+        }
+        return coverIndex
+    }
+
+    private fun setupStripeUpListener(adapter: PortraitPhotosAdapter, screenWidth: Int, itemWidth: Int) {
+        mView.photo_portrait_stripe.setOnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_UP || event.action == MotionEvent.ACTION_CANCEL) {
+                var closestIndex = -1
+                var closestDistance = Integer.MAX_VALUE
+                val center = screenWidth / 2
+                for ((key, value) in adapter.views) {
+                    val distance = Math.abs(value.x.toInt() + itemWidth / 2 - center)
+                    if (distance < closestDistance) {
+                        closestDistance = distance
+                        closestIndex = key
+                    }
+                }
+
+                Handler().postDelayed({
+                    adapter.performClickOn(closestIndex)
+                }, 100)
+            }
+            false
         }
     }
+
+    private fun getFilePathToShow() = if (mMedium.isPortrait()) mCurrentPortraitPhotoPath else mMedium.path
 
     private fun openPanorama() {
         Intent(context, PanoramaPhotoActivity::class.java).apply {
@@ -511,7 +602,7 @@ class PhotoFragment : ViewPagerFragment() {
             rotationEnabled = config.allowRotatingWithGestures
             isOneToOneZoomEnabled = config.allowOneToOneZoom
             orientation = newOrientation
-            setImage(mMedium.path)
+            setImage(getFilePathToShow())
 
             onImageEventListener = object : SubsamplingScaleImageView.OnImageEventListener {
                 override fun onReady() {
@@ -575,7 +666,7 @@ class PhotoFragment : ViewPagerFragment() {
         var orient = defaultOrientation
 
         try {
-            val path = mMedium.path
+            val path = getFilePathToShow()
             orient = if (path.startsWith("content:/")) {
                 val inputStream = context!!.contentResolver.openInputStream(Uri.parse(path))
                 val exif = ExifInterface()
@@ -587,7 +678,7 @@ class PhotoFragment : ViewPagerFragment() {
                 exif.getAttributeInt(TAG_ORIENTATION, defaultOrientation)
             }
 
-            if (orient == defaultOrientation || context!!.isPathOnOTG(mMedium.path)) {
+            if (orient == defaultOrientation || context!!.isPathOnOTG(getFilePathToShow())) {
                 val uri = if (path.startsWith("content:/")) Uri.parse(path) else Uri.fromFile(File(path))
                 val inputStream = context!!.contentResolver.openInputStream(uri)
                 val exif2 = ExifInterface()
