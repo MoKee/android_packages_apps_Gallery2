@@ -41,6 +41,7 @@
     <string name="gifs">GIF</string>
     <string name="raw_images">RAW 圖檔</string>
     <string name="svgs">SVGs</string>
+    <string name="portraits">肖像</string>
     <string name="no_media_with_filters">選擇的篩選條件未發現媒體檔案。</string>
     <string name="change_filters_underlined"><u>更改篩選條件</u></string>
     <string name="hide_folder_description">這功能藉由新增一個「.nomedia」檔案，來隱藏資料夾和所有子資料夾。您可以透過 [設定] 中的「顯示隱藏的項目」選項來檢視。\n是否繼續？</string>
