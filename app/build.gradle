@@ -15,8 +15,8 @@ android {
         applicationId "com.simplemobiletools.gallery.mokee"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 267
-        versionName "6.10.0"
+        versionCode 268
+        versionName "6.10.1"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         android.applicationVariants.all { variant ->
