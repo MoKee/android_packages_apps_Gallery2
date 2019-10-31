@@ -41,6 +41,7 @@
     <string name="gifs">Gifler</string>
     <string name="raw_images">RAW görüntüleri</string>
     <string name="svgs">SVG</string>
+    <string name="portraits">Portreler</string>
     <string name="no_media_with_filters">Seçilen filtrelerle hiçbir medya dosyası bulunamadı.</string>
     <string name="change_filters_underlined"><u>Filtreleri değiştir</u></string>
     <string name="hide_folder_description">Bu işlev, klasöre\'.medya yok\'dosyası ekleyerek gizler; tüm alt klasörleri de gizler. Bunları Ayarlar\'da\'Gizli klasörleri göster\'seçeneğine basarak görebilirsiniz. Devam et?</string>

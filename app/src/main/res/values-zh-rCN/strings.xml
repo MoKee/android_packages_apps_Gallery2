@@ -33,7 +33,7 @@
     <string name="fixing">正在修复…</string>
     <string name="dates_fixed_successfully">日期修复成功</string>
     <string name="share_resized">分享已更改大小的版本</string>
-    <string name="upgraded_from_free">嘿，\n\n您似乎是从旧版本升级的。您现在可以卸载旧版本，在应用程序设置顶部拥有”升级至专业版“按钮。\n\n升级将丢失移动到回收站的项目、收藏的项目将会变成未标记状态、并且您的应用设置也将被重置。\n\n谢谢！</string>
+    <string name="upgraded_from_free">嘿，\n\n您似乎是从旧版本升级的。您现在可以卸载旧版本，在应用程序设置顶部有”升级至专业版“按钮。\n\n升级将丢失回收站里的项目、收藏的项目将会变成未标记状态、并且您的应用设置也将被重置。\n\n谢谢！</string>
     <string name="switch_to_file_search">切换到所有可见的文件夹中的文件搜索</string>
     <string name="filter_media">要显示的媒体文件</string>
     <string name="images">图片</string>
@@ -41,6 +41,7 @@
     <string name="gifs">GIF动图</string>
     <string name="raw_images">RAW 图片</string>
     <string name="svgs">SVG</string>
+    <string name="portraits">肖像</string>
     <string name="no_media_with_filters">所选的过滤器没有找到媒体文件。</string>
     <string name="change_filters_underlined"><u>更改过滤器</u></string>
     <string name="hide_folder_description">通过添加文件 \'.nomedia\' 到目录，可以防止目录及其子目录下的所有媒体被扫描。您可以通过设置中的 \'显示隐藏目录\' 选项改变设置，是否继续？</string>
