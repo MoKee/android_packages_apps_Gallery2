@@ -96,7 +96,9 @@
     <string name="list">Sąrašas</string>
     <string name="group_by">Grupuoti pagal</string>
     <string name="by_folder">Aplankalas</string>
+    <string name="by_last_modified">Paskutinį redagavimą</string>
     <string name="by_date_taken">Fotografavimo data</string>
+    <string name="by_extension">Papildinį</string>
     <string name="autoplay_videos">Groti vaizdo įrašus automatiškai</string>
     <string name="toggle_filename">Perjungti bylos pavadinimo matomumą</string>
     <string name="loop_videos">Klipuoti vaizdo įrašus</string>

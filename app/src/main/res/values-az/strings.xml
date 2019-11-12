@@ -25,5 +25,8 @@
     <string name="slideshow">Slaydşou</string>
     <string name="no_animation">Heç biri</string>
     <string name="group_by">Qruplaşdırın</string>
+    <string name="by_folder">Qovluq</string>
+    <string name="by_last_modified">Son dəyişdirilən</string>
     <string name="by_date_taken">Çəkilmə tarixi</string>
+    <string name="by_extension">Fayl çıxışı</string>
 </resources>

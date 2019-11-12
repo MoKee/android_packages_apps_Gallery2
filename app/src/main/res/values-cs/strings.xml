@@ -204,6 +204,5 @@
     <string name="faq_15_title">Proč aplikace zabírá tolik místa?</string>
     <string name="faq_15_text">Mezipaměť aplikace může mít až 250 MB, což zajišťuje rychlejší načítání obrázků. Pokud aplikace zabírá ještě více místa, je to s největší pravděpodobností způsobeno tím, že máte položky v Koši. Tyto soubory se počítají do velikosti aplikace. Koš můžete vysypat otevřením a odstraněním všech souborů nebo z nastavení aplikace. 
 Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
-    <string name="app_title">Simple Gallery Pro: Správce fotografií &amp; editor</string>
     <string name="app_short_description">Offline galerie bez reklam. Uspořádejte, upravujte, obnovujte a chraňte fotografie &amp; videa</string>
 </resources>

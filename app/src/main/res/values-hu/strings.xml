@@ -41,6 +41,7 @@
     <string name="gifs">GIF</string>
     <string name="raw_images">RAW kép</string>
     <string name="svgs">SVG</string>
+    <string name="portraits">Portrék</string>
     <string name="no_media_with_filters">A kiválasztott szűrők nem találtak médiafájlokat.</string>
     <string name="change_filters_underlined"><u>Szűrők változtatása</u></string>
     <string name="hide_folder_description">Ez a funkció elrejti a mappát egy \'.nomedia\' fájl hozzáadásával, és elrejti az almappákat is. Láthatóvá teheti ezeket a Beállítások  \"Mutassa a rejtett elemeket\" menüpontban. Folytatja?</string>
@@ -166,6 +167,7 @@
     <string name="speed">Sebesség</string>
     <string name="compromise">Átmenet</string>
     <string name="avoid_showing_invalid_files">Az érvénytelen fájlok elkerülése érdekében</string>
+    <string name="show_image_file_types">Képfájltípusok megjelenítése</string>
     <string name="thumbnails">Miniatűrök</string>
     <string name="fullscreen_media">Teljes képernyős média</string>
     <string name="extended_details">Bővített részletek</string>
@@ -203,7 +205,7 @@ Ezzel csak a kiválasztott mappák láthatók, mivel a kizárás és a befoglal�
     <string name="faq_14_text">A rejtett elemek megtekintéséhez nyomja meg a \"Rejtettek ideiglenes mutatása\" elemet a fő képernyőn, vagy válassza a \"Mutassa a rejtett elemeket\" az alkalmazás beállításaiban. Ha meg akarja szüntetni, csak hosszan nyomja meg, és válassza a \"Elrejtés megszüntetés\" lehetőséget. A mappák elrejtése egy rejtett \". nomedia\" fájl hozzáadásával történik. Ezt a fájlt bármelyik fájlkezelővel is törölheti.</string>
     <string name="faq_15_title">Miért foglal az alkalmazás ilyen nagy helyet?</string>
     <string name="faq_15_text">Az alkalmazás gyorsítótára akár 250 MB is lehet, ez biztosítja a gyorsabb képbetöltést. Ha az alkalmazás még nagyobb helyet foglal, annak a legvalószínűbb oka, hogy nagy fájlok vannak a Lomtárban. Ezek a fájlok beleszámítódnak az alkalmazásméretbe. Megnyithatja a Lomtárat és törölheti a fájlokat, vagy megteheti ezt az alkalmazás beállításaiban. A Lomtárba került elemek csak 30 naponta törlődnek automatikusan.</string>
-    <string name="app_title">Simple Galéria Pro - Fényképkezelő és Szerkesztő</string>
+    <string name="app_title">Simple Gallery Pro - Képszerkesztő és rendező</string>
     <string name="app_short_description">Offline-galéria hirdetések nélkül. A fényképek és videók rendezésére, szerkesztésére, helyreállítására és védelmére</string>
     <string name="app_long_description">A Simple Gallery Pro egy remekül személyre szabható offline galéria. Fényképek rendezésér éa szerkesztésére, törölt fájlok hlyreállítására, fájlok védelmére és elrejtésére és fotó és videóformátumok széles skálájának megtekintésére, beleértve a RAW és SVG fromátumokat is.
 
