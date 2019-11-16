@@ -41,6 +41,7 @@
     <string name="gifs">GIF-файлы</string>
     <string name="raw_images">Изображения RAW</string>
     <string name="svgs">SVG-файлы</string>
+    <string name="portraits">Портреты</string>
     <string name="no_media_with_filters">При заданных фильтрах медиафайлы не найдены</string>
     <string name="change_filters_underlined"><u>Изменить фильтры</u></string>
     <string name="hide_folder_description">Эта функция скрывает папку, добавляя в неё файл \".nomedia\"; будут скрыты все подпапки. Можно показать их, переключая \"Показывать скрытые папки\" в настройках. Продолжить?</string>
