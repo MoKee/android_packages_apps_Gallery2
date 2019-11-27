@@ -41,6 +41,7 @@
     <string name="gifs">GIFs</string>
     <string name="raw_images">Imagens RAW</string>
     <string name="svgs">SVGs</string>
+    <string name="portraits">Retratos</string>
     <string name="no_media_with_filters">Nenhum arquivo de mídia encontrado a partir dos filtros selecionados.</string>
     <string name="change_filters_underlined"><u>Mudar filtros</u></string>
     <string name="hide_folder_description">Esta opção oculta uma pasta com a adição de um arquivo \'.nomedia\' dentro dela, e irá ocultar todas as subpastas que estejam dentro da mesma. Você poderá rever essas pastas com a opção \'Mostrar pastas ocultas\'. Continuar?</string>
@@ -166,6 +167,7 @@
     <string name="speed">Velocidade</string>
     <string name="compromise">Compromisso</string>
     <string name="avoid_showing_invalid_files">Evite mostrar arquivos inválidos</string>
+    <string name="show_image_file_types">Mostrar tipos de formato da imagem</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Mídia em tela cheia</string>
     <string name="extended_details">Detalhes extendidos</string>
@@ -203,5 +205,61 @@
     <string name="faq_14_text">Você pode pressionar o item de menu \"Mostrar itens ocultos temporariamente\" na tela principal ou alternar \"Mostrar itens ocultos\" nas configurações do aplicativo para ver o item oculto. Se você quiser reexibir, basta pressionar e selecionar \"Mostrar\". Pastas são escondidas, adicionando um arquivo \".nomedia\" escondido nelas, você pode excluir o arquivo com qualquer gerenciador de arquivos também.</string>
     <string name="faq_15_title">Por que o aplicativo ocupa muito espaço?</string>
     <string name="faq_15_text">O cache de aplicativos pode levar até 250 MB, garantindo um carregamento de imagem mais rápido. Se o aplicativo estiver ocupando ainda mais espaço, é mais provável que você tenha itens na Lixeira. Esses arquivos contam para o tamanho do aplicativo. Você pode limpar a Lixeira abrindo-a e excluindo todos os arquivos ou a partir das configurações do aplicativo. Todos os arquivos da lixeira são excluídos automaticamente após 30 dias.</string>
+    <string name="app_title">Simple Gallery Pro - Gerenciador de fotos &amp; Editor</string>
     <string name="app_short_description">Galeria offline sem anúncios. Organize, edite, recupere e proteja fotos &amp; vídeos</string>
+    <string name="app_long_description">        Simple Gallery Pro é uma galeria offline altamente customizável. Organize &amp;amp: edite suas photos, recupere arquivos deletados com a lixeira, protega &amp; esconda arquivos e veja uma grande variedade de formatos diferentes de imagem &amp; de vídeo, incluindo RAW, SVG e muito mais.
+
+        O aplicativo não contem anúncios e permissões desnecessárias. Como o app não necessita de internet, sua privacidade está protegida.
+
+        -------------------------------------------------
+        <b>SIMPLE GALLERY PRO – CARACTERÍSTICAS</b>
+        -------------------------------------------------
+
+        • Galeria offline sem anúncios ou popups
+        • Editor simples de fotos – corte, gire, redimensione, desenhe, filtros &amp; mais
+        • Sem necessidade de estar conectado á internet, te dando mais privacidade e segurança
+        • Sem permissões desnecessárias.
+        • Rapidamente procure imagens, vídeos &amp; arquivos
+        • Abra &amp; veja varias fotos e vídeos de diferentes formatos (RAW, SVG, panorâmica, etc)
+        • Gestos variados intuitivos para facilmente editar &amp; organizar aquivos
+        • Vários jeitos de filtrar, agrupar &amp; organizar arquivos.
+        • Customize a aparência do Simple Gallery Pro
+        • Disponível em 32 línguas
+        • Marque aquivos como favorito para acessar rapidamente
+        • Proteja suas fotos &amp; videos com um padrão, pin ou digital
+        • Use pin, padrão &amp; digital para proteger a entrada ao aplicativo ou funções especificas também.
+        • Recupere fotos deletadas &amp; vídeos da lixeira
+        • Alterne visibilidade de arquivos para esconder fotos &amp; vídeos
+        • Crie um slide show customizável de seus arquivos
+        • Visualize informações detalhadas de seus arquivos (resolução, EXIF valores, etc)
+        • Simple Gallery Pro é código aberto
+        … e muito muito mais! 
+
+        <b>EDITOR DE FOTOS DA GALERIA</b>
+        Simple Gallery Pro deixa editar suas fotos muito mais facil na hora. Corte, vire, gire e redimensione suas fotos. Se você estiver se sentindo um pouco mais criativo, pode adicionar filtros e desenhar nas suas fotos!
+
+        <b>SUPORTA VÁRIOS TIPOS DE FORMATOS DE ARQUIVO</b>
+        Diferente de alguns visualizadores de galeria &amp; organizadores de fotos, Simple Gallery Pro suporta uma grande variedade de tipos de aquivos incluindo JPEG, PNG, MP4, MKV, RAW, SVG, Fotos e videos panorâmicos e muito mais.
+
+        <b>GERENCIADOR DE GALERIA ALTAMENTE CUSTOMIZÁVEL</b>
+        Da UI para os botões da toolbar, Simple Gallery Pro é altamente customizável e funciona como você quer. Nenhum outro gerenciador de galeria tem esse tipo de flexibilidade! Graças a ela ser código aberto, nos também estamos disponíveis em 32 línguas!
+
+        <b>RECUPERE FOTOS &amp; VIDEOS DELETADAS</b>
+        Deletou sem querer uma foto ou vídeo precioso? Não se preocupe! Simple Gallery Pro possui uma lixeira conveniente onde você pode facilmente fotos &amp; videos.
+
+        <b>PROTEJA &amp; ESCONDA FOTOS, VIDEOS &amp; ARQUIVOS</b>
+        Usando pin, padrão ou seu sensor de digital você pode proteger e esconder fotos, videos &amp; álbuns inteiros. você pode proteger o aplicativo em si ou colocar trancas em funções especificas do app. Por exemplo, você não pode deletar um arquivo sem o sensor de digital, ajudando a proteger seus arquivos caso tente deletar sem querer.
+
+        <b>Cheque todas as ferramentas da Simple aqui:</b>
+        https://www.simplemobiletools.com
+
+        <b>Website da Simple Gallery Pro:</b>
+        https://www.simplemobiletools.com/gallery
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools
+    </string>
 </resources>
