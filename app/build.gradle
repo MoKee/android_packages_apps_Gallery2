@@ -12,7 +12,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.simplemobiletools.gallery.mokee"
+        applicationId "com.mokee.gallery"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 276
@@ -66,7 +66,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.21.0.0'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.21.0.2'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
