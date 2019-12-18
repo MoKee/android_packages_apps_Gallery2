@@ -111,6 +111,10 @@ fun BaseSimpleActivity.addNoMedia(path: String, callback: () -> Unit) {
 
     if (needsStupidWritePermissions(path)) {
         handleSAFDialog(file.absolutePath) {
+            if (!it) {
+                return@handleSAFDialog
+            }
+
             val fileDocument = getDocumentFile(path)
             if (fileDocument?.exists() == true && fileDocument.isDirectory) {
                 fileDocument.createFile("", NOMEDIA)
