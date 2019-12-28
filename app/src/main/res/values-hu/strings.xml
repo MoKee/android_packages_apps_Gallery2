@@ -73,6 +73,7 @@
     <string name="path">Elérési útvonal</string>
     <string name="invalid_image_path">A kép elérési útvonala érvénytelen</string>
     <string name="image_editing_failed">A képszerkesztés meghiúsult</string>
+    <string name="file_edited_successfully">A fájl sikeresen átszerkesztve</string>
     <string name="edit_image_with">Képszerkesztés a következővel:</string>
     <string name="no_editor_found">Nem található képszerkesztő</string>
     <string name="unknown_file_location">A fájl helye ismeretlen</string>

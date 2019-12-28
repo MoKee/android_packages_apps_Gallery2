@@ -32,6 +32,7 @@
     <string name="fix_date_taken">Aufnahmedatum korrigieren</string>
     <string name="fixing">Korrigiere…</string>
     <string name="dates_fixed_successfully">Datum erfolgreich korrigiert.</string>
+    <string name="share_resized">Eine skalierte Version teilen</string>
     <string name="filter_media">Filter</string>
     <string name="images">Bilder</string>
     <string name="videos">Videos</string>
@@ -68,6 +69,7 @@
     <string name="path">Pfad</string>
     <string name="invalid_image_path">Ungültiger Dateipfad.</string>
     <string name="image_editing_failed">Bildbearbeitung fehlgeschlagen.</string>
+    <string name="file_edited_successfully">Datei erfolgreich bearbeitet</string>
     <string name="edit_image_with">Bild bearbeiten mit:</string>
     <string name="no_editor_found">Keine Bildeditor-App gefunden.</string>
     <string name="unknown_file_location">Unbekannter Dateipfad.</string>
@@ -99,6 +101,7 @@
     <string name="random_order">Zufällige Reihenfolge</string>
     <string name="move_backwards">Rückwärts abspielen</string>
     <string name="loop_slideshow">Endlos abspielen</string>
+    <string name="animation">Animation</string>
     <string name="no_animation">Kein</string>
     <string name="slideshow_ended">Diashow beendet.</string>
     <string name="no_media_for_slideshow">Keine Medien für Diashow gefunden.</string>
@@ -147,6 +150,9 @@
     <string name="allow_down_gesture">Erlaube das Schließen der Vollbildansicht mit einer Abwärtsgeste</string>
     <string name="allow_one_to_one_zoom">1:1 Zoomen durch Doppel-Tippen erlauben</string>
     <string name="open_videos_on_separate_screen">Videos auf einem separaten Bildschirm immer mit horizontalen Gesten öffnen</string>
+    <string name="speed">Geschwindigkeit</string>
+    <string name="compromise">Kompromiss</string>
+    <string name="show_image_file_types">Bilddateien anzeigen</string>
     <string name="thumbnails">Thumbnails</string>
     <string name="fullscreen_media">Vollbild-Anzeige von Medien</string>
     <string name="extended_details">Erweiterte Details</string>

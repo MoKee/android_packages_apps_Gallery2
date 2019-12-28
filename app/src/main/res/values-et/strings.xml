@@ -73,6 +73,7 @@
     <string name="path">Tee</string>
     <string name="invalid_image_path">Kehtetu pildi tee</string>
     <string name="image_editing_failed">Pildi redigeerimine ebaõnnestus</string>
+    <string name="file_edited_successfully">Faili redigeerimine õnnestus</string>
     <string name="edit_image_with">Muuda pilti koos:</string>
     <string name="no_editor_found">Pildi redaktorit ei leitud</string>
     <string name="unknown_file_location">Tundmatu faili asukoht</string>

@@ -33,12 +33,15 @@
     <string name="fixing">Menetapkan…</string>
     <string name="dates_fixed_successfully">Tanggal berhasil diperbaiki</string>
     <string name="share_resized">Share a resized version</string>
+    <string name="upgraded_from_free">Hai,\n\nsepertinya Anda memutakhirkan dari aplikasi gratis yang lama. Anda sekarang dapat menghapus instalan versi lama, yang memiliki tombol \'Tingkatkan ke Pro\' di bagian atas pengaturan aplikasi. \n\nAnda hanya akan menghapus item Daur Ulang, item favorit tidak ditandai dan Anda juga harus mengatur ulang aplikasi Anda pengaturan.\n\nTerima kasih!</string>
+    <string name="switch_to_file_search">Beralih ke pencarian file di semua folder yang terlihat</string>
     <string name="filter_media">Sortir media</string>
     <string name="images">Gambar</string>
     <string name="videos">Video</string>
     <string name="gifs">GIF</string>
     <string name="raw_images">Gambar RAW</string>
     <string name="svgs">SVG</string>
+    <string name="portraits">Potret</string>
     <string name="no_media_with_filters">Tidak ada file media yang ditemukan dengan filter yang dipilih.</string>
     <string name="change_filters_underlined"><u>Ubah filter</u></string>
     <string name="hide_folder_description">Fungsi ini menyembunyikan folder dengan menambahkan file \'.nomedia\' ke dalamnya, ia juga akan menyembunyikan semua subfolder. Anda dapat melihatnya dengan mengaktifkan opsi \'Tampilkan item yang tersembunyi\' di Pengaturan. Lanjutkan?</string>
@@ -57,6 +60,7 @@
     <string name="manage_included_folders">Kelola folder yang disertakan</string>
     <string name="add_folder">Tambahkan folder</string>
     <string name="included_activity_placeholder">Jika Anda memiliki beberapa folder yang berisi media, tetapi itu tidak dibaca oleh aplikasi, Anda dapat menambahkan secara manual.\n\nMenambahkan beberapa item di sini tidak akan mengecualikan folder lain.</string>
+    <string name="no_media_add_included">Tidak ada file media yang ditemukan. Anda dapat menyelesaikannya dengan menambahkan folder yang berisi file media secara manual.</string>
     <string name="resize">Ubah ukuran</string>
     <string name="resize_and_save">Ubah ukuran dan simpan</string>
     <string name="width">Lebar</string>
@@ -100,7 +104,10 @@
     <string name="random_order">Urutan acak</string>
     <string name="move_backwards">Bergerak mundur</string>
     <string name="loop_slideshow">Ulangi tayangan slide</string>
+    <string name="animation">Animasi</string>
     <string name="no_animation">Tidak ada</string>
+    <string name="fade">Memudar</string>
+    <string name="slide">Geser</string>
     <string name="slideshow_ended">Tampilan slide berakhir</string>
     <string name="no_media_for_slideshow">Tidak ada media untuk tampilan slide yang ditemukan</string>
     <string name="change_view_type">Ubah jenis tampilan</string>
@@ -111,9 +118,14 @@
     <string name="do_not_group_files">Jangan mengelompokkan file</string>
     <string name="by_folder">Folder</string>
     <string name="by_last_modified">Terakhir diubah</string>
+    <string name="by_last_modified_daily">Modifikasi terakhir (harian)</string>
+    <string name="by_last_modified_monthly">Modifikasi terakhir (bulanan)</string>
     <string name="by_date_taken">Tanggal diambil</string>
+    <string name="by_date_taken_daily">Tanggal pembuatan (harian)</string>
+    <string name="by_date_taken_monthly">Tanggal pembuatan (bulanan)</string>
     <string name="by_file_type">Jenis file</string>
     <string name="by_extension">Ekstensi</string>
+    <string name="grouping_and_sorting">Harap perhatikan bahwa pengelompokan dan pengurutan adalah 2 bidang independen</string>
     <string name="folder_on_widget">Folder yang ditampilkan pada widget:</string>
     <string name="show_folder_name">Tampilkan nama folder</string>
     <string name="autoplay_videos">Putar video secara otomatis</string>
@@ -128,6 +140,7 @@
     <string name="screen_rotation_system_setting">Setelan sistem</string>
     <string name="screen_rotation_device_rotation">Rotasi perangkat</string>
     <string name="screen_rotation_aspect_ratio">Aspek rasio</string>
+    <string name="black_background_at_fullscreen">Latar belakang hitam pada media layar penuh</string>
     <string name="scroll_thumbnails_horizontally">Gulir gambar mini secara horizontal</string>
     <string name="hide_system_ui_at_fullscreen">Secara otomatis menyembunyikan UI sistem pada media layar penuh</string>
     <string name="delete_empty_folders">Hapus folder kosong setelah menghapus kontennya</string>
@@ -148,6 +161,13 @@
     <string name="allow_down_gesture">Izinkan menutup tampilan layar penuh dengan gerakan ke bawah</string>
     <string name="allow_one_to_one_zoom">Izinkan memperbesar 1:1 dengan dua ketukan ganda</string>
     <string name="open_videos_on_separate_screen">Selalu buka video di layar terpisah dengan gerakan horizontal baru</string>
+    <string name="show_notch">Tunjukkan poni jika tersedia</string>
+    <string name="allow_rotating_gestures">Izinkan memutar gambar dengan gerakan</string>
+    <string name="file_loading_priority">Prioritas pemuatan file</string>
+    <string name="speed">Kecepatan</string>
+    <string name="compromise">Compromise</string>
+    <string name="avoid_showing_invalid_files">Cegah memunculkan file rusak</string>
+    <string name="show_image_file_types">Tampilkan jenis file gambar</string>
     <string name="thumbnails">Thumbnail</string>
     <string name="fullscreen_media">Media layar penuh</string>
     <string name="extended_details">Detail yang diperluas</string>
@@ -161,6 +181,7 @@
     <string name="faq_2_title">Saya mengunci aplikasi dengan kata sandi, tetapi saya lupa. Apa yang harus saya lakukan?</string>
     <string name="faq_2_text">Anda dapat menyelesaikannya dengan 2 cara. Anda dapat menginstal ulang aplikasi, atau menemukan aplikasi di pengaturan perangkat Anda dan pilih \"Hapus data\". Ini akan mengatur ulang semua pengaturan Anda, itu tidak akan menghapus file media apa pun.</string>
     <string name="faq_3_title">Bagaimana saya bisa membuat album selalu muncul di atas?</string>
+    <string name="faq_3_text">Anda dapat menekan lama album yang diinginkan dan memilih ikon Pin di menu tindakan, yang akan menyematkannya ke atas. Anda juga dapat menyematkan banyak folder, item yang disematkan akan disortir dengan metode penyortiran default.</string>
     <string name="faq_4_title">Bagaimana saya bisa mempercepat video?</string>
     <string name="faq_4_text">Anda dapat menyeret jari secara horizontal ke atas pemutar video, atau mengklik teks durasi saat ini atau maksimum di dekat bilah pencarian. Itu akan memindahkan video mundur, atau maju.</string>
     <string name="faq_5_title">Apa perbedaan antara menyembunyikan dan mengecualikan folder?</string>
@@ -182,4 +203,63 @@
     <string name="faq_13_text">Solusi saat ini untuk menampilkan gambar berfungsi dengan baik di sebagian besar kasus, tetapi jika Anda menginginkan kualitas gambar yang lebih baik, Anda dapat mengaktifkan \"Tampilkan gambar dengan kualitas setinggi mungkin\" di pengaturan aplikasi, di bagian \"Gambar yang dapat diperbesar\".</string>
     <string name="faq_14_title">Saya telah menyembunyikan file / folder. Bagaimana saya bisa memunculkannya?</string>
     <string name="faq_14_text">Anda dapat menekan item menu \"Tampilkan sementara item tersembunyi\" di layar utama, atau beralih \"Tampilkan item tersembunyi\" di pengaturan aplikasi untuk melihat item yang tersembunyi. Jika Anda ingin menyembunyikannya, cukup tekan dan pilih \"Munculkan\". Folder disembunyikan dengan menambahkan file \".nomedia\" yang tersembunyi ke dalamnya, Anda juga dapat menghapus file dengan pengelola file apa pun.</string>
+    <string name="faq_15_title">Mengapa aplikasi memakan banyak penyimpanan?</string>
+    <string name="faq_15_text">Cache aplikasi dapat memakan waktu hingga 250MB, memastikan pemuatan gambar lebih cepat. Jika aplikasi mengambil lebih banyak ruang, kemungkinan besar disebabkan Anda memiliki item di Keranjang Sampah. File-file itu dihitung dengan ukuran aplikasi. Anda dapat menghapus Keranjang Sampah dengan membuka dan menghapus semua file, atau dari pengaturan aplikasi. Setiap file di tempat sampah dihapus secara otomatis setelah 30 hari.</string>
+    <string name="app_title">Simple Gallery Pro - Photo Manager &amp; Editor</string>
+    <string name="app_short_description">Jelajahi kenangan Anda tanpa gangguan.</string>
+    <string name="app_long_description">Simple Gallery Pro is a highly customizable offline gallery. Organize &amp; edit your photos, recover deleted files with the recycle bin, protect &amp; hide files and view a huge variety of different photo &amp; video formats including RAW, SVG and much more.
+
+        The app contains no ads and unnecessary permissions. As the app doesn’t require internet access either, your privacy is protected.
+
+        -------------------------------------------------
+        <b>SIMPLE GALLERY PRO – FEATURES</b>
+        -------------------------------------------------
+
+        • Offline gallery with no ads or popups
+        • Simple gallery photo editor – crop, rotate, resize, draw, filters &amp; more
+        • No internet access needed, giving you more privacy and security
+        • No unnecessary permissions required
+        • Quickly search images, videos &amp; files
+        • Open &amp; view many different photo and video types (RAW, SVG, panoramic etc)
+        • A variety of intuitive gestures to easily edit &amp; organize files
+        • Lots of ways to filter, group &amp; sort files
+        • Customize the appearance of Simple Gallery Pro
+        • Available in 32 languages
+        • Mark files as favorites for quick access
+        • Protect your photos &amp; videos with a pattern, pin or fingerprint
+        • Use pin, pattern &amp; fingerprint to protect the app launch or specific functions too
+        • Recover deleted photos &amp; videos from the recycle bin
+        • Toggle visibility of files to hide photos &amp; videos
+        • Create a customizable slideshow of your files
+        • View detailed information of your files (resolution, EXIF values etc)
+        • Simple Gallery Pro is open source
+        … and much much more!
+
+        <b>PHOTO GALLERY EDITOR</b>
+        Simple Gallery Pro makes it easy to edit your pictures on the fly. Crop, flip, rotate and resize your pictures. If you’re feeling a little more creative you can add filters and draw on your pictures!
+
+        <b>SUPPORT FOR MANY FILE TYPES</b>
+        Unlike some other gallery viewers &amp; photo organizers, Simple Gallery Pro supports a huge range of different file types including JPEG, PNG, MP4, MKV, RAW, SVG, Panoramic photos, Panoramic videos and many more.
+
+        <b>HIGHLY CUSTOMIZABLE GALLERY MANAGER</b>
+        From the UI to the function buttons on the bottom toolbar, Simple Gallery Pro is highly customizable and works the way you want it to. No other gallery manager has this kind of flexibility! Thanks to being open source, we’re also available in 32 languages!
+
+        <b>RECOVER DELETED PHOTOS &amp; VIDEOS</b>
+        Accidentally deleted a precious photo or video? Don’t worry! Simple Gallery Pro features a handy recycle bin where you can recover deleted photos &amp; videos easily.
+
+        <b>PROTECT &amp; HIDE PHOTOS, VIDEOS &amp; FILES</b>
+        Using pin, pattern or your device’s fingerprint scanner you can protect and hide photos, videos &amp; entire albums. You can protect the app itself or place locks on specific functions of the app. For example, you can’t delete a file without a fingerprint scan, helping to protect your files from accidental deletion.
+
+        <b>Check out the full suite of Simple Tools here:</b>
+        https://www.simplemobiletools.com
+
+        <b>Standalone website of Simple Gallery Pro:</b>
+        https://www.simplemobiletools.com/gallery
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools
+    </string>
 </resources>

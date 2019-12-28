@@ -73,6 +73,7 @@
     <string name="path">Путь</string>
     <string name="invalid_image_path">Недопустимый путь изображения</string>
     <string name="image_editing_failed">Редактирование изображения не удалось</string>
+    <string name="file_edited_successfully">Файл успешно отредактирован</string>
     <string name="edit_image_with">Редактирование изображений в:</string>
     <string name="no_editor_found">Ни одного редактора изображений не найдено</string>
     <string name="unknown_file_location">Неизвестное местоположение файла</string>

@@ -41,6 +41,7 @@
     <string name="gifs">GIF-ови</string>
     <string name="raw_images">RAW слике</string>
     <string name="svgs">SVGs</string>
+    <string name="portraits">Портрети</string>
     <string name="no_media_with_filters">Нису пронађене медијске датотеке са одабраним филтерима.</string>
     <string name="change_filters_underlined"><u>Промени филтер</u></string>
     <string name="hide_folder_description">Ова функција сакрива фолдер додавањем датотеке „.номедиа“ у њу, такође ће сакрити све фолдере који су у њему. Можете их видети пребацивањем опције „Прикажи скривене предмете“ у подешавањима. Настави?</string>
@@ -73,6 +74,7 @@
     <string name="path">Путања</string>
     <string name="invalid_image_path">Неисправна путања до слике</string>
     <string name="image_editing_failed">Грешка у исправци слике</string>
+    <string name="file_edited_successfully">Датотеке су успешно уређене</string>
     <string name="edit_image_with">Уређивање слике помоћу:</string>
     <string name="no_editor_found">Није пронађен Уређивач слика</string>
     <string name="unknown_file_location">Непозната локација датотеке</string>
