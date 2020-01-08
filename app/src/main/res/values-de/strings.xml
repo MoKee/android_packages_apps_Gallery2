@@ -33,12 +33,15 @@
     <string name="fixing">Korrigiere…</string>
     <string name="dates_fixed_successfully">Datum erfolgreich korrigiert.</string>
     <string name="share_resized">Eine skalierte Version teilen</string>
+    <string name="upgraded_from_free">Hey,\n\nscheint als ob du von der alten kostenlosen App upgegradet hast. Sie können nun die alte Version deinstallieren, die einen \"Upgrade auf Pro\"-Button oben in den App-Einstellungen hat.\n\nSie werden nur die Papierkorb-Elemente gelöscht, die Favoriten nicht markieren lassen und Sie müssen auch Ihre App-Einstellungen zurücksetzen.\n\nDanke!</string>
+    <string name="switch_to_file_search">Zur Dateisuche über alle sichtbaren Ordner wechseln</string>
     <string name="filter_media">Filter</string>
     <string name="images">Bilder</string>
     <string name="videos">Videos</string>
     <string name="gifs">GIFs</string>
     <string name="raw_images">RAW-Bilder</string>
     <string name="svgs">SVGs</string>
+    <string name="portraits">Porträts</string>
     <string name="no_media_with_filters">Keine Medien für die ausgewählten Filter gefunden.</string>
     <string name="change_filters_underlined"><u>Filter ändern</u></string>
     <string name="hide_folder_description">Diese Funktion versteckt die ausgewählten Ordner, indem im Dateisystem eine \'.nomedia\'-Datei abgelegt wird. Dadurch werden die ausgewählten Ordner und alle Unterverzeichnisse auch in anderen Apps nicht angezeigt. Solche Ordner werden nur gezeigt, wenn die Einstellung \'Versteckte Elemente anzeigen\' aktiv ist (auch andere Apps bieten üblicherweise eine solche Option).\\nFortfahren?</string>
@@ -57,6 +60,7 @@
     <string name="manage_included_folders">Einbezogene Ordner verwalten</string>
     <string name="add_folder">Ordner hinzufügen</string>
     <string name="included_activity_placeholder">Solltest du weitere Mediendateien haben, die von der App nicht gefunden wurden, kannst du deren Ordner hier manuell hinzufügen.</string>
+    <string name="no_media_add_included">Es wurden keine Mediendateien gefunden. Sie können es durch manuelles Hinzufügen der Ordner lösen.</string>
     <string name="resize">Größe ändern</string>
     <string name="resize_and_save">Größe ändern und speichern</string>
     <string name="width">Breite</string>
@@ -103,6 +107,8 @@
     <string name="loop_slideshow">Endlos abspielen</string>
     <string name="animation">Animation</string>
     <string name="no_animation">Kein</string>
+    <string name="fade">Verblassen</string>
+    <string name="slide">Wischen</string>
     <string name="slideshow_ended">Diashow beendet.</string>
     <string name="no_media_for_slideshow">Keine Medien für Diashow gefunden.</string>
     <string name="change_view_type">Darstellung ändern</string>
@@ -113,9 +119,14 @@
     <string name="do_not_group_files">Dateien nicht gruppieren</string>
     <string name="by_folder">Ordner</string>
     <string name="by_last_modified">Datum der letzten Änderung</string>
+    <string name="by_last_modified_daily">Zuletzt geändert (Täglich)</string>
+    <string name="by_last_modified_monthly">Zuletzt geändert (Monatlich)</string>
     <string name="by_date_taken">Aufnahmedatum</string>
+    <string name="by_date_taken_daily">Aufnahmedatum (Täglich)</string>
+    <string name="by_date_taken_monthly">Aufnahmedatum (Monatlich)</string>
     <string name="by_file_type">Dateityp (Bilder/Videos)</string>
     <string name="by_extension">Dateierweiterung</string>
+    <string name="grouping_and_sorting">Bitte beachten Sie, dass Gruppierung und Sortierung zwei unabhängige Felder sind</string>
     <string name="folder_on_widget">Ordner, der auf dem Widget angezeigt wird:</string>
     <string name="show_folder_name">Ordnernamen anzeigen</string>
     <string name="autoplay_videos">Videos automatisch abspielen</string>
@@ -130,6 +141,7 @@
     <string name="screen_rotation_system_setting">Systemeinstellung</string>
     <string name="screen_rotation_device_rotation">Gerätedrehung</string>
     <string name="screen_rotation_aspect_ratio">Seitenverhältnis</string>
+    <string name="black_background_at_fullscreen">Schwarzer Hintergrund bei Vollbild</string>
     <string name="scroll_thumbnails_horizontally">Kacheln horizontal scrollen</string>
     <string name="hide_system_ui_at_fullscreen">Systemleiste im Vollbild ausblenden</string>
     <string name="delete_empty_folders">Leere Ordner automatisch löschen</string>
@@ -150,8 +162,12 @@
     <string name="allow_down_gesture">Erlaube das Schließen der Vollbildansicht mit einer Abwärtsgeste</string>
     <string name="allow_one_to_one_zoom">1:1 Zoomen durch Doppel-Tippen erlauben</string>
     <string name="open_videos_on_separate_screen">Videos auf einem separaten Bildschirm immer mit horizontalen Gesten öffnen</string>
+    <string name="show_notch">Zeigt die Notch an, falls verfügbar</string>
+    <string name="allow_rotating_gestures">Drehen von Bildern mit Gesten erlauben</string>
+    <string name="file_loading_priority">Datei-Ladepriorität</string>
     <string name="speed">Geschwindigkeit</string>
     <string name="compromise">Kompromiss</string>
+    <string name="avoid_showing_invalid_files">Ungültige Dateien nicht anzeigen</string>
     <string name="show_image_file_types">Bilddateien anzeigen</string>
     <string name="thumbnails">Thumbnails</string>
     <string name="fullscreen_media">Vollbild-Anzeige von Medien</string>
@@ -166,6 +182,7 @@
     <string name="faq_2_title">Ich habe die App mit einem Passwort geschützt und es vergessen. Was kann ich tun?</string>
     <string name="faq_2_text">Es gibt zwei Möglichkeiten: Entweder du installierst die App erneut oder du wählst in den Geräteeinstellungen \'Apps\' aus und dann \"Daten löschen\". Alle Einstellungen werden zurückgesetzt, alle Mediendateien bleiben unberührt.</string>
     <string name="faq_3_title">Wie kann ich ein Album immer zuoberst erscheinen lassen?</string>
+    <string name="faq_3_text">Du kannst lange auf das gewünschte Album drücken und im Aktionsmenü das Stecknadelsymbol auswählen. Es wird nun oben angepinnt. Ebenso kannst du mehrere Ordner anpinnen. Angepinnte Objekte werden nach der Standardmethode sortiert.</string>
     <string name="faq_4_title">Wie kann ich in Videos vor- oder zurückspringen?</string>
     <string name="faq_4_text">Du kannst auf den Text der aktuellen oder der maximalen Dauer nahe der Suchleiste drücken, um im Video vor- oder zurück zu springen.</string>
     <string name="faq_5_title">Was ist der Unterschied zwischen \'Verstecken\' und \'Ausschließen\' eines Ordners?</string>
@@ -187,4 +204,61 @@
     <string name="faq_14_title">Ich habe eine versteckte Datei bzw. einen versteckten Ordner. Wie kann ich diese/n sichtbar stellen?</string>
     <string name="faq_14_text">Du kannst entweder auf \"Verstecktes temporär anzeigen\" im Hauptmenü drücken oder die Einstellung \"Versteckte Elemente anzeigen\" setzen. Wenn du es sichtbar einstellen willst, drücke lange darauf und wähle \"Nicht verstecken\" aus. Ordner werden durch eine versteckte, in ihnen gespeicherte \".nomedia\"-Datei versteckt und das Löschen der Datei ist mit jedem Dateimanger möglich.</string>
     <string name="faq_15_title">Warum benötigt die App so viel Platz?</string>
+    <string name="faq_15_text">Der App-Cache kann bis zu 250MB in Anspruch nehmen. Es sorgt dafür, dass das Laden von Bildern schneller vonstatten geht. Wenn die App noch mehr Platz beansprucht, wird dies höchstwahrscheinlich dadurch verursacht, dass du Items im Papierkorb hast. Diese Dateien beeinflussen die App-Größe. Sie können den Papierkorb löschen, indem Sie ihn öffnen und alle Dateien löschen oder aus den App-Einstellungen. Jede Datei im Papierkorb wird nach 30 Tagen automatisch gelöscht.</string>
+    <string name="app_title">Simple Gallery Pro - Photo Manager &amp; Editor</string>
+    <string name="app_short_description">Durchsuchen Sie Ihre Erinnerungen ohne Unterbrechungen.</string>
+    <string name="app_long_description">Simple Gallery Pro ist eine hochgradig anpassbare Offline-Galerie. Organisiere &amp; bearbeite Fotos, stelle gelöschte Dateien mit dem Papierkorb wieder her, schütze &amp; verstecke Dateien und sehe eine große Auswahl an verschiedenen Foto- &amp; Videoformate einschließlich RAW, SVG und vieles mehr.
+
+        Die App enthält keine Werbung und unnötige Berechtigungen. Da die App auch keinen Internetzugang benötigt, ist Ihre Privatsphäre geschützt.
+
+        -------------------------------------------------
+        <b>SIMPLE GALLERY PRO - MERKMALE</b>
+        -------------------------------------------------
+
+        - Offline-Galerie ohne Werbung oder Popups
+        - Einfache Galerie-Fotobearbeitung - zuschneiden, drehen, Größe ändern, zeichnen, filtern &amp; mehr
+        - Kein Internetzugang erforderlich, dadurch mehr Privatsphäre und Sicherheit
+        - Keine unnötigen Berechtigungen erforderlich
+        - Schnelle Suche nach Bildern, Videos &amp; Dateien
+        - Öffnen von viele verschiedenen Foto- und Videotypen (RAW, SVG, Panorama etc.)
+        - Eine Vielzahl intuitiver Gesten zum einfachen Bearbeiten &amp; Organisieren von Dateien
+        - Viele Möglichkeiten zum Filtern, Gruppieren &amp; Sortieren von Dateien
+        - Anpassen des Themes von Simple Gallery Pro
+        - Verfügbar in 32 Sprachen
+        - Dateien als Favoriten für schnellen Zugriff markieren
+        - Schützen Sie Ihre Fotos &amp; Videos mit einem Muster, einem PIN oder einem Fingerabdruck
+        - Benutzen Sie Pin, Muster &amp; Fingerabdruck, um den Start der App oder auch bestimmte Funktionen zu schützen
+        - Gelöschte Fotos &amp; Videos aus dem Papierkorb wiederherstellen
+        - Schalten Sie die Sichtbarkeit von Dateien ein, um Fotos und Videos auszublenden.
+        - Erstellen Sie eine anpassbare Diashow Ihrer Dateien
+        - Zeigt detaillierte Informationen Ihrer Dateien an (Auflösung, EXIF-Werte etc.)
+        - Simple Gallery Pro ist quelloffen
+        ... und noch viel mehr!
+
+        <b>GALLERIE EDITOR</b>
+        Simple Gallery Pro macht es Ihnen leicht, Ihre Bilder im Handumdrehen zu bearbeiten. Schneiden, spiegeln, drehen und vergrößern Sie Ihre Bilder. Wenn Sie etwas kreativer sind, können Sie Filter hinzufügen und auf Ihre Bilder zeichnen!
+
+        <b>Unterstützung vieler Dateitypen</b>
+        Im Gegensatz zu einigen anderen Gallerie Apps, unterstützt Simple Gallery Pro eine große Auswahl an verschiedenen Dateitypen, einschließlich JPEG, PNG, MP4, MKV, RAW, SVG, Panoramafotos, Panoramavideos und vieles mehr.
+
+        <b>KONFIGURIERBARER GALERIEVERWALTER</b>
+        Von der Benutzeroberfläche bis zu den Funktionsschaltflächen in der unteren Symbolleiste ist Simple Gallery Pro in hohem Maße anpassbar und funktioniert so, wie Sie es sich wünschen. Keine andere Gallerie hat diese Art von Flexibilität! Dank des Open Source Projekts, ist die App in 32 Sprachen verfügbar!
+
+        <b>GELÖSCHE FOTOS &amp; VIDEOS wiederherstellen</b>
+        Sie haben versehentlich ein wertvolles Foto oder Video gelöscht? Machen Sie sich keine Sorgen! Simple Gallery Pro verfügt über einen praktischen Papierkorb, in dem Sie gelöschte Fotos und Videos einfach wiederherstellen können.
+
+        <b>SCHÜTZE &amp; VERSTECKE FOTOS, VIDEOS &amp; DATEIEN</b>
+        Mit Hilfe von PIN, eines Musters oder des Fingerabdruckscanners Ihres Geräts können Sie Fotos, Videos und ganze Alben schützen und ausblenden. Sie können die App selbst schützen oder bestimmte Funktionen der App mit Sperren versehen. Beispielsweise können Sie eine Datei ohne Fingerabdruck-Scan nicht löschen, um Ihre Dateien vor versehentlichem Löschen zu schützen.
+
+        <b>Hier können Sie die gesamte Palette der einfachen Tools ausprobieren:</b>
+        https://www.simplemobiletools.com
+
+        <b>Website von Simple Gallery Pro:</b>
+        https://www.simplemobiletools.com/gallery
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools    </string>
 </resources>
