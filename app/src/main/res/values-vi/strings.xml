@@ -88,7 +88,7 @@
     <string name="wallpaper_set_successfully">Thiết lập hình nền thành công</string>
     <string name="portrait_aspect_ratio">Chân dung</string>
     <string name="landscape_aspect_ratio">Phong cảnh</string>
-    <string name="home_screen">Màn hình chính</string>
+    <string name="home_screen">Màn hình chủ</string>
     <string name="lock_screen">Màn hình khóa</string>
     <string name="home_and_lock_screen">Trang chủ và màn hình khoá</string>
     <string name="slideshow">Trình chiếu</string>

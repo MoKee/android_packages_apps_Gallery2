@@ -87,7 +87,7 @@
     <string name="wallpaper_set_successfully">Bakgrunden har ställts in</string>
     <string name="portrait_aspect_ratio">Stående bildförhållande</string>
     <string name="landscape_aspect_ratio">Liggande bildförhållande</string>
-    <string name="home_screen">Startskärm</string>
+    <string name="home_screen">Hemskärm</string>
     <string name="lock_screen">Låsskärm</string>
     <string name="home_and_lock_screen">Startskärm och låsskärm</string>
     <string name="slideshow">Bildspel</string>

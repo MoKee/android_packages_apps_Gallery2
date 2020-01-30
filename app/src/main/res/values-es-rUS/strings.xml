@@ -67,7 +67,7 @@
     <string name="invalid_values">Por favor, introduzca una resolución válida</string>
     <string name="editor">Editor</string>
     <string name="save">Guardar</string>
-    <string name="rotate">Rotar</string>
+    <string name="rotate">Girar</string>
     <string name="path">Ruta</string>
     <string name="invalid_image_path">Ruta de imagen no válida</string>
     <string name="image_editing_failed">Falló la edición de imagen</string>
@@ -75,8 +75,8 @@
     <string name="no_editor_found">No se encontró un editor de imágenes</string>
     <string name="unknown_file_location">Ubicación del archivo desconocida</string>
     <string name="error_saving_file">No se ha podido sobrescribir el archivo de origen</string>
-    <string name="rotate_left">Rotar hacia la izquierda</string>
-    <string name="rotate_right">Rotar hacia la derecha</string>
+    <string name="rotate_left">Girar a la izquierda</string>
+    <string name="rotate_right">Girar a la derecha</string>
     <string name="rotate_one_eighty">Rotar 180º</string>
     <string name="flip">Girar</string>
     <string name="flip_horizontally">Voltear horizontalmente</string>

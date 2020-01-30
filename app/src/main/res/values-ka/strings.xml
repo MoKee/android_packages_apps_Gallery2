@@ -12,7 +12,7 @@
     <string name="rotate">შეტრიალება</string>
     <string name="path">მდებარეობა</string>
     <string name="rotate_left">მარცხნივ შებრუნება</string>
-    <string name="rotate_right">მარჯვნივ შეტრიალება</string>
+    <string name="rotate_right">მარჯვნივ შებრუნება</string>
     <string name="free_aspect_ratio">არც ერთი</string>
     <string name="slideshow">სლაიდშოუ</string>
     <string name="no_animation">არც ერთი</string>

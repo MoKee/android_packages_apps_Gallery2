@@ -14,7 +14,7 @@
     <string name="all_folders">Все медиафайлы</string>
     <string name="folder_view">Переключиться вид на папки</string>
     <string name="other_folder">Другая папка</string>
-    <string name="show_on_map">Показать место съёмки</string>
+    <string name="show_on_map">Показать на карте</string>
     <string name="unknown_location">Место съёмки не указано</string>
     <string name="increase_column_count">Добавить столбец</string>
     <string name="reduce_column_count">Убрать столбец</string>
@@ -85,7 +85,7 @@
     <string name="flip_horizontally">По горизонтали</string>
     <string name="flip_vertically">По вертикали</string>
     <string name="free_aspect_ratio">Вручную</string>
-    <string name="other_aspect_ratio">Другое</string>
+    <string name="other_aspect_ratio">Другой</string>
     <string name="simple_wallpaper">Галерея</string>
     <string name="set_as_wallpaper">Установить в качестве обоев</string>
     <string name="set_as_wallpaper_failed">Не удалось установить</string>
@@ -118,10 +118,10 @@
     <string name="group_by">Группировать по…</string>
     <string name="do_not_group_files">Не группировать файлы</string>
     <string name="by_folder">Папка</string>
-    <string name="by_last_modified">Последнее изменение</string>
+    <string name="by_last_modified">Время изменения</string>
     <string name="by_last_modified_daily">Дата редактирования (по дням)</string>
     <string name="by_last_modified_monthly">Дата редактирования (по месяцам)</string>
-    <string name="by_date_taken">Дата съёмки</string>
+    <string name="by_date_taken">Время создания</string>
     <string name="by_date_taken_daily">Дата снимка (по дням)</string>
     <string name="by_date_taken_monthly">Дата снимка (по месяцам)</string>
     <string name="by_file_type">Тип файла</string>

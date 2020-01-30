@@ -9,10 +9,10 @@
     <string name="excluded">(изключен)</string>
     <string name="all_folders">Всички папки</string>
     <string name="other_folder">Друга папка</string>
-    <string name="show_on_map">Показване на карта</string>
+    <string name="show_on_map">Показване на картата</string>
     <string name="select_photo">Избиране на снимка</string>
     <string name="volume">Звук</string>
-    <string name="brightness">Ярко</string>
+    <string name="brightness">Яркост</string>
     <string name="lock_orientation">Заключване на ориентацията</string>
     <string name="unlock_orientation">Отключване на ориентацията</string>
     <string name="change_orientation">Промяна на ориентацията</string>
@@ -34,7 +34,7 @@
     <string name="keep_aspect_ratio">Запази пропорцията</string>
     <string name="save">Запазване</string>
     <string name="rotate">Завъртане</string>
-    <string name="path">Път</string>
+    <string name="path">Местоположение</string>
     <string name="rotate_left">Завъртане наляво</string>
     <string name="rotate_right">Завъртане надясно</string>
     <string name="free_aspect_ratio">Без</string>

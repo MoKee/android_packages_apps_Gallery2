@@ -14,7 +14,7 @@
     <string name="all_folders">Kõik kaustad</string>
     <string name="folder_view">Lülita kausta vaade</string>
     <string name="other_folder">Muu kaust</string>
-    <string name="show_on_map">Näita kaardil</string>
+    <string name="show_on_map">Kuva kaardil</string>
     <string name="unknown_location">Tundmatu asukoht</string>
     <string name="increase_column_count">Suurendage veergude arvu</string>
     <string name="reduce_column_count">Vähendage veergude arvu</string>
@@ -69,7 +69,7 @@
     <string name="invalid_values">Sisesta korrektne resolutsioon</string>
     <string name="editor">Toimetaja</string>
     <string name="save">Salvesta</string>
-    <string name="rotate">Pööra</string>
+    <string name="rotate">Pööramine</string>
     <string name="path">Tee</string>
     <string name="invalid_image_path">Kehtetu pildi tee</string>
     <string name="image_editing_failed">Pildi redigeerimine ebaõnnestus</string>

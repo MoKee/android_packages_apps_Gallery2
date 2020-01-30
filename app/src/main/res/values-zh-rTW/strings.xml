@@ -78,14 +78,14 @@
     <string name="no_editor_found">找不到圖片編輯器</string>
     <string name="unknown_file_location">未知的檔案位置</string>
     <string name="error_saving_file">無法覆蓋原始檔案</string>
-    <string name="rotate_left">向左轉</string>
-    <string name="rotate_right">向右轉</string>
+    <string name="rotate_left">向左旋轉</string>
+    <string name="rotate_right">向右旋轉</string>
     <string name="rotate_one_eighty">旋轉 180º</string>
     <string name="flip">翻轉</string>
     <string name="flip_horizontally">水平翻轉</string>
     <string name="flip_vertically">垂直翻轉</string>
     <string name="free_aspect_ratio">無</string>
-    <string name="other_aspect_ratio">其它</string>
+    <string name="other_aspect_ratio">其他</string>
     <string name="simple_wallpaper">圖片庫</string>
     <string name="set_as_wallpaper">設為桌布</string>
     <string name="set_as_wallpaper_failed">設為桌布失敗</string>
@@ -121,7 +121,7 @@
     <string name="by_last_modified">最後修改</string>
     <string name="by_last_modified_daily">最近修改 (每日)</string>
     <string name="by_last_modified_monthly">最近修改 (每月)</string>
-    <string name="by_date_taken">拍攝日期</string>
+    <string name="by_date_taken">拍照日期</string>
     <string name="by_date_taken_daily">採取的日期 (每日)</string>
     <string name="by_date_taken_monthly">採取的日期 (每月)</string>
     <string name="by_file_type">檔案類型</string>

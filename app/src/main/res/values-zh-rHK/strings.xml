@@ -63,7 +63,7 @@
     <string name="no_media_add_included">沒有發現任何媒體檔案。您可以通過手動新增包含媒體檔案的資料夾來解決這個問題。</string>
     <string name="resize">重新調整大小</string>
     <string name="resize_and_save">縮放所選區域並儲存</string>
-    <string name="width">寬度</string>
+    <string name="width">闊度</string>
     <string name="height">高度</string>
     <string name="keep_aspect_ratio">保持長寬比</string>
     <string name="invalid_values">請輸入有效的解析度</string>

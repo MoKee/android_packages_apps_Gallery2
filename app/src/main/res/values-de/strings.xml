@@ -14,7 +14,7 @@
     <string name="all_folders">Alle Medien</string>
     <string name="folder_view">Ansicht: Als Ordner</string>
     <string name="other_folder">Ordner wählen</string>
-    <string name="show_on_map">Auf Karte zeigen</string>
+    <string name="show_on_map">Auf Karte anzeigen</string>
     <string name="unknown_location">Unbekannter Pfad</string>
     <string name="increase_column_count">Kacheln verkleinern</string>
     <string name="reduce_column_count">Kacheln vergrößern</string>
@@ -22,7 +22,7 @@
     <string name="select_photo">Auswählen</string>
     <string name="use_default">Standard</string>
     <string name="volume">Lautstärke</string>
-    <string name="brightness">Helligkeit</string>
+    <string name="brightness">Bildschirmhelligkeit</string>
     <string name="lock_orientation">Bildausrichtung sperren</string>
     <string name="unlock_orientation">Bildausrichtung entsperren</string>
     <string name="change_orientation">Bildausrichtung ändern</string>
@@ -95,7 +95,7 @@
     <string name="portrait_aspect_ratio">Hochformat</string>
     <string name="landscape_aspect_ratio">Querformat</string>
     <string name="home_screen">Startbildschirm</string>
-    <string name="lock_screen">Sperrbildschirm</string>
+    <string name="lock_screen">Bildschirmsperre</string>
     <string name="home_and_lock_screen">Start- und Sperrbildschirm</string>
     <string name="slideshow">Diashow</string>
     <string name="interval">Intervall (Sekunden):</string>
@@ -118,14 +118,14 @@
     <string name="group_by">Gruppieren nach</string>
     <string name="do_not_group_files">Dateien nicht gruppieren</string>
     <string name="by_folder">Ordner</string>
-    <string name="by_last_modified">Datum der letzten Änderung</string>
+    <string name="by_last_modified">Änderungsdatum</string>
     <string name="by_last_modified_daily">Zuletzt geändert (Täglich)</string>
     <string name="by_last_modified_monthly">Zuletzt geändert (Monatlich)</string>
     <string name="by_date_taken">Aufnahmedatum</string>
     <string name="by_date_taken_daily">Aufnahmedatum (Täglich)</string>
     <string name="by_date_taken_monthly">Aufnahmedatum (Monatlich)</string>
     <string name="by_file_type">Dateityp (Bilder/Videos)</string>
-    <string name="by_extension">Dateierweiterung</string>
+    <string name="by_extension">Dateiendung</string>
     <string name="grouping_and_sorting">Bitte beachten Sie, dass Gruppierung und Sortierung zwei unabhängige Felder sind</string>
     <string name="folder_on_widget">Ordner, der auf dem Widget angezeigt wird:</string>
     <string name="show_folder_name">Ordnernamen anzeigen</string>

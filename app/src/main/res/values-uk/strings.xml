@@ -13,7 +13,7 @@
     <string name="all_folders">Усі теки</string>
     <string name="folder_view">Перемкнути у перегляд за теками</string>
     <string name="other_folder">Інша тека</string>
-    <string name="show_on_map">Показати на мапі</string>
+    <string name="show_on_map">Показати на карті</string>
     <string name="unknown_location">Невідоме місцерозташування</string>
     <string name="increase_column_count">Збільшити кількість колонок</string>
     <string name="reduce_column_count">Зменшити кількість колонок</string>
@@ -63,7 +63,7 @@
     <string name="invalid_values">Введіть допустиму роздільну здатність</string>
     <string name="editor">Редактор</string>
     <string name="save">Зберегти</string>
-    <string name="rotate">Обернути</string>
+    <string name="rotate">Повернути</string>
     <string name="path">Шлях</string>
     <string name="invalid_image_path">Неприпустимий шлях до зображення</string>
     <string name="image_editing_failed">Не вдалося редагувати зображення</string>
@@ -71,14 +71,14 @@
     <string name="no_editor_found">Не знайдено редакторів зображень</string>
     <string name="unknown_file_location">Невідоме розташування файлу</string>
     <string name="error_saving_file">Не вдалося перезаписати вихідний файл</string>
-    <string name="rotate_left">Обернути ліворуч</string>
-    <string name="rotate_right">Обернути праворуч</string>
+    <string name="rotate_left">Повернути ліворуч</string>
+    <string name="rotate_right">Повернути праворуч</string>
     <string name="rotate_one_eighty">Обернути на 180º</string>
     <string name="flip">Віддзеркалити</string>
     <string name="flip_horizontally">Віддзеркалити горизонтально</string>
     <string name="flip_vertically">Віддзеркалити вертикально</string>
     <string name="free_aspect_ratio">Вільне</string>
-    <string name="other_aspect_ratio">Інше</string>
+    <string name="other_aspect_ratio">Інший</string>
     <string name="simple_wallpaper">Галерея</string>
     <string name="set_as_wallpaper">Встановити як шпалери</string>
     <string name="set_as_wallpaper_failed">Не вдалося встановити шпалери</string>
@@ -107,9 +107,9 @@
     <string name="group_direct_subfolders">Групувати безпосередні підтеки</string>
     <string name="group_by">Групувати за…</string>
     <string name="do_not_group_files">Не групувати файли</string>
-    <string name="by_folder">текою</string>
+    <string name="by_folder">Папка</string>
     <string name="by_last_modified">останньою зміною</string>
-    <string name="by_date_taken">датою зйомки</string>
+    <string name="by_date_taken">Дата зйомки</string>
     <string name="by_file_type">типом файлу</string>
     <string name="by_extension">розширенням</string>
     <string name="autoplay_videos">Відтворювати відео автоматично</string>
