@@ -89,7 +89,7 @@
     <string name="wallpaper_set_successfully">Tapeta została ustawiona</string>
     <string name="portrait_aspect_ratio">Proporcje ekranu w trybie pionowym</string>
     <string name="landscape_aspect_ratio">Proporcje ekranu w trybie poziomym</string>
-    <string name="home_screen">Ekran główny</string>
+    <string name="home_screen">Pulpit</string>
     <string name="lock_screen">Ekran blokady</string>
     <string name="home_and_lock_screen">Pulpit i ekran blokady</string>
     <string name="slideshow">Pokaz slajdów</string>
@@ -109,11 +109,11 @@
     <string name="group_direct_subfolders">Grupuj bezpośrednie podfoldery</string>
     <string name="group_by">Grupuj według</string>
     <string name="do_not_group_files">Nie grupuj plików</string>
-    <string name="by_folder">Katalog</string>
-    <string name="by_last_modified">Data modyfikacji</string>
-    <string name="by_date_taken">Data utworzenia</string>
+    <string name="by_folder">Folderu</string>
+    <string name="by_last_modified">Daty ostatniej modyfikacji</string>
+    <string name="by_date_taken">Daty utworzenia</string>
     <string name="by_file_type">Typu</string>
-    <string name="by_extension">Rozszerzenie</string>
+    <string name="by_extension">Rozszerzenia</string>
     <string name="folder_on_widget">Folder widoczny na widżecie:</string>
     <string name="show_folder_name">Pokaż nazwę folderu</string>
     <string name="autoplay_videos">Odtwarzaj filmy automatycznie</string>

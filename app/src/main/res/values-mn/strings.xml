@@ -9,10 +9,10 @@
     <string name="width">Өргөн</string>
     <string name="height">Өндөр</string>
     <string name="save">Хадгалах</string>
-    <string name="rotate">Эргүүлэх</string>
+    <string name="rotate">Эргүүлэлт</string>
     <string name="path">Зам</string>
-    <string name="rotate_left">Зүүн тийш эргүүлэх</string>
-    <string name="rotate_right">Баруун тийш эргүүлэх</string>
+    <string name="rotate_left">Зүүн эргүүлэх</string>
+    <string name="rotate_right">Баруун эргүүлэх</string>
     <string name="free_aspect_ratio">Байхгүй</string>
     <string name="slideshow">Слайд харуулах</string>
     <string name="no_animation">Хоосон</string>

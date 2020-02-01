@@ -22,12 +22,12 @@
     <string name="width">Шырыня</string>
     <string name="height">Вышыня</string>
     <string name="save">Захаваць</string>
-    <string name="rotate">Павярнуць</string>
+    <string name="rotate">Паварот</string>
     <string name="path">Шлях</string>
     <string name="rotate_left">Павярнуць налева</string>
     <string name="rotate_right">Павярнуць направа</string>
     <string name="free_aspect_ratio">Вольна</string>
-    <string name="other_aspect_ratio">Iншае</string>
+    <string name="other_aspect_ratio">Іншы</string>
     <string name="simple_wallpaper">Галерэя</string>
     <string name="home_screen">Хатні экран</string>
     <string name="lock_screen">Экран блакіроўкі</string>

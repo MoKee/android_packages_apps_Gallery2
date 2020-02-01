@@ -79,7 +79,7 @@
     <string name="unknown_file_location">Emplacement du fichier inconnu.</string>
     <string name="error_saving_file">Ne parvient pas à réécrire par dessus le fichier source</string>
     <string name="rotate_left">Rotation vers la gauche</string>
-    <string name="rotate_right">Rotation vers la droite</string>
+    <string name="rotate_right">Faire pivoter vers la droite</string>
     <string name="rotate_one_eighty">Pivoter à 180º</string>
     <string name="flip">Retourner</string>
     <string name="flip_horizontally">Retourner horizontalement</string>

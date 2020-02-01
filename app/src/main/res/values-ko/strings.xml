@@ -3,7 +3,7 @@
 <resources>
     <string name="app_name">갤러리</string>
     <string name="app_launcher_name">갤러리</string>
-    <string name="edit">수정</string>
+    <string name="edit"> 수정</string>
     <string name="open_camera">카메라 열기</string>
     <string name="hidden">(숨겨짐)</string>
     <string name="excluded">(제외됨)</string>
@@ -37,7 +37,7 @@
     <string name="rotate_left">왼쪽으로 회전</string>
     <string name="rotate_right">오른쪽으로 회전</string>
     <string name="free_aspect_ratio">선택 안함</string>
-    <string name="other_aspect_ratio">기타</string>
+    <string name="other_aspect_ratio">추가 사항</string>
     <string name="simple_wallpaper">갤러리</string>
     <string name="landscape_aspect_ratio">가로 방향 비율</string>
     <string name="home_screen">홈 화면</string>

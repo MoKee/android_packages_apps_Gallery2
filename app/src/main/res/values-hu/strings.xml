@@ -14,7 +14,7 @@
     <string name="all_folders">Összes mappa</string>
     <string name="folder_view">Váltás mappanézetre</string>
     <string name="other_folder">Egyéb mappa</string>
-    <string name="show_on_map">Megjelenítés térképen</string>
+    <string name="show_on_map">Mutassa a térképen</string>
     <string name="unknown_location">Ismeretlen helyszín</string>
     <string name="increase_column_count">Növelje az oszlopok számát</string>
     <string name="reduce_column_count">Csökkentse az oszlopok számát</string>
@@ -22,7 +22,7 @@
     <string name="select_photo">Válasszon fotót</string>
     <string name="use_default">Alapértelmezett használata</string>
     <string name="volume">Hangerő</string>
-    <string name="brightness">Fényerő</string>
+    <string name="brightness">Fényesség</string>
     <string name="lock_orientation">Tájolás zárolása</string>
     <string name="unlock_orientation">Tájolás feloldása</string>
     <string name="change_orientation">Tájolás változtatása</string>
@@ -69,8 +69,8 @@
     <string name="invalid_values">Írjon be érvényes felbontást</string>
     <string name="editor">Szerkesztő</string>
     <string name="save">Mentés</string>
-    <string name="rotate">Elforgatás</string>
-    <string name="path">Elérési út</string>
+    <string name="rotate">Forgatás</string>
+    <string name="path">Elérési útvonal</string>
     <string name="invalid_image_path">A kép elérési útvonala érvénytelen</string>
     <string name="image_editing_failed">A képszerkesztés meghiúsult</string>
     <string name="file_edited_successfully">A fájl sikeresen átszerkesztve</string>
@@ -94,7 +94,7 @@
     <string name="wallpaper_set_successfully">Sikeresen beállítva háttérképnek</string>
     <string name="portrait_aspect_ratio">Álló képarány</string>
     <string name="landscape_aspect_ratio">Fekvő képarány</string>
-    <string name="home_screen">Főképernyő</string>
+    <string name="home_screen">Kezdő képernyő</string>
     <string name="lock_screen">Záróképernyő</string>
     <string name="home_and_lock_screen">Kezdő- és Záróképernyő</string>
     <string name="slideshow">Diavetítés</string>
@@ -121,7 +121,7 @@
     <string name="by_last_modified">Utolsó módosítás</string>
     <string name="by_last_modified_daily">Utolsó módosítás (napi)</string>
     <string name="by_last_modified_monthly">Utolsó módosítás (havi)</string>
-    <string name="by_date_taken">Készítés dátuma</string>
+    <string name="by_date_taken">Dátum</string>
     <string name="by_date_taken_daily">Dátum (napi)</string>
     <string name="by_date_taken_monthly">Dátum (havi)</string>
     <string name="by_file_type">Fájl típus</string>

@@ -94,7 +94,7 @@
     <string name="wallpaper_set_successfully">Sfondo impostato correttamente</string>
     <string name="portrait_aspect_ratio">Proporzioni ritratto</string>
     <string name="landscape_aspect_ratio">Proporzioni panorama</string>
-    <string name="home_screen">Schermata Home</string>
+    <string name="home_screen">Schermata principale</string>
     <string name="lock_screen">Schermata di blocco</string>
     <string name="home_and_lock_screen">Entrambe le schermate</string>
     <string name="slideshow">Presentazione</string>
@@ -121,7 +121,7 @@
     <string name="by_last_modified">Ultima modifica</string>
     <string name="by_last_modified_daily">Ultima modifica (giornaliero)</string>
     <string name="by_last_modified_monthly">Ultima modifica (mensile)</string>
-    <string name="by_date_taken">Data acquisizione</string>
+    <string name="by_date_taken">Data creazione</string>
     <string name="by_date_taken_daily">Data di assunzione (giornaliero)</string>
     <string name="by_date_taken_monthly">Data di assunzione (mensile)</string>
     <string name="by_file_type">Tipo di file</string>

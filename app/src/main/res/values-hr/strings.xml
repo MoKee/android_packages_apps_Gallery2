@@ -3,7 +3,7 @@
 <resources>
     <string name="app_name">Jednostavna galerija</string>
     <string name="app_launcher_name">Galerija</string>
-    <string name="edit">Uređivanje</string>
+    <string name="edit">Uredi</string>
     <string name="open_camera">Otvori kameru</string>
     <string name="hidden">(skriveno)</string>
     <string name="excluded">(izuzeto)</string>
@@ -14,7 +14,7 @@
     <string name="all_folders">Sve mape</string>
     <string name="folder_view">Prijeđi na prikaz mape</string>
     <string name="other_folder">Ostale mape</string>
-    <string name="show_on_map">Pokaži na karti</string>
+    <string name="show_on_map">Prikaži na karti</string>
     <string name="unknown_location">Nepoznata lokacija</string>
     <string name="increase_column_count">Povećaj broj stupaca</string>
     <string name="reduce_column_count">Smanji broj stupaca</string>
@@ -63,7 +63,7 @@
     <string name="invalid_values">Molim unesite valjanu rezoluciju</string>
     <string name="editor">Uređivač</string>
     <string name="save">Spremi</string>
-    <string name="rotate">Okretanje</string>
+    <string name="rotate">Rotiraj</string>
     <string name="path">Putanja</string>
     <string name="invalid_image_path">Neispravna putanja slike</string>
     <string name="image_editing_failed">Uređivanje slika nije uspjelo</string>
@@ -71,8 +71,8 @@
     <string name="no_editor_found">Nije pronađen uređivač slika</string>
     <string name="unknown_file_location">Nepoznata lokacija datoteke</string>
     <string name="error_saving_file">Nije moguće presnimiti izvornu datoteku</string>
-    <string name="rotate_left">Zakreni ulijevo</string>
-    <string name="rotate_right">Zakreni udesno</string>
+    <string name="rotate_left">Rotiraj ulijevo</string>
+    <string name="rotate_right">Rotiraj udesno</string>
     <string name="rotate_one_eighty">Rotiraj za 180º</string>
     <string name="flip">Okreni</string>
     <string name="flip_horizontally">Okreni horizontalno</string>
@@ -87,6 +87,8 @@
     <string name="wallpaper_set_successfully">Postavljanje pozadine uspješno</string>
     <string name="portrait_aspect_ratio">Portretni omjer slike</string>
     <string name="landscape_aspect_ratio">Pejzažni omjer slike</string>
+    <string name="home_screen">Početni zaslon</string>
+    <string name="lock_screen">Zaključani zaslon</string>
     <string name="home_and_lock_screen">Početni i zaključani zaslon</string>
     <string name="slideshow">Dijaprojekcija</string>
     <string name="interval">Interval (sekunde):</string>
@@ -105,10 +107,10 @@
     <string name="group_by">Grupiraj po</string>
     <string name="do_not_group_files">Nemoj grupirati ove datoteke</string>
     <string name="by_folder">Mapa</string>
-    <string name="by_last_modified">Datum zadnje izmjenjene</string>
-    <string name="by_date_taken">Datum stvaranja</string>
+    <string name="by_last_modified">Zadnje uređivano</string>
+    <string name="by_date_taken">Datum snimanja</string>
     <string name="by_file_type">Tip datoteke</string>
-    <string name="by_extension">Tip datoteke</string>
+    <string name="by_extension">Vrsta datoteke</string>
     <string name="autoplay_videos">Automatsko pokretanje videa</string>
     <string name="toggle_filename">Uključi prikaz naziva datoteka</string>
     <string name="loop_videos">Ponavljanje videa</string>

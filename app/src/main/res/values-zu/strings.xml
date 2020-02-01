@@ -11,8 +11,8 @@
     <string name="save">Londoloza</string>
     <string name="rotate">Phendula</string>
     <string name="path">Indlela</string>
-    <string name="rotate_left">Phendukisa ngakwesokunxele</string>
-    <string name="rotate_right">Phendukisela ngakwesokudla</string>
+    <string name="rotate_left">Phendukisela kwesokunxele</string>
+    <string name="rotate_right">Phendukisela kwesokudla</string>
     <string name="free_aspect_ratio">Akunalutho</string>
     <string name="slideshow">Umbukiso weslaydi</string>
     <string name="no_animation">Lutho</string>
