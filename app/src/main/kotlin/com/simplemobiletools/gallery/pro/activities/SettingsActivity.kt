@@ -13,10 +13,7 @@ import com.simplemobiletools.commons.models.RadioItem
 import com.simplemobiletools.gallery.pro.R
 import com.simplemobiletools.gallery.pro.dialogs.ManageBottomActionsDialog
 import com.simplemobiletools.gallery.pro.dialogs.ManageExtendedDetailsDialog
-import com.simplemobiletools.gallery.pro.extensions.config
-import com.simplemobiletools.gallery.pro.extensions.emptyTheRecycleBin
-import com.simplemobiletools.gallery.pro.extensions.galleryDB
-import com.simplemobiletools.gallery.pro.extensions.showRecycleBinEmptyingDialog
+import com.simplemobiletools.gallery.pro.extensions.*
 import com.simplemobiletools.gallery.pro.helpers.*
 import com.simplemobiletools.gallery.pro.models.AlbumCover
 import kotlinx.android.synthetic.main.activity_settings.*
@@ -586,7 +583,7 @@ class SettingsActivity : SimpleActivity() {
     private fun setupEmptyRecycleBin() {
         ensureBackgroundThread {
             try {
-                mRecycleBinContentSize = galleryDB.MediumDao().getDeletedMedia().sumByLong { it.size }
+                mRecycleBinContentSize = mediaDB.getDeletedMedia().sumByLong { it.size }
             } catch (ignored: Exception) {
             }
             runOnUiThread {
@@ -682,10 +679,11 @@ class SettingsActivity : SimpleActivity() {
                 put(LAST_EDITOR_CROP_ASPECT_RATIO, config.lastEditorCropAspectRatio)
                 put(LAST_EDITOR_CROP_OTHER_ASPECT_RATIO_X, config.lastEditorCropOtherAspectRatioX)
                 put(LAST_EDITOR_CROP_OTHER_ASPECT_RATIO_Y, config.lastEditorCropOtherAspectRatioY)
-                put(LAST_EDITOR_DRAW_COLOR, config.lastEditorDrawColor)
-                put(LAST_EDITOR_BRUSH_SIZE, config.lastEditorBrushSize)
                 put(LAST_CONFLICT_RESOLUTION, config.lastConflictResolution)
                 put(LAST_CONFLICT_APPLY_TO_ALL, config.lastConflictApplyToAll)
+                put(EDITOR_BRUSH_COLOR, config.editorBrushColor)
+                put(EDITOR_BRUSH_HARDNESS, config.editorBrushHardness)
+                put(EDITOR_BRUSH_SIZE, config.editorBrushSize)
                 put(ALBUM_COVERS, config.albumCovers)
             }
 
@@ -805,10 +803,11 @@ class SettingsActivity : SimpleActivity() {
                 LAST_EDITOR_CROP_ASPECT_RATIO -> config.lastEditorCropAspectRatio = value.toInt()
                 LAST_EDITOR_CROP_OTHER_ASPECT_RATIO_X -> config.lastEditorCropOtherAspectRatioX = value.toString().toFloat()
                 LAST_EDITOR_CROP_OTHER_ASPECT_RATIO_Y -> config.lastEditorCropOtherAspectRatioY = value.toString().toFloat()
-                LAST_EDITOR_DRAW_COLOR -> config.lastEditorDrawColor = value.toInt()
-                LAST_EDITOR_BRUSH_SIZE -> config.lastEditorBrushSize = value.toInt()
                 LAST_CONFLICT_RESOLUTION -> config.lastConflictResolution = value.toInt()
                 LAST_CONFLICT_APPLY_TO_ALL -> config.lastConflictApplyToAll = value.toBoolean()
+                EDITOR_BRUSH_COLOR -> config.editorBrushColor = value.toInt()
+                EDITOR_BRUSH_HARDNESS -> config.editorBrushHardness = value.toString().toFloat()
+                EDITOR_BRUSH_SIZE -> config.editorBrushSize = value.toString().toFloat()
                 ALBUM_COVERS -> {
                     val existingCovers = config.parseAlbumCovers()
                     val existingCoverPaths = existingCovers.map { it.path }.toMutableList() as ArrayList<String>
