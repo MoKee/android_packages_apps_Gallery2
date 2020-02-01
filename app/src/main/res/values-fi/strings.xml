@@ -52,7 +52,7 @@
     <string name="invalid_values">Aseta oikea resoluutio.</string>
     <string name="editor">Editori</string>
     <string name="save">Tallenna</string>
-    <string name="rotate">Kierrä</string>
+    <string name="rotate">Käännä</string>
     <string name="path">Polku</string>
     <string name="invalid_image_path">Kuvan polkua ei ole</string>
     <string name="image_editing_failed">Kuvan muokkaus epäonnistui</string>
@@ -60,8 +60,8 @@
     <string name="no_editor_found">Kuvamuokkainta ei löytynyt</string>
     <string name="unknown_file_location">Tuntematon tiedostosijainti</string>
     <string name="error_saving_file">Lähdetiedoston ylikirjoitus epäonnistui</string>
-    <string name="rotate_left">Kierrä vasemmalle</string>
-    <string name="rotate_right">Kierrä oikealle</string>
+    <string name="rotate_left">Käännä vasemmalle</string>
+    <string name="rotate_right">Käännä oikealle</string>
     <string name="rotate_one_eighty">Käännä 180º</string>
     <string name="flip">Pyöräytä</string>
     <string name="flip_horizontally">Pyöräytä vaakasuoraan</string>
@@ -76,7 +76,7 @@
     <string name="wallpaper_set_successfully">Taustakuva asetettu onnistuneesti</string>
     <string name="portrait_aspect_ratio">Kuvasuhde pystyssä</string>
     <string name="landscape_aspect_ratio">Kuvasuhde vaakatasossa</string>
-    <string name="home_screen">Kotinäyttö</string>
+    <string name="home_screen">Aloitusnäyttö</string>
     <string name="lock_screen">Lukitusnäyttö</string>
     <string name="home_and_lock_screen">Aloitusnäyttö ja lukitusnäyttö</string>
     <string name="slideshow">Diaesitys</string>
@@ -96,7 +96,7 @@
     <string name="group_by">Ryhmittely</string>
     <string name="by_folder">Kansio</string>
     <string name="by_last_modified">Viimeksi muokattu</string>
-    <string name="by_date_taken">Viimeksi kuvattu</string>
+    <string name="by_date_taken">Kuvauspäivä</string>
     <string name="autoplay_videos">Toista videot automaattisesti</string>
     <string name="toggle_filename">Tiedostonimien näkyvyys</string>
     <string name="loop_videos">Jatkuvat videot</string>

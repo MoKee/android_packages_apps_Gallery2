@@ -69,7 +69,7 @@
     <string name="invalid_values">Prosím zadejte platné rozlišení</string>
     <string name="editor">Editor</string>
     <string name="save">Uložit</string>
-    <string name="rotate">Otáčení</string>
+    <string name="rotate">Otočit</string>
     <string name="path">Cesta</string>
     <string name="invalid_image_path">Neplatná cesta</string>
     <string name="image_editing_failed">Úprava souboru selhala</string>
@@ -95,7 +95,7 @@
     <string name="portrait_aspect_ratio">Poměr stran na výšku</string>
     <string name="landscape_aspect_ratio">Poměr stran na šířku</string>
     <string name="home_screen">Domovská obrazovka</string>
-    <string name="lock_screen">Zámek displeje</string>
+    <string name="lock_screen">Zamykací obrazovka</string>
     <string name="home_and_lock_screen">Domovská a zamykací obrazovka</string>
     <string name="slideshow">Prezentace</string>
     <string name="interval">Interval (sekundy):</string>
@@ -118,14 +118,14 @@
     <string name="group_by">Seskupit podle</string>
     <string name="do_not_group_files">Neslučovat soubory</string>
     <string name="by_folder">Složka</string>
-    <string name="by_last_modified">Poslední úpravy</string>
+    <string name="by_last_modified">Naposledy upraveno</string>
     <string name="by_last_modified_daily">Naposledy upraveno (denně)</string>
     <string name="by_last_modified_monthly">Naposledy upraveno (měsíčně)</string>
-    <string name="by_date_taken">Data pořízení</string>
+    <string name="by_date_taken">Datum pořízení</string>
     <string name="by_date_taken_daily">Datum pořízení (denně)</string>
     <string name="by_date_taken_monthly">Datum pořízení (měsíčně)</string>
     <string name="by_file_type">Typ souboru</string>
-    <string name="by_extension">Přípony</string>
+    <string name="by_extension">Přípona</string>
     <string name="grouping_and_sorting">Vezměte prosím na vědomí, že seskupování a třídění jsou 2 nezávislé pole</string>
     <string name="folder_on_widget">Složka zobrazená na widgetu:</string>
     <string name="show_folder_name">Zobrazit název složky</string>

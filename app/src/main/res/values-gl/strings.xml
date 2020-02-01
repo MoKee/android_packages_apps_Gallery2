@@ -13,7 +13,7 @@
     <string name="all_folders">Todos os cartafoles</string>
     <string name="folder_view">Mudar a vista por cartafol</string>
     <string name="other_folder">Outro cartafol</string>
-    <string name="show_on_map">Amosar no mapa</string>
+    <string name="show_on_map">Mostrar no mapa</string>
     <string name="unknown_location">Localización descoñecida</string>
     <string name="increase_column_count">Aumente o número de columnas</string>
     <string name="reduce_column_count">Reduza o número de columnas</string>
@@ -46,12 +46,12 @@
     <string name="included_activity_placeholder">Si ten algún cartafol con medios, mais non foi recoñecido polo aplicativo, pódeo engadir manualmente.\n\nEngadindo aquí elementos non eliminará outros.</string>
     <string name="resize">Redimensionar</string>
     <string name="resize_and_save">Selección da redimensión e gardar</string>
-    <string name="width">Largura</string>
-    <string name="height">Altura</string>
+    <string name="width">Ancho</string>
+    <string name="height">Alto</string>
     <string name="keep_aspect_ratio">Manter proporcións</string>
     <string name="invalid_values">Por favor introduza unha resolución válida</string>
     <string name="save">Gardar</string>
-    <string name="rotate">Xirar</string>
+    <string name="rotate">Rotar</string>
     <string name="path">Ruta</string>
     <string name="invalid_image_path">Ruta a imaxe non válida</string>
     <string name="image_editing_failed">Fallo na edición da imaxe</string>
@@ -59,8 +59,8 @@
     <string name="no_editor_found">Non se atopou ningún editor</string>
     <string name="unknown_file_location">Localización do ficheiro descoñecida</string>
     <string name="error_saving_file">Non se puido sobreescribir o ficheiro</string>
-    <string name="rotate_left">Xirar a esquerda</string>
-    <string name="rotate_right">Xirar á dereita</string>
+    <string name="rotate_left">Rotar a esquerda</string>
+    <string name="rotate_right">Rotar a dereita</string>
     <string name="rotate_one_eighty">Rotar 180º</string>
     <string name="flip">Voltear</string>
     <string name="flip_horizontally">Voltear horizontalmente</string>
@@ -75,6 +75,8 @@
     <string name="wallpaper_set_successfully">Fondo de pantalla establecido correctamente</string>
     <string name="portrait_aspect_ratio">Proporción de Retrato</string>
     <string name="landscape_aspect_ratio">Proporción de Paisaxe</string>
+    <string name="home_screen">Pantalla de incio</string>
+    <string name="lock_screen">Pantalla de bloqueo</string>
     <string name="home_and_lock_screen">Pantallas de inicio e bloqueo</string>
     <string name="slideshow">Presentación</string>
     <string name="interval">Intervalo (segundos):</string>
@@ -93,9 +95,9 @@
     <string name="group_direct_subfolders">Agrupar subcartafoles directos</string>
     <string name="group_by">Agrupar por</string>
     <string name="do_not_group_files">Non agrupar ficheiros</string>
-    <string name="by_folder">Carpeta</string>
-    <string name="by_last_modified">Modificación</string>
-    <string name="by_date_taken">Creación</string>
+    <string name="by_folder">Cartafol</string>
+    <string name="by_last_modified">Último modificado</string>
+    <string name="by_date_taken">Data de captura</string>
     <string name="by_file_type">Tipo de ficheior</string>
     <string name="by_extension">Extensión</string>
     <string name="autoplay_videos">Reproducir vídeos automticamente</string>

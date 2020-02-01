@@ -94,7 +94,7 @@
     <string name="wallpaper_set_successfully">Papel de parede com sucesso</string>
     <string name="portrait_aspect_ratio">Retrato</string>
     <string name="landscape_aspect_ratio">Paisagem</string>
-    <string name="home_screen">Tela Inicial</string>
+    <string name="home_screen">Tela inicial</string>
     <string name="lock_screen">Tela de bloqueio</string>
     <string name="home_and_lock_screen">Tela inicial e de bloqueio</string>
     <string name="slideshow">Apresentação</string>
@@ -118,10 +118,10 @@
     <string name="group_by">Agrupar por</string>
     <string name="do_not_group_files">Não agrupar arquivos</string>
     <string name="by_folder">Pasta</string>
-    <string name="by_last_modified">Data de modificação</string>
+    <string name="by_last_modified">Última modificação</string>
     <string name="by_last_modified_daily">Última modificação (diária)</string>
     <string name="by_last_modified_monthly">Última modificação (mensal)</string>
-    <string name="by_date_taken">Data de criação</string>
+    <string name="by_date_taken">Data da foto</string>
     <string name="by_date_taken_daily">Data de tomada (diariamente)</string>
     <string name="by_date_taken_monthly">Data de tomada (mensalmente)</string>
     <string name="by_file_type">Tipo de Arquivo</string>

@@ -69,8 +69,8 @@
     <string name="no_editor_found">Δεν βρέθηκε επεργαστής εικόνων</string>
     <string name="unknown_file_location">Άγνωστη τοποθεσία αρχείου</string>
     <string name="error_saving_file">Δεν ήταν δυνατή η αντικατάσταση του αρχείου πηγής</string>
-    <string name="rotate_left">Περιστροφή προς τα αριστερά</string>
-    <string name="rotate_right">Περιστροφή προς τα δεξιά</string>
+    <string name="rotate_left">Περιστροφή αριστερά</string>
+    <string name="rotate_right">Περιστροφή δεξιά</string>
     <string name="rotate_one_eighty">Περιστροφή κατά 180º</string>
     <string name="flip">Αναποδογύρισμα</string>
     <string name="flip_horizontally">Οριζόντιο αναποδογύρισμα</string>
@@ -86,7 +86,7 @@
     <string name="portrait_aspect_ratio">Αναλογία σε κατακόρυφη προβολή</string>
     <string name="landscape_aspect_ratio">Αναλογία σε οριζόντια προβολή</string>
     <string name="home_screen">Αρχική οθόνη</string>
-    <string name="lock_screen">Οθόνη Κλειδώματος</string>
+    <string name="lock_screen">Οθόνη κλειδώματος</string>
     <string name="home_and_lock_screen">Αρχική οθόνη και κλειδώματος</string>
     <string name="slideshow">Παρουσίαση διαφανιών</string>
     <string name="interval">Χρόνος επανάληψης (δευτ.) :</string>
@@ -105,9 +105,9 @@
     <string name="group_direct_subfolders">Ομαδοποίηση υποφακέλων</string>
     <string name="group_by">Ομαδοποίηση κατά</string>
     <string name="do_not_group_files">Χωρίς</string>
-    <string name="by_folder">Φάκελος</string>
+    <string name="by_folder">Φάκελο</string>
     <string name="by_last_modified">Τελευταία τροποποίηση</string>
-    <string name="by_date_taken">Ημερ. λήψης</string>
+    <string name="by_date_taken">Ημερομηνία λήψης</string>
     <string name="by_file_type">Τύπο αρχείου</string>
     <string name="by_extension">Επέκταση</string>
     <string name="autoplay_videos">Αυτόματη αναπαραγωγή βίντεο</string>

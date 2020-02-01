@@ -70,7 +70,7 @@
     <string name="invalid_values">Молимо Вас да унесете исправну резолуцију</string>
     <string name="editor">Уређивач</string>
     <string name="save">Сачувај</string>
-    <string name="rotate">Ротација</string>
+    <string name="rotate">Ротирај</string>
     <string name="path">Путања</string>
     <string name="invalid_image_path">Неисправна путања до слике</string>
     <string name="image_editing_failed">Грешка у исправци слике</string>

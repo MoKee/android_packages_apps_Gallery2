@@ -14,7 +14,7 @@
     <string name="all_folders">全てのフォルダ</string>
     <string name="folder_view">フォルダを選択する</string>
     <string name="other_folder">その他のフォルダ</string>
-    <string name="show_on_map">地図で表示</string>
+    <string name="show_on_map">地図上で表示</string>
     <string name="unknown_location">位置情報がありません</string>
     <string name="increase_column_count">列数を増やす</string>
     <string name="reduce_column_count">列数を減らす</string>
@@ -109,7 +109,7 @@
     <string name="group_by">グループ分け</string>
     <string name="do_not_group_files">何もしない</string>
     <string name="by_folder">フォルダ</string>
-    <string name="by_last_modified">最終更新日時</string>
+    <string name="by_last_modified">更新日時</string>
     <string name="by_date_taken">撮影日時</string>
     <string name="by_file_type">ファイル形式</string>
     <string name="by_extension">拡張子</string>
