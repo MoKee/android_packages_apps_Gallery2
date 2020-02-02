@@ -9,4 +9,25 @@
     <string name="other_aspect_ratio">အခြား</string>
     <string name="no_animation">တစ်ခုမှမဟုတ်ပါ</string>
     <string name="by_date_taken">ရိုက်ကူးခဲ့သောနေ့</string>
+    <string name="pesdk_transform_button_freeCrop">မိမိစိတ်ကြိုက်</string>
+    <string name="pesdk_transform_button_resetCrop">ပြန်လည်စတင်စေရန်</string>
+    <string name="pesdk_filter_asset_none">တစ်ခုမှမဟုတ်ပါ</string>
+    <string name="pesdk_adjustments_button_exposureTool">အလင်းရမှု</string>
+    <string name="pesdk_adjustments_button_brightnessTool">အလင်းတောက်ပမှု</string>
+    <string name="pesdk_adjustments_button_contrastTool">အလင်းအမှောင်</string>
+    <string name="pesdk_adjustments_button_saturationTool">ရောင်ပြည့်</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">ပြတ်သားမှု</string>
+    <string name="pesdk_adjustments_button_reset">ပြန်လည်စတင်စေရန်</string>
+    <string name="pesdk_focus_title_disabled">တစ်ခုမှမဟုတ်ပါ</string>
+    <string name="pesdk_text_button_edit">တည်းဖြတ်မည်</string>
+    <string name="pesdk_text_button_color">ရောင်စုံ</string>
+    <string name="pesdk_brush_button_color">ရောင်စုံ</string>
+    <string name="pesdk_brush_button_size">အရွယ်အစား</string>
+    <string name="pesdk_editor_cancel">မလုပ်တော့</string>
+    <string name="pesdk_editor_accept">လက်ခံရန်</string>
+    <string name="pesdk_common_button_undo">နောက်ပြန်လုပ်ပါ</string>
+    <string name="pesdk_common_button_redo">ပြန်လုပ်ရန်</string>
+    <string name="pesdk_common_title_blueColor">အပြာ</string>
+    <string name="pesdk_common_title_redColor">အနီ</string>
+    <string name="pesdk_common_title_greenColor">အစိမ်း</string>
 </resources>

@@ -7,4 +7,23 @@
     <string name="free_aspect_ratio">Ekkert</string>
     <string name="no_animation">Engin</string>
     <string name="by_date_taken">Tökudagur</string>
+    <string name="pesdk_transform_button_freeCrop">Sérsniðinn</string>
+    <string name="pesdk_transform_button_resetCrop">Endurstilla</string>
+    <string name="pesdk_filter_asset_none">Engin</string>
+    <string name="pesdk_adjustments_button_exposureTool">Lýsing</string>
+    <string name="pesdk_adjustments_button_brightnessTool">Birtustig</string>
+    <string name="pesdk_adjustments_button_contrastTool">Birtuskil</string>
+    <string name="pesdk_adjustments_button_saturationTool">Mettun</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">Skerpa</string>
+    <string name="pesdk_adjustments_button_reset">Endurstilla</string>
+    <string name="pesdk_focus_title_disabled">Engin</string>
+    <string name="pesdk_text_button_color">Litur</string>
+    <string name="pesdk_brush_button_color">Litur</string>
+    <string name="pesdk_brush_button_size">Stærð</string>
+    <string name="pesdk_editor_accept">Samþykkja</string>
+    <string name="pesdk_common_button_undo">Afturkalla</string>
+    <string name="pesdk_common_button_redo">Endurgera</string>
+    <string name="pesdk_common_title_blueColor">Blár</string>
+    <string name="pesdk_common_title_redColor">Rauður</string>
+    <string name="pesdk_common_title_greenColor">Grænn</string>
 </resources>

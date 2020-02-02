@@ -11,4 +11,26 @@
     <string name="lock_screen">Lock screen</string>
     <string name="no_animation">কোনো কিছুই নয়</string>
     <string name="by_date_taken">তোলার তারিখ</string>
+    <string name="pesdk_transform_button_freeCrop">কাস্টম</string>
+    <string name="pesdk_transform_button_resetCrop">পুনরায় সেট করুন</string>
+    <string name="pesdk_filter_asset_none">কোনো কিছুই নয়</string>
+    <string name="pesdk_adjustments_button_exposureTool">এক্সপোজার</string>
+    <string name="pesdk_adjustments_button_brightnessTool">উজ্জ্বলতা</string>
+    <string name="pesdk_adjustments_button_contrastTool">কনট্রাস্ট</string>
+    <string name="pesdk_adjustments_button_saturationTool">পরিপৃক্তি</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">তীক্ষ্ণতা</string>
+    <string name="pesdk_adjustments_button_reset">পুনরায় সেট করুন</string>
+    <string name="pesdk_focus_title_disabled">কোনো কিছুই নয়</string>
+    <string name="pesdk_text_button_edit">Edit</string>
+    <string name="pesdk_text_button_color">রঙ</string>
+    <string name="pesdk_brush_button_color">রঙ</string>
+    <string name="pesdk_brush_button_size">আকার</string>
+    <string name="pesdk_editor_button_closeEditorAlertConfirmation">হ্যাঁ</string>
+    <string name="pesdk_editor_button_closeEditorAlertCancelation">না</string>
+    <string name="pesdk_editor_accept">স্বীকার করুন</string>
+    <string name="pesdk_common_button_undo">পূর্বাবস্থায় ফিরুন</string>
+    <string name="pesdk_common_button_redo">পুনরায় করুন</string>
+    <string name="pesdk_common_title_blueColor">নীল</string>
+    <string name="pesdk_common_title_redColor">লাল</string>
+    <string name="pesdk_common_title_greenColor">সবুজ</string>
 </resources>

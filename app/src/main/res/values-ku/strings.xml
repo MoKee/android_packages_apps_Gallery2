@@ -15,4 +15,26 @@
     <string name="no_animation">هیچیان</string>
     <string name="group_by">له‌لایه‌ن گروپه‌وه‌</string>
     <string name="by_date_taken">ڕۆژی گرتنی وێنه‌که‌</string>
+    <string name="pesdk_transform_button_freeCrop">تایبەت بە خۆ</string>
+    <string name="pesdk_transform_button_resetCrop">ڕێکخستنەوە</string>
+    <string name="pesdk_filter_asset_none">هیچیان</string>
+    <string name="pesdk_adjustments_button_exposureTool">ڕووناکیپێدان</string>
+    <string name="pesdk_adjustments_button_brightnessTool">ڕۆشنایی</string>
+    <string name="pesdk_adjustments_button_contrastTool">کۆنتراست</string>
+    <string name="pesdk_adjustments_button_saturationTool">تێرایی</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">زبری</string>
+    <string name="pesdk_adjustments_button_reset">ڕێکخستنەوە</string>
+    <string name="pesdk_focus_title_disabled">هیچیان</string>
+    <string name="pesdk_text_button_color">ڕەنگ</string>
+    <string name="pesdk_text_button_delete">سڕینه‌وه‌</string>
+    <string name="pesdk_brush_button_color">ڕەنگ</string>
+    <string name="pesdk_brush_button_size">قه‌باره‌</string>
+    <string name="pesdk_brush_button_delete">سڕینه‌وه‌</string>
+    <string name="pesdk_editor_button_closeEditorAlertConfirmation">بەڵێ</string>
+    <string name="pesdk_editor_save">پاشەکەوتکردن</string>
+    <string name="pesdk_common_button_undo">پاشگەزبوون</string>
+    <string name="pesdk_common_button_redo">گه‌ڕانه‌وه‌ بۆ هه‌نگاوی داهاتوو</string>
+    <string name="pesdk_common_title_blueColor">شین</string>
+    <string name="pesdk_common_title_redColor">سوور</string>
+    <string name="pesdk_common_title_greenColor">سەوز</string>
 </resources>

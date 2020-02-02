@@ -16,4 +16,26 @@
     <string name="other_aspect_ratio">ఇతరం</string>
     <string name="no_animation">ఏదీ లేదు</string>
     <string name="by_date_taken">తీసిన తేదీ</string>
+    <string name="pesdk_transform_button_freeCrop">అనుకూలం</string>
+    <string name="pesdk_transform_button_resetCrop">రీసెట్ చేయి</string>
+    <string name="pesdk_filter_asset_none">ఏదీ లేదు</string>
+    <string name="pesdk_adjustments_button_exposureTool">ఎక్స్‌పోజర్</string>
+    <string name="pesdk_adjustments_button_brightnessTool">ప్రకాశం</string>
+    <string name="pesdk_adjustments_button_contrastTool">కాంట్రాస్ట్</string>
+    <string name="pesdk_adjustments_button_saturationTool">సంతృప్తీకరణ</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">ప్రకాశవంతం</string>
+    <string name="pesdk_adjustments_button_reset">రీసెట్ చేయి</string>
+    <string name="pesdk_focus_title_disabled">ఏదీ లేదు</string>
+    <string name="pesdk_text_title_name">పాఠం</string>
+    <string name="pesdk_text_button_edit">సవరించు</string>
+    <string name="pesdk_text_button_color">రంగు</string>
+    <string name="pesdk_brush_button_color">రంగు</string>
+    <string name="pesdk_brush_button_size">పరిమాణం</string>
+    <string name="pesdk_editor_accept">ఆమోదిస్తున్నాను</string>
+    <string name="pesdk_editor_save">సేవ్ చేయి</string>
+    <string name="pesdk_common_button_undo">చర్య రద్దు చేయి</string>
+    <string name="pesdk_common_button_redo">చర్య పునరావృతం చేయి</string>
+    <string name="pesdk_common_title_blueColor">నీలి రంగు</string>
+    <string name="pesdk_common_title_redColor">ఎరుపు రంగు</string>
+    <string name="pesdk_common_title_greenColor">పచ్చ రంగు</string>
 </resources>

@@ -3,4 +3,10 @@
 <resources>
     <string name="resize">Re-size</string>
     <string name="free_aspect_ratio">None</string>
+    <string name="pesdk_transform_button_freeCrop">Customise</string>
+    <string name="pesdk_text_button_color">Colour</string>
+    <string name="pesdk_brush_button_color">Colour</string>
+    <string name="pesdk_editor_cancel">Cancel</string>
+    <string name="pesdk_editor_accept">Accept</string>
+    <string name="pesdk_common_title_grayColor">Grey</string>
 </resources>

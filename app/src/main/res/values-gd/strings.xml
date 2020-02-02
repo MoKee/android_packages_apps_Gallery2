@@ -5,4 +5,8 @@
     <string name="save">Sàbhail</string>
     <string name="simple_wallpaper">Gailearaidh</string>
     <string name="no_animation">Chan eil gin</string>
+    <string name="pesdk_filter_asset_none">Chan eil gin</string>
+    <string name="pesdk_focus_title_disabled">Chan eil gin</string>
+    <string name="pesdk_editor_save">Sàbhail</string>
+    <string name="pesdk_common_title_grayColor">Liath</string>
 </resources>

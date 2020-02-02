@@ -16,4 +16,27 @@
     <string name="other_aspect_ratio">മറ്റുള്ളവ</string>
     <string name="no_animation">ആരിൽ നിന്നും വേണ്ട</string>
     <string name="by_date_taken">എടുത്ത തീയതി</string>
+    <string name="pesdk_transform_button_freeCrop">ഇഷ്‌ടാനുസൃതം</string>
+    <string name="pesdk_transform_button_resetCrop">പുനഃസജ്ജമാക്കുക</string>
+    <string name="pesdk_filter_asset_none">ആരിൽ നിന്നും വേണ്ട</string>
+    <string name="pesdk_adjustments_button_exposureTool">എക്സ്പോഷർ</string>
+    <string name="pesdk_adjustments_button_brightnessTool">തെളിച്ചം</string>
+    <string name="pesdk_adjustments_button_contrastTool">ദൃശ്യ തീവ്രത</string>
+    <string name="pesdk_adjustments_button_saturationTool">സാച്ചുറേഷൻ</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">ഷാര്‍പ്പനെസ്</string>
+    <string name="pesdk_adjustments_button_reset">പുനഃസജ്ജമാക്കുക</string>
+    <string name="pesdk_focus_title_disabled">ആരിൽ നിന്നും വേണ്ട</string>
+    <string name="pesdk_text_title_name">ടെക്സ്റ്റ്</string>
+    <string name="pesdk_text_button_edit">എഡിറ്റുചെയ്യുക</string>
+    <string name="pesdk_text_button_color">വർണ്ണം</string>
+    <string name="pesdk_brush_button_color">വർണ്ണം</string>
+    <string name="pesdk_brush_button_size">വലുപ്പം</string>
+    <string name="pesdk_editor_cancel">റദ്ദാക്കുക</string>
+    <string name="pesdk_editor_accept">അംഗീകരിക്കുക</string>
+    <string name="pesdk_editor_save">സംരക്ഷിക്കുക</string>
+    <string name="pesdk_common_button_undo">പഴയപടിയാക്കുക</string>
+    <string name="pesdk_common_button_redo">വീണ്ടും ചെയ്യുക</string>
+    <string name="pesdk_common_title_blueColor">നീല</string>
+    <string name="pesdk_common_title_redColor">ചുവപ്പ്</string>
+    <string name="pesdk_common_title_greenColor">പച്ച</string>
 </resources>

@@ -7,4 +7,23 @@
     <string name="free_aspect_ratio">Qo‘lda</string>
     <string name="no_animation">Asl</string>
     <string name="by_date_taken">Olingan sanasi</string>
+    <string name="pesdk_transform_button_freeCrop">Maxsus</string>
+    <string name="pesdk_transform_button_resetCrop">Tiklash</string>
+    <string name="pesdk_filter_asset_none">Asl</string>
+    <string name="pesdk_adjustments_button_exposureTool">Tasvirni tutib turish</string>
+    <string name="pesdk_adjustments_button_brightnessTool">Yorqinlik</string>
+    <string name="pesdk_adjustments_button_contrastTool">Kontrast</string>
+    <string name="pesdk_adjustments_button_saturationTool">Och/to‘qlik</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">Keskinlik</string>
+    <string name="pesdk_adjustments_button_reset">Tiklash</string>
+    <string name="pesdk_focus_title_disabled">Asl</string>
+    <string name="pesdk_text_button_color">Rang</string>
+    <string name="pesdk_brush_button_color">Rang</string>
+    <string name="pesdk_brush_button_size">Hajmi</string>
+    <string name="pesdk_editor_accept">Roziman</string>
+    <string name="pesdk_common_button_undo">Bekor qilish</string>
+    <string name="pesdk_common_button_redo">Oldinga o‘tkazish</string>
+    <string name="pesdk_common_title_blueColor">Ko‘k</string>
+    <string name="pesdk_common_title_redColor">Qizil</string>
+    <string name="pesdk_common_title_greenColor">Yashil</string>
 </resources>

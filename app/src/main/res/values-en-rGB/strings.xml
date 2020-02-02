@@ -10,4 +10,15 @@
     <string name="other_aspect_ratio">Other</string>
     <string name="home_screen">Home screen</string>
     <string name="lock_screen">Lock screen</string>
+    <string name="pesdk_transform_button_freeCrop">Customise</string>
+    <string name="pesdk_adjustments_button_brightnessTool">Brightness</string>
+    <string name="pesdk_text_title_textColor">Text Colour</string>
+    <string name="pesdk_text_button_edit">Edit</string>
+    <string name="pesdk_text_button_color">Colour</string>
+    <string name="pesdk_brush_button_color">Colour</string>
+    <string name="pesdk_editor_button_closeEditorAlertConfirmation">Yes</string>
+    <string name="pesdk_editor_button_closeEditorAlertCancelation">No</string>
+    <string name="pesdk_editor_cancel">Cancel</string>
+    <string name="pesdk_editor_accept">Accept</string>
+    <string name="pesdk_editor_save">Save</string>
 </resources>

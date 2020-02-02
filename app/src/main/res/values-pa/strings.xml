@@ -7,4 +7,23 @@
     <string name="free_aspect_ratio">ਕੋਈ ਨਹੀਂ</string>
     <string name="no_animation">ਕੋਈ ਨਹੀਂ</string>
     <string name="by_date_taken">ਜਿਸ ਤਾਰੀਖ ਨੂੰ ਲਈ ਗਈ</string>
+    <string name="pesdk_transform_button_freeCrop">ਕਸਟਮ</string>
+    <string name="pesdk_transform_button_resetCrop">ਰੀਸੈਟ ਕਰੋ</string>
+    <string name="pesdk_filter_asset_none">ਕੋਈ ਨਹੀਂ</string>
+    <string name="pesdk_adjustments_button_exposureTool">ਐਕਸਪੋਜ਼ਰ</string>
+    <string name="pesdk_adjustments_button_brightnessTool">ਚਮਕ</string>
+    <string name="pesdk_adjustments_button_contrastTool">ਕੰਟ੍ਰਾਸਟ</string>
+    <string name="pesdk_adjustments_button_saturationTool">ਸੰਪੂਰਤੀ</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">ਸ਼ਾਰਪਨੈਸ</string>
+    <string name="pesdk_adjustments_button_reset">ਰੀਸੈਟ ਕਰੋ</string>
+    <string name="pesdk_focus_title_disabled">ਕੋਈ ਨਹੀਂ</string>
+    <string name="pesdk_text_button_color">ਰੰਗ</string>
+    <string name="pesdk_brush_button_color">ਰੰਗ</string>
+    <string name="pesdk_brush_button_size">ਆਕਾਰ</string>
+    <string name="pesdk_editor_accept">ਸਵੀਕਾਰ ਕਰੋ</string>
+    <string name="pesdk_common_button_undo">ਪਹਿਲਾਂ ਵਰਗਾ ਕਰੋ</string>
+    <string name="pesdk_common_button_redo">ਰੀਡੂ ਕਰੋ</string>
+    <string name="pesdk_common_title_blueColor">ਨੀਲਾ</string>
+    <string name="pesdk_common_title_redColor">ਲਾਲ</string>
+    <string name="pesdk_common_title_greenColor">ਹਰਾ</string>
 </resources>

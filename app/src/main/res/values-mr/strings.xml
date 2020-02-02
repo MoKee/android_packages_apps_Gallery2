@@ -16,4 +16,26 @@
     <string name="other_aspect_ratio">अन्य</string>
     <string name="no_animation">काहीही नाही</string>
     <string name="by_date_taken">तारीख घेतली</string>
+    <string name="pesdk_transform_button_freeCrop">सानुकूल</string>
+    <string name="pesdk_transform_button_resetCrop">रीसेट करा</string>
+    <string name="pesdk_filter_asset_none">काहीही नाही</string>
+    <string name="pesdk_adjustments_button_exposureTool">एक्सपोजर</string>
+    <string name="pesdk_adjustments_button_brightnessTool">चमक</string>
+    <string name="pesdk_adjustments_button_contrastTool">तीव्रता</string>
+    <string name="pesdk_adjustments_button_saturationTool">संपृक्तता</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">स्पष्टपणा</string>
+    <string name="pesdk_adjustments_button_reset">रीसेट करा</string>
+    <string name="pesdk_focus_title_disabled">काहीही नाही</string>
+    <string name="pesdk_text_title_name">मजकूर</string>
+    <string name="pesdk_text_button_edit">संपादित करा</string>
+    <string name="pesdk_text_button_color">रंग</string>
+    <string name="pesdk_brush_button_color">रंग</string>
+    <string name="pesdk_brush_button_size">आकार</string>
+    <string name="pesdk_editor_accept">स्वीकारा</string>
+    <string name="pesdk_editor_save">जतन करा</string>
+    <string name="pesdk_common_button_undo">पूर्ववत करा</string>
+    <string name="pesdk_common_button_redo">पुन्हा करा</string>
+    <string name="pesdk_common_title_blueColor">निळा</string>
+    <string name="pesdk_common_title_redColor">लाल</string>
+    <string name="pesdk_common_title_greenColor">हिरवा</string>
 </resources>

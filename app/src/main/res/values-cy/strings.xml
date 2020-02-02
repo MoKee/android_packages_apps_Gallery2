@@ -5,4 +5,18 @@
     <string name="simple_wallpaper">Oriel</string>
     <string name="home_screen">Sgrin gartref</string>
     <string name="lock_screen">Sgrin cloi</string>
+    <string name="pesdk_transform_button_freeCrop">Addasedig</string>
+    <string name="pesdk_transform_button_resetCrop">Ailosod</string>
+    <string name="pesdk_adjustments_button_reset">Ailosod</string>
+    <string name="pesdk_text_button_add">Ychwanegu</string>
+    <string name="pesdk_text_button_delete">Dileu</string>
+    <string name="pesdk_brush_button_delete">Dileu</string>
+    <string name="pesdk_editor_button_closeEditorAlertConfirmation">Iawn</string>
+    <string name="pesdk_editor_button_closeEditorAlertCancelation">Na</string>
+    <string name="pesdk_editor_cancel">Canslo</string>
+    <string name="pesdk_editor_accept">Derbyn</string>
+    <string name="pesdk_common_title_grayColor">Llwyd</string>
+    <string name="pesdk_common_title_blueColor">Glas</string>
+    <string name="pesdk_common_title_redColor">Coch</string>
+    <string name="pesdk_common_title_greenColor">Gwyrdd</string>
 </resources>

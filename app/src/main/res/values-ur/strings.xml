@@ -7,4 +7,23 @@
     <string name="free_aspect_ratio">کوئی نہیں</string>
     <string name="no_animation">کوئی نہیں</string>
     <string name="by_date_taken">لیے جانے کی تاریخ</string>
+    <string name="pesdk_transform_button_freeCrop">حسب ضرورت</string>
+    <string name="pesdk_transform_button_resetCrop">دوبارہ ترتیب دیں</string>
+    <string name="pesdk_filter_asset_none">کوئی نہیں</string>
+    <string name="pesdk_adjustments_button_exposureTool">ایکسپوژر</string>
+    <string name="pesdk_adjustments_button_brightnessTool">چمکیلا پن</string>
+    <string name="pesdk_adjustments_button_contrastTool">تضاد</string>
+    <string name="pesdk_adjustments_button_saturationTool">سیچوریشن</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">نفاست</string>
+    <string name="pesdk_adjustments_button_reset">دوبارہ ترتیب دیں</string>
+    <string name="pesdk_focus_title_disabled">کوئی نہیں</string>
+    <string name="pesdk_text_button_color">رنگ</string>
+    <string name="pesdk_brush_button_color">رنگ</string>
+    <string name="pesdk_brush_button_size">سائز</string>
+    <string name="pesdk_editor_accept">قبول کریں</string>
+    <string name="pesdk_common_button_undo">کالعدم کریں</string>
+    <string name="pesdk_common_button_redo">دوبارہ کریں</string>
+    <string name="pesdk_common_title_blueColor">نیلا</string>
+    <string name="pesdk_common_title_redColor">سرخ</string>
+    <string name="pesdk_common_title_greenColor">سبز</string>
 </resources>

@@ -7,4 +7,23 @@
     <string name="free_aspect_ratio">Ешқандай</string>
     <string name="no_animation">Ешқандай</string>
     <string name="by_date_taken">Түсіру мерзімі</string>
+    <string name="pesdk_transform_button_freeCrop">Қалыпты</string>
+    <string name="pesdk_transform_button_resetCrop">Қайта реттеу</string>
+    <string name="pesdk_filter_asset_none">Ешқандай</string>
+    <string name="pesdk_adjustments_button_exposureTool">Кадр</string>
+    <string name="pesdk_adjustments_button_brightnessTool">Жарықтығы</string>
+    <string name="pesdk_adjustments_button_contrastTool">Контраст</string>
+    <string name="pesdk_adjustments_button_saturationTool">Қанықтығы</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">Анықтығы</string>
+    <string name="pesdk_adjustments_button_reset">Қайта реттеу</string>
+    <string name="pesdk_focus_title_disabled">Ешқандай</string>
+    <string name="pesdk_text_button_color">Түс</string>
+    <string name="pesdk_brush_button_color">Түс</string>
+    <string name="pesdk_brush_button_size">Өлшем</string>
+    <string name="pesdk_editor_accept">Қабылдау</string>
+    <string name="pesdk_common_button_undo">Кері орындау</string>
+    <string name="pesdk_common_button_redo">Қайта жасау</string>
+    <string name="pesdk_common_title_blueColor">Көк</string>
+    <string name="pesdk_common_title_redColor">Қызыл</string>
+    <string name="pesdk_common_title_greenColor">Жасыл</string>
 </resources>

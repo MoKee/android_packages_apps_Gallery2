@@ -12,4 +12,11 @@
     <string name="rotate_right">সোঁফালে ঘূৰোৱা</string>
     <string name="other_aspect_ratio">অন্যান্য</string>
     <string name="no_animation">হাল্লা</string>
+    <string name="pesdk_filter_asset_none">হাল্লা</string>
+    <string name="pesdk_adjustments_button_exposureTool">প্ৰকাশ</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">শ্বাৰ্পনেছ</string>
+    <string name="pesdk_focus_title_disabled">হাল্লা</string>
+    <string name="pesdk_text_title_name">টেক্সট</string>
+    <string name="pesdk_text_button_edit">সম্পাদনা</string>
+    <string name="pesdk_editor_save">ছেভ কৰা</string>
 </resources>

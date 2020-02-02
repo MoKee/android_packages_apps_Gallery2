@@ -16,4 +16,26 @@
     <string name="other_aspect_ratio">અન્ય</string>
     <string name="no_animation">કોઈ નહીં</string>
     <string name="by_date_taken">લેવાયાની તારીખ</string>
+    <string name="pesdk_transform_button_freeCrop">કસ્ટમ</string>
+    <string name="pesdk_transform_button_resetCrop">રીસેટ કરો</string>
+    <string name="pesdk_filter_asset_none">કોઈ નહીં</string>
+    <string name="pesdk_adjustments_button_exposureTool">એક્સપોઝર</string>
+    <string name="pesdk_adjustments_button_brightnessTool">તેજ</string>
+    <string name="pesdk_adjustments_button_contrastTool">કોન્ટ્રાસ્ટ</string>
+    <string name="pesdk_adjustments_button_saturationTool">સંતૃપ્તતા</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">તીક્ષ્ણતા</string>
+    <string name="pesdk_adjustments_button_reset">રીસેટ કરો</string>
+    <string name="pesdk_focus_title_disabled">કોઈ નહીં</string>
+    <string name="pesdk_text_title_name">લખાણ</string>
+    <string name="pesdk_text_button_edit">સંપાદિત કરો</string>
+    <string name="pesdk_text_button_color">રંગ</string>
+    <string name="pesdk_brush_button_color">રંગ</string>
+    <string name="pesdk_brush_button_size">કદ</string>
+    <string name="pesdk_editor_accept">સ્વીકારો</string>
+    <string name="pesdk_editor_save">સાચવો</string>
+    <string name="pesdk_common_button_undo">પૂર્વવત્ કરો</string>
+    <string name="pesdk_common_button_redo">ફરી કરો</string>
+    <string name="pesdk_common_title_blueColor">વાદળી</string>
+    <string name="pesdk_common_title_redColor">લાલ</string>
+    <string name="pesdk_common_title_greenColor">લીલો</string>
 </resources>
