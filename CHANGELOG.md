@@ -1,6 +1,17 @@
 Changelog
 ==========
 
+Version 6.12.3 *(2020-02-10)*
+----------------------------
+
+ * Fixed image disappearing at using the Editor
+ * Properly copy over EXIF values after editing an image
+
+Version 6.12.2 *(2020-02-10)*
+----------------------------
+
+ * Fixed some sorting and thumbnail related issues
+
 Version 6.12.1 *(2020-02-10)*
 ----------------------------
 
