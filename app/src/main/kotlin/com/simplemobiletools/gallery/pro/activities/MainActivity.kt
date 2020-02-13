@@ -891,9 +891,6 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         val albumCovers = config.parseAlbumCovers()
         val includedFolders = config.includedFolders
         val tempFolderPath = config.tempFolderPath
-        val isSortingAscending = config.directorySorting and SORT_DESCENDING == 0
-        val getProperDateTaken = config.directorySorting and SORT_BY_DATE_TAKEN != 0
-        var getProperLastModified = config.directorySorting and SORT_BY_DATE_MODIFIED != 0
         val getProperFileSize = config.directorySorting and SORT_BY_SIZE != 0
         val favoritePaths = getFavoritePaths()
         val dirPathsToRemove = ArrayList<String>()
@@ -904,9 +901,17 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                     return
                 }
 
-                if (!getProperLastModified) {
-                    getProperLastModified = config.getFileSorting(directory.path) and SORT_BY_DATE_MODIFIED != 0
-                }
+                val sorting = config.getFileSorting(directory.path)
+                val grouping = config.getFolderGrouping(directory.path)
+                val getProperDateTaken = config.directorySorting and SORT_BY_DATE_TAKEN != 0 ||
+                        sorting and SORT_BY_DATE_TAKEN != 0 ||
+                        grouping and GROUP_BY_DATE_TAKEN_DAILY != 0 ||
+                        grouping and GROUP_BY_DATE_TAKEN_MONTHLY != 0
+
+                val getProperLastModified = config.directorySorting and SORT_BY_DATE_MODIFIED != 0 ||
+                        sorting and SORT_BY_DATE_MODIFIED != 0 ||
+                        grouping and GROUP_BY_LAST_MODIFIED_DAILY != 0 ||
+                        grouping and GROUP_BY_LAST_MODIFIED_MONTHLY != 0
 
                 val curMedia = mLastMediaFetcher!!.getFilesFrom(directory.path, getImagesOnly, getVideosOnly, getProperDateTaken, getProperLastModified, getProperFileSize, favoritePaths, false)
                 val newDir = if (curMedia.isEmpty()) {
@@ -915,7 +920,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                     }
                     directory
                 } else {
-                    createDirectoryFromMedia(directory.path, curMedia, albumCovers, hiddenString, includedFolders, isSortingAscending, getProperFileSize)
+                    createDirectoryFromMedia(directory.path, curMedia, albumCovers, hiddenString, includedFolders, getProperFileSize)
                 }
 
                 // we are looping through the already displayed folders looking for changes, do not do anything if nothing changed
@@ -982,9 +987,17 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 return
             }
 
-            if (!getProperLastModified) {
-                getProperLastModified = config.getFileSorting(folder) and SORT_BY_DATE_MODIFIED != 0
-            }
+            val sorting = config.getFileSorting(folder)
+            val grouping = config.getFolderGrouping(folder)
+            val getProperDateTaken = config.directorySorting and SORT_BY_DATE_TAKEN != 0 ||
+                    sorting and SORT_BY_DATE_TAKEN != 0 ||
+                    grouping and GROUP_BY_DATE_TAKEN_DAILY != 0 ||
+                    grouping and GROUP_BY_DATE_TAKEN_MONTHLY != 0
+
+            val getProperLastModified = config.directorySorting and SORT_BY_DATE_MODIFIED != 0 ||
+                    sorting and SORT_BY_DATE_MODIFIED != 0 ||
+                    grouping and GROUP_BY_LAST_MODIFIED_DAILY != 0 ||
+                    grouping and GROUP_BY_LAST_MODIFIED_MONTHLY != 0
 
             val newMedia = mLastMediaFetcher!!.getFilesFrom(folder, getImagesOnly, getVideosOnly, getProperDateTaken, getProperLastModified, getProperFileSize, favoritePaths, false)
             if (newMedia.isEmpty()) {
@@ -1000,7 +1013,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 }
             }
 
-            val newDir = createDirectoryFromMedia(folder, newMedia, albumCovers, hiddenString, includedFolders, isSortingAscending, getProperFileSize)
+            val newDir = createDirectoryFromMedia(folder, newMedia, albumCovers, hiddenString, includedFolders, getProperFileSize)
             dirs.add(newDir)
             setupAdapter(dirs)
             try {

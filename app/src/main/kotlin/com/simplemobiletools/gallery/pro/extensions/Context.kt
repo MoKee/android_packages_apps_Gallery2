@@ -857,9 +857,10 @@ fun Context.addPathToDB(path: String) {
 }
 
 fun Context.createDirectoryFromMedia(path: String, curMedia: ArrayList<Medium>, albumCovers: ArrayList<AlbumCover>, hiddenString: String,
-                                     includedFolders: MutableSet<String>, isSortingAscending: Boolean, getProperFileSize: Boolean): Directory {
+                                     includedFolders: MutableSet<String>, getProperFileSize: Boolean): Directory {
     val OTGPath = config.OTGPath
-    var thumbnail = curMedia.firstOrNull { getDoesFilePathExist(it.path, OTGPath) }?.path ?: ""
+    val grouped = MediaFetcher(this).groupMedia(curMedia, path)
+    var thumbnail: String? = null
 
     albumCovers.forEach {
         if (it.path == path && getDoesFilePathExist(it.tmb, OTGPath)) {
@@ -867,10 +868,16 @@ fun Context.createDirectoryFromMedia(path: String, curMedia: ArrayList<Medium>, 
         }
     }
 
-    if (config.OTGPath.isNotEmpty() && thumbnail.startsWith(config.OTGPath)) {
-        thumbnail = thumbnail.getOTGPublicPath(applicationContext)
+    if (thumbnail == null) {
+        val sortedMedia = grouped.filter { it is Medium }.toMutableList() as ArrayList<Medium>
+        thumbnail = sortedMedia.firstOrNull { getDoesFilePathExist(it.path, OTGPath) }?.path ?: ""
     }
 
+    if (config.OTGPath.isNotEmpty() && thumbnail!!.startsWith(config.OTGPath)) {
+        thumbnail = thumbnail!!.getOTGPublicPath(applicationContext)
+    }
+
+    val isSortingAscending = config.directorySorting.isSortingAscending()
     val defaultMedium = Medium(0, "", "", "", 0L, 0L, 0L, 0, 0, false, 0L)
     val firstItem = curMedia.firstOrNull() ?: defaultMedium
     val lastItem = curMedia.lastOrNull() ?: defaultMedium
@@ -880,7 +887,7 @@ fun Context.createDirectoryFromMedia(path: String, curMedia: ArrayList<Medium>, 
     val size = if (getProperFileSize) curMedia.sumByLong { it.size } else 0L
     val mediaTypes = curMedia.getDirMediaTypes()
     val sortValue = getDirectorySortingValue(curMedia, path, dirName, size)
-    return Directory(null, path, thumbnail, dirName, curMedia.size, lastModified, dateTaken, size, getPathLocation(path), mediaTypes, sortValue)
+    return Directory(null, path, thumbnail!!, dirName, curMedia.size, lastModified, dateTaken, size, getPathLocation(path), mediaTypes, sortValue)
 }
 
 fun Context.getDirectorySortingValue(media: ArrayList<Medium>, path: String, name: String, size: Long): String {
@@ -916,13 +923,23 @@ fun Context.updateDirectoryPath(path: String) {
     val hiddenString = getString(R.string.hidden)
     val albumCovers = config.parseAlbumCovers()
     val includedFolders = config.includedFolders
-    val isSortingAscending = config.directorySorting.isSortingAscending()
-    val getProperDateTaken = config.directorySorting and SORT_BY_DATE_TAKEN != 0
-    val getProperLastModified = config.directorySorting and SORT_BY_DATE_MODIFIED != 0
+
+    val sorting = config.getFileSorting(path)
+    val grouping = config.getFolderGrouping(path)
+    val getProperDateTaken = config.directorySorting and SORT_BY_DATE_TAKEN != 0 ||
+            sorting and SORT_BY_DATE_TAKEN != 0 ||
+            grouping and GROUP_BY_DATE_TAKEN_DAILY != 0 ||
+            grouping and GROUP_BY_DATE_TAKEN_MONTHLY != 0
+
+    val getProperLastModified = config.directorySorting and SORT_BY_DATE_MODIFIED != 0 ||
+            sorting and SORT_BY_DATE_MODIFIED != 0 ||
+            grouping and GROUP_BY_LAST_MODIFIED_DAILY != 0 ||
+            grouping and GROUP_BY_LAST_MODIFIED_MONTHLY != 0
+
     val getProperFileSize = config.directorySorting and SORT_BY_SIZE != 0
     val favoritePaths = getFavoritePaths()
     val curMedia = mediaFetcher.getFilesFrom(path, getImagesOnly, getVideosOnly, getProperDateTaken, getProperLastModified, getProperFileSize, favoritePaths, false)
-    val directory = createDirectoryFromMedia(path, curMedia, albumCovers, hiddenString, includedFolders, isSortingAscending, getProperFileSize)
+    val directory = createDirectoryFromMedia(path, curMedia, albumCovers, hiddenString, includedFolders, getProperFileSize)
     updateDBDirectory(directory)
 }
 
