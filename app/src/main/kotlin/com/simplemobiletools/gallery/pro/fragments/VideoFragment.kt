@@ -132,13 +132,8 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
                 }
 
                 override fun onDoubleTap(e: MotionEvent?): Boolean {
-                    val viewWidth = width
-                    val instantWidth = viewWidth / 7
-                    val clickedX = e?.rawX ?: 0f
-                    when {
-                        clickedX <= instantWidth -> doSkip(DOUBLE_TAP_SKIP_VIDEO_MS, false)
-                        clickedX >= viewWidth - instantWidth -> doSkip(DOUBLE_TAP_SKIP_VIDEO_MS, true)
-                        else -> togglePlayPause()
+                    if (e != null) {
+                        handleDoubleTap(e.rawX)
                     }
 
                     return true
@@ -211,6 +206,8 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
                     } else {
                         toggleFullscreen()
                     }
+                }, doubleTap = { x, y ->
+                    doSkip(false)
                 })
 
                 mVolumeSideScroll.initialize(activity!!, slide_info, false, container, singleTap = { x, y ->
@@ -219,6 +216,8 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
                     } else {
                         toggleFullscreen()
                     }
+                }, doubleTap = { x, y ->
+                    doSkip(true)
                 })
 
                 video_surface.onGlobalLayout {
@@ -428,6 +427,16 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
         listener?.fragmentClicked()
     }
 
+    private fun handleDoubleTap(x: Float) {
+        val viewWidth = mView.width
+        val instantWidth = viewWidth / 7
+        when {
+            x <= instantWidth -> doSkip(false)
+            x >= viewWidth - instantWidth -> doSkip(true)
+            else -> togglePlayPause()
+        }
+    }
+
     private fun checkExtendedDetails() {
         if (mConfig.showExtendedDetails) {
             mView.video_details.apply {
@@ -533,13 +542,12 @@ class VideoFragment : ViewPagerFragment(), TextureView.SurfaceTextureListener, S
         }
 
         mPositionAtPause = 0L
-        val twoPercents = Math.max((mExoPlayer!!.duration / 50).toInt(), MIN_SKIP_LENGTH)
-        doSkip(twoPercents, forward)
+        doSkip(forward)
     }
 
-    private fun doSkip(millis: Int, forward: Boolean) {
+    private fun doSkip(forward: Boolean) {
         val curr = mExoPlayer!!.currentPosition
-        val newProgress = if (forward) curr + millis else curr - millis
+        val newProgress = if (forward) curr + FAST_FORWARD_VIDEO_MS else curr - FAST_FORWARD_VIDEO_MS
         val roundProgress = Math.round(newProgress / 1000f)
         val limitedProgress = Math.max(Math.min(mExoPlayer!!.duration.toInt() / 1000, roundProgress), 0)
         setPosition(limitedProgress)

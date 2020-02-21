@@ -174,12 +174,8 @@ open class VideoPlayerActivity : SimpleActivity(), SeekBar.OnSeekBarChangeListen
 
         val gestureDetector = GestureDetector(this, object : GestureDetector.SimpleOnGestureListener() {
             override fun onDoubleTap(e: MotionEvent?): Boolean {
-                val instantWidth = mScreenWidth / 7
-                val clickedX = e?.rawX ?: 0f
-                when {
-                    clickedX <= instantWidth -> doSkip(DOUBLE_TAP_SKIP_VIDEO_MS, false)
-                    clickedX >= mScreenWidth - instantWidth -> doSkip(DOUBLE_TAP_SKIP_VIDEO_MS, true)
-                    else -> togglePlayPause()
+                if (e != null) {
+                    handleDoubleTap(e.rawX)
                 }
 
                 return true
@@ -198,10 +194,14 @@ open class VideoPlayerActivity : SimpleActivity(), SeekBar.OnSeekBarChangeListen
         if (config.allowVideoGestures) {
             video_brightness_controller.initialize(this, slide_info, true, video_player_holder, singleTap = { x, y ->
                 toggleFullscreen()
+            }, doubleTap = { x, y ->
+                doSkip(false)
             })
 
             video_volume_controller.initialize(this, slide_info, false, video_player_holder, singleTap = { x, y ->
                 toggleFullscreen()
+            }, doubleTap = { x, y ->
+                doSkip(true)
             })
         } else {
             video_brightness_controller.beGone()
@@ -301,6 +301,15 @@ open class VideoPlayerActivity : SimpleActivity(), SeekBar.OnSeekBarChangeListen
             } else {
                 video_toggle_play_pause.setImageResource(R.drawable.ic_play_outline)
             }
+        }
+    }
+
+    private fun handleDoubleTap(x: Float) {
+        val instantWidth = mScreenWidth / 7
+        when {
+            x <= instantWidth -> doSkip(false)
+            x >= mScreenWidth - instantWidth -> doSkip(true)
+            else -> togglePlayPause()
         }
     }
 
@@ -488,17 +497,14 @@ open class VideoPlayerActivity : SimpleActivity(), SeekBar.OnSeekBarChangeListen
     }
 
     private fun skip(forward: Boolean) {
-        if (mExoPlayer == null) {
-            return
+        if (mExoPlayer != null) {
+            doSkip(forward)
         }
-
-        val twoPercents = Math.max((mExoPlayer!!.duration / 50).toInt(), MIN_SKIP_LENGTH)
-        doSkip(twoPercents, forward)
     }
 
-    private fun doSkip(millis: Int, forward: Boolean) {
+    private fun doSkip(forward: Boolean) {
         val curr = mExoPlayer!!.currentPosition
-        val newProgress = if (forward) curr + millis else curr - millis
+        val newProgress = if (forward) curr + FAST_FORWARD_VIDEO_MS else curr - FAST_FORWARD_VIDEO_MS
         val roundProgress = Math.round(newProgress / 1000f)
         val limitedProgress = Math.max(Math.min(mExoPlayer!!.duration.toInt() / 1000, roundProgress), 0)
         setPosition(limitedProgress)
