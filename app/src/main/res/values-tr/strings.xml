@@ -72,6 +72,7 @@
     <string name="path">Yol</string>
     <string name="invalid_image_path">Görüntü yolu geçersiz</string>
     <string name="image_editing_failed">Resim düzenleme başarısız</string>
+    <string name="file_edited_successfully">Dosya başarıyla düzenlendi</string>
     <string name="edit_image_with">İle resmi düzenle:</string>
     <string name="no_editor_found">Resim editörü bulunamadı</string>
     <string name="unknown_file_location">Bilinmeyen dosya konumu</string>
@@ -220,8 +221,6 @@
     <string name="faq_2_text">Bunu 2 şekilde çözebilirsiniz. Uygulamayı yeniden yükleyebilir veya uygulamayı cihaz ayarlarınızdan bulabilir ve \"Verileri temizle\" yi seçebilirsiniz. Tüm ayarlarınızı sıfırlar, herhangi bir medya dosyasını kaldırmaz.</string>
     <string name="faq_3_title">Bir albümün her zaman en üstte nasıl görünmesini sağlayabilirim?</string>
     <string name="faq_3_text">İstediğiniz albüme uzun süre basabilir ve eylemler menüsünde üste yerleştirecek olan pin simgesini seçebilirsiniz. Birden fazla klasörü de sabitleyebilirsiniz, sabitlenmiş öğeler varsayılan sıralama yöntemine göre sıralanır.</string>
-    <string name="faq_4_title">Videoları nasıl hızlı ileri sürdürebilirim?</string>
-    <string name="faq_4_text">Videoyu geriye ya da ileriye taşıyacak olan arama çubuğunun yakınındaki geçerli veya maksimum süre metinlerini tıklayabilirsiniz.</string>
     <string name="faq_5_title">Klasörün gizlenmesi ve hariç tutulması arasındaki fark nedir?</string>
     <string name="faq_5_text">Gizle, klasörü yalnızca Simple Galeri\'de görüntülemeyi engellerken, Gizle sistem genelinde çalışır ve klasörü diğer galerilerden gizler. Verilen klasörde boş bir \".nomedia\" dosyası oluşturarak çalışır, daha sonra herhangi bir dosya yöneticisi ile kaldırabilirsiniz.</string>
     <string name="faq_6_title">Neden müzik kapaklı sanat veya çıkartma içeren klasörler görünür?</string>

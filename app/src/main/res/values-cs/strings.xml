@@ -221,8 +221,6 @@
     <string name="faq_2_text">Můžete to vyřešit dvěma způsoby. Aplikaci můžete buď přeinstalovat, nebo najít aplikaci v nastavení zařízení a vybrat možnost \"Vymazat data\". To obnoví všechna nastavení, ale neodstraní žádné mediální soubory.</string>
     <string name="faq_3_title">Jak mohu vytvořit album, které se zobrazí vždy jako první?</string>
     <string name="faq_3_text">Dlouhým stiskem požadovaného alba a v nabídce akce můžete zvolit ikonu připínáčku, která jej připne k vrcholu. Můžete také připojit více složek, zarovnané položky budou seřazeny podle výchozí metody třídění.</string>
-    <string name="faq_4_title">Jak mohu rychle posunout videa?</string>
-    <string name="faq_4_text">Klepnutím na texty aktuálního nebo maximálního trvání v blízkosti vyhledávacího panelu můžete posunout video zpětně nebo dopředu.</string>
     <string name="faq_5_title">Jaký je rozdíl mezi skrytím a vyloučením složky?</string>
     <string name="faq_5_text">Vyloučení zabraňuje zobrazování složky pouze v Jednoduché Galerii, zatímco skrytí funguje systémově a skrývá složku z jiných galerií. Funguje tak, že vytvoří prázdný soubor \".nomedia\" v dané složce, který můžete také odstranit v libovolném správci souborů.</string>
     <string name="faq_6_title">Proč se zobrazují složky s obaly alba nebo nálepkami?</string>

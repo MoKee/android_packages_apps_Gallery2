@@ -190,13 +190,17 @@
     <string name="pesdk_adjustments_button_saturationTool">Насыщенность</string>
     <string name="pesdk_adjustments_button_clarityTool">Резкость</string>
     <string name="pesdk_adjustments_button_gammaTool">Гамма</string>
+    <string name="pesdk_adjustments_button_blacksTool">Затемнить</string>
+    <string name="pesdk_adjustments_button_whitesTool">Осветлить</string>
     <string name="pesdk_adjustments_button_temperatureTool">Температура</string>
     <string name="pesdk_adjustments_button_sharpnessTool">Резкость</string>
     <string name="pesdk_adjustments_button_reset">Сбросить</string>
     <string name="pesdk_focus_title_name">Фокус</string>
     <string name="pesdk_focus_title_disabled">Без эффекта</string>
     <string name="pesdk_focus_button_radial">Круглая</string>
+    <string name="pesdk_focus_button_linear">Линейный</string>
     <string name="pesdk_focus_button_mirrored">Симетричный</string>
+    <string name="pesdk_focus_button_gaussian">Гауссовый</string>
     <string name="pesdk_text_title_name">Текст</string>
     <string name="pesdk_text_title_options">Настройки текста</string>
     <string name="pesdk_text_title_textColor">Цвет текста</string>
@@ -208,12 +212,14 @@
     <string name="pesdk_text_button_color">Цвет</string>
     <string name="pesdk_text_button_backgroundColor">Цвет фона</string>
     <string name="pesdk_text_button_alignment">Выравнивание</string>
+    <string name="pesdk_text_button_bringToFront">На передний план</string>
     <string name="pesdk_text_button_delete">Удалить</string>
     <string name="pesdk_text_text_editTextPlaceholder">Ваш текст</string>
     <string name="pesdk_brush_title_name">Кисть</string>
     <string name="pesdk_brush_button_color">Цвет</string>
     <string name="pesdk_brush_button_size">Размер</string>
     <string name="pesdk_brush_button_hardness">Жесткость</string>
+    <string name="pesdk_brush_button_bringToFront">На передний план</string>
     <string name="pesdk_brush_button_delete">Удалить</string>
     <string name="pesdk_brush_title_brushColor">Цвет кисти</string>
     <string name="pesdk_editor_title_name">Редактор</string>
@@ -226,6 +232,8 @@
     <string name="pesdk_editor_save">Сохранить</string>
     <string name="pesdk_editor_text_exportProgressUnknown">Экспорт изображения…</string>
     <string name="pesdk_editor_text_exportProgress" formatted="false">Экспорт изображения %s.</string>
+    <string name="pesdk_common_button_flipH">Переверните H</string>
+    <string name="pesdk_common_button_flipV">Переверните V</string>
     <string name="pesdk_common_button_undo">Отменить</string>
     <string name="pesdk_common_button_redo">Повторить</string>
     <string name="pesdk_common_title_colorPicker">Выбор цета</string>
@@ -245,6 +253,7 @@
     <string name="pesdk_common_title_oliveColor">Оливковый</string>
     <string name="pesdk_common_title_greenColor">Зелёный</string>
     <string name="pesdk_common_title_aquamarinColor">Аквамарин</string>
+    <string name="pesdk_common_title_pipettableColor">Подобрать цвет</string>
     <string name="faq_1_title">Как сделать приложение \"Простая галерея\" галереей по умолчанию?</string>
     <string name="faq_1_text">Сначала вы должны найти галерею по умолчанию в разделе \"Приложения\" настроек вашего устройства; найдите кнопку, названную \"Открыть по умолчанию\", затем нажмите на неё и выберите \"Очистить значения по умолчанию\".
         В следующий раз, когда попробуете открыть изображение или видео, вы увидите выбор приложений, где сможете выбрать приложение \"Простая галерея\" и сделать её приложением по умолчанию.</string>
@@ -252,8 +261,6 @@
     <string name="faq_2_text">Это можно решить двумя способами. Вы можете переустановить приложение или найти его в настройках вашего устройства и выбрать пункт \"Очистить данные\", что сбросит все настройки приложения, но не удалит медиафайлы.</string>
     <string name="faq_3_title">Как я могу сделать альбом всегда отображающимся сверху?</string>
     <string name="faq_3_text">Вы можете долго нажимать на нужный альбом и выбрать значок «Закрепить» в меню действий, который закрепит его наверху. Вы также можете закрепить несколько папок, закрепленные элементы будут отсортированы по умолчанию.</string>
-    <string name="faq_4_title">Как ускорить перемотку видео?</string>
-    <string name="faq_4_text">Вы можете нажать на цифры текущего положения или максимальной длительности видео рядом с панелью поиска, что приведёт к перемещению позиции воспроизведения либо назад, либо вперёд.</string>
     <string name="faq_5_title">В чём разница между скрытием и исключением папки?</string>
     <string name="faq_5_text">Исключение запрещает отображение папки только в Simple Gallery, в то время как скрытие работает системно и скрывает папку из других галерей. Это достигается путём создания пустого файла \".nomedia\" в данной папке, который впоследствии можно удалить любым файловым менеджером.</string>
     <string name="faq_6_title">Почему отображаются папки с музыкальными обложками?</string>

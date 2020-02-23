@@ -192,8 +192,6 @@
     <string name="faq_2_title">I locked the app with a password, but I forgot it. What can I do?</string>
     <string name="faq_2_text">Bạn có thể giải quyết nó trong 2 cách. Bạn có thể hoặc cài đặt lại ứng dụng này, hoặc tìm các ứng dụng trong cài đặt thiết bị của bạn và chọn \"Xóa dữ liệu\". Nó sẽ thiết lập lại tất cả các cài đặt của bạn, nó sẽ không loại bỏ bất kỳ dữ liệu.</string>
     <string name="faq_3_title">Làm thế nào có thể làm cho một album luôn xuất hiện ở đầu trang?</string>
-    <string name="faq_4_title">Làm thế nào có thể tua nhanh video?</string>
-    <string name="faq_4_text">You can either drag your finger horizontally over the video player, or click on the current or max duration texts near the seekbar. That will move the video either backward, or forward.</string>
     <string name="faq_5_title">What is the difference between hiding and excluding a folder?</string>
     <string name="faq_5_text">Exclude prevents displaying the folder only in Simple Gallery, while Hide works system-wise and it hides the folder from other galleries too. It works by creating an empty \".nomedia\" file in the given folder, which you can then remove with any file manager too.</string>
     <string name="faq_6_title">Tại sao làm thư mục với bìa đĩa nhạc hoặc dán Hiển thị?</string>

@@ -221,8 +221,6 @@
     <string name="faq_2_text">Você pode resolver isso de duas formas. Reinstale o app ou encontre-o nas configurações do dispositivo e selecione \"Limpar dados\". Isso irá redefinir todas as suas configurações sem remover qualquer arquivo de mídia.</string>
     <string name="faq_3_title">Como posso fazer um álbum sempre aparecer no topo?</string>
     <string name="faq_3_text">Você pode pressionar longamente o álbum desejado e selecionar o ícone Fixar no menu de ações, que irá fixá-lo no topo. Você também pode fixar várias pastas, os itens fixados serão classificados pelo método de classificação padrão.</string>
-    <string name="faq_4_title">Como posso avançar rapidamente os vídeos?</string>
-    <string name="faq_4_text">Você pode arrastar o dedo horizontalmente sobre o player de vídeo ou clicar no texto de duração atual ou máxima perto da barra de navegação. Isso irá mover o vídeo para trás ou para frente.</string>
     <string name="faq_5_title">Qual é a diferença entre esconder e excluir uma pasta?</string>
     <string name="faq_5_text">Exclude prevents displaying the folder only in Simple Gallery, while Hide works system-wise and it hides the folder from other galleries too. It works by creating an empty \".nomedia\" file in the given folder, which you can then remove with any file manager too.</string>
     <string name="faq_6_title">Why do folders with music cover art or stickers show up?</string>

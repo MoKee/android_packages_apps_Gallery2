@@ -221,8 +221,6 @@
     <string name="faq_2_text">Il y a deux façons de procéder. Soit vous reinstallez l\'appli, soit retrouver l\'appli dans les paramètres du téléphone et toucher « Effacer les données ». Cela va seulement remettre à zéro les paramètres de l\'appli et ne supprimera pas vos fichiers.</string>
     <string name="faq_3_title">Comment faire pour qu\'un album soit toujours tout en haut ?</string>
     <string name="faq_3_text">Vous devez simplement effectuer un appui prolongé sur l\'album en question et choisir l\'icône \"Épingler\" dans le menu d\'actions. Vous pouvez en épingler plusieurs. Les éléments épinglés seront alors triés selon l\'ordre par défaut.</string>
-    <string name="faq_4_title">Comment avancer rapidement dans les vidéos ?</string>
-    <string name="faq_4_text">Vous pouvez appuyer sur le temps actuel ou la durée totale de la vidéo sur la barre de progression, la vidéo reculera ou avancera selon votre choix.</string>
     <string name="faq_5_title">Quelle est la différence entre cacher et exclure un répertoire ?</string>
     <string name="faq_5_text">Exclure n\'affiche pas le dossier dans Simple Galerie uniquement, alors que Cacher le cache pour l\'intégralité du système, y compris les autres galeries. Dans le dernier cas, un fichier \".nomedia\" est créé dans le répertoire caché, et peut s\'enlever avec n\'importe quel explorateur de fichiers.</string>
     <string name="faq_6_title">Pourquoi des répertoires avec des pochettes d\'albums musicaux ou des miniatures d\'images sont affichés ?</string>

@@ -261,8 +261,6 @@
     <string name="faq_2_text">Seda saab lahendada kahel viisil. Saate rakenduse uuesti installida või leida selle seadme seadetes ja valida \"Kustuta andmed\". See taastab kõik teie seaded, see ei eemalda meediumifaile.</string>
     <string name="faq_3_title">Kuidas saan albumi alati ülaosas kuvada?</string>
     <string name="faq_3_text">Soovitud albumil saate pikka aega vajutades valida toimingute menüüs Pin-ikooni, mis kinnitaub selle ülemisele küljele. Saate lisada ka mitu kausta, kinnitatud elemendid sorteeritakse vaikimisi sorteerimismeetodi järgi.</string>
-    <string name="faq_4_title">Kuidas videoid edasi saata?</string>
-    <string name="faq_4_text">Te saate lohistada sõrme horisontaalselt videopleieri kohal või klõpsta otsinguriba lähedal olevate või maksimaalse kestusega tekstidele. See viib video kas tagasi või edasi.</string>
     <string name="faq_5_title">Mis vahe on kausta peitmise ja välistamise vahel?</string>
     <string name="faq_5_text">Välista see, et kaust kuvatakse ainult lihtsas galeriis, samas peidab töö süsteemi ja ka teiste galeriide kausta. See toimib, luues tühja kausta \".nomedia\" faili, mille saate seejärel eemaldada ka mis tahes failihalduriga.</string>
     <string name="faq_6_title">Miks ilmuvad muusikakaanega kaustad või kleebised?</string>
