@@ -31,6 +31,7 @@
     <string name="fix_date_taken">Dátum javítása</string>
     <string name="fixing">Javítás…</string>
     <string name="dates_fixed_successfully">Sikeres dátumjavítás</string>
+    <string name="no_date_takens_found">Nem található dátumérték</string>
     <string name="share_resized">Az átméretezett verzió megosztása</string>
     <string name="upgraded_from_free">Hé!\n\núgy tűnik, mintha a régi ingyenes alkalmazásból frissített volna. Most már eltávolíthatja a régi verziót, amelynek a „Frissítés Pro verzióra” gombja az alkalmazás beállításainak tetején található.\n\nCsak a Lomtár elemei törlődnek, a kedvenc elemek nem jelennek meg, és vissza kell állítania az alkalmazás beállításait is.\n\nKöszönjük!</string>
     <string name="switch_to_file_search">Váltás a fájlkeresésre az összes látható mappában</string>
@@ -72,6 +73,7 @@
     <string name="path">Elérési útvonal</string>
     <string name="invalid_image_path">A kép elérési útvonala érvénytelen</string>
     <string name="image_editing_failed">A képszerkesztés meghiúsult</string>
+    <string name="image_editing_cancelled">A képszerkesztés visszavonva</string>
     <string name="file_edited_successfully">A fájl sikeresen átszerkesztve</string>
     <string name="edit_image_with">Képszerkesztés a következővel:</string>
     <string name="no_editor_found">Nem található képszerkesztő</string>
@@ -261,6 +263,8 @@ A következő alkalommal, amikor megpróbál megnyitni egy képet vagy videót, 
     <string name="faq_2_text">2 módon is megoldhatja. Újratelepítheti az alkalmazást, vagy megkeresi az alkalmazást az eszköz beállításai között, és válassza az \"Adatok törlése\" lehetőséget. Minden beállítást visszaállít alapértelmezettre. Ez nem távolítja el a média fájlokat.</string>
     <string name="faq_3_title">Hogyan állíthatok be egy albumot úgy, hogy mindig felül legyen?</string>
     <string name="faq_3_text">Megnyomhatja hosszan a kívánt albumot, majd a műveleti menüben válassza az Ikonrögzítés-t, ami felülre rögzíti az albumot. Több mappát is rögzíthet, a rögzített elemek az érvényben lévő rendezési sorrend szerint helyeződnek el.</string>
+    <string name="faq_4_title">Hogyan tudom előretekerni a videókat?</string>
+    <string name="faq_4_text">Megteheti a képernyő oldalának dupla érintésével, vagy az idővonalon való ujjmozgatásal. Ha engedélyezte az alkalmazás beállításaiban a videómegnyitást külön képernyőn, akkor vízszintes gesztusokat is használhat.</string>
     <string name="faq_5_title">Mi a különbség a mappa elrejtése és kizárása között?</string>
     <string name="faq_5_text">A Kizárás megakadályozza, hogy a mappát a Simple Gallery megjelenítse, az Elrejtés pedig rendszer szinten működik, és elrejti a mappát más galériákból is. Úgy működik, hogy létrehoz egy üres \". nomedia\" nevű fájlt az adott mappában, amelyet bármikor eltávolíthat bármilyen fájlkezelővel is.</string>
     <string name="faq_6_title">Miért jelennek meg a zenei borítóval vagy matricával rendelkező mappák?</string>

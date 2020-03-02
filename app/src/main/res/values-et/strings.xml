@@ -31,6 +31,7 @@
     <string name="fix_date_taken">Fikseeritud jäädvustus kuup. väärtus</string>
     <string name="fixing">Kinnitamine…</string>
     <string name="dates_fixed_successfully">Kuupäevad fikseeriti edukalt</string>
+    <string name="no_date_takens_found">Kuupäeva väärtusi ei leitud</string>
     <string name="share_resized">Jagage muudetud suurusega versiooni</string>
     <string name="upgraded_from_free">Hei,\n\ntundub, et te uuendasite vanast tasuta rakendusest. Nüüd saate eemaldada vana versiooni, millel on rakenduse seadete ülaosas nupp „Upgrade to Pro”.\n\nTeil on kustutatud ainult prügikasti üksused, lemmikobjektid on märgistamata ja teil tuleb ka oma rakenduse seaded lähtestada.\n\nTäname!</string>
     <string name="switch_to_file_search">Lülitage kõik nähtavad kausta failid otsingusse</string>
@@ -72,6 +73,7 @@
     <string name="path">Tee</string>
     <string name="invalid_image_path">Kehtetu pildi tee</string>
     <string name="image_editing_failed">Pildi redigeerimine ebaõnnestus</string>
+    <string name="image_editing_cancelled">Pildi redigeerimine peatatud</string>
     <string name="file_edited_successfully">Faili redigeerimine õnnestus</string>
     <string name="edit_image_with">Muuda pilti koos:</string>
     <string name="no_editor_found">Pildi redaktorit ei leitud</string>
@@ -261,6 +263,8 @@
     <string name="faq_2_text">Seda saab lahendada kahel viisil. Saate rakenduse uuesti installida või leida selle seadme seadetes ja valida \"Kustuta andmed\". See taastab kõik teie seaded, see ei eemalda meediumifaile.</string>
     <string name="faq_3_title">Kuidas saan albumi alati ülaosas kuvada?</string>
     <string name="faq_3_text">Soovitud albumil saate pikka aega vajutades valida toimingute menüüs Pin-ikooni, mis kinnitaub selle ülemisele küljele. Saate lisada ka mitu kausta, kinnitatud elemendid sorteeritakse vaikimisi sorteerimismeetodi järgi.</string>
+    <string name="faq_4_title">Kuidas videoid edasi saata?</string>
+    <string name="faq_4_text">Saate seda teha, topeltpuudutades ekraani serva või koputades otsinguriba lähedal olevaid praeguseid või maksimaalse kestusega tekste. Kui lubate rakenduse seadetes videote avamise eraldi ekraanil, saate kasutada ka horisontaalseid žeste.</string>
     <string name="faq_5_title">Mis vahe on kausta peitmise ja välistamise vahel?</string>
     <string name="faq_5_text">Välista see, et kaust kuvatakse ainult lihtsas galeriis, samas peidab töö süsteemi ja ka teiste galeriide kausta. See toimib, luues tühja kausta \".nomedia\" faili, mille saate seejärel eemaldada ka mis tahes failihalduriga.</string>
     <string name="faq_6_title">Miks ilmuvad muusikakaanega kaustad või kleebised?</string>

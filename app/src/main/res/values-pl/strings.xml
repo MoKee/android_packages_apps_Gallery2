@@ -31,13 +31,17 @@
     <string name="fix_date_taken">Napraw datę utworzenia</string>
     <string name="fixing">Naprawiam…</string>
     <string name="dates_fixed_successfully">Daty zostały naprawione</string>
+    <string name="no_date_takens_found">Nie znaleziono daty wykonania</string>
     <string name="share_resized">Podziel się przeskalowanym obrazem</string>
+    <string name="upgraded_from_free">Hej,\n\nwygląda na to, że zaktualizowałeś ze starej bezpłatnej aplikacji. Teraz możesz odinstalować starą wersję, która ma przycisk \'Uaktualnij do wersji Pro\' u góry ustawień aplikacji.\n\nZostaną usunięte tylko elementy kosza, ulubione elementy odznaczone i będziesz musiał zresetować ustawienia aplikacji.\n\nDzięki!</string>
+    <string name="switch_to_file_search">Przełącz na wyszukiwanie plików we wszystkich widocznych folderach</string>
     <string name="filter_media">Filtruj multimedia</string>
     <string name="images">Obrazy</string>
     <string name="videos">Filmy</string>
     <string name="gifs">GIFy</string>
     <string name="raw_images">Obrazy RAW</string>
     <string name="svgs">Obrazy SVG</string>
+    <string name="portraits">Portret</string>
     <string name="no_media_with_filters">Nie znaleziono multimediów zgodnych z zastosowanymi filtrami.</string>
     <string name="change_filters_underlined"><u>Zmień filtry</u></string>
     <string name="hide_folder_description">Ta funkcja ukrywa foldery, dodając do nich pusty plik \'.nomedia\'. Aby móc je zobaczyć, należy włączyć opcję \'Pokazuj ukryte foldery\' w ustawieniach. Kontynuować?</string>
@@ -56,6 +60,7 @@
     <string name="manage_included_folders">Zarządzaj dołączonymi folderami</string>
     <string name="add_folder">Dodaj folder</string>
     <string name="included_activity_placeholder">Jeśli masz jakieś foldery z multimediami, ale aplikacja ich nie wykryła, możesz je dodać ręcznie tutaj.</string>
+    <string name="no_media_add_included">Nie znaleziono plików multimedialnych. Możesz je rozwiązać dodając foldery zawierające pliki multimedialne ręcznie.</string>
     <string name="resize">Zmień rozmiar</string>
     <string name="resize_and_save">Zmień i zapisz</string>
     <string name="width">Szerokość</string>
@@ -68,6 +73,8 @@
     <string name="path">Ścieżka</string>
     <string name="invalid_image_path">Nieprawidłowa ścieżka</string>
     <string name="image_editing_failed">Edycja obrazu nie powiodła się</string>
+    <string name="image_editing_cancelled">Edycja obrazu anulowana</string>
+    <string name="file_edited_successfully">Plik edytowany pomyślnie</string>
     <string name="edit_image_with">Edytuj obraz w:</string>
     <string name="no_editor_found">Nie znalazłem edytora zdjęć</string>
     <string name="unknown_file_location">Nieznana lokalizacja pliku</string>
@@ -99,7 +106,10 @@
     <string name="random_order">Losowa kolejność</string>
     <string name="move_backwards">Odwrotna kolejność</string>
     <string name="loop_slideshow">Zapętlaj</string>
+    <string name="animation">Animacja</string>
     <string name="no_animation">Brak</string>
+    <string name="fade">Zanikanie</string>
+    <string name="slide">Przesunięcie</string>
     <string name="slideshow_ended">Pokaz slajdów zakończony</string>
     <string name="no_media_for_slideshow">Nie znalazłem multimediów do pokazu slajdów</string>
     <string name="change_view_type">Zmień typ widoku</string>
@@ -110,9 +120,14 @@
     <string name="do_not_group_files">Nie grupuj plików</string>
     <string name="by_folder">Folderu</string>
     <string name="by_last_modified">Daty ostatniej modyfikacji</string>
+    <string name="by_last_modified_daily">Ostatnia modyfikacja (dzień)</string>
+    <string name="by_last_modified_monthly">Ostatnia modyfikacja (miesiąc)</string>
     <string name="by_date_taken">Daty utworzenia</string>
+    <string name="by_date_taken_daily">Data zrobienia (dni)</string>
+    <string name="by_date_taken_monthly">Data zrobienia (miesiące)</string>
     <string name="by_file_type">Typu</string>
     <string name="by_extension">Rozszerzenia</string>
+    <string name="grouping_and_sorting">Należy pamiętać, że grupowanie i sortowanie to 2 niezależne czynności</string>
     <string name="folder_on_widget">Folder widoczny na widżecie:</string>
     <string name="show_folder_name">Pokaż nazwę folderu</string>
     <string name="autoplay_videos">Odtwarzaj filmy automatycznie</string>
@@ -127,6 +142,7 @@
     <string name="screen_rotation_system_setting">Ustawień systemowych</string>
     <string name="screen_rotation_device_rotation">Orientacji urządzenia</string>
     <string name="screen_rotation_aspect_ratio">Proporcji</string>
+    <string name="black_background_at_fullscreen">Czarne tło i pasek stanu przy widoku pełnoekranowym</string>
     <string name="scroll_thumbnails_horizontally">Przewijaj miniatury poziomo</string>
     <string name="hide_system_ui_at_fullscreen">Ukrywaj interfejs przy pełnoekranowym podglądzie</string>
     <string name="delete_empty_folders">Usuwaj puste foldery po usunięciu ich zawartości</string>
@@ -149,6 +165,11 @@
     <string name="open_videos_on_separate_screen">Zawsze otwieraj filmy na oddzielnym ekranie z nowymi gestami poziomymi</string>
     <string name="show_notch">Pokaż notch\'a, jeśli jest dostępny</string>
     <string name="allow_rotating_gestures">Obracanie zdjęć za pomocą gestów</string>
+    <string name="file_loading_priority">Priorytety ładowania plików</string>
+    <string name="speed">Prędkość</string>
+    <string name="compromise">Kompromis</string>
+    <string name="avoid_showing_invalid_files">Unikaj wyświetlania nieprawidłowych plików</string>
+    <string name="show_image_file_types">Pokaż typy plików obrazu</string>
     <string name="thumbnails">Miniatury</string>
     <string name="fullscreen_media">Widok pełnoekranowy</string>
     <string name="extended_details">Dodatkowe szczegóły</string>
@@ -158,48 +179,91 @@
     <string name="toggle_file_visibility">Widoczność plików</string>
     <string name="pesdk_transform_button_freeCrop">Własny</string>
     <string name="pesdk_transform_button_resetCrop">Resetuj</string>
+    <string name="pesdk_transform_button_squareCrop">Kwadrat</string>
+    <string name="pesdk_transform_title_name">Przekształć</string>
     <string name="pesdk_filter_title_name">Filtr</string>
     <string name="pesdk_filter_asset_none">Brak</string>
+    <string name="pesdk_adjustments_title_name">Dostosuj</string>
+    <string name="pesdk_adjustments_button_shadowTool">Cienie</string>
     <string name="pesdk_adjustments_button_exposureTool">Ekspozycja</string>
+    <string name="pesdk_adjustments_button_highlightTool">Rozjaśnienia</string>
     <string name="pesdk_adjustments_button_brightnessTool">Jasność</string>
     <string name="pesdk_adjustments_button_contrastTool">Kontrast</string>
     <string name="pesdk_adjustments_button_saturationTool">Nasycenie</string>
+    <string name="pesdk_adjustments_button_clarityTool">Czystość</string>
+    <string name="pesdk_adjustments_button_gammaTool">Gamma</string>
+    <string name="pesdk_adjustments_button_blacksTool">Czarne</string>
+    <string name="pesdk_adjustments_button_whitesTool">Białe</string>
+    <string name="pesdk_adjustments_button_temperatureTool">Temperatura</string>
     <string name="pesdk_adjustments_button_sharpnessTool">Ostrość</string>
     <string name="pesdk_adjustments_button_reset">Resetuj</string>
+    <string name="pesdk_focus_title_name">Fokus</string>
     <string name="pesdk_focus_title_disabled">Brak</string>
+    <string name="pesdk_focus_button_radial">Promienisty</string>
+    <string name="pesdk_focus_button_linear">Liniowy</string>
+    <string name="pesdk_focus_button_mirrored">Odbicie lustrzane</string>
+    <string name="pesdk_focus_button_gaussian">Gaussian</string>
     <string name="pesdk_text_title_name">Tekst</string>
+    <string name="pesdk_text_title_options">Opcje formatowania</string>
     <string name="pesdk_text_title_textColor">Kolor tekstu</string>
+    <string name="pesdk_text_title_font">Font</string>
     <string name="pesdk_text_button_add">Dodaj</string>
     <string name="pesdk_text_button_edit">Edytuj</string>
+    <string name="pesdk_text_button_straighten">Wyprostuj</string>
+    <string name="pesdk_text_button_font">Font</string>
     <string name="pesdk_text_button_color">Kolor</string>
+    <string name="pesdk_text_button_backgroundColor">Kolor tła</string>
+    <string name="pesdk_text_button_alignment">Wyrównanie</string>
+    <string name="pesdk_text_button_bringToFront">Do przodu</string>
     <string name="pesdk_text_button_delete">Usuń</string>
+    <string name="pesdk_text_text_editTextPlaceholder">Twój tekst</string>
+    <string name="pesdk_brush_title_name">Pędzel</string>
     <string name="pesdk_brush_button_color">Kolor</string>
     <string name="pesdk_brush_button_size">Rozmiar</string>
+    <string name="pesdk_brush_button_hardness">Twardość</string>
+    <string name="pesdk_brush_button_bringToFront">Do przodu</string>
     <string name="pesdk_brush_button_delete">Usuń</string>
+    <string name="pesdk_brush_title_brushColor">Kolor pędzla</string>
     <string name="pesdk_editor_title_name">Edycja</string>
+    <string name="pesdk_editor_title_closeEditorAlert">Zamknąć edytor?</string>
+    <string name="pesdk_editor_text_closeEditorAlert">Czy na pewno chcesz odrzucić zdjęcie?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Tak</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Nie</string>
     <string name="pesdk_editor_cancel">Anuluj</string>
     <string name="pesdk_editor_accept">Zaakceptuj</string>
     <string name="pesdk_editor_save">Zapisz</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Eksportowanie obrazu...</string>
+    <string name="pesdk_editor_text_exportProgress" formatted="false">Eksportowanie obrazu %s.</string>
+    <string name="pesdk_common_button_flipH">Odwróć horyzontalnie</string>
+    <string name="pesdk_common_button_flipV">Odwróć wertykalnie</string>
     <string name="pesdk_common_button_undo">Cofnij</string>
     <string name="pesdk_common_button_redo">Ponów</string>
+    <string name="pesdk_common_title_colorPicker">Próbnik kolorów</string>
     <string name="pesdk_common_title_transparentColor">Przezroczysty</string>
     <string name="pesdk_common_title_whiteColor">Biały</string>
     <string name="pesdk_common_title_grayColor">Szary</string>
     <string name="pesdk_common_title_blackColor">Czarny</string>
+    <string name="pesdk_common_title_lightBlueColor">Jasnoniebieski</string>
     <string name="pesdk_common_title_blueColor">Niebieski</string>
     <string name="pesdk_common_title_purpleColor">Purpurowy</string>
+    <string name="pesdk_common_title_orchidColor">Orchideowy</string>
     <string name="pesdk_common_title_pinkColor">Różowy</string>
     <string name="pesdk_common_title_redColor">Czerwony</string>
     <string name="pesdk_common_title_orangeColor">Pomarańczowy</string>
+    <string name="pesdk_common_title_goldColor">Złoty</string>
     <string name="pesdk_common_title_yellowColor">Zółty</string>
+    <string name="pesdk_common_title_oliveColor">Oliwkowy</string>
     <string name="pesdk_common_title_greenColor">Zielony</string>
+    <string name="pesdk_common_title_aquamarinColor">Akwamaryna</string>
+    <string name="pesdk_common_title_pipettableColor">Kolor pipetki</string>
     <string name="faq_1_title">Jak mogę ustawić tą aplikację jako domyślną aplikację galerii?</string>
     <string name="faq_1_text">Znajdź obecną domyślną aplikację galerii w ustawieniach systemowych (sekcja \'Aplikacje\'). Na ekranie z informacjami o niej kliknij \'Otwórz domyślnie\', a następnie \'Wyczyść domyślne\'. Gdy podczas następnej próby otwarcia zdjęcia czy filmu system zapyta Cię jaką aplikacją to zrobić, wybierz Prostą Galerię i opcję zapamiętania tego wyboru.</string>
     <string name="faq_2_title">Zablokowałem(-am) aplikację hasłem i wyleciało mi ono z głowy. Co mogę zrobić?</string>
     <string name="faq_2_text">Masz dwie opcje: przeinstalowanie aplikacji lub wyczyszczenie jej ustawień. Niezależnie od wyboru, pliki pozostaną nienaruszone.</string>
     <string name="faq_3_title">Jak sprawić, aby album(y) zawsze pojawiał(y) się na górze?</string>
+    <string name="faq_3_text">Możesz przytrzymać żądany album i wybrać ikonę pinezki w menu akcji, która przypnie album. Możesz również przypiąć wiele folderów, przypięte elementy będą sortowane według domyślnej metody sortowania.</string>
+    <string name="faq_4_title">Jak mogę przwijać filmy?</string>
+    <string name="faq_4_text">Możesz to zrobić dwukrotnie naciskając bok ekranu lub naciskając na tekst o aktualnym lub maksymalnym czasie trwania w pobliżu paska wyszukiwania. Jeśli włączysz otwieranie filmów na osobnym ekranie w ustawieniach aplikacji, możesz również używać gestów poziomych.</string>
     <string name="faq_5_title">Jaka jest różnica między ukryciem, a wykluczeniem folderu?</string>
     <string name="faq_5_text">Wykluczenie działa tylko w obrębie niniejszej aplikacji (wszędzie indziej pliki są normalnie widoczne), ukrywanie - w obrębie całego systemu (nie widać ich nigdzie), dodawany jest wtedy do folderu pusty plik \'.nomedia\', który możesz usunąć w dowolnym menedżerze plików.</string>
     <string name="faq_6_title">Dlaczego pokazują mi się foldery z okładkami do piosenek i tym podobne rzeczy?</string>
@@ -218,4 +282,63 @@
     <string name="faq_13_text">Obecne rozwiązanie służące wyświetlaniu obrazów działa jak powinno w większości w przypadków. Jeśli jednak tak nie jest, pomocna może okazać się opcja \'Pokazuj obrazy w najwyższej możliwej jakości\' w sekcji \'Duże powiększanie obrazów\'.</string>
     <string name="faq_14_title">Mam ukryte pliki i / lub foldery. Jak mogę zobaczyć?</string>
     <string name="faq_14_text">Możesz to zrobić albo wybierając opcję \'Tymczasowo pokaż ukryte multimedia\' w menu na ekranie głównym, lub \'Pokazuj ukryte elementy\' w ustawieniach. Foldery są ukrywane poprzez dodanie do nich pustego, ukrytego pliku \'.nomedia\'. Usunąć go możesz dowolnym menedżerem plików.</string>
+    <string name="faq_15_title">Dlaczego aplikacja zajmuje tyle miejsca?</string>
+    <string name="faq_15_text">Pamięć podręczna aplikacji może zająć do 250 MB, zapewnia szybsze ładowanie obrazu. Jeśli aplikacja zajmuje jeszcze więcej miejsca, jest to najprawdopodobniej spowodowane posiadaniem przedmiotów w koszu. Te pliki liczą się do rozmiaru aplikacji. Możesz wyczyścić kosz z ustawień aplikacji, lub otwierając go i usuwając wszystkie pliki. Każdy plik w koszu jest usuwany automatycznie po 30 dniach.</string>
+    <string name="app_title">Prosta galeria Pro - Menedżer zdjęć &amp; Edytor</string>
+    <string name="app_short_description">Przeglądaj swoje fotograficzne wzpomnienia bez przerw</string>
+    <string name="app_long_description">Simple Gallery Pro to wysoce konfigurowalna galeria offline. Organizuj edycję zdjęć, odzyskuj usunięte pliki za pomocą kosza, chroń ukryte pliki i przeglądaj różnorodne formaty wideo ze zdjęciami, w tym RAW, SVG i wiele więcej.
+
+        Aplikacja nie zawiera reklam i niepotrzebnych uprawnień. Ponieważ aplikacja nie wymaga również dostępu do Internetu, twoja prywatność jest chroniona.
+
+        -------------------------------------------------
+        <b>SIMPLE GALLERY PRO – FUNKCJE</b>
+        -------------------------------------------------
+
+        • Galeria offline bez żądnych reklam
+        • Prosty edytor zdjęć – przycinaj, obracaj rysuj, nakładaj filtry &amp; wiele więcej
+        • Nie wymaga dostępu do internetu dając Ci większą kontrolę nad prywatnością
+        • Nie wymaga zbędnych uprawnień
+        • Szybko wyszukuj zdjęcia, filmy &amp; pliki
+        • Otwieraj &amp; oglądaj wiele zdjęć i filmów w różnych formatach (RAW, SVG, itp.)
+        • Mnóstwo gestów do edycji &amp; ogranizacji plików
+        •Wiele sposobów filtrowania, grupowania i sortowania plików
+        • Dostosuj wygląd Simple Gallery Pro
+        • Dostępne w 32 językach
+        • Oznacz pliki jako ulubione, aby uzyskać szybki dostęp
+        • Chroń swoje zdjęcia i filmy za pomocą wzoru, pinezki lub odcisku palca
+        • Użyj kodu PIN, wzoru i odcisku palca, aby zabezpieczyć aplikację i jej funkcje
+        • Odzyskaj usunięte zdjęcia i filmy z kosza
+        • Przełącz widoczność plików, aby ukryć zdjęcia i filmy
+        • Utwórz dostosowywany pokaz slajdów ze swoich plików
+        • Zobacz szczegółowe informacje o swoich plikach (rozdzielczość, wartości EXIF itp.)
+        • Simple Gallery Pro jest oprogramowaniem typu open source
+         … i dużo dużo więcej!
+
+        <b>PHOTO GALLERY EDITOR</b>
+        Simple Gallery Pro ułatwia edycję zdjęć w locie. Przycinaj, obracaj, obracaj i zmieniaj rozmiar zdjęć. Jeśli czujesz się trochę bardziej kreatywny, możesz dodać filtry i rysować na zdjęciach!
+
+        <b>WSPARCIE WIELU FORMATÓW PLIKÓW</b>
+        W przeciwieństwie do niektórych innych galerii i organizerów zdjęć, Simple Gallery Pro obsługuje szeroką gamę różnych typów plików, w tym JPEG, PNG, MP4, MKV, RAW, SVG, zdjęcia panoramiczne, filmy panoramiczne i wiele innych.
+
+        <b>WYSOKO PERSONALIZOWALNY MENADŻER ZDJĘĆ</b>
+        Od interfejsu użytkownika po przyciski funkcyjne na dolnym pasku narzędzi, Simple Gallery Pro jest wysoce konfigurowalny i działa tak, jak chcesz. Żaden inny menedżer galerii nie ma takiej elastyczności! Dzięki temu, że jesteśmy open source, jesteśmy również dostępni w 32 językach!
+
+        <b>ODZYSKAJ USUNIĘTE ZDJĘCIA &amp; FILMY</b>
+        Przypadkowo usunąłeś cenne zdjęcie lub film? Nie martw się! Simple Gallery Pro posiada poręczny kosz, w którym można łatwo odzyskać usunięte zdjęcia i filmy.
+
+        <b>CHRÓŃ &amp; UKRYWAJ ZDJĘCIA, FILMY &amp; PLIKI</b>
+        Za pomocą pinezki, wzoru lub skanera linii papilarnych urządzenia możesz chronić i ukrywać zdjęcia, filmy i całe albumy. Możesz chronić samą aplikację lub blokować określone funkcje aplikacji. Na przykład możliwość usunąć pliku bez skanowania odcisków palców, co pomaga chronić pliki przed przypadkowym usunięciem.
+
+        <b>Sprawdź pełny zestaw Simple Tools tutaj:</b>
+        https://www.simplemobiletools.com
+
+        <b>Strona internetowa Simple Gallery Pro</b>
+        https://www.simplemobiletools.com/gallery
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools
+    </string>
 </resources>
