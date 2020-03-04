@@ -129,13 +129,10 @@ fun BaseSimpleActivity.addNoMedia(path: String, callback: () -> Unit) {
     } else {
         try {
             file.createNewFile()
-            applicationContext.scanFileRecursively(file) {
-                callback()
-            }
         } catch (e: Exception) {
             showErrorToast(e)
-            callback()
         }
+        callback()
     }
 }
 
