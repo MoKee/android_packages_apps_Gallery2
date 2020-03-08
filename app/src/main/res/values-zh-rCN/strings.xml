@@ -31,6 +31,7 @@
     <string name="fix_date_taken">修复拍摄日期</string>
     <string name="fixing">正在修复…</string>
     <string name="dates_fixed_successfully">日期修复成功</string>
+    <string name="no_date_takens_found">未找到拍摄日期</string>
     <string name="share_resized">分享已更改大小的版本</string>
     <string name="upgraded_from_free">嘿，\n\n您似乎是从旧版本升级的。您现在可以卸载旧版本，在应用程序设置顶部有”升级至专业版“按钮。\n\n升级将丢失回收站里的项目、收藏的项目将会变成未标记状态、并且您的应用设置也将被重置。\n\n谢谢！</string>
     <string name="switch_to_file_search">切换到所有可见的文件夹中的文件搜索</string>
@@ -72,6 +73,7 @@
     <string name="path">路径</string>
     <string name="invalid_image_path">无效图片路径</string>
     <string name="image_editing_failed">图片编辑失败</string>
+    <string name="image_editing_cancelled">图片编辑已取消</string>
     <string name="file_edited_successfully">文件编辑成功</string>
     <string name="edit_image_with">编辑方式：</string>
     <string name="no_editor_found">未找到可用图片编辑器</string>
@@ -260,6 +262,8 @@
     <string name="faq_2_text">有两种方法。你可以重新安装本应用，也可以在设置中清除此应用的数据，这将会会重置你的所有设置，但不会删除任何媒体文件。</string>
     <string name="faq_3_title">如何让某个相册始终显示在最上面？</string>
     <string name="faq_3_text">你可以长按该相册并在操作栏中点击图钉图标，这样 就可以将其固定在顶部了。你也可以固定多个文件夹，固定项目将按照默认排序方法排序。</string>
+    <string name="faq_4_title">如何快进视频？</string>
+    <string name="faq_4_text">您可以双击屏幕侧边，也可以单击进度条旁边的当前时间或视频时长文字。如果您启用了以独立的横向窗口打开视频，还可以在横屏时使用这些手势。</string>
     <string name="faq_5_title">文件夹的隐藏和排除有什么区别？</string>
     <string name="faq_5_text">排除功能只是防止其在简约图库中显示，而隐藏功能则使用的是系统的方法，这样做也会在其他图库中隐藏。它的工作原理是在给定的文件夹中创建一个空的.nomedia文件，你可以使用任何文件管理器删除它。</string>
     <string name="faq_6_title">为什么会出现音乐艺术家封面或贴纸文件夹？</string>
