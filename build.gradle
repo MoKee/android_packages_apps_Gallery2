@@ -5,6 +5,10 @@ buildscript {
     ext.is_proprietary = gradle.startParameter.taskNames.any { task -> task.contains("Proprietary") }
 
     repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+            name 'Aliyun'
+        }
         google()
         jcenter()
         if (is_proprietary) {
@@ -26,6 +30,10 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+            name 'Aliyun'
+        }
         google()
         jcenter()
         maven { url "https://jitpack.io" }
