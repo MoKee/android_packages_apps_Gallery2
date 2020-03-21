@@ -15,9 +15,7 @@
     <string name="width">Lăţime</string>
     <string name="height">Înălţime</string>
     <string name="editor">Editor</string>
-    <string name="save">Salvaţi</string>
     <string name="rotate">Rotire</string>
-    <string name="path">Cale</string>
     <string name="rotate_left">Rotiţi spre stânga</string>
     <string name="rotate_right">Rotiţi spre dreapta</string>
     <string name="free_aspect_ratio">Niciunul</string>

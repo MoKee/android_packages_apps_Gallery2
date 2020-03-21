@@ -19,7 +19,6 @@
     <string name="reduce_column_count">Riduci numero colonne</string>
     <string name="change_cover_image">Cambia immagine copertina</string>
     <string name="select_photo">Seleziona foto</string>
-    <string name="use_default">Usa predefinita</string>
     <string name="volume">Volume</string>
     <string name="brightness">Luminosità</string>
     <string name="lock_orientation">Blocca orientamento</string>
@@ -67,9 +66,7 @@
     <string name="keep_aspect_ratio">Mantieni proporzioni</string>
     <string name="invalid_values">Inserisci una risoluzione valida</string>
     <string name="editor">Modifica</string>
-    <string name="save">Salva</string>
     <string name="rotate">Ruota</string>
-    <string name="path">Percorso</string>
     <string name="invalid_image_path">Percorso immagine non valido</string>
     <string name="image_editing_failed">Modifica immagine fallita</string>
     <string name="file_edited_successfully">File modificato correttamente</string>

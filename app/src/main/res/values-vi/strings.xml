@@ -19,7 +19,6 @@
     <string name="reduce_column_count">Giảm số cột</string>
     <string name="change_cover_image">Thay đổi ảnh bìa</string>
     <string name="select_photo">Chọn ảnh</string>
-    <string name="use_default">Sử dụng mặc định</string>
     <string name="volume">Âm lượng</string>
     <string name="brightness">Độ sáng</string>
     <string name="lock_orientation">Khóa xoay màn hình</string>
@@ -62,9 +61,7 @@
     <string name="keep_aspect_ratio">Giữ tỉ lệ</string>
     <string name="invalid_values">Hãy nhập tên miền hợp lệ</string>
     <string name="editor">Trình biên tập</string>
-    <string name="save">Lưu</string>
     <string name="rotate">Xoay</string>
-    <string name="path">Đường dẫn</string>
     <string name="invalid_image_path">Ảnh không hợp lệ</string>
     <string name="image_editing_failed">Chỉnh sửa hình ảnh thất bại</string>
     <string name="edit_image_with">Chỉnh sửa hình ảnh với:</string>

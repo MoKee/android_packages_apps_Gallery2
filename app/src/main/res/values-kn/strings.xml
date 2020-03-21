@@ -19,7 +19,6 @@
     <string name="reduce_column_count">ಸ್ತಂಭ ಎಣಿಕೆ ಕಡಿಮೆ ಮಾಡಿ</string>
     <string name="change_cover_image">ಮುಖಪುಟ ಚಿತ್ರವನ್ನು ಬದಲಾಯಿಸು</string>
     <string name="select_photo">ಚಿತ್ರವನ್ನು ಆರಿಸಿ</string>
-    <string name="use_default">ಪೂರ್ವನಿಯೋಜಿತ ಬಳಸು</string>
     <string name="volume">ಗಾತ್ರ</string>
     <string name="brightness">ಪ್ರಖರತೆ</string>
     <string name="lock_orientation">ದೃಷ್ಟಿಕೋನ ಲಾಕ್ ಮಾಡಿ</string>
@@ -61,9 +60,7 @@
     <string name="keep_aspect_ratio">ಆಕಾರ ಅನುಪಾತ ಕಾಪಾಡು</string>
     <string name="invalid_values">ದಯಮಾಡಿ ಮಾನ್ಯವಿರುವ ವಿಶ್ಲೇಷಣೆಯನ್ನು ನಮೂದಿಸು</string>
     <string name="editor">ಪರಿಷ್ಕರಕ</string>
-    <string name="save">ಉಳಿಸಿ</string>
     <string name="rotate">ತಿರುಗಿಸು</string>
-    <string name="path">ಪಥ</string>
     <string name="invalid_image_path">ಮಾನ್ಯವಲ್ಲದ ಚಿತ್ರದ ಪಥ</string>
     <string name="image_editing_failed">ಚಿತ್ರದ ಪರಿಷ್ಕರಣೆ ವಿಫಲಗೊಂಡಿದೆ</string>
     <string name="edit_image_with">ಇದರೊಂದಿಗೆ ಚಿತ್ರವನ್ನು ಪರಿಷ್ಕರಿಸು:</string>

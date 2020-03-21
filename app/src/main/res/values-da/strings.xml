@@ -19,7 +19,6 @@
     <string name="reduce_column_count">Færre kolonner</string>
     <string name="change_cover_image">Skift cover billede</string>
     <string name="select_photo">Vælg billede</string>
-    <string name="use_default">Brug standard</string>
     <string name="volume">Lydstyrke</string>
     <string name="brightness">Lysstyrke</string>
     <string name="lock_orientation">Lås orientering</string>
@@ -62,9 +61,7 @@
     <string name="keep_aspect_ratio">Bevar billedeforhold</string>
     <string name="invalid_values">Indtast en gyldig opløsning</string>
     <string name="editor">Editor</string>
-    <string name="save">Gem</string>
     <string name="rotate">Rotér</string>
-    <string name="path">Sti</string>
     <string name="invalid_image_path">Ugyldig sti til billede</string>
     <string name="image_editing_failed">Redigering af billede mislykkedes</string>
     <string name="edit_image_with">Rediger billede med:</string>

@@ -19,7 +19,6 @@
     <string name="reduce_column_count">Vähendage veergude arvu</string>
     <string name="change_cover_image">Muuda tausta pilt</string>
     <string name="select_photo">Valige foto</string>
-    <string name="use_default">Kasuta vaikerakendust</string>
     <string name="volume">Helitugevus</string>
     <string name="brightness">Heledus</string>
     <string name="lock_orientation">Lukusta suund</string>
@@ -68,9 +67,7 @@
     <string name="keep_aspect_ratio">Hoidke kuvasuhet</string>
     <string name="invalid_values">Sisesta korrektne resolutsioon</string>
     <string name="editor">Toimetaja</string>
-    <string name="save">Salvesta</string>
     <string name="rotate">Pööra</string>
-    <string name="path">Tee</string>
     <string name="invalid_image_path">Kehtetu pildi tee</string>
     <string name="image_editing_failed">Pildi redigeerimine ebaõnnestus</string>
     <string name="image_editing_cancelled">Pildi redigeerimine peatatud</string>

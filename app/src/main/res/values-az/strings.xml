@@ -14,9 +14,7 @@
     <string name="resize">Ölçüsünü dəyişin</string>
     <string name="width">Enlilik</string>
     <string name="height">Hündürlük</string>
-    <string name="save">Yadda saxla</string>
     <string name="rotate">Fırlat</string>
-    <string name="path">Cığır</string>
     <string name="rotate_left">Sola fırlat</string>
     <string name="rotate_right">Sağa fırladın</string>
     <string name="free_aspect_ratio">Heç biri</string>

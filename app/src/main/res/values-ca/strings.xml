@@ -18,7 +18,6 @@
     <string name="reduce_column_count">Reduir el número de columnes</string>
     <string name="change_cover_image">Canviar imatge de portada</string>
     <string name="select_photo">Sel·leccionar imatge</string>
-    <string name="use_default">Us per defecte</string>
     <string name="volume">Volum</string>
     <string name="brightness">Brillantor</string>
     <string name="lock_orientation">Bloquejar orientació</string>
@@ -58,9 +57,7 @@
     <string name="height">Alt</string>
     <string name="keep_aspect_ratio">Mantenir proporcions</string>
     <string name="invalid_values">Si us plau, introdueix una resolució vàlida</string>
-    <string name="save">Guardar</string>
     <string name="rotate">Rotar</string>
-    <string name="path">Ruta</string>
     <string name="invalid_image_path">Ruta de imatge no vàlida</string>
     <string name="image_editing_failed">Ha fallat la edició de la imatge</string>
     <string name="edit_image_with">Editar imatge utilitzant:</string>

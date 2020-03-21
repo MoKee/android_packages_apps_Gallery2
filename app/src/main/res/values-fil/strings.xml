@@ -9,9 +9,7 @@
     <string name="resize">Resize</string>
     <string name="width">Lapad</string>
     <string name="height">Taas</string>
-    <string name="save">I-save</string>
     <string name="rotate">Ang pagikot</string>
-    <string name="path">Landas</string>
     <string name="rotate_left">Ikot sa kaliwa</string>
     <string name="rotate_right">Ikot sa kanan</string>
     <string name="free_aspect_ratio">Libre</string>

@@ -5,9 +5,7 @@
     <string name="brightness">ڕۆشنایی</string>
     <string name="width">پانی</string>
     <string name="height">بەرزی</string>
-    <string name="save">پاشەکەوتکردن</string>
     <string name="rotate">سووڕاندنەوە</string>
-    <string name="path">ڕێچکە</string>
     <string name="rotate_left">سووڕاندنەوە بۆ چەپ</string>
     <string name="rotate_right">سووڕاندنەوە بۆ ڕاست</string>
     <string name="slideshow">نیشاندانی سلاید</string>

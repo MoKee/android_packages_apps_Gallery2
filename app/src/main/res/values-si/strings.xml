@@ -7,9 +7,7 @@
     <string name="resize">නැවත ප්‍රමාණගත කිරීම</string>
     <string name="width">පළල</string>
     <string name="height">උස</string>
-    <string name="save">සුරකින්න</string>
     <string name="rotate">කරකවන්න</string>
-    <string name="path">මග</string>
     <string name="rotate_left">වමට කරකවන්න</string>
     <string name="rotate_right">දකුණට කරකවන්න</string>
     <string name="free_aspect_ratio">කිසිවක් නැත</string>

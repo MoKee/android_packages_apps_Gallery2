@@ -18,7 +18,6 @@
     <string name="reduce_column_count">Reduza o número de columnas</string>
     <string name="change_cover_image">Cambiar a imaxe de portada</string>
     <string name="select_photo">Escolla foto</string>
-    <string name="use_default">Usar valor por omisión</string>
     <string name="brightness">Brillo</string>
     <string name="lock_orientation">Fixar orientación</string>
     <string name="unlock_orientation">Desbloquear orientación</string>
@@ -49,9 +48,7 @@
     <string name="height">Alto</string>
     <string name="keep_aspect_ratio">Manter proporcións</string>
     <string name="invalid_values">Por favor introduza unha resolución válida</string>
-    <string name="save">Gardar</string>
     <string name="rotate">Rotar</string>
-    <string name="path">Ruta</string>
     <string name="invalid_image_path">Ruta a imaxe non válida</string>
     <string name="image_editing_failed">Fallo na edición da imaxe</string>
     <string name="edit_image_with">Editar imaxe con:</string>

@@ -28,9 +28,7 @@
     <string name="keep_aspect_ratio">비율 유지</string>
     <string name="invalid_values">유효한 해상도를 입력해 주십시오.</string>
     <string name="editor">에디터</string>
-    <string name="save">저장</string>
     <string name="rotate">회전</string>
-    <string name="path">경로</string>
     <string name="invalid_image_path">잘못된 이미지 경로</string>
     <string name="image_editing_failed">이미지 편집에 실패했습니다.</string>
     <string name="rotate_left">왼쪽으로 회전</string>

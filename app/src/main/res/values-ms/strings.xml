@@ -8,9 +8,7 @@
     <string name="resize">Ubah saiz</string>
     <string name="width">Lebar</string>
     <string name="height">Tinggi</string>
-    <string name="save">Simpan</string>
     <string name="rotate">Putar</string>
-    <string name="path">Laluan</string>
     <string name="rotate_left">Putar ke kiri</string>
     <string name="rotate_right">Putar ke kanan</string>
     <string name="free_aspect_ratio">Tiada</string>

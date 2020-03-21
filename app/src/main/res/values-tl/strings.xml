@@ -9,9 +9,7 @@
     <string name="resize">I-resize</string>
     <string name="width">Lapad</string>
     <string name="height">Taas</string>
-    <string name="save">I-save</string>
     <string name="rotate">I-rotate</string>
-    <string name="path">Daanan</string>
     <string name="rotate_left">I-rotate pakaliwa</string>
     <string name="rotate_right">I-rotate pakanan</string>
     <string name="free_aspect_ratio">Wala</string>

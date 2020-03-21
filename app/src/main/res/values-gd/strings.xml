@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_launcher_name">Gailearaidh</string>
-    <string name="save">Sàbhail</string>
     <string name="simple_wallpaper">Gailearaidh</string>
     <string name="no_animation">Chan eil gin</string>
     <string name="pesdk_filter_asset_none">Chan eil gin</string>

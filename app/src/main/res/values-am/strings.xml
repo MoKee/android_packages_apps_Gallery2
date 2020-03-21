@@ -7,9 +7,7 @@
     <string name="resize">መጠን ቀይር</string>
     <string name="width">ስፋት</string>
     <string name="height">ቁመት</string>
-    <string name="save">አስቀምጥ</string>
     <string name="rotate">አሽከርክር</string>
-    <string name="path">ዱካ</string>
     <string name="rotate_left">ወደ ግራ አሽከርክር</string>
     <string name="rotate_right">ወደ ቀኝ አሽከርክር</string>
     <string name="free_aspect_ratio">ምንም</string>

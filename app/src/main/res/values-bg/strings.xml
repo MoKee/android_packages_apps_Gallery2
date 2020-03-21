@@ -31,9 +31,7 @@
     <string name="width">Ширина</string>
     <string name="height">Височина</string>
     <string name="keep_aspect_ratio">Запази пропорцията</string>
-    <string name="save">Запазване</string>
     <string name="rotate">Завъртане</string>
-    <string name="path">Път</string>
     <string name="rotate_left">Завъртане наляво</string>
     <string name="rotate_right">Завъртане надясно</string>
     <string name="free_aspect_ratio">Без</string>

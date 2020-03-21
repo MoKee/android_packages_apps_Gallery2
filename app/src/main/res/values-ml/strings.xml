@@ -6,9 +6,7 @@
     <string name="resize">വലുപ്പംമാറ്റുക</string>
     <string name="width">വീതി</string>
     <string name="height">ഉയരം</string>
-    <string name="save">സംരക്ഷിക്കുക</string>
     <string name="rotate">തിരിക്കുക</string>
-    <string name="path">പാത്ത്</string>
     <string name="rotate_left">ഇടത്തേയ്ക്ക് തിരിക്കുക</string>
     <string name="rotate_right">വലത്തേയ്ക്ക് തിരിക്കുക</string>
     <string name="free_aspect_ratio">ഒന്നുമില്ല</string>

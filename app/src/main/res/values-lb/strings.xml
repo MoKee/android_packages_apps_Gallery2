@@ -6,9 +6,7 @@
     <string name="brightness">Hellegkeet</string>
     <string name="width">Breet</string>
     <string name="height">Héicht</string>
-    <string name="save">Späicheren</string>
     <string name="rotate">Rotéieren</string>
-    <string name="path">Pad</string>
     <string name="rotate_left">Lénks rotéieren</string>
     <string name="rotate_right">Riets rotéieren</string>
     <string name="other_aspect_ratio">Aner</string>

@@ -7,9 +7,7 @@
     <string name="resize">पुनःआकार मिलाउनुहोस्</string>
     <string name="width">चौडाइ</string>
     <string name="height">उचाइ</string>
-    <string name="save">बचत गर्नुहोस्</string>
     <string name="rotate">घुमाउनुहोस्</string>
-    <string name="path">बाटो</string>
     <string name="rotate_left">बायाँ घुमाउनुहोस्</string>
     <string name="rotate_right">दायाँ घुमाउनुहोस्</string>
     <string name="free_aspect_ratio">कुनै पनि होइन</string>

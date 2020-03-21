@@ -7,9 +7,7 @@
     <string name="resize">Verander grootte</string>
     <string name="width">Wydte</string>
     <string name="height">Hoogte</string>
-    <string name="save">Stoor</string>
     <string name="rotate">Draai</string>
-    <string name="path">Pad</string>
     <string name="rotate_left">Draai na links</string>
     <string name="rotate_right">Draai na regs</string>
     <string name="free_aspect_ratio">Geen</string>

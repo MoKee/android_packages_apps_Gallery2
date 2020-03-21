@@ -5,9 +5,7 @@
     <string name="brightness">ஒளிர்வு</string>
     <string name="width">அகலம்</string>
     <string name="height">உயரம்</string>
-    <string name="save">சேமி</string>
     <string name="rotate">சுழற்று</string>
-    <string name="path">பாதை</string>
     <string name="rotate_left">இடதுபுறம் சுழற்று</string>
     <string name="rotate_right">வலதுபுறம் சுழற்று</string>
     <string name="free_aspect_ratio">ஏதுமில்லை</string>

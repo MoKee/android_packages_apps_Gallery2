@@ -4,9 +4,7 @@
     <string name="show_on_map">মেপত প্ৰদৰ্শন কৰক</string>
     <string name="width">বহল</string>
     <string name="height">উচ্চতা</string>
-    <string name="save">ছেভ কৰা</string>
     <string name="rotate">ঘূৰোৱা</string>
-    <string name="path">পাথ</string>
     <string name="rotate_left">বাওঁফালে ঘূৰোৱা</string>
     <string name="rotate_right">সোঁফালে ঘূৰোৱা</string>
     <string name="other_aspect_ratio">অন্যান্য</string>

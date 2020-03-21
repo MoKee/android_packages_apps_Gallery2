@@ -7,9 +7,7 @@
     <string name="resize">ปรับขนาด</string>
     <string name="width">ความกว้าง</string>
     <string name="height">ความสูง</string>
-    <string name="save">บันทึก</string>
     <string name="rotate">หมุน</string>
-    <string name="path">เส้นทาง</string>
     <string name="rotate_left">หมุนไปทางซ้าย</string>
     <string name="rotate_right">หมุนไปทางขวา</string>
     <string name="free_aspect_ratio">ไม่มี</string>

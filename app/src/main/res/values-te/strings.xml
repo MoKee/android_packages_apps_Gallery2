@@ -6,9 +6,7 @@
     <string name="resize">పరిమాణం మార్చు</string>
     <string name="width">వెడల్పు</string>
     <string name="height">ఎత్తు</string>
-    <string name="save">సేవ్ చేయి</string>
     <string name="rotate">తిప్పు</string>
-    <string name="path">పథం</string>
     <string name="rotate_left">ఎడమకు తిప్పు</string>
     <string name="rotate_right">కుడికి తిప్పు</string>
     <string name="free_aspect_ratio">ఏదీ వద్దు</string>

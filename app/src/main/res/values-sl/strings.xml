@@ -19,7 +19,6 @@
     <string name="reduce_column_count">Zmanjšaj število stolpcev</string>
     <string name="change_cover_image">Spremeni naslovno fotografijo</string>
     <string name="select_photo">Izberi fotografijo</string>
-    <string name="use_default">Uporabi privzeto</string>
     <string name="volume">Glasnost</string>
     <string name="brightness">Svetlost</string>
     <string name="lock_orientation">Zakleni usmerjenost</string>
@@ -63,9 +62,7 @@
     <string name="keep_aspect_ratio">Obdrži razmerje stranic</string>
     <string name="invalid_values">Vnesite veljavno ločljivost</string>
     <string name="editor">Urejevalnik</string>
-    <string name="save">Shrani</string>
     <string name="rotate">Zavrti</string>
-    <string name="path">Pot</string>
     <string name="invalid_image_path">Napačna pot</string>
     <string name="image_editing_failed">Urejanje slike ni uspelo</string>
     <string name="edit_image_with">Uredi sliko z:</string>

@@ -8,9 +8,7 @@
     <string name="resize">ປັບຂະໜາດ</string>
     <string name="width">ກວ້າງ</string>
     <string name="height">ລວງສູງ</string>
-    <string name="save">ບັນທຶກ</string>
     <string name="rotate">ໝຸນ</string>
-    <string name="path">ເສັ້ນທາງ</string>
     <string name="rotate_left">ໝຸນຊ້າຍ</string>
     <string name="rotate_right">ໝຸນຂວາ</string>
     <string name="free_aspect_ratio">ບໍ່ໃຊ້</string>

@@ -8,9 +8,7 @@
     <string name="resize">Aldatu tamaina</string>
     <string name="width">Zabalera</string>
     <string name="height">Altuera</string>
-    <string name="save">Gorde</string>
     <string name="rotate">Biratu</string>
-    <string name="path">Bidea</string>
     <string name="rotate_left">Biratu ezkerrera</string>
     <string name="rotate_right">Biratu eskuinera</string>
     <string name="free_aspect_ratio">Bat ere ez</string>

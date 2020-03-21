@@ -6,9 +6,7 @@
     <string name="resize">आकार बदला</string>
     <string name="width">रुंदी</string>
     <string name="height">उंची</string>
-    <string name="save">जतन करा</string>
     <string name="rotate">चक्राकृती फिरवा</string>
-    <string name="path">मार्ग</string>
     <string name="rotate_left">डावीकडे फिरवा</string>
     <string name="rotate_right">उजवीकडे फिरवा</string>
     <string name="free_aspect_ratio">काहीही नाही</string>

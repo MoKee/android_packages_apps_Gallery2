@@ -19,7 +19,6 @@
     <string name="reduce_column_count">Csökkentse az oszlopok számát</string>
     <string name="change_cover_image">Borítókép változtatása</string>
     <string name="select_photo">Válasszon fotót</string>
-    <string name="use_default">Alapértelmezett használata</string>
     <string name="volume">Hangerő</string>
     <string name="brightness">Fényesség</string>
     <string name="lock_orientation">Tájolás zárolása</string>
@@ -68,9 +67,7 @@
     <string name="keep_aspect_ratio">Képarány megtartása</string>
     <string name="invalid_values">Írjon be érvényes felbontást</string>
     <string name="editor">Szerkesztő</string>
-    <string name="save">Mentés</string>
     <string name="rotate">Forgatás</string>
-    <string name="path">Elérési útvonal</string>
     <string name="invalid_image_path">A kép elérési útvonala érvénytelen</string>
     <string name="image_editing_failed">A képszerkesztés meghiúsult</string>
     <string name="image_editing_cancelled">A képszerkesztés visszavonva</string>

@@ -7,9 +7,7 @@
     <string name="resize">ზომის შეცვლა</string>
     <string name="width">სიგანე</string>
     <string name="height">სიმაღლე</string>
-    <string name="save">შენახვა</string>
     <string name="rotate">შეტრიალება</string>
-    <string name="path">მდებარეობა</string>
     <string name="rotate_left">მარცხნივ შებრუნება</string>
     <string name="rotate_right">მარჯვნივ შეტრიალება</string>
     <string name="free_aspect_ratio">არც ერთი</string>

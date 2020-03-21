@@ -19,7 +19,6 @@
     <string name="reduce_column_count">Kacheln vergrößern</string>
     <string name="change_cover_image">Coverbild ändern</string>
     <string name="select_photo">Auswählen</string>
-    <string name="use_default">Standard</string>
     <string name="volume">Lautstärke</string>
     <string name="brightness">Helligkeit</string>
     <string name="lock_orientation">Bildausrichtung sperren</string>
@@ -67,9 +66,7 @@
     <string name="keep_aspect_ratio">Seitenverhältnis beibehalten</string>
     <string name="invalid_values">Bitte eine gültige Auflösung eingeben.</string>
     <string name="editor">Editor</string>
-    <string name="save">Speichern</string>
     <string name="rotate">Drehen</string>
-    <string name="path">Pfad</string>
     <string name="invalid_image_path">Ungültiger Dateipfad.</string>
     <string name="image_editing_failed">Bildbearbeitung fehlgeschlagen.</string>
     <string name="file_edited_successfully">Datei erfolgreich bearbeitet</string>

@@ -2,7 +2,6 @@
 <resources>
     <string name="edit">Edit</string>
     <string name="resize">Re-size</string>
-    <string name="save">Save</string>
     <string name="rotate">Rotate</string>
     <string name="free_aspect_ratio">None</string>
     <string name="other_aspect_ratio">Other</string>

@@ -7,9 +7,7 @@
     <string name="resize">ប្ដូរទំហំ</string>
     <string name="width">ទទឹង</string>
     <string name="height">កម្ពស់</string>
-    <string name="save">រក្សាទុក</string>
     <string name="rotate">បង្វិល</string>
-    <string name="path">ផ្លូវ</string>
     <string name="rotate_left">បង្វិល​ឆ្វេង</string>
     <string name="rotate_right">បង្វិល​ស្ដាំ</string>
     <string name="free_aspect_ratio">គ្មាន</string>

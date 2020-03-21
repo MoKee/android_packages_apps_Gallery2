@@ -19,7 +19,6 @@
     <string name="reduce_column_count">تقليل عدد الأعمدة</string>
     <string name="change_cover_image">تغيير صورة الغلاف</string>
     <string name="select_photo">اختر الصور</string>
-    <string name="use_default">استخدم الافتراضي</string>
     <string name="volume">الصوت</string>
     <string name="brightness">السطوع</string>
     <string name="lock_orientation">غلق الاتجاه</string>
@@ -71,9 +70,7 @@
     <string name="keep_aspect_ratio">إبقاء نسبة القياس</string>
     <string name="invalid_values">الرجاء إدخال درجة دقة صحيحة</string>
     <string name="editor">تعديل</string>
-    <string name="save">حفظ</string>
     <string name="rotate">التدوير</string>
-    <string name="path">المسار</string>
     <string name="invalid_image_path">مسار صورة غير صحيح</string>
     <string name="image_editing_failed">فشل تعديل الصورة</string>
     <string name="file_edited_successfully">تم تعديل الملف بنجاح</string>

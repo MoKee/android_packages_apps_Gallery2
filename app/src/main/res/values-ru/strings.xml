@@ -19,7 +19,6 @@
     <string name="reduce_column_count">Убрать столбец</string>
     <string name="change_cover_image">Изменить обложку</string>
     <string name="select_photo">Выбрать изображение</string>
-    <string name="use_default">Использовать по умолчанию</string>
     <string name="volume">Громкость</string>
     <string name="brightness">Яркость</string>
     <string name="lock_orientation">Заблокировать ориентацию</string>
@@ -31,6 +30,7 @@
     <string name="fix_date_taken">Исправить дату снимку</string>
     <string name="fixing">Исправление…</string>
     <string name="dates_fixed_successfully">Даты исправлены</string>
+    <string name="no_date_takens_found">Значения забытых дат не найдены</string>
     <string name="share_resized">Поделиться измененной версией</string>
     <string name="upgraded_from_free">Похоже,\n\nвы обновили старую бесплатную версию приложения. Теперь вы можете удалить старую версию, нажав на кнопку «Обновить до Pro» в верхней части настроек приложения.\n\nУ вас будут удалены только элементы корзины, избранные элементы не отмечены, и вам также придется сбросить настройки приложения.\n\nСпасибо!</string>
     <string name="switch_to_file_search">Переключиться на поиск файлов по всем видимым папкам</string>
@@ -67,11 +67,10 @@
     <string name="keep_aspect_ratio">Сохранять соотношение сторон</string>
     <string name="invalid_values">Указано недопустимое разрешение</string>
     <string name="editor">Редактор</string>
-    <string name="save">Сохранить</string>
     <string name="rotate">Поворот</string>
-    <string name="path">Путь</string>
     <string name="invalid_image_path">Недопустимый путь изображения</string>
     <string name="image_editing_failed">Редактирование изображения не удалось</string>
+    <string name="image_editing_cancelled">Редактирование изображения отменено</string>
     <string name="file_edited_successfully">Файл успешно отредактирован</string>
     <string name="edit_image_with">Редактирование изображений в:</string>
     <string name="no_editor_found">Ни одного редактора изображений не найдено</string>
@@ -261,6 +260,8 @@
     <string name="faq_2_text">Это можно решить двумя способами. Вы можете переустановить приложение или найти его в настройках вашего устройства и выбрать пункт \"Очистить данные\", что сбросит все настройки приложения, но не удалит медиафайлы.</string>
     <string name="faq_3_title">Как я могу сделать альбом всегда отображающимся сверху?</string>
     <string name="faq_3_text">Вы можете долго нажимать на нужный альбом и выбрать значок «Закрепить» в меню действий, который закрепит его наверху. Вы также можете закрепить несколько папок, закрепленные элементы будут отсортированы по умолчанию.</string>
+    <string name="faq_4_title">Как я могу ускорить перемотку видео?</string>
+    <string name="faq_4_text">Это можно сделать двойным касанием боковой части экрана или касанием текста текущей или максимальной продолжительности рядом с полосой поиска. Если в настройках приложения включить отображение видео на отдельном экране, можно использовать и горизонтальные жесты.</string>
     <string name="faq_5_title">В чём разница между скрытием и исключением папки?</string>
     <string name="faq_5_text">Исключение запрещает отображение папки только в Simple Gallery, в то время как скрытие работает системно и скрывает папку из других галерей. Это достигается путём создания пустого файла \".nomedia\" в данной папке, который впоследствии можно удалить любым файловым менеджером.</string>
     <string name="faq_6_title">Почему отображаются папки с музыкальными обложками?</string>

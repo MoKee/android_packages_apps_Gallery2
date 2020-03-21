@@ -7,9 +7,7 @@
     <string name="resize">Չափափոխել</string>
     <string name="width">Լայնությունը</string>
     <string name="height">Հասակ</string>
-    <string name="save">Պահել</string>
     <string name="rotate">Պտտել</string>
-    <string name="path">Ուղի</string>
     <string name="rotate_left">Պտտել ձախ</string>
     <string name="rotate_right">Պտտել աջ</string>
     <string name="free_aspect_ratio">Ոչ մեկը</string>

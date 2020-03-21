@@ -9,9 +9,7 @@
     <string name="resize">שנה גודל</string>
     <string name="width">רוחב</string>
     <string name="height">גובה</string>
-    <string name="save">שמור</string>
     <string name="rotate">סובב</string>
-    <string name="path">נתיב</string>
     <string name="rotate_left">סובב שמאלה</string>
     <string name="rotate_right">סובב ימינה</string>
     <string name="free_aspect_ratio">ללא</string>
