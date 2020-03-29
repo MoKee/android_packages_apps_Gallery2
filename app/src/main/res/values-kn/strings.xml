@@ -151,6 +151,7 @@
     <string name="toggle_file_visibility">ಕಡತ ಗೋಚರಿಕೆಯನ್ನು ಟಾಗಲ್ ಮಾಡು</string>
     <string name="pesdk_transform_button_freeCrop">ಕಸ್ಟಮ್</string>
     <string name="pesdk_transform_button_resetCrop">ಮರುಹೊಂದಿಸು</string>
+    <string name="pesdk_filter_title_name">ಶೋಧಕ</string>
     <string name="pesdk_filter_asset_none">ಯಾವುದೂ ಇಲ್ಲ</string>
     <string name="pesdk_adjustments_button_exposureTool">ಎಕ್ಸ್ ಪೋಶರ್</string>
     <string name="pesdk_adjustments_button_brightnessTool">ಪ್ರಖರತೆ</string>
@@ -175,6 +176,7 @@
     <string name="pesdk_editor_save">ಉಳಿಸಿ</string>
     <string name="pesdk_common_button_undo">ರದ್ದುಮಾಡು</string>
     <string name="pesdk_common_button_redo">ಮತ್ತೆಮಾಡು</string>
+    <string name="pesdk_common_title_transparentColor">ಪಾರದರ್ಶಕ</string>
     <string name="pesdk_common_title_grayColor">ಬೂದು</string>
     <string name="pesdk_common_title_blackColor">ಕಪ್ಪು</string>
     <string name="pesdk_common_title_blueColor">ನೀಲಿ</string>

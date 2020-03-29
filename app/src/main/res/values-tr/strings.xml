@@ -231,6 +231,8 @@
     <string name="pesdk_editor_save">Kaydet</string>
     <string name="pesdk_editor_text_exportProgressUnknown">Görüntü getiriliyor...</string>
     <string name="pesdk_editor_text_exportProgress" formatted="false">Görüntü getiriliyor %s.</string>
+    <string name="pesdk_common_button_flipH">Flip H</string>
+    <string name="pesdk_common_button_flipV">Flip V</string>
     <string name="pesdk_common_button_undo">Geri al</string>
     <string name="pesdk_common_button_redo">Yeniden yap</string>
     <string name="pesdk_common_title_colorPicker">Renk Seçici</string>
@@ -250,6 +252,7 @@
     <string name="pesdk_common_title_oliveColor">Zeytin yeşili</string>
     <string name="pesdk_common_title_greenColor">Yeşil</string>
     <string name="pesdk_common_title_aquamarinColor">Havuz mavisi</string>
+    <string name="pesdk_common_title_pipettableColor">Pipetlenebilir renk</string>
     <string name="faq_1_title">Simple Galeri\'yi varsayılan cihaz galerisi nasıl yapabilirim?</string>
     <string name="faq_1_text">Öncelikle, varsayılan olarak varsayılan galeriyi cihaz ayarlarınızın Uygulamalar bölümünde bulmanız, \"Varsayılan olarak aç\" gibi bir tuşa basmanız, tıklayıp \"Varsayılanları temizle\" yi seçmeniz gerekir.
         Bir sonraki videoyu veya videoyu açmayı denediğinizde, Simple Galeri\'yi seçip varsayılan uygulama haline getirebileceğiniz bir uygulama seçicisini görmelisiniz.</string>
@@ -258,6 +261,7 @@
     <string name="faq_3_title">Bir albümün her zaman en üstte nasıl görünmesini sağlayabilirim?</string>
     <string name="faq_3_text">İstediğiniz albüme uzun süre basabilir ve eylemler menüsünde üste yerleştirecek olan pin simgesini seçebilirsiniz. Birden fazla klasörü de sabitleyebilirsiniz, sabitlenmiş öğeler varsayılan sıralama yöntemine göre sıralanır.</string>
     <string name="faq_4_title">Videoları nasıl hızlı ileri sardırabilirim?</string>
+    <string name="faq_4_text">Ekranın yan tarafına iki kez hafifçe vurarak veya arama çubuğunun yanındaki geçerli veya maksimum süre metinlerine dokunarak bunu yapabilirsiniz. Videoları uygulama ayarlarında ayrı bir ekranda açmayı etkinleştirirseniz yatay hareketleri de kullanabilirsiniz.</string>
     <string name="faq_5_title">Klasörün gizlenmesi ve hariç tutulması arasındaki fark nedir?</string>
     <string name="faq_5_text">Gizle, klasörü yalnızca Simple Galeri\'de görüntülemeyi engellerken, Gizle sistem genelinde çalışır ve klasörü diğer galerilerden gizler. Verilen klasörde boş bir \".nomedia\" dosyası oluşturarak çalışır, daha sonra herhangi bir dosya yöneticisi ile kaldırabilirsiniz.</string>
     <string name="faq_6_title">Neden müzik kapaklı sanat veya çıkartma içeren klasörler görünür?</string>
