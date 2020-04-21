@@ -308,11 +308,15 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
 
         showSystemUI(true)
 
-        handleLockedFolderOpening(mPath.getParentPath()) { success ->
-            if (success) {
-                initContinue()
-            } else {
-                finish()
+        if (intent.getBooleanExtra(SKIP_AUTHENTICATION, false)) {
+            initContinue()
+        } else {
+            handleLockedFolderOpening(mPath.getParentPath()) { success ->
+                if (success) {
+                    initContinue()
+                } else {
+                    finish()
+                }
             }
         }
     }
@@ -758,7 +762,8 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     }
 
     private fun initBottomActionsLayout() {
-        bottom_actions.layoutParams.height = resources.getDimension(R.dimen.bottom_actions_height).toInt() + navigationBarHeight
+        val useNavigationBarHeight = if (navigationBarBottom) navigationBarHeight else 0
+        bottom_actions.layoutParams.height = resources.getDimension(R.dimen.bottom_actions_height).toInt() + useNavigationBarHeight
         if (config.bottomActions) {
             bottom_actions.beVisible()
         } else {
