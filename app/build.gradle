@@ -17,8 +17,8 @@ android {
         applicationId "com.simplemobiletools.gallery.pro"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 302
-        versionName "6.14.2"
+        versionCode 304
+        versionName "6.14.3"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         android.applicationVariants.all { variant ->
@@ -62,8 +62,8 @@ android {
 
     flavorDimensions "licensing"
     productFlavors {
-        proprietary { }
-        foss { }
+        proprietary {}
+        foss {}
     }
 
     lintOptions {
@@ -82,7 +82,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.26.15.0'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:5.26.18.0'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
