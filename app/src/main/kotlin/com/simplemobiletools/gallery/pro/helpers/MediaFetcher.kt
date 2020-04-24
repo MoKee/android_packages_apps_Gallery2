@@ -66,7 +66,7 @@ class MediaFetcher(val context: Context) {
             val shouldShowHidden = config.shouldShowHidden
             val excludedPaths = config.excludedFolders
             val includedPaths = config.includedFolders
-            folders.filter { it.shouldFolderBeVisible(excludedPaths, includedPaths, shouldShowHidden) }.toMutableList() as ArrayList<String>
+            folders.filter { it.shouldFolderBeVisible(excludedPaths, includedPaths, shouldShowHidden, context) }.toMutableList() as ArrayList<String>
         } catch (e: Exception) {
             ArrayList()
         }
@@ -192,8 +192,8 @@ class MediaFetcher(val context: Context) {
 
         val showHidden = config.shouldShowHidden
         val excludedFolders = config.excludedFolders
-        foldersToScan = foldersToScan.filter { it.shouldFolderBeVisible(excludedFolders, includedFolders, showHidden) }.toHashSet()
-        return foldersToScan.distinctBy { it.getDistinctPath() }.toMutableSet() as LinkedHashSet<String>
+        return foldersToScan.distinctBy { it.getDistinctPath() }
+                .filter { it.shouldFolderBeVisible(excludedFolders, includedFolders, showHidden, context) }.toMutableSet() as LinkedHashSet<String>
     }
 
     private fun addFolder(curFolders: HashSet<String>, folder: String) {
