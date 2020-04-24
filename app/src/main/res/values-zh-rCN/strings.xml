@@ -263,7 +263,6 @@
     <string name="faq_4_title">如何快进视频？</string>
     <string name="faq_4_text">您可以双击屏幕侧边，也可以单击进度条旁边的当前时间或视频时长文字。如果您启用了以单独界面打开视频，还可以在横屏时使用这些手势。</string>
     <string name="faq_5_title">文件夹的隐藏和排除有什么区别？</string>
-    <string name="faq_5_text">排除功能只是防止其在简约图库中显示；而隐藏功能作用于系统范围，这样文件夹也会在其他图库中隐藏。它的工作原理是在给定的文件夹中创建一个空的“.nomedia”文件，你可以使用任何文件管理器删除它。</string>
     <string name="faq_6_title">为什么会出现有音乐专辑封面或贴纸的文件夹？</string>
     <string name="faq_6_text">您可能会看到一些不寻常的相册出现。长按这些相册并选择“排除”就能轻松排除了。在之后的对话框中，您还可以选择父文件夹，这样也会阻止其他相关的相册出现。</string>
     <string name="faq_7_title">有个包含图像的文件夹没显示，或者图像没显示全。怎么办？</string>

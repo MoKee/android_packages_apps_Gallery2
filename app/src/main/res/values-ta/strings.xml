@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_launcher_name">படத்தொகுப்பு</string>
     <string name="edit">திருத்தம்</string>
     <string name="show_on_map">வரைபடத்தில் காண்பி</string>
     <string name="brightness">ஒளிர்வு</string>
@@ -10,8 +11,13 @@
     <string name="rotate_right">வலதுபுறம் சுழற்று</string>
     <string name="free_aspect_ratio">ஏதுமில்லை</string>
     <string name="other_aspect_ratio">பிற</string>
+    <string name="simple_wallpaper">படத்தொகுப்பு</string>
+    <string name="home_screen">முகப்புத் திரை</string>
+    <string name="lock_screen">பூட்டு திரை</string>
     <string name="no_animation">ஏதுமில்லை</string>
+    <string name="by_folder">கோப்புறை</string>
     <string name="by_date_taken">எடுத்த தேதி</string>
+    <string name="by_extension">நீட்டிப்புகள்</string>
     <string name="pesdk_transform_button_freeCrop">தனிப்பயன்</string>
     <string name="pesdk_transform_button_resetCrop">மீட்டமை</string>
     <string name="pesdk_filter_asset_none">ஏதுமில்லை</string>
@@ -23,10 +29,13 @@
     <string name="pesdk_adjustments_button_reset">மீட்டமை</string>
     <string name="pesdk_focus_title_disabled">ஏதுமில்லை</string>
     <string name="pesdk_text_title_name">உரை</string>
+    <string name="pesdk_text_button_add">சேர்</string>
     <string name="pesdk_text_button_edit">திருத்து</string>
     <string name="pesdk_text_button_color">நிறம்</string>
+    <string name="pesdk_text_button_delete">நீக்கு</string>
     <string name="pesdk_brush_button_color">நிறம்</string>
     <string name="pesdk_brush_button_size">அளவு</string>
+    <string name="pesdk_brush_button_delete">நீக்கு</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">ஆம்</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">இல்லை</string>
     <string name="pesdk_editor_cancel">ரத்துசெய்</string>
@@ -34,6 +43,7 @@
     <string name="pesdk_editor_save">சேமி</string>
     <string name="pesdk_common_button_undo">செயல்தவிர்</string>
     <string name="pesdk_common_button_redo">மீண்டும்செய்</string>
+    <string name="pesdk_common_title_blackColor">கருப்பு</string>
     <string name="pesdk_common_title_blueColor">நீலம்</string>
     <string name="pesdk_common_title_redColor">சிவப்பு</string>
     <string name="pesdk_common_title_greenColor">பச்சை</string>

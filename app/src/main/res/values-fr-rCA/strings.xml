@@ -263,7 +263,6 @@
     <string name="faq_4_title">Comment avancer rapidement dans les vidéos ?</string>
     <string name="faq_4_text">Vous pouvez le faire en appuyant deux fois sur le côté de l\'écran, ou en appuyant sur les textes de durée actuelle ou max près de la barre de recherche. Si vous activez l\'ouverture de vidéos sur un écran séparé dans les paramètres de l\'application, vous pouvez également utiliser des gestes horizontaux.</string>
     <string name="faq_5_title">Quelle est la différence entre cacher et exclure un répertoire ?</string>
-    <string name="faq_5_text">Exclure n\'affiche pas le dossier dans Simple Galerie uniquement, alors que Cacher le cache pour l\'intégralité du système, y compris les autres galeries. Dans le dernier cas, un fichier \".nomedia\" est créé dans le répertoire caché, et peut s\'enlever avec n\'importe quel explorateur de fichiers.</string>
     <string name="faq_6_title">Pourquoi des répertoires avec des pochettes d\'albums musicaux ou des miniatures d\'images sont affichés ?</string>
     <string name="faq_6_text">Cela peut arriver de voir des albums qui ne devraient pas être affichés. Vous pouvez les exclure facilement en faisaint un appui long sur eux puis en sélectionnant « Exclure », après quoi vous pouvez aussi sélectionner le répertoire parent, ce qui devrait éviter l\'apparition d\'albums similaires.</string>
     <string name="faq_7_title">Un dossier avec des images n\'apparaît pas. Que faire ?</string>

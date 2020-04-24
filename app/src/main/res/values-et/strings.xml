@@ -263,7 +263,6 @@
     <string name="faq_4_title">Kuidas videoid edasi saata?</string>
     <string name="faq_4_text">Saate seda teha, topeltpuudutades ekraani serva või koputades otsinguriba lähedal olevaid praeguseid või maksimaalse kestusega tekste. Kui lubate rakenduse seadetes videote avamise eraldi ekraanil, saate kasutada ka horisontaalseid žeste.</string>
     <string name="faq_5_title">Mis vahe on kausta peitmise ja välistamise vahel?</string>
-    <string name="faq_5_text">Välista see, et kaust kuvatakse ainult lihtsas galeriis, samas peidab töö süsteemi ja ka teiste galeriide kausta. See toimib, luues tühja kausta \".nomedia\" faili, mille saate seejärel eemaldada ka mis tahes failihalduriga.</string>
     <string name="faq_6_title">Miks ilmuvad muusikakaanega kaustad või kleebised?</string>
     <string name="faq_6_text">Võib juhtuda, et näete mõnda ebatavalist albumit. Neid saab hõlpsasti välistada, vajutades sellel pikka aega ja valides Välista. Järgmises dialoogis saate seejärel valida vanemkausta, tõenäoliselt see takistab teiste seotud albumite ilmumist.</string>
     <string name="faq_7_title">Piltidega kaust ei kuvata või see ei näita kõiki üksusi. Mida ma teha saan?</string>

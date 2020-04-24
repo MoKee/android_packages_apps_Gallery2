@@ -263,7 +263,6 @@
     <string name="faq_4_title">Videoları nasıl hızlı ileri sardırabilirim?</string>
     <string name="faq_4_text">Ekranın yan tarafına iki kez hafifçe vurarak veya arama çubuğunun yanındaki geçerli veya maksimum süre metinlerine dokunarak bunu yapabilirsiniz. Videoları uygulama ayarlarında ayrı bir ekranda açmayı etkinleştirirseniz yatay hareketleri de kullanabilirsiniz.</string>
     <string name="faq_5_title">Klasörün gizlenmesi ve hariç tutulması arasındaki fark nedir?</string>
-    <string name="faq_5_text">Gizle, klasörü yalnızca Simple Galeri\'de görüntülemeyi engellerken, Gizle sistem genelinde çalışır ve klasörü diğer galerilerden gizler. Verilen klasörde boş bir \".nomedia\" dosyası oluşturarak çalışır, daha sonra herhangi bir dosya yöneticisi ile kaldırabilirsiniz.</string>
     <string name="faq_6_title">Neden müzik kapaklı sanat veya çıkartma içeren klasörler görünür?</string>
     <string name="faq_6_text">Olağandışı albümlerin ortaya çıkacağını görebilirsiniz. Bunları uzun süre basarak ve hariç tut seçeneğini belirleyerek kolayca hariç tutabilirsiniz. Bir sonraki iletişim kutusunda ana klasörü seçebilir, diğer ilgili albümlerin de görüntülenmesini engeller.</string>
     <string name="faq_7_title">Resimler içeren bir klasör görünmüyor, ne yapabilirim?</string>

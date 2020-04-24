@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Jednoduchá galerie</string>
+    <string name="app_name">Simple Gallery</string>
     <string name="app_launcher_name">Galerie</string>
     <string name="edit">Upravit</string>
     <string name="open_camera">Otevřít fotoaparát</string>
@@ -21,15 +21,16 @@
     <string name="select_photo">Vybrat fotografii</string>
     <string name="volume">Hlasitost</string>
     <string name="brightness">Jas</string>
-    <string name="lock_orientation">Uzamknout otáčení obrazovky</string>
-    <string name="unlock_orientation">Odemknout otáčení obrazovky</string>
-    <string name="change_orientation">Změnit otáčení obrazovky</string>
+    <string name="lock_orientation">Uzamknout orientaci</string>
+    <string name="unlock_orientation">Odemknout orientaci</string>
+    <string name="change_orientation">Změnit orientaci</string>
     <string name="force_portrait">Vynutit orientaci na výšku</string>
     <string name="force_landscape">Vynutit orientaci na šířku</string>
     <string name="use_default_orientation">Použít výchozí orientaci</string>
     <string name="fix_date_taken">Opravit datum pořízení</string>
     <string name="fixing">Oprava…</string>
-    <string name="dates_fixed_successfully">Data byli úspěšně opravena</string>
+    <string name="dates_fixed_successfully">Data byla úspěšně opravena</string>
+    <string name="no_date_takens_found">Nebyly nalezeny žádné hodnoty data</string>
     <string name="share_resized">Sdílet změněnou verzi</string>
     <string name="upgraded_from_free">Zdravím,\n\nvypadá to tak, že jste ze staré bezplatné aplikace přešli na novou, placenou. Nyní můžete starou aplikaci, která má na vrchu nastavení tlačítko \'Upgradovat na Pro\' odinstalovat.\n\nBudou smazány pouze položky v Koši a položky, které nejsou označeny. Budete také muset obnovit nastavení aplikace.\n\nDíky!</string>
     <string name="switch_to_file_search">Přepnout na vyhledávání souborů ve všech viditelných složkách</string>
@@ -69,6 +70,7 @@
     <string name="rotate">Otočit</string>
     <string name="invalid_image_path">Neplatná cesta</string>
     <string name="image_editing_failed">Úprava souboru selhala</string>
+    <string name="image_editing_cancelled">Úprava obrázku byla zrušena</string>
     <string name="file_edited_successfully">Soubor byl úspěšně upraven</string>
     <string name="edit_image_with">Upravit soubor pomocí:</string>
     <string name="no_editor_found">Nebyl nalezen žádný editor</string>
@@ -174,43 +176,83 @@
     <string name="toggle_file_visibility">Přepnout viditelnost souborů</string>
     <string name="pesdk_transform_button_freeCrop">Vlastní</string>
     <string name="pesdk_transform_button_resetCrop">Restartovat</string>
+    <string name="pesdk_transform_button_squareCrop">Čtverec</string>
+    <string name="pesdk_transform_title_name">Transformace</string>
     <string name="pesdk_filter_title_name">Filtrovat</string>
     <string name="pesdk_filter_asset_none">Žádný</string>
+    <string name="pesdk_adjustments_title_name">Upravit</string>
+    <string name="pesdk_adjustments_button_shadowTool">Stíny</string>
     <string name="pesdk_adjustments_button_exposureTool">Expozice</string>
+    <string name="pesdk_adjustments_button_highlightTool">Světlá místa</string>
     <string name="pesdk_adjustments_button_brightnessTool">Jas</string>
     <string name="pesdk_adjustments_button_contrastTool">Kontrast</string>
     <string name="pesdk_adjustments_button_saturationTool">Sytost</string>
+    <string name="pesdk_adjustments_button_clarityTool">Jasnost</string>
+    <string name="pesdk_adjustments_button_gammaTool">Gama</string>
+    <string name="pesdk_adjustments_button_blacksTool">Černá</string>
+    <string name="pesdk_adjustments_button_whitesTool">Bílá</string>
+    <string name="pesdk_adjustments_button_temperatureTool">Teplota</string>
     <string name="pesdk_adjustments_button_sharpnessTool">Ostrost</string>
     <string name="pesdk_adjustments_button_reset">Restartovat</string>
+    <string name="pesdk_focus_title_name">Zaměřování</string>
     <string name="pesdk_focus_title_disabled">Žádný</string>
+    <string name="pesdk_focus_button_radial">Radiální</string>
+    <string name="pesdk_focus_button_linear">Lineární</string>
+    <string name="pesdk_focus_button_mirrored">Zrcadlit</string>
+    <string name="pesdk_focus_button_gaussian">Gaussština</string>
     <string name="pesdk_text_title_name">Text</string>
+    <string name="pesdk_text_title_options">Možnosti textu</string>
     <string name="pesdk_text_title_textColor">Barva textu</string>
+    <string name="pesdk_text_title_font">Písmo</string>
     <string name="pesdk_text_button_add">Přidat</string>
     <string name="pesdk_text_button_edit">Upravit</string>
+    <string name="pesdk_text_button_straighten">Vyrovnat</string>
+    <string name="pesdk_text_button_font">Písmo</string>
     <string name="pesdk_text_button_color">Barva</string>
+    <string name="pesdk_text_button_backgroundColor">Barva pozadí</string>
+    <string name="pesdk_text_button_alignment">Zarovnání</string>
+    <string name="pesdk_text_button_bringToFront">Na začátek</string>
     <string name="pesdk_text_button_delete">Smazat</string>
+    <string name="pesdk_text_text_editTextPlaceholder">Váš text</string>
+    <string name="pesdk_brush_title_name">Štětec</string>
     <string name="pesdk_brush_button_color">Barva</string>
     <string name="pesdk_brush_button_size">Velikosti</string>
+    <string name="pesdk_brush_button_hardness">Tvrdost</string>
+    <string name="pesdk_brush_button_bringToFront">Na začátek</string>
     <string name="pesdk_brush_button_delete">Smazat</string>
+    <string name="pesdk_brush_title_brushColor">Barva štětce</string>
     <string name="pesdk_editor_title_name">Editor</string>
+    <string name="pesdk_editor_title_closeEditorAlert">Zavřít editor?</string>
+    <string name="pesdk_editor_text_closeEditorAlert">Opravdu chcete zahodit obrázek?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Ano</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Ne</string>
     <string name="pesdk_editor_cancel">Zrušit</string>
     <string name="pesdk_editor_accept">Přijmout</string>
     <string name="pesdk_editor_save">Uložit</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Exportuji obrázek…</string>
+    <string name="pesdk_editor_text_exportProgress" formatted="false">Exportuji obrázek %s.</string>
+    <string name="pesdk_common_button_flipH">Překlopit H</string>
+    <string name="pesdk_common_button_flipV">Překlopit V</string>
     <string name="pesdk_common_button_undo">Zpět</string>
     <string name="pesdk_common_button_redo">Opakovat</string>
+    <string name="pesdk_common_title_colorPicker">Výběr barvy</string>
     <string name="pesdk_common_title_transparentColor">Průhledné</string>
     <string name="pesdk_common_title_whiteColor">Bílá</string>
     <string name="pesdk_common_title_grayColor">Šedý zákal</string>
     <string name="pesdk_common_title_blackColor">Černá</string>
+    <string name="pesdk_common_title_lightBlueColor">Světle modrá</string>
     <string name="pesdk_common_title_blueColor">Modrá</string>
     <string name="pesdk_common_title_purpleColor">Fialová</string>
+    <string name="pesdk_common_title_orchidColor">Orchideová</string>
     <string name="pesdk_common_title_pinkColor">Růžová</string>
     <string name="pesdk_common_title_redColor">Červená</string>
     <string name="pesdk_common_title_orangeColor">Oranžová</string>
+    <string name="pesdk_common_title_goldColor">Zlatá</string>
     <string name="pesdk_common_title_yellowColor">Žlutá</string>
+    <string name="pesdk_common_title_oliveColor">Olivová</string>
     <string name="pesdk_common_title_greenColor">Zelená</string>
+    <string name="pesdk_common_title_aquamarinColor">Akvamarínová</string>
+    <string name="pesdk_common_title_pipettableColor">Vyberte barvu</string>
     <string name="faq_1_title">Jak můžu udělat Jednoduchou Galerii výchozí galerií zařízení?</string>
     <string name="faq_1_text">Nejprve musíte najít aktuální výchozí galerii v sekci Aplikace v nastavení zařízení. Vyhledat tlačítko, ve kterém je napsáno \"Otevřít ve výchozím nastavení\", klikněte na něj a poté klikněte na \"Vymazat výchozí hodnoty\".
         Při příštím pokusu o otevření obrázku nebo videa by se měl zobrazit výběr aplikace, kde můžete vybrat položku Jednoduchá Galerie a nastavit ji jako výchozí aplikaci.</string>
@@ -218,8 +260,9 @@
     <string name="faq_2_text">Můžete to vyřešit dvěma způsoby. Aplikaci můžete buď přeinstalovat, nebo najít aplikaci v nastavení zařízení a vybrat možnost \"Vymazat data\". To obnoví všechna nastavení, ale neodstraní žádné mediální soubory.</string>
     <string name="faq_3_title">Jak mohu vytvořit album, které se zobrazí vždy jako první?</string>
     <string name="faq_3_text">Dlouhým stiskem požadovaného alba a v nabídce akce můžete zvolit ikonu připínáčku, která jej připne k vrcholu. Můžete také připojit více složek, zarovnané položky budou seřazeny podle výchozí metody třídění.</string>
+    <string name="faq_4_title">Jak mohu rychle posunout videa?</string>
+    <string name="faq_4_text">To lze provést dvojitým poklepáním na boční část obrazovky nebo klepnutím na aktuální nebo maximální délku textů poblíž vyhledávacího panelu. Pokud povolíte otevírání videí na samostatné obrazovce v nastavení aplikace, můžete použít také vodorovná gesta.</string>
     <string name="faq_5_title">Jaký je rozdíl mezi skrytím a vyloučením složky?</string>
-    <string name="faq_5_text">Vyloučení zabraňuje zobrazování složky pouze v Jednoduché Galerii, zatímco skrytí funguje systémově a skrývá složku z jiných galerií. Funguje tak, že vytvoří prázdný soubor \".nomedia\" v dané složce, který můžete také odstranit v libovolném správci souborů.</string>
     <string name="faq_6_title">Proč se zobrazují složky s obaly alba nebo nálepkami?</string>
     <string name="faq_6_text">Může se stát, že uvidíte nějaká neobvyklá alba. Můžete je snadno vyloučit dlouhým stisknutím a vybráním možnosti Vyloučit. V dalším dialogovém okně pak můžete vybrat nadřazenou složku, pravděpodobně to zabrání tomu, aby se zobrazovaly další související alba.</string>
     <string name="faq_7_title">Složka s obrázky se nezobrazuje, co můžu dělat?</string>
@@ -242,4 +285,59 @@
 Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
     <string name="app_title">Simple Gallery Pro - Správce fotografií &amp; editor</string>
     <string name="app_short_description">Offline galerie bez reklam. Uspořádejte, upravujte, obnovujte a chraňte fotografie &amp; videa</string>
+    <string name="app_long_description">        Simple Gallery Pro je vysoce přizpůsobitelná offline galerie. Organizujte a upravujte své fotografie, obnovujte smazané fotografie s funkcí odpadkového koše, chraňte je a skrývejte. Prohlížejte množství různých foto a video formátů včetně RAW, SVG a mnoho dalších.
+
+        Aplikace neobsahuje žádné reklamy ani nepotřebná oprávnění. Tím, že ani nevyžaduje připojení k internetu, je vaše soukromí maximálně chráněno.
+
+        -------------------------------------------------
+        <b>SIMPLE GALLERY PRO – FUNKCE</b>
+        -------------------------------------------------
+
+        • Offline galerie bez reklam a vyskakujících oken
+        • Foto editor – ořezávejte, otáčejte, měňte velikost, kreslete, používejte filtry a více
+        • Nevyžaduje přístup k internetu - více soukromí a bezpečí
+        • Nepožaduje žádná nepotřebná oprávnění navíc
+        • Rychle prohledávejte obrázky a videa
+        • Otevírejte mnoho rozličných formátů fotografií a videí (RAW, SVG, GIF, panorama, atd)
+        • Množství intuitivních gest pro jednoduchou úpravu a organizaci souborů
+        • Mnoho různých způsobů filtrování, seskupování a řazení souborů
+        • Změňte si vzhled Jednoduché galerie Pro
+        • Dostupná ve 32 jazycích
+        • Označte si oblíbené soubory pro rychlý přístup
+        • Chraňte své fotografie a videa pomocí pinu, vzoru nebo otiskem prstu
+        • Použijte pin, vzor a otisk prstu pro zabezpečení spuštění aplikace, nebo i některých funkcí
+        • Obnovte smazané fotografie a videa z odpadkového koše
+        • Přepněte viditelnost souborů pro skrytí obrázků a videí
+        • Vytvořte si ze svých souborů prezentaci
+        • Zobrazte si detailní informace o svých souborech (rozlišení, hodnoty EXIF, atd)
+        • Jednoduchá galerie Pro má otevřený zdrojový kód
+        … a mnoho dalších!!
+
+        <b>EDITOR OBRÁZKŮ</b>
+        Simple Gallery Pro umožňuje snadnou úpravu obrázků. Ořezávejte, překlápějte, otáčejte či měňte jejich velikost. Pokud se cítíte kreativně, můžete také aplikovat filtry nebo do obrázku kreslit!
+
+        <b>PODPORA MNOHA TYPŮ SOUBORŮ</b>
+        Na rozdíl od některých galerií podporuje Simple Gallery Pro velké množství různých druhů souborů včetně JPEG, PNG, MP4, MKV, RAW, SVG, panoramatických fotografií a videí.
+
+        <b>VYSOCE UPRAVITELNÝ SPRÁVCE GALERIE</b>
+        Od vzhledu až po funkční tlačítka na spodní liště, Simple Gallery Pro je plně nastavitelná a bude fungovat přesně jak si budete přát. Žádná jiná galerie nenabízí takovou flexibilitu! A díky otevřenému kódu je naše aplikace dostupná ve 32 jazycích!
+
+        <b>OBNOVTE SMAZANÉ FOTOGRAFIE A VIDEA</b>
+        Smazali jste nechtěně důležitou fotografii nebo video? Žádný strach! Simple Gallery Pro pro podobné případy nabízí funkci odpadkového koše, odkud smazané fotografie a videa snadno obnovíte.
+
+        <b>CHRAŇTE A SKRÝVEJTE SVÉ FOTOGRAFIE A VIDEA</b>
+        Použitím pinu, vzoru nebo otisku prstu snadno své fotografie, videa či celá alba ochráníte nebo skryjete. Můžete ochránit i spuštění samotné aplikace, nebo některé její funkce. Například můžete zabránit náhodnému smazání souboru bez potvrzení otiskem prstu.
+
+        <b>Prohlédněte si celou sadu Simple Tools na::</b>
+        https://www.simplemobiletools.com
+
+        <b>Samostatný web Simple Gallery Pro:</b>
+        https://www.simplemobiletools.com/gallery
+
+        <b>Facebook:</b>
+        https://www.facebook.com/simplemobiletools
+
+        <b>Reddit:</b>
+        https://www.reddit.com/r/SimpleMobileTools
+    </string>
 </resources>

@@ -262,7 +262,6 @@
     <string name="faq_4_title">Comment avancer rapidement dans les vidéos ?</string>
     <string name="faq_4_text">Vous pouvez le faire en appuyant deux fois sur le côté de l\'écran, ou en appuyant sur les textes de durée actuelle ou max près de la barre de recherche. Si vous activez l\'ouverture de vidéos sur un écran séparé dans les paramètres de l\'application, vous pouvez également utiliser des gestes horizontaux.</string>
     <string name="faq_5_title">Quelle est la différence entre masquer et exclure un dossier ?</string>
-    <string name="faq_5_text">\"Exclure un dossier\" permet de ne pas l\'afficher uniquement dans Simple Gallery, alors que \"Masquer un dossier\" rend le dossier invisible sur l\'ensemble de l\'appareil, y compris les autres applications de galerie. Dans le dernier cas, un fichier \".nomedia\" est créé dans le dossier masqué, et peut être supprimé avec n\'importe quel explorateur de fichiers.</string>
     <string name="faq_6_title">Pourquoi des dossiers avec des pochettes d\'albums musicaux ou des miniatures d\'images sont affichés ?</string>
     <string name="faq_6_text">Il est possible que des albums qui ne devraient pas être affichés le soient. Vous pouvez les exclure facilement en les sélectionnant par un appui prolongé, puis en choisissant l\'option \"Exclure\", après quoi vous pouvez aussi sélectionner le dossier parent, ce qui devrait éviter l\'apparition d\'albums similaires.</string>
     <string name="faq_7_title">Un dossier avec des images n\'apparaît pas. Que faire ?</string>

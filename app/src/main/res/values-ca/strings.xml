@@ -179,7 +179,6 @@
     <string name="faq_2_text">Es pot resoldre de dues maneres. Podeu tornar a instal·lar l\'aplicació o trobar l\'aplicació a la configuració del dispositiu i seleccionar \"Esborrar dades \". Això reiniciarà totes les configuracions, no eliminarà cap fitxer multimèdia.</string>
     <string name="faq_3_title">Com puc fer que un àlbum sempre aparegui a la part superior?</string>
     <string name="faq_5_title">Quina és la diferència entre ocultar i excloure una carpeta?</string>
-    <string name="faq_5_text">Excloure impedeix mostrar la carpeta només a Simple Galery, mentre que Ocultar també amaga la carpeta a altres galeries. Funciona creant un fitxer \". Nomedia \" buit a la carpeta donada, que podeu eliminar amb qualsevol gestor de fitxers.</string>
     <string name="faq_6_title">Per què apareixen les carpetes amb les portades de la música o adhesius?</string>
     <string name="faq_6_text">Pot passar que veuràs que apareixen alguns àlbums inusuals. Podeu excloure\'ls fàcilment prement-los i seleccionant Excloure. Al següent diàleg, podeu seleccionar la carpeta principal, és probable que impedeixi que apareguin altres àlbums relacionats.</string>
     <string name="faq_7_title">Una carpeta amb imatges no apareix, què puc fer?</string>

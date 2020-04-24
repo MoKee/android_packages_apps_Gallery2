@@ -218,7 +218,6 @@
     <string name="faq_3_title">Bagaimana saya bisa membuat album selalu muncul di atas?</string>
     <string name="faq_3_text">Anda dapat menekan lama album yang diinginkan dan memilih ikon Pin di menu tindakan, yang akan menyematkannya ke atas. Anda juga dapat menyematkan banyak folder, item yang disematkan akan disortir dengan metode penyortiran default.</string>
     <string name="faq_5_title">Apa perbedaan antara menyembunyikan dan mengecualikan folder?</string>
-    <string name="faq_5_text">Kecualikan mencegah menampilkan folder hanya di Galeri Sederhana, sementara Sembunyikan berfungsi dengan sistem dan menyembunyikan folder dari galeri lain juga. Ini bekerja dengan membuat file \".nomedia\" kosong di folder yang diberikan, yang kemudian dapat Anda hapus dengan manajer file apa pun juga.</string>
     <string name="faq_6_title">Mengapa folder dengan sampul musik atau stiker ditampilkan?</string>
     <string name="faq_6_text">Itu bisa terjadi bahwa Anda akan melihat beberapa album yang tidak biasa muncul. Anda dapat dengan mudah mengecualikannya dengan menekannya lama dan memilih Kecualikan. Dalam dialog selanjutnya Anda dapat memilih folder induk, kemungkinan itu akan mencegah album terkait lainnya muncul juga.</string>
     <string name="faq_7_title">Folder dengan gambar tidak muncul, apa yang bisa saya lakukan?</string>
