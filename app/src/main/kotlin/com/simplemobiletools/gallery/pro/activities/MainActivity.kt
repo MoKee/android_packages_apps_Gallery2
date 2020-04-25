@@ -954,6 +954,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 if (!directory.isRecycleBin()) {
                     mediaDB.insertAll(curMedia)
                 }
+
                 getCachedMedia(directory.path, getVideosOnly, getImagesOnly) {
                     it.forEach {
                         if (!curMedia.contains(it)) {
@@ -1064,7 +1065,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         if (mIsSearchOpen) {
             directories_empty_placeholder.text = getString(R.string.no_items_found)
             directories_empty_placeholder_2.beGone()
-        } else if (dirs.isEmpty() && config.filterMedia == TYPE_DEFAULT_FILTER) {
+        } else if (dirs.isEmpty() && config.filterMedia == getDefaultFileFilter()) {
             directories_empty_placeholder.text = getString(R.string.no_media_add_included)
             directories_empty_placeholder_2.text = getString(R.string.add_folder)
 
@@ -1163,7 +1164,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             } else if (it.path != config.tempFolderPath) {
                 val children = if (isPathOnOTG(it.path)) getOTGFolderChildrenNames(it.path) else File(it.path).list()?.asList()
                 val hasMediaFile = children?.any {
-                    it != null && (it.isMediaFile() || (File(it).isDirectory && it.startsWith("img_", true)))
+                    it != null && (it.isMediaFile() || (it.startsWith("img_", true) && File(it).isDirectory))
                 } ?: false
 
                 if (!hasMediaFile) {
