@@ -153,6 +153,14 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         directories_switch_searching.setOnClickListener {
             launchSearchActivity()
         }
+
+        // just request the permission, tryLoadGallery will then trigger in onResume
+        handlePermission(PERMISSION_WRITE_STORAGE) {
+            if (!it) {
+                toast(R.string.no_storage_permissions)
+                finish()
+            }
+        }
     }
 
     override fun onStart() {
@@ -431,27 +439,17 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     }
 
     private fun tryLoadGallery() {
-        handlePermission(PERMISSION_WRITE_STORAGE) {
-            if (it) {
-//                if (!config.wasUpgradedFromFreeShown && isPackageInstalled("com.simplemobiletools.gallery")) {
-//                    ConfirmationDialog(this, "", R.string.upgraded_from_free, R.string.ok, 0) {}
-//                    config.wasUpgradedFromFreeShown = true
-//                }
+        if (hasPermission(PERMISSION_WRITE_STORAGE)) {
+            checkOTGPath()
+            checkDefaultSpamFolders()
 
-                checkOTGPath()
-                checkDefaultSpamFolders()
-
-                if (config.showAll) {
-                    showAllMedia()
-                } else {
-                    getDirectories()
-                }
-
-                setupLayoutManager()
+            if (config.showAll) {
+                showAllMedia()
             } else {
-                toast(R.string.no_storage_permissions)
-                finish()
+                getDirectories()
             }
+
+            setupLayoutManager()
         }
     }
 
