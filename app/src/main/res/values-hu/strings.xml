@@ -263,6 +263,7 @@ A következő alkalommal, amikor megpróbál megnyitni egy képet vagy videót, 
     <string name="faq_4_title">Hogyan tudom előretekerni a videókat?</string>
     <string name="faq_4_text">Megteheti a képernyő oldalának dupla érintésével, vagy az idővonalon való ujjmozgatásal. Ha engedélyezte az alkalmazás beállításaiban a videómegnyitást külön képernyőn, akkor vízszintes gesztusokat is használhat.</string>
     <string name="faq_5_title">Mi a különbség a mappa elrejtése és kizárása között?</string>
+    <string name="faq_5_text">A Kizárás megakadályozza, hogy a mappát a Simple Gallery megjelenítse, ha az Elrejtés rendszerszinten működik, és elrejti a mappát más galériákból is. Úgy működik, hogy létrehoz egy üres \". nomedia\" nevű fájlt az adott mappában, amelyet bármikor eltávolíthat bármilyen fájlkezelővel is. Ne feledje, hogy nem minden készülék engedélyezi a mappák elrejtését, például a Kamera, a Képernyőképek és a Letöltések mappákban.</string>
     <string name="faq_6_title">Miért jelennek meg a zenei borítóval vagy matricával rendelkező mappák?</string>
     <string name="faq_6_text">Lehet, hogy látni fog néhány szokatlan album megjelenést. Könnyen kizárhatja a hosszú megnyomással és a Kizárás kiválasztásával. A következő párbeszédablakban kiválaszthatja a szülő mappát, és valószínűleg megakadályozza, hogy a többi kapcsolódó album is megjelenjen.</string>
     <string name="faq_7_title">A képek mappája nem jelenik meg, mit tehetek?</string>

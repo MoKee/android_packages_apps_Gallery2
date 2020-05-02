@@ -263,6 +263,7 @@
     <string name="faq_4_title">Làm thế nào để có thể tua nhanh video?</string>
     <string name="faq_4_text">Bạn có thể làm điều đó bằng cách chạm hai lần vào cạnh màn hình hoặc nhấn vào văn bản thời lượng hiện tại hoặc tối đa gần thanh tìm kiếm. Nếu bạn bật video trên một màn hình riêng biệt trong cài đặt ứng dụng, bạn cũng có thể sử dụng cử chỉ ngang.</string>
     <string name="faq_5_title">What is the difference between hiding and excluding a folder?</string>
+    <string name="faq_5_text">Loại trừ ngăn chỉ hiển thị thư mục trong Thư viện đơn giản, trong khi Ẩn hoạt động theo hệ thống và nó cũng ẩn thư mục khỏi các phòng trưng bày khác. Nó hoạt động bằng cách tạo một tệp \".nomedia\" trống trong thư mục đã cho, sau đó bạn cũng có thể xóa bằng bất kỳ trình quản lý tệp nào. Lưu ý rằng một số thiết bị không cho phép ẩn các thư mục như Camera, Ảnh chụp màn hình và Tải xuống.</string>
     <string name="faq_6_title">Tại sao làm thư mục với bìa đĩa nhạc hoặc dán Hiển thị?</string>
     <string name="faq_6_text">It can happen that you will see some unusual albums show up. You can easily exclude them by long pressing them and selecting Exclude. In the next dialog you can then select the parent folder, chances are it will prevent the other related albums showing up too.</string>
     <string name="faq_7_title">Thư mục không thể hiển thị ảnh, bạn có thể làm gì?</string>

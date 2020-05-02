@@ -263,6 +263,7 @@
     <string name="faq_4_title">Jak mohu rychle posunout videa?</string>
     <string name="faq_4_text">To lze provést dvojitým poklepáním na boční část obrazovky nebo klepnutím na aktuální nebo maximální délku textů poblíž vyhledávacího panelu. Pokud povolíte otevírání videí na samostatné obrazovce v nastavení aplikace, můžete použít také vodorovná gesta.</string>
     <string name="faq_5_title">Jaký je rozdíl mezi skrytím a vyloučením složky?</string>
+    <string name="faq_5_text">Vyloučení zabraňuje zobrazování složky pouze v Jednoduché Galerii, zatímco skrytí funguje systémově a skrývá složku z jiných galerií. Funguje tak, že vytvoří prázdný soubor \".nomedia\" v dané složce, který můžete také odstranit v libovolném správci souborů. Některá zařízení neumožňují skrývat složky, jako jsou Camera, Screenshots a Downloads.</string>
     <string name="faq_6_title">Proč se zobrazují složky s obaly alba nebo nálepkami?</string>
     <string name="faq_6_text">Může se stát, že uvidíte nějaká neobvyklá alba. Můžete je snadno vyloučit dlouhým stisknutím a vybráním možnosti Vyloučit. V dalším dialogovém okně pak můžete vybrat nadřazenou složku, pravděpodobně to zabrání tomu, aby se zobrazovaly další související alba.</string>
     <string name="faq_7_title">Složka s obrázky se nezobrazuje, co můžu dělat?</string>
