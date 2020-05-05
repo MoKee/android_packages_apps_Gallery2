@@ -425,7 +425,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     private fun checkDefaultSpamFolders() {
         if (!config.spamFoldersChecked) {
             val spamFolders = arrayListOf(
-                    "/storage/emulated/0/Android/data/com.facebook.orca/files/stickers"
+                "/storage/emulated/0/Android/data/com.facebook.orca/files/stickers"
             )
 
             val OTGPath = config.OTGPath
@@ -541,7 +541,13 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         val fileDirItems = folders.asSequence().filter { it.isDirectory }.map { FileDirItem(it.absolutePath, it.name, true) }.toMutableList() as ArrayList<FileDirItem>
         when {
             fileDirItems.isEmpty() -> return
-            fileDirItems.size == 1 -> toast(String.format(getString(R.string.deleting_folder), fileDirItems.first().name))
+            fileDirItems.size == 1 -> {
+                try {
+                    toast(String.format(getString(R.string.deleting_folder), fileDirItems.first().name))
+                } catch (e: Exception) {
+                    showErrorToast(e)
+                }
+            }
             else -> {
                 val baseString = if (config.useRecycleBin) R.plurals.moving_items_into_bin else R.plurals.delete_items
                 val deletingItems = resources.getQuantityString(baseString, fileDirItems.size, fileDirItems.size)
@@ -1025,16 +1031,17 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             val newDir = createDirectoryFromMedia(folder, newMedia, albumCovers, hiddenString, includedFolders, getProperFileSize)
             dirs.add(newDir)
             setupAdapter(dirs)
-            try {
-                // make sure to create a new thread for these operations, dont just use the common bg thread
-                Thread {
+
+            // make sure to create a new thread for these operations, dont just use the common bg thread
+            Thread {
+                try {
                     directoryDao.insert(newDir)
                     if (folder != RECYCLE_BIN) {
                         mediaDB.insertAll(newMedia)
                     }
-                }.start()
-            } catch (ignored: Exception) {
-            }
+                } catch (ignored: Exception) {
+                }
+            }.start()
         }
 
         mLoadedInitialPhotos = true
@@ -1044,21 +1051,30 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             directories_refresh_layout.isRefreshing = false
             checkPlaceholderVisibility(dirs)
         }
-        checkInvalidDirectories(dirs)
 
-        val everShownFolders = config.everShownFolders as HashSet
-        dirs.mapTo(everShownFolders) { it.path }
+        checkInvalidDirectories(dirs)
+        if (mDirs.size > 50) {
+            excludeSpamFolders()
+        }
+
+        val excludedFolders = config.excludedFolders
+        val everShownFolders = HashSet<String>()
+
+        // do not add excluded folders and their subfolders at everShownFolders
+        dirs.filter { dir ->
+            if (excludedFolders.any { dir.path.startsWith(it) }) {
+                return@filter false
+            }
+            return@filter true
+        }.mapTo(everShownFolders) { it.path }
 
         try {
+            // catch some extreme exceptions like too many everShownFolders for storing, shouldnt really happen
             config.everShownFolders = everShownFolders
         } catch (e: Exception) {
             config.everShownFolders = HashSet()
         }
         mDirs = dirs.clone() as ArrayList<Directory>
-
-        if (mDirs.size > 55) {
-            excludeSpamFolders()
-        }
     }
 
     private fun checkPlaceholderVisibility(dirs: ArrayList<Directory>) {
@@ -1208,7 +1224,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     private fun getCurrentlyDisplayedDirs() = getRecyclerAdapter()?.dirs ?: ArrayList()
 
     private fun getBubbleTextItem(index: Int) = getRecyclerAdapter()?.dirs?.getOrNull(index)?.getBubbleText(config.directorySorting, this, mDateFormat, mTimeFormat)
-            ?: ""
+        ?: ""
 
     private fun setupLatestMediaId() {
         ensureBackgroundThread {

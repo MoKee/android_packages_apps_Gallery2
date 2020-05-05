@@ -129,7 +129,11 @@ fun BaseSimpleActivity.addNoMedia(path: String, callback: () -> Unit) {
         }
     } else {
         try {
-            file.createNewFile()
+            if (file.createNewFile()) {
+                rescanFolderMedia(file.absolutePath)
+            } else {
+                toast(R.string.unknown_error_occurred)
+            }
         } catch (e: Exception) {
             showErrorToast(e)
         }
@@ -392,7 +396,7 @@ fun Activity.fixDateTaken(paths: ArrayList<String>, showToasts: Boolean, hasResc
 
             for (path in paths) {
                 val dateTime = ExifInterface(path).getAttribute(ExifInterface.TAG_DATETIME_ORIGINAL)
-                        ?: ExifInterface(path).getAttribute(ExifInterface.TAG_DATETIME) ?: continue
+                    ?: ExifInterface(path).getAttribute(ExifInterface.TAG_DATETIME) ?: continue
 
                 // some formats contain a "T" in the middle, some don't
                 // sample dates: 2015-07-26T14:55:23, 2018:09:05 15:09:05
@@ -584,18 +588,18 @@ fun saveFile(path: String, bitmap: Bitmap, out: FileOutputStream, degrees: Int) 
 fun Activity.getShortcutImage(tmb: String, drawable: Drawable, callback: () -> Unit) {
     ensureBackgroundThread {
         val options = RequestOptions()
-                .format(DecodeFormat.PREFER_ARGB_8888)
-                .skipMemoryCache(true)
-                .diskCacheStrategy(DiskCacheStrategy.NONE)
-                .fitCenter()
+            .format(DecodeFormat.PREFER_ARGB_8888)
+            .skipMemoryCache(true)
+            .diskCacheStrategy(DiskCacheStrategy.NONE)
+            .fitCenter()
 
         val size = resources.getDimension(R.dimen.shortcut_size).toInt()
         val builder = Glide.with(this)
-                .asDrawable()
-                .load(tmb)
-                .apply(options)
-                .centerCrop()
-                .into(size, size)
+            .asDrawable()
+            .load(tmb)
+            .apply(options)
+            .centerCrop()
+            .into(size, size)
 
         try {
             (drawable as LayerDrawable).setDrawableByLayerId(R.id.shortcut_image, builder.get())
