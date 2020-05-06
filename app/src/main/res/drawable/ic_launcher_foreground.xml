@@ -14,7 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@drawable/ic_launcher_background"/>
-    <foreground android:drawable="@drawable/ic_launcher_foreground"/>
-</adaptive-icon>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="1069.3069"
+    android:viewportHeight="1069.3069">
+  <group android:translateX="-5.3465347"
+      android:translateY="-5.3465347">
+    <path
+        android:pathData="M1080,897.43V1080H155.69l195.2,-189.84 22.93,-22.3 196.33,-191L572,675 686.24,560.8a33,33 0,0 1,46.57 0q69.93,67.79 139.84,135.59l10.57,10.24Z"
+        android:fillColor="#c0f7ff"/>
+  </group>
+</vector>
