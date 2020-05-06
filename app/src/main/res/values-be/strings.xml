@@ -34,6 +34,7 @@
     <string name="by_date_taken">Дата здымкі</string>
     <string name="pesdk_transform_button_freeCrop">Карыстальніцкія</string>
     <string name="pesdk_transform_button_resetCrop">Скінуць налады</string>
+    <string name="pesdk_filter_title_name">Фільтр для бульбы</string>
     <string name="pesdk_filter_asset_none">Няма</string>
     <string name="pesdk_adjustments_button_exposureTool">Экспакарэкцыя</string>
     <string name="pesdk_adjustments_button_brightnessTool">Яркасць</string>
@@ -57,6 +58,7 @@
     <string name="pesdk_editor_save">Захаваць</string>
     <string name="pesdk_common_button_undo">Адмяніць</string>
     <string name="pesdk_common_button_redo">Паўтарыць</string>
+    <string name="pesdk_common_title_transparentColor">Нябачны як твой бацька)))</string>
     <string name="pesdk_common_title_grayColor">Шэры</string>
     <string name="pesdk_common_title_blackColor">Чорны</string>
     <string name="pesdk_common_title_blueColor">Сіні</string>
