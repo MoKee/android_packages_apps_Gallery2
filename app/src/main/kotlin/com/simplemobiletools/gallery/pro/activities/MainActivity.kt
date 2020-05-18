@@ -51,7 +51,6 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     private val PICK_MEDIA = 2
     private val PICK_WALLPAPER = 3
     private val LAST_MEDIA_CHECK_PERIOD = 3000L
-    private val NEW_APP_PACKAGE = "com.simplemobiletools.clock"
 
     private var mIsPickImageIntent = false
     private var mIsPickVideoIntent = false
@@ -117,12 +116,6 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
 
         mIsPasswordProtectionPending = config.isAppPasswordProtectionOn
         setupLatestMediaId()
-
-        // notify some users about the Clock app
-        /*if (System.currentTimeMillis() < 1523750400000 && !config.wasNewAppShown && config.appRunCount > 100 && config.appRunCount % 50 != 0 && !isPackageInstalled(NEW_APP_PACKAGE)) {
-            config.wasNewAppShown = true
-            NewAppDialog(this, NEW_APP_PACKAGE, "Simple Clock")
-        }*/
 
         if (!config.wereFavoritesPinned) {
             config.addPinnedFolders(hashSetOf(FAVORITES))
@@ -953,11 +946,14 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
 
                 setupAdapter(dirs)
 
-                // update directories and media files in the local db, delete invalid items
+                // update directories and media files in the local db, delete invalid items. Intentionally creating a new thread
                 updateDBDirectory(directory)
                 if (!directory.isRecycleBin()) {
                     Thread {
-                        mediaDB.insertAll(curMedia)
+                        try {
+                            mediaDB.insertAll(curMedia)
+                        } catch (ignored: Exception) {
+                        }
                     }.start()
                 }
 
@@ -1058,7 +1054,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         }
 
         val excludedFolders = config.excludedFolders
-        val everShownFolders = HashSet<String>()
+        val everShownFolders = config.everShownFolders.toMutableSet() as HashSet<String>
 
         // do not add excluded folders and their subfolders at everShownFolders
         dirs.filter { dir ->
@@ -1074,6 +1070,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         } catch (e: Exception) {
             config.everShownFolders = HashSet()
         }
+
         mDirs = dirs.clone() as ArrayList<Directory>
     }
 
