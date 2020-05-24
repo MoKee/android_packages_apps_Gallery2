@@ -2,8 +2,18 @@
 <resources>
     <string name="app_launcher_name">படத்தொகுப்பு</string>
     <string name="edit">திருத்தம்</string>
+    <string name="pin_folder">கோப்புறையைப் பொருத்து</string>
+    <string name="all_folders">அனைத்து கோப்புறைகள்</string>
+    <string name="folder_view">கோப்புறை காட்சிக்கு மாறு</string>
+    <string name="other_folder">மற்ற கோப்புறை</string>
     <string name="show_on_map">வரைபடத்தில் காண்பி</string>
+    <string name="select_photo">படத்தைத் தேர்வுசெய்க</string>
+    <string name="volume">ஒலியளவு</string>
     <string name="brightness">ஒளிர்வு</string>
+    <string name="images">புகைப்படங்கள்</string>
+    <string name="videos">காணொளிகள்</string>
+    <string name="raw_images">RAW புகைப்படங்கள்</string>
+    <string name="add_folder">கோப்புறையை சேர்</string>
     <string name="width">அகலம்</string>
     <string name="height">உயரம்</string>
     <string name="rotate">சுழற்று</string>
@@ -12,14 +22,22 @@
     <string name="free_aspect_ratio">ஏதுமில்லை</string>
     <string name="other_aspect_ratio">பிற</string>
     <string name="simple_wallpaper">படத்தொகுப்பு</string>
+    <string name="set_as_wallpaper">பின்புலனாக அமை</string>
     <string name="home_screen">முகப்புத் திரை</string>
     <string name="lock_screen">பூட்டு திரை</string>
     <string name="no_animation">ஏதுமில்லை</string>
+    <string name="change_view_type">காட்சி வகையை மாற்று</string>
+    <string name="list">பட்டியல்</string>
     <string name="by_folder">கோப்புறை</string>
     <string name="by_date_taken">எடுத்த தேதி</string>
+    <string name="by_file_type">கோப்பு வகை</string>
     <string name="by_extension">நீட்டிப்புகள்</string>
+    <string name="show_folder_name">கோப்புறை பெயரை காண்பி</string>
+    <string name="autoplay_videos">காணொளிகளைத் தானாகக் காண்பி</string>
+    <string name="screen_rotation_system_setting">முறைமை அமைப்புகள்</string>
     <string name="pesdk_transform_button_freeCrop">தனிப்பயன்</string>
     <string name="pesdk_transform_button_resetCrop">மீட்டமை</string>
+    <string name="pesdk_filter_title_name">வடிகட்டி</string>
     <string name="pesdk_filter_asset_none">ஏதுமில்லை</string>
     <string name="pesdk_adjustments_button_exposureTool">வெளிப்பாடு</string>
     <string name="pesdk_adjustments_button_brightnessTool">ஒளிர்வு</string>
@@ -47,4 +65,5 @@
     <string name="pesdk_common_title_blueColor">நீலம்</string>
     <string name="pesdk_common_title_redColor">சிவப்பு</string>
     <string name="pesdk_common_title_greenColor">பச்சை</string>
+    <string name="faq_1_title">நான் எவ்வாறு Simple Galleryஐ சாதன இயல்புநிலை கேலரியாக அமைப்பது?</string>
 </resources>

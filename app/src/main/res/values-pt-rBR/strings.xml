@@ -263,6 +263,7 @@
     <string name="faq_4_title">Como posso avançar rapidamente os vídeos?</string>
     <string name="faq_4_text">Você pode fazer isso tocando duas vezes no lado da tela ou tocando os textos de duração atuais ou máxima perto da barra de pesquisa. Se você ativar a abertura de vídeos em uma tela separada nas configurações do aplicativo, também poderá usar gestos horizontais.</string>
     <string name="faq_5_title">Qual é a diferença entre esconder e excluir uma pasta?</string>
+    <string name="faq_5_text">Excluir impede a exibição da pasta apenas na Galeria simples, enquanto o Hide funciona de acordo com o sistema e também oculta a pasta de outras galerias. Funciona criando um vazio. Arquivo omedia\" na pasta informada, que você também pode remover com qualquer gerenciador de arquivos. Note que alguns dispositivos não permitem esconder pastas como a Câmera, Capturas de Tela e Downloads.</string>
     <string name="faq_6_title">Why do folders with music cover art or stickers show up?</string>
     <string name="faq_6_text">Pode acontecer que você verá alguns álbuns incomuns aparecer. Você pode facilmente excluí-los pressionando-os e selecionando exclusão. Na próxima caixa de diálogo você pode selecionar a pasta pai, as chances serão impedidas de que outros álbuns relacionados apareçam também.</string>
     <string name="faq_7_title">Uma pasta com imagens não está aparecendo ou não mostra todos os itens. O que eu posso fazer?</string>

@@ -167,6 +167,7 @@
     <string name="compromise">折中</string>
     <string name="avoid_showing_invalid_files">避免显示无效文件</string>
     <string name="show_image_file_types">显示图片文件类型</string>
+    <string name="allow_zooming_videos">允许双击缩放视频</string>
     <string name="thumbnails">缩略图</string>
     <string name="fullscreen_media">全屏显示媒体</string>
     <string name="extended_details">扩展详情</string>

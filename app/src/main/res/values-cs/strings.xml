@@ -167,6 +167,7 @@
     <string name="compromise">Kompromis</string>
     <string name="avoid_showing_invalid_files">Vyhnout se zobrazování neplatných souborů</string>
     <string name="show_image_file_types">Zobrazit typy souborů obrázků</string>
+    <string name="allow_zooming_videos">Povolit přiblížení videa dvojitým klepnutím</string>
     <string name="thumbnails">Náhledy</string>
     <string name="fullscreen_media">Média přes celou obrazovku</string>
     <string name="extended_details">Rozšířené vlastnosti</string>
