@@ -167,6 +167,7 @@
     <string name="compromise">Kompromis</string>
     <string name="avoid_showing_invalid_files">Unikaj wyświetlania nieprawidłowych plików</string>
     <string name="show_image_file_types">Pokaż typy plików obrazu</string>
+    <string name="allow_zooming_videos">Zezwalaj na powiększanie filmów podwójnym stuknięciem</string>
     <string name="thumbnails">Miniatury</string>
     <string name="fullscreen_media">Widok pełnoekranowy</string>
     <string name="extended_details">Dodatkowe szczegóły</string>

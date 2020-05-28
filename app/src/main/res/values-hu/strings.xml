@@ -167,6 +167,7 @@
     <string name="compromise">Átmenet</string>
     <string name="avoid_showing_invalid_files">Az érvénytelen fájlok elkerülése érdekében</string>
     <string name="show_image_file_types">Képfájltípusok megjelenítése</string>
+    <string name="allow_zooming_videos">Lehetővé teszi a videók zoomolását dupla koppintással</string>
     <string name="thumbnails">Miniatűrök</string>
     <string name="fullscreen_media">Teljes képernyős média</string>
     <string name="extended_details">Bővített részletek</string>
