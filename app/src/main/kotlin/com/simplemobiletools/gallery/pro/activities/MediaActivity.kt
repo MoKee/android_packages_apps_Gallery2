@@ -393,7 +393,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
             initZoomListener()
             val fastscroller = if (config.scrollHorizontally) media_horizontal_fastscroller else media_vertical_fastscroller
             MediaAdapter(this, mMedia.clone() as ArrayList<ThumbnailItem>, this, mIsGetImageIntent || mIsGetVideoIntent || mIsGetAnyIntent,
-                    mAllowPickingMultiple, mPath, media_grid, fastscroller) {
+                mAllowPickingMultiple, mPath, media_grid, fastscroller) {
                 if (it is Medium && !isFinishing) {
                     itemClicked(it.path)
                 }
@@ -799,24 +799,24 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
             val ratio = wantedWidth.toFloat() / wantedHeight
 
             val options = RequestOptions()
-                    .override((wantedWidth * ratio).toInt(), wantedHeight)
-                    .fitCenter()
+                .override((wantedWidth * ratio).toInt(), wantedHeight)
+                .fitCenter()
 
             Glide.with(this)
-                    .asBitmap()
-                    .load(File(path))
-                    .apply(options)
-                    .into(object : SimpleTarget<Bitmap>() {
-                        override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
-                            try {
-                                WallpaperManager.getInstance(applicationContext).setBitmap(resource)
-                                setResult(Activity.RESULT_OK)
-                            } catch (ignored: IOException) {
-                            }
-
-                            finish()
+                .asBitmap()
+                .load(File(path))
+                .apply(options)
+                .into(object : SimpleTarget<Bitmap>() {
+                    override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
+                        try {
+                            WallpaperManager.getInstance(applicationContext).setBitmap(resource)
+                            setResult(Activity.RESULT_OK)
+                        } catch (ignored: IOException) {
                         }
-                    })
+
+                        finish()
+                    }
+                })
         } else if (mIsGetImageIntent || mIsGetVideoIntent || mIsGetAnyIntent) {
             Intent().apply {
                 data = Uri.parse(path)
@@ -872,12 +872,12 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
         mLatestMediaDateId = getLatestMediaByDateId()
         if (!isFromCache) {
             val mediaToInsert = (mMedia).filter { it is Medium && it.deletedTS == 0L }.map { it as Medium }
-            try {
-                Thread {
+            Thread {
+                try {
                     mediaDB.insertAll(mediaToInsert)
-                }.start()
-            } catch (e: Exception) {
-            }
+                } catch (e: Exception) {
+                }
+            }.start()
         }
     }
 
