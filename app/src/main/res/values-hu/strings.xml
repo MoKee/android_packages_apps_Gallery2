@@ -285,7 +285,6 @@ Ezzel csak a kiválasztott mappák láthatók, mivel a kizárás és a befoglal�
     <string name="faq_15_title">Miért foglal az alkalmazás ilyen nagy helyet?</string>
     <string name="faq_15_text">Az alkalmazás gyorsítótára akár 250 MB is lehet, ez biztosítja a gyorsabb képbetöltést. Ha az alkalmazás még nagyobb helyet foglal, annak a legvalószínűbb oka, hogy nagy fájlok vannak a Lomtárban. Ezek a fájlok beleszámítódnak az alkalmazásméretbe. Megnyithatja a Lomtárat és törölheti a fájlokat, vagy megteheti ezt az alkalmazás beállításaiban. A Lomtárba került elemek csak 30 naponta törlődnek automatikusan.</string>
     <string name="app_title">Simple Gallery Pro - Képszerkesztő és rendező</string>
-    <string name="app_short_description">Offline-galéria hirdetések nélkül. A fényképek és videók rendezésére, szerkesztésére, helyreállítására és védelmére</string>
     <string name="app_long_description">A Simple Gallery Pro egy remekül személyre szabható offline galéria. Fényképek rendezésér éa szerkesztésére, törölt fájlok hlyreállítására, fájlok védelmére és elrejtésére és fotó és videóformátumok széles skálájának megtekintésére, beleértve a RAW és SVG fromátumokat is.
 
         Ez az alkalmazás nem tartlamaz reklámot és nem igényel felesleges jogosultságokat. Mivel nem szükséges hozzá feltétlenül internet, így az Ön biztonságát is garantálja.

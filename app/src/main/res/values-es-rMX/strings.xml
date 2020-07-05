@@ -228,5 +228,4 @@
     <string name="faq_14_title">He escondido un archivo/carpeta. ¿Cómo lo puedo Mostrar?</string>
     <string name="faq_14_text">Puede pulsar la opción del menú \"Mostrar temporalmente elementos ocultos\" en la pantalla principal, o activar \"Mostrar elementos ocultos\" en la configuración de la aplicación para ver el elemento oculto. Si quieres mostrarlo justo presiónelo y seleccione \"Mostrar\". Carpetas se ocultan mediante la adición de un archivo \".nomedia\" escondidas en ellos, usted puede eliminar el archivo con cualquier gestor de archivos también.</string>
     <string name="faq_15_title">¿Por qué la aplicación ocupa tanto espacio?</string>
-    <string name="app_short_description">Galería sin anuncios. Organizar, editar, recuperar y proteger fotos de &amp; vídeos</string>
 </resources>

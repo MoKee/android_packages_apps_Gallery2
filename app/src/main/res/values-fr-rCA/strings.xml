@@ -282,7 +282,6 @@
     <string name="faq_15_title">Pourquoi l\'application prend-elle tant d\'espace ?</string>
     <string name="faq_15_text">Le cache d\'application peut prendre jusqu\'à 250MB, il assure un chargement d\'image plus rapide. Si l\'application prend encore plus d\'espace, il est très probable que vous ayez des éléments dans la corbeille. Ces fichiers comptent sur la taille de l\'application. Vous pouvez effacer la corbeille en l\'ouvrant et en supprimant tous les fichiers, ou des paramètres de l\'application. Chaque fichier dans la corbeille est supprimé automatiquement après 30 jours.</string>
     <string name="app_title">Galerie simple Pro : Gestionnaire de photos &amp; Éditeur</string>
-    <string name="app_short_description">Galerie hors ligne sans publicité. Organiser, éditer, récupérer et protéger les photos &amp; vidéos</string>
     <string name="app_long_description">        Simple Gallery Pro est une galerie hors ligne hautement personnalisable. Organisez &amp; éditer vos photos, récupérez les fichiers supprimés avec la corbeille, protéger &amp; cacher les fichiers et visualiser une grande variété de formats vidéo différents de photos &amp; incluant RAW, SVG et bien plus encore.
 
         L\'application ne contient pas de publicités et de permissions inutiles. Comme l\'application ne nécessite pas non plus un accès Internet, votre vie privée est protégée.

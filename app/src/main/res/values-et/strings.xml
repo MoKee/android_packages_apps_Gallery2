@@ -285,7 +285,6 @@
     <string name="faq_15_title">Miks rakendus võtab nii palju ruumi?</string>
     <string name="faq_15_text">Rakenduse vahemälu võib võtta kuni 250 MB, see tagab kiirema pildi laadimise. Kui rakendus võtab rohkem ruumi, on see tõenäoliselt tingitud sellest, et teil on prügikastis üksusi. Need failid lisatakse rakenduse suurusele. Saate tühjendada prügikasti, avades selle ja kustutades kõik failid või rakenduse seadetest. Iga prügikasti fail kustutatakse 30 päeva pärast automaatselt.</string>
     <string name="app_title">Simple Gallery Pro - fotohaldur &amp; toimrtaja</string>
-    <string name="app_short_description">Offline galerii ilma reklaamideta. Fotode &amp; videote korraldamine, muutmine, taastamine ja kaitsmine</string>
     <string name="app_long_description">       Simple Gallery Pro on hõlpsasti kohandatav võrguühenduseta galerii. Korrastage &amp; redigeerige oma fotosid, taastage prügikasti abil kustutatud faqile, kaitske &amp; peitke faile ja vaadake tohutul hulgal erinevaid fotosid &amp; videoformaate (sealhulgas RAW, SVG) ja palju muud.
 
         Rakendus ei sisalda reklaame ega tarbetuid lubasid. Kuna rakendus ei vaja ka Interneti-ühendust, on teie privaatsus kaitstud.

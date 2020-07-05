@@ -285,7 +285,6 @@
     <string name="faq_15_title">¿Por qué la aplicación ocupa tanto espacio?</string>
     <string name="faq_15_text">La caché de la aplicación puede tomar hasta 250MB, asegura una carga de imagen más rápida. Si la aplicación está ocupando aún más espacio, lo más probable es que se deba a que tienes objetos en la papelera. Esos archivos cuentan para el tamaño de la aplicación. Puedes borrar la papelera de reciclaje abriéndola y eliminando todos los archivos, o desde la configuración de la aplicación. Cada archivo en la papelera se borra automáticamente después de 30 días.</string>
     <string name="app_title">Galería Simple Pro - Gestor de fotos &amp; Editor</string>
-    <string name="app_short_description">Galería sin anuncios. Organizar, editar, recuperar y proteger fotos de &amp; vídeos</string>
     <string name="app_long_description">        Simple Gallery Proes una galería altamente customizable y sin conexión. Organiza &amp; edita tus fotos, recupera archivos eliminados con la paelera, proteje &amp; oculta archivos y mira una gran variedad de fotos &amp; videos en varios formatos incluyendo RAW, SVG y muchos más.
 
         La aplicación no contiene anuncios y permisos innecesarios. Como la aplicación tampoco requiere acceso a Internet, tu privacidad está protegida.

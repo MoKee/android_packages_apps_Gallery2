@@ -283,7 +283,6 @@
     <string name="faq_15_title">Dlaczego aplikacja zajmuje tyle miejsca?</string>
     <string name="faq_15_text">Pamięć podręczna aplikacji może zająć do 250 MB, zapewnia szybsze ładowanie obrazu. Jeśli aplikacja zajmuje jeszcze więcej miejsca, jest to najprawdopodobniej spowodowane posiadaniem przedmiotów w koszu. Te pliki liczą się do rozmiaru aplikacji. Możesz wyczyścić kosz z ustawień aplikacji, lub otwierając go i usuwając wszystkie pliki. Każdy plik w koszu jest usuwany automatycznie po 30 dniach.</string>
     <string name="app_title">Prosta galeria Pro - Menedżer zdjęć &amp; Edytor</string>
-    <string name="app_short_description">Przeglądaj swoje fotograficzne wzpomnienia bez przerw</string>
     <string name="app_long_description">Simple Gallery Pro to wysoce konfigurowalna galeria offline. Organizuj edycję zdjęć, odzyskuj usunięte pliki za pomocą kosza, chroń ukryte pliki i przeglądaj różnorodne formaty wideo ze zdjęciami, w tym RAW, SVG i wiele więcej.
 
         Aplikacja nie zawiera reklam i niepotrzebnych uprawnień. Ponieważ aplikacja nie wymaga również dostępu do Internetu, twoja prywatność jest chroniona.

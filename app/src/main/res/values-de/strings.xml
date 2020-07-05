@@ -275,7 +275,6 @@
     <string name="faq_15_title">Warum benötigt die App so viel Platz?</string>
     <string name="faq_15_text">Der App-Cache kann bis zu 250MB in Anspruch nehmen. Es sorgt dafür, dass das Laden von Bildern schneller vonstatten geht. Wenn die App noch mehr Platz beansprucht, wird dies höchstwahrscheinlich dadurch verursacht, dass du Items im Papierkorb hast. Diese Dateien beeinflussen die App-Größe. Sie können den Papierkorb löschen, indem Sie ihn öffnen und alle Dateien löschen oder aus den App-Einstellungen. Jede Datei im Papierkorb wird nach 30 Tagen automatisch gelöscht.</string>
     <string name="app_title">Simple Gallery Pro - Photo Manager &amp; Editor</string>
-    <string name="app_short_description">Durchsuchen Sie Ihre Erinnerungen ohne Unterbrechungen.</string>
     <string name="app_long_description">Simple Gallery Pro ist eine hochgradig anpassbare Offline-Galerie. Organisiere &amp; bearbeite Fotos, stelle gelöschte Dateien mit dem Papierkorb wieder her, schütze &amp; verstecke Dateien und sehe eine große Auswahl an verschiedenen Foto- &amp; Videoformate einschließlich RAW, SVG und vieles mehr.
 
         Die App enthält keine Werbung und unnötige Berechtigungen. Da die App auch keinen Internetzugang benötigt, ist Ihre Privatsphäre geschützt.
