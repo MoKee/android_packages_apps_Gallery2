@@ -286,6 +286,7 @@
     <string name="faq_15_text">Mezipaměť aplikace může mít až 250 MB, což zajišťuje rychlejší načítání obrázků. Pokud aplikace zabírá ještě více místa, je to s největší pravděpodobností způsobeno tím, že máte položky v Koši. Tyto soubory se počítají do velikosti aplikace. Koš můžete vysypat otevřením a odstraněním všech souborů nebo z nastavení aplikace. 
 Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
     <string name="app_title">Simple Gallery Pro - Správce fotografií &amp; editor</string>
+    <string name="app_short_description">Prémiová aplikace bez reklam pro správu a úpravy fotografií, videí a GIFů</string>
     <string name="app_long_description">        Simple Gallery Pro je vysoce přizpůsobitelná offline galerie. Organizujte a upravujte své fotografie, obnovujte smazané fotografie s funkcí odpadkového koše, chraňte je a skrývejte. Prohlížejte množství různých foto a video formátů včetně RAW, SVG a mnoho dalších.
 
         Aplikace neobsahuje žádné reklamy ani nepotřebná oprávnění. Tím, že ani nevyžaduje připojení k internetu, je vaše soukromí maximálně chráněno.
