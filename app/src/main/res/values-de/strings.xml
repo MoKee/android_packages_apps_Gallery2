@@ -69,6 +69,7 @@
     <string name="rotate">Drehen</string>
     <string name="invalid_image_path">Ungültiger Dateipfad.</string>
     <string name="image_editing_failed">Bildbearbeitung fehlgeschlagen.</string>
+    <string name="image_editing_cancelled">Bildbearbeitung abgebrochen</string>
     <string name="file_edited_successfully">Datei erfolgreich bearbeitet</string>
     <string name="edit_image_with">Bild bearbeiten mit:</string>
     <string name="no_editor_found">Keine Bildeditor-App gefunden.</string>
@@ -165,6 +166,7 @@
     <string name="compromise">Kompromiss</string>
     <string name="avoid_showing_invalid_files">Ungültige Dateien nicht anzeigen</string>
     <string name="show_image_file_types">Bilddateien anzeigen</string>
+    <string name="allow_zooming_videos">Zoomen von Videos mit doppeltem Antippen erlauben</string>
     <string name="thumbnails">Thumbnails</string>
     <string name="fullscreen_media">Vollbild-Anzeige von Medien</string>
     <string name="extended_details">Erweiterte Details</string>
@@ -192,6 +194,7 @@
     <string name="pesdk_adjustments_button_temperatureTool">Temperatur</string>
     <string name="pesdk_adjustments_button_sharpnessTool">Schärfe</string>
     <string name="pesdk_adjustments_button_reset">Zurücksetzen</string>
+    <string name="pesdk_focus_title_name">Fokus</string>
     <string name="pesdk_focus_title_disabled">Kein</string>
     <string name="pesdk_focus_button_radial">Radial</string>
     <string name="pesdk_focus_button_linear">Linear</string>
@@ -220,6 +223,7 @@
     <string name="pesdk_brush_title_brushColor">Pinselfarbe</string>
     <string name="pesdk_editor_title_name">Editor</string>
     <string name="pesdk_editor_title_closeEditorAlert">Editor schließen?</string>
+    <string name="pesdk_editor_text_closeEditorAlert">Wollen Sie dieses Bild wirklich löschen?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Ja</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Nein</string>
     <string name="pesdk_editor_cancel">Abbrechen</string>
@@ -255,6 +259,7 @@
     <string name="faq_2_text">Es gibt zwei Möglichkeiten: Entweder du installierst die App erneut oder du wählst in den Geräteeinstellungen \'Apps\' aus und dann \"Daten löschen\". Alle Einstellungen werden zurückgesetzt, alle Mediendateien bleiben unberührt.</string>
     <string name="faq_3_title">Wie kann ich ein Album immer zuoberst erscheinen lassen?</string>
     <string name="faq_3_text">Du kannst lange auf das gewünschte Album drücken und im Aktionsmenü das Stecknadelsymbol auswählen. Es wird nun oben angepinnt. Ebenso kannst du mehrere Ordner anpinnen. Angepinnte Objekte werden nach der Standardmethode sortiert.</string>
+    <string name="faq_4_title">Wie kann ich in Filmen schnell vorwärts springen?</string>
     <string name="faq_5_title">Was ist der Unterschied zwischen \'Verstecken\' und \'Ausschließen\' eines Ordners?</string>
     <string name="faq_6_title">Wieso erscheinen Ordner mit Musik-Cover oder Stickers?</string>
     <string name="faq_6_text">Es kann geschehen, dass manche ungewöhnliche Alben erscheinen. Diese kannst du ausschliessen durch gedrückt halten und Auswählen von Ausschliessen. Im nächsten Dialog kannst du den übergeordneten Ordner auswählen und dadurch sollten die anderen zugehörigen Alben auch nicht auftauchen.</string>
