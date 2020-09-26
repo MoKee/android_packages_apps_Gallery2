@@ -9,6 +9,7 @@ import com.bumptech.glide.signature.ObjectKey
 import com.simplemobiletools.commons.extensions.formatDate
 import com.simplemobiletools.commons.extensions.formatSize
 import com.simplemobiletools.commons.extensions.getFilenameExtension
+import com.simplemobiletools.commons.extensions.isWebP
 import com.simplemobiletools.commons.helpers.SORT_BY_DATE_MODIFIED
 import com.simplemobiletools.commons.helpers.SORT_BY_NAME
 import com.simplemobiletools.commons.helpers.SORT_BY_PATH
@@ -19,21 +20,23 @@ import java.util.*
 
 @Entity(tableName = "media", indices = [(Index(value = ["full_path"], unique = true))])
 data class Medium(
-        @PrimaryKey(autoGenerate = true) var id: Long?,
-        @ColumnInfo(name = "filename") var name: String,
-        @ColumnInfo(name = "full_path") var path: String,
-        @ColumnInfo(name = "parent_path") var parentPath: String,
-        @ColumnInfo(name = "last_modified") val modified: Long,
-        @ColumnInfo(name = "date_taken") var taken: Long,
-        @ColumnInfo(name = "size") val size: Long,
-        @ColumnInfo(name = "type") val type: Int,
-        @ColumnInfo(name = "video_duration") val videoDuration: Int,
-        @ColumnInfo(name = "is_favorite") var isFavorite: Boolean,
-        @ColumnInfo(name = "deleted_ts") var deletedTS: Long) : Serializable, ThumbnailItem() {
+    @PrimaryKey(autoGenerate = true) var id: Long?,
+    @ColumnInfo(name = "filename") var name: String,
+    @ColumnInfo(name = "full_path") var path: String,
+    @ColumnInfo(name = "parent_path") var parentPath: String,
+    @ColumnInfo(name = "last_modified") val modified: Long,
+    @ColumnInfo(name = "date_taken") var taken: Long,
+    @ColumnInfo(name = "size") val size: Long,
+    @ColumnInfo(name = "type") val type: Int,
+    @ColumnInfo(name = "video_duration") val videoDuration: Int,
+    @ColumnInfo(name = "is_favorite") var isFavorite: Boolean,
+    @ColumnInfo(name = "deleted_ts") var deletedTS: Long) : Serializable, ThumbnailItem() {
 
     companion object {
         private const val serialVersionUID = -6553149366975655L
     }
+
+    fun isWebP() = name.isWebP()
 
     fun isGIF() = type == TYPE_GIFS
 

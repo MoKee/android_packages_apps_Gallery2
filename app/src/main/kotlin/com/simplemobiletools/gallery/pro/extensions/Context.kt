@@ -36,6 +36,8 @@ import java.util.HashSet
 import java.util.LinkedHashSet
 import kotlin.Comparator
 import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
+import kotlin.collections.set
 
 val Context.audioManager get() = getSystemService(Context.AUDIO_SERVICE) as AudioManager
 
@@ -516,7 +518,13 @@ fun Context.getCachedDirectories(getVideosOnly: Boolean = false, getImagesOnly: 
         val shouldShowHidden = config.shouldShowHidden || forceShowHidden
         val excludedPaths = config.excludedFolders
         val includedPaths = config.includedFolders
-        var filteredDirectories = directories.filter { it.path.shouldFolderBeVisible(excludedPaths, includedPaths, shouldShowHidden) } as ArrayList<Directory>
+
+        val folderNomediaStatuses = HashMap<String, Boolean>()
+        var filteredDirectories = directories.filter {
+            it.path.shouldFolderBeVisible(excludedPaths, includedPaths, shouldShowHidden, folderNomediaStatuses) { path, hasNoMedia ->
+                folderNomediaStatuses[path] = hasNoMedia
+            }
+        } as ArrayList<Directory>
         val filterMedia = config.filterMedia
 
         filteredDirectories = (when {
@@ -880,8 +888,12 @@ fun Context.updateDirectoryPath(path: String) {
             grouping and GROUP_BY_LAST_MODIFIED_MONTHLY != 0
 
     val getProperFileSize = config.directorySorting and SORT_BY_SIZE != 0
+
+    val lastModifieds = if (isRPlus() && getProperLastModified) mediaFetcher.getFolderLastModifieds(path) else HashMap()
+    val dateTakens = mediaFetcher.getFolderDateTakens(path)
     val favoritePaths = getFavoritePaths()
-    val curMedia = mediaFetcher.getFilesFrom(path, getImagesOnly, getVideosOnly, getProperDateTaken, getProperLastModified, getProperFileSize, favoritePaths, false)
+    val curMedia = mediaFetcher.getFilesFrom(path, getImagesOnly, getVideosOnly, getProperDateTaken, getProperLastModified, getProperFileSize,
+        favoritePaths, false, lastModifieds, dateTakens)
     val directory = createDirectoryFromMedia(path, curMedia, albumCovers, hiddenString, includedFolders, getProperFileSize)
     updateDBDirectory(directory)
 }

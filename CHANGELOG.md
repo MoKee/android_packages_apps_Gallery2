@@ -1,7 +1,31 @@
 Changelog
 ==========
 
-Version 6.15.2 *(2020-09-09)*
+Version 6.16.0 *(2020-09-25)*
+----------------------------
+
+ * Adding support for animated WebP files
+ * Fixed a permissions glitch after upgrading to Android 11
+ * Added many performance related improvements
+
+Version 6.15.6 *(2020-09-22)*
+----------------------------
+
+ * Fixed the file loading performance in some cases
+ * Fixed some photo editor related glitches
+ * Fixed the Use English language settings toggle
+
+Version 6.15.5 *(2020-09-16)*
+----------------------------
+
+ * Properly fetch the latest available Last Modified of files
+
+Version 6.15.4 *(2020-09-16)*
+----------------------------
+
+ * Improved file loading performance
+
+Version 6.15.3 *(2020-09-09)*
 ----------------------------
 
  * Improved file loading performance in some cases
