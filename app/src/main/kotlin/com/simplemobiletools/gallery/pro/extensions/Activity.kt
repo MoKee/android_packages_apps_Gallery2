@@ -3,6 +3,7 @@ package com.simplemobiletools.gallery.pro.extensions
 import android.annotation.TargetApi
 import android.app.Activity
 import android.content.ContentProviderOperation
+import android.content.ContentValues
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -13,6 +14,7 @@ import android.media.ExifInterface
 import android.net.Uri
 import android.os.Build
 import android.provider.MediaStore
+import android.provider.MediaStore.Files
 import android.provider.MediaStore.Images
 import android.util.DisplayMetrics
 import android.view.View
@@ -119,9 +121,8 @@ fun BaseSimpleActivity.addNoMedia(path: String, callback: () -> Unit) {
             val fileDocument = getDocumentFile(path)
             if (fileDocument?.exists() == true && fileDocument.isDirectory) {
                 fileDocument.createFile("", NOMEDIA)
-                applicationContext.scanPathRecursively(file.absolutePath) {
-                    callback()
-                }
+                addNoMediaIntoMediaStore(file.absolutePath)
+                callback()
             } else {
                 toast(R.string.unknown_error_occurred)
                 callback()
@@ -130,7 +131,7 @@ fun BaseSimpleActivity.addNoMedia(path: String, callback: () -> Unit) {
     } else {
         try {
             if (file.createNewFile()) {
-                rescanFolderMedia(file.absolutePath)
+                addNoMediaIntoMediaStore(file.absolutePath)
             } else {
                 toast(R.string.unknown_error_occurred)
             }
@@ -138,6 +139,19 @@ fun BaseSimpleActivity.addNoMedia(path: String, callback: () -> Unit) {
             showErrorToast(e)
         }
         callback()
+    }
+}
+
+fun BaseSimpleActivity.addNoMediaIntoMediaStore(path: String) {
+    try {
+        val content = ContentValues().apply {
+            put(Files.FileColumns.TITLE, NOMEDIA)
+            put(Files.FileColumns.DATA, path)
+            put(Files.FileColumns.MEDIA_TYPE, Files.FileColumns.MEDIA_TYPE_NONE)
+        }
+        contentResolver.insert(Files.getContentUri("external"), content)
+    } catch (e: Exception) {
+        showErrorToast(e)
     }
 }
 
