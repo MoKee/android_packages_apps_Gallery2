@@ -9,6 +9,7 @@ import android.graphics.drawable.Icon
 import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
 import com.bumptech.glide.Glide
 import com.google.gson.Gson
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
@@ -35,7 +36,6 @@ import kotlinx.android.synthetic.main.directory_item_grid.view.dir_lock
 import kotlinx.android.synthetic.main.directory_item_grid.view.dir_name
 import kotlinx.android.synthetic.main.directory_item_grid.view.dir_pin
 import kotlinx.android.synthetic.main.directory_item_grid.view.dir_thumbnail
-import kotlinx.android.synthetic.main.directory_item_grid.view.photo_cnt
 import kotlinx.android.synthetic.main.directory_item_list.view.*
 import java.io.File
 
@@ -662,9 +662,6 @@ class DirectoryAdapter(activity: BaseSimpleActivity, var dirs: ArrayList<Directo
     private fun setupView(view: View, directory: Directory) {
         val isSelected = selectedKeys.contains(directory.path.hashCode())
         view.apply {
-            dir_name.text = if (groupDirectSubfolders && directory.subfoldersCount > 1) "${directory.name} (${directory.subfoldersCount})" else directory.name
-            dir_path?.text = "${directory.path.substringBeforeLast("/")}/"
-            photo_cnt.text = directory.subfoldersMediaCount.toString()
             val thumbnailType = when {
                 directory.tmb.isVideoFast() -> TYPE_VIDEOS
                 directory.tmb.isGif() -> TYPE_GIFS
@@ -678,13 +675,19 @@ class DirectoryAdapter(activity: BaseSimpleActivity, var dirs: ArrayList<Directo
                 dir_check.background?.applyColorFilter(primaryColor)
             }
 
+            if (scrollHorizontally && !isListViewType) {
+                (dir_name.layoutParams as RelativeLayout.LayoutParams).removeRule(RelativeLayout.BELOW)
+                (dir_thumbnail.layoutParams as RelativeLayout.LayoutParams).addRule(RelativeLayout.ABOVE, dir_name.id)
+            }
+
             if (lockedFolderPaths.contains(directory.path)) {
                 dir_lock.beVisible()
                 dir_lock.background = ColorDrawable(config.backgroundColor)
                 dir_lock.applyColorFilter(config.backgroundColor.getContrastColor())
             } else {
                 dir_lock.beGone()
-                activity.loadImage(thumbnailType, directory.tmb, dir_thumbnail, scrollHorizontally, animateGifs, cropThumbnails)
+                val roundedCorners = if (isListViewType) ROUNDED_CORNERS_SMALL else ROUNDED_CORNERS_BIG
+                activity.loadImage(thumbnailType, directory.tmb, dir_thumbnail, scrollHorizontally, animateGifs, cropThumbnails, roundedCorners)
             }
 
             dir_pin.beVisibleIf(pinnedFolders.contains(directory.path))
@@ -693,14 +696,28 @@ class DirectoryAdapter(activity: BaseSimpleActivity, var dirs: ArrayList<Directo
                 dir_location.setImageResource(if (directory.location == LOCATION_SD) R.drawable.ic_sd_card_vector else R.drawable.ic_usb_vector)
             }
 
-            photo_cnt.beVisibleIf(showMediaCount)
-
+            dir_name.setTextColor(textColor)
             if (isListViewType) {
-                dir_name.setTextColor(textColor)
-                dir_path.setTextColor(textColor)
+                dir_path.text = "${directory.path.substringBeforeLast("/")}/"
                 photo_cnt.setTextColor(textColor)
+                photo_cnt.text = directory.subfoldersMediaCount.toString()
+                photo_cnt.beVisibleIf(showMediaCount)
+                dir_path.setTextColor(textColor)
                 dir_pin.applyColorFilter(textColor)
                 dir_location.applyColorFilter(textColor)
+                dir_name.text = if (groupDirectSubfolders && directory.subfoldersCount > 1) {
+                    "${directory.name} [${directory.subfoldersCount}]"
+                } else {
+                    directory.name
+                }
+            } else {
+                dir_name.text = if (groupDirectSubfolders && directory.subfoldersCount > 1) {
+                    "${directory.name} [${directory.subfoldersCount}]"
+                } else if (showMediaCount) {
+                    "${directory.name} (${directory.subfoldersMediaCount})"
+                } else {
+                    directory.name
+                }
             }
         }
     }
