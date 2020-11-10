@@ -1118,6 +1118,29 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         mDirs = dirs.clone() as ArrayList<Directory>
     }
 
+    private fun setAsDefaultFolder() {
+        config.defaultFolder = ""
+        invalidateOptionsMenu()
+    }
+
+    private fun openDefaultFolder() {
+        if (config.defaultFolder.isEmpty()) {
+            return
+        }
+
+        val defaultDir = File(config.defaultFolder)
+
+        if ((!defaultDir.exists() || !defaultDir.isDirectory) && (config.defaultFolder != RECYCLE_BIN && config.defaultFolder != FAVORITES)) {
+            config.defaultFolder = ""
+            return
+        }
+
+        Intent(this, MediaActivity::class.java).apply {
+            putExtra(DIRECTORY, config.defaultFolder)
+            handleMediaIntent(this)
+        }
+    }
+
     private fun checkPlaceholderVisibility(dirs: ArrayList<Directory>) {
         directories_empty_placeholder.beVisibleIf(dirs.isEmpty() && mLoadedInitialPhotos)
         directories_empty_placeholder_2.beVisibleIf(dirs.isEmpty() && mLoadedInitialPhotos)
@@ -1404,30 +1427,8 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             add(Release(258, R.string.release_258))
             add(Release(277, R.string.release_277))
             add(Release(295, R.string.release_295))
+            add(Release(327, R.string.release_327))
             checkWhatsNew(this, BuildConfig.VERSION_CODE)
-        }
-    }
-
-    private fun setAsDefaultFolder() {
-        config.defaultFolder = ""
-        invalidateOptionsMenu()
-    }
-
-    private fun openDefaultFolder() {
-        if (config.defaultFolder.isEmpty()) {
-            return;
-        }
-
-        val defaultDir = File(config.defaultFolder!!)
-
-        if (!defaultDir.exists() || !defaultDir.isDirectory) {
-            config.defaultFolder = ""
-            return;
-        }
-
-        Intent(this, MediaActivity::class.java).apply {
-            putExtra(DIRECTORY, defaultDir.path)
-            handleMediaIntent(this)
         }
     }
 }
