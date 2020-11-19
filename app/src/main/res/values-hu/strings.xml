@@ -15,10 +15,6 @@
     <string name="other_folder">Egyéb mappa</string>
     <string name="show_on_map">Mutassa a térképen</string>
     <string name="unknown_location">Ismeretlen helyszín</string>
-    <string name="increase_column_count">Növelje az oszlopok számát</string>
-    <string name="reduce_column_count">Csökkentse az oszlopok számát</string>
-    <string name="change_cover_image">Borítókép változtatása</string>
-    <string name="select_photo">Válasszon fotót</string>
     <string name="volume">Hangerő</string>
     <string name="brightness">Fényesség</string>
     <string name="lock_orientation">Tájolás zárolása</string>
@@ -109,9 +105,6 @@
     <string name="slide">Csúszás</string>
     <string name="slideshow_ended">A diavetítés vége</string>
     <string name="no_media_for_slideshow">A diavetítéshez nem található média</string>
-    <string name="change_view_type">Nézet típus változtatása</string>
-    <string name="grid">Rács</string>
-    <string name="list">Lista</string>
     <string name="group_direct_subfolders">Közvetlen almappa csoport</string>
     <string name="group_by">Csoport</string>
     <string name="do_not_group_files">Nincs csoportosítás</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">Az érvénytelen fájlok elkerülése érdekében</string>
     <string name="show_image_file_types">Képfájltípusok megjelenítése</string>
     <string name="allow_zooming_videos">Lehetővé teszi a videók zoomolását dupla koppintással</string>
+    <string name="square">Négyzet</string>
     <string name="thumbnails">Miniatűrök</string>
     <string name="fullscreen_media">Teljes képernyős média</string>
     <string name="extended_details">Bővített részletek</string>

@@ -15,10 +15,6 @@
     <string name="other_folder">Thư mục khác</string>
     <string name="show_on_map">Hiển thị trên bản đồ</string>
     <string name="unknown_location">Không xác định vị trí</string>
-    <string name="increase_column_count">Tăng số cột</string>
-    <string name="reduce_column_count">Giảm số cột</string>
-    <string name="change_cover_image">Thay đổi ảnh bìa</string>
-    <string name="select_photo">Chọn ảnh</string>
     <string name="volume">Âm lượng</string>
     <string name="brightness">Độ sáng</string>
     <string name="lock_orientation">Khóa xoay màn hình</string>
@@ -109,9 +105,6 @@
     <string name="slide">Trượt</string>
     <string name="slideshow_ended">Kết thúc trình chiếu</string>
     <string name="no_media_for_slideshow">Không tìm thấy dữ liệu cho trình chiếu</string>
-    <string name="change_view_type">Change view type</string>
-    <string name="grid">Lưới</string>
-    <string name="list">List</string>
     <string name="group_direct_subfolders">Group direct subfolders</string>
     <string name="group_by">Nhóm theo</string>
     <string name="do_not_group_files">Do not group files</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">Tránh hiển thị các tệp không hợp lệ</string>
     <string name="show_image_file_types">Hiển thị các loại tệp hình ảnh</string>
     <string name="allow_zooming_videos">Cho phép phóng to video bằng cách nhấn đúp</string>
+    <string name="square">Vuông</string>
     <string name="thumbnails">Thumbnails</string>
     <string name="fullscreen_media">Chế độ toàn màn hình</string>
     <string name="extended_details">Extended details</string>

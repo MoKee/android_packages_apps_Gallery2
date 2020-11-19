@@ -15,10 +15,6 @@
     <string name="other_folder">Остали фолдери</string>
     <string name="show_on_map">Прикажи на мапи</string>
     <string name="unknown_location">Непозната локација</string>
-    <string name="increase_column_count">Повећај број колона</string>
-    <string name="reduce_column_count">Коригуј број колона</string>
-    <string name="change_cover_image">Промени Изглед слике</string>
-    <string name="select_photo">Избор фотографије</string>
     <string name="volume">Јачина звука</string>
     <string name="brightness">Осветљеност</string>
     <string name="lock_orientation">Смер закључавања</string>
@@ -108,9 +104,6 @@
     <string name="slide">Слајд</string>
     <string name="slideshow_ended">Заврши вртење слајдова</string>
     <string name="no_media_for_slideshow">Нема фајлова за вртење слајдова</string>
-    <string name="change_view_type">Промени врсту приказа</string>
-    <string name="grid">Мрежа</string>
-    <string name="list">Листа</string>
     <string name="group_direct_subfolders">Постави у групу подфолдере</string>
     <string name="group_by">Групиши према</string>
     <string name="do_not_group_files">Немој груписати фајлове</string>

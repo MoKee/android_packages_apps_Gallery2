@@ -15,10 +15,6 @@
     <string name="other_folder">Diğer klasör</string>
     <string name="show_on_map">Haritada göster</string>
     <string name="unknown_location">Bilinmeyen konum</string>
-    <string name="increase_column_count">Sütun sayısını artır</string>
-    <string name="reduce_column_count">Sütun sayısını azalt</string>
-    <string name="change_cover_image">Kapak görüntüsünü değiştir</string>
-    <string name="select_photo">Fotoğraf seçin</string>
     <string name="volume">Ses</string>
     <string name="brightness">Parlaklık</string>
     <string name="lock_orientation">Kilit yönlendirmesi</string>
@@ -109,9 +105,6 @@
     <string name="slide">Kaydır</string>
     <string name="slideshow_ended">Slayt gösterisi sona erdi</string>
     <string name="no_media_for_slideshow">Slayt gösterisi için ortam bulunamadı</string>
-    <string name="change_view_type">Önizleme türünü değiştir</string>
-    <string name="grid">Izgara</string>
-    <string name="list">Liste</string>
     <string name="group_direct_subfolders">Grup alt klasörleri</string>
     <string name="group_by">Grupla</string>
     <string name="do_not_group_files">Dosyaları gruplama</string>
@@ -167,6 +160,7 @@
     <string name="compromise">Uzlaşma</string>
     <string name="avoid_showing_invalid_files">Geçersiz dosyaları göstermekten kaçının</string>
     <string name="show_image_file_types">Görüntü dosyası türlerini göster</string>
+    <string name="square">Kare</string>
     <string name="thumbnails">Önizleme resimleri</string>
     <string name="fullscreen_media">Tam ekran medya</string>
     <string name="extended_details">Genişletilmiş ayrıntılar</string>

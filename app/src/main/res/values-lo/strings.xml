@@ -2,7 +2,6 @@
 <resources>
     <string name="edit">ແກ້ໄຂ</string>
     <string name="show_on_map">ສະແດງໃນແຜນທີ່</string>
-    <string name="select_photo">ເລືອກຮູບ</string>
     <string name="brightness">ຄວາມສະຫວ່າງ</string>
     <string name="videos">ວີດີໂອ</string>
     <string name="resize">ປັບຂະໜາດ</string>

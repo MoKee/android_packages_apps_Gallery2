@@ -2,7 +2,6 @@
 <resources>
     <string name="edit">සංස්කරණය කිරීම</string>
     <string name="show_on_map">සිතියම මත පෙන්වන්න</string>
-    <string name="select_photo">ඡායාරූපය තෝරන්න</string>
     <string name="brightness">දීප්තිමත් බව</string>
     <string name="resize">නැවත ප්‍රමාණගත කිරීම</string>
     <string name="width">පළල</string>

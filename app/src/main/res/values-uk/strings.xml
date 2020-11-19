@@ -15,10 +15,6 @@
     <string name="other_folder">Інша тека</string>
     <string name="show_on_map">Показати на мапі</string>
     <string name="unknown_location">Невідоме місцерозташування</string>
-    <string name="increase_column_count">Збільшити кількість колонок</string>
-    <string name="reduce_column_count">Зменшити кількість колонок</string>
-    <string name="change_cover_image">Змінити обкладинку</string>
-    <string name="select_photo">Вибрати фото</string>
     <string name="volume">Об\'єм</string>
     <string name="brightness">Яскравість</string>
     <string name="lock_orientation">Закріпити орієнтацію</string>
@@ -109,9 +105,6 @@
     <string name="slide">Слайд</string>
     <string name="slideshow_ended">Слайдшоу закінчено</string>
     <string name="no_media_for_slideshow">Не знайдено медіафайлів для показу у слайдшоу</string>
-    <string name="change_view_type">Змінити тип перегляду</string>
-    <string name="grid">Сітка</string>
-    <string name="list">Список</string>
     <string name="group_direct_subfolders">Групувати безпосередні підтеки</string>
     <string name="group_by">Групувати за…</string>
     <string name="do_not_group_files">Не групувати файли</string>
@@ -167,6 +160,7 @@
     <string name="compromise">Компроміс</string>
     <string name="avoid_showing_invalid_files">Не відображати неприпустимі файли</string>
     <string name="show_image_file_types">Показати типи файлів зображень</string>
+    <string name="square">Квадрат</string>
     <string name="thumbnails">Ескізи</string>
     <string name="fullscreen_media">Повноекранний перегляд</string>
     <string name="extended_details">Розширені подробиці</string>

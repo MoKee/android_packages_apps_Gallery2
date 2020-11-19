@@ -15,10 +15,6 @@
     <string name="other_folder">ಇತರೆ ಕಡತಕೋಶ</string>
     <string name="show_on_map">ನಕ್ಷೆಯಲ್ಲಿ ತೋರಿಸಿ</string>
     <string name="unknown_location">ಅಪರಿಚಿತ ಸ್ಥಳ</string>
-    <string name="increase_column_count">ಸ್ತಂಭ ಎಣಿಕೆಯನ್ನು ಹೆಚ್ಚಿಸಿ</string>
-    <string name="reduce_column_count">ಸ್ತಂಭ ಎಣಿಕೆ ಕಡಿಮೆ ಮಾಡಿ</string>
-    <string name="change_cover_image">ಮುಖಪುಟ ಚಿತ್ರವನ್ನು ಬದಲಾಯಿಸು</string>
-    <string name="select_photo">ಚಿತ್ರವನ್ನು ಆರಿಸಿ</string>
     <string name="volume">ಗಾತ್ರ</string>
     <string name="brightness">ಪ್ರಖರತೆ</string>
     <string name="lock_orientation">ದೃಷ್ಟಿಕೋನ ಲಾಕ್ ಮಾಡಿ</string>
@@ -97,9 +93,6 @@
     <string name="no_animation">ಯಾವುದೂ ಇಲ್ಲ</string>
     <string name="slideshow_ended">ಸ್ಲೈಡ್ ವೀಕ್ಷಣೆ ಕೊನೆಗೊಂಡಿದೆ</string>
     <string name="no_media_for_slideshow">ಸ್ಲೈಡ್ ವೀಕ್ಷಣೆಗೆ ಯಾವುದೇ ಮಾಧ್ಯಮಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
-    <string name="change_view_type">ನೋಟದ ರೀತಿ ಬದಲಾಯಿಸು</string>
-    <string name="grid">ಚೌಕಾಕಾರದ ಕ್ರಮ</string>
-    <string name="list">ಪಟ್ಟಿ ಕ್ರಮ</string>
     <string name="group_direct_subfolders">ಗುಂಪಿನ ನೇರ ಉಪಕಡತಕೋಶಗಳು</string>
     <string name="group_by">ಗುಂಪಿನ ಮೂಲಕ</string>
     <string name="do_not_group_files">ಕಡತಗಳನ್ನು ಗುಂಪು ಮಾಡಬೇಡಿ</string>

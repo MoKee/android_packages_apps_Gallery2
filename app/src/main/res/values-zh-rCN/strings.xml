@@ -15,10 +15,6 @@
     <string name="other_folder">其他文件夹</string>
     <string name="show_on_map">在地图中显示</string>
     <string name="unknown_location">未知位置</string>
-    <string name="increase_column_count">增加一栏</string>
-    <string name="reduce_column_count">减少一栏</string>
-    <string name="change_cover_image">更改封面图片</string>
-    <string name="select_photo">选择图片</string>
     <string name="volume">音量</string>
     <string name="brightness">亮度</string>
     <string name="lock_orientation">锁定屏幕方向</string>
@@ -109,9 +105,6 @@
     <string name="slide">滑动</string>
     <string name="slideshow_ended">幻灯片结束</string>
     <string name="no_media_for_slideshow">未发现可用于播放幻灯片的媒体文件</string>
-    <string name="change_view_type">更改视图类型</string>
-    <string name="grid">网格</string>
-    <string name="list">列表</string>
     <string name="group_direct_subfolders">子文件夹按父文件夹分组</string>
     <string name="group_by">分组依据</string>
     <string name="do_not_group_files">禁用文件分组</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">避免显示无效文件</string>
     <string name="show_image_file_types">显示图片文件类型</string>
     <string name="allow_zooming_videos">允许双击缩放视频</string>
+    <string name="square">正方形</string>
     <string name="thumbnails">缩略图</string>
     <string name="fullscreen_media">全屏显示媒体</string>
     <string name="extended_details">扩展详情</string>

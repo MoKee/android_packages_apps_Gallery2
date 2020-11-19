@@ -15,10 +15,6 @@
     <string name="other_folder">Otra carpeta</string>
     <string name="show_on_map">Mostrar en el mapa</string>
     <string name="unknown_location">Ubicación desconocida</string>
-    <string name="increase_column_count">Aumentar el número de columnas</string>
-    <string name="reduce_column_count">Reducir el número de columnas</string>
-    <string name="change_cover_image">Cambiar imagen de portada</string>
-    <string name="select_photo">Seleccionar foto</string>
     <string name="volume">Volumen</string>
     <string name="brightness">Brillo</string>
     <string name="lock_orientation">Bloquear orientación</string>
@@ -109,9 +105,6 @@
     <string name="slide">Deslizar</string>
     <string name="slideshow_ended">La diapositiva terminó</string>
     <string name="no_media_for_slideshow">No se han encontrado medios para la presentación de diapositivas</string>
-    <string name="change_view_type">Cambiar tipo de vista</string>
-    <string name="grid">Cuadrícula</string>
-    <string name="list">Lista</string>
     <string name="group_direct_subfolders">Agrupar subcarpetas directas</string>
     <string name="group_by">Agrupar por</string>
     <string name="do_not_group_files">No agrupar ficheros</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">Evitar mostrar archivos no válidos</string>
     <string name="show_image_file_types">Mostrar los tipos de archivo de las imágenes</string>
     <string name="allow_zooming_videos">Permitir hacer zoom con doble toque en los vídeos</string>
+    <string name="square">Cuadrado</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Medios a pantalla compelta</string>
     <string name="extended_details">Detalles ampliados</string>

@@ -15,10 +15,6 @@
     <string name="other_folder">Folder lain</string>
     <string name="show_on_map">Tampilkan pada peta</string>
     <string name="unknown_location">Lokasi tidak diketahui</string>
-    <string name="increase_column_count">Tambah jumlah kolom</string>
-    <string name="reduce_column_count">Mengurangi jumlah kolom</string>
-    <string name="change_cover_image">Ubah gambar sampul</string>
-    <string name="select_photo">Pilih foto</string>
     <string name="volume">Volume</string>
     <string name="brightness">Kecerahan</string>
     <string name="lock_orientation">Kunci orientasi</string>
@@ -106,9 +102,6 @@
     <string name="slide">Geser</string>
     <string name="slideshow_ended">Tampilan slide berakhir</string>
     <string name="no_media_for_slideshow">Tidak ada media untuk tampilan slide yang ditemukan</string>
-    <string name="change_view_type">Ubah jenis tampilan</string>
-    <string name="grid">Kotak</string>
-    <string name="list">Daftar</string>
     <string name="group_direct_subfolders">Kelompokan subfolder langsung</string>
     <string name="group_by">Kelompokkan menurut</string>
     <string name="do_not_group_files">Jangan mengelompokkan file</string>

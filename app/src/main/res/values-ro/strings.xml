@@ -4,7 +4,6 @@
     <string name="edit">Editare</string>
     <string name="all_folders">Toate dosarele</string>
     <string name="show_on_map">Afişaţi pe hartă</string>
-    <string name="select_photo">Selectaţi fotografie</string>
     <string name="brightness">Luminozitate</string>
     <string name="images">Imagini</string>
     <string name="videos">Videoclipuri</string>
@@ -25,8 +24,6 @@
     <string name="lock_screen">Ecranul de blocare</string>
     <string name="slideshow">Prezentare</string>
     <string name="no_animation">Niciunul</string>
-    <string name="grid">Grilă</string>
-    <string name="list">Listă</string>
     <string name="group_by">Grupaţi după</string>
     <string name="by_folder">Dosar</string>
     <string name="by_date_taken">Data realizării</string>

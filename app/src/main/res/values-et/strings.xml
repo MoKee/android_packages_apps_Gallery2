@@ -15,10 +15,6 @@
     <string name="other_folder">Muu kaust</string>
     <string name="show_on_map">Näita kaardil</string>
     <string name="unknown_location">Tundmatu asukoht</string>
-    <string name="increase_column_count">Suurendage veergude arvu</string>
-    <string name="reduce_column_count">Vähendage veergude arvu</string>
-    <string name="change_cover_image">Muuda tausta pilt</string>
-    <string name="select_photo">Valige foto</string>
     <string name="volume">Helitugevus</string>
     <string name="brightness">Heledus</string>
     <string name="lock_orientation">Lukusta suund</string>
@@ -109,9 +105,6 @@
     <string name="slide">Libisema</string>
     <string name="slideshow_ended">Slaidiseanss lõppes</string>
     <string name="no_media_for_slideshow">Slaidiseansi meediat pole leitud</string>
-    <string name="change_view_type">Muuda vaatetüüpi</string>
-    <string name="grid">Ruudustik</string>
-    <string name="list">Loend</string>
     <string name="group_direct_subfolders">Grupeerige otsesed alamkaustad</string>
     <string name="group_by">Grupeerimisalus:</string>
     <string name="do_not_group_files">Ärge grupeerige faile</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">Vältige vigaste failide esitamist</string>
     <string name="show_image_file_types">Kuva pildifailide tüübid</string>
     <string name="allow_zooming_videos">Luba videote suumimist neid topeltpuudutades</string>
+    <string name="square">Ruut</string>
     <string name="thumbnails">Pisipildid</string>
     <string name="fullscreen_media">Täisekraan meedia</string>
     <string name="extended_details">Laiendatud üksikasjad</string>

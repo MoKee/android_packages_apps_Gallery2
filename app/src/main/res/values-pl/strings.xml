@@ -15,10 +15,6 @@
     <string name="other_folder">Inny folder</string>
     <string name="show_on_map">Pokaż na mapie</string>
     <string name="unknown_location">Nieznana lokalizacja</string>
-    <string name="increase_column_count">Zwiększ liczbę kolumn</string>
-    <string name="reduce_column_count">Zmniejsz liczbę kolumn</string>
-    <string name="change_cover_image">Zmień okładkę</string>
-    <string name="select_photo">Wybierz obraz</string>
     <string name="volume">Głośność</string>
     <string name="brightness">Jasność</string>
     <string name="lock_orientation">Zablokuj orientację ekranu</string>
@@ -109,9 +105,6 @@
     <string name="slide">Przesunięcie</string>
     <string name="slideshow_ended">Pokaz slajdów zakończony</string>
     <string name="no_media_for_slideshow">Nie znalazłem multimediów do pokazu slajdów</string>
-    <string name="change_view_type">Zmień typ widoku</string>
-    <string name="grid">Siatka</string>
-    <string name="list">Lista</string>
     <string name="group_direct_subfolders">Grupuj bezpośrednie podfoldery</string>
     <string name="group_by">Grupuj według</string>
     <string name="do_not_group_files">Nie grupuj plików</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">Unikaj wyświetlania nieprawidłowych plików</string>
     <string name="show_image_file_types">Pokaż typy plików obrazu</string>
     <string name="allow_zooming_videos">Zezwalaj na powiększanie filmów podwójnym stuknięciem</string>
+    <string name="square">Kwadrat</string>
     <string name="thumbnails">Miniatury</string>
     <string name="fullscreen_media">Widok pełnoekranowy</string>
     <string name="extended_details">Dodatkowe szczegóły</string>
@@ -283,6 +277,7 @@
     <string name="faq_15_title">Dlaczego aplikacja zajmuje tyle miejsca?</string>
     <string name="faq_15_text">Pamięć podręczna aplikacji może zająć do 250 MB, zapewnia szybsze ładowanie obrazu. Jeśli aplikacja zajmuje jeszcze więcej miejsca, jest to najprawdopodobniej spowodowane posiadaniem przedmiotów w koszu. Te pliki liczą się do rozmiaru aplikacji. Możesz wyczyścić kosz z ustawień aplikacji, lub otwierając go i usuwając wszystkie pliki. Każdy plik w koszu jest usuwany automatycznie po 30 dniach.</string>
     <string name="app_title">Prosta galeria Pro - Menedżer zdjęć &amp; Edytor</string>
+    <string name="app_short_description">Aplikacja premium do zarządzania zdjęciami, filmami, GIFami bez reklam i edycji</string>
     <string name="app_long_description">Simple Gallery Pro to wysoce konfigurowalna galeria offline. Organizuj edycję zdjęć, odzyskuj usunięte pliki za pomocą kosza, chroń ukryte pliki i przeglądaj różnorodne formaty wideo ze zdjęciami, w tym RAW, SVG i wiele więcej.
 
         Aplikacja nie zawiera reklam i niepotrzebnych uprawnień. Ponieważ aplikacja nie wymaga również dostępu do Internetu, twoja prywatność jest chroniona.

@@ -15,10 +15,6 @@
     <string name="other_folder">مجلد آخر</string>
     <string name="show_on_map">عرض على الخريطة</string>
     <string name="unknown_location">موقع غير معروف</string>
-    <string name="increase_column_count">زيادة عدد الأعمدة</string>
-    <string name="reduce_column_count">تقليل عدد الأعمدة</string>
-    <string name="change_cover_image">تغيير صورة الغلاف</string>
-    <string name="select_photo">اختر الصور</string>
     <string name="volume">الصوت</string>
     <string name="brightness">السطوع</string>
     <string name="lock_orientation">غلق الاتجاه</string>
@@ -111,9 +107,6 @@
     <string name="slide">انزلاق</string>
     <string name="slideshow_ended">انتهى عرض الشرائح</string>
     <string name="no_media_for_slideshow">لم يتم العثور على وسائط لعرض الشرائح</string>
-    <string name="change_view_type">تغيير طريقة العرض</string>
-    <string name="grid">الشبكة</string>
-    <string name="list">القائمة</string>
     <string name="group_direct_subfolders">مجلدات فرعية مباشرة</string>
     <string name="group_by">تجميع بحسب</string>
     <string name="do_not_group_files">لا تقم بتجميع الملفات</string>
@@ -169,6 +162,7 @@
     <string name="compromise">المرونة</string>
     <string name="avoid_showing_invalid_files">تجنب إظهار الملفات غير الصحيحة</string>
     <string name="show_image_file_types">إظهار أنواع ملفات الصور</string>
+    <string name="square">مربع</string>
     <string name="thumbnails">المصغرات</string>
     <string name="fullscreen_media">وسائط ملء الشاشة</string>
     <string name="extended_details">تفاصيل موسعة</string>

@@ -15,10 +15,6 @@
     <string name="other_folder">其他資料夾</string>
     <string name="show_on_map">在地圖上顯示</string>
     <string name="unknown_location">未知的位置</string>
-    <string name="increase_column_count">增加欄數</string>
-    <string name="reduce_column_count">減少欄數</string>
-    <string name="change_cover_image">更換封面圖片</string>
-    <string name="select_photo">選擇相片</string>
     <string name="volume">音量</string>
     <string name="brightness">亮度</string>
     <string name="lock_orientation">鎖定方向</string>
@@ -109,9 +105,6 @@
     <string name="slide">滑動</string>
     <string name="slideshow_ended">投影片結束</string>
     <string name="no_media_for_slideshow">找不到投影片的媒體檔案</string>
-    <string name="change_view_type">改變瀏覽類型</string>
-    <string name="grid">格狀</string>
-    <string name="list">清單</string>
     <string name="group_direct_subfolders">歸類子資料夾</string>
     <string name="group_by">歸類</string>
     <string name="do_not_group_files">不歸類檔案</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">避免顯示無效檔案</string>
     <string name="show_image_file_types">顯示影像檔案類型</string>
     <string name="allow_zooming_videos">允許雙擊縮放影片</string>
+    <string name="square">正方形</string>
     <string name="thumbnails">縮圖</string>
     <string name="fullscreen_media">全螢幕媒體檔案</string>
     <string name="extended_details">詳細資訊</string>
@@ -285,6 +279,7 @@
     <string name="faq_15_title">為什麼應用程式佔用了這麼多容量？</string>
     <string name="faq_15_text">應用程式快取可以達到 250MB，它確保更快的影像載入。如果應用程式佔用了更多的空間，很可能是因為你的回收站裡有東西。這些檔案的大小取決於應用程式的大小。您可以通過打開回收站並刪除所有檔案，或從應用程式設定中清除回收站。每個檔案在 30 天后會自動刪除。</string>
     <string name="app_title">Simple Gallery Pro - 照片管理器和編輯器</string>
+    <string name="app_short_description">沒有廣告的高級應用程式管理及編輯您的照片、影片和 Gif </string>
     <string name="app_long_description">簡易相簿 Pro 是一個高度自訂化的離線相簿。整理和編輯你的照片，從回收桶恢復刪除的檔案，保護和隱藏檔案，以及瀏覽大量不同的照片 &amp; 影片格式，包含 RAW、SVG… 等更多。
 
         這應用程式沒有廣告和非必要的權限。並且由於不需要網路連線，您的隱私受到保護。

@@ -15,10 +15,6 @@
     <string name="other_folder">Autre dossier</string>
     <string name="show_on_map">Afficher sur la carte</string>
     <string name="unknown_location">Position inconnue</string>
-    <string name="increase_column_count">Ajouter une colonne</string>
-    <string name="reduce_column_count">Supprimer une colonne</string>
-    <string name="change_cover_image">Changer l\'image de couverture</string>
-    <string name="select_photo">Sélectionner une photo</string>
     <string name="volume">Volume</string>
     <string name="brightness">Luminosité</string>
     <string name="lock_orientation">Verrouiller la rotation</string>
@@ -109,9 +105,6 @@
     <string name="slide">Glisser</string>
     <string name="slideshow_ended">Diaporama terminé</string>
     <string name="no_media_for_slideshow">Aucun média trouvé pour le diaporama</string>
-    <string name="change_view_type">Changer de mode d\'affichage</string>
-    <string name="grid">Grille</string>
-    <string name="list">Liste</string>
     <string name="group_direct_subfolders">Sous-dossiers de groupe direct</string>
     <string name="group_by">Grouper par</string>
     <string name="do_not_group_files">Ne pas grouper les fichiers</string>
@@ -167,6 +160,7 @@
     <string name="compromise">Compromis</string>
     <string name="avoid_showing_invalid_files">Éviter d\'afficher des fichiers invalides</string>
     <string name="show_image_file_types">Afficher les types de fichiers image</string>
+    <string name="square">Carré</string>
     <string name="thumbnails">Miniatures</string>
     <string name="fullscreen_media">Affichage en plein écran</string>
     <string name="extended_details">Détails supplémentaires</string>

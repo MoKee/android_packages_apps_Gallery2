@@ -11,7 +11,6 @@
     <string name="other_folder">மற்ற கோப்புறை</string>
     <string name="show_on_map">வரைபடத்தில் காண்பி</string>
     <string name="unknown_location">அறியாத இருப்பிடம்</string>
-    <string name="select_photo">படத்தைத் தேர்வுசெய்க</string>
     <string name="volume">ஒலியளவு</string>
     <string name="brightness">ஒளிர்வு</string>
     <string name="share_resized">ஒரு மறுஅளவாக்கப்பட்ட பதிப்பைப் பகிர்</string>
@@ -53,9 +52,6 @@
     <string name="fade">மங்குதல்</string>
     <string name="slide">ஸ்லைடு</string>
     <string name="slideshow_ended">ஸ்லைடுகாட்சி முடிந்தது</string>
-    <string name="change_view_type">காட்சி வகையை மாற்று</string>
-    <string name="grid">கட்டம்</string>
-    <string name="list">பட்டியல்</string>
     <string name="do_not_group_files">கோப்புகளைக் குழுவாக்காதே</string>
     <string name="by_folder">கோப்புறை</string>
     <string name="by_date_taken">எடுத்த தேதி</string>

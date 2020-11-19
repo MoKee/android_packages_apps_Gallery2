@@ -15,10 +15,6 @@
     <string name="other_folder">Другая папка</string>
     <string name="show_on_map">Показать место съёмки</string>
     <string name="unknown_location">Место съёмки не указано</string>
-    <string name="increase_column_count">Добавить столбец</string>
-    <string name="reduce_column_count">Убрать столбец</string>
-    <string name="change_cover_image">Изменить обложку</string>
-    <string name="select_photo">Выбрать изображение</string>
     <string name="volume">Громкость</string>
     <string name="brightness">Яркость</string>
     <string name="lock_orientation">Заблокировать ориентацию</string>
@@ -109,9 +105,6 @@
     <string name="slide">Скольжение</string>
     <string name="slideshow_ended">Слайд-шоу закончилось</string>
     <string name="no_media_for_slideshow">Никаких медиафайлов для слайд-шоу не было найдено</string>
-    <string name="change_view_type">Режим отображения</string>
-    <string name="grid">Сетка</string>
-    <string name="list">Список</string>
     <string name="group_direct_subfolders">Группировать вложенные папки</string>
     <string name="group_by">Группировать по…</string>
     <string name="do_not_group_files">Не группировать файлы</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">Не отображать недопустимые файлы</string>
     <string name="show_image_file_types">Показать типы файлов изображений</string>
     <string name="allow_zooming_videos">Увеличение видео с помощью двойного нажатия</string>
+    <string name="square">Квадрат</string>
     <string name="thumbnails">Миниатюры</string>
     <string name="fullscreen_media">Полноэкранный режим</string>
     <string name="extended_details">Подробности</string>

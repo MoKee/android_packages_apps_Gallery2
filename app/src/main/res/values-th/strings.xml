@@ -2,7 +2,6 @@
 <resources>
     <string name="edit">แก้ไข</string>
     <string name="show_on_map">แสดงบนแผนที่</string>
-    <string name="select_photo">เลือกรูปภาพ</string>
     <string name="brightness">ความสว่าง</string>
     <string name="resize">ปรับขนาด</string>
     <string name="width">ความกว้าง</string>

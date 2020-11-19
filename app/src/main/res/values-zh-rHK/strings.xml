@@ -15,10 +15,6 @@
     <string name="other_folder">其他資料夾</string>
     <string name="show_on_map">在地圖上顯示</string>
     <string name="unknown_location">未知的位置</string>
-    <string name="increase_column_count">增加欄數</string>
-    <string name="reduce_column_count">減少欄數</string>
-    <string name="change_cover_image">更換封面圖片</string>
-    <string name="select_photo">選取相片</string>
     <string name="volume">音量</string>
     <string name="brightness">光暗度</string>
     <string name="lock_orientation">鎖定方向</string>
@@ -107,9 +103,6 @@
     <string name="slide">滑動</string>
     <string name="slideshow_ended">投影片結束</string>
     <string name="no_media_for_slideshow">找不到投影片的媒體檔案</string>
-    <string name="change_view_type">改變瀏覽類型</string>
-    <string name="grid">格狀</string>
-    <string name="list">清單</string>
     <string name="group_direct_subfolders">歸類子資料夾</string>
     <string name="group_by">分組依據</string>
     <string name="do_not_group_files">不歸類檔案</string>
@@ -165,6 +158,7 @@
     <string name="compromise">妥協</string>
     <string name="avoid_showing_invalid_files">避免顯示無效檔案</string>
     <string name="show_image_file_types">顯示影像檔案類型</string>
+    <string name="square">正方形</string>
     <string name="thumbnails">縮圖</string>
     <string name="fullscreen_media">全螢幕媒體檔案</string>
     <string name="extended_details">詳細資訊</string>

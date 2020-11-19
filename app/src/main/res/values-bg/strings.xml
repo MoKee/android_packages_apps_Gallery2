@@ -9,7 +9,6 @@
     <string name="all_folders">Всички папки</string>
     <string name="other_folder">Друга папка</string>
     <string name="show_on_map">Показване на карта</string>
-    <string name="select_photo">Избиране на снимка</string>
     <string name="volume">Звук</string>
     <string name="brightness">Ярко</string>
     <string name="lock_orientation">Заключване на ориентацията</string>
@@ -47,7 +46,6 @@
     <string name="include_gifs">Включване на GIF</string>
     <string name="random_order">Случаен ред</string>
     <string name="no_animation">Без</string>
-    <string name="list">Списък</string>
     <string name="group_by">Групиране по</string>
     <string name="do_not_group_files">Не групирай файловете</string>
     <string name="by_folder">Папка</string>

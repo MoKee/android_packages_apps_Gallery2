@@ -15,10 +15,6 @@
     <string name="other_folder">Outra pasta</string>
     <string name="show_on_map">Mostrar no mapa</string>
     <string name="unknown_location">Localização desconhecida</string>
-    <string name="increase_column_count">Aumentar contagem de colunas</string>
-    <string name="reduce_column_count">Reduzir contagem de colunas</string>
-    <string name="change_cover_image">Alterar imagem da capa</string>
-    <string name="select_photo">Selecionar fotog.</string>
     <string name="volume">Volume</string>
     <string name="brightness">Brilho</string>
     <string name="lock_orientation">Bloquear orientação</string>
@@ -109,9 +105,6 @@
     <string name="slide">Diapositivo</string>
     <string name="slideshow_ended">Fim da apresentação</string>
     <string name="no_media_for_slideshow">Nenhuma mídia encontrada para o slideshow</string>
-    <string name="change_view_type">Alterar tipo de exibição</string>
-    <string name="grid">Grelha</string>
-    <string name="list">Lista</string>
     <string name="group_direct_subfolders">Agrupar subpastas diretas</string>
     <string name="group_by">Agrupar por</string>
     <string name="do_not_group_files">Não agrupar ficheiros</string>
@@ -168,6 +161,7 @@
     <string name="avoid_showing_invalid_files">Evitar de mostrar arquivos inválidos</string>
     <string name="show_image_file_types">Mostrar tipos de arquivo de imagem</string>
     <string name="allow_zooming_videos">Permitir ampliação de vídeos com toque duplo</string>
+    <string name="square">Quadrado</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Modo de ecrã completo</string>
     <string name="extended_details">Detalhes estendidos</string>
