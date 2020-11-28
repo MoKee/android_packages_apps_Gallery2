@@ -30,6 +30,8 @@
     <string name="share_resized">Az átméretezett verzió megosztása</string>
     <string name="upgraded_from_free">Hé!\n\núgy tűnik, mintha a régi ingyenes alkalmazásból frissített volna. Most már eltávolíthatja a régi verziót, amelynek a „Frissítés Pro verzióra” gombja az alkalmazás beállításainak tetején található.\n\nCsak a Lomtár elemei törlődnek, a kedvenc elemek nem jelennek meg, és vissza kell állítania az alkalmazás beállításait is.\n\nKöszönjük!</string>
     <string name="switch_to_file_search">Váltás a fájlkeresésre az összes látható mappában</string>
+    <string name="set_as_default_folder">Beállítás alapértelmezett mappaként</string>
+    <string name="unset_as_default_folder">Megszünetetés alapértelmezett mappaként</string>
     <string name="filter_media">Médiaszűrés</string>
     <string name="images">Kép</string>
     <string name="videos">Videó</string>
@@ -161,7 +163,13 @@
     <string name="avoid_showing_invalid_files">Az érvénytelen fájlok elkerülése érdekében</string>
     <string name="show_image_file_types">Képfájltípusok megjelenítése</string>
     <string name="allow_zooming_videos">Lehetővé teszi a videók zoomolását dupla koppintással</string>
+    <string name="folder_thumbnail_style">A mappaikonok stílusa</string>
+    <string name="show_file_count_line">A fájlszámláló külön sorban</string>
+    <string name="show_file_count_brackets">A fájlszámláló zárójleben</string>
+    <string name="show_file_count_none">A fájlszámláló nem látható</string>
+    <string name="limit_folder_title">A mappanév hossza 1 sorra korlátozva</string>
     <string name="square">Négyzet</string>
+    <string name="rounded_corners">Lekerekített sarkok</string>
     <string name="thumbnails">Miniatűrök</string>
     <string name="fullscreen_media">Teljes képernyős média</string>
     <string name="extended_details">Bővített részletek</string>

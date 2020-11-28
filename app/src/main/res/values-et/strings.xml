@@ -30,6 +30,8 @@
     <string name="share_resized">Jagage muudetud suurusega versiooni</string>
     <string name="upgraded_from_free">Hei,\n\ntundub, et te uuendasite vanast tasuta rakendusest. Nüüd saate eemaldada vana versiooni, millel on rakenduse seadete ülaosas nupp „Upgrade to Pro”.\n\nTeil on kustutatud ainult prügikasti üksused, lemmikobjektid on märgistamata ja teil tuleb ka oma rakenduse seaded lähtestada.\n\nTäname!</string>
     <string name="switch_to_file_search">Lülitage kõik nähtavad kausta failid otsingusse</string>
+    <string name="set_as_default_folder">Määra vaikekaustaks </string>
+    <string name="unset_as_default_folder">Tühista vaikekaust</string>
     <string name="filter_media">Meedia filter</string>
     <string name="images">Pildid</string>
     <string name="videos">Videod</string>
@@ -161,7 +163,13 @@
     <string name="avoid_showing_invalid_files">Vältige vigaste failide esitamist</string>
     <string name="show_image_file_types">Kuva pildifailide tüübid</string>
     <string name="allow_zooming_videos">Luba videote suumimist neid topeltpuudutades</string>
+    <string name="folder_thumbnail_style">Kausta pisipiltide stiil</string>
+    <string name="show_file_count_line">Kuva failide arv eraldi real</string>
+    <string name="show_file_count_brackets">Kuva sulgudes failide arv</string>
+    <string name="show_file_count_none">Ära näita failide arvu</string>
+    <string name="limit_folder_title">Piira pikkade kaustade pealkirju 1 reale</string>
     <string name="square">Ruut</string>
+    <string name="rounded_corners">Ümarad nurgad</string>
     <string name="thumbnails">Pisipildid</string>
     <string name="fullscreen_media">Täisekraan meedia</string>
     <string name="extended_details">Laiendatud üksikasjad</string>
