@@ -30,6 +30,8 @@
     <string name="share_resized">Sdílet změněnou verzi</string>
     <string name="upgraded_from_free">Zdravím,\n\nvypadá to tak, že jste ze staré bezplatné aplikace přešli na novou, placenou. Nyní můžete starou aplikaci, která má na vrchu nastavení tlačítko \'Upgradovat na Pro\' odinstalovat.\n\nBudou smazány pouze položky v Koši a položky, které nejsou označeny. Budete také muset obnovit nastavení aplikace.\n\nDíky!</string>
     <string name="switch_to_file_search">Přepnout na vyhledávání souborů ve všech viditelných složkách</string>
+    <string name="set_as_default_folder">Nastavit jako výchozí složku</string>
+    <string name="unset_as_default_folder">Zrušit nastavení jako výchozí složku</string>
     <string name="filter_media">Filtr médií</string>
     <string name="images">Obrázky</string>
     <string name="videos">Videa</string>
@@ -161,7 +163,13 @@
     <string name="avoid_showing_invalid_files">Vyhnout se zobrazování neplatných souborů</string>
     <string name="show_image_file_types">Zobrazit typy souborů obrázků</string>
     <string name="allow_zooming_videos">Povolit přiblížení videa dvojitým klepnutím</string>
+    <string name="folder_thumbnail_style">Styl miniatury složky</string>
+    <string name="show_file_count_line">Zobrazit počet souborů na samostatném řádku</string>
+    <string name="show_file_count_brackets">Zobrazit počet souborů v závorkách</string>
+    <string name="show_file_count_none">Nezobrazovat počet souborů</string>
+    <string name="limit_folder_title">Omezte dlouhé názvy složek na 1 řádek</string>
     <string name="square">Čtverec</string>
+    <string name="rounded_corners">Zaoblené rohy</string>
     <string name="thumbnails">Náhledy</string>
     <string name="fullscreen_media">Média přes celou obrazovku</string>
     <string name="extended_details">Rozšířené vlastnosti</string>

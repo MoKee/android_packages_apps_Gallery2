@@ -30,6 +30,8 @@
     <string name="share_resized">分享已调整尺寸的版本</string>
     <string name="upgraded_from_free">嘿，\n\n您似乎已经从旧的免费版应用升级。您现在可以卸载旧版本，在该版本的应用设置顶部有一个“升级到专业版”按钮。\n\n此操作会删除回收站项目，取消标记收藏项目，并重置应用设置。\n\n谢谢！</string>
     <string name="switch_to_file_search">切换文件搜索范围为所有可见的文件夹</string>
+    <string name="set_as_default_folder">设置为默认文件夹</string>
+    <string name="unset_as_default_folder">取消设置为默认文件夹</string>
     <string name="filter_media">要显示的媒体类型</string>
     <string name="images">图片</string>
     <string name="videos">视频</string>
@@ -161,7 +163,13 @@
     <string name="avoid_showing_invalid_files">避免显示无效文件</string>
     <string name="show_image_file_types">显示图片文件类型</string>
     <string name="allow_zooming_videos">允许双击缩放视频</string>
+    <string name="folder_thumbnail_style">文件夹缩略图样式</string>
+    <string name="show_file_count_line">在单独的行上显示文件计数</string>
+    <string name="show_file_count_brackets">在括号中显示文件计数</string>
+    <string name="show_file_count_none">不显示文件计数</string>
+    <string name="limit_folder_title">将长文件夹标题长度限制为1行</string>
     <string name="square">正方形</string>
+    <string name="rounded_corners">圆角</string>
     <string name="thumbnails">缩略图</string>
     <string name="fullscreen_media">全屏显示媒体</string>
     <string name="extended_details">扩展详情</string>

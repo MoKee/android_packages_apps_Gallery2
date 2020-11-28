@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_launcher_name">Galeria</string>
     <string name="edit">Redakto</string>
     <string name="show_on_map">Trego në hartë</string>
     <string name="brightness">Ndriçimi</string>
@@ -12,10 +13,12 @@
     <string name="rotate_right">Rrotullo djathtas</string>
     <string name="free_aspect_ratio">Asnjë</string>
     <string name="other_aspect_ratio">Tjetër</string>
+    <string name="simple_wallpaper">Galeria</string>
     <string name="no_animation">Asnjë</string>
     <string name="by_date_taken">Data e realizimit:</string>
     <string name="pesdk_transform_button_freeCrop">E personalizuar</string>
     <string name="pesdk_transform_button_resetCrop">Rivendos</string>
+    <string name="pesdk_filter_title_name">Filtri</string>
     <string name="pesdk_filter_asset_none">Asnjë</string>
     <string name="pesdk_adjustments_button_exposureTool">Ekspozimi</string>
     <string name="pesdk_adjustments_button_brightnessTool">Ndriçimi</string>
@@ -39,6 +42,8 @@
     <string name="pesdk_editor_save">Ruaj</string>
     <string name="pesdk_common_button_undo">Zhbëj</string>
     <string name="pesdk_common_button_redo">Ribëj</string>
+    <string name="pesdk_common_title_transparentColor">E tejdukshme</string>
+    <string name="pesdk_common_title_grayColor">Gri</string>
     <string name="pesdk_common_title_blueColor">Blu</string>
     <string name="pesdk_common_title_redColor">E kuqe</string>
     <string name="pesdk_common_title_greenColor">E gjelbër</string>
