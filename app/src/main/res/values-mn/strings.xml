@@ -33,9 +33,16 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Тийм</string>
     <string name="pesdk_editor_accept">Зөвшөөрөх</string>
     <string name="pesdk_editor_save">Хадгалах</string>
+    <string name="pesdk_sticker_button_color">Өнгө</string>
+    <string name="pesdk_sticker_button_delete">Устгах</string>
+    <string name="pesdk_sticker_button_contrast">Ялгарал</string>
+    <string name="pesdk_sticker_button_saturation">Өнгө ялгалт</string>
+    <string name="pesdk_sticker_button_brightness">Тодролт</string>
+    <string name="pesdk_overlay_asset_none">Хоосон</string>
     <string name="pesdk_common_button_undo">Буцаах</string>
     <string name="pesdk_common_button_redo">Дахин хийх</string>
     <string name="pesdk_common_title_blueColor">Цэнхэр</string>
     <string name="pesdk_common_title_redColor">Улаан</string>
     <string name="pesdk_common_title_greenColor">Ногоон</string>
+    <string name="vesdk_video_trim_title_name">Тайрах</string>
 </resources>

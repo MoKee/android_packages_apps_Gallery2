@@ -64,7 +64,7 @@
     <string name="invalid_image_path">Ruta de imagen no válida</string>
     <string name="image_editing_failed">Falló la edición de imagen</string>
     <string name="edit_image_with">Editar imagen usando:</string>
-    <string name="no_editor_found">No se encontró editor de imágenes</string>
+    <string name="no_image_editor_found">No se encontró editor de imágenes</string>
     <string name="unknown_file_location">Ubicación del archivo desconocida</string>
     <string name="error_saving_file">No se ha podido sobrescribir el archivo de origen</string>
     <string name="rotate_left">Rotar a la izquierda</string>
@@ -183,6 +183,18 @@
     <string name="pesdk_editor_cancel">Cancelar</string>
     <string name="pesdk_editor_accept">Aceptar</string>
     <string name="pesdk_editor_save">Guardar</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Exportando…</string>
+    <string name="pesdk_sticker_button_add">Añadir</string>
+    <string name="pesdk_sticker_button_color">Color</string>
+    <string name="pesdk_sticker_button_delete">Eliminar</string>
+    <string name="pesdk_sticker_button_opacity">Opacidad</string>
+    <string name="pesdk_sticker_button_contrast">Contraste</string>
+    <string name="pesdk_sticker_button_saturation">Saturación</string>
+    <string name="pesdk_sticker_button_brightness">Brillo</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Pantalla</string>
+    <string name="pesdk_overlay_asset_none">Ninguna</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaico</string>
     <string name="pesdk_common_button_undo">Deshacer</string>
     <string name="pesdk_common_button_redo">Rehacer</string>
     <string name="pesdk_common_title_transparentColor">Transparente</string>
@@ -196,6 +208,7 @@
     <string name="pesdk_common_title_orangeColor">Naranja</string>
     <string name="pesdk_common_title_yellowColor">Amarillo</string>
     <string name="pesdk_common_title_greenColor">Verde</string>
+    <string name="vesdk_video_trim_title_name">Recortar</string>
     <string name="faq_1_title">¿Cómo puedo hacer que Simple Gallery sea la galería de dispositivos predeterminada?</string>
     <string name="faq_1_text">Primero tiene que encontrar la galería predeterminada actualmente en la sección Aplicaciones de la configuración de su dispositivo, busque un botón que diga algo como \"Abrir por defecto \", haga clic en él, luego seleccione \"Borrar valores predeterminados \".
         La próxima vez que intente abrir una imagen o video, debería ver un selector de aplicaciones, donde puede seleccionar Galería Simple y convertirla en la aplicación predeterminada.</string>

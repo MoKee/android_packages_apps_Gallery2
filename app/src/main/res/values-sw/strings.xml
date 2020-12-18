@@ -33,9 +33,16 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Ndiyo</string>
     <string name="pesdk_editor_accept">Kubali</string>
     <string name="pesdk_editor_save">Hifadhi</string>
+    <string name="pesdk_sticker_button_color">Rangi</string>
+    <string name="pesdk_sticker_button_delete">Futa</string>
+    <string name="pesdk_sticker_button_contrast">Ulinganuzi</string>
+    <string name="pesdk_sticker_button_saturation">Uloweshaji</string>
+    <string name="pesdk_sticker_button_brightness">Ung\'avu</string>
+    <string name="pesdk_overlay_asset_none">Hamna</string>
     <string name="pesdk_common_button_undo">Tendua</string>
     <string name="pesdk_common_button_redo">Rudia</string>
     <string name="pesdk_common_title_blueColor">Samawati</string>
     <string name="pesdk_common_title_redColor">Nyekundu</string>
     <string name="pesdk_common_title_greenColor">Kijani</string>
+    <string name="vesdk_video_trim_title_name">Fupisha</string>
 </resources>

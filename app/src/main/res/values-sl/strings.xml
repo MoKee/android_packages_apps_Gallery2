@@ -62,7 +62,7 @@
     <string name="invalid_image_path">Napačna pot</string>
     <string name="image_editing_failed">Urejanje slike ni uspelo</string>
     <string name="edit_image_with">Uredi sliko z:</string>
-    <string name="no_editor_found">Ne najdem urejevalnika slik</string>
+    <string name="no_image_editor_found">Ne najdem urejevalnika slik</string>
     <string name="unknown_file_location">Neznana lokacija datoteke</string>
     <string name="error_saving_file">Ne morem prepisati izvorne datoteke</string>
     <string name="rotate_left">Zavrti levo</string>
@@ -172,6 +172,18 @@
     <string name="pesdk_editor_cancel">Prekliči</string>
     <string name="pesdk_editor_accept">Sprejmi</string>
     <string name="pesdk_editor_save">Shrani</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Izvažanje…</string>
+    <string name="pesdk_sticker_button_add">Dodaj</string>
+    <string name="pesdk_sticker_button_color">Barva</string>
+    <string name="pesdk_sticker_button_delete">Izbriši</string>
+    <string name="pesdk_sticker_button_opacity">Prosojnost</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Nasičenje</string>
+    <string name="pesdk_sticker_button_brightness">Svetlost</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Običajno</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Zaslon</string>
+    <string name="pesdk_overlay_asset_none">Brez</string>
+    <string name="pesdk_overlay_asset_mosaic">Mozaik</string>
     <string name="pesdk_common_button_undo">Razveljavi</string>
     <string name="pesdk_common_button_redo">Ponovno uveljavi</string>
     <string name="pesdk_common_title_transparentColor">Prosojno</string>
@@ -180,6 +192,7 @@
     <string name="pesdk_common_title_blueColor">Modra</string>
     <string name="pesdk_common_title_redColor">Rdeča</string>
     <string name="pesdk_common_title_greenColor">Zelena</string>
+    <string name="vesdk_video_trim_title_name">Prireži</string>
     <string name="faq_1_title">Kako naredim Simple galerijo za privzeto aplikacijo na napravi?</string>
     <string name="faq_1_text">Najprej morate najti trenutno privzeto aplikacijo za prikaz slik med aplikacijami v nastavitvah naprave, kjer poiščete gumb v smislu \"Odpri kot privzeto\", kliknite nanj in izberite \"Izbriši privzeto\".
         Ko boste naslednjič želeli odpreti fotografijo ali videoposnetek, bi se moral pokazati izbirnik, v katerem lahko izberete Simple galerijo in jo določite kot privzeto aplikacijo.</string>

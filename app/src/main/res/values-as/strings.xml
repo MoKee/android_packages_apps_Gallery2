@@ -16,4 +16,9 @@
     <string name="pesdk_text_title_name">টেক্সট</string>
     <string name="pesdk_text_button_edit">সম্পাদনা</string>
     <string name="pesdk_editor_save">ছেভ কৰা</string>
+    <string name="pesdk_overlay_button_blendModeNormal">সাধাৰণ</string>
+    <string name="pesdk_overlay_button_blendModeScreen">স্ক্ৰীণ</string>
+    <string name="pesdk_overlay_asset_none">হাল্লা</string>
+    <string name="pesdk_overlay_asset_mosaic">মোজাইক</string>
+    <string name="vesdk_video_trim_title_name">ট্ৰিম</string>
 </resources>

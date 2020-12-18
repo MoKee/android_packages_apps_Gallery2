@@ -66,7 +66,7 @@
     <string name="invalid_image_path">Lokasi gambar tidak valid</string>
     <string name="image_editing_failed">Pengeditan gambar gagal</string>
     <string name="edit_image_with">Edit gambar dengan:</string>
-    <string name="no_editor_found">Tidak ada editor gambar yang ditemukan</string>
+    <string name="no_image_editor_found">Tidak ada editor gambar yang ditemukan</string>
     <string name="unknown_file_location">Lokasi file tidak diketahui</string>
     <string name="error_saving_file">Tidak bisa menimpa file sumber</string>
     <string name="rotate_left">Putar ke kiri</string>
@@ -190,6 +190,18 @@
     <string name="pesdk_editor_cancel">Batal</string>
     <string name="pesdk_editor_accept">Terima</string>
     <string name="pesdk_editor_save">Simpan</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Mengekspor…</string>
+    <string name="pesdk_sticker_button_add">Tambah</string>
+    <string name="pesdk_sticker_button_color">Warna</string>
+    <string name="pesdk_sticker_button_delete">Hapus</string>
+    <string name="pesdk_sticker_button_opacity">Kepekatan</string>
+    <string name="pesdk_sticker_button_contrast">Kontras</string>
+    <string name="pesdk_sticker_button_saturation">Saturasi</string>
+    <string name="pesdk_sticker_button_brightness">Kecerahan</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Layar</string>
+    <string name="pesdk_overlay_asset_none">Tidak ada</string>
+    <string name="pesdk_overlay_asset_mosaic">Kepingan batu</string>
     <string name="pesdk_common_button_undo">Batalkan</string>
     <string name="pesdk_common_button_redo">Ulangi</string>
     <string name="pesdk_common_title_transparentColor">Transparan</string>
@@ -203,6 +215,7 @@
     <string name="pesdk_common_title_orangeColor">Oranye</string>
     <string name="pesdk_common_title_yellowColor">Kuning</string>
     <string name="pesdk_common_title_greenColor">Hijau</string>
+    <string name="vesdk_video_trim_title_name">Pangkas</string>
     <string name="faq_1_title">Bagaimana saya bisa mengatur Galeri Sederhana untuk menjadi galeri bawaan perangkat?</string>
     <string name="faq_1_text">Pertama Anda harus menemukan galeri default saat ini di bagian Aplikasi pengaturan perangkat Anda, cari tombol yang mengatakan sesuatu seperti \"Buka secara default\", klik, lalu pilih \"Hapus default\".
         Lalu Anda akan mencoba membuka gambar atau video, Anda akan melihat pemilih aplikasi, di mana Anda dapat memilih Galeri Sederhana dan menjadikannya aplikasi default.</string>

@@ -31,9 +31,18 @@
     <string name="pesdk_editor_cancel">റദ്ദാക്കുക</string>
     <string name="pesdk_editor_accept">അംഗീകരിക്കുക</string>
     <string name="pesdk_editor_save">സംരക്ഷിക്കുക</string>
+    <string name="pesdk_sticker_button_color">വർണ്ണം</string>
+    <string name="pesdk_sticker_button_contrast">ദൃശ്യ തീവ്രത</string>
+    <string name="pesdk_sticker_button_saturation">സാച്ചുറേഷൻ</string>
+    <string name="pesdk_sticker_button_brightness">തെളിച്ചം</string>
+    <string name="pesdk_overlay_button_blendModeNormal">സാധാരണ</string>
+    <string name="pesdk_overlay_button_blendModeScreen">സ്ക്രീൻ</string>
+    <string name="pesdk_overlay_asset_none">ആരിൽ നിന്നും വേണ്ട</string>
+    <string name="pesdk_overlay_asset_mosaic">മൊസൈക്ക്</string>
     <string name="pesdk_common_button_undo">പഴയപടിയാക്കുക</string>
     <string name="pesdk_common_button_redo">വീണ്ടും ചെയ്യുക</string>
     <string name="pesdk_common_title_blueColor">നീല</string>
     <string name="pesdk_common_title_redColor">ചുവപ്പ്</string>
     <string name="pesdk_common_title_greenColor">പച്ച</string>
+    <string name="vesdk_video_trim_title_name">ട്രിം ചെയ്യുക</string>
 </resources>

@@ -68,7 +68,7 @@
     <string name="image_editing_cancelled">Bildbearbeitung abgebrochen</string>
     <string name="file_edited_successfully">Datei erfolgreich bearbeitet</string>
     <string name="edit_image_with">Bild bearbeiten mit:</string>
-    <string name="no_editor_found">Keine Bildeditor-App gefunden.</string>
+    <string name="no_image_editor_found">Keine Bildeditor-App gefunden.</string>
     <string name="unknown_file_location">Unbekannter Dateipfad.</string>
     <string name="error_saving_file">Konnte Quelldatei nicht überschreiben.</string>
     <string name="rotate_left">Nach links drehen</string>
@@ -217,14 +217,25 @@
     <string name="pesdk_brush_title_brushColor">Pinselfarbe</string>
     <string name="pesdk_editor_title_name">Editor</string>
     <string name="pesdk_editor_title_closeEditorAlert">Editor schließen?</string>
-    <string name="pesdk_editor_text_closeEditorAlert">Wollen Sie dieses Bild wirklich löschen?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Ja</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Nein</string>
     <string name="pesdk_editor_cancel">Abbrechen</string>
     <string name="pesdk_editor_accept">Akzeptieren</string>
     <string name="pesdk_editor_save">Speichern</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">Exportiere Bild…</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">Exportiere Bild %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Exportiere…</string>
+    <string name="pesdk_sticker_button_add">Hinzufügen</string>
+    <string name="pesdk_sticker_button_color">Farbe</string>
+    <string name="pesdk_sticker_button_delete">Löschen</string>
+    <string name="pesdk_sticker_button_bringToFront">Nach vorne</string>
+    <string name="pesdk_sticker_button_straighten">Ausrichten</string>
+    <string name="pesdk_sticker_button_opacity">Deckkraft</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Sättigung</string>
+    <string name="pesdk_sticker_button_brightness">Bildschirmhelligkeit</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Bildschirm</string>
+    <string name="pesdk_overlay_asset_none">Kein</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaik</string>
     <string name="pesdk_common_button_flipH">Spiegeln H</string>
     <string name="pesdk_common_button_flipV">Spiegeln V</string>
     <string name="pesdk_common_button_undo">Rückgängig</string>
@@ -246,6 +257,7 @@
     <string name="pesdk_common_title_oliveColor">Olive</string>
     <string name="pesdk_common_title_greenColor">Grün</string>
     <string name="pesdk_common_title_aquamarinColor">Aquamarin</string>
+    <string name="vesdk_video_trim_title_name">Zuschneiden</string>
     <string name="faq_1_title">Wie kann ich Schlichte Galerie als Standardanwendung auswählen?</string>
     <string name="faq_1_text">Zunächst musst du unter \"Apps\" in den Geräteeinstellungen die aktuelle Standardgalerie finden. Suche nach einer Bedienfläche wie \"Standardmässig öffnen\", betätige diese und wähle \"Standardeinstellungen löschen\". 
         Das nächste Mal, wenn du ein Bild oder ein Video öffnest, sollte ein Auswahlfenster erscheinen und es möglich sein, Schlichte Gallerie als Standard-App auszuwählen.</string>

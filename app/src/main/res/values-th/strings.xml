@@ -37,9 +37,19 @@
     <string name="pesdk_editor_cancel">ยกเลิก</string>
     <string name="pesdk_editor_accept">ยอมรับ</string>
     <string name="pesdk_editor_save">บันทึก</string>
+    <string name="pesdk_sticker_button_color">สี</string>
+    <string name="pesdk_sticker_button_delete">ลบ</string>
+    <string name="pesdk_sticker_button_contrast">ความเปรียบต่าง</string>
+    <string name="pesdk_sticker_button_saturation">ความชัดเจน</string>
+    <string name="pesdk_sticker_button_brightness">ความสว่าง</string>
+    <string name="pesdk_overlay_button_blendModeNormal">ปกติ</string>
+    <string name="pesdk_overlay_button_blendModeScreen">หน้าจอ</string>
+    <string name="pesdk_overlay_asset_none">ไม่มี</string>
+    <string name="pesdk_overlay_asset_mosaic">โมเสค</string>
     <string name="pesdk_common_button_undo">เลิกทำ</string>
     <string name="pesdk_common_button_redo">ทำซ้ำ</string>
     <string name="pesdk_common_title_blueColor">น้ำเงิน</string>
     <string name="pesdk_common_title_redColor">แดง</string>
     <string name="pesdk_common_title_greenColor">เขียว</string>
+    <string name="vesdk_video_trim_title_name">ตัด</string>
 </resources>

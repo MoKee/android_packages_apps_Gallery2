@@ -30,9 +30,18 @@
     <string name="pesdk_brush_button_size">పరిమాణం</string>
     <string name="pesdk_editor_accept">ఆమోదిస్తున్నాను</string>
     <string name="pesdk_editor_save">సేవ్ చేయి</string>
+    <string name="pesdk_sticker_button_color">రంగు</string>
+    <string name="pesdk_sticker_button_contrast">కాంట్రాస్ట్</string>
+    <string name="pesdk_sticker_button_saturation">సంతృప్తీకరణ</string>
+    <string name="pesdk_sticker_button_brightness">ప్రకాశం</string>
+    <string name="pesdk_overlay_button_blendModeNormal">సాధారణం</string>
+    <string name="pesdk_overlay_button_blendModeScreen">స్క్రీన్</string>
+    <string name="pesdk_overlay_asset_none">ఏదీ లేదు</string>
+    <string name="pesdk_overlay_asset_mosaic">మొజాయిక్</string>
     <string name="pesdk_common_button_undo">చర్య రద్దు చేయి</string>
     <string name="pesdk_common_button_redo">చర్య పునరావృతం చేయి</string>
     <string name="pesdk_common_title_blueColor">నీలి రంగు</string>
     <string name="pesdk_common_title_redColor">ఎరుపు రంగు</string>
     <string name="pesdk_common_title_greenColor">పచ్చ రంగు</string>
+    <string name="vesdk_video_trim_title_name">సవరించు</string>
 </resources>

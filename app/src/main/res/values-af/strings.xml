@@ -38,9 +38,20 @@
     <string name="pesdk_editor_cancel">Kanselleer</string>
     <string name="pesdk_editor_accept">Aanvaar</string>
     <string name="pesdk_editor_save">Stoor</string>
+    <string name="pesdk_sticker_button_add">Voeg by</string>
+    <string name="pesdk_sticker_button_color">Kleur</string>
+    <string name="pesdk_sticker_button_delete">Verwyder</string>
+    <string name="pesdk_sticker_button_contrast">Kontras</string>
+    <string name="pesdk_sticker_button_saturation">Versadiging</string>
+    <string name="pesdk_sticker_button_brightness">Helderheid</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normaal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Skerm</string>
+    <string name="pesdk_overlay_asset_none">Geen</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaïek</string>
     <string name="pesdk_common_button_undo">Ontdoen</string>
     <string name="pesdk_common_button_redo">Herdoen</string>
     <string name="pesdk_common_title_blueColor">Blou</string>
     <string name="pesdk_common_title_redColor">Rooi</string>
     <string name="pesdk_common_title_greenColor">Groen</string>
+    <string name="vesdk_video_trim_title_name">Snoei</string>
 </resources>

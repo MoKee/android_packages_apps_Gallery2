@@ -78,6 +78,16 @@
     <string name="pesdk_editor_cancel">Отмени</string>
     <string name="pesdk_editor_accept">Приемам</string>
     <string name="pesdk_editor_save">Запазване</string>
+    <string name="pesdk_sticker_button_add">Добави</string>
+    <string name="pesdk_sticker_button_color">Цвят</string>
+    <string name="pesdk_sticker_button_delete">Изтриване</string>
+    <string name="pesdk_sticker_button_contrast">Контраст</string>
+    <string name="pesdk_sticker_button_saturation">Насищане</string>
+    <string name="pesdk_sticker_button_brightness">Яркост</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Нормално</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Екран</string>
+    <string name="pesdk_overlay_asset_none">Без</string>
+    <string name="pesdk_overlay_asset_mosaic">Мозайка</string>
     <string name="pesdk_common_button_undo">Отмяна</string>
     <string name="pesdk_common_button_redo">Възстановяване</string>
     <string name="pesdk_common_title_grayColor">Сив</string>
@@ -85,4 +95,5 @@
     <string name="pesdk_common_title_blueColor">Син</string>
     <string name="pesdk_common_title_redColor">Червен</string>
     <string name="pesdk_common_title_greenColor">Зелен</string>
+    <string name="vesdk_video_trim_title_name">Отрязване</string>
 </resources>

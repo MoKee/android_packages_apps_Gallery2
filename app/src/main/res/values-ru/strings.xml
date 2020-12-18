@@ -69,7 +69,7 @@
     <string name="image_editing_cancelled">Редактирование изображения отменено</string>
     <string name="file_edited_successfully">Файл успешно отредактирован</string>
     <string name="edit_image_with">Редактирование изображений в:</string>
-    <string name="no_editor_found">Ни одного редактора изображений не найдено</string>
+    <string name="no_image_editor_found">Ни одного редактора изображений не найдено</string>
     <string name="unknown_file_location">Неизвестное местоположение файла</string>
     <string name="error_saving_file">Не удалось перезаписать исходный файл</string>
     <string name="rotate_left">Повернуть влево</string>
@@ -218,14 +218,25 @@
     <string name="pesdk_brush_title_brushColor">Цвет кисти</string>
     <string name="pesdk_editor_title_name">Редактор</string>
     <string name="pesdk_editor_title_closeEditorAlert">Закрыть редактор?</string>
-    <string name="pesdk_editor_text_closeEditorAlert">Вы уверенны что хотите удалить это изображение?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Да</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Нет</string>
     <string name="pesdk_editor_cancel">Отмена</string>
     <string name="pesdk_editor_accept">Принять</string>
     <string name="pesdk_editor_save">Сохранить</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">Экспорт изображения…</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">Экспорт изображения %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Экспорт…</string>
+    <string name="pesdk_sticker_button_add">Добавить</string>
+    <string name="pesdk_sticker_button_color">Цвет</string>
+    <string name="pesdk_sticker_button_delete">Удалить</string>
+    <string name="pesdk_sticker_button_bringToFront">На передний план</string>
+    <string name="pesdk_sticker_button_straighten">Выровнять</string>
+    <string name="pesdk_sticker_button_opacity">Непрозрачность</string>
+    <string name="pesdk_sticker_button_contrast">Контрастность</string>
+    <string name="pesdk_sticker_button_saturation">Насыщенность</string>
+    <string name="pesdk_sticker_button_brightness">Яркость</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Обычный</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Экран</string>
+    <string name="pesdk_overlay_asset_none">Без эффекта</string>
+    <string name="pesdk_overlay_asset_mosaic">Мозаика</string>
     <string name="pesdk_common_button_flipH">Переверните H</string>
     <string name="pesdk_common_button_flipV">Переверните V</string>
     <string name="pesdk_common_button_undo">Отменить</string>
@@ -248,6 +259,7 @@
     <string name="pesdk_common_title_greenColor">Зелёный</string>
     <string name="pesdk_common_title_aquamarinColor">Аквамарин</string>
     <string name="pesdk_common_title_pipettableColor">Подобрать цвет</string>
+    <string name="vesdk_video_trim_title_name">Обрезать</string>
     <string name="faq_1_title">Как сделать приложение \"Простая галерея\" галереей по умолчанию?</string>
     <string name="faq_1_text">Сначала вы должны найти галерею по умолчанию в разделе \"Приложения\" настроек вашего устройства; найдите кнопку, названную \"Открыть по умолчанию\", затем нажмите на неё и выберите \"Очистить значения по умолчанию\".
         В следующий раз, когда попробуете открыть изображение или видео, вы увидите выбор приложений, где сможете выбрать приложение \"Простая галерея\" и сделать её приложением по умолчанию.</string>

@@ -33,9 +33,17 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Այո</string>
     <string name="pesdk_editor_accept">Ընդունել</string>
     <string name="pesdk_editor_save">Պահել</string>
+    <string name="pesdk_sticker_button_color">Գույն</string>
+    <string name="pesdk_sticker_button_delete">Ջնջել</string>
+    <string name="pesdk_sticker_button_contrast">Ցայտունություն</string>
+    <string name="pesdk_sticker_button_saturation">Հագեցում</string>
+    <string name="pesdk_sticker_button_brightness">Պայծառություն</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Նորմալ</string>
+    <string name="pesdk_overlay_asset_none">Ոչ մեկը</string>
     <string name="pesdk_common_button_undo">Հետարկել</string>
     <string name="pesdk_common_button_redo">Կրկնել</string>
     <string name="pesdk_common_title_blueColor">Կապույտ</string>
     <string name="pesdk_common_title_redColor">Կարմիր</string>
     <string name="pesdk_common_title_greenColor">Կանաչ</string>
+    <string name="vesdk_video_trim_title_name">Կտրել</string>
 </resources>

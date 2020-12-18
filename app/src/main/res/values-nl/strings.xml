@@ -61,7 +61,7 @@
     <string name="invalid_image_path">Ongeldig pad naar afbeelding</string>
     <string name="image_editing_failed">Fout bij bewerken van afbeelding</string>
     <string name="edit_image_with">Afbeelding bewerken met:</string>
-    <string name="no_editor_found">Geen app gevonden voor fotobewerking</string>
+    <string name="no_image_editor_found">Geen app gevonden voor fotobewerking</string>
     <string name="unknown_file_location">Onbekende bestandslocatie</string>
     <string name="error_saving_file">Bronbestand kan niet worden overschreven</string>
     <string name="rotate_left">Linksom draaien</string>
@@ -166,6 +166,18 @@
     <string name="pesdk_editor_cancel">Annuleren</string>
     <string name="pesdk_editor_accept">Accepteren</string>
     <string name="pesdk_editor_save">Opslaan</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Exporteren…</string>
+    <string name="pesdk_sticker_button_add">Toevoegen</string>
+    <string name="pesdk_sticker_button_color">Kleur</string>
+    <string name="pesdk_sticker_button_delete">Verwijderen</string>
+    <string name="pesdk_sticker_button_opacity">Zichtbaarheid</string>
+    <string name="pesdk_sticker_button_contrast">Contrast</string>
+    <string name="pesdk_sticker_button_saturation">Verzadiging</string>
+    <string name="pesdk_sticker_button_brightness">Helderheid</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normaal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Scherm</string>
+    <string name="pesdk_overlay_asset_none">Geen</string>
+    <string name="pesdk_overlay_asset_mosaic">Mozaïek</string>
     <string name="pesdk_common_button_undo">Ongedaan maken</string>
     <string name="pesdk_common_button_redo">Opnieuw</string>
     <string name="pesdk_common_title_transparentColor">Transparant</string>
@@ -174,6 +186,7 @@
     <string name="pesdk_common_title_blueColor">Blauw</string>
     <string name="pesdk_common_title_redColor">Rood</string>
     <string name="pesdk_common_title_greenColor">Groen</string>
+    <string name="vesdk_video_trim_title_name">Bijsnijden</string>
     <string name="faq_1_title">How can I make Simple Gallery the default device gallery?</string>
     <string name="faq_1_text">First you have to find the currently default gallery in the Apps section of your device settings, look for a button that says something like \"Open by default\", click on it, then select \"Clear defaults\".
         The next time you will try opening an image or video you should see an app picker, where you can select Simple Gallery and make it the default app.</string>

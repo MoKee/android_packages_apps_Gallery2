@@ -38,10 +38,20 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">بله</string>
     <string name="pesdk_editor_accept">پذیرفتن</string>
     <string name="pesdk_editor_save">ذخیره</string>
+    <string name="pesdk_sticker_button_add">اضافه کردن</string>
+    <string name="pesdk_sticker_button_color">رنگ</string>
+    <string name="pesdk_sticker_button_delete">حذف</string>
+    <string name="pesdk_sticker_button_opacity">شفافیت</string>
+    <string name="pesdk_sticker_button_contrast">کنتراست</string>
+    <string name="pesdk_sticker_button_saturation">اشباع رنگ</string>
+    <string name="pesdk_sticker_button_brightness">روشنایی</string>
+    <string name="pesdk_overlay_button_blendModeScreen">صفحه نمایش</string>
+    <string name="pesdk_overlay_asset_none">هیچ‌کدام</string>
     <string name="pesdk_common_button_undo">واگرد</string>
     <string name="pesdk_common_button_redo">انجام مجدد</string>
     <string name="pesdk_common_title_blackColor">سیاه</string>
     <string name="pesdk_common_title_blueColor">آبی</string>
     <string name="pesdk_common_title_redColor">قرمز</string>
     <string name="pesdk_common_title_greenColor">سبز</string>
+    <string name="vesdk_video_trim_title_name">کوتاه کردن</string>
 </resources>

@@ -30,6 +30,8 @@
     <string name="share_resized">Podziel się przeskalowanym obrazem</string>
     <string name="upgraded_from_free">Hej,\n\nwygląda na to, że zaktualizowałeś ze starej bezpłatnej aplikacji. Teraz możesz odinstalować starą wersję, która ma przycisk \'Uaktualnij do wersji Pro\' u góry ustawień aplikacji.\n\nZostaną usunięte tylko elementy kosza, ulubione elementy odznaczone i będziesz musiał zresetować ustawienia aplikacji.\n\nDzięki!</string>
     <string name="switch_to_file_search">Przełącz na wyszukiwanie plików we wszystkich widocznych folderach</string>
+    <string name="set_as_default_folder">Ustaw jako folder domyślny</string>
+    <string name="unset_as_default_folder">Usuń jako domyślny folder</string>
     <string name="filter_media">Filtruj multimedia</string>
     <string name="images">Obrazy</string>
     <string name="videos">Filmy</string>
@@ -69,7 +71,7 @@
     <string name="image_editing_cancelled">Edycja obrazu anulowana</string>
     <string name="file_edited_successfully">Plik edytowany pomyślnie</string>
     <string name="edit_image_with">Edytuj obraz w:</string>
-    <string name="no_editor_found">Nie znalazłem edytora zdjęć</string>
+    <string name="no_image_editor_found">Nie znalazłem edytora zdjęć</string>
     <string name="unknown_file_location">Nieznana lokalizacja pliku</string>
     <string name="error_saving_file">Nie udało się zastąpić pliku</string>
     <string name="rotate_left">Obróć w lewo</string>
@@ -162,6 +164,7 @@
     <string name="show_image_file_types">Pokaż typy plików obrazu</string>
     <string name="allow_zooming_videos">Zezwalaj na powiększanie filmów podwójnym stuknięciem</string>
     <string name="square">Kwadrat</string>
+    <string name="rounded_corners">Zaokrąglone narożniki</string>
     <string name="thumbnails">Miniatury</string>
     <string name="fullscreen_media">Widok pełnoekranowy</string>
     <string name="extended_details">Dodatkowe szczegóły</string>
@@ -218,14 +221,25 @@
     <string name="pesdk_brush_title_brushColor">Kolor pędzla</string>
     <string name="pesdk_editor_title_name">Edycja</string>
     <string name="pesdk_editor_title_closeEditorAlert">Zamknąć edytor?</string>
-    <string name="pesdk_editor_text_closeEditorAlert">Czy na pewno chcesz odrzucić zdjęcie?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Tak</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Nie</string>
     <string name="pesdk_editor_cancel">Anuluj</string>
     <string name="pesdk_editor_accept">Zaakceptuj</string>
     <string name="pesdk_editor_save">Zapisz</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">Eksportowanie obrazu...</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">Eksportowanie obrazu %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Eksportuję…</string>
+    <string name="pesdk_sticker_button_add">Dodaj</string>
+    <string name="pesdk_sticker_button_color">Kolor</string>
+    <string name="pesdk_sticker_button_delete">Usuń</string>
+    <string name="pesdk_sticker_button_bringToFront">Do przodu</string>
+    <string name="pesdk_sticker_button_straighten">Wyprostuj</string>
+    <string name="pesdk_sticker_button_opacity">Przeźroczystość</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Nasycenie</string>
+    <string name="pesdk_sticker_button_brightness">Jasność</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normalny</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Ekran</string>
+    <string name="pesdk_overlay_asset_none">Brak</string>
+    <string name="pesdk_overlay_asset_mosaic">Mozaika</string>
     <string name="pesdk_common_button_flipH">Odwróć horyzontalnie</string>
     <string name="pesdk_common_button_flipV">Odwróć wertykalnie</string>
     <string name="pesdk_common_button_undo">Cofnij</string>
@@ -248,6 +262,7 @@
     <string name="pesdk_common_title_greenColor">Zielony</string>
     <string name="pesdk_common_title_aquamarinColor">Akwamaryna</string>
     <string name="pesdk_common_title_pipettableColor">Kolor pipetki</string>
+    <string name="vesdk_video_trim_title_name">Przytnij</string>
     <string name="faq_1_title">Jak mogę ustawić tą aplikację jako domyślną aplikację galerii?</string>
     <string name="faq_1_text">Znajdź obecną domyślną aplikację galerii w ustawieniach systemowych (sekcja \'Aplikacje\'). Na ekranie z informacjami o niej kliknij \'Otwórz domyślnie\', a następnie \'Wyczyść domyślne\'. Gdy podczas następnej próby otwarcia zdjęcia czy filmu system zapyta Cię jaką aplikacją to zrobić, wybierz Prostą Galerię i opcję zapamiętania tego wyboru.</string>
     <string name="faq_2_title">Zablokowałem(-am) aplikację hasłem i wyleciało mi ono z głowy. Co mogę zrobić?</string>

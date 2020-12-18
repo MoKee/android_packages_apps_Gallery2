@@ -37,10 +37,20 @@
     <string name="pesdk_editor_cancel">रद्द करें</string>
     <string name="pesdk_editor_accept">स्वीकार करें</string>
     <string name="pesdk_editor_save">सहेजें</string>
+    <string name="pesdk_sticker_button_add">जोड़ें</string>
+    <string name="pesdk_sticker_button_color">रंग</string>
+    <string name="pesdk_sticker_button_delete">हटाएं</string>
+    <string name="pesdk_sticker_button_opacity">अपारदर्शिता</string>
+    <string name="pesdk_sticker_button_contrast">कंट्रास्‍ट</string>
+    <string name="pesdk_sticker_button_saturation">संतृप्तता</string>
+    <string name="pesdk_sticker_button_brightness">स्क्रीन की रोशनी</string>
+    <string name="pesdk_overlay_button_blendModeNormal">सामान्य</string>
+    <string name="pesdk_overlay_asset_none">कोई नहीं</string>
     <string name="pesdk_common_button_undo">वापस लाएं</string>
     <string name="pesdk_common_button_redo">फिर से करें</string>
     <string name="pesdk_common_title_blackColor">काली</string>
     <string name="pesdk_common_title_blueColor">नीला</string>
     <string name="pesdk_common_title_redColor">लाल</string>
     <string name="pesdk_common_title_greenColor">हरा</string>
+    <string name="vesdk_video_trim_title_name">ट्रिम करें</string>
 </resources>

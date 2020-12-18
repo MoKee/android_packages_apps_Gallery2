@@ -71,7 +71,7 @@
     <string name="image_editing_failed">فشل تعديل الصورة</string>
     <string name="file_edited_successfully">تم تعديل الملف بنجاح</string>
     <string name="edit_image_with">تعديل الصورة باستخدام:</string>
-    <string name="no_editor_found">لم يتم العثور على أي محرر للصور</string>
+    <string name="no_image_editor_found">لم يتم العثور على أي محرر للصور</string>
     <string name="unknown_file_location">موقع ملف غير معروف</string>
     <string name="error_saving_file">تعذر الكتابة فوق الملف المصدر</string>
     <string name="rotate_left">تدوير لليسار</string>
@@ -219,14 +219,25 @@
     <string name="pesdk_brush_title_brushColor">لون الفرشاة</string>
     <string name="pesdk_editor_title_name">تعديل</string>
     <string name="pesdk_editor_title_closeEditorAlert">أغلق المحرر؟</string>
-    <string name="pesdk_editor_text_closeEditorAlert">هل تريد حقًا تجاهل الصورة؟</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">نعم</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">لا</string>
     <string name="pesdk_editor_cancel">إلغاء</string>
     <string name="pesdk_editor_accept">قبول</string>
     <string name="pesdk_editor_save">حفظ</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">تصدير الصورة…</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">تصدير الصورة %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">جاري التصدير…</string>
+    <string name="pesdk_sticker_button_add">إضافة</string>
+    <string name="pesdk_sticker_button_color">اللون</string>
+    <string name="pesdk_sticker_button_delete">حذف</string>
+    <string name="pesdk_sticker_button_bringToFront">الي الامام</string>
+    <string name="pesdk_sticker_button_straighten">تسوية</string>
+    <string name="pesdk_sticker_button_opacity">الشفافية</string>
+    <string name="pesdk_sticker_button_contrast"/>
+    <string name="pesdk_sticker_button_saturation"/>
+    <string name="pesdk_sticker_button_brightness">السطوع</string>
+    <string name="pesdk_overlay_button_blendModeNormal">عادي</string>
+    <string name="pesdk_overlay_button_blendModeScreen">الشاشة</string>
+    <string name="pesdk_overlay_asset_none">لا شيء</string>
+    <string name="pesdk_overlay_asset_mosaic">فسيفساء</string>
     <string name="pesdk_common_button_flipH">قلب عرضي</string>
     <string name="pesdk_common_button_flipV">قلب عمودي</string>
     <string name="pesdk_common_button_undo">تراجع</string>
@@ -249,6 +260,7 @@
     <string name="pesdk_common_title_greenColor"/>
     <string name="pesdk_common_title_aquamarinColor">زبرجد</string>
     <string name="pesdk_common_title_pipettableColor">لون ماصة</string>
+    <string name="vesdk_video_trim_title_name">اقتطاع</string>
     <string name="faq_1_title">كيف يمكنني جعل الاستوديو البسيط معرض الأجهزة الافتراضي؟</string>
     <string name="faq_1_text">أولاً ، عليك العثور على المعرض الافتراضي حاليًا في قسم التطبيقات في إعدادات جهازك ، ابحث عن زر يقول مثلا \"فتح افتراضيًا\" ، وانقر عليه ، ثم حدد \"مسح الإعدادات الافتراضية\". في المرة التالية التي ستحاول فيها فتح صورة أو فيديو ، يجب أن تذهب الى منتقي التطبيقات ، حيث يمكنك اختيار تطبيق الاستوديو البسيط وجعله التطبيق الافتراضي.</string>
     <string name="faq_2_title">أغلقت التطبيق بكلمة مرور ، لكني نسيت ذلك. ماذا افعل؟</string>

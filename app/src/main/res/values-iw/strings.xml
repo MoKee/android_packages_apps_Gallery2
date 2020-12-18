@@ -44,10 +44,22 @@
     <string name="pesdk_editor_cancel">ביטול</string>
     <string name="pesdk_editor_accept">קבל</string>
     <string name="pesdk_editor_save">שמור</string>
+    <string name="pesdk_sticker_button_add">הוסף</string>
+    <string name="pesdk_sticker_button_color">צבע</string>
+    <string name="pesdk_sticker_button_delete">מחק</string>
+    <string name="pesdk_sticker_button_opacity">אטימות</string>
+    <string name="pesdk_sticker_button_contrast">ניגודיות</string>
+    <string name="pesdk_sticker_button_saturation">רוויה</string>
+    <string name="pesdk_sticker_button_brightness">בהירות</string>
+    <string name="pesdk_overlay_button_blendModeNormal">רגיל</string>
+    <string name="pesdk_overlay_button_blendModeScreen">מסך</string>
+    <string name="pesdk_overlay_asset_none">ללא</string>
+    <string name="pesdk_overlay_asset_mosaic">פסיפס</string>
     <string name="pesdk_common_button_undo">בטל</string>
     <string name="pesdk_common_button_redo">בצע מחדש</string>
     <string name="pesdk_common_title_blackColor">שחור</string>
     <string name="pesdk_common_title_blueColor">כחול</string>
     <string name="pesdk_common_title_redColor">אדום</string>
     <string name="pesdk_common_title_greenColor">ירוק</string>
+    <string name="vesdk_video_trim_title_name">חיתוך</string>
 </resources>

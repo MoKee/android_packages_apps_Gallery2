@@ -33,9 +33,16 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">አዎ</string>
     <string name="pesdk_editor_accept">ተቀበል</string>
     <string name="pesdk_editor_save">አስቀምጥ</string>
+    <string name="pesdk_sticker_button_color">ቀለም</string>
+    <string name="pesdk_sticker_button_delete">ሰርዝ</string>
+    <string name="pesdk_sticker_button_contrast">ንፅፅር</string>
+    <string name="pesdk_sticker_button_saturation">የቀለም ሙሌት</string>
+    <string name="pesdk_sticker_button_brightness">ብሩህነት</string>
+    <string name="pesdk_overlay_asset_none">ምንም</string>
     <string name="pesdk_common_button_undo">ቀልብስ</string>
     <string name="pesdk_common_button_redo">ድገም</string>
     <string name="pesdk_common_title_blueColor">ሰማያዊ</string>
     <string name="pesdk_common_title_redColor">ቀይ</string>
     <string name="pesdk_common_title_greenColor">አረንጓዴ</string>
+    <string name="vesdk_video_trim_title_name">አሳጥር</string>
 </resources>

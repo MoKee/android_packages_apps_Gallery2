@@ -20,6 +20,11 @@
     <string name="pesdk_brush_button_color">Rang</string>
     <string name="pesdk_brush_button_size">Hajmi</string>
     <string name="pesdk_editor_accept">Roziman</string>
+    <string name="pesdk_sticker_button_color">Rang</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Och/to‘qlik</string>
+    <string name="pesdk_sticker_button_brightness">Yorqinlik</string>
+    <string name="pesdk_overlay_asset_none">Asl</string>
     <string name="pesdk_common_button_undo">Bekor qilish</string>
     <string name="pesdk_common_button_redo">Oldinga o‘tkazish</string>
     <string name="pesdk_common_title_blueColor">Ko‘k</string>

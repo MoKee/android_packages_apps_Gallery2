@@ -55,6 +55,17 @@
     <string name="pesdk_editor_cancel">Revocați</string>
     <string name="pesdk_editor_accept">Acceptați</string>
     <string name="pesdk_editor_save">Salvați</string>
+    <string name="pesdk_sticker_button_add">Adăugați</string>
+    <string name="pesdk_sticker_button_color">Culoare</string>
+    <string name="pesdk_sticker_button_delete">Ștergeți</string>
+    <string name="pesdk_sticker_button_opacity">Opacitate</string>
+    <string name="pesdk_sticker_button_contrast">Contrast</string>
+    <string name="pesdk_sticker_button_saturation">Saturație</string>
+    <string name="pesdk_sticker_button_brightness">Luminozitate</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Ecran</string>
+    <string name="pesdk_overlay_asset_none">Niciunul</string>
+    <string name="pesdk_overlay_asset_mosaic">Mozaic</string>
     <string name="pesdk_common_button_undo">Anulați</string>
     <string name="pesdk_common_button_redo">Repetaţi</string>
     <string name="pesdk_common_title_grayColor">Gri</string>
@@ -62,4 +73,5 @@
     <string name="pesdk_common_title_blueColor">Albastru</string>
     <string name="pesdk_common_title_redColor">Roșu</string>
     <string name="pesdk_common_title_greenColor">Verde</string>
+    <string name="vesdk_video_trim_title_name">Decupaţi</string>
 </resources>

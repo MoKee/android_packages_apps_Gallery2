@@ -40,6 +40,16 @@
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Ket</string>
     <string name="pesdk_editor_cancel">Nullañ</string>
     <string name="pesdk_editor_save">Enrollañ</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Oc\'h ezporzhiañ…</string>
+    <string name="pesdk_sticker_button_add">Ouzhpennañ</string>
+    <string name="pesdk_sticker_button_color">Liv</string>
+    <string name="pesdk_sticker_button_delete">Dilemel</string>
+    <string name="pesdk_sticker_button_contrast">Dargemm</string>
+    <string name="pesdk_sticker_button_saturation">Peurvec\'hiadur</string>
+    <string name="pesdk_sticker_button_brightness">Sklaerder</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Reizh</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Skramm</string>
+    <string name="pesdk_overlay_asset_none">Hini ebet</string>
     <string name="pesdk_common_button_undo">Dizober</string>
     <string name="pesdk_common_button_redo">Adober</string>
     <string name="pesdk_common_title_transparentColor">Treuzwelus</string>

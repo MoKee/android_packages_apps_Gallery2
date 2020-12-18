@@ -60,7 +60,7 @@
     <string name="invalid_image_path">Ogiltig bildsökväg</string>
     <string name="image_editing_failed">Bilden kunde inte redigeras</string>
     <string name="edit_image_with">Redigera bilden med:</string>
-    <string name="no_editor_found">Ingen bildredigerare hittades</string>
+    <string name="no_image_editor_found">Ingen bildredigerare hittades</string>
     <string name="unknown_file_location">Okänd filplats</string>
     <string name="error_saving_file">Det gick inte att skriva över källfilen</string>
     <string name="rotate_left">Rotera åt vänster</string>
@@ -161,6 +161,18 @@
     <string name="pesdk_editor_cancel">Avbryt</string>
     <string name="pesdk_editor_accept">Godkänn</string>
     <string name="pesdk_editor_save">Spara</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Exporterar…</string>
+    <string name="pesdk_sticker_button_add">Lägg till</string>
+    <string name="pesdk_sticker_button_color">Färg</string>
+    <string name="pesdk_sticker_button_delete">Ta bort</string>
+    <string name="pesdk_sticker_button_opacity">Opacitet</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Mättnad</string>
+    <string name="pesdk_sticker_button_brightness">Ljusstyrka</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Skärm</string>
+    <string name="pesdk_overlay_asset_none">Ingen</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaik</string>
     <string name="pesdk_common_button_undo">Ångra</string>
     <string name="pesdk_common_button_redo">Gör om</string>
     <string name="pesdk_common_title_transparentColor">Genomskinlig</string>
@@ -169,4 +181,5 @@
     <string name="pesdk_common_title_blueColor">Blå</string>
     <string name="pesdk_common_title_redColor">Röd</string>
     <string name="pesdk_common_title_greenColor">Grön</string>
+    <string name="vesdk_video_trim_title_name">Trimma</string>
 </resources>

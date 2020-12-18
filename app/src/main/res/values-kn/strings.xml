@@ -60,7 +60,7 @@
     <string name="invalid_image_path">ಮಾನ್ಯವಲ್ಲದ ಚಿತ್ರದ ಪಥ</string>
     <string name="image_editing_failed">ಚಿತ್ರದ ಪರಿಷ್ಕರಣೆ ವಿಫಲಗೊಂಡಿದೆ</string>
     <string name="edit_image_with">ಇದರೊಂದಿಗೆ ಚಿತ್ರವನ್ನು ಪರಿಷ್ಕರಿಸು:</string>
-    <string name="no_editor_found">ಯಾವುದೇ ಚಿತ್ರದ ಪರಿಷ್ಕರಕ ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="no_image_editor_found">ಯಾವುದೇ ಚಿತ್ರದ ಪರಿಷ್ಕರಕ ಕಂಡುಬಂದಿಲ್ಲ</string>
     <string name="unknown_file_location">ಅಪರಿಚಿತ ಕಡತ ಸ್ಥಳ</string>
     <string name="error_saving_file">ಮೂಲ ಕಡತದ ಮೇಲೆ ಮರುನಮೂದಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ</string>
     <string name="rotate_left">ಎಡಕ್ಕೆ ತಿರುಗಿಸಿ</string>
@@ -167,6 +167,16 @@
     <string name="pesdk_editor_cancel">ರದ್ದು</string>
     <string name="pesdk_editor_accept">ಸಮ್ಮತಿಸು</string>
     <string name="pesdk_editor_save">ಉಳಿಸಿ</string>
+    <string name="pesdk_sticker_button_add">ಸೇರಿಸಿ</string>
+    <string name="pesdk_sticker_button_color">ಬಣ್ಣ</string>
+    <string name="pesdk_sticker_button_delete">ಅಳಿಸು</string>
+    <string name="pesdk_sticker_button_contrast">ಕಾಂಟ್ರಾಸ್ಟ್‌‌</string>
+    <string name="pesdk_sticker_button_saturation">ಸ್ಯಾಚುರೇಶನ್</string>
+    <string name="pesdk_sticker_button_brightness">ಪ್ರಖರತೆ</string>
+    <string name="pesdk_overlay_button_blendModeNormal">ಸಾಮಾನ್ಯ</string>
+    <string name="pesdk_overlay_button_blendModeScreen">ಪರದೆ</string>
+    <string name="pesdk_overlay_asset_none">ಯಾವುದೂ ಇಲ್ಲ</string>
+    <string name="pesdk_overlay_asset_mosaic">ಮೊಸಾಯಿಕ್</string>
     <string name="pesdk_common_button_undo">ರದ್ದುಮಾಡು</string>
     <string name="pesdk_common_button_redo">ಮತ್ತೆಮಾಡು</string>
     <string name="pesdk_common_title_transparentColor">ಪಾರದರ್ಶಕ</string>
@@ -175,6 +185,7 @@
     <string name="pesdk_common_title_blueColor">ನೀಲಿ</string>
     <string name="pesdk_common_title_redColor">ಕೆಂಪು</string>
     <string name="pesdk_common_title_greenColor">ಹಸಿರು</string>
+    <string name="vesdk_video_trim_title_name">ಟ್ರಿಮ್ ಮಾಡಿ</string>
     <string name="faq_1_title">ನಾನು ಹೇಗೆ ಸರಳ ಗ್ಯಾಲರಿಯನ್ನು ಸಾಧನದ ಪೂರ್ವನಿಯೋಜಿತ ಗ್ಯಾಲರಿಯನ್ನಾಗಿಸಲಿ?</string>
     <string name="faq_1_text">ನಿಮ್ಮ ಸಾಧನದ ಸಂಯೋಜನೆಗಳಲ್ಲಿ ಕಿರುತಂತ್ರಾಂಶಗಳ ವಿಭಾಗದಲ್ಲಿ ಮೊದಲು ನೀವು ಪೂರ್ವನಿಯೋಜಿತ ಗ್ಯಾಲರಿ ಪ್ರವೇಶಿಸಿ, ಅಲ್ಲಿ \"ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಆರಂಭಿಸಿ\" ಗುಂಡಿಯನ್ನು ನೋಡಿ, ಅದರ ಮೇಲೆ ಒತ್ತಿ, ಮತ್ತು \"ಪೂರ್ವನಿಯೋಜಿತಗಳನ್ನು ಅಳಿಸಿ\" ಆಯ್ಕೆ ಮಾಡಿರಿ.
 ಮುಂದಿನ ಸಲ ನೀವು ಒಂದು ಚಿತ್ರವನ್ನು ಅಥವಾ ದೃಶ್ಯವನ್ನು ತೆಗೆಯಲು ಪ್ರಾರಂಭಿಸಿದಾಗ, ನೀವು ತಂತ್ರಾಂಶ ಆಯ್ಕೆಯನ್ನು ಕಾಣಬೇಕು, ಅಲ್ಲಿ ನೀವು ಸಾಮಾನ್ಯ ಗ್ಯಾಲರಿ ಆಯ್ಕೆ ಮಾಡಿ ಮತ್ತು ಇದನ್ನು ಪೂರ್ವನಿಯೋಜಿತ ತಂತ್ರಾಂಶವಾಗಿ ಮಾಡಿ.</string>

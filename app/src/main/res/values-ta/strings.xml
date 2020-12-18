@@ -89,12 +89,24 @@
     <string name="pesdk_editor_cancel">ரத்துசெய்</string>
     <string name="pesdk_editor_accept">ஏற்கிறேன்</string>
     <string name="pesdk_editor_save">சேமி</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">ஏற்றப்படுகிறது…</string>
+    <string name="pesdk_sticker_button_add">சேர்</string>
+    <string name="pesdk_sticker_button_color">நிறம்</string>
+    <string name="pesdk_sticker_button_delete">நீக்கு</string>
+    <string name="pesdk_sticker_button_contrast">ஒளி மாறுபாடு</string>
+    <string name="pesdk_sticker_button_saturation">நிறைசெறிவுநிலை</string>
+    <string name="pesdk_sticker_button_brightness">ஒளிர்வு</string>
+    <string name="pesdk_overlay_button_blendModeNormal">இயல்பு</string>
+    <string name="pesdk_overlay_button_blendModeScreen">திரை</string>
+    <string name="pesdk_overlay_asset_none">ஏதுமில்லை</string>
+    <string name="pesdk_overlay_asset_mosaic">மொசைக்</string>
     <string name="pesdk_common_button_undo">செயல்தவிர்</string>
     <string name="pesdk_common_button_redo">மீண்டும்செய்</string>
     <string name="pesdk_common_title_blackColor">கருப்பு</string>
     <string name="pesdk_common_title_blueColor">நீலம்</string>
     <string name="pesdk_common_title_redColor">சிவப்பு</string>
     <string name="pesdk_common_title_greenColor">பச்சை</string>
+    <string name="vesdk_video_trim_title_name">நறுக்கு</string>
     <string name="faq_1_title">நான் எவ்வாறு Simple Galleryஐ சாதன இயல்புநிலை கேலரியாக அமைப்பது?</string>
     <string name="faq_14_title">என்னிடம் ஒரு மறைந்தக் கோப்பு/கோப்புறை உள்ளது. எவ்வாறு அதை மறைநீக்கம் செய்வது?</string>
 </resources>

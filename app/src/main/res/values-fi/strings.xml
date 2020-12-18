@@ -49,7 +49,7 @@
     <string name="invalid_image_path">Kuvan polkua ei ole</string>
     <string name="image_editing_failed">Kuvan muokkaus epäonnistui</string>
     <string name="edit_image_with">Muokkaa kuvaa:</string>
-    <string name="no_editor_found">Kuvamuokkainta ei löytynyt</string>
+    <string name="no_image_editor_found">Kuvamuokkainta ei löytynyt</string>
     <string name="unknown_file_location">Tuntematon tiedostosijainti</string>
     <string name="error_saving_file">Lähdetiedoston ylikirjoitus epäonnistui</string>
     <string name="rotate_left">Käännä vasemmalle</string>
@@ -136,6 +136,18 @@
     <string name="pesdk_editor_cancel">Peruuta</string>
     <string name="pesdk_editor_accept">Hyväksy</string>
     <string name="pesdk_editor_save">Tallenna</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Viedään</string>
+    <string name="pesdk_sticker_button_add">Lisää</string>
+    <string name="pesdk_sticker_button_color">Väri</string>
+    <string name="pesdk_sticker_button_delete">Poista</string>
+    <string name="pesdk_sticker_button_opacity">Peittävyys</string>
+    <string name="pesdk_sticker_button_contrast">Kontrasti</string>
+    <string name="pesdk_sticker_button_saturation">Kylläisyys</string>
+    <string name="pesdk_sticker_button_brightness">Kirkkaus</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normaali</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Näyttö</string>
+    <string name="pesdk_overlay_asset_none">Ei mitään</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaiikki</string>
     <string name="pesdk_common_button_undo">Kumoa</string>
     <string name="pesdk_common_button_redo">Toista</string>
     <string name="pesdk_common_title_grayColor">Harmaa</string>
@@ -143,5 +155,6 @@
     <string name="pesdk_common_title_blueColor">Sininen</string>
     <string name="pesdk_common_title_redColor">Punainen</string>
     <string name="pesdk_common_title_greenColor">Vihreä</string>
+    <string name="vesdk_video_trim_title_name">Leikkaus</string>
     <string name="faq_1_title">Miten voin tehdä Simple Gallerystä oletusgalleriasovelluksen?</string>
 </resources>

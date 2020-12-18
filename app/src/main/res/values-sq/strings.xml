@@ -2,9 +2,14 @@
 <resources>
     <string name="app_launcher_name">Galeria</string>
     <string name="edit">Redakto</string>
+    <string name="open_camera">Hap kamerën</string>
+    <string name="show_all">Shfaq të gjithë përmbajtjen e dosjeve</string>
+    <string name="all_folders">Të gjitha dosjet</string>
     <string name="show_on_map">Trego në hartë</string>
+    <string name="volume">Volumi</string>
     <string name="brightness">Ndriçimi</string>
     <string name="videos">Videot</string>
+    <string name="add_folder">Shto dosje</string>
     <string name="resize">Ndrysho madhësinë</string>
     <string name="width">Gjerësia</string>
     <string name="height">Lartësia</string>
@@ -15,7 +20,10 @@
     <string name="other_aspect_ratio">Tjetër</string>
     <string name="simple_wallpaper">Galeria</string>
     <string name="no_animation">Asnjë</string>
+    <string name="by_folder">Dosje</string>
+    <string name="by_last_modified">Ndryshuar për herë te fundit</string>
     <string name="by_date_taken">Data e realizimit:</string>
+    <string name="autoplay_videos">Luaj videot automatikisht</string>
     <string name="pesdk_transform_button_freeCrop">E personalizuar</string>
     <string name="pesdk_transform_button_resetCrop">Rivendos</string>
     <string name="pesdk_filter_title_name">Filtri</string>
@@ -40,11 +48,23 @@
     <string name="pesdk_editor_cancel">Anullo</string>
     <string name="pesdk_editor_accept">Prano</string>
     <string name="pesdk_editor_save">Ruaj</string>
+    <string name="pesdk_sticker_button_add">Shto</string>
+    <string name="pesdk_sticker_button_color">Ngjyra</string>
+    <string name="pesdk_sticker_button_delete">Fshi</string>
+    <string name="pesdk_sticker_button_contrast">Kontrasti</string>
+    <string name="pesdk_sticker_button_saturation">Saturimi</string>
+    <string name="pesdk_sticker_button_brightness">Ndriçimi</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normale</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Ekrani</string>
+    <string name="pesdk_overlay_asset_none">Asnjë</string>
     <string name="pesdk_common_button_undo">Zhbëj</string>
     <string name="pesdk_common_button_redo">Ribëj</string>
     <string name="pesdk_common_title_transparentColor">E tejdukshme</string>
     <string name="pesdk_common_title_grayColor">Gri</string>
+    <string name="pesdk_common_title_blackColor">E Zezë</string>
     <string name="pesdk_common_title_blueColor">Blu</string>
     <string name="pesdk_common_title_redColor">E kuqe</string>
     <string name="pesdk_common_title_greenColor">E gjelbër</string>
+    <string name="vesdk_video_trim_title_name">Shkurto</string>
+    <string name="faq_15_text">Cache i aplikacionit mund të marrë deri në 250 MB, siguron ngarkim më të shpejtë të imazhit.  Nëse aplikacioni po zë edhe më shumë hapësirë, ka shumë të ngjarë të shkaktohet nga fakti se keni artikuj në koshin e riciklimit.  Këto skedarë llogariten në madhësinë e aplikacionit.  Ju mund ta pastroni koshin e riciklimit duke e hapur dhe fshirë të gjitha skedarët, ose nga cilësimet e aplikacionit.  Çdo skedar në Bin fshihet automatikisht pas 30 ditësh.</string>
 </resources>

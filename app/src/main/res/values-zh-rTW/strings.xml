@@ -69,7 +69,7 @@
     <string name="image_editing_cancelled">圖片編輯取消</string>
     <string name="file_edited_successfully">成功編輯檔案</string>
     <string name="edit_image_with">編輯圖片：</string>
-    <string name="no_editor_found">找不到圖片編輯器</string>
+    <string name="no_image_editor_found">找不到圖片編輯器</string>
     <string name="unknown_file_location">未知的檔案位置</string>
     <string name="error_saving_file">無法覆蓋原始檔案</string>
     <string name="rotate_left">向左轉</string>
@@ -218,14 +218,25 @@
     <string name="pesdk_brush_title_brushColor">筆刷顏色</string>
     <string name="pesdk_editor_title_name">編輯器</string>
     <string name="pesdk_editor_title_closeEditorAlert">關閉編輯器？</string>
-    <string name="pesdk_editor_text_closeEditorAlert">你真的要放棄這張圖片嗎？</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">是</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">否</string>
     <string name="pesdk_editor_cancel">取消</string>
     <string name="pesdk_editor_accept">接受</string>
     <string name="pesdk_editor_save">儲存</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">匯出圖像中…</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">匯出圖像中%s。</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">正在匯出…</string>
+    <string name="pesdk_sticker_button_add">新增</string>
+    <string name="pesdk_sticker_button_color">顏色</string>
+    <string name="pesdk_sticker_button_delete">刪除</string>
+    <string name="pesdk_sticker_button_bringToFront">至前面</string>
+    <string name="pesdk_sticker_button_straighten">拉直</string>
+    <string name="pesdk_sticker_button_opacity">不透明度</string>
+    <string name="pesdk_sticker_button_contrast">對比</string>
+    <string name="pesdk_sticker_button_saturation">飽和度</string>
+    <string name="pesdk_sticker_button_brightness">亮度</string>
+    <string name="pesdk_overlay_button_blendModeNormal">正常</string>
+    <string name="pesdk_overlay_button_blendModeScreen">螢幕</string>
+    <string name="pesdk_overlay_asset_none">無</string>
+    <string name="pesdk_overlay_asset_mosaic">馬賽克</string>
     <string name="pesdk_common_button_flipH">水平翻轉</string>
     <string name="pesdk_common_button_flipV">垂直翻轉</string>
     <string name="pesdk_common_button_undo">復原</string>
@@ -248,6 +259,7 @@
     <string name="pesdk_common_title_greenColor">綠色</string>
     <string name="pesdk_common_title_aquamarinColor">青綠</string>
     <string name="pesdk_common_title_pipettableColor">可選取的顏色</string>
+    <string name="vesdk_video_trim_title_name">修剪</string>
     <string name="faq_1_title">我如何將簡易相簿設為預設相簿？</string>
     <string name="faq_1_text">首先您必須先在裝置設定中應用程式部分尋找目前預設相簿，找到一個像是「預設開啟」的按鈕，點下去，然後選擇「清除預設」。
         下次您要開啟圖片或影片時應該會看到程式選擇器，您可以在那裡選擇簡易相簿並設為預設程式。</string>

@@ -58,7 +58,7 @@
     <string name="invalid_image_path">Μη έγκυρη διαδρομή εικόνας</string>
     <string name="image_editing_failed">Η επεξεργασία εικόνας απέτυχε</string>
     <string name="edit_image_with">Επεξεργασία εικόνας με:</string>
-    <string name="no_editor_found">Δεν βρέθηκε επεργαστής εικόνων</string>
+    <string name="no_image_editor_found">Δεν βρέθηκε επεργαστής εικόνων</string>
     <string name="unknown_file_location">Άγνωστη τοποθεσία αρχείου</string>
     <string name="error_saving_file">Δεν ήταν δυνατή η αντικατάσταση του αρχείου πηγής</string>
     <string name="rotate_left">Περιστροφή αριστερά</string>
@@ -162,6 +162,18 @@
     <string name="pesdk_editor_cancel">Ακύρωση</string>
     <string name="pesdk_editor_accept">Αποδοχή</string>
     <string name="pesdk_editor_save">Αποθήκευση</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Εξαγωγή…</string>
+    <string name="pesdk_sticker_button_add">Προσθήκη</string>
+    <string name="pesdk_sticker_button_color">Χρώμα</string>
+    <string name="pesdk_sticker_button_delete">Διαγραφή</string>
+    <string name="pesdk_sticker_button_opacity">Ορατότητα</string>
+    <string name="pesdk_sticker_button_contrast">Αντίθεση</string>
+    <string name="pesdk_sticker_button_saturation">Κορεσμός</string>
+    <string name="pesdk_sticker_button_brightness">Φωτεινότητα</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Κανονική</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Οθόνη</string>
+    <string name="pesdk_overlay_asset_none">Κανένα</string>
+    <string name="pesdk_overlay_asset_mosaic">Μωσαϊκό</string>
     <string name="pesdk_common_button_undo">Αναίρεση</string>
     <string name="pesdk_common_button_redo">Επανάληψη</string>
     <string name="pesdk_common_title_transparentColor">Διαφάνεια</string>
@@ -170,6 +182,7 @@
     <string name="pesdk_common_title_blueColor">Μπλε</string>
     <string name="pesdk_common_title_redColor">Κόκκινο</string>
     <string name="pesdk_common_title_greenColor">Πράσινο</string>
+    <string name="vesdk_video_trim_title_name">Περικοπή</string>
     <string name="faq_1_title">Πώς μπορώ να κάνω το Simple Gallery προκαθορισμένη εφαρμογή συλλογής πολυμέσων;</string>
     <string name="faq_1_text">Αρχικά πρέπει να βρείτε την τρέχουσα προεπιλεγμένη εφαρμογή γκάλερι στις Ρυθμίσεις (τμήμα Εφαρμογών) της συσκευής. Αναζητήστε για ένα κουμπί που αναφέρει κάτι σαν \"Άνοιγμα με προεπιλογή\", πατήστε το, μετά επιλέξτε \"Καθαρισμός προεπιλεγμένων\".
         Την επόμενη φορά που θα προσπαθήσετε να ανοίξετε μία εικόνα ή ένα βίντεο θα πρέπει να δείτε έναν διάλογο επιλογής εφαρμογών, όπου μπορείτε να επιλέξετε Simple Gallery να το κάνετε προεπιλεγμένη εφαρμογή.</string>

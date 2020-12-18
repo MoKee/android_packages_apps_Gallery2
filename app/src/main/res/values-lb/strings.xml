@@ -32,9 +32,18 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Jo</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Nee</string>
     <string name="pesdk_editor_save">Späicheren</string>
+    <string name="pesdk_sticker_button_color">Faarf</string>
+    <string name="pesdk_sticker_button_delete">Läschen</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Sättegung</string>
+    <string name="pesdk_sticker_button_brightness">Hellegkeet</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Schierm</string>
+    <string name="pesdk_overlay_asset_none">Keen</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaik</string>
     <string name="pesdk_common_button_undo">Réckgängeg maachen</string>
     <string name="pesdk_common_button_redo">Widderhuelen</string>
     <string name="pesdk_common_title_blueColor">Blo</string>
     <string name="pesdk_common_title_redColor">Rout</string>
     <string name="pesdk_common_title_greenColor">Gréng</string>
+    <string name="vesdk_video_trim_title_name">Trimmen</string>
 </resources>

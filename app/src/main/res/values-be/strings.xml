@@ -54,6 +54,16 @@
     <string name="pesdk_editor_cancel">Скасаваць</string>
     <string name="pesdk_editor_accept">Прыняць</string>
     <string name="pesdk_editor_save">Захаваць</string>
+    <string name="pesdk_sticker_button_add">Дадаць</string>
+    <string name="pesdk_sticker_button_color">Колер</string>
+    <string name="pesdk_sticker_button_delete">Выдаліць</string>
+    <string name="pesdk_sticker_button_contrast">Кантраснасць</string>
+    <string name="pesdk_sticker_button_saturation">Насычанасць</string>
+    <string name="pesdk_sticker_button_brightness">Яркасць</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Звычайны</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Экран</string>
+    <string name="pesdk_overlay_asset_none">Няма</string>
+    <string name="pesdk_overlay_asset_mosaic">Мазайка</string>
     <string name="pesdk_common_button_undo">Адмяніць</string>
     <string name="pesdk_common_button_redo">Паўтарыць</string>
     <string name="pesdk_common_title_grayColor">Шэры</string>
@@ -61,4 +71,5 @@
     <string name="pesdk_common_title_blueColor">Сіні</string>
     <string name="pesdk_common_title_redColor">Чырвоны</string>
     <string name="pesdk_common_title_greenColor">Зялёны</string>
+    <string name="vesdk_video_trim_title_name">Абразаць</string>
 </resources>

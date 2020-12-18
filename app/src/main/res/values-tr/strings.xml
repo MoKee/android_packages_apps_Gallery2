@@ -69,7 +69,7 @@
     <string name="image_editing_cancelled">Resim düzenleme iptal edildi</string>
     <string name="file_edited_successfully">Dosya başarıyla düzenlendi</string>
     <string name="edit_image_with">İle resmi düzenle:</string>
-    <string name="no_editor_found">Resim editörü bulunamadı</string>
+    <string name="no_image_editor_found">Resim editörü bulunamadı</string>
     <string name="unknown_file_location">Bilinmeyen dosya konumu</string>
     <string name="error_saving_file">Kaynak dosyanın üzerine yazılamadı</string>
     <string name="rotate_left">Sola döndür</string>
@@ -217,14 +217,25 @@
     <string name="pesdk_brush_title_brushColor">Fırça Rengi</string>
     <string name="pesdk_editor_title_name">Editör</string>
     <string name="pesdk_editor_title_closeEditorAlert">Düzenleyiciyi kapatıyor musunuz?</string>
-    <string name="pesdk_editor_text_closeEditorAlert">Bu resmi gerçekten silmek istiyor musunuz?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Evet</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Hayır</string>
     <string name="pesdk_editor_cancel">İptal</string>
     <string name="pesdk_editor_accept">Kabul et</string>
     <string name="pesdk_editor_save">Kaydet</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">Görüntü getiriliyor...</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">Görüntü getiriliyor %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Dışa aktarılıyor…</string>
+    <string name="pesdk_sticker_button_add">Ekle</string>
+    <string name="pesdk_sticker_button_color">Renk</string>
+    <string name="pesdk_sticker_button_delete">Sil</string>
+    <string name="pesdk_sticker_button_bringToFront">Öne</string>
+    <string name="pesdk_sticker_button_straighten">Düzleştir</string>
+    <string name="pesdk_sticker_button_opacity">Saydamlık</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Doygunluk</string>
+    <string name="pesdk_sticker_button_brightness">Parlaklık</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Ekran</string>
+    <string name="pesdk_overlay_asset_none">Yok</string>
+    <string name="pesdk_overlay_asset_mosaic">Mozaik</string>
     <string name="pesdk_common_button_flipH">Flip H</string>
     <string name="pesdk_common_button_flipV">Flip V</string>
     <string name="pesdk_common_button_undo">Geri al</string>
@@ -247,6 +258,7 @@
     <string name="pesdk_common_title_greenColor">Yeşil</string>
     <string name="pesdk_common_title_aquamarinColor">Havuz mavisi</string>
     <string name="pesdk_common_title_pipettableColor">Pipetlenebilir renk</string>
+    <string name="vesdk_video_trim_title_name">Kırp</string>
     <string name="faq_1_title">Simple Galeri\'yi varsayılan cihaz galerisi nasıl yapabilirim?</string>
     <string name="faq_1_text">Öncelikle, varsayılan olarak varsayılan galeriyi cihaz ayarlarınızın Uygulamalar bölümünde bulmanız, \"Varsayılan olarak aç\" gibi bir tuşa basmanız, tıklayıp \"Varsayılanları temizle\" yi seçmeniz gerekir.
         Bir sonraki videoyu veya videoyu açmayı denediğinizde, Simple Galeri\'yi seçip varsayılan uygulama haline getirebileceğiniz bir uygulama seçicisini görmelisiniz.</string>

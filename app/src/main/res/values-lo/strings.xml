@@ -35,9 +35,16 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">ຕົກລົງ</string>
     <string name="pesdk_editor_accept">ຍອມຮັບ</string>
     <string name="pesdk_editor_save">ບັນທຶກ</string>
+    <string name="pesdk_sticker_button_color">ສີ</string>
+    <string name="pesdk_sticker_button_delete">ລຶບ</string>
+    <string name="pesdk_sticker_button_contrast">ຄວາມເຂັ້ມ</string>
+    <string name="pesdk_sticker_button_saturation">ຄວາມແຈດຂອງສີ</string>
+    <string name="pesdk_sticker_button_brightness">ຄວາມສະຫວ່າງ</string>
+    <string name="pesdk_overlay_asset_none">ບໍ່ມີ</string>
     <string name="pesdk_common_button_undo">ຍົກເລີກ</string>
     <string name="pesdk_common_button_redo">ເຮັດຊ້ຳ</string>
     <string name="pesdk_common_title_blueColor">ຟ້າ</string>
     <string name="pesdk_common_title_redColor">ແດງ</string>
     <string name="pesdk_common_title_greenColor">ຂຽວ</string>
+    <string name="vesdk_video_trim_title_name">ຕັດ</string>
 </resources>

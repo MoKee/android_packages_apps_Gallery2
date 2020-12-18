@@ -60,7 +60,7 @@
     <string name="invalid_image_path">Ugyldig bildebane</string>
     <string name="image_editing_failed">Bilderedigering feilet</string>
     <string name="edit_image_with">Rediger bilde med:</string>
-    <string name="no_editor_found">Ingen bilderedigeringsapp funnet</string>
+    <string name="no_image_editor_found">Ingen bilderedigeringsapp funnet</string>
     <string name="unknown_file_location">Ukjent filplassering</string>
     <string name="error_saving_file">Kunne ikke overskrive kildefilen</string>
     <string name="rotate_left">Roter til venstre</string>
@@ -160,9 +160,20 @@
     <string name="pesdk_editor_cancel">Avbryt</string>
     <string name="pesdk_editor_accept">Godta</string>
     <string name="pesdk_editor_save">Lagre</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Eksporterer…</string>
+    <string name="pesdk_sticker_button_add">Legg til</string>
+    <string name="pesdk_sticker_button_color">Farge</string>
+    <string name="pesdk_sticker_button_delete">Slett</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Metning</string>
+    <string name="pesdk_sticker_button_brightness">Lysstyrke</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Skjerm</string>
+    <string name="pesdk_overlay_asset_none">Ingen</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaikk</string>
     <string name="pesdk_common_button_undo">Angre</string>
     <string name="pesdk_common_button_redo">Annuler angre</string>
     <string name="pesdk_common_title_blueColor">Blå</string>
     <string name="pesdk_common_title_redColor">Rød</string>
     <string name="pesdk_common_title_greenColor">Grønn</string>
+    <string name="vesdk_video_trim_title_name">Klipp</string>
 </resources>

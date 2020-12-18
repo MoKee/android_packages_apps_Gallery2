@@ -16,4 +16,9 @@
     <string name="pesdk_text_title_name">ଟେକ୍ସଟ୍</string>
     <string name="pesdk_text_button_edit">ସମ୍ପାଦନ</string>
     <string name="pesdk_editor_save">ସଞ୍ଚୟ</string>
+    <string name="pesdk_overlay_button_blendModeNormal">ସାଧାରଣ</string>
+    <string name="pesdk_overlay_button_blendModeScreen">ସ୍କ୍ରିନ୍</string>
+    <string name="pesdk_overlay_asset_none">କିଛି ନୁହେଁ</string>
+    <string name="pesdk_overlay_asset_mosaic">ମୋଜାଇକ୍‍</string>
+    <string name="vesdk_video_trim_title_name">ଟ୍ରିମ୍</string>
 </resources>

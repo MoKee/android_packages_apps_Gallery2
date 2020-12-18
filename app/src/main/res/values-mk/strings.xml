@@ -27,6 +27,13 @@
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Не</string>
     <string name="pesdk_editor_cancel">Откажи</string>
     <string name="pesdk_editor_accept">Прифати</string>
+    <string name="pesdk_sticker_button_add">Додај</string>
+    <string name="pesdk_sticker_button_color">Боја</string>
+    <string name="pesdk_sticker_button_delete">Избриши</string>
+    <string name="pesdk_sticker_button_contrast">Контраст</string>
+    <string name="pesdk_sticker_button_saturation">Сатурација</string>
+    <string name="pesdk_sticker_button_brightness">Осветленост</string>
+    <string name="pesdk_overlay_asset_none">Нема</string>
     <string name="pesdk_common_button_undo">Врати</string>
     <string name="pesdk_common_button_redo">Повтори</string>
     <string name="pesdk_common_title_blueColor">Сино</string>

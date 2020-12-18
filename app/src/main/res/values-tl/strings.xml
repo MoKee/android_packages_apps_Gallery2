@@ -44,10 +44,20 @@
     <string name="pesdk_editor_cancel">Kanselahin</string>
     <string name="pesdk_editor_accept">Tanggapin</string>
     <string name="pesdk_editor_save">I-save</string>
+    <string name="pesdk_sticker_button_add">Magdagdag</string>
+    <string name="pesdk_sticker_button_color">Kulay</string>
+    <string name="pesdk_sticker_button_delete">Tanggalin</string>
+    <string name="pesdk_sticker_button_contrast">Ang pagkakaiba</string>
+    <string name="pesdk_sticker_button_saturation">Lunod</string>
+    <string name="pesdk_sticker_button_brightness">Ang liwanag</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Karaniwan</string>
+    <string name="pesdk_overlay_asset_none">Wala</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaiko</string>
     <string name="pesdk_common_button_undo">I-undo</string>
     <string name="pesdk_common_button_redo">I-redo</string>
     <string name="pesdk_common_title_blackColor">Itim</string>
     <string name="pesdk_common_title_blueColor">Asul</string>
     <string name="pesdk_common_title_redColor">Pula</string>
     <string name="pesdk_common_title_greenColor">Berde</string>
+    <string name="vesdk_video_trim_title_name">I-trim</string>
 </resources>

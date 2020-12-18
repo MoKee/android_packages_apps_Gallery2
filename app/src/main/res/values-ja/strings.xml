@@ -61,7 +61,7 @@
     <string name="invalid_image_path">無効な画像パス</string>
     <string name="image_editing_failed">画像の編集に失敗しました</string>
     <string name="edit_image_with">画像を編集:</string>
-    <string name="no_editor_found">画像エディターが見つかりません</string>
+    <string name="no_image_editor_found">画像エディターが見つかりません</string>
     <string name="unknown_file_location">ファイルの場所が不明です</string>
     <string name="error_saving_file">元のファイルを上書きできません</string>
     <string name="rotate_left">左に回転</string>
@@ -165,6 +165,18 @@
     <string name="pesdk_editor_cancel">キャンセル</string>
     <string name="pesdk_editor_accept">同意する</string>
     <string name="pesdk_editor_save">保存</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">エクスポート中…</string>
+    <string name="pesdk_sticker_button_add">追加</string>
+    <string name="pesdk_sticker_button_color">色</string>
+    <string name="pesdk_sticker_button_delete">削除</string>
+    <string name="pesdk_sticker_button_opacity">透明度</string>
+    <string name="pesdk_sticker_button_contrast">コントラスト</string>
+    <string name="pesdk_sticker_button_saturation">彩度</string>
+    <string name="pesdk_sticker_button_brightness">明るさ</string>
+    <string name="pesdk_overlay_button_blendModeNormal">標準</string>
+    <string name="pesdk_overlay_button_blendModeScreen">画面</string>
+    <string name="pesdk_overlay_asset_none">なし</string>
+    <string name="pesdk_overlay_asset_mosaic">モザイク</string>
     <string name="pesdk_common_button_undo">元に戻す</string>
     <string name="pesdk_common_button_redo">やり直し</string>
     <string name="pesdk_common_title_transparentColor">透過</string>
@@ -173,6 +185,7 @@
     <string name="pesdk_common_title_blueColor">青</string>
     <string name="pesdk_common_title_redColor">赤</string>
     <string name="pesdk_common_title_greenColor">緑</string>
+    <string name="vesdk_video_trim_title_name">トリミング</string>
     <string name="faq_1_title">シンプルギャラリーを規定の端末のギャラリーにするにはどうすればよいですか？</string>
     <string name="faq_1_text">まず端末設定の「アプリケーション」セクションで現在の端末のギャラリーを見つけ、「デフォルトで開く」のようなボタンを探し、それをクリックしてから「デフォルトをクリア」を選択します。次回に画像やビデオを開く時にシンプルギャラリーを選択したら、既定のアプリに設定できるアプリ選択ツールが表示されます。</string>
     <string name="faq_2_title">私はパスワードでアプリをロックしましたが忘れてしまいました。私は何ができますか？</string>

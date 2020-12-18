@@ -24,6 +24,12 @@
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Non</string>
     <string name="pesdk_editor_cancel">Encaboxar</string>
     <string name="pesdk_editor_save">Guardar</string>
+    <string name="pesdk_sticker_button_add">Amestar</string>
+    <string name="pesdk_sticker_button_delete">Desaniciar</string>
+    <string name="pesdk_sticker_button_contrast">Contraste</string>
+    <string name="pesdk_sticker_button_saturation">Saturación</string>
+    <string name="pesdk_sticker_button_brightness">Brilléu</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Pantalla</string>
     <string name="pesdk_common_title_grayColor">Buxu</string>
     <string name="pesdk_common_title_blackColor">Prietu</string>
     <string name="pesdk_common_title_blueColor">Azul</string>

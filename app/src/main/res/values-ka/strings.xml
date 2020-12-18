@@ -33,9 +33,16 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">დიახ</string>
     <string name="pesdk_editor_accept">მიღება</string>
     <string name="pesdk_editor_save">შენახვა</string>
+    <string name="pesdk_sticker_button_color">ფერი</string>
+    <string name="pesdk_sticker_button_delete">წაშლა</string>
+    <string name="pesdk_sticker_button_contrast">კონტრასტი</string>
+    <string name="pesdk_sticker_button_saturation">ინტენსივობა</string>
+    <string name="pesdk_sticker_button_brightness">სიკაშკაშე</string>
+    <string name="pesdk_overlay_asset_none">არც ერთი</string>
     <string name="pesdk_common_button_undo">მოქმედების გაუქმება</string>
     <string name="pesdk_common_button_redo">გამეორება</string>
     <string name="pesdk_common_title_blueColor">ლურჯი</string>
     <string name="pesdk_common_title_redColor">წითელი</string>
     <string name="pesdk_common_title_greenColor">მწვანე</string>
+    <string name="vesdk_video_trim_title_name">კვეცა</string>
 </resources>

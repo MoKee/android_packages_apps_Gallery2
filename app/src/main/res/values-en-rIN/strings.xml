@@ -7,5 +7,6 @@
     <string name="pesdk_brush_button_color">Colour</string>
     <string name="pesdk_editor_cancel">Cancel</string>
     <string name="pesdk_editor_accept">Accept</string>
+    <string name="pesdk_sticker_button_color">Colour</string>
     <string name="pesdk_common_title_grayColor">Grey</string>
 </resources>

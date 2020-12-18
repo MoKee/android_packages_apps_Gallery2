@@ -28,9 +28,17 @@
     <string name="pesdk_brush_button_delete">سڕینه‌وه‌</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">بەڵێ</string>
     <string name="pesdk_editor_save">پاشەکەوتکردن</string>
+    <string name="pesdk_sticker_button_color">ڕەنگ</string>
+    <string name="pesdk_sticker_button_delete">سڕینه‌وه‌</string>
+    <string name="pesdk_sticker_button_contrast">کۆنتراست</string>
+    <string name="pesdk_sticker_button_saturation">تێرایی</string>
+    <string name="pesdk_sticker_button_brightness">ڕۆشنایی</string>
+    <string name="pesdk_overlay_button_blendModeScreen">شاشە</string>
+    <string name="pesdk_overlay_asset_none">هیچیان</string>
     <string name="pesdk_common_button_undo">پاشگەزبوون</string>
     <string name="pesdk_common_button_redo">گه‌ڕانه‌وه‌ بۆ هه‌نگاوی داهاتوو</string>
     <string name="pesdk_common_title_blueColor">شین</string>
     <string name="pesdk_common_title_redColor">سوور</string>
     <string name="pesdk_common_title_greenColor">سەوز</string>
+    <string name="vesdk_video_trim_title_name">بڕین</string>
 </resources>

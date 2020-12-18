@@ -24,6 +24,11 @@
     <string name="pesdk_brush_button_size">အရွယ်အစား</string>
     <string name="pesdk_editor_cancel">မလုပ်တော့</string>
     <string name="pesdk_editor_accept">လက်ခံရန်</string>
+    <string name="pesdk_sticker_button_color">ရောင်စုံ</string>
+    <string name="pesdk_sticker_button_contrast">အလင်းအမှောင်</string>
+    <string name="pesdk_sticker_button_saturation">ရောင်ပြည့်</string>
+    <string name="pesdk_sticker_button_brightness">အလင်းတောက်ပမှု</string>
+    <string name="pesdk_overlay_asset_none">တစ်ခုမှမဟုတ်ပါ</string>
     <string name="pesdk_common_button_undo">နောက်ပြန်လုပ်ပါ</string>
     <string name="pesdk_common_button_redo">ပြန်လုပ်ရန်</string>
     <string name="pesdk_common_title_blueColor">အပြာ</string>

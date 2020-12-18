@@ -57,7 +57,7 @@
     <string name="invalid_image_path">Ruta de imatge no vàlida</string>
     <string name="image_editing_failed">Ha fallat la edició de la imatge</string>
     <string name="edit_image_with">Editar imatge utilitzant:</string>
-    <string name="no_editor_found">No s\'ha trobat cap editor d\'imatges</string>
+    <string name="no_image_editor_found">No s\'ha trobat cap editor d\'imatges</string>
     <string name="unknown_file_location">Ubicació de l\'arxiu desconeguda</string>
     <string name="error_saving_file">No s\'ha pogut sobreescriure l\'arxiu d\'origen</string>
     <string name="rotate_left">Rotar a l\'esquerra</string>
@@ -158,6 +158,15 @@
     <string name="pesdk_editor_cancel">Cancel·la</string>
     <string name="pesdk_editor_accept">Accepta</string>
     <string name="pesdk_editor_save">Desa</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Exportant…</string>
+    <string name="pesdk_sticker_button_add">Afegeix</string>
+    <string name="pesdk_sticker_button_delete">Esborra</string>
+    <string name="pesdk_sticker_button_opacity">Opacitat</string>
+    <string name="pesdk_sticker_button_saturation">Saturació</string>
+    <string name="pesdk_sticker_button_brightness">Brillantor</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Pantalla</string>
+    <string name="pesdk_overlay_asset_none">Cap</string>
     <string name="pesdk_common_button_undo">Desfer</string>
     <string name="pesdk_common_button_redo">Refer</string>
     <string name="pesdk_common_title_grayColor">Gris</string>
@@ -165,6 +174,7 @@
     <string name="pesdk_common_title_blueColor">Blau</string>
     <string name="pesdk_common_title_redColor">Vermell</string>
     <string name="pesdk_common_title_greenColor">Verd</string>
+    <string name="vesdk_video_trim_title_name">Retalla</string>
     <string name="faq_1_title">Com puc fer que Simple Gallery sigui la galeria de dispositius predeterminada?</string>
     <string name="faq_1_text">Primer heu de trobar la galeria actualment predeterminada a la secció Aplicacions de la configuració del vostre dispositiu, cerqueu un botó que digui alguna cosa semblant a \"Obrir per defecte \", feu-hi clic i seleccioneu \"Esborra valors predeterminats \".
         La propera vegada que proveu d\'obrir una imatge o un vídeo, haureu de veure un selector d\'aplicació, on podeu seleccionar Simple Galeria i convertir-la en la aplicació predeterminada.</string>

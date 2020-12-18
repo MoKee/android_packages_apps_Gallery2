@@ -68,7 +68,7 @@
     <string name="image_editing_failed">Грешка у исправци слике</string>
     <string name="file_edited_successfully">Датотеке су успешно уређене</string>
     <string name="edit_image_with">Уређивање слике помоћу:</string>
-    <string name="no_editor_found">Није пронађен Уређивач слика</string>
+    <string name="no_image_editor_found">Није пронађен Уређивач слика</string>
     <string name="unknown_file_location">Непозната локација датотеке</string>
     <string name="error_saving_file">Немогуће заменити изворну датотеку</string>
     <string name="rotate_left">Ротирај улево</string>
@@ -192,6 +192,18 @@
     <string name="pesdk_editor_cancel">Откажи</string>
     <string name="pesdk_editor_accept">Прихвати</string>
     <string name="pesdk_editor_save">Сачувај</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Извоз…</string>
+    <string name="pesdk_sticker_button_add">Додај</string>
+    <string name="pesdk_sticker_button_color">Боја</string>
+    <string name="pesdk_sticker_button_delete">Брисање</string>
+    <string name="pesdk_sticker_button_opacity">Непрозирност</string>
+    <string name="pesdk_sticker_button_contrast">Контраст</string>
+    <string name="pesdk_sticker_button_saturation">Засићеност</string>
+    <string name="pesdk_sticker_button_brightness">Осветљеност</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Нормално</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Екран</string>
+    <string name="pesdk_overlay_asset_none">Ниједан</string>
+    <string name="pesdk_overlay_asset_mosaic">Мозаик</string>
     <string name="pesdk_common_button_undo">Опозови</string>
     <string name="pesdk_common_button_redo">Понови</string>
     <string name="pesdk_common_title_transparentColor">Провидно</string>
@@ -205,6 +217,7 @@
     <string name="pesdk_common_title_orangeColor">Наранџаста</string>
     <string name="pesdk_common_title_yellowColor">Жута</string>
     <string name="pesdk_common_title_greenColor">Зелена</string>
+    <string name="vesdk_video_trim_title_name">Скрати</string>
     <string name="faq_1_title">Како да поставим да Simple Gallery постане главна Галерија на уређају?</string>
     <string name="faq_1_text">Прво морате пронаћи која је предодређена Галерија у подешавањима уређаја. Пронаћи опцију:\"Open by default\", обрисати ону која је постављена. Када следећи пут будете хтели да погледате слику питаће вас којом апликацијом то желите да урадите онда изаберете апликацију Simple Gallery. Поставите је да увек користи ту апликацију.</string>
     <string name="faq_2_title">Закључао сам апликацију са шифром коју сам заборавио. Шта да радим?</string>

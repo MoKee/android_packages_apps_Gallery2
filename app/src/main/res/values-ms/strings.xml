@@ -40,9 +40,16 @@
     <string name="pesdk_editor_cancel">Batal</string>
     <string name="pesdk_editor_accept">Terima</string>
     <string name="pesdk_editor_save">Simpan</string>
+    <string name="pesdk_sticker_button_color">Warna</string>
+    <string name="pesdk_sticker_button_delete">Padam</string>
+    <string name="pesdk_sticker_button_contrast">Kontras</string>
+    <string name="pesdk_sticker_button_saturation">Ketepuan</string>
+    <string name="pesdk_sticker_button_brightness">Kecerahan</string>
+    <string name="pesdk_overlay_asset_none">Tiada</string>
     <string name="pesdk_common_button_undo">Buat asal</string>
     <string name="pesdk_common_button_redo">Buat semula</string>
     <string name="pesdk_common_title_blueColor">Biru</string>
     <string name="pesdk_common_title_redColor">Merah</string>
     <string name="pesdk_common_title_greenColor">Hijau</string>
+    <string name="vesdk_video_trim_title_name">Cantas</string>
 </resources>

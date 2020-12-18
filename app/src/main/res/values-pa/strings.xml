@@ -20,6 +20,11 @@
     <string name="pesdk_brush_button_color">ਰੰਗ</string>
     <string name="pesdk_brush_button_size">ਆਕਾਰ</string>
     <string name="pesdk_editor_accept">ਸਵੀਕਾਰ ਕਰੋ</string>
+    <string name="pesdk_sticker_button_color">ਰੰਗ</string>
+    <string name="pesdk_sticker_button_contrast">ਕੰਟ੍ਰਾਸਟ</string>
+    <string name="pesdk_sticker_button_saturation">ਸੰਪੂਰਤੀ</string>
+    <string name="pesdk_sticker_button_brightness">ਚਮਕ</string>
+    <string name="pesdk_overlay_asset_none">ਕੋਈ ਨਹੀਂ</string>
     <string name="pesdk_common_button_undo">ਪਹਿਲਾਂ ਵਰਗਾ ਕਰੋ</string>
     <string name="pesdk_common_button_redo">ਰੀਡੂ ਕਰੋ</string>
     <string name="pesdk_common_title_blueColor">ਨੀਲਾ</string>

@@ -60,7 +60,7 @@
     <string name="invalid_image_path">Neispravna putanja slike</string>
     <string name="image_editing_failed">Uređivanje slika nije uspjelo</string>
     <string name="edit_image_with">Uredi sliku pomoću:</string>
-    <string name="no_editor_found">Nije pronađen uređivač slika</string>
+    <string name="no_image_editor_found">Nije pronađen uređivač slika</string>
     <string name="unknown_file_location">Nepoznata lokacija datoteke</string>
     <string name="error_saving_file">Nije moguće presnimiti izvornu datoteku</string>
     <string name="rotate_left">Rotiraj ulijevo</string>
@@ -156,6 +156,18 @@
     <string name="pesdk_editor_cancel">Odustani</string>
     <string name="pesdk_editor_accept">Prihvaćam</string>
     <string name="pesdk_editor_save">Spremi</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Izvoz…</string>
+    <string name="pesdk_sticker_button_add">Dodaj</string>
+    <string name="pesdk_sticker_button_color">Boja</string>
+    <string name="pesdk_sticker_button_delete">Izbriši</string>
+    <string name="pesdk_sticker_button_opacity">Prozirnost</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Zasićenje</string>
+    <string name="pesdk_sticker_button_brightness">Svjetlina</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normalan</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Zaslon</string>
+    <string name="pesdk_overlay_asset_none">Ništa</string>
+    <string name="pesdk_overlay_asset_mosaic">Mozaik</string>
     <string name="pesdk_common_button_undo">Poništi promjenu</string>
     <string name="pesdk_common_button_redo">Ponovi promjenu</string>
     <string name="pesdk_common_title_transparentColor">Prozirna</string>
@@ -164,6 +176,7 @@
     <string name="pesdk_common_title_blueColor">Plavo</string>
     <string name="pesdk_common_title_redColor">Crveno</string>
     <string name="pesdk_common_title_greenColor">Zeleno</string>
+    <string name="vesdk_video_trim_title_name">Skraćivanje</string>
     <string name="faq_1_title">Kako mogu postaviti Jednostavnu galeriju kao zadanu galeriju uređaja?</string>
     <string name="faq_1_text">Prvo morate pronaći trenutačno zadanu galeriju u odjeljku Aplikacije, u Postavkama uređaja, potražite gumb koji kaže nešto poput opcije \"Otvori prema zadanim postavkama\", kliknite na tu opciju, a zatim odaberite \"Izbriši zadane postavke\".
         Sljedeći put kada pokušate otvoriti sliku ili video, trebali biste vidjeti alat za odabir aplikacija, gdje možete odabrati Jednostavnu galeriju i postaviti je kao zadanu aplikaciju.</string>

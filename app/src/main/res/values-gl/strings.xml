@@ -48,7 +48,7 @@
     <string name="invalid_image_path">Ruta a imaxe non válida</string>
     <string name="image_editing_failed">Fallo na edición da imaxe</string>
     <string name="edit_image_with">Editar imaxe con:</string>
-    <string name="no_editor_found">Non se atopou ningún editor</string>
+    <string name="no_image_editor_found">Non se atopou ningún editor</string>
     <string name="unknown_file_location">Localización do ficheiro descoñecida</string>
     <string name="error_saving_file">Non se puido sobreescribir o ficheiro</string>
     <string name="rotate_left">Rotar a esquerda</string>
@@ -137,12 +137,23 @@
     <string name="pesdk_editor_cancel">Cancelar</string>
     <string name="pesdk_editor_accept">Aceptar</string>
     <string name="pesdk_editor_save">Gardar</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Exportando…</string>
+    <string name="pesdk_sticker_button_add">Engadir</string>
+    <string name="pesdk_sticker_button_color">Cor</string>
+    <string name="pesdk_sticker_button_delete">Eliminar</string>
+    <string name="pesdk_sticker_button_contrast">Contraste</string>
+    <string name="pesdk_sticker_button_saturation">Saturación</string>
+    <string name="pesdk_sticker_button_brightness">Brillo</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Pantalla</string>
+    <string name="pesdk_overlay_asset_none">Ningún</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaico</string>
     <string name="pesdk_common_button_undo">Desfacer</string>
     <string name="pesdk_common_button_redo">Refacer</string>
     <string name="pesdk_common_title_grayColor">Gris</string>
     <string name="pesdk_common_title_blueColor">Azul</string>
     <string name="pesdk_common_title_redColor">Vermello</string>
     <string name="pesdk_common_title_greenColor">Verde</string>
+    <string name="vesdk_video_trim_title_name">Recortar</string>
     <string name="faq_1_title">Cómo podo facer que Simple Gallery sexa a galería por omisión no dispositivo?</string>
     <string name="faq_1_text">Primeiro debe atopar a galería por omsión actual na sección de App nos axustes do dispositivo, buscar un botón que diga algo como \"Abrir por omisión\", pulsalo e despois seleccionar \"Limpar por omisión\".
         A próxima vez que intente abrir unha imaxe ou vídeo aparecerá un selector de aplicativos onde pode escoller Simple Gallery e facela o aplicativo por omisión.</string>

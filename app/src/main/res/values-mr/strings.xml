@@ -30,9 +30,18 @@
     <string name="pesdk_brush_button_size">आकार</string>
     <string name="pesdk_editor_accept">स्वीकारा</string>
     <string name="pesdk_editor_save">जतन करा</string>
+    <string name="pesdk_sticker_button_color">रंग</string>
+    <string name="pesdk_sticker_button_contrast">तीव्रता</string>
+    <string name="pesdk_sticker_button_saturation">संपृक्तता</string>
+    <string name="pesdk_sticker_button_brightness">चमक</string>
+    <string name="pesdk_overlay_button_blendModeNormal">सामान्य</string>
+    <string name="pesdk_overlay_button_blendModeScreen">स्क्रीन</string>
+    <string name="pesdk_overlay_asset_none">काहीही नाही</string>
+    <string name="pesdk_overlay_asset_mosaic">मोझॅक</string>
     <string name="pesdk_common_button_undo">पूर्ववत करा</string>
     <string name="pesdk_common_button_redo">पुन्हा करा</string>
     <string name="pesdk_common_title_blueColor">निळा</string>
     <string name="pesdk_common_title_redColor">लाल</string>
     <string name="pesdk_common_title_greenColor">हिरवा</string>
+    <string name="vesdk_video_trim_title_name">ट्रिम करा</string>
 </resources>

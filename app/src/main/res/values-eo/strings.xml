@@ -7,4 +7,5 @@
     <string name="pesdk_brush_button_delete">Forigi</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Jes</string>
     <string name="pesdk_editor_save">Konservi</string>
+    <string name="pesdk_sticker_button_delete">Forigi</string>
 </resources>

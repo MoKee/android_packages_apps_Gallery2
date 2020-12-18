@@ -14,6 +14,9 @@
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Na</string>
     <string name="pesdk_editor_cancel">Canslo</string>
     <string name="pesdk_editor_accept">Derbyn</string>
+    <string name="pesdk_sticker_button_add">Ychwanegu</string>
+    <string name="pesdk_sticker_button_delete">Dileu</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Sgrin</string>
     <string name="pesdk_common_title_grayColor">Llwyd</string>
     <string name="pesdk_common_title_blueColor">Glas</string>
     <string name="pesdk_common_title_redColor">Coch</string>

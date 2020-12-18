@@ -51,7 +51,7 @@
     <string name="invalid_image_path">Netinkamas atvaizdo kelias</string>
     <string name="image_editing_failed">Atvaizdo redagavimas nepavyko</string>
     <string name="edit_image_with">Redaguoti atvaizdą su:</string>
-    <string name="no_editor_found">Nerasta atvaizdų redagavimo programėlės</string>
+    <string name="no_image_editor_found">Nerasta atvaizdų redagavimo programėlės</string>
     <string name="unknown_file_location">Nežinoma bylos vieta</string>
     <string name="error_saving_file">Negalima perrašyti šaltinio bylos</string>
     <string name="rotate_left">Sukti į kairę</string>
@@ -136,6 +136,14 @@
     <string name="pesdk_editor_cancel">Atšaukti</string>
     <string name="pesdk_editor_accept">Atsiliepti</string>
     <string name="pesdk_editor_save">Išsaugoti</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Eksportuojama…</string>
+    <string name="pesdk_sticker_button_add">Pridėti</string>
+    <string name="pesdk_sticker_button_color">Spalva</string>
+    <string name="pesdk_sticker_button_delete">Ištrinti</string>
+    <string name="pesdk_sticker_button_contrast">Kontrastas</string>
+    <string name="pesdk_sticker_button_saturation">Spalvų sodrumas</string>
+    <string name="pesdk_sticker_button_brightness">Šviesumas</string>
+    <string name="pesdk_overlay_asset_none">Nėra</string>
     <string name="pesdk_common_button_undo">Anuliuoti</string>
     <string name="pesdk_common_button_redo">Grąžinti</string>
     <string name="pesdk_common_title_transparentColor">Permatomas</string>
@@ -143,6 +151,7 @@
     <string name="pesdk_common_title_blueColor">Mėlyna</string>
     <string name="pesdk_common_title_redColor">Raudona</string>
     <string name="pesdk_common_title_greenColor">Žalia</string>
+    <string name="vesdk_video_trim_title_name">Apkarpyti</string>
     <string name="faq_1_title">Kaip galiu padaryti paprastą galeriją kaip numatytąją įrenginio galeriją?</string>
     <string name="faq_1_text">Pirmiausia turite rasti numatytąją galeriją savo prietaiso nustatymų skyriuje \"Programėlės\", ieškoti mygtuko panašaus į \ \"Atidaryti pagal numatytuosius \", spustelėkite jį, tada pasirinkite \ \"Išvalyti numatytuosius \". 
 	Kitą kartą, kai bandysite atidaryti atvaizdą ar vaizdo įrašą, turėtumėte pamatyti programos parinkiklį, kuriame galite pasirinkti Paprastą galeriją ir padaryti ją numatytaja.</string>

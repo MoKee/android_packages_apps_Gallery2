@@ -69,7 +69,7 @@
     <string name="image_editing_cancelled">Редагування зображення скасовано</string>
     <string name="file_edited_successfully">Файл відредаговано успішно</string>
     <string name="edit_image_with">Редагувати зображення за допомогою:</string>
-    <string name="no_editor_found">Не знайдено редакторів зображень</string>
+    <string name="no_image_editor_found">Не знайдено редакторів зображень</string>
     <string name="unknown_file_location">Невідоме розташування файлу</string>
     <string name="error_saving_file">Не вдалося перезаписати вихідний файл</string>
     <string name="rotate_left">Обернути ліворуч</string>
@@ -217,14 +217,25 @@
     <string name="pesdk_brush_title_brushColor">Колір кисті</string>
     <string name="pesdk_editor_title_name">Редактор</string>
     <string name="pesdk_editor_title_closeEditorAlert">Закрити редактор?</string>
-    <string name="pesdk_editor_text_closeEditorAlert">Ви впевнені що хочете видалити це зображення?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Так</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Ні</string>
     <string name="pesdk_editor_cancel">Скаcувати</string>
     <string name="pesdk_editor_accept">Приймаю</string>
     <string name="pesdk_editor_save">Зберегти</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">Експорт зображення…</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">Експорт зображення %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Експорт…</string>
+    <string name="pesdk_sticker_button_add">Додати</string>
+    <string name="pesdk_sticker_button_color">Колір</string>
+    <string name="pesdk_sticker_button_delete">Видалити</string>
+    <string name="pesdk_sticker_button_bringToFront">На передній план</string>
+    <string name="pesdk_sticker_button_straighten">Вирівняти</string>
+    <string name="pesdk_sticker_button_opacity">Прозорість</string>
+    <string name="pesdk_sticker_button_contrast">Контрастність</string>
+    <string name="pesdk_sticker_button_saturation">Насиченість</string>
+    <string name="pesdk_sticker_button_brightness">Яскравість</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Звичайний</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Екран</string>
+    <string name="pesdk_overlay_asset_none">Нічого</string>
+    <string name="pesdk_overlay_asset_mosaic">Мозаїка</string>
     <string name="pesdk_common_button_flipH">Переверніть H</string>
     <string name="pesdk_common_button_flipV">Переверніть V</string>
     <string name="pesdk_common_button_undo">Відмінити</string>
@@ -247,6 +258,7 @@
     <string name="pesdk_common_title_greenColor">Зелений</string>
     <string name="pesdk_common_title_aquamarinColor">Аквамарин</string>
     <string name="pesdk_common_title_pipettableColor">Підібрати колір</string>
+    <string name="vesdk_video_trim_title_name">Обрізати</string>
     <string name="faq_1_title">Як зробити Simple Gallery галереєю за-замовчуванням?</string>
     <string name="faq_1_text">Спочатку необхідно знайти поточну галерею за-замовчуванням в розділі \"Додатки\" налаштувань вашого пристрою. Знайдіть і натисніть на кнопку \"Використовувати за-замовчуванням\" абощо, потім оберіть \"Очистити замовчування\".
         Наступного разу коли ви намагатиметеся відкрити зображення або відео, ви побачите вікно з вибором додатків для цього. Оберіть Simple Gallery та зробіть його додатком за-замовчуванням.</string>

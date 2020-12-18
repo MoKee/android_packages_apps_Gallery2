@@ -20,6 +20,12 @@
     <string name="pesdk_brush_button_color">رنگ</string>
     <string name="pesdk_brush_button_size">سائز</string>
     <string name="pesdk_editor_accept">قبول کریں</string>
+    <string name="pesdk_sticker_button_color">رنگ</string>
+    <string name="pesdk_sticker_button_contrast">تضاد</string>
+    <string name="pesdk_sticker_button_saturation">سیچوریشن</string>
+    <string name="pesdk_sticker_button_brightness">روشنی</string>
+    <string name="pesdk_overlay_button_blendModeNormal">عام </string>
+    <string name="pesdk_overlay_asset_none">کوئی نہیں</string>
     <string name="pesdk_common_button_undo">کالعدم کریں</string>
     <string name="pesdk_common_button_redo">دوبارہ کریں</string>
     <string name="pesdk_common_title_blueColor">نیلا</string>

@@ -33,9 +33,16 @@
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">ඔව්</string>
     <string name="pesdk_editor_accept">පිළිගන්න</string>
     <string name="pesdk_editor_save">සුරකින්න</string>
+    <string name="pesdk_sticker_button_color">වර්ණය</string>
+    <string name="pesdk_sticker_button_delete">මකන්න</string>
+    <string name="pesdk_sticker_button_contrast">ප්‍රභේදනය</string>
+    <string name="pesdk_sticker_button_saturation">සන්තෘප්ත</string>
+    <string name="pesdk_sticker_button_brightness">දීප්තිමත් බව</string>
+    <string name="pesdk_overlay_asset_none">කිසිවක් නැත</string>
     <string name="pesdk_common_button_undo">අස් කරන්න</string>
     <string name="pesdk_common_button_redo">නැවත කරන්න</string>
     <string name="pesdk_common_title_blueColor">නිල්</string>
     <string name="pesdk_common_title_redColor">රතු</string>
     <string name="pesdk_common_title_greenColor">කොළ</string>
+    <string name="vesdk_video_trim_title_name">අහුකොන් කපන්න</string>
 </resources>

@@ -67,7 +67,7 @@
     <string name="image_editing_failed">Modifica immagine fallita</string>
     <string name="file_edited_successfully">File modificato correttamente</string>
     <string name="edit_image_with">Modifica immagine con:</string>
-    <string name="no_editor_found">Editor immagini non trovato</string>
+    <string name="no_image_editor_found">Editor immagini non trovato</string>
     <string name="unknown_file_location">Posizione file sconosciuta</string>
     <string name="error_saving_file">Impossibile sovrascrivere il file originale</string>
     <string name="rotate_left">Ruota a sinistra</string>
@@ -215,14 +215,25 @@
     <string name="pesdk_brush_title_brushColor">Colore pennello</string>
     <string name="pesdk_editor_title_name">Modifica</string>
     <string name="pesdk_editor_title_closeEditorAlert">Chiudere l\'editor?</string>
-    <string name="pesdk_editor_text_closeEditorAlert">Vuoi davvero scartare questa immagine?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Si</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">No</string>
     <string name="pesdk_editor_cancel">Annulla</string>
     <string name="pesdk_editor_accept">Accetta</string>
     <string name="pesdk_editor_save">Salva</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">Esportazione dell\'immagine…</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">Esportazione dell\'immagine %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Esportazione…</string>
+    <string name="pesdk_sticker_button_add">Aggiungi</string>
+    <string name="pesdk_sticker_button_color">Colore</string>
+    <string name="pesdk_sticker_button_delete">Elimina</string>
+    <string name="pesdk_sticker_button_bringToFront">In primo piano</string>
+    <string name="pesdk_sticker_button_straighten">Raddrizza</string>
+    <string name="pesdk_sticker_button_opacity">Opacità</string>
+    <string name="pesdk_sticker_button_contrast">Contrasto</string>
+    <string name="pesdk_sticker_button_saturation">Saturazione</string>
+    <string name="pesdk_sticker_button_brightness">Luminosità</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normale</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Display</string>
+    <string name="pesdk_overlay_asset_none">Nessuno</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaico</string>
     <string name="pesdk_common_button_flipH">Capovolgi orizzontalmente</string>
     <string name="pesdk_common_button_flipV">Capovolgi verticalmente</string>
     <string name="pesdk_common_button_undo">Annulla</string>
@@ -245,6 +256,7 @@
     <string name="pesdk_common_title_greenColor">Verde</string>
     <string name="pesdk_common_title_aquamarinColor">Acquamarina</string>
     <string name="pesdk_common_title_pipettableColor">Colore Pipettabile</string>
+    <string name="vesdk_video_trim_title_name">Ritaglia</string>
     <string name="faq_1_title">Come posso impostare Simple Gallery come galleria predefinita del dispositivo?</string>
     <string name="faq_1_text">Prima devi trovare l\'attuale galleria predefinita nella sezione App delle impostazioni di sistema, cerca un pulsante che dice qualcosa come \"App predefinite\", cliccalo, poi seleziona \"Ripristina predefiniti\".
         La prossima volta che proverai ad aprire un\'immagine o video dovresti vedere un selettore di app, dove puoi scegliere Simple Gallery e renderla l\'app predefinita.</string>

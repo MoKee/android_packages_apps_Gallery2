@@ -20,6 +20,11 @@
     <string name="pesdk_brush_button_color">Түс</string>
     <string name="pesdk_brush_button_size">Өлчөмү</string>
     <string name="pesdk_editor_accept">Кабыл алуу</string>
+    <string name="pesdk_sticker_button_color">Түс</string>
+    <string name="pesdk_sticker_button_contrast">Контраст</string>
+    <string name="pesdk_sticker_button_saturation">Коюлтуу</string>
+    <string name="pesdk_sticker_button_brightness">Жарыктыгы</string>
+    <string name="pesdk_overlay_asset_none">Эч нерсе жок</string>
     <string name="pesdk_common_button_undo">Кайтаруу</string>
     <string name="pesdk_common_button_redo">Кайталоо</string>
     <string name="pesdk_common_title_blueColor">Көк</string>

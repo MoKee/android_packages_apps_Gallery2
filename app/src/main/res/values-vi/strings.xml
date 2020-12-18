@@ -69,7 +69,7 @@
     <string name="image_editing_cancelled">Chỉnh sửa hình ảnh đã hủy</string>
     <string name="file_edited_successfully">Tập tin được chỉnh sửa thành công</string>
     <string name="edit_image_with">Chỉnh sửa hình ảnh với:</string>
-    <string name="no_editor_found">Không tìm thấy trình biên tập ảnh</string>
+    <string name="no_image_editor_found">Không tìm thấy trình biên tập ảnh</string>
     <string name="unknown_file_location">Không xác định vị trí tệp</string>
     <string name="error_saving_file">Không thể ghi đè lên các tập tin nguồn</string>
     <string name="rotate_left">Xoay trái</string>
@@ -218,14 +218,25 @@
     <string name="pesdk_brush_title_brushColor">Màu cọ</string>
     <string name="pesdk_editor_title_name">Trình biên tập</string>
     <string name="pesdk_editor_title_closeEditorAlert">Đóng biên tập?</string>
-    <string name="pesdk_editor_text_closeEditorAlert">Bạn có thực sự muốn xóa hình ảnh này?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Có</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Không</string>
     <string name="pesdk_editor_cancel">Hủy</string>
     <string name="pesdk_editor_accept">Chấp nhận</string>
     <string name="pesdk_editor_save">Lưu</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">Đang xuất hình ảnh...</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">Đang xuất hình ảnh %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Đang xuất...</string>
+    <string name="pesdk_sticker_button_add">Thêm</string>
+    <string name="pesdk_sticker_button_color">Màu</string>
+    <string name="pesdk_sticker_button_delete">Xóa</string>
+    <string name="pesdk_sticker_button_bringToFront">Lên trước</string>
+    <string name="pesdk_sticker_button_straighten">Làm thẳng</string>
+    <string name="pesdk_sticker_button_opacity">Độ mờ</string>
+    <string name="pesdk_sticker_button_contrast">Độ tương phản</string>
+    <string name="pesdk_sticker_button_saturation">Độ bão hoà</string>
+    <string name="pesdk_sticker_button_brightness">Độ sáng</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Bình thường</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Màn hình</string>
+    <string name="pesdk_overlay_asset_none">Không có</string>
+    <string name="pesdk_overlay_asset_mosaic">Khảm</string>
     <string name="pesdk_common_button_flipH">Lật H</string>
     <string name="pesdk_common_button_flipV">Lật V</string>
     <string name="pesdk_common_button_undo">Hoàn tác</string>
@@ -248,6 +259,7 @@
     <string name="pesdk_common_title_greenColor">Lục</string>
     <string name="pesdk_common_title_aquamarinColor">Aquamarin</string>
     <string name="pesdk_common_title_pipettableColor">Màu sắc dễ uốn</string>
+    <string name="vesdk_video_trim_title_name">Cắt ngắn</string>
     <string name="faq_1_title">How can I make Simple Gallery the default device gallery?</string>
     <string name="faq_1_text">First you have to find the currently default gallery in the Apps section of your device settings, look for a button that says something like \"Open by default\", click on it, then select \"Clear defaults\".
         The next time you will try opening an image or video you should see an app picker, where you can select Simple Gallery and make it the default app.</string>

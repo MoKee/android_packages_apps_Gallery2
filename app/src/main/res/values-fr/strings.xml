@@ -69,7 +69,7 @@
     <string name="image_editing_cancelled">Édition d\'image annulée</string>
     <string name="file_edited_successfully">Fichier édité avec succès</string>
     <string name="edit_image_with">Modifier l\'image avec :</string>
-    <string name="no_editor_found">Aucun éditeur d\'image trouvé</string>
+    <string name="no_image_editor_found">Aucun éditeur d\'image trouvé</string>
     <string name="unknown_file_location">Emplacement du fichier inconnu</string>
     <string name="error_saving_file">Impossible de remplacer le fichier source</string>
     <string name="rotate_left">Pivoter à gauche</string>
@@ -217,14 +217,25 @@
     <string name="pesdk_brush_title_brushColor">Couleur du pinceau</string>
     <string name="pesdk_editor_title_name">Éditeur</string>
     <string name="pesdk_editor_title_closeEditorAlert">Fermer l’éditeur ?</string>
-    <string name="pesdk_editor_text_closeEditorAlert">Souhaitez-vous réellement supprimer l\'image ?</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">Oui</string>
     <string name="pesdk_editor_button_closeEditorAlertCancelation">Non</string>
     <string name="pesdk_editor_cancel">Annuler</string>
     <string name="pesdk_editor_accept">Accepter</string>
     <string name="pesdk_editor_save">Enregistrer</string>
-    <string name="pesdk_editor_text_exportProgressUnknown">Exportation de l\'image…</string>
-    <string name="pesdk_editor_text_exportProgress" formatted="false">Exportation de l\'image %s.</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Exporter…</string>
+    <string name="pesdk_sticker_button_add">Ajouter</string>
+    <string name="pesdk_sticker_button_color">Couleur</string>
+    <string name="pesdk_sticker_button_delete">Supprimer</string>
+    <string name="pesdk_sticker_button_bringToFront">Amener au premier plan</string>
+    <string name="pesdk_sticker_button_straighten">Redresser</string>
+    <string name="pesdk_sticker_button_opacity">Opacité</string>
+    <string name="pesdk_sticker_button_contrast">Contraste</string>
+    <string name="pesdk_sticker_button_saturation">Saturation</string>
+    <string name="pesdk_sticker_button_brightness">Luminosité</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Standard</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Écran</string>
+    <string name="pesdk_overlay_asset_none">Aucun</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaïque</string>
     <string name="pesdk_common_button_flipH">Retourner Horizontalement</string>
     <string name="pesdk_common_button_flipV">Retourner Verticalement</string>
     <string name="pesdk_common_button_undo">Annuler</string>
@@ -247,6 +258,7 @@
     <string name="pesdk_common_title_greenColor">Vert</string>
     <string name="pesdk_common_title_aquamarinColor">Aigue-marine</string>
     <string name="pesdk_common_title_pipettableColor">Couleur pipettable</string>
+    <string name="vesdk_video_trim_title_name">Couper</string>
     <string name="faq_1_title">Comment faire de Simple Gallery ma galerie par défaut ?</string>
     <string name="faq_1_text">Il faut dans un premier temps, trouver l\'application \"galerie\" par défaut dans la section \"Applications\" des paramètres de l\'appareil, puis appuyer sur \"Ouvrir par défaut\", et enfin sélectionner \"Réinitialiser les paramètres par défaut\". 		La prochaine fois que vous ouvrirez une image ou une vidéo, il vous sera proposé de choisir une application, choisissez \"Simple Gallery\" puis \"Toujours\".</string>
     <string name="faq_2_title">J\'ai verrouillé l\'application avec un mot de passe et je ne m\'en rappelle plus. Que faire ?</string>

@@ -32,9 +32,19 @@
     <string name="pesdk_brush_button_delete">ئۆچۈر</string>
     <string name="pesdk_editor_button_closeEditorAlertConfirmation">ھەئە</string>
     <string name="pesdk_editor_save">ساقلاش</string>
+    <string name="pesdk_sticker_button_color">رەڭ</string>
+    <string name="pesdk_sticker_button_delete">ئۆچۈر</string>
+    <string name="pesdk_sticker_button_contrast">ئاق-قارىلىقى</string>
+    <string name="pesdk_sticker_button_saturation">تويۇنۇش</string>
+    <string name="pesdk_sticker_button_brightness">يورۇقلۇق دەرىجىسى</string>
+    <string name="pesdk_overlay_button_blendModeNormal">نورمال</string>
+    <string name="pesdk_overlay_button_blendModeScreen">ئېكران</string>
+    <string name="pesdk_overlay_asset_none">يوق</string>
+    <string name="pesdk_overlay_asset_mosaic">نەققاشلىق</string>
     <string name="pesdk_common_button_undo">يېنىۋال</string>
     <string name="pesdk_common_button_redo">قايتىلا</string>
     <string name="pesdk_common_title_blueColor">كۆك</string>
     <string name="pesdk_common_title_redColor">قىزىل</string>
     <string name="pesdk_common_title_greenColor">يېشىل</string>
+    <string name="vesdk_video_trim_title_name">كېسەش</string>
 </resources>

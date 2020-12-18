@@ -61,7 +61,7 @@
     <string name="invalid_image_path">Ugyldig sti til billede</string>
     <string name="image_editing_failed">Redigering af billede mislykkedes</string>
     <string name="edit_image_with">Rediger billede med:</string>
-    <string name="no_editor_found">Der blev ikke fundet en editor til billedbehandling</string>
+    <string name="no_image_editor_found">Der blev ikke fundet en editor til billedbehandling</string>
     <string name="unknown_file_location">Ukendt filplacering</string>
     <string name="error_saving_file">Kunne ikke overskrive kildefilen</string>
     <string name="rotate_left">Rotér mod venstre</string>
@@ -165,12 +165,25 @@
     <string name="pesdk_editor_cancel">Annuller</string>
     <string name="pesdk_editor_accept">Besvar</string>
     <string name="pesdk_editor_save">Gem</string>
+    <string name="pesdk_editor_text_exportProgressUnknown">Eksporterer…</string>
+    <string name="pesdk_sticker_button_add">Tilføj</string>
+    <string name="pesdk_sticker_button_color">Farve</string>
+    <string name="pesdk_sticker_button_delete">Slet</string>
+    <string name="pesdk_sticker_button_opacity">Gennemsigtighed</string>
+    <string name="pesdk_sticker_button_contrast">Kontrast</string>
+    <string name="pesdk_sticker_button_saturation">Farvemætning</string>
+    <string name="pesdk_sticker_button_brightness">Lysstyrke</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Skærm</string>
+    <string name="pesdk_overlay_asset_none">Ingen</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaik</string>
     <string name="pesdk_common_button_undo">Fortryd</string>
     <string name="pesdk_common_button_redo">Annuller fortryd</string>
     <string name="pesdk_common_title_blackColor">Sort</string>
     <string name="pesdk_common_title_blueColor">Blå</string>
     <string name="pesdk_common_title_redColor">Rød</string>
     <string name="pesdk_common_title_greenColor">Grøn</string>
+    <string name="vesdk_video_trim_title_name">Beskær</string>
     <string name="faq_1_title">How can I make Simple Gallery the default device gallery?</string>
     <string name="faq_1_text">First you have to find the currently default gallery in the Apps section of your device settings, look for a button that says something like \"Open by default\", click on it, then select \"Clear defaults\".
         The next time you will try opening an image or video you should see an app picker, where you can select Simple Gallery and make it the default app.</string>

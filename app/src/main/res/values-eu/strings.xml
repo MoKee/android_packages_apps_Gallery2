@@ -39,10 +39,21 @@
     <string name="pesdk_editor_cancel">Utzi</string>
     <string name="pesdk_editor_accept">Onartu</string>
     <string name="pesdk_editor_save">Gorde</string>
+    <string name="pesdk_sticker_button_add">Gehitu</string>
+    <string name="pesdk_sticker_button_color">Kolorea</string>
+    <string name="pesdk_sticker_button_delete">Ezabatu</string>
+    <string name="pesdk_sticker_button_contrast">Kontrastea</string>
+    <string name="pesdk_sticker_button_saturation">Saturazioa</string>
+    <string name="pesdk_sticker_button_brightness">Distira</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Arrunta</string>
+    <string name="pesdk_overlay_button_blendModeScreen">Pantaila</string>
+    <string name="pesdk_overlay_asset_none">Bat ere ez</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaikoa</string>
     <string name="pesdk_common_button_undo">Desegin</string>
     <string name="pesdk_common_button_redo">Berregin</string>
     <string name="pesdk_common_title_grayColor">Grisa</string>
     <string name="pesdk_common_title_blueColor">Urdina</string>
     <string name="pesdk_common_title_redColor">Gorria</string>
     <string name="pesdk_common_title_greenColor">Berdea</string>
+    <string name="vesdk_video_trim_title_name">Ebaki</string>
 </resources>
