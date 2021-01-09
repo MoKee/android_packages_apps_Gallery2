@@ -283,9 +283,9 @@
     <string name="pesdk_common_title_blackColor">AMOLED</string>
     <string name="pesdk_common_title_lightBlueColor">Xanh nhạt</string>
     <string name="pesdk_common_title_blueColor">Lam</string>
-    <string name="pesdk_common_title_purpleColor">Màu tím</string>
+    <string name="pesdk_common_title_purpleColor">Tím</string>
     <string name="pesdk_common_title_orchidColor">Tím phong lan</string>
-    <string name="pesdk_common_title_pinkColor">Màu hồng</string>
+    <string name="pesdk_common_title_pinkColor">Hồng</string>
     <string name="pesdk_common_title_redColor">Đỏ</string>
     <string name="pesdk_common_title_orangeColor">Cam</string>
     <string name="pesdk_common_title_goldColor">Vàng</string>
