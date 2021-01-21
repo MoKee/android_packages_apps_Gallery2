@@ -1,6 +1,18 @@
 Changelog
 ==========
 
+Version 6.18.3 *(2021-01-14)*
+----------------------------
+
+ * Speed up fullscreen medium loading a bit too
+
+Version 6.18.2 *(2021-01-14)*
+----------------------------
+
+ * Improve the performance at scrolling media thumbnails
+ * Speed up cached folder fetching
+ * Some stability and translation improvements
+
 Version 6.18.1 *(2021-01-03)*
 ----------------------------
 
