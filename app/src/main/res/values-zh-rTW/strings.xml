@@ -30,6 +30,8 @@
     <string name="share_resized">分享更改版本</string>
     <string name="upgraded_from_free">嘿，\n \n似乎你從舊的免費應用程序升級。 您現在可以卸載舊版本，該版本在應用程序設置的頂部有一個“升級到專業版”按鈕。\n \n您只會刪除回收站項目，未標記喜愛的項目，您還必須重置您的應用程序設置。\n\nThanks！</string>
     <string name="switch_to_file_search">切換到所有可見資料夾的檔案搜尋</string>
+    <string name="set_as_default_folder">設為預設資料夾</string>
+    <string name="unset_as_default_folder">取消預設資料夾</string>
     <string name="filter_media">篩選媒體檔案</string>
     <string name="images">圖片</string>
     <string name="videos">影片</string>
@@ -65,11 +67,18 @@
     <string name="editor">編輯器</string>
     <string name="rotate">旋轉</string>
     <string name="invalid_image_path">無效的圖片路徑</string>
+    <string name="invalid_video_path">無效的影片路徑</string>
     <string name="image_editing_failed">圖片編輯失敗</string>
+    <string name="video_editing_failed">影片編輯失敗</string>
     <string name="image_editing_cancelled">圖片編輯取消</string>
+    <string name="video_editing_cancelled">影片編輯取消</string>
     <string name="file_edited_successfully">成功編輯檔案</string>
+    <string name="image_edited_successfully">圖片編輯成功</string>
+    <string name="video_edited_successfully">影片編輯成功</string>
     <string name="edit_image_with">編輯圖片：</string>
+    <string name="edit_video_with">編輯影片使用：</string>
     <string name="no_image_editor_found">找不到圖片編輯器</string>
+    <string name="no_video_editor_found">沒有找到影片編輯器</string>
     <string name="unknown_file_location">未知的檔案位置</string>
     <string name="error_saving_file">無法覆蓋原始檔案</string>
     <string name="rotate_left">向左轉</string>
@@ -161,6 +170,7 @@
     <string name="avoid_showing_invalid_files">避免顯示無效檔案</string>
     <string name="show_image_file_types">顯示影像檔案類型</string>
     <string name="allow_zooming_videos">允許雙擊縮放影片</string>
+    <string name="folder_thumbnail_style">資料夾快取縮圖的風格</string>
     <string name="square">正方形</string>
     <string name="thumbnails">縮圖</string>
     <string name="fullscreen_media">全螢幕媒體檔案</string>
