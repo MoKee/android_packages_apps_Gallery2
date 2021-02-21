@@ -272,7 +272,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             }
         } else {
             try {
-                mPath = intent.getStringExtra(PATH)
+                mPath = intent.getStringExtra(PATH) ?: ""
                 mShowAll = config.showAll
             } catch (e: Exception) {
                 showErrorToast(e)
@@ -1163,10 +1163,16 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     }
 
     private fun deleteDirectoryIfEmpty() {
-        val fileDirItem = FileDirItem(mDirectory, mDirectory.getFilenameFromPath(), File(mDirectory).isDirectory)
-        if (config.deleteEmptyFolders && !fileDirItem.isDownloadsFolder() && fileDirItem.isDirectory && fileDirItem.getProperFileCount(this, true) == 0) {
-            tryDeleteFileDirItem(fileDirItem, true, true)
-            scanPathRecursively(mDirectory)
+        if (config.deleteEmptyFolders) {
+            val fileDirItem = FileDirItem(mDirectory, mDirectory.getFilenameFromPath(), File(mDirectory).isDirectory)
+            if (!fileDirItem.isDownloadsFolder() && fileDirItem.isDirectory) {
+                ensureBackgroundThread {
+                    if (fileDirItem.getProperFileCount(this, true) == 0) {
+                        tryDeleteFileDirItem(fileDirItem, true, true)
+                        scanPathRecursively(mDirectory)
+                    }
+                }
+            }
         }
     }
 
