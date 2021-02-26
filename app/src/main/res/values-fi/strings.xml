@@ -87,7 +87,6 @@
     <string name="by_last_modified">Viimeksi muokattu</string>
     <string name="by_date_taken">Kuvauspäivä</string>
     <string name="autoplay_videos">Toista videot automaattisesti</string>
-    <string name="toggle_filename">Tiedostonimien näkyvyys</string>
     <string name="loop_videos">Jatkuvat videot</string>
     <string name="animate_gifs">Animoi GIFit pienoiskuvissa</string>
     <string name="max_brightness">Täysi kirkkaus mediaa katsoessa</string>

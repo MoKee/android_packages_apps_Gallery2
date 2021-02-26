@@ -131,7 +131,6 @@
     <string name="show_folder_name">Pokaż nazwę folderu</string>
     <string name="autoplay_videos">Odtwarzaj filmy automatycznie</string>
     <string name="remember_last_video_position">Pamiętaj ostatni moment odtwarzania filmów</string>
-    <string name="toggle_filename">Pokazuj / ukrywaj nazwy plików</string>
     <string name="loop_videos">Zapętlaj odtwarzanie filmów</string>
     <string name="animate_gifs">Animowane miniatury GIFów</string>
     <string name="max_brightness">Maksymalna jasność podczas wyświetlania multimediów</string>
@@ -171,6 +170,8 @@
     <string name="show_image_file_types">Pokaż typy plików obrazu</string>
     <string name="allow_zooming_videos">Zezwalaj na powiększanie filmów podwójnym stuknięciem</string>
     <string name="folder_thumbnail_style">Styl miniatury folderu</string>
+    <string name="file_thumbnail_style">Styl miniatury pliku</string>
+    <string name="thumbnail_spacing">Odstępy między miniaturami</string>
     <string name="show_file_count_line">Pokaż licznik plików w osobnej linii</string>
     <string name="show_file_count_brackets">Pokaż liczbę plików w nawiasach</string>
     <string name="show_file_count_none">Nie pokazuj liczby plików</string>
@@ -320,7 +321,6 @@
     <string name="faq_13_title">Na obrazach widzę wyraźne zmiany w kolorach. Jak mogę to naprawić?</string>
     <string name="faq_13_text">Obecne rozwiązanie służące wyświetlaniu obrazów działa jak powinno w większości w przypadków. Jeśli jednak tak nie jest, pomocna może okazać się opcja \'Pokazuj obrazy w najwyższej możliwej jakości\' w sekcji \'Duże powiększanie obrazów\'.</string>
     <string name="faq_14_title">Mam ukryte pliki i / lub foldery. Jak mogę zobaczyć?</string>
-    <string name="faq_14_text">Możesz to zrobić albo wybierając opcję \'Tymczasowo pokaż ukryte multimedia\' w menu na ekranie głównym, lub \'Pokazuj ukryte elementy\' w ustawieniach. Foldery są ukrywane poprzez dodanie do nich pustego, ukrytego pliku \'.nomedia\'. Usunąć go możesz dowolnym menedżerem plików.</string>
     <string name="faq_15_title">Dlaczego aplikacja zajmuje tyle miejsca?</string>
     <string name="faq_15_text">Pamięć podręczna aplikacji może zająć do 250 MB, zapewnia szybsze ładowanie obrazu. Jeśli aplikacja zajmuje jeszcze więcej miejsca, jest to najprawdopodobniej spowodowane posiadaniem przedmiotów w koszu. Te pliki liczą się do rozmiaru aplikacji. Możesz wyczyścić kosz z ustawień aplikacji, lub otwierając go i usuwając wszystkie pliki. Każdy plik w koszu jest usuwany automatycznie po 30 dniach.</string>
     <string name="app_title">Prosta galeria Pro - Menedżer zdjęć &amp; Edytor</string>

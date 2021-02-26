@@ -131,7 +131,6 @@
     <string name="show_folder_name">Show folder name</string>
     <string name="autoplay_videos">Play videos automatically</string>
     <string name="remember_last_video_position">Remember last video playback position</string>
-    <string name="toggle_filename">Toggle filename visibility</string>
     <string name="loop_videos">Loop videos</string>
     <string name="animate_gifs">Animate GIFs at thumbnails</string>
     <string name="max_brightness">Max brightness when viewing fullscreen media</string>
@@ -322,7 +321,6 @@
     <string name="faq_13_title">I see some color banding on the images. How can I improve the quality?</string>
     <string name="faq_13_text">The current solution for displaying images works fine in the vast majority of cases, but if you want even better image quality, you can enable the \"Show images in the highest possible quality\" at the app settings, in the \"Deep zoomable images\" section.</string>
     <string name="faq_14_title">Tôi đã ẩn một tập tin / thư mục. Làm thế nào tôi có thể bỏ ẩn nó?</string>
-    <string name="faq_14_text">Bạn có thể nhấn mục menu \"Tạm thời hiển thị các mục bị ẩn\" ở màn hình chính hoặc chuyển đổi \"Hiển thị các mục bị ẩn\" trong cài đặt ứng dụng để xem mục bị ẩn. Nếu bạn muốn bỏ ẩn nó, chỉ cần nhấn và giữ \"Bỏ ẩn\". Các thư mục được ẩn bằng cách thêm tệp \".nomedia\" ẩn vào chúng, bạn cũng có thể xóa tệp với bất kỳ trình quản lý tệp nào.</string>
     <string name="faq_15_title">Tại sao ứng dụng chiếm quá nhiều không gian?</string>
     <string name="faq_15_text">Bộ nhớ cache ứng dụng có thể mất tới 250MB, nó đảm bảo tải hình ảnh nhanh hơn. Nếu ứng dụng chiếm nhiều dung lượng hơn, rất có thể là do bạn có các vật phẩm trong Thùng rác. Những tập tin được tính vào kích thước ứng dụng. Bạn có thể xóa thùng rác bằng cách mở nó và xóa tất cả các tệp hoặc từ cài đặt ứng dụng.  Mọi tệp trong Thùng sẽ tự động bị xóa sau 30 ngày.</string>
     <string name="app_title">Simple Gallery Pro - Trình quản lý &amp; Chỉnh sửa ảnh</string>

@@ -131,7 +131,6 @@
     <string name="show_folder_name">Afficher le nom du dossier</string>
     <string name="autoplay_videos">Lecture automatique des vidéos</string>
     <string name="remember_last_video_position">Se rappeler de la position de lecture vidéo</string>
-    <string name="toggle_filename">Permuter la visibilité des noms de fichier</string>
     <string name="loop_videos">Lire en boucle les vidéos</string>
     <string name="animate_gifs">GIF animés sur les miniatures</string>
     <string name="max_brightness">Luminosité maximale lors de l\'affichage de media</string>
@@ -317,7 +316,6 @@
     <string name="faq_13_title">Je vois des bandes de couleurs sur les images. Comment puis-je améliorer la qualité ?</string>
     <string name="faq_13_text">La solution actuelle d\'affichage des images fonctionne bien dans la grande majorité des cas, mais si vous voulez une qualité d\'image encore meilleure, vous pouvez activer l\'option \"Afficher les images avec la plus haute qualité possible\" dans la section \"Niveau de zoom maximal des images\" des paramètres de l\'application.</string>
     <string name="faq_14_title">J\'ai masqué un fichier ou un dossier. Comment puis-je en rétablir l\'affichage ?</string>
-    <string name="faq_14_text">Vous pouvez soit appuyer sur l\'option \"Afficher les fichiers masqués\" du menu de l\'écran principal, ou appuyer sur le bouton \"Afficher les éléments masqués\" dans les paramètres de l\'application. Si vous voulez rétablir leur affichage, effectuez un appui prolongé dessus et appuyez sur le symbole \"Œil\" permettant l\'affichage. Les dossiers sont masqués en ajoutant un fichier \".nomedia\" à leur racine, vous pouvez également supprimer ce fichier avec n\’importe quel explorateur de fichiers.</string>
     <string name="faq_15_title">Pourquoi l\'application prend-elle tant d\'espace ?</string>
     <string name="faq_15_text">Le cache d\'application peut prendre jusqu\'à 250MB, il assure un chargement d\'image plus rapide. Si l\'application prend encore plus d\'espace, il est très probable que vous ayez des éléments dans la corbeille. Ces fichiers comptent sur la taille de l\'application. Vous pouvez effacer la corbeille en l\'ouvrant et en supprimant tous les fichiers, ou des paramètres de l\'application. Chaque fichier dans la corbeille est supprimé automatiquement après 30 jours.</string>
     <string name="app_title">Galerie simple Pro : Gestionnaire de photos &amp; Éditeur</string>

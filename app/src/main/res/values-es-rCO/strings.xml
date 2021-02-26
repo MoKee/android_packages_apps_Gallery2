@@ -114,7 +114,6 @@
     <string name="show_folder_name">Mostrar nombre de carpeta</string>
     <string name="autoplay_videos">Reproducir vídeos automáticamente</string>
     <string name="remember_last_video_position">Recuerde la última posición de reproducción de video</string>
-    <string name="toggle_filename">Cambiar la visibilidad del nombre de archivo</string>
     <string name="loop_videos">Reproducción continua de vídeos</string>
     <string name="animate_gifs">Animar las miniaturas de GIFs</string>
     <string name="max_brightness">Brillo máximo cuando se muestra multimedia</string>
@@ -232,6 +231,5 @@
     <string name="faq_13_title">Veo que algunas bandas de color en las imágenes. ¿Cómo puedo mejorar la calidad?</string>
     <string name="faq_13_text">La solución actual para la visualización de imágenes funciona bien en la mayoría de los casos, pero si quieres una mejor calidad de imagen, puede habilitar las \"mostrar imagenes en la mayor calidad posible\" en la configuración de la aplicación, en el \"Imagenes profundas aumentables\" sección.</string>
     <string name="faq_14_title">He escondido un archivo/carpeta. ¿Cómo lo puedo Mostrar?</string>
-    <string name="faq_14_text">Puede pulsar la opción del menú \"Mostrar temporalmente elementos ocultos\" en la pantalla principal, o activar \"Mostrar elementos ocultos\" en la configuración de la aplicación para ver el elemento oculto. Si quieres mostrarlo justo presiónelo y seleccione \"Mostrar\". Carpetas se ocultan mediante la adición de un archivo \".nomedia\" escondidas en ellos, usted puede eliminar el archivo con cualquier gestor de archivos también.</string>
     <string name="faq_15_title">¿Por qué la aplicación ocupa tanto espacio?</string>
 </resources>

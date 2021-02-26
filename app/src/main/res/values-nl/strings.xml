@@ -106,7 +106,6 @@
     <string name="show_folder_name">Mapnaam tonen</string>
     <string name="autoplay_videos">Video\'s automatisch afspelen</string>
     <string name="remember_last_video_position">Laatste positie in video\'s onthouden</string>
-    <string name="toggle_filename">Bestandsnamen tonen</string>
     <string name="loop_videos">Video\'s herhalen</string>
     <string name="animate_gifs">GIF-bestanden afspelen in overzicht</string>
     <string name="max_brightness">Maximale helderheid in volledig scherm</string>
@@ -210,5 +209,4 @@
     <string name="faq_13_title">I see some color banding on the images. How can I improve the quality?</string>
     <string name="faq_13_text">The current solution for displaying images works fine in the vast majority of cases, but if you want even better image quality, you can enable the \"Show images in the highest possible quality\" at the app settings, in the \"Deep zoomable images\" section.</string>
     <string name="faq_14_title">I have hidden a file/folder. How can I unhide it?</string>
-    <string name="faq_14_text">You can either press the \"Temporarily show hidden items\" menu item at the main screen, or toggle \"Show hidden items\" in the app settings to see the hidden item. If you want to unhide it, just long press it and select \"Unhide\". Folders are hidden by adding a hidden \".nomedia\" file into them, you can delete the file with any file manager too.</string>
 </resources>

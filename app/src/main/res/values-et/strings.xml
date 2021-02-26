@@ -131,7 +131,6 @@
     <string name="show_folder_name">Kuva kausta nimi</string>
     <string name="autoplay_videos">Videote esitamine automaatselt</string>
     <string name="remember_last_video_position">Pea meeles viimane video taasesitusasend</string>
-    <string name="toggle_filename">Lülitab sisse failinime nähtavuse</string>
     <string name="loop_videos">Tsüklilised videod</string>
     <string name="animate_gifs">GIF pisipiltide animeerimine</string>
     <string name="max_brightness">Maksimaalne täisekraani heledus meediumi vaatamisel</string>
@@ -171,6 +170,8 @@
     <string name="show_image_file_types">Kuva pildifailide tüübid</string>
     <string name="allow_zooming_videos">Luba videote suumimist neid topeltpuudutades</string>
     <string name="folder_thumbnail_style">Kausta pisipiltide stiil</string>
+    <string name="file_thumbnail_style">Faili pisipiltide stiil</string>
+    <string name="thumbnail_spacing">Pisipiltide vahe</string>
     <string name="show_file_count_line">Kuva failide arv eraldi real</string>
     <string name="show_file_count_brackets">Kuva sulgudes failide arv</string>
     <string name="show_file_count_none">Ära näita failide arvu</string>
@@ -322,7 +323,6 @@
     <string name="faq_13_title">Ma näen piltidel värvilahendust. Kuidas parandada kvaliteeti?</string>
     <string name="faq_13_text">Piltide kuvamise praegune lahendus toimib hästi enamikul juhtudel, kuid kui soovite veelgi paremat pildikvaliteeti, saate rakenduse seadetes lubada \"Näita pilte võimalikult kõrgekvaliteediliselt\" jaotises \"Suured suumitavad pildid\".</string>
     <string name="faq_14_title">Olen peitnud faili / kausta. Kuidas ma saan seda näidata?</string>
-    <string name="faq_14_text">Saate vajutada põhikuval menüüelementi \"Näita peidetud objekte ajutiselt\" või lülitada peidetud üksuse nägemiseks rakenduse seadetes \"Näita peidetud objekte\". Kui soovite seda näidata, vajuta lihtsalt pikka aega ja vali \"Peida\". Kaustad on peidetud, lisades neile peidetud \".nomedia\" faili, kustutades faili ka mõne failihalduriga.</string>
     <string name="faq_15_title">Miks rakendus võtab nii palju ruumi?</string>
     <string name="faq_15_text">Rakenduse vahemälu võib võtta kuni 250 MB, see tagab kiirema pildi laadimise. Kui rakendus võtab rohkem ruumi, on see tõenäoliselt tingitud sellest, et teil on prügikastis üksusi. Need failid lisatakse rakenduse suurusele. Saate tühjendada prügikasti, avades selle ja kustutades kõik failid või rakenduse seadetest. Iga prügikasti fail kustutatakse 30 päeva pärast automaatselt.</string>
     <string name="app_title">Simple Gallery Pro - fotohaldur &amp; toimrtaja</string>

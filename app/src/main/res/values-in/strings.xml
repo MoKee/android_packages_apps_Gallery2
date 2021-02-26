@@ -65,6 +65,7 @@
     <string name="rotate">Putar</string>
     <string name="invalid_image_path">Lokasi gambar tidak valid</string>
     <string name="image_editing_failed">Pengeditan gambar gagal</string>
+    <string name="file_edited_successfully">Video berhasil disunting</string>
     <string name="edit_image_with">Edit gambar dengan:</string>
     <string name="no_image_editor_found">Tidak ada editor gambar yang ditemukan</string>
     <string name="unknown_file_location">Lokasi file tidak diketahui</string>
@@ -119,7 +120,6 @@
     <string name="show_folder_name">Tampilkan nama folder</string>
     <string name="autoplay_videos">Putar video secara otomatis</string>
     <string name="remember_last_video_position">Ingat posisi pemutaran video terakhir</string>
-    <string name="toggle_filename">Beralih visibilitas nama file</string>
     <string name="loop_videos">Ulangi video</string>
     <string name="animate_gifs">Animasikan GIF di thumbnail</string>
     <string name="max_brightness">Kecerahan maksimal saat melihat media layar penuh</string>
@@ -240,7 +240,6 @@
     <string name="faq_13_title">Saya melihat beberapa garis warna pada gambar. Bagaimana saya dapat meningkatkan kualitas?</string>
     <string name="faq_13_text">Solusi saat ini untuk menampilkan gambar berfungsi dengan baik di sebagian besar kasus, tetapi jika Anda menginginkan kualitas gambar yang lebih baik, Anda dapat mengaktifkan \"Tampilkan gambar dengan kualitas setinggi mungkin\" di pengaturan aplikasi, di bagian \"Gambar yang dapat diperbesar\".</string>
     <string name="faq_14_title">Saya telah menyembunyikan file / folder. Bagaimana saya bisa memunculkannya?</string>
-    <string name="faq_14_text">Anda dapat menekan item menu \"Tampilkan sementara item tersembunyi\" di layar utama, atau beralih \"Tampilkan item tersembunyi\" di pengaturan aplikasi untuk melihat item yang tersembunyi. Jika Anda ingin menyembunyikannya, cukup tekan dan pilih \"Munculkan\". Folder disembunyikan dengan menambahkan file \".nomedia\" yang tersembunyi ke dalamnya, Anda juga dapat menghapus file dengan pengelola file apa pun.</string>
     <string name="faq_15_title">Mengapa aplikasi memakan banyak penyimpanan?</string>
     <string name="faq_15_text">Cache aplikasi dapat memakan waktu hingga 250MB, memastikan pemuatan gambar lebih cepat. Jika aplikasi mengambil lebih banyak ruang, kemungkinan besar disebabkan Anda memiliki item di Keranjang Sampah. File-file itu dihitung dengan ukuran aplikasi. Anda dapat menghapus Keranjang Sampah dengan membuka dan menghapus semua file, atau dari pengaturan aplikasi. Setiap file di tempat sampah dihapus secara otomatis setelah 30 hari.</string>
     <string name="app_title">Simple Gallery Pro - Photo Manager &amp; Editor</string>

@@ -107,7 +107,6 @@
     <string name="show_folder_name">Zobraziť názov priečinka</string>
     <string name="autoplay_videos">Spúšťať videá automaticky</string>
     <string name="remember_last_video_position">Zapamätať si pozíciu posledného prehraného videa</string>
-    <string name="toggle_filename">Prepnúť viditeľnosť názvov súborov</string>
     <string name="loop_videos">Automaticky reštartovať videá</string>
     <string name="animate_gifs">Animovať GIF súbory pri náhľade</string>
     <string name="max_brightness">Maximálny jas pri prezeraní médií</string>
@@ -218,5 +217,4 @@
     <string name="faq_13_title">Na obrázkoch vidno nejaké farebné pásy. Ako viem zlepšiť kvalitu obrázkov?</string>
     <string name="faq_13_text">Súčasné riešenie funguje správne v drvivej väčšine prípadov, ak ale chcete zobraziť obrázky v lepšej kvalite, môžete povoliť možnosť \"Zobraziť obrázky v najlepšej možnej kvalite\" v nastaveniach aplikácie, v sekcií \"Hlboko priblížiteľné obrázky\".</string>
     <string name="faq_14_title">Skryl som súbor/priečinok, ako ho viem odkryť?</string>
-    <string name="faq_14_text">Môžete buď použiť menu tlačidlo \"Dočasne zobraziť skryté položky\" na hlavnej obrazovke, alebo v nastaveniach aplikácie zapnúť možnosť \"Zobraziť skryté položky\", tým sa skryté položky zobrazia. Ak ich chcete odkryť, stačí ich dlho podržať a zvoliť možnosť \"Odkryť\". Priečinky sú skrývané pridaním skrytého súboru \".nomedia\", ten viete vymazať aj ľubovoľným správcom súborov.</string>
 </resources>

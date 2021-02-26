@@ -120,7 +120,6 @@
     <string name="show_folder_name">顯示資料夾名稱</string>
     <string name="autoplay_videos">自動播放影片</string>
     <string name="remember_last_video_position">記住上次影片播放位置</string>
-    <string name="toggle_filename">顯示檔案名稱</string>
     <string name="loop_videos">影片循環播放</string>
     <string name="animate_gifs">縮圖顯示 GIF 動畫</string>
     <string name="max_brightness">瀏覽時最大亮度</string>
@@ -277,7 +276,6 @@
     <string name="faq_13_title">我在圖片上看到一些彩色的條紋，我怎樣才能提高品質呢？</string>
     <string name="faq_13_text">目前用於顯示圖像的解決方案在大多數情況下都能很好地工作，但是如果你想要更好的圖像畫質，你可以在「可縮放圖像」部分的應用程式設定中啟用「顯示圖像的最高畫質」。</string>
     <string name="faq_14_title">我已經隱藏了一個檔案/資料夾。如何取消隱藏？</string>
-    <string name="faq_14_text">你可以在主螢幕上按下「臨時顯示隱藏項」選單，或者在應用程式設定中切換「顯示隱藏項」來檢視隱藏項。如果你想要隱藏它，只要長按它並選擇「隱藏」。資料夾隱藏通過新增一個隱藏的「.nomedia」來隱藏。你也可以用任何檔案管理器刪除檔案。</string>
     <string name="faq_15_title">為什麼應用程式佔用了這麼多容量？</string>
     <string name="faq_15_text">應用程式快取可以達到 250MB，它確保更快的影像載入。如果應用程式佔用了更多的空間，很可能是因為你的回收站裡有東西。這些檔案的大小取決於應用程式的大小。您可以通過打開回收站並刪除所有檔案，或從應用程式設定中清除回收站。每個檔案在 30 天后會自動刪除。</string>
     <string name="app_title">Simple Gallery Pro - 照片管理器和編輯器</string>

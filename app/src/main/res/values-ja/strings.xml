@@ -106,7 +106,6 @@
     <string name="show_folder_name">フォルダー名を表示します。</string>
     <string name="autoplay_videos">ビデオを自動再生</string>
     <string name="remember_last_video_position">最後のビデオの再生位置を記憶する</string>
-    <string name="toggle_filename">ファイル名の表示を切り替え</string>
     <string name="loop_videos">ビデオを繰り返し再生</string>
     <string name="animate_gifs">アニメーションGIFを動かす</string>
     <string name="max_brightness">再生時には明るさを最大にする</string>
@@ -207,5 +206,4 @@
     <string name="faq_13_title">画像の中に縞模様が見えます。どのように品質を向上させることができますか？</string>
     <string name="faq_13_text">画像を表示する現在の解決法は多くの場合でうまく機能しますが、画質をさらに向上させたい場合は、アプリ設定の「深くズーム可能な画像」セクションの「できるだけ高画質に画像を表示する」を有効にして下さい。</string>
     <string name="faq_14_title">隠しファイルやフォルダがありますが、表示できますか？</string>
-    <string name="faq_14_text">メイン画面で「一時的に隠しアイテムを表示」メニュー項目を押すか、アプリ設定で「隠しアイテムを表示」を切り替えて隠しアイテムを表示することができます。 それを表示したい場合は、長押しして 再表示を選択してください。 隠された .nomedia ファイルをフォルダに追加することでフォルダを隠すことができます。ファイルマネージャーでもそのファイルを削除できます。</string>
 </resources>

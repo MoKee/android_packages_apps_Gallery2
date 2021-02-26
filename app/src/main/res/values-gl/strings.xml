@@ -90,7 +90,6 @@
     <string name="by_file_type">Tipo de ficheior</string>
     <string name="by_extension">Extensión</string>
     <string name="autoplay_videos">Reproducir vídeos automticamente</string>
-    <string name="toggle_filename">Mudar a visibilidade do ficheiro</string>
     <string name="loop_videos">videos en bucle</string>
     <string name="animate_gifs">Animar os GIFs na icona</string>
     <string name="max_brightness">Brillo ao máximo cando mire medios</string>

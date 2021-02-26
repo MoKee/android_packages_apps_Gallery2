@@ -89,7 +89,6 @@
     <string name="by_date_taken">Fotografavimo data</string>
     <string name="by_extension">Papildinį</string>
     <string name="autoplay_videos">Groti vaizdo įrašus automatiškai</string>
-    <string name="toggle_filename">Perjungti bylos pavadinimo matomumą</string>
     <string name="loop_videos">Klipuoti vaizdo įrašus</string>
     <string name="animate_gifs">Animuoti GIF\'us miniatiūrose</string>
     <string name="max_brightness">Maksimalus ryškumas, kai medija peržiūrima viso ekrano rėžimu</string>
