@@ -187,7 +187,10 @@ fun BaseSimpleActivity.toggleFileVisibility(oldPath: String, hide: Boolean, call
 
     val newPath = "$path/$filename"
     renameFile(oldPath, newPath) {
-        callback?.invoke(newPath)
+        runOnUiThread {
+            callback?.invoke(newPath)
+        }
+
         ensureBackgroundThread {
             updateDBMediaPath(oldPath, newPath)
         }
