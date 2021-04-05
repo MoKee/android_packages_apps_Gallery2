@@ -48,6 +48,7 @@
     <string name="pesdk_overlay_asset_none">कोई नहीं</string>
     <string name="pesdk_common_button_undo">वापस लाएं</string>
     <string name="pesdk_common_button_redo">फिर से करें</string>
+    <string name="pesdk_common_title_transparentColor">पारदर्शी</string>
     <string name="pesdk_common_title_blackColor">काली</string>
     <string name="pesdk_common_title_blueColor">नीला</string>
     <string name="pesdk_common_title_redColor">लाल</string>

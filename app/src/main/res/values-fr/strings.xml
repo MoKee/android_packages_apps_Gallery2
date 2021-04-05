@@ -255,7 +255,7 @@
     <string name="pesdk_sticker_button_brightness">Luminosité</string>
     <string name="pesdk_sticker_category_name_custom">Mises en ligne</string>
     <string name="pesdk_overlay_title_name">Surcouche</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Standard</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeDarken">Assombrir</string>
     <string name="pesdk_overlay_button_blendModeScreen">Écran</string>
     <string name="pesdk_overlay_button_blendModeOverlay">Surcouche</string>

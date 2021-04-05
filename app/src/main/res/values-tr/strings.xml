@@ -178,6 +178,7 @@
     <string name="limit_folder_title">Uzun klasör başlıklarını 1 satırla sınırlayın</string>
     <string name="square">Kare</string>
     <string name="rounded_corners">Yuvarlak köşeler</string>
+    <string name="export_favorite_paths">Favori dosya yollarını dışa aktarın</string>
     <string name="thumbnails">Önizleme resimleri</string>
     <string name="fullscreen_media">Tam ekran medya</string>
     <string name="extended_details">Genişletilmiş ayrıntılar</string>
@@ -266,7 +267,7 @@
     <string name="pesdk_overlay_button_blendModeColorBurn">Renk yak</string>
     <string name="pesdk_overlay_button_blendModeSoftLight">Yumuşak ışık</string>
     <string name="pesdk_overlay_button_blendModeHardLight">Sert ışık</string>
-    <string name="pesdk_overlay_asset_none">Yok</string>
+    <string name="pesdk_overlay_asset_none">Hiçbiri</string>
     <string name="pesdk_overlay_asset_golden">Altın</string>
     <string name="pesdk_overlay_asset_lightleak1">Hafif 1</string>
     <string name="pesdk_overlay_asset_mosaic">Mozaik</string>
@@ -323,6 +324,7 @@
     <string name="faq_13_title">Görüntülerde renk şeritleri görüyorum. Kaliteyi nasıl geliştirebilirim?</string>
     <string name="faq_13_text">Görüntülerin görüntülenmesi için mevcut çözüm, büyük bir çoğunluğun içinde iyi çalışır, ancak daha iyi görüntü kalitesi istiyorsanız, \"Derin yakınlaştırılabilir görüntüler\" bölümünde, uygulama ayarlarında \"Resimleri mümkün olan en yüksek kalitede göster\" seçeneğini etkinleştirebilirsiniz.</string>
     <string name="faq_14_title">Bir dosya/klasör gizledim. Nasıl gösterebilirim?</string>
+    <string name="faq_14_text">Gizli öğeyi görmek için ana ekranda \"Gizli öğeleri geçici olarak göster\" menü öğesine basabilir veya uygulama ayarlarında \"Gizli öğeleri göster\" seçeneğini değiştirebilirsiniz. Gizlemek istiyorsanız, uzun basın ve \"Göster\" i seçin. Klasörler gizli bir \".nomedia\" dosyası ekleyerek gizlenir, dosyayı herhangi bir dosya yöneticisi ile de silebilirsiniz. Gizlemenin yinelemeli olarak çalıştığını unutmayın, bu nedenle bir klasörü gizlerseniz, tüm alt klasörler de gizlenir. Bu nedenle, alt klasörleri göstermek için ana klasörü göstermeniz gerekir.</string>
     <string name="faq_15_title">Bu uygulama neden bu kadar yer kaplıyor?</string>
     <string name="faq_15_text">Uygulama önbelleği 250 MB\'a kadar alabilir ve daha hızlı görüntü yükleme sağlar. Uygulama daha fazla yer kaplıyorsa, büyük olasılıkla Geri Dönüşüm Kutusu\'nda öğe bulundurmanızdan kaynaklanmaktadır. Bu dosyalar uygulama boyutuna göre sayılır. Geri Dönüşüm Kutusu\'nu açarak tüm dosyaları silebilirsiniz ya da uygulama ayarlarından temizleyebilirsiniz. Depodaki her dosya 30 gün sonra otomatik olarak silinir.</string>
     <string name="app_title">Simple Gallery Pro: Fotoğraf Yöneticisi ve &amp; Düzenleyicisi</string>

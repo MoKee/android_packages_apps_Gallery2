@@ -170,12 +170,15 @@
     <string name="show_image_file_types">Hiển thị các loại tệp hình ảnh</string>
     <string name="allow_zooming_videos">Cho phép phóng to video bằng cách nhấn đúp</string>
     <string name="folder_thumbnail_style">Kiểu hình thu nhỏ của thư mục</string>
+    <string name="file_thumbnail_style">Kiểu hình thu nhỏ của tệp</string>
+    <string name="thumbnail_spacing">Khoảng cách giữa hình thu nhỏ</string>
     <string name="show_file_count_line">Hiển thị số lượng tệp trên một dòng riêng biệt</string>
     <string name="show_file_count_brackets">Hiển thị số lượng tệp trong ngoặc</string>
     <string name="show_file_count_none">Không hiển thị số lượng tệp</string>
     <string name="limit_folder_title">Giới hạn tiêu đề thư mục trong 1 dòng</string>
     <string name="square">Vuông</string>
     <string name="rounded_corners">Góc tròn</string>
+    <string name="export_favorite_paths">Xuất đường dẫn tệp yêu thích</string>
     <string name="thumbnails">Thumbnails</string>
     <string name="fullscreen_media">Chế độ toàn màn hình</string>
     <string name="extended_details">Extended details</string>
@@ -245,7 +248,7 @@
     <string name="pesdk_sticker_title_options">Tùy chọn hình dán</string>
     <string name="pesdk_sticker_button_add">Thêm</string>
     <string name="pesdk_sticker_button_color">Màu</string>
-    <string name="pesdk_sticker_button_delete">Xóa</string>
+    <string name="pesdk_sticker_button_delete">Xóa</string>
     <string name="pesdk_sticker_button_bringToFront">Lên trước</string>
     <string name="pesdk_sticker_button_straighten">Làm thẳng</string>
     <string name="pesdk_sticker_button_replace">Thay thế</string>
@@ -264,7 +267,7 @@
     <string name="pesdk_overlay_button_blendModeColorBurn">Ghi màu</string>
     <string name="pesdk_overlay_button_blendModeSoftLight">Ánh sáng nhẹ</string>
     <string name="pesdk_overlay_button_blendModeHardLight">Ánh sáng mạnh</string>
-    <string name="pesdk_overlay_asset_none">Không có</string>
+    <string name="pesdk_overlay_asset_none">Không</string>
     <string name="pesdk_overlay_asset_golden">Vàng</string>
     <string name="pesdk_overlay_asset_lightleak1">Loé sáng 1</string>
     <string name="pesdk_overlay_asset_mosaic">Khảm</string>
@@ -321,6 +324,7 @@
     <string name="faq_13_title">I see some color banding on the images. How can I improve the quality?</string>
     <string name="faq_13_text">The current solution for displaying images works fine in the vast majority of cases, but if you want even better image quality, you can enable the \"Show images in the highest possible quality\" at the app settings, in the \"Deep zoomable images\" section.</string>
     <string name="faq_14_title">Tôi đã ẩn một tập tin / thư mục. Làm thế nào tôi có thể bỏ ẩn nó?</string>
+    <string name="faq_14_text">Bạn có thể nhấn vào mục menu \"Tạm thời hiển thị các mục bị ẩn\" ở màn hình chính hoặc chuyển đổi \"Hiển thị các mục bị ẩn\" trong cài đặt ứng dụng để xem mục bị ẩn. Nếu bạn muốn hiện nó, chỉ cần nhấn và giữ nó và chọn \"Bỏ ẩn\". Các thư mục được ẩn bằng cách thêm tệp \".nomedia\" ẩn vào chúng, bạn cũng có thể xóa tệp bằng bất kỳ trình quản lý tệp nào. Lưu ý rằng mặc dù ẩn hoạt động đệ quy, vì vậy nếu bạn ẩn một thư mục, tất cả các thư mục con cũng sẽ bị ẩn. Vì vậy, để bỏ ẩn các thư mục con, bạn phải bỏ ẩn thư mục mẹ.</string>
     <string name="faq_15_title">Tại sao ứng dụng chiếm quá nhiều không gian?</string>
     <string name="faq_15_text">Bộ nhớ cache ứng dụng có thể mất tới 250MB, nó đảm bảo tải hình ảnh nhanh hơn. Nếu ứng dụng chiếm nhiều dung lượng hơn, rất có thể là do bạn có các vật phẩm trong Thùng rác. Những tập tin được tính vào kích thước ứng dụng. Bạn có thể xóa thùng rác bằng cách mở nó và xóa tất cả các tệp hoặc từ cài đặt ứng dụng.  Mọi tệp trong Thùng sẽ tự động bị xóa sau 30 ngày.</string>
     <string name="app_title">Simple Gallery Pro - Trình quản lý &amp; Chỉnh sửa ảnh</string>

@@ -178,6 +178,7 @@
     <string name="limit_folder_title">A mappanév hossza 1 sorra korlátozva</string>
     <string name="square">Négyzet</string>
     <string name="rounded_corners">Lekerekített sarkok</string>
+    <string name="export_favorite_paths">Kedvenc fájlútvonalak exportálása</string>
     <string name="thumbnails">Miniatűrök</string>
     <string name="fullscreen_media">Teljes képernyős média</string>
     <string name="extended_details">Bővített részletek</string>
@@ -245,7 +246,7 @@
     <string name="pesdk_sticker_title_name">Matrica</string>
     <string name="pesdk_sticker_title_color">Matricaszín</string>
     <string name="pesdk_sticker_title_options">A matrica beállításai</string>
-    <string name="pesdk_sticker_button_add">Hozzáadás</string>
+    <string name="pesdk_sticker_button_add">Hozzáad</string>
     <string name="pesdk_sticker_button_color">Szín</string>
     <string name="pesdk_sticker_button_delete">Törlés</string>
     <string name="pesdk_sticker_button_bringToFront">Előrehozás</string>
@@ -254,10 +255,10 @@
     <string name="pesdk_sticker_button_opacity">Áttetszőség</string>
     <string name="pesdk_sticker_button_contrast">Kontraszt</string>
     <string name="pesdk_sticker_button_saturation">Telítettség</string>
-    <string name="pesdk_sticker_button_brightness">Fényerő</string>
+    <string name="pesdk_sticker_button_brightness">Fényesség</string>
     <string name="pesdk_sticker_category_name_custom">Feltöltés</string>
     <string name="pesdk_overlay_title_name">Fedőréteg</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Normális</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normál</string>
     <string name="pesdk_overlay_button_blendModeDarken">Sötétebb</string>
     <string name="pesdk_overlay_button_blendModeScreen">Kijelző</string>
     <string name="pesdk_overlay_button_blendModeOverlay">Fedőréteg</string>
@@ -323,6 +324,7 @@ Ezzel csak a kiválasztott mappák láthatók, mivel a kizárás és a befoglal�
     <string name="faq_13_title">Néhány színcsíkot látok a képeken. Hogyan javíthatom a minőséget?</string>
     <string name="faq_13_text">Az esetek többségében a kép megjelenítés jelenlegi megoldása jól működik. Ha még jobb képminőséget szeretne, engedélyezheti a \"Mutassa a képeket a lehető legjobb minőségben\" opcióval az alkalmazás beállításaiban, a \"Mély nagyítású képek\" szakaszban.</string>
     <string name="faq_14_title">Van néhány rejtett fájlom/mappám. Hogyan tehetem ezeket láthatóvá?</string>
+    <string name="faq_14_text">Rejtett elem megtekintéséhez vagy megnyomhatja a \"Rejtett elemek ideiglenes megjelenítése\" menüpontot a főképernyőn, vagy átkapcsolhatja a \"Rejtett elemek megjelenítése\" lehetőséget az alkalmazás beállításaiban.  Ha elrejtené, csak nyomja meg hosszan, és válassza az \"Elrejtés\" lehetőséget.  A mappákat elrejti egy \".nomedia\" fájl hozzáadása, ezt a fájlt bármely fájlkezelővel törölheti.  Vegye figyelembe, hogy a rejtés rekurzívan működik, tehát ha elrejt egy mappát, az összes almappát is elrejti, ésaz almappák elrejtéséhez el kell rejtenie a szülő mappát is.</string>
     <string name="faq_15_title">Miért foglal az alkalmazás ilyen nagy helyet?</string>
     <string name="faq_15_text">Az alkalmazás gyorsítótára akár 250 MB is lehet, ez biztosítja a gyorsabb képbetöltést. Ha az alkalmazás még nagyobb helyet foglal, annak a legvalószínűbb oka, hogy nagy fájlok vannak a Lomtárban. Ezek a fájlok beleszámítódnak az alkalmazásméretbe. Megnyithatja a Lomtárat és törölheti a fájlokat, vagy megteheti ezt az alkalmazás beállításaiban. A Lomtárba került elemek csak 30 naponta törlődnek automatikusan.</string>
     <string name="app_title">Simple Gallery Pro - Képszerkesztő és rendező</string>

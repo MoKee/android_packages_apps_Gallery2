@@ -163,7 +163,7 @@
     <string name="pesdk_sticker_button_contrast">Kontrast</string>
     <string name="pesdk_sticker_button_saturation">Zasićenje</string>
     <string name="pesdk_sticker_button_brightness">Svjetlina</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Normalan</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normalno</string>
     <string name="pesdk_overlay_button_blendModeScreen">Zaslon</string>
     <string name="pesdk_overlay_asset_none">Ništa</string>
     <string name="pesdk_overlay_asset_mosaic">Mozaik</string>

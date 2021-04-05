@@ -33,8 +33,9 @@
     <string name="pesdk_sticker_button_contrast">کۆنتراست</string>
     <string name="pesdk_sticker_button_saturation">تێرایی</string>
     <string name="pesdk_sticker_button_brightness">ڕۆشنایی</string>
+    <string name="pesdk_overlay_button_blendModeNormal">ئاسایی</string>
     <string name="pesdk_overlay_button_blendModeScreen">شاشە</string>
-    <string name="pesdk_overlay_asset_none">هیچیان</string>
+    <string name="pesdk_overlay_asset_none">هیچ</string>
     <string name="pesdk_common_button_undo">پاشگەزبوون</string>
     <string name="pesdk_common_button_redo">گه‌ڕانه‌وه‌ بۆ هه‌نگاوی داهاتوو</string>
     <string name="pesdk_common_title_blueColor">شین</string>

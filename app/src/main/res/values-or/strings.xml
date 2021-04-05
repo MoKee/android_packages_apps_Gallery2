@@ -9,6 +9,7 @@
     <string name="rotate_right">ଡାହାଣକୁ ଘୁରିବା</string>
     <string name="other_aspect_ratio">ଅନ୍ୟାନ୍ୟ</string>
     <string name="no_animation">କିଛି ନୁହେଁ</string>
+    <string name="pesdk_transform_button_freeCrop">କଷ୍ଟମ୍</string>
     <string name="pesdk_filter_asset_none">କିଛି ନୁହେଁ</string>
     <string name="pesdk_adjustments_button_exposureTool">ଏକ୍ସପୋଜର୍</string>
     <string name="pesdk_adjustments_button_sharpnessTool">ସୂକ୍ଷ୍ମତା</string>

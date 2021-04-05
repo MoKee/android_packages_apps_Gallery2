@@ -8,8 +8,13 @@
     <string name="other_aspect_ratio">Other</string>
     <string name="home_screen">Home screen</string>
     <string name="lock_screen">Lock screen</string>
+    <string name="no_animation">None</string>
     <string name="pesdk_transform_button_freeCrop">Customise</string>
+    <string name="pesdk_filter_asset_none">None</string>
+    <string name="pesdk_adjustments_button_exposureTool">Exposure</string>
     <string name="pesdk_adjustments_button_brightnessTool">Brightness</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">Sharpness</string>
+    <string name="pesdk_focus_title_disabled">None</string>
     <string name="pesdk_text_title_textColor">Text Colour</string>
     <string name="pesdk_text_button_edit">Edit</string>
     <string name="pesdk_text_button_color">Colour</string>
@@ -23,4 +28,9 @@
     <string name="pesdk_sticker_button_opacity">Opacity</string>
     <string name="pesdk_sticker_button_brightness">Brightness</string>
     <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_asset_none">None</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaic</string>
+    <string name="pesdk_common_button_undo">Undo</string>
+    <string name="pesdk_common_title_transparentColor">Transparent</string>
+    <string name="vesdk_video_trim_title_name">Trim</string>
 </resources>

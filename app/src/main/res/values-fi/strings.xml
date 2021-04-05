@@ -149,6 +149,7 @@
     <string name="pesdk_overlay_asset_mosaic">Mosaiikki</string>
     <string name="pesdk_common_button_undo">Kumoa</string>
     <string name="pesdk_common_button_redo">Toista</string>
+    <string name="pesdk_common_title_transparentColor">Läpinäkyvä</string>
     <string name="pesdk_common_title_grayColor">Harmaa</string>
     <string name="pesdk_common_title_blackColor">Musta</string>
     <string name="pesdk_common_title_blueColor">Sininen</string>

@@ -62,6 +62,7 @@
     <string name="flip_vertically">Apversti vertikaliai</string>
     <string name="free_aspect_ratio">Nėra</string>
     <string name="other_aspect_ratio">Kita</string>
+    <string name="simple_wallpaper">Galerija</string>
     <string name="set_as_wallpaper">Nustatyti kaip darbalaukio foną</string>
     <string name="set_as_wallpaper_failed">Nustatyti darbalaukio fono nepavyko</string>
     <string name="set_as_wallpaper_with">Nustatyti kaip darbalaukio paveikslėlį su:</string>
@@ -141,8 +142,9 @@
     <string name="pesdk_sticker_button_delete">Ištrinti</string>
     <string name="pesdk_sticker_button_contrast">Kontrastas</string>
     <string name="pesdk_sticker_button_saturation">Spalvų sodrumas</string>
-    <string name="pesdk_sticker_button_brightness">Šviesumas</string>
-    <string name="pesdk_overlay_asset_none">Nėra</string>
+    <string name="pesdk_sticker_button_brightness">Ryškumas</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normalus</string>
+    <string name="pesdk_overlay_asset_none">Joks</string>
     <string name="pesdk_common_button_undo">Anuliuoti</string>
     <string name="pesdk_common_button_redo">Grąžinti</string>
     <string name="pesdk_common_title_transparentColor">Permatomas</string>

@@ -18,6 +18,7 @@
     <string name="rotate_right">Sağa fırladın</string>
     <string name="free_aspect_ratio">Heç biri</string>
     <string name="other_aspect_ratio">Digər</string>
+    <string name="simple_wallpaper">Qalereya</string>
     <string name="slideshow">Slaydşou</string>
     <string name="no_animation">Heç biri</string>
     <string name="group_by">Qruplaşdırın</string>
@@ -51,8 +52,9 @@
     <string name="pesdk_sticker_button_contrast">Ziddiyyət</string>
     <string name="pesdk_sticker_button_saturation">Dolğunluq</string>
     <string name="pesdk_sticker_button_brightness">Parlaqlıq</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">Ekran</string>
-    <string name="pesdk_overlay_asset_none">Heç biri</string>
+    <string name="pesdk_overlay_asset_none">Yoxdur</string>
     <string name="pesdk_common_button_undo">Geri al</string>
     <string name="pesdk_common_button_redo">Təkrar et</string>
     <string name="pesdk_common_title_blueColor">Göy</string>

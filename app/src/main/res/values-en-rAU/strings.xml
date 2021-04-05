@@ -5,7 +5,12 @@
     <string name="rotate">Rotate</string>
     <string name="free_aspect_ratio">None</string>
     <string name="other_aspect_ratio">Other</string>
+    <string name="no_animation">None</string>
     <string name="pesdk_transform_button_freeCrop">Customise</string>
+    <string name="pesdk_filter_asset_none">None</string>
+    <string name="pesdk_adjustments_button_exposureTool">Exposure</string>
+    <string name="pesdk_adjustments_button_sharpnessTool">Sharpness</string>
+    <string name="pesdk_focus_title_disabled">None</string>
     <string name="pesdk_text_button_edit">Edit</string>
     <string name="pesdk_text_button_color">Colour</string>
     <string name="pesdk_brush_button_color">Colour</string>
@@ -15,5 +20,9 @@
     <string name="pesdk_editor_accept">Accept</string>
     <string name="pesdk_editor_save">Save</string>
     <string name="pesdk_sticker_button_color">Colour</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
+    <string name="pesdk_overlay_asset_none">None</string>
+    <string name="pesdk_overlay_asset_mosaic">Mosaic</string>
     <string name="pesdk_common_title_grayColor">Grey</string>
+    <string name="vesdk_video_trim_title_name">Trim</string>
 </resources>

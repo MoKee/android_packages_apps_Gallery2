@@ -83,8 +83,8 @@
     <string name="pesdk_sticker_button_delete">Изтриване</string>
     <string name="pesdk_sticker_button_contrast">Контраст</string>
     <string name="pesdk_sticker_button_saturation">Насищане</string>
-    <string name="pesdk_sticker_button_brightness">Яркост</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Нормално</string>
+    <string name="pesdk_sticker_button_brightness">Ярко</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Нормална</string>
     <string name="pesdk_overlay_button_blendModeScreen">Екран</string>
     <string name="pesdk_overlay_asset_none">Без</string>
     <string name="pesdk_overlay_asset_mosaic">Мозайка</string>

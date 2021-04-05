@@ -45,10 +45,12 @@
     <string name="pesdk_sticker_button_contrast">کنتراست</string>
     <string name="pesdk_sticker_button_saturation">اشباع رنگ</string>
     <string name="pesdk_sticker_button_brightness">روشنایی</string>
+    <string name="pesdk_overlay_button_blendModeNormal">عادی</string>
     <string name="pesdk_overlay_button_blendModeScreen">صفحه نمایش</string>
     <string name="pesdk_overlay_asset_none">هیچ‌کدام</string>
     <string name="pesdk_common_button_undo">واگرد</string>
     <string name="pesdk_common_button_redo">انجام مجدد</string>
+    <string name="pesdk_common_title_transparentColor">شفاف</string>
     <string name="pesdk_common_title_blackColor">سیاه</string>
     <string name="pesdk_common_title_blueColor">آبی</string>
     <string name="pesdk_common_title_redColor">قرمز</string>

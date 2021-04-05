@@ -31,7 +31,8 @@
     <string name="pesdk_sticker_button_contrast">কনট্রাস্ট</string>
     <string name="pesdk_sticker_button_saturation">পরিপৃক্তি</string>
     <string name="pesdk_sticker_button_brightness">উজ্জ্বলতা</string>
-    <string name="pesdk_overlay_asset_none">কোনো কিছুই নয়</string>
+    <string name="pesdk_overlay_button_blendModeNormal">স্বাভাবিক</string>
+    <string name="pesdk_overlay_asset_none">কোনটি না</string>
     <string name="pesdk_common_button_undo">পূর্বাবস্থায় ফিরুন</string>
     <string name="pesdk_common_button_redo">পুনরায় করুন</string>
     <string name="pesdk_common_title_blueColor">নীল</string>

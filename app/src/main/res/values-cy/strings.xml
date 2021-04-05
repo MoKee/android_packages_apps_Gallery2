@@ -4,9 +4,13 @@
     <string name="simple_wallpaper">Oriel</string>
     <string name="home_screen">Sgrin gartref</string>
     <string name="lock_screen">Sgrin cloi</string>
+    <string name="no_animation">Dim</string>
     <string name="pesdk_transform_button_freeCrop">Addasedig</string>
     <string name="pesdk_transform_button_resetCrop">Ailosod</string>
+    <string name="pesdk_filter_asset_none">Dim</string>
+    <string name="pesdk_adjustments_button_exposureTool">Goleuni</string>
     <string name="pesdk_adjustments_button_reset">Ailosod</string>
+    <string name="pesdk_focus_title_disabled">Dim</string>
     <string name="pesdk_text_button_add">Ychwanegu</string>
     <string name="pesdk_text_button_delete">Dileu</string>
     <string name="pesdk_brush_button_delete">Dileu</string>
@@ -16,9 +20,12 @@
     <string name="pesdk_editor_accept">Derbyn</string>
     <string name="pesdk_sticker_button_add">Ychwanegu</string>
     <string name="pesdk_sticker_button_delete">Dileu</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Arferol</string>
     <string name="pesdk_overlay_button_blendModeScreen">Sgrin</string>
+    <string name="pesdk_overlay_asset_none">Dim</string>
     <string name="pesdk_common_title_grayColor">Llwyd</string>
     <string name="pesdk_common_title_blueColor">Glas</string>
     <string name="pesdk_common_title_redColor">Coch</string>
     <string name="pesdk_common_title_greenColor">Gwyrdd</string>
+    <string name="vesdk_video_trim_title_name">Tocio</string>
 </resources>

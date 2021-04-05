@@ -200,7 +200,7 @@
     <string name="pesdk_sticker_button_brightness">Kecerahan</string>
     <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">Layar</string>
-    <string name="pesdk_overlay_asset_none">Tidak ada</string>
+    <string name="pesdk_overlay_asset_none">Tidak Ada</string>
     <string name="pesdk_overlay_asset_mosaic">Kepingan batu</string>
     <string name="pesdk_common_button_undo">Batalkan</string>
     <string name="pesdk_common_button_redo">Ulangi</string>

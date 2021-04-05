@@ -143,8 +143,9 @@
     <string name="pesdk_sticker_button_contrast">Contraste</string>
     <string name="pesdk_sticker_button_saturation">Saturación</string>
     <string name="pesdk_sticker_button_brightness">Brillo</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">Pantalla</string>
-    <string name="pesdk_overlay_asset_none">Ningún</string>
+    <string name="pesdk_overlay_asset_none">Ningunha</string>
     <string name="pesdk_overlay_asset_mosaic">Mosaico</string>
     <string name="pesdk_common_button_undo">Desfacer</string>
     <string name="pesdk_common_button_redo">Refacer</string>

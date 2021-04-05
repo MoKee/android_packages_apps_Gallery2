@@ -231,9 +231,9 @@
     <string name="pesdk_sticker_button_contrast">Контрастність</string>
     <string name="pesdk_sticker_button_saturation">Насиченість</string>
     <string name="pesdk_sticker_button_brightness">Яскравість</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Звичайний</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Нормальний</string>
     <string name="pesdk_overlay_button_blendModeScreen">Екран</string>
-    <string name="pesdk_overlay_asset_none">Нічого</string>
+    <string name="pesdk_overlay_asset_none">Немає</string>
     <string name="pesdk_overlay_asset_mosaic">Мозаїка</string>
     <string name="pesdk_common_button_flipH">Переверніть H</string>
     <string name="pesdk_common_button_flipV">Переверніть V</string>

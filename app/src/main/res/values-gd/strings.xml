@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_launcher_name">Gailearaidh</string>
+    <string name="other_aspect_ratio">Eile</string>
     <string name="simple_wallpaper">Gailearaidh</string>
     <string name="no_animation">Chan eil gin</string>
+    <string name="pesdk_transform_button_freeCrop">Gnàthaichte</string>
     <string name="pesdk_filter_asset_none">Chan eil gin</string>
     <string name="pesdk_focus_title_disabled">Chan eil gin</string>
     <string name="pesdk_editor_save">Sàbhail</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Àbhaisteach</string>
     <string name="pesdk_overlay_asset_none">Chan eil gin</string>
     <string name="pesdk_common_title_grayColor">Liath</string>
 </resources>

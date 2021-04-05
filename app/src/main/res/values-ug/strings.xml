@@ -36,8 +36,8 @@
     <string name="pesdk_sticker_button_delete">ئۆچۈر</string>
     <string name="pesdk_sticker_button_contrast">ئاق-قارىلىقى</string>
     <string name="pesdk_sticker_button_saturation">تويۇنۇش</string>
-    <string name="pesdk_sticker_button_brightness">يورۇقلۇق دەرىجىسى</string>
-    <string name="pesdk_overlay_button_blendModeNormal">نورمال</string>
+    <string name="pesdk_sticker_button_brightness">يورۇقلۇق</string>
+    <string name="pesdk_overlay_button_blendModeNormal">ئادەتتىكى</string>
     <string name="pesdk_overlay_button_blendModeScreen">ئېكران</string>
     <string name="pesdk_overlay_asset_none">يوق</string>
     <string name="pesdk_overlay_asset_mosaic">نەققاشلىق</string>

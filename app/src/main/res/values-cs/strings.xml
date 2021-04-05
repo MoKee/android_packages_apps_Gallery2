@@ -178,6 +178,7 @@
     <string name="limit_folder_title">Omezte dlouhé názvy složek na 1 řádek</string>
     <string name="square">Čtverec</string>
     <string name="rounded_corners">Zaoblené rohy</string>
+    <string name="export_favorite_paths">Exportovat cesty k oblíbeným souborům</string>
     <string name="thumbnails">Náhledy</string>
     <string name="fullscreen_media">Média přes celou obrazovku</string>
     <string name="extended_details">Rozšířené vlastnosti</string>
@@ -257,7 +258,7 @@
     <string name="pesdk_sticker_button_brightness">Jas</string>
     <string name="pesdk_sticker_category_name_custom">Nahrávání</string>
     <string name="pesdk_overlay_title_name">Překrytí</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Normální</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normalní</string>
     <string name="pesdk_overlay_button_blendModeDarken">Ztmavnutí</string>
     <string name="pesdk_overlay_button_blendModeScreen">Obrazovka</string>
     <string name="pesdk_overlay_button_blendModeOverlay">Překrytí</string>
@@ -295,7 +296,7 @@
     <string name="pesdk_common_title_greenColor">Zelená</string>
     <string name="pesdk_common_title_aquamarinColor">Akvamarínová</string>
     <string name="pesdk_common_title_pipettableColor">Vyberte barvu</string>
-    <string name="vesdk_video_trim_title_name">Oříznout</string>
+    <string name="vesdk_video_trim_title_name">Střihat</string>
     <string name="faq_1_title">Jak můžu udělat Jednoduchou Galerii výchozí galerií zařízení?</string>
     <string name="faq_1_text">Nejprve musíte najít aktuální výchozí galerii v sekci Aplikace v nastavení zařízení. Vyhledat tlačítko, ve kterém je napsáno \"Otevřít ve výchozím nastavení\", klikněte na něj a poté klikněte na \"Vymazat výchozí hodnoty\".
         Při příštím pokusu o otevření obrázku nebo videa by se měl zobrazit výběr aplikace, kde můžete vybrat položku Jednoduchá Galerie a nastavit ji jako výchozí aplikaci.</string>
@@ -323,6 +324,7 @@
     <string name="faq_13_title">Vidím nějaké barevné pruhy na obrázcích. Jak mohu zlepšit kvalitu?</string>
     <string name="faq_13_text">Současné řešení funguje správně v drtivé většině případů. Pokud ale chcete zobrazit obrázky v lepší kvalitě, můžete povolit možnost \"Zobrazit obrázky v nejvyšší možné kvalitě\" v nastavení aplikace, v sekcí \"Hluboko přiblížitelné obrázky\".</string>
     <string name="faq_14_title">Mám skrytý soubor/složku. Jak je zobrazím?</string>
+    <string name="faq_14_text">Můžete buď použít tlačítko \"Dočasně zobrazit skryté položky\" na hlavní obrazovce, nebo v nastavení aplikace zapnout možnost \"Zobrazit skryté položky\", tím se skryté položky zobrazí. Pokud je chcete odkrýt, stačí je dlouho podržet a zvolit možnost \"Odkrýt\". Složky jsou skrývané přidáním skrytého souboru \".nomedia\", ten můžete vymazat v libovolném správci souborů. Skrytí však funguje rekurzivně, takže pokud skryjete složku, skryjí se také všechny podsložky. Takže pro odrytí podsložek musíte odkrýt nadřazenou složku.</string>
     <string name="faq_15_title">Proč aplikace zabírá tolik místa?</string>
     <string name="faq_15_text">Mezipaměť aplikace může mít až 250 MB, což zajišťuje rychlejší načítání obrázků. Pokud aplikace zabírá ještě více místa, je to s největší pravděpodobností způsobeno tím, že máte položky v Koši. Tyto soubory se počítají do velikosti aplikace. Koš můžete vysypat otevřením a odstraněním všech souborů nebo z nastavení aplikace. 
 Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
@@ -344,7 +346,7 @@ Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
         • Otevírejte mnoho rozličných formátů fotografií a videí (RAW, SVG, GIF, panorama, atd)
         • Množství intuitivních gest pro jednoduchou úpravu a organizaci souborů
         • Mnoho různých způsobů filtrování, seskupování a řazení souborů
-        • Změňte si vzhled Jednoduché galerie Pro
+        • Změňte si vzhled Simple Gallery Pro
         • Dostupná ve 32 jazycích
         • Označte si oblíbené soubory pro rychlý přístup
         • Chraňte své fotografie a videa pomocí pinu, vzoru nebo otiskem prstu
@@ -353,7 +355,7 @@ Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
         • Přepněte viditelnost souborů pro skrytí obrázků a videí
         • Vytvořte si ze svých souborů prezentaci
         • Zobrazte si detailní informace o svých souborech (rozlišení, hodnoty EXIF, atd)
-        • Jednoduchá galerie Pro má otevřený zdrojový kód
+        • Simple Gallery Pro má otevřený zdrojový kód
         … a mnoho dalších!!
 
         <b>EDITOR OBRÁZKŮ</b>

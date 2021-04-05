@@ -172,7 +172,7 @@
     <string name="pesdk_sticker_button_contrast">コントラスト</string>
     <string name="pesdk_sticker_button_saturation">彩度</string>
     <string name="pesdk_sticker_button_brightness">明るさ</string>
-    <string name="pesdk_overlay_button_blendModeNormal">標準</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">画面</string>
     <string name="pesdk_overlay_asset_none">なし</string>
     <string name="pesdk_overlay_asset_mosaic">モザイク</string>

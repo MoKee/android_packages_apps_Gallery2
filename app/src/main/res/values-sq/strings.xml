@@ -54,7 +54,7 @@
     <string name="pesdk_sticker_button_contrast">Kontrasti</string>
     <string name="pesdk_sticker_button_saturation">Saturimi</string>
     <string name="pesdk_sticker_button_brightness">Ndriçimi</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Normale</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">Ekrani</string>
     <string name="pesdk_overlay_asset_none">Asnjë</string>
     <string name="pesdk_common_button_undo">Zhbëj</string>

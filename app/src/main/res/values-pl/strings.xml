@@ -178,6 +178,7 @@
     <string name="limit_folder_title">Ogranicz długie tytuły folderów do 1 linii</string>
     <string name="square">Kwadrat</string>
     <string name="rounded_corners">Zaokrąglone narożniki</string>
+    <string name="export_favorite_paths">Eksportuj ulubione ścieżki plików</string>
     <string name="thumbnails">Miniatury</string>
     <string name="fullscreen_media">Widok pełnoekranowy</string>
     <string name="extended_details">Dodatkowe szczegóły</string>
@@ -257,7 +258,7 @@
     <string name="pesdk_sticker_button_brightness">Jasność</string>
     <string name="pesdk_sticker_category_name_custom">Wysłane</string>
     <string name="pesdk_overlay_title_name">Nakładka</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Normalny</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normalna</string>
     <string name="pesdk_overlay_button_blendModeDarken">Ciemniejsze</string>
     <string name="pesdk_overlay_button_blendModeScreen">Ekran</string>
     <string name="pesdk_overlay_button_blendModeOverlay">Nakładka</string>
@@ -321,6 +322,7 @@
     <string name="faq_13_title">Na obrazach widzę wyraźne zmiany w kolorach. Jak mogę to naprawić?</string>
     <string name="faq_13_text">Obecne rozwiązanie służące wyświetlaniu obrazów działa jak powinno w większości w przypadków. Jeśli jednak tak nie jest, pomocna może okazać się opcja \'Pokazuj obrazy w najwyższej możliwej jakości\' w sekcji \'Duże powiększanie obrazów\'.</string>
     <string name="faq_14_title">Mam ukryte pliki i / lub foldery. Jak mogę zobaczyć?</string>
+    <string name="faq_14_text">Możesz albo nacisnąć pozycję menu \"Tymczasowo pokaż ukryte pozycje\" na ekranie głównym, lub włącz \"Pokaż ukryte przedmioty\" w ustawieniach aplikacji, aby zobaczyć ukryty element. Jeśli chcesz go odkryć, po prostu naciśnij go i wybierz \"Odkryw\". Foldery są ukryte przez dodanie ukrytych folderów\". Plik omedia\" do nich, możesz również usunąć plik z dowolnym menadżerem plików. Zauważ, że ukrywanie działa rekurencyjnie, więc jeśli ukryjesz folder, wszystkie podfoldery również zostaną ukryte. Aby odkryć podfoldery, musisz odkryć folder nadrzędny.</string>
     <string name="faq_15_title">Dlaczego aplikacja zajmuje tyle miejsca?</string>
     <string name="faq_15_text">Pamięć podręczna aplikacji może zająć do 250 MB, zapewnia szybsze ładowanie obrazu. Jeśli aplikacja zajmuje jeszcze więcej miejsca, jest to najprawdopodobniej spowodowane posiadaniem przedmiotów w koszu. Te pliki liczą się do rozmiaru aplikacji. Możesz wyczyścić kosz z ustawień aplikacji, lub otwierając go i usuwając wszystkie pliki. Każdy plik w koszu jest usuwany automatycznie po 30 dniach.</string>
     <string name="app_title">Prosta galeria Pro - Menedżer zdjęć &amp; Edytor</string>

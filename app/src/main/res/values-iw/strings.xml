@@ -57,6 +57,7 @@
     <string name="pesdk_overlay_asset_mosaic">פסיפס</string>
     <string name="pesdk_common_button_undo">בטל</string>
     <string name="pesdk_common_button_redo">בצע מחדש</string>
+    <string name="pesdk_common_title_transparentColor">שקוף</string>
     <string name="pesdk_common_title_blackColor">שחור</string>
     <string name="pesdk_common_title_blueColor">כחול</string>
     <string name="pesdk_common_title_redColor">אדום</string>

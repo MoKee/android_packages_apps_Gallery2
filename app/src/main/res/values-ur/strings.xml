@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="edit">ترمیم کریں</string>
     <string name="brightness">چمکیلا پن</string>
     <string name="resize">سائز تبدیل کریں</string>
     <string name="rotate">گھمائیں</string>
@@ -16,14 +17,18 @@
     <string name="pesdk_adjustments_button_sharpnessTool">نفاست</string>
     <string name="pesdk_adjustments_button_reset">دوبارہ ترتیب دیں</string>
     <string name="pesdk_focus_title_disabled">کوئی نہیں</string>
+    <string name="pesdk_text_button_edit">ترمیم کریں</string>
     <string name="pesdk_text_button_color">رنگ</string>
+    <string name="pesdk_text_button_delete">مٹائیں</string>
     <string name="pesdk_brush_button_color">رنگ</string>
     <string name="pesdk_brush_button_size">سائز</string>
+    <string name="pesdk_brush_button_delete">مٹائیں</string>
     <string name="pesdk_editor_accept">قبول کریں</string>
     <string name="pesdk_sticker_button_color">رنگ</string>
+    <string name="pesdk_sticker_button_delete">مٹائیں</string>
     <string name="pesdk_sticker_button_contrast">تضاد</string>
     <string name="pesdk_sticker_button_saturation">سیچوریشن</string>
-    <string name="pesdk_sticker_button_brightness">روشنی</string>
+    <string name="pesdk_sticker_button_brightness">چمکیلا پن</string>
     <string name="pesdk_overlay_button_blendModeNormal">عام </string>
     <string name="pesdk_overlay_asset_none">کوئی نہیں</string>
     <string name="pesdk_common_button_undo">کالعدم کریں</string>

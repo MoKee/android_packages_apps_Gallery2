@@ -230,10 +230,10 @@
     <string name="pesdk_sticker_button_opacity">Deckkraft</string>
     <string name="pesdk_sticker_button_contrast">Kontrast</string>
     <string name="pesdk_sticker_button_saturation">Sättigung</string>
-    <string name="pesdk_sticker_button_brightness">Bildschirmhelligkeit</string>
+    <string name="pesdk_sticker_button_brightness">Helligkeit</string>
     <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">Bildschirm</string>
-    <string name="pesdk_overlay_asset_none">Kein</string>
+    <string name="pesdk_overlay_asset_none">Keiner</string>
     <string name="pesdk_overlay_asset_mosaic">Mosaik</string>
     <string name="pesdk_common_button_flipH">Spiegeln H</string>
     <string name="pesdk_common_button_flipV">Spiegeln V</string>

@@ -72,6 +72,7 @@
     <string name="flip_vertically">Spejlvend lodret</string>
     <string name="free_aspect_ratio">Free</string>
     <string name="other_aspect_ratio">Other</string>
+    <string name="simple_wallpaper">Galleri</string>
     <string name="set_as_wallpaper">Sæt som baggrundsbillede</string>
     <string name="set_as_wallpaper_failed">Det mislykkedes at sætte billedet som baggrund</string>
     <string name="set_as_wallpaper_with">Sæt som baggrundsbillede med:</string>
@@ -178,6 +179,7 @@
     <string name="pesdk_overlay_asset_mosaic">Mosaik</string>
     <string name="pesdk_common_button_undo">Fortryd</string>
     <string name="pesdk_common_button_redo">Annuller fortryd</string>
+    <string name="pesdk_common_title_transparentColor">Gennemsigtig</string>
     <string name="pesdk_common_title_blackColor">Sort</string>
     <string name="pesdk_common_title_blueColor">Blå</string>
     <string name="pesdk_common_title_redColor">Rød</string>

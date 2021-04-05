@@ -178,6 +178,7 @@
     <string name="limit_folder_title">Piira pikkade kaustade pealkirju 1 reale</string>
     <string name="square">Ruut</string>
     <string name="rounded_corners">Ümarad nurgad</string>
+    <string name="export_favorite_paths">Ekspordi lemmikfailide teed</string>
     <string name="thumbnails">Pisipildid</string>
     <string name="fullscreen_media">Täisekraan meedia</string>
     <string name="extended_details">Laiendatud üksikasjad</string>
@@ -323,6 +324,7 @@
     <string name="faq_13_title">Ma näen piltidel värvilahendust. Kuidas parandada kvaliteeti?</string>
     <string name="faq_13_text">Piltide kuvamise praegune lahendus toimib hästi enamikul juhtudel, kuid kui soovite veelgi paremat pildikvaliteeti, saate rakenduse seadetes lubada \"Näita pilte võimalikult kõrgekvaliteediliselt\" jaotises \"Suured suumitavad pildid\".</string>
     <string name="faq_14_title">Olen peitnud faili / kausta. Kuidas ma saan seda näidata?</string>
+    <string name="faq_14_text">Peidetud üksuse nägemiseks võite kas vajutada põhiekraanil menüükäsku \"Peidetud üksuste ajutine kuvamine\" või rakenduse seadetes lülitada \"Kuva peidetud üksused\". Kui soovite selle varjata, vajutage seda lihtsalt pikalt ja valige käsk \"Peida\". Kaustad on peidetud, lisades varjatud \".nomedia\" faili, saate faili kustutada ka mis tahes failihalduriga. Pange tähele, et peitmine toimib siiski rekursiivselt, seega kui kausta peidate, jäävad ka kõik alamkaustad peidetuks. Nii et alamkaustade peitmiseks peate näitama vanemkausta. </string>
     <string name="faq_15_title">Miks rakendus võtab nii palju ruumi?</string>
     <string name="faq_15_text">Rakenduse vahemälu võib võtta kuni 250 MB, see tagab kiirema pildi laadimise. Kui rakendus võtab rohkem ruumi, on see tõenäoliselt tingitud sellest, et teil on prügikastis üksusi. Need failid lisatakse rakenduse suurusele. Saate tühjendada prügikasti, avades selle ja kustutades kõik failid või rakenduse seadetest. Iga prügikasti fail kustutatakse 30 päeva pärast automaatselt.</string>
     <string name="app_title">Simple Gallery Pro - fotohaldur &amp; toimrtaja</string>

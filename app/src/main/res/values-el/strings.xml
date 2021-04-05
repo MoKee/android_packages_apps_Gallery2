@@ -169,7 +169,7 @@
     <string name="pesdk_sticker_button_contrast">Αντίθεση</string>
     <string name="pesdk_sticker_button_saturation">Κορεσμός</string>
     <string name="pesdk_sticker_button_brightness">Φωτεινότητα</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Κανονική</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Κανονικό</string>
     <string name="pesdk_overlay_button_blendModeScreen">Οθόνη</string>
     <string name="pesdk_overlay_asset_none">Κανένα</string>
     <string name="pesdk_overlay_asset_mosaic">Μωσαϊκό</string>

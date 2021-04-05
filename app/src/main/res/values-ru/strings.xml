@@ -257,7 +257,7 @@
     <string name="pesdk_sticker_button_brightness">Яркость</string>
     <string name="pesdk_sticker_category_name_custom">Загрузки</string>
     <string name="pesdk_overlay_title_name">Наложения</string>
-    <string name="pesdk_overlay_button_blendModeNormal">Обычный</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Стандартный</string>
     <string name="pesdk_overlay_button_blendModeDarken">Затемнить</string>
     <string name="pesdk_overlay_button_blendModeScreen">Экран</string>
     <string name="pesdk_overlay_button_blendModeOverlay">Наложения</string>
@@ -266,7 +266,7 @@
     <string name="pesdk_overlay_button_blendModeColorBurn">Цветной огонь</string>
     <string name="pesdk_overlay_button_blendModeSoftLight">Мягкий свет</string>
     <string name="pesdk_overlay_button_blendModeHardLight">Тяжелый свет</string>
-    <string name="pesdk_overlay_asset_none">Без эффекта</string>
+    <string name="pesdk_overlay_asset_none">Нет</string>
     <string name="pesdk_overlay_asset_golden">Золотой</string>
     <string name="pesdk_overlay_asset_lightleak1">Утечка света 1</string>
     <string name="pesdk_overlay_asset_mosaic">Мозаика</string>

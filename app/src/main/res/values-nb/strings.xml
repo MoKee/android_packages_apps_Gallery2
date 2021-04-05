@@ -71,6 +71,7 @@
     <string name="flip_vertically">Speilvend vertikalt</string>
     <string name="free_aspect_ratio">Fri</string>
     <string name="other_aspect_ratio">Annet</string>
+    <string name="simple_wallpaper">Galleri</string>
     <string name="set_as_wallpaper">Sett som bakgrunnsbilde</string>
     <string name="set_as_wallpaper_failed">Å sette som bakgrunnsbilde feilet</string>
     <string name="set_as_wallpaper_with">Sett som bakgrunnsbilde med:</string>
@@ -166,6 +167,7 @@
     <string name="pesdk_sticker_button_contrast">Kontrast</string>
     <string name="pesdk_sticker_button_saturation">Metning</string>
     <string name="pesdk_sticker_button_brightness">Lysstyrke</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">Skjerm</string>
     <string name="pesdk_overlay_asset_none">Ingen</string>
     <string name="pesdk_overlay_asset_mosaic">Mosaikk</string>

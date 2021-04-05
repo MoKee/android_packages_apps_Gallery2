@@ -38,8 +38,9 @@
     <string name="pesdk_sticker_button_contrast">Kontrasts</string>
     <string name="pesdk_sticker_button_saturation">Piesātinājums</string>
     <string name="pesdk_sticker_button_brightness">Spilgtums</string>
+    <string name="pesdk_overlay_button_blendModeNormal">Normāls</string>
     <string name="pesdk_overlay_button_blendModeScreen">Ekrāns</string>
-    <string name="pesdk_overlay_asset_none">Nav</string>
+    <string name="pesdk_overlay_asset_none">Nekas</string>
     <string name="pesdk_common_button_undo">Atsaukt</string>
     <string name="pesdk_common_button_redo">Atcelt atsaukšanu</string>
     <string name="pesdk_common_title_blueColor">Zila</string>

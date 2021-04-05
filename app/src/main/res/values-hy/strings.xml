@@ -10,12 +10,14 @@
     <string name="rotate_left">Պտտել ձախ</string>
     <string name="rotate_right">Պտտել աջ</string>
     <string name="free_aspect_ratio">Ոչ մեկը</string>
+    <string name="other_aspect_ratio">Այլ</string>
     <string name="slideshow">Ներկայացում</string>
     <string name="no_animation">Ոչ մեկը</string>
     <string name="group_by">Խմբավորել</string>
     <string name="by_date_taken">Լուսանկարման ամսաթիվը</string>
     <string name="pesdk_transform_button_freeCrop">Հատուկ</string>
     <string name="pesdk_transform_button_resetCrop">Վերակայել</string>
+    <string name="pesdk_filter_title_name">Ֆիլտր</string>
     <string name="pesdk_filter_asset_none">Ոչ մեկը</string>
     <string name="pesdk_adjustments_button_exposureTool">Լուսավորություն</string>
     <string name="pesdk_adjustments_button_brightnessTool">Պայծառություն</string>

@@ -185,14 +185,14 @@
     <string name="pesdk_editor_text_exportProgressUnknown">Exportando…</string>
     <string name="pesdk_sticker_button_add">Añadir</string>
     <string name="pesdk_sticker_button_color">Color</string>
-    <string name="pesdk_sticker_button_delete">Eliminar</string>
+    <string name="pesdk_sticker_button_delete">Borrar</string>
     <string name="pesdk_sticker_button_opacity">Opacidad</string>
     <string name="pesdk_sticker_button_contrast">Contraste</string>
     <string name="pesdk_sticker_button_saturation">Saturación</string>
     <string name="pesdk_sticker_button_brightness">Brillo</string>
     <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">Pantalla</string>
-    <string name="pesdk_overlay_asset_none">Ninguna</string>
+    <string name="pesdk_overlay_asset_none">Ninguno</string>
     <string name="pesdk_overlay_asset_mosaic">Mosaico</string>
     <string name="pesdk_common_button_undo">Deshacer</string>
     <string name="pesdk_common_button_redo">Rehacer</string>

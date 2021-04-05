@@ -235,7 +235,7 @@
     <string name="pesdk_sticker_button_brightness">السطوع</string>
     <string name="pesdk_overlay_button_blendModeNormal">عادي</string>
     <string name="pesdk_overlay_button_blendModeScreen">الشاشة</string>
-    <string name="pesdk_overlay_asset_none">لا شيء</string>
+    <string name="pesdk_overlay_asset_none">بلا</string>
     <string name="pesdk_overlay_asset_mosaic">فسيفساء</string>
     <string name="pesdk_common_button_flipH">قلب عرضي</string>
     <string name="pesdk_common_button_flipV">قلب عمودي</string>

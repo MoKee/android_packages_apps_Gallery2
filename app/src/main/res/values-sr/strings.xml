@@ -194,14 +194,14 @@
     <string name="pesdk_editor_text_exportProgressUnknown">Извоз…</string>
     <string name="pesdk_sticker_button_add">Додај</string>
     <string name="pesdk_sticker_button_color">Боја</string>
-    <string name="pesdk_sticker_button_delete">Брисање</string>
+    <string name="pesdk_sticker_button_delete">Избриши</string>
     <string name="pesdk_sticker_button_opacity">Непрозирност</string>
     <string name="pesdk_sticker_button_contrast">Контраст</string>
     <string name="pesdk_sticker_button_saturation">Засићеност</string>
     <string name="pesdk_sticker_button_brightness">Осветљеност</string>
     <string name="pesdk_overlay_button_blendModeNormal">Нормално</string>
     <string name="pesdk_overlay_button_blendModeScreen">Екран</string>
-    <string name="pesdk_overlay_asset_none">Ниједан</string>
+    <string name="pesdk_overlay_asset_none">Ниједно</string>
     <string name="pesdk_overlay_asset_mosaic">Мозаик</string>
     <string name="pesdk_common_button_undo">Опозови</string>
     <string name="pesdk_common_button_redo">Понови</string>

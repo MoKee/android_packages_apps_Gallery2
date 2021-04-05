@@ -234,7 +234,7 @@
     <string name="pesdk_sticker_button_brightness">Brilho</string>
     <string name="pesdk_overlay_button_blendModeNormal">Normal</string>
     <string name="pesdk_overlay_button_blendModeScreen">Tela</string>
-    <string name="pesdk_overlay_asset_none">Sem efeito</string>
+    <string name="pesdk_overlay_asset_none">Nenhum</string>
     <string name="pesdk_overlay_asset_mosaic">Mosaico</string>
     <string name="pesdk_common_button_flipH">Inverter horizontal</string>
     <string name="pesdk_common_button_flipV">Inverter vertical</string>
