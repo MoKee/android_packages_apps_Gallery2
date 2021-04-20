@@ -58,9 +58,14 @@
     <string name="pesdk_common_button_undo">בטל</string>
     <string name="pesdk_common_button_redo">בצע מחדש</string>
     <string name="pesdk_common_title_transparentColor">שקוף</string>
+    <string name="pesdk_common_title_whiteColor">לבן</string>
     <string name="pesdk_common_title_blackColor">שחור</string>
     <string name="pesdk_common_title_blueColor">כחול</string>
+    <string name="pesdk_common_title_purpleColor">סגול</string>
+    <string name="pesdk_common_title_pinkColor">ורוד</string>
     <string name="pesdk_common_title_redColor">אדום</string>
+    <string name="pesdk_common_title_orangeColor">כתום</string>
+    <string name="pesdk_common_title_yellowColor">צהוב</string>
     <string name="pesdk_common_title_greenColor">ירוק</string>
     <string name="vesdk_video_trim_title_name">חיתוך</string>
 </resources>
