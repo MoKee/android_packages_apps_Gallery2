@@ -32,6 +32,7 @@
     <string name="switch_to_file_search">Lülitage kõik nähtavad kausta failid otsingusse</string>
     <string name="set_as_default_folder">Määra vaikekaustaks </string>
     <string name="unset_as_default_folder">Tühista vaikekaust</string>
+    <string name="reorder_by_dragging">Kaustade järjestus lohistades</string>
     <string name="filter_media">Meedia filter</string>
     <string name="images">Pildid</string>
     <string name="videos">Videod</string>

@@ -32,6 +32,7 @@
     <string name="switch_to_file_search">Přepnout na vyhledávání souborů ve všech viditelných složkách</string>
     <string name="set_as_default_folder">Nastavit jako výchozí složku</string>
     <string name="unset_as_default_folder">Zrušit nastavení jako výchozí složku</string>
+    <string name="reorder_by_dragging">Přeuspořádat složky přetažením</string>
     <string name="filter_media">Filtr médií</string>
     <string name="images">Obrázky</string>
     <string name="videos">Videa</string>

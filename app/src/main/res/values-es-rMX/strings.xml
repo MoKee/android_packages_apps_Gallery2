@@ -111,6 +111,8 @@
     <string name="by_last_modified_daily">Última modificación (diario)</string>
     <string name="by_last_modified_monthly">Última modificación (mensual)</string>
     <string name="by_date_taken">Fecha de creación</string>
+    <string name="by_date_taken_daily">Fecha elegida(diariamente)</string>
+    <string name="by_date_taken_monthly">Fecha elegida(mensualmente)</string>
     <string name="by_file_type">Tipo de fichero</string>
     <string name="by_extension">Extensión</string>
     <string name="grouping_and_sorting">Por favor, tenga en cuenta que la agrupación y la ordenación son 2 campos independientes</string>
@@ -153,6 +155,7 @@
     <string name="file_loading_priority">Prioridad de carga de archivos</string>
     <string name="speed">Velocidad</string>
     <string name="avoid_showing_invalid_files">Evitar mostrar archivos no válidos</string>
+    <string name="show_image_file_types">Mostrar tipos de archivo de imagenes</string>
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Medios a pantalla compelta</string>
     <string name="extended_details">Detalles ampliados</string>
@@ -218,6 +221,8 @@
     <string name="faq_2_title">He protegido la aplicación con una contraseña, pero la he olvidado. ¿Que puedo hacer?</string>
     <string name="faq_2_text">Puedes resolverlo de 2 maneras. Puede reinstalar la aplicación o encontrar la aplicación en la configuración de su dispositivo y seleccionar \"Borrar datos \". Restablecerá todas sus configuraciones, no eliminará ningún archivo multimedia.</string>
     <string name="faq_3_title">¿Cómo puedo hacer que un álbum siempre aparezca en la parte superior?</string>
+    <string name="faq_3_text">Puedes mantener presionado el album deseado y elegir el icono Fijar en el menu de acciones,esto lo fijara al principio.
+Puedes fijar multiples carpetas,los items fijados seran ordenados predeterminadamente.</string>
     <string name="faq_5_title">¿Cuál es la diferencia entre ocultar y excluir una carpeta?</string>
     <string name="faq_6_title">¿Por qué aparecen las carpetas con la portada de la música o las pegatinas?</string>
     <string name="faq_6_text">Puede suceder que veas aparecer algunos álbumes inusuales. Puede excluirlos fácilmente presionándolos durante mucho tiempo y seleccionando Excluir. En el siguiente cuadro de diálogo, puede seleccionar la carpeta principal, lo más probable es que evite que aparezcan otros álbumes relacionados.</string>
@@ -236,4 +241,6 @@
     <string name="faq_13_text">La solución actual para la visualización de imágenes funciona bien en la mayoría de los casos, pero si quieres una mejor calidad de imagen, puede habilitar las \"mostrar imagenes en la mayor calidad posible\" en la configuración de la aplicación, en el \"Imagenes profundas aumentables\" sección.</string>
     <string name="faq_14_title">He escondido un archivo/carpeta. ¿Cómo lo puedo Mostrar?</string>
     <string name="faq_15_title">¿Por qué la aplicación ocupa tanto espacio?</string>
+    <string name="faq_15_text">La cache de la aplicacion puede ocupar hasta 250MB,esto permite asegurar el rapido cargado de las imagenes. Si la aplicacion toma aun mas espacio,puede ser causado por que  tienes archivos en la papelera de reciclaje. Esos archivos cuentan en el tamaño de la aplicacion. Puedes limpiar la papelera de reciclaje al abrirla y eliminar todos los archivos,o desde los ajustes de la aplicacion. Cada archivo en la papelera es eliminado autommaticamente despues de 30 dias.</string>
+    <string name="app_title">Simple Gallery Pro - Gestor y editor de fotos</string>
 </resources>
