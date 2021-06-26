@@ -223,15 +223,15 @@ fun Context.getDirectParentSubfolders(dirs: ArrayList<Directory>, currentPathPre
                 val subDirs = dirs.filter { File(it.path).parent.equals(File(path).parent, true) } as ArrayList<Directory>
                 if (subDirs.isNotEmpty()) {
                     val lastModified = if (isSortingAscending) {
-                        subDirs.minBy { it.modified }?.modified
+                        subDirs.minByOrNull { it.modified }?.modified
                     } else {
-                        subDirs.maxBy { it.modified }?.modified
+                        subDirs.maxByOrNull { it.modified }?.modified
                     } ?: 0
 
                     val dateTaken = if (isSortingAscending) {
-                        subDirs.minBy { it.taken }?.taken
+                        subDirs.minByOrNull { it.taken }?.taken
                     } else {
-                        subDirs.maxBy { it.taken }?.taken
+                        subDirs.maxByOrNull { it.taken }?.taken
                     } ?: 0
 
                     var mediaTypes = 0
@@ -490,7 +490,7 @@ fun Context.loadPng(path: String, target: MySquareImageView, cropThumbnails: Boo
         .listener(object : RequestListener<Bitmap> {
             override fun onLoadFailed(e: GlideException?, model: Any?, targetBitmap: Target<Bitmap>?, isFirstResource: Boolean): Boolean {
                 tryLoadingWithPicasso(path, target, cropThumbnails, roundCorners, signature)
-                return false
+                return true
             }
 
             override fun onResourceReady(resource: Bitmap?, model: Any?, targetBitmap: Target<Bitmap>?, dataSource: DataSource?, isFirstResource: Boolean): Boolean {
@@ -830,7 +830,8 @@ fun Context.deleteMediumWithPath(path: String) {
 }
 
 fun Context.updateWidgets() {
-    val widgetIDs = AppWidgetManager.getInstance(applicationContext)?.getAppWidgetIds(ComponentName(applicationContext, MyWidgetProvider::class.java)) ?: return
+    val widgetIDs = AppWidgetManager.getInstance(applicationContext)?.getAppWidgetIds(ComponentName(applicationContext, MyWidgetProvider::class.java))
+        ?: return
     if (widgetIDs.isNotEmpty()) {
         Intent(applicationContext, MyWidgetProvider::class.java).apply {
             action = AppWidgetManager.ACTION_APPWIDGET_UPDATE
