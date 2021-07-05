@@ -61,6 +61,7 @@ class SettingsActivity : SimpleActivity() {
         setupFileDeletionPasswordProtection()
         setupDeleteEmptyFolders()
         setupAllowPhotoGestures()
+        setupAllowVideoGestures()
         setupAllowDownGesture()
         setupAllowRotatingWithGestures()
         setupShowNotch()
@@ -347,6 +348,14 @@ class SettingsActivity : SimpleActivity() {
         }
     }
 
+    private fun setupAllowVideoGestures() {
+        settings_allow_video_gestures.isChecked = config.allowVideoGestures
+        settings_allow_video_gestures_holder.setOnClickListener {
+            settings_allow_video_gestures.toggle()
+            config.allowVideoGestures = settings_allow_video_gestures.isChecked
+        }
+    }
+
     private fun setupAllowDownGesture() {
         settings_allow_down_gesture.isChecked = config.allowDownGesture
         settings_allow_down_gesture_holder.setOnClickListener {
@@ -598,8 +607,9 @@ class SettingsActivity : SimpleActivity() {
 
     private fun setupClearCache() {
         ensureBackgroundThread {
+            val size = cacheDir.getProperSize(true).formatSize()
             runOnUiThread {
-                settings_clear_cache_size.text = cacheDir.getProperSize(true).formatSize()
+                settings_clear_cache_size.text = size
             }
         }
 
