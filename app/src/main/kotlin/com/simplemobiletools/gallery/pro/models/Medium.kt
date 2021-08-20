@@ -3,10 +3,7 @@ package com.simplemobiletools.gallery.pro.models
 import android.content.Context
 import androidx.room.*
 import com.bumptech.glide.signature.ObjectKey
-import com.simplemobiletools.commons.extensions.formatDate
-import com.simplemobiletools.commons.extensions.formatSize
-import com.simplemobiletools.commons.extensions.getFilenameExtension
-import com.simplemobiletools.commons.extensions.isWebP
+import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.SORT_BY_DATE_MODIFIED
 import com.simplemobiletools.commons.helpers.SORT_BY_NAME
 import com.simplemobiletools.commons.helpers.SORT_BY_PATH
@@ -53,7 +50,11 @@ data class Medium(
 
     fun isPortrait() = type == TYPE_PORTRAITS
 
+    fun isApng() = name.isApng()
+
     fun isHidden() = name.startsWith('.')
+
+    fun isHeic() = name.toLowerCase().endsWith(".heic") || name.toLowerCase().endsWith(".heif")
 
     fun getBubbleText(sorting: Int, context: Context, dateFormat: String, timeFormat: String) = when {
         sorting and SORT_BY_NAME != 0 -> name

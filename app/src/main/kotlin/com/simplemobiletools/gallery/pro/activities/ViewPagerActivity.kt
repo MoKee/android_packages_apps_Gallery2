@@ -802,6 +802,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             checkDeleteConfirmation()
         }
 
+        bottom_rotate.beVisibleIf(config.visibleBottomActions and BOTTOM_ACTION_ROTATE != 0 && getCurrentMedium()?.isImage() == true)
         bottom_rotate.setOnLongClickListener { toast(R.string.rotate); true }
         bottom_rotate.setOnClickListener {
             rotateImage(90)
@@ -1282,14 +1283,11 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             (it as MyPagerAdapter).toggleFullscreen(mIsFullScreen)
             val newAlpha = if (mIsFullScreen) 0f else 1f
             top_shadow.animate().alpha(newAlpha).start()
-            if (bottom_actions.isVisible()) {
-                bottom_actions.animate().alpha(newAlpha).start()
-                arrayOf(bottom_favorite, bottom_edit, bottom_share, bottom_delete, bottom_rotate, bottom_properties, bottom_change_orientation,
-                    bottom_slideshow, bottom_show_on_map, bottom_toggle_file_visibility, bottom_rename, bottom_set_as, bottom_copy, bottom_move,
-                    bottom_resize).forEach {
-                    it.isClickable = !mIsFullScreen
-                }
-            }
+            bottom_actions.animate().alpha(newAlpha).withStartAction {
+                bottom_actions.beVisible()
+            }.withEndAction {
+                bottom_actions.beVisibleIf(newAlpha == 1f)
+            }.start()
         }
     }
 
