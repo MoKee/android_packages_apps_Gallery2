@@ -258,6 +258,11 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         super.onActivityResult(requestCode, resultCode, resultData)
     }
 
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        initBottomActionsLayout()
+    }
+
     private fun initViewPager() {
         val uri = intent.data
         if (uri != null) {
@@ -620,9 +625,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         val fileDirItems = arrayListOf(FileDirItem(currPath, currPath.getFilenameFromPath()))
         tryCopyMoveFilesTo(fileDirItems, isCopyOperation) {
             val newPath = "$it/${currPath.getFilenameFromPath()}"
-            rescanPaths(arrayListOf(newPath)) {
-                fixDateTaken(arrayListOf(newPath), false)
-            }
+            fixDateTaken(arrayListOf(newPath), false)
 
             config.tempFolderPath = ""
             if (!isCopyOperation) {
@@ -1014,13 +1017,11 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
 
         toast(R.string.file_saved)
         val paths = arrayListOf(file.absolutePath)
-        rescanPaths(paths) {
-            fixDateTaken(paths, false)
+        fixDateTaken(paths, false)
 
-            if (config.keepLastModified) {
-                File(file.absolutePath).setLastModified(lastModified)
-                updateLastModified(file.absolutePath, lastModified)
-            }
+        if (config.keepLastModified) {
+            File(file.absolutePath).setLastModified(lastModified)
+            updateLastModified(file.absolutePath, lastModified)
         }
         out.close()
     }
@@ -1124,11 +1125,6 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         }
     }
 
-    override fun onConfigurationChanged(newConfig: Configuration) {
-        super.onConfigurationChanged(newConfig)
-        initBottomActionsLayout()
-    }
-
     private fun refreshViewPager() {
         if (config.getFolderSorting(mDirectory) and SORT_BY_RANDOM == 0) {
             GetMediaAsynctask(applicationContext, mDirectory, false, false, mShowAll) {
@@ -1175,7 +1171,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
                         }
                     }
                 }
-            } else if (medium.path == mPath) {
+            } else if (medium.path.equals(mPath, true)) {
                 return i
             }
         }
