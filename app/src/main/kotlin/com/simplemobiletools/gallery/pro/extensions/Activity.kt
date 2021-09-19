@@ -210,8 +210,10 @@ fun BaseSimpleActivity.tryCopyMoveFilesTo(fileDirItems: ArrayList<FileDirItem>, 
     }
 }
 
-fun BaseSimpleActivity.tryDeleteFileDirItem(fileDirItem: FileDirItem, allowDeleteFolder: Boolean = false, deleteFromDatabase: Boolean,
-                                            callback: ((wasSuccess: Boolean) -> Unit)? = null) {
+fun BaseSimpleActivity.tryDeleteFileDirItem(
+    fileDirItem: FileDirItem, allowDeleteFolder: Boolean = false, deleteFromDatabase: Boolean,
+    callback: ((wasSuccess: Boolean) -> Unit)? = null
+) {
     deleteFile(fileDirItem, allowDeleteFolder) {
         if (deleteFromDatabase) {
             ensureBackgroundThread {
@@ -415,38 +417,50 @@ fun AppCompatActivity.fixDateTaken(
             val dateTakens = ArrayList<DateTaken>()
 
             for (path in paths) {
-                val dateTime = ExifInterface(path).getAttribute(ExifInterface.TAG_DATETIME_ORIGINAL)
-                    ?: ExifInterface(path).getAttribute(ExifInterface.TAG_DATETIME) ?: continue
+                try {
+                    val dateTime: String = ExifInterface(path).getAttribute(ExifInterface.TAG_DATETIME_ORIGINAL)
+                        ?: ExifInterface(path).getAttribute(ExifInterface.TAG_DATETIME) ?: continue
 
-                // some formats contain a "T" in the middle, some don't
-                // sample dates: 2015-07-26T14:55:23, 2018:09:05 15:09:05
-                val t = if (dateTime.substring(10, 11) == "T") "\'T\'" else " "
-                val separator = dateTime.substring(4, 5)
-                val format = "yyyy${separator}MM${separator}dd${t}kk:mm:ss"
-                val formatter = SimpleDateFormat(format, Locale.getDefault())
-                val timestamp = formatter.parse(dateTime).time
+                    // some formats contain a "T" in the middle, some don't
+                    // sample dates: 2015-07-26T14:55:23, 2018:09:05 15:09:05
+                    val t = if (dateTime.substring(10, 11) == "T") "\'T\'" else " "
+                    val separator = dateTime.substring(4, 5)
+                    val format = "yyyy${separator}MM${separator}dd${t}kk:mm:ss"
+                    val formatter = SimpleDateFormat(format, Locale.getDefault())
+                    val timestamp = formatter.parse(dateTime).time
 
-                val uri = getFileUri(path)
-                ContentProviderOperation.newUpdate(uri).apply {
-                    val selection = "${Images.Media.DATA} = ?"
-                    val selectionArgs = arrayOf(path)
-                    withSelection(selection, selectionArgs)
-                    withValue(Images.Media.DATE_TAKEN, timestamp)
-                    operations.add(build())
-                }
+                    val uri = getFileUri(path)
+                    ContentProviderOperation.newUpdate(uri).apply {
+                        val selection = "${Images.Media.DATA} = ?"
+                        val selectionArgs = arrayOf(path)
+                        withSelection(selection, selectionArgs)
+                        withValue(Images.Media.DATE_TAKEN, timestamp)
+                        operations.add(build())
+                    }
 
-                if (operations.size % BATCH_SIZE == 0) {
-                    contentResolver.applyBatch(MediaStore.AUTHORITY, operations)
-                    operations.clear()
-                }
+                    if (operations.size % BATCH_SIZE == 0) {
+                        contentResolver.applyBatch(MediaStore.AUTHORITY, operations)
+                        operations.clear()
+                    }
 
-                mediaDB.updateFavoriteDateTaken(path, timestamp)
-                didUpdateFile = true
+                    mediaDB.updateFavoriteDateTaken(path, timestamp)
+                    didUpdateFile = true
 
-                val dateTaken = DateTaken(null, path, path.getFilenameFromPath(), path.getParentPath(), timestamp, (System.currentTimeMillis() / 1000).toInt(), File(path).lastModified())
-                dateTakens.add(dateTaken)
-                if (!hasRescanned && getFileDateTaken(path) == 0L) {
-                    pathsToRescan.add(path)
+                    val dateTaken = DateTaken(
+                        null,
+                        path,
+                        path.getFilenameFromPath(),
+                        path.getParentPath(),
+                        timestamp,
+                        (System.currentTimeMillis() / 1000).toInt(),
+                        File(path).lastModified()
+                    )
+                    dateTakens.add(dateTaken)
+                    if (!hasRescanned && getFileDateTaken(path) == 0L) {
+                        pathsToRescan.add(path)
+                    }
+                } catch (e: Exception) {
+                    continue
                 }
             }
 
