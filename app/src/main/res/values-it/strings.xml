@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Galleria semplice</string>
+    <string name="app_name">Galleria Semplice</string>
     <string name="app_launcher_name">Galleria</string>
     <string name="edit">Modifica</string>
     <string name="open_camera">Apri fotocamera</string>
@@ -32,6 +32,7 @@
     <string name="switch_to_file_search">Passa alla ricerca di file in tutte le cartelle visibili</string>
     <string name="set_as_default_folder">Imposta come cartella predefinita</string>
     <string name="unset_as_default_folder">Rimuovi come cartella predefinita</string>
+    <string name="reorder_by_dragging">Riordina le cartelle trascinando</string>
     <string name="filter_media">Filtra i media</string>
     <string name="images">Immagini</string>
     <string name="videos">Video</string>
@@ -178,6 +179,7 @@
     <string name="limit_folder_title">Limita i titoli delle cartelle lunghe a 1 riga</string>
     <string name="square">Quadrato</string>
     <string name="rounded_corners">Angoli arrotondati</string>
+    <string name="export_favorite_paths">Esporta i percorsi di file preferiti</string>
     <string name="thumbnails">Miniature</string>
     <string name="fullscreen_media">Media a schermo intero</string>
     <string name="extended_details">Dettagli estesi</string>
@@ -264,8 +266,11 @@
     <string name="pesdk_overlay_button_blendModeLighten">Schiarisci</string>
     <string name="pesdk_overlay_button_blendModeMultiply">Moltiplica</string>
     <string name="pesdk_overlay_button_blendModeColorBurn">Brucia colore</string>
+    <string name="pesdk_overlay_button_blendModeSoftLight">Luce Soffusa</string>
+    <string name="pesdk_overlay_button_blendModeHardLight">Luce Intensa</string>
     <string name="pesdk_overlay_asset_none">Nessuno</string>
     <string name="pesdk_overlay_asset_golden">Dorato</string>
+    <string name="pesdk_overlay_asset_lightleak1">Luminosità 1</string>
     <string name="pesdk_overlay_asset_mosaic">Mosaico</string>
     <string name="pesdk_overlay_asset_paper">Carta</string>
     <string name="pesdk_overlay_asset_rain">Pioggia</string>
@@ -320,6 +325,7 @@
     <string name="faq_13_title">Vedo curvature di colore nelle immagini. Come posso migliorarne la qualità?</string>
     <string name="faq_13_text">L\'attuale soluzione per visualizzare immagini funziona bene nella maggior parte dei casi, ma se vuoi una qualità ancora maggiore, puoi attivare \"Mostra le immagini alla massima qualità possibile\" nelle impostazioni dell\'app, nella sezione \"Immagini ingrandibili a fondo\".</string>
     <string name="faq_14_title">Ho nascosto un file/una cartella. Come posso mostrarlo/a di nuovo?</string>
+    <string name="faq_14_text">Puoi premere la voce del menu \"Mostra temporaneamente voci nascoste\" nella schermata principale, o attivare/disattivare \"Mostra voci nascoste\" nelle impostazioni dell\'app per vedere la voce nascosta. Se vuoi mostrarla, basta tenerla premuta e selezionare \"Mostra\". Le cartelle sono nascoste aggiungendo un file \".nomedia\" nascosto al loro interno, puoi eliminare il file anche con ogni gestore file. Nota che nascondere funziona tuttavia ricorsivamente, quindi se nascondi una cartella, anche tutte le sotto-cartelle saranno nascoste. Quindi per mostrare le sottocartelle, dovrai mostrare la cartella madre.</string>
     <string name="faq_15_title">Perché l\'app impiega così tanto spazio?</string>
     <string name="faq_15_text">La cache dell\'app può richiedere fino a 250MB, garantisce un caricamento più rapido delle immagini. Se l\'app sta impiegando ancora più spazio, è molto probabile che tu abbia elementi nel Cestino. Questi file contano sulle dimensioni dell\'app. Puoi cancellare il cestino aprendo e cancellando tutti i file, o dalle impostazioni dell\'app. Ogni file nel Cestino viene eliminato automaticamente dopo 30 giorni.</string>
     <string name="app_title">Simple Gallery Pro - Photo Manager &amp; Editor</string>

@@ -32,6 +32,7 @@
     <string name="switch_to_file_search">Chuyển sang tìm kiếm tệp trên tất cả các thư mục hiển thị</string>
     <string name="set_as_default_folder">Đặt làm thư mục mặc định</string>
     <string name="unset_as_default_folder">Bỏ đặt làm thư mục mặc định</string>
+    <string name="reorder_by_dragging">Sắp xếp lại các thư mục bằng cách kéo</string>
     <string name="filter_media">Bộ lọc</string>
     <string name="images">Hình ảnh</string>
     <string name="videos">Video</string>

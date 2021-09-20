@@ -132,6 +132,16 @@
     <string name="deep_zoomable_images">画像のズームを深くする</string>
     <string name="show_highest_quality">可能な限り高品質で画像を表示</string>
     <string name="show_recycle_bin_last">ごみ箱をメイン画面の最後に表示</string>
+    <string name="allow_down_gesture">下げジェスチャーで全画面表示を閉じることを許可する</string>
+    <string name="allow_one_to_one_zoom">ダブルタップで 1:1 ズームインを許可する</string>
+    <string name="open_videos_on_separate_screen">新しい水平ジェスチャーで動画を別の画面で常に開く</string>
+    <string name="show_notch">利用可能な場合はノッチを表示</string>
+    <string name="allow_rotating_gestures">ジェスチャーで回転する画像を許可する</string>
+    <string name="file_loading_priority">ファイル読み込みの優先順位</string>
+    <string name="speed">速度</string>
+    <string name="compromise">侵害された</string>
+    <string name="avoid_showing_invalid_files">無効なファイルを表示しない</string>
+    <string name="show_image_file_types">画像ファイルの種類を表示</string>
     <string name="thumbnails">サムネイル設定</string>
     <string name="fullscreen_media">メディア設定</string>
     <string name="extended_details">詳細も表示する</string>
@@ -190,6 +200,7 @@
     <string name="faq_2_title">私はパスワードでアプリをロックしましたが忘れてしまいました。私は何ができますか？</string>
     <string name="faq_2_text">あなたは2つの方法で解決することができます。アプリを再インストールするか、端末の設定でアプリを見つけて「データを消去」を選択することです。 すべての設定がリセットされメディアファイルは削除されません。</string>
     <string name="faq_3_title">アルバムを常にトップに表示させるにはどうしたらいいですか？</string>
+    <string name="faq_3_text">あなたは目的のアルバムをロングタップしてアクションメニューでピンアイコンを選択しまう。ピンアイコンはトップに固定されます。複数のフォルダを固定することもできます。固定されたアイテムはデフォルトのソート方法でソートされます。</string>
     <string name="faq_5_title">フォルダの非表示と除外の違いは何ですか？</string>
     <string name="faq_6_title">アルバムカバーアートやステッカーが入ったフォルダが表示されるのはなぜですか？</string>
     <string name="faq_6_text">見慣れないアルバムがいくつか現れることがあります。長押しして「除外」を選択すると簡単に除外できます。次のダイアログで親フォルダを選択すると他の関連するアルバムも表示されなくなります。</string>
@@ -206,4 +217,6 @@
     <string name="faq_13_title">画像の中に縞模様が見えます。どのように品質を向上させることができますか？</string>
     <string name="faq_13_text">画像を表示する現在の解決法は多くの場合でうまく機能しますが、画質をさらに向上させたい場合は、アプリ設定の「深くズーム可能な画像」セクションの「できるだけ高画質に画像を表示する」を有効にして下さい。</string>
     <string name="faq_14_title">隠しファイルやフォルダがありますが、表示できますか？</string>
+    <string name="faq_15_title">なぜアプリはそんなに多くのスペースを占めるのですか?</string>
+    <string name="faq_15_text">アプリのキャッシュは最大250MBを取ることができ、画像の読み込みが迅速になります。 アプリがさらに多くのスペースを占有している場合、ごみ箱にアイテムが入っていることが原因と考えられます。 これらのファイルは、アプリのサイズにカウントされます. あなたはそれを開いて、すべてのファイルを削除するか、アプリの設定からごみ箱をクリアすることができます. ビン内のすべてのファイルは30日後に自動的に削除されます。</string>
 </resources>

@@ -32,6 +32,7 @@
     <string name="switch_to_file_search">Prepnúť na vyhľadávanie súborov vo všetkých viditeľných zložkách</string>
     <string name="set_as_default_folder">Nastaviť ako predvolený priečinok</string>
     <string name="unset_as_default_folder">Zrušiť nastavenie ako predvolený priečinok</string>
+    <string name="reorder_by_dragging">Zmeniť usporiadanie zložky pretiahnutím</string>
     <string name="filter_media">Filter médií</string>
     <string name="images">Obrázky</string>
     <string name="videos">Videá</string>
