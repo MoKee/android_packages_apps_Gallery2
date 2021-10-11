@@ -22,13 +22,13 @@ open class SimpleActivity : BaseSimpleActivity() {
     val observer = object : ContentObserver(null) {
         override fun onChange(selfChange: Boolean, uri: Uri?) {
             super.onChange(selfChange, uri)
-	    if (uri != null) {
-            	val path = getRealPathFromURI(uri)
-            	if (path != null) {
-            	    updateDirectoryPath(path.getParentPath())
-            	    addPathToDB(path)
-            	}
-	    }
+            if (uri != null) {
+                val path = getRealPathFromURI(uri)
+                if (path != null) {
+                    updateDirectoryPath(path.getParentPath())
+                    addPathToDB(path)
+                }
+            }
         }
     }
 
