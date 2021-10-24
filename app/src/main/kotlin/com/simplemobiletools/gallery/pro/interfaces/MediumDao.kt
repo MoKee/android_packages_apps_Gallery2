@@ -15,8 +15,14 @@ interface MediumDao {
     @Query("SELECT filename, full_path, parent_path, last_modified, date_taken, size, type, video_duration, is_favorite, deleted_ts FROM media WHERE deleted_ts = 0 AND is_favorite = 1")
     fun getFavorites(): List<Medium>
 
+    @Query("SELECT COUNT(filename) FROM media WHERE deleted_ts = 0 AND is_favorite = 1")
+    fun getFavoritesCount(): Long
+
     @Query("SELECT filename, full_path, parent_path, last_modified, date_taken, size, type, video_duration, is_favorite, deleted_ts FROM media WHERE deleted_ts != 0")
     fun getDeletedMedia(): List<Medium>
+
+    @Query("SELECT COUNT(filename) FROM media WHERE deleted_ts != 0")
+    fun getDeletedMediaCount(): Long
 
     @Insert(onConflict = REPLACE)
     fun insert(medium: Medium)
@@ -41,6 +47,9 @@ interface MediumDao {
 
     @Query("UPDATE media SET date_taken = :dateTaken WHERE full_path = :path COLLATE NOCASE")
     fun updateFavoriteDateTaken(path: String, dateTaken: Long)
+
+    @Query("UPDATE media SET is_favorite = :isFavorite WHERE full_path = :path COLLATE NOCASE")
+    fun updateFavorite(path: String, isFavorite: Boolean)
 
     @Query("UPDATE media SET is_favorite = 0")
     fun clearFavorites()

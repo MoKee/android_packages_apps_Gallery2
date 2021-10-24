@@ -937,6 +937,30 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         val lastModifieds = mLastMediaFetcher!!.getLastModifieds()
         val dateTakens = mLastMediaFetcher!!.getDateTakens()
 
+        if (config.showRecycleBinAtFolders && !config.showRecycleBinLast && !dirs.map { it.path }.contains(RECYCLE_BIN)) {
+            if (mediaDB.getDeletedMediaCount() > 0) {
+                val recycleBin = Directory().apply {
+                    path = RECYCLE_BIN
+                    name = getString(R.string.recycle_bin)
+                    location = LOCATION_INTERNAL
+                }
+
+                dirs.add(0, recycleBin)
+            }
+        }
+
+        if (dirs.map { it.path }.contains(FAVORITES)) {
+            if (mediaDB.getFavoritesCount() > 0) {
+                val favorites = Directory().apply {
+                    path = FAVORITES
+                    name = getString(R.string.favorites)
+                    location = LOCATION_INTERNAL
+                }
+
+                dirs.add(0, favorites)
+            }
+        }
+
         try {
             for (directory in dirs) {
                 if (mShouldStopFetching || isDestroyed || isFinishing) {
@@ -1027,14 +1051,20 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         }
 
         val foldersToScan = mLastMediaFetcher!!.getFoldersToScan()
-        foldersToScan.add(FAVORITES)
+        foldersToScan.remove(FAVORITES)
+        foldersToScan.add(0, FAVORITES)
         if (config.showRecycleBinAtFolders) {
-            foldersToScan.add(RECYCLE_BIN)
+            if (foldersToScan.contains(RECYCLE_BIN)) {
+                foldersToScan.remove(RECYCLE_BIN)
+                foldersToScan.add(0, RECYCLE_BIN)
+            } else {
+                foldersToScan.add(0, RECYCLE_BIN)
+            }
         } else {
             foldersToScan.remove(RECYCLE_BIN)
         }
 
-        dirs.forEach {
+        dirs.filterNot { it.path == RECYCLE_BIN || it.path == FAVORITES }.forEach {
             foldersToScan.remove(it.path)
         }
 
