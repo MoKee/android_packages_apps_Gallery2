@@ -213,6 +213,7 @@
     <string name="pesdk_focus_button_linear">Lineaarne</string>
     <string name="pesdk_focus_button_mirrored">Peegeldatud</string>
     <string name="pesdk_focus_button_gaussian">Gaussi</string>
+    <string name="pesdk_text_title_input">Lisa tekst</string>
     <string name="pesdk_text_title_name">Tekst</string>
     <string name="pesdk_text_title_options">Tekstivalikud</string>
     <string name="pesdk_text_title_textColor">Teksti värv</string>

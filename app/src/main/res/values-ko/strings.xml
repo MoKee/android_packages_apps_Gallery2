@@ -95,10 +95,15 @@
     <string name="pesdk_common_button_undo">실행취소</string>
     <string name="pesdk_common_button_redo">다시실행</string>
     <string name="pesdk_common_title_transparentColor">투명</string>
+    <string name="pesdk_common_title_whiteColor">흰색</string>
     <string name="pesdk_common_title_grayColor">흑백</string>
     <string name="pesdk_common_title_blackColor">검은색</string>
     <string name="pesdk_common_title_blueColor">파랑</string>
+    <string name="pesdk_common_title_purpleColor">보라색</string>
+    <string name="pesdk_common_title_pinkColor">분홍색</string>
     <string name="pesdk_common_title_redColor">빨강</string>
+    <string name="pesdk_common_title_orangeColor">오렌지색</string>
+    <string name="pesdk_common_title_yellowColor">노란색</string>
     <string name="pesdk_common_title_greenColor">초록</string>
     <string name="vesdk_video_trim_title_name">잘라내기</string>
 </resources>
