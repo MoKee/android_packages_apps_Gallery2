@@ -213,6 +213,7 @@
     <string name="pesdk_focus_button_linear">Lineáris</string>
     <string name="pesdk_focus_button_mirrored">Tükrözött</string>
     <string name="pesdk_focus_button_gaussian">Elosztott</string>
+    <string name="pesdk_text_title_input">Szöveg-hozzáadás</string>
     <string name="pesdk_text_title_name">Szöveg</string>
     <string name="pesdk_text_title_options">Szövegbeállítások</string>
     <string name="pesdk_text_title_textColor">Betűszín</string>
