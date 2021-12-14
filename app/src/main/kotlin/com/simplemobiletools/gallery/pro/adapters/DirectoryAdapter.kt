@@ -1,22 +1,24 @@
 package com.simplemobiletools.gallery.pro.adapters
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.ShortcutInfo
 import android.content.pm.ShortcutManager
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Icon
+import android.os.Build
 import android.text.TextUtils
 import android.view.Menu
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bumptech.glide.Glide
 import com.google.gson.Gson
+import com.qtalk.recyclerviewfastscroller.RecyclerViewFastScroller
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.adapters.MyRecyclerViewAdapter
 import com.simplemobiletools.commons.dialogs.*
@@ -26,7 +28,6 @@ import com.simplemobiletools.commons.interfaces.ItemMoveCallback
 import com.simplemobiletools.commons.interfaces.ItemTouchHelperContract
 import com.simplemobiletools.commons.interfaces.StartReorderDragListener
 import com.simplemobiletools.commons.models.FileDirItem
-import com.simplemobiletools.commons.views.FastScroller
 import com.simplemobiletools.commons.views.MyRecyclerView
 import com.simplemobiletools.gallery.pro.R
 import com.simplemobiletools.gallery.pro.activities.MediaActivity
@@ -56,9 +57,9 @@ import kotlin.collections.HashMap
 
 class DirectoryAdapter(
     activity: BaseSimpleActivity, var dirs: ArrayList<Directory>, val listener: DirectoryOperationsListener?, recyclerView: MyRecyclerView,
-    val isPickIntent: Boolean, val swipeRefreshLayout: SwipeRefreshLayout? = null, fastScroller: FastScroller? = null, itemClick: (Any) -> Unit
+    val isPickIntent: Boolean, val swipeRefreshLayout: SwipeRefreshLayout? = null, itemClick: (Any) -> Unit
 ) :
-    MyRecyclerViewAdapter(activity, recyclerView, fastScroller, itemClick), ItemTouchHelperContract {
+    MyRecyclerViewAdapter(activity, recyclerView, itemClick), ItemTouchHelperContract, RecyclerViewFastScroller.OnPopupTextUpdate {
 
     private val config = activity.config
     private val isListViewType = config.viewTypeFolders == VIEW_TYPE_LIST
@@ -75,6 +76,9 @@ class DirectoryAdapter(
     private var showMediaCount = config.showFolderMediaCount
     private var folderStyle = config.folderStyle
     private var limitFolderTitle = config.limitFolderTitle
+    var directorySorting = config.directorySorting
+    var dateFormat = config.dateFormat
+    var timeFormat = activity.getTimeFormat()
 
     init {
         setupDragListener(true)
@@ -537,6 +541,10 @@ class DirectoryAdapter(
     }
 
     private fun tryCreateShortcut() {
+        if (!isOreoPlus()) {
+            return
+        }
+
         activity.handleLockedFolderOpening(getFirstSelectedItemPath() ?: "") { success ->
             if (success) {
                 createShortcut()
@@ -544,7 +552,6 @@ class DirectoryAdapter(
         }
     }
 
-    @SuppressLint("NewApi")
     private fun createShortcut() {
         val manager = activity.getSystemService(ShortcutManager::class.java)
         if (manager.isRequestPinShortcutSupported) {
@@ -612,15 +619,8 @@ class DirectoryAdapter(
             return
         }
 
-        var SAFPath = ""
+        val SAFPath = getFirstSelectedItemPath() ?: return
         val selectedDirs = getSelectedItems()
-        selectedDirs.forEach {
-            val path = it.path
-            if (activity.needsStupidWritePermissions(path) && config.treeUri.isEmpty()) {
-                SAFPath = path
-            }
-        }
-
         activity.handleSAFDialog(SAFPath) {
             if (!it) {
                 return@handleSAFDialog
@@ -880,4 +880,6 @@ class DirectoryAdapter(
     override fun onRowClear(myViewHolder: ViewHolder?) {
         swipeRefreshLayout?.isEnabled = activity.config.enablePullToRefresh
     }
+
+    override fun onChange(position: Int) = dirs.getOrNull(position)?.getBubbleText(directorySorting, activity, dateFormat, timeFormat) ?: ""
 }

@@ -17,8 +17,8 @@ android {
         applicationId "com.simplemobiletools.gallery.pro"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 355
-        versionName "6.22.0"
+        versionCode 357
+        versionName "6.22.2"
         vectorDrawables.useSupportLibrary = true
         android.applicationVariants.all { variant ->
             variant.outputs.all {
@@ -82,29 +82,29 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:32a60b55c1'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:a3e48ae9dd'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'com.google.android.exoplayer:exoplayer-core:2.9.6'
     implementation 'com.google.vr:sdk-panowidget:1.180.0'
     implementation 'com.google.vr:sdk-videowidget:1.180.0'
     implementation 'org.apache.sanselan:sanselan:0.97-incubator'
     implementation 'info.androidhive:imagefilters:1.0.7'
-    implementation 'com.squareup.okio:okio:2.10.0'
     implementation 'com.caverock:androidsvg-aar:1.4'
     implementation 'com.github.tibbi:gestureviews:a8e8fa8d27'
     implementation 'com.github.tibbi:subsampling-scale-image-view:60fb7362d5'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-    implementation 'com.github.penfeizhou.android.animation:awebp:2.11.0'
-    implementation 'com.github.penfeizhou.android.animation:apng:2.11.0'
+    implementation 'com.github.penfeizhou.android.animation:awebp:2.17.0'
+    implementation 'com.github.penfeizhou.android.animation:apng:2.17.0'
+    implementation 'com.squareup.okio:okio:3.0.0'
     implementation('com.squareup.picasso:picasso:2.71828') {
         exclude group: 'com.squareup.okhttp3', module: 'okhttp'
     }
     compileOnly 'com.squareup.okhttp3:okhttp:4.9.0'
 
-    kapt 'com.github.bumptech.glide:compiler:4.10.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
 
     kapt 'androidx.room:room-compiler:2.3.0'
     implementation 'androidx.room:room-runtime:2.3.0'

@@ -1,6 +1,5 @@
 package com.simplemobiletools.gallery.pro.adapters
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.ShortcutInfo
 import android.content.pm.ShortcutManager
@@ -12,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.qtalk.recyclerviewfastscroller.RecyclerViewFastScroller
 import com.simplemobiletools.commons.activities.BaseSimpleActivity
 import com.simplemobiletools.commons.adapters.MyRecyclerViewAdapter
 import com.simplemobiletools.commons.dialogs.PropertiesDialog
@@ -20,7 +20,6 @@ import com.simplemobiletools.commons.dialogs.RenameItemDialog
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.FileDirItem
-import com.simplemobiletools.commons.views.FastScroller
 import com.simplemobiletools.commons.views.MyRecyclerView
 import com.simplemobiletools.gallery.pro.R
 import com.simplemobiletools.gallery.pro.activities.ViewPagerActivity
@@ -34,6 +33,7 @@ import com.simplemobiletools.gallery.pro.models.ThumbnailSection
 import kotlinx.android.synthetic.main.photo_item_grid.view.*
 import kotlinx.android.synthetic.main.thumbnail_section.view.*
 import kotlinx.android.synthetic.main.video_item_grid.view.*
+import kotlinx.android.synthetic.main.video_item_grid.view.favorite
 import kotlinx.android.synthetic.main.video_item_grid.view.media_item_holder
 import kotlinx.android.synthetic.main.video_item_grid.view.medium_check
 import kotlinx.android.synthetic.main.video_item_grid.view.medium_name
@@ -42,9 +42,9 @@ import java.util.*
 
 class MediaAdapter(
     activity: BaseSimpleActivity, var media: ArrayList<ThumbnailItem>, val listener: MediaOperationsListener?, val isAGetIntent: Boolean,
-    val allowMultiplePicks: Boolean, val path: String, recyclerView: MyRecyclerView, fastScroller: FastScroller? = null, itemClick: (Any) -> Unit
+    val allowMultiplePicks: Boolean, val path: String, recyclerView: MyRecyclerView, itemClick: (Any) -> Unit
 ) :
-    MyRecyclerViewAdapter(activity, recyclerView, fastScroller, itemClick) {
+    MyRecyclerViewAdapter(activity, recyclerView, itemClick), RecyclerViewFastScroller.OnPopupTextUpdate {
 
     private val INSTANT_LOAD_DURATION = 2000L
     private val IMAGE_LOAD_DELAY = 100L
@@ -67,6 +67,10 @@ class MediaAdapter(
     private var cropThumbnails = config.cropThumbnails
     private var displayFilenames = config.displayFileNames
     private var showFileTypes = config.showThumbnailFileTypes
+
+    var sorting = config.getFolderSorting(if (config.showAll) SHOW_ALL else path)
+    var dateFormat = config.dateFormat
+    var timeFormat = activity.getTimeFormat()
 
     init {
         setupDragListener(true)
@@ -307,12 +311,11 @@ class MediaAdapter(
         }
     }
 
-    private fun rotateSelection(degrees: Int) {
+    private fun handleRotate(paths: List<String>, degrees: Int) {
+        var fileCnt = paths.size
+        rotatedImagePaths.clear()
         activity.toast(R.string.saving)
         ensureBackgroundThread {
-            val paths = getSelectedPaths().filter { it.isImageFast() }
-            var fileCnt = paths.size
-            rotatedImagePaths.clear()
             paths.forEach {
                 rotatedImagePaths.add(it)
                 activity.saveRotatedImageToFile(it, it, degrees, true) {
@@ -325,6 +328,20 @@ class MediaAdapter(
                     }
                 }
             }
+        }
+    }
+
+    private fun rotateSelection(degrees: Int) {
+        val paths = getSelectedPaths().filter { it.isImageFast() }
+
+        if (paths.any { activity.needsStupidWritePermissions(it) }) {
+            activity.handleSAFDialog(paths.first { activity.needsStupidWritePermissions(it) }) {
+                if (it) {
+                    handleRotate(paths, degrees)
+                }
+            }
+        } else {
+            handleRotate(paths, degrees)
         }
     }
 
@@ -368,8 +385,11 @@ class MediaAdapter(
         }
     }
 
-    @SuppressLint("NewApi")
     private fun createShortcut() {
+        if (!isOreoPlus()) {
+            return
+        }
+
         val manager = activity.getSystemService(ShortcutManager::class.java)
         if (manager.isRequestPinShortcutSupported) {
             val path = getSelectedPaths().first()
@@ -509,10 +529,6 @@ class MediaAdapter(
         }, INSTANT_LOAD_DURATION)
     }
 
-    fun getItemBubbleText(position: Int, sorting: Int, dateFormat: String, timeFormat: String): String {
-        return (media[position] as? Medium)?.getBubbleText(sorting, activity, dateFormat, timeFormat) ?: ""
-    }
-
     private fun setupThumbnail(view: View, medium: Medium) {
         val isSelected = selectedKeys.contains(medium.path.hashCode())
         view.apply {
@@ -523,6 +539,8 @@ class MediaAdapter(
             }
 
             media_item_holder.setPadding(padding, padding, padding, padding)
+
+            favorite.beVisibleIf(medium.isFavorite && config.markFavoriteItems)
 
             play_portrait_outline?.beVisibleIf(medium.isVideo() || medium.isPortrait())
             if (medium.isVideo()) {
@@ -579,8 +597,7 @@ class MediaAdapter(
 
             if (loadImageInstantly) {
                 activity.loadImage(
-                    medium.type, path, medium_thumbnail, scrollHorizontally, animateGifs, cropThumbnails, roundedCorners, medium.getKey(),
-                    rotatedImagePaths
+                    medium.type, path, medium_thumbnail, scrollHorizontally, animateGifs, cropThumbnails, roundedCorners, medium.getKey(), rotatedImagePaths
                 )
             } else {
                 medium_thumbnail.setImageDrawable(null)
@@ -608,5 +625,14 @@ class MediaAdapter(
             thumbnail_section.text = section.title
             thumbnail_section.setTextColor(textColor)
         }
+    }
+
+    override fun onChange(position: Int): String {
+        var realIndex = position
+        if (isASectionTitle(position)) {
+            realIndex++
+        }
+
+        return (media[realIndex] as? Medium)?.getBubbleText(sorting, activity, dateFormat, timeFormat) ?: ""
     }
 }

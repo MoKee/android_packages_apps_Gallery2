@@ -333,7 +333,6 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         }
     }
 
-    @SuppressLint("NewApi")
     private fun initContinue() {
         if (intent.extras?.containsKey(IS_VIEW_INTENT) == true) {
             if (isShowHiddenFlagNeeded()) {
@@ -407,7 +406,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
                     val duration = if (type == TYPE_VIDEOS) getDuration(mPath) ?: 0 else 0
                     val ts = System.currentTimeMillis()
                     val medium =
-                        Medium(null, mPath.getFilenameFromPath(), mPath, mPath.getParentPath(), ts, ts, File(mPath).length(), type, duration, isFavorite, 0)
+                        Medium(null, mPath.getFilenameFromPath(), mPath, mPath.getParentPath(), ts, ts, File(mPath).length(), type, duration, isFavorite, 0, 0L)
                     mediaDB.insert(medium)
                 }
             }
@@ -716,8 +715,11 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         }
     }
 
-    @SuppressLint("NewApi")
     private fun createShortcut() {
+        if (!isOreoPlus()) {
+            return
+        }
+
         val manager = getSystemService(ShortcutManager::class.java)
         if (manager.isRequestPinShortcutSupported) {
             val medium = getCurrentMedium() ?: return
@@ -850,7 +852,9 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         }
 
         bottom_toggle_file_visibility.beVisibleIf(visibleBottomActions and BOTTOM_ACTION_TOGGLE_VISIBILITY != 0)
-        bottom_toggle_file_visibility.setOnLongClickListener { toast(R.string.toggle_file_visibility); true }
+        bottom_toggle_file_visibility.setOnLongClickListener {
+            toast(if (currentMedium?.isHidden() == true) R.string.unhide else R.string.hide); true
+        }
         bottom_toggle_file_visibility.setOnClickListener {
             currentMedium?.apply {
                 toggleFileVisibility(!isHidden()) {
@@ -895,10 +899,10 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             return
         }
 
-        val favoriteIcon = if (medium.isFavorite) R.drawable.ic_star_on_vector else R.drawable.ic_star_off_vector
+        val favoriteIcon = if (medium.isFavorite) R.drawable.ic_star_vector else R.drawable.ic_star_outline_vector
         bottom_favorite.setImageResource(favoriteIcon)
 
-        val hideIcon = if (medium.isHidden()) R.drawable.ic_unhide_vector else R.drawable.ic_hide
+        val hideIcon = if (medium.isHidden()) R.drawable.ic_unhide_vector else R.drawable.ic_hide_vector
         bottom_toggle_file_visibility.setImageResource(hideIcon)
 
         bottom_rotate.beVisibleIf(config.visibleBottomActions and BOTTOM_ACTION_ROTATE != 0 && getCurrentMedium()?.isImage() == true)
@@ -929,7 +933,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         printHelper.orientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         try {
-            val resolution = path.getImageResolution()
+            val resolution = path.getImageResolution(this)
             if (resolution == null) {
                 toast(R.string.unknown_error_occurred)
                 return
@@ -987,7 +991,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     @TargetApi(Build.VERSION_CODES.N)
     private fun resizeImage() {
         val oldPath = getCurrentPath()
-        val originalSize = oldPath.getImageResolution() ?: return
+        val originalSize = oldPath.getImageResolution(this) ?: return
         ResizeWithPathDialog(this, originalSize, oldPath) { newSize, newPath ->
             ensureBackgroundThread {
                 try {
