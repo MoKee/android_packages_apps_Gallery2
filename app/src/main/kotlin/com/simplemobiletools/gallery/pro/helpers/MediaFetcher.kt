@@ -439,7 +439,7 @@ class MediaFetcher(val context: Context) {
                 val filename = cursor.getStringValue(Images.Media.DISPLAY_NAME)
                 val path = cursor.getStringValue(Images.Media.DATA)
                 val lastModified = cursor.getLongValue(Images.Media.DATE_MODIFIED) * 1000
-                val dateTaken = cursor.getLongValue(Images.Media.DATE_TAKEN)
+                var dateTaken = cursor.getLongValue(Images.Media.DATE_TAKEN)
                 val size = cursor.getLongValue(Images.Media.SIZE)
                 val videoDuration = Math.round(cursor.getIntValue(MediaStore.MediaColumns.DURATION) / 1000.toDouble()).toInt()
 
@@ -483,6 +483,10 @@ class MediaFetcher(val context: Context) {
                     isSvg -> TYPE_SVGS
                     isPortrait -> TYPE_PORTRAITS
                     else -> TYPE_IMAGES
+                }
+
+                if (dateTaken == 0L) {
+                    dateTaken = lastModified
                 }
 
                 val isFavorite = favoritePaths.contains(path)
@@ -805,7 +809,7 @@ class MediaFetcher(val context: Context) {
         val yesterday = formatDate((System.currentTimeMillis() - DAY_SECONDS * 1000).toString(), true)
         for ((key, value) in mediumGroups) {
             var currentGridPosition = 0
-            val sectionKey = getFormattedKey(key, currentGrouping, today, yesterday)
+            val sectionKey = getFormattedKey(key, currentGrouping, today, yesterday, value.size)
             thumbnailItems.add(ThumbnailSection(sectionKey))
 
             value.forEach {
@@ -818,7 +822,7 @@ class MediaFetcher(val context: Context) {
         return thumbnailItems
     }
 
-    private fun getFormattedKey(key: String, grouping: Int, today: String, yesterday: String): String {
+    private fun getFormattedKey(key: String, grouping: Int, today: String, yesterday: String, count: Int): String {
         var result = when {
             grouping and GROUP_BY_LAST_MODIFIED_DAILY != 0 || grouping and GROUP_BY_DATE_TAKEN_DAILY != 0 -> getFinalDate(
                 formatDate(key, true),
@@ -836,7 +840,11 @@ class MediaFetcher(val context: Context) {
             result = context.getString(R.string.unknown)
         }
 
-        return result
+        return if (grouping and GROUP_SHOW_FILE_COUNT != 0) {
+            "$result ($count)"
+        } else {
+            result
+        }
     }
 
     private fun getFinalDate(date: String, today: String, yesterday: String): String {

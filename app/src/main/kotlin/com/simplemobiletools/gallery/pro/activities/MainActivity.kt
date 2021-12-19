@@ -961,7 +961,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
 
                 // update directories and media files in the local db, delete invalid items. Intentionally creating a new thread
                 updateDBDirectory(directory)
-                if (!directory.isRecycleBin()) {
+                if (!directory.isRecycleBin() && !directory.areFavorites()) {
                     Thread {
                         try {
                             mediaDB.insertAll(curMedia)
@@ -1060,7 +1060,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             Thread {
                 try {
                     directoryDao.insert(newDir)
-                    if (folder != RECYCLE_BIN) {
+                    if (folder != RECYCLE_BIN && folder != FAVORITES) {
                         mediaDB.insertAll(newMedia)
                     }
                 } catch (ignored: Exception) {
