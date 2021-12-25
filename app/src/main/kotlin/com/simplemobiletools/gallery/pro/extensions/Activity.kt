@@ -182,7 +182,7 @@ fun BaseSimpleActivity.toggleFileVisibility(oldPath: String, hide: Boolean, call
     }
 
     val newPath = "$path/$filename"
-    renameFile(oldPath, newPath) {
+    renameFile(oldPath, newPath, false) { success, useAndroid30Way ->
         runOnUiThread {
             callback?.invoke(newPath)
         }
