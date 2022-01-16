@@ -32,6 +32,7 @@
     <string name="switch_to_file_search">切换文件搜索范围为所有可见的文件夹</string>
     <string name="set_as_default_folder">设置为默认文件夹</string>
     <string name="unset_as_default_folder">取消设置为默认文件夹</string>
+    <string name="reorder_by_dragging">通过拖动重排文件夹</string>
     <string name="filter_media">要显示的媒体类型</string>
     <string name="images">图片</string>
     <string name="videos">视频</string>
@@ -171,6 +172,7 @@
     <string name="allow_zooming_videos">允许双击缩放视频</string>
     <string name="folder_thumbnail_style">文件夹缩略图样式</string>
     <string name="file_thumbnail_style">文件缩略图样式</string>
+    <string name="mark_favorite_items">标记收藏的项目</string>
     <string name="thumbnail_spacing">缩略图间距</string>
     <string name="show_file_count_line">在单独的行上显示文件计数</string>
     <string name="show_file_count_brackets">在括号中显示文件计数</string>
@@ -212,6 +214,7 @@
     <string name="pesdk_focus_button_linear">线形</string>
     <string name="pesdk_focus_button_mirrored">镜像对称</string>
     <string name="pesdk_focus_button_gaussian">高斯</string>
+    <string name="pesdk_text_title_input">添加文字</string>
     <string name="pesdk_text_title_name">文本</string>
     <string name="pesdk_text_title_options">文本选项</string>
     <string name="pesdk_text_title_textColor">文本颜色</string>

@@ -127,6 +127,7 @@
     <string name="by_date_taken_monthly">Datum pořízení (měsíčně)</string>
     <string name="by_file_type">Typ souboru</string>
     <string name="by_extension">Přípona</string>
+    <string name="show_file_count_section_header">Zobrazit počet souborů v záhlaví sekcí</string>
     <string name="grouping_and_sorting">Vezměte prosím na vědomí, že seskupování a třídění jsou 2 nezávislé pole</string>
     <string name="folder_on_widget">Složka zobrazená na widgetu:</string>
     <string name="show_folder_name">Zobrazit název složky</string>
@@ -172,6 +173,7 @@
     <string name="allow_zooming_videos">Povolit přiblížení videa dvojitým klepnutím</string>
     <string name="folder_thumbnail_style">Styl miniatury složky</string>
     <string name="file_thumbnail_style">Styl miniatury souboru</string>
+    <string name="mark_favorite_items">Označit oblíbené položky</string>
     <string name="thumbnail_spacing">Rozestupy miniatur</string>
     <string name="show_file_count_line">Zobrazit počet souborů na samostatném řádku</string>
     <string name="show_file_count_brackets">Zobrazit počet souborů v závorkách</string>
