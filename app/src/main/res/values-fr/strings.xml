@@ -32,6 +32,7 @@
     <string name="switch_to_file_search">Basculer vers la recherche de fichiers dans tous les dossiers visibles</string>
     <string name="set_as_default_folder">Définir comme dossier par défaut</string>
     <string name="unset_as_default_folder">Retirer le dossier par défaut</string>
+    <string name="reorder_by_dragging">Réorganiser les dossiers par glisser-déposer</string>
     <string name="filter_media">Filtrer les médias</string>
     <string name="images">Images</string>
     <string name="videos">Vidéos</string>
@@ -170,12 +171,16 @@
     <string name="show_image_file_types">Afficher les types de fichiers image</string>
     <string name="allow_zooming_videos">Permettre de zoomer les vidéo en double-tappant l\'écran</string>
     <string name="folder_thumbnail_style">Style de la miniature du dossier</string>
+    <string name="file_thumbnail_style">Style de la maniature du fichier</string>
+    <string name="mark_favorite_items">Marquer les éléments favoris</string>
+    <string name="thumbnail_spacing">Séparation des miniatures</string>
     <string name="show_file_count_line">Afficher le nombre de fichiers sur une ligne distincte</string>
     <string name="show_file_count_brackets">Afficher le nombre de fichiers entre parenthèses</string>
     <string name="show_file_count_none">Ne pas afficher le nombre de fichiers</string>
     <string name="limit_folder_title">Limiter les titres de dossiers longs à 1 ligne</string>
     <string name="square">Carré</string>
     <string name="rounded_corners">Coins arrondis</string>
+    <string name="export_favorite_paths">Exporter les emplacements des fichiers favoris</string>
     <string name="thumbnails">Miniatures</string>
     <string name="fullscreen_media">Affichage en plein écran</string>
     <string name="extended_details">Détails supplémentaires</string>
@@ -209,6 +214,7 @@
     <string name="pesdk_focus_button_linear">Linéaire</string>
     <string name="pesdk_focus_button_mirrored">Miroir</string>
     <string name="pesdk_focus_button_gaussian">Gaussien</string>
+    <string name="pesdk_text_title_input">Ajouter du texte</string>
     <string name="pesdk_text_title_name">Texte</string>
     <string name="pesdk_text_title_options">Options du texte</string>
     <string name="pesdk_text_title_textColor">Couleur du texte</string>
@@ -261,6 +267,8 @@
     <string name="pesdk_overlay_button_blendModeOverlay">Surcouche</string>
     <string name="pesdk_overlay_button_blendModeLighten">Eclaircir</string>
     <string name="pesdk_overlay_button_blendModeMultiply">Multiplier</string>
+    <string name="pesdk_overlay_button_blendModeColorBurn">Saturer les couleurs</string>
+    <string name="pesdk_overlay_button_blendModeSoftLight">Lumière douce</string>
     <string name="pesdk_overlay_asset_none">Aucun</string>
     <string name="pesdk_overlay_asset_golden">Doré</string>
     <string name="pesdk_overlay_asset_lightleak1">Fuite de lumière 1</string>

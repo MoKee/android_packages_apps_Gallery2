@@ -154,6 +154,7 @@
     <string name="allow_rotating_gestures">Permitir rotar imágenes con gestos</string>
     <string name="file_loading_priority">Prioridad de carga de archivos</string>
     <string name="speed">Velocidad</string>
+    <string name="compromise">Comprometida</string>
     <string name="avoid_showing_invalid_files">Evitar mostrar archivos no válidos</string>
     <string name="show_image_file_types">Mostrar tipos de archivo de imagenes</string>
     <string name="thumbnails">Miniaturas</string>
@@ -243,4 +244,5 @@ Puedes fijar multiples carpetas,los items fijados seran ordenados predeterminada
     <string name="faq_15_title">¿Por qué la aplicación ocupa tanto espacio?</string>
     <string name="faq_15_text">La cache de la aplicacion puede ocupar hasta 250MB,esto permite asegurar el rapido cargado de las imagenes. Si la aplicacion toma aun mas espacio,puede ser causado por que  tienes archivos en la papelera de reciclaje. Esos archivos cuentan en el tamaño de la aplicacion. Puedes limpiar la papelera de reciclaje al abrirla y eliminar todos los archivos,o desde los ajustes de la aplicacion. Cada archivo en la papelera es eliminado autommaticamente despues de 30 dias.</string>
     <string name="app_title">Simple Gallery Pro - Gestor y editor de fotos</string>
+    <string name="app_long_description">.</string>
 </resources>
