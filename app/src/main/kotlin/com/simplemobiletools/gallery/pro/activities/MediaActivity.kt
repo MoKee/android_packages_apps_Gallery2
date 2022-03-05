@@ -242,8 +242,8 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
 //            findItem(R.id.about).isVisible = mShowAll
             findItem(R.id.create_new_folder).isVisible = !mShowAll && mPath != RECYCLE_BIN && mPath != FAVORITES
 
-            findItem(R.id.temporarily_show_hidden).isVisible = !config.shouldShowHidden
-            findItem(R.id.stop_showing_hidden).isVisible = config.temporarilyShowHidden
+            findItem(R.id.temporarily_show_hidden).isVisible = !isRPlus() && !config.shouldShowHidden
+            findItem(R.id.stop_showing_hidden).isVisible = !isRPlus() && config.temporarilyShowHidden
 
             findItem(R.id.set_as_default_folder).isVisible = !isDefaultFolder
             findItem(R.id.unset_as_default_folder).isVisible = isDefaultFolder
@@ -288,6 +288,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
 
     private fun startSlideshow() {
         if (mMedia.isNotEmpty()) {
+            hideKeyboard()
             Intent(this, ViewPagerActivity::class.java).apply {
                 val item = mMedia.firstOrNull { it is Medium } as? Medium ?: return
                 putExtra(SKIP_AUTHENTICATION, shouldSkipAuthentication())
@@ -514,6 +515,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
     }
 
     private fun switchToFolderView() {
+        hideKeyboard()
         config.showAll = false
         startActivity(Intent(this, MainActivity::class.java))
         finish()
@@ -770,6 +772,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
     }
 
     private fun itemClicked(path: String) {
+        hideKeyboard()
         if (isSetWallpaperIntent()) {
             toast(R.string.setting_wallpaper)
 
@@ -807,6 +810,9 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
             if (isVideo) {
                 val extras = HashMap<String, Boolean>()
                 extras[SHOW_FAVORITES] = mPath == FAVORITES
+                if (path.startsWith(recycleBinPath)) {
+                    extras[IS_IN_RECYCLE_BIN] = true
+                }
 
                 if (shouldSkipAuthentication()) {
                     extras[SKIP_AUTHENTICATION] = true

@@ -1,5 +1,6 @@
 package com.simplemobiletools.gallery.pro.extensions
 
+import android.app.Activity
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.content.Context
@@ -55,10 +56,6 @@ fun Context.getHumanizedFilename(path: String): String {
     return humanized.substring(humanized.lastIndexOf("/") + 1)
 }
 
-fun Context.launchSettings() {
-    startActivity(Intent(applicationContext, SettingsActivity::class.java))
-}
-
 val Context.config: Config get() = Config.newInstance(applicationContext)
 
 val Context.widgetsDB: WidgetsDao get() = GalleryDatabase.getInstance(applicationContext).WidgetsDao()
@@ -72,8 +69,6 @@ val Context.favoritesDB: FavoritesDao get() = GalleryDatabase.getInstance(applic
 val Context.dateTakensDB: DateTakensDao get() = GalleryDatabase.getInstance(applicationContext).DateTakensDao()
 
 val Context.recycleBin: File get() = filesDir
-
-val Context.recycleBinPath: String get() = filesDir.absolutePath
 
 fun Context.movePinnedDirectoriesToFront(dirs: ArrayList<Directory>): ArrayList<Directory> {
     val foundFolders = ArrayList<Directory>()
@@ -133,13 +128,29 @@ fun Context.getSortedDirectories(source: ArrayList<Directory>): ArrayList<Direct
 
         var result = when {
             sorting and SORT_BY_NAME != 0 -> {
+                if (o1.sortValue.isEmpty()) {
+                    o1.sortValue = o1.name.toLowerCase()
+                }
+
+                if (o2.sortValue.isEmpty()) {
+                    o2.sortValue = o2.name.toLowerCase()
+                }
+
                 if (sorting and SORT_USE_NUMERIC_VALUE != 0) {
-                    AlphanumericComparator().compare(o1.sortValue.toLowerCase(), o2.sortValue.toLowerCase())
+                    AlphanumericComparator().compare(o1.sortValue.normalizeString().toLowerCase(), o2.sortValue.normalizeString().toLowerCase())
                 } else {
-                    o1.sortValue.toLowerCase().compareTo(o2.sortValue.toLowerCase())
+                    o1.sortValue.normalizeString().toLowerCase().compareTo(o2.sortValue.normalizeString().toLowerCase())
                 }
             }
             sorting and SORT_BY_PATH != 0 -> {
+                if (o1.sortValue.isEmpty()) {
+                    o1.sortValue = o1.path.toLowerCase()
+                }
+
+                if (o2.sortValue.isEmpty()) {
+                    o2.sortValue = o2.path.toLowerCase()
+                }
+
                 if (sorting and SORT_USE_NUMERIC_VALUE != 0) {
                     AlphanumericComparator().compare(o1.sortValue.toLowerCase(), o2.sortValue.toLowerCase())
                 } else {

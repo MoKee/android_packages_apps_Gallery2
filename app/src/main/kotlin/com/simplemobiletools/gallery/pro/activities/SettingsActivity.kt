@@ -92,7 +92,6 @@ class SettingsActivity : SimpleActivity() {
         arrayOf(
             settings_color_customization_label,
             settings_general_settings_label,
-            settings_visibility_label,
             settings_videos_label,
             settings_thumbnails_label,
             settings_scrolling_label,
@@ -111,7 +110,6 @@ class SettingsActivity : SimpleActivity() {
         arrayOf(
             settings_color_customization_holder,
             settings_general_settings_holder,
-            settings_visibility_holder,
             settings_videos_holder,
             settings_thumbnails_holder,
             settings_scrolling_holder,
@@ -163,6 +161,7 @@ class SettingsActivity : SimpleActivity() {
     }
 
     private fun setupFileLoadingPriority() {
+        settings_file_loading_priority_holder.beGoneIf(isRPlus())
         settings_file_loading_priority.text = getFileLoadingPriorityText()
         settings_file_loading_priority_holder.setOnClickListener {
             val items = arrayListOf(
@@ -187,6 +186,7 @@ class SettingsActivity : SimpleActivity() {
     )
 
     private fun setupManageIncludedFolders() {
+        settings_manage_included_folders_holder.beGoneIf(isRPlus())
         settings_manage_included_folders_holder.setOnClickListener {
             startActivity(Intent(this, IncludedFoldersActivity::class.java))
         }
@@ -199,7 +199,7 @@ class SettingsActivity : SimpleActivity() {
     }
 
     private fun setupManageHiddenFolders() {
-        settings_manage_hidden_folders_holder.beVisibleIf(!isQPlus())
+        settings_manage_hidden_folders_holder.beGoneIf(isQPlus())
         settings_manage_hidden_folders_holder.setOnClickListener {
             handleHiddenFolderPasswordProtection {
                 startActivity(Intent(this, HiddenFoldersActivity::class.java))
@@ -208,6 +208,11 @@ class SettingsActivity : SimpleActivity() {
     }
 
     private fun setupShowHiddenItems() {
+        if (isRPlus()) {
+            settings_show_hidden_items_holder.beGone()
+            settings_manage_excluded_folders_holder.background = resources.getDrawable(R.drawable.ripple_bottom_corners, theme)
+        }
+
         settings_show_hidden_items.isChecked = config.showHiddenMedia
         settings_show_hidden_items_holder.setOnClickListener {
             if (config.showHiddenMedia) {
@@ -303,6 +308,7 @@ class SettingsActivity : SimpleActivity() {
     }
 
     private fun setupHiddenItemPasswordProtection() {
+        settings_hidden_item_password_protection_holder.beGoneIf(isRPlus())
         settings_hidden_item_password_protection.isChecked = config.isHiddenPasswordProtectionOn
         settings_hidden_item_password_protection_holder.setOnClickListener {
             val tabToShow = if (config.isHiddenPasswordProtectionOn) config.hiddenProtectionType else SHOW_ALL_TABS

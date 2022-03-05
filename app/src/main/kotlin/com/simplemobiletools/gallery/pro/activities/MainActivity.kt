@@ -287,12 +287,13 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 findItem(R.id.hide_the_recycle_bin).isVisible = useBin && config.showRecycleBinAtFolders
                 findItem(R.id.show_the_recycle_bin).isVisible = useBin && !config.showRecycleBinAtFolders
                 findItem(R.id.set_as_default_folder).isVisible = !config.defaultFolder.isEmpty()
+                findItem(R.id.create_new_folder).isVisible = !isRPlus()
                 setupSearch(this)
             }
         }
 
-        menu.findItem(R.id.temporarily_show_hidden).isVisible = !config.shouldShowHidden
-        menu.findItem(R.id.stop_showing_hidden).isVisible = config.temporarilyShowHidden
+        menu.findItem(R.id.temporarily_show_hidden).isVisible = !isRPlus() && !config.shouldShowHidden
+        menu.findItem(R.id.stop_showing_hidden).isVisible = !isRPlus() && config.temporarilyShowHidden
 
         updateMenuItemColors(menu)
         return true
@@ -480,6 +481,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     }
 
     private fun launchSearchActivity() {
+        hideKeyboard()
         Intent(this, SearchActivity::class.java).apply {
             startActivity(this)
         }
@@ -517,6 +519,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             if (mIsThirdPartyIntent) {
                 handleMediaIntent(this)
             } else {
+                hideKeyboard()
                 startActivity(this)
                 finish()
             }
@@ -830,6 +833,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     }
 
     private fun handleMediaIntent(intent: Intent) {
+        hideKeyboard()
         intent.apply {
             if (mIsSetWallpaperIntent) {
                 putExtra(SET_WALLPAPER_INTENT, true)
@@ -1315,7 +1319,12 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             Handler().postDelayed({
                 ensureBackgroundThread {
                     try {
-                        mediaDB.deleteOldRecycleBinItems(System.currentTimeMillis() - MONTH_MILLISECONDS)
+                        val filesToDelete = mediaDB.getOldRecycleBinItems(System.currentTimeMillis() - MONTH_MILLISECONDS)
+                        filesToDelete.forEach {
+                            if (File(it.path.replaceFirst(RECYCLE_BIN, recycleBinPath)).delete()) {
+                                mediaDB.deleteMediumPath(it.path)
+                            }
+                        }
                     } catch (e: Exception) {
                     }
                 }

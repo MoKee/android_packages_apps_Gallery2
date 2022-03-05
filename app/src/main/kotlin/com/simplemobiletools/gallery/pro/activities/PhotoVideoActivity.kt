@@ -6,14 +6,13 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.simplemobiletools.commons.dialogs.PropertiesDialog
 import com.simplemobiletools.commons.extensions.*
-import com.simplemobiletools.commons.helpers.IS_FROM_GALLERY
-import com.simplemobiletools.commons.helpers.PERMISSION_WRITE_STORAGE
-import com.simplemobiletools.commons.helpers.REAL_FILE_PATH
+import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.gallery.pro.BuildConfig
 import com.simplemobiletools.gallery.pro.R
 import com.simplemobiletools.gallery.pro.extensions.*
@@ -70,8 +69,42 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.photo_video_menu, menu)
+        val visibleBottomActions = if (config.bottomActions) config.visibleBottomActions else 0
+
+        menu.apply {
+            findItem(R.id.menu_set_as).isVisible = mMedium?.isImage() == true && visibleBottomActions and BOTTOM_ACTION_SET_AS == 0
+            findItem(R.id.menu_edit).isVisible = mMedium?.isImage() == true && mUri?.scheme == "file" && visibleBottomActions and BOTTOM_ACTION_EDIT == 0
+            findItem(R.id.menu_properties).isVisible = mUri?.scheme == "file" && visibleBottomActions and BOTTOM_ACTION_PROPERTIES == 0
+            findItem(R.id.menu_share).isVisible = visibleBottomActions and BOTTOM_ACTION_SHARE == 0
+            findItem(R.id.menu_show_on_map).isVisible = visibleBottomActions and BOTTOM_ACTION_SHOW_ON_MAP == 0
+        }
+
+        updateMenuItemColors(menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (mMedium == null || mUri == null) {
+            return true
+        }
+
+        when (item.itemId) {
+            R.id.menu_set_as -> setAs(mUri!!.toString())
+            R.id.menu_open_with -> openPath(mUri!!.toString(), true)
+            R.id.menu_share -> sharePath(mUri!!.toString())
+            R.id.menu_edit -> openEditor(mUri!!.toString())
+            R.id.menu_properties -> showProperties()
+            R.id.menu_show_on_map -> showFileOnMap(mUri!!.toString())
+            else -> return super.onOptionsItemSelected(item)
+        }
+        return true
+    }
+
     private fun checkIntent(savedInstanceState: Bundle? = null) {
         if (intent.data == null && intent.action == Intent.ACTION_VIEW) {
+            hideKeyboard()
             startActivity(Intent(this, MainActivity::class.java))
             finish()
             return
@@ -79,7 +112,7 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
 
         mUri = intent.data ?: return
         val uri = mUri.toString()
-        if (uri.startsWith("content:/") && uri.contains("/storage/")) {
+        if (uri.startsWith("content:/") && uri.contains("/storage/") && !intent.getBooleanExtra(IS_IN_RECYCLE_BIN, false)) {
             val guessedPath = uri.substring(uri.indexOf("/storage/"))
             if (getDoesFilePathExist(guessedPath)) {
                 val extras = intent.extras ?: Bundle()
@@ -100,15 +133,18 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
         if (intent.extras?.containsKey(REAL_FILE_PATH) == true) {
             val realPath = intent.extras!!.getString(REAL_FILE_PATH)
             if (realPath != null && getDoesFilePathExist(realPath)) {
-                if (realPath.getFilenameFromPath().contains('.') || filename.contains('.')) {
-                    if (isFileTypeVisible(realPath)) {
-                        bottom_actions.beGone()
-                        sendViewPagerIntent(realPath)
-                        finish()
-                        return
+                val avoidShowingHiddenFiles = isRPlus() && File(realPath).isHidden
+                if (!avoidShowingHiddenFiles) {
+                    if (realPath.getFilenameFromPath().contains('.') || filename.contains('.')) {
+                        if (isFileTypeVisible(realPath)) {
+                            bottom_actions.beGone()
+                            sendViewPagerIntent(realPath)
+                            finish()
+                            return
+                        }
+                    } else {
+                        filename = realPath.getFilenameFromPath()
                     }
-                } else {
-                    filename = realPath.getFilenameFromPath()
                 }
             }
         }
@@ -123,13 +159,16 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
             return
         } else {
             val path = applicationContext.getRealPathFromURI(mUri!!) ?: ""
-            if (path != mUri.toString() && path.isNotEmpty() && mUri!!.authority != "mms" && filename.contains('.') && getDoesFilePathExist(path)) {
-                if (isFileTypeVisible(path)) {
-                    bottom_actions.beGone()
-                    rescanPaths(arrayListOf(mUri!!.path!!))
-                    sendViewPagerIntent(path)
-                    finish()
-                    return
+            val avoidShowingHiddenFiles = isRPlus() && File(path).isHidden
+            if (!avoidShowingHiddenFiles) {
+                if (path != mUri.toString() && path.isNotEmpty() && mUri!!.authority != "mms" && filename.contains('.') && getDoesFilePathExist(path)) {
+                    if (isFileTypeVisible(path)) {
+                        bottom_actions.beGone()
+                        rescanPaths(arrayListOf(mUri!!.path!!))
+                        sendViewPagerIntent(path)
+                        finish()
+                        return
+                    }
                 }
             }
         }
@@ -198,6 +237,7 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
         } catch (ignored: OutOfMemoryError) {
         }
 
+        hideKeyboard()
         if (isPanorama) {
             Intent(applicationContext, PanoramaVideoActivity::class.java).apply {
                 putExtra(PATH, realPath)
@@ -224,47 +264,46 @@ open class PhotoVideoActivity : SimpleActivity(), ViewPagerFragment.FragmentList
     }
 
     private fun sendViewPagerIntent(path: String) {
-        Intent(this, ViewPagerActivity::class.java).apply {
-            putExtra(SKIP_AUTHENTICATION, intent.getBooleanExtra(SKIP_AUTHENTICATION, false))
-            putExtra(SHOW_FAVORITES, intent.getBooleanExtra(SHOW_FAVORITES, false))
-            putExtra(IS_VIEW_INTENT, true)
-            putExtra(IS_FROM_GALLERY, mIsFromGallery)
-            putExtra(PATH, path)
-            startActivity(this)
+        ensureBackgroundThread {
+            if (isPathPresentInMediaStore(path)) {
+                openViewPager(path)
+            } else {
+                rescanPath(path) {
+                    openViewPager(path)
+                }
+            }
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.photo_video_menu, menu)
-        val visibleBottomActions = if (config.bottomActions) config.visibleBottomActions else 0
-
-        menu.apply {
-            findItem(R.id.menu_set_as).isVisible = mMedium?.isImage() == true && visibleBottomActions and BOTTOM_ACTION_SET_AS == 0
-            findItem(R.id.menu_edit).isVisible = mMedium?.isImage() == true && mUri?.scheme == "file" && visibleBottomActions and BOTTOM_ACTION_EDIT == 0
-            findItem(R.id.menu_properties).isVisible = mUri?.scheme == "file" && visibleBottomActions and BOTTOM_ACTION_PROPERTIES == 0
-            findItem(R.id.menu_share).isVisible = visibleBottomActions and BOTTOM_ACTION_SHARE == 0
-            findItem(R.id.menu_show_on_map).isVisible = visibleBottomActions and BOTTOM_ACTION_SHOW_ON_MAP == 0
+    private fun openViewPager(path: String) {
+        MediaActivity.mMedia.clear()
+        runOnUiThread {
+            hideKeyboard()
+            Intent(this, ViewPagerActivity::class.java).apply {
+                putExtra(SKIP_AUTHENTICATION, intent.getBooleanExtra(SKIP_AUTHENTICATION, false))
+                putExtra(SHOW_FAVORITES, intent.getBooleanExtra(SHOW_FAVORITES, false))
+                putExtra(IS_VIEW_INTENT, true)
+                putExtra(IS_FROM_GALLERY, mIsFromGallery)
+                putExtra(PATH, path)
+                startActivity(this)
+            }
         }
-
-        updateMenuItemColors(menu)
-        return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (mMedium == null || mUri == null) {
-            return true
+    private fun isPathPresentInMediaStore(path: String): Boolean {
+        val uri = MediaStore.Files.getContentUri("external")
+        val selection = "${MediaStore.Images.Media.DATA} = ?"
+        val selectionArgs = arrayOf(path)
+
+        try {
+            val cursor = contentResolver.query(uri, null, selection, selectionArgs, null)
+            cursor?.use {
+                return cursor.moveToFirst()
+            }
+        } catch (e: Exception) {
         }
 
-        when (item.itemId) {
-            R.id.menu_set_as -> setAs(mUri!!.toString())
-            R.id.menu_open_with -> openPath(mUri!!.toString(), true)
-            R.id.menu_share -> sharePath(mUri!!.toString())
-            R.id.menu_edit -> openEditor(mUri!!.toString())
-            R.id.menu_properties -> showProperties()
-            R.id.menu_show_on_map -> showFileOnMap(mUri!!.toString())
-            else -> return super.onOptionsItemSelected(item)
-        }
-        return true
+        return false
     }
 
     private fun showProperties() {

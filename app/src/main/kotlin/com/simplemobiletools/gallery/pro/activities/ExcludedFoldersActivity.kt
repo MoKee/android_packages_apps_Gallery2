@@ -5,6 +5,8 @@ import android.view.Menu
 import android.view.MenuItem
 import com.simplemobiletools.commons.dialogs.FilePickerDialog
 import com.simplemobiletools.commons.extensions.beVisibleIf
+import com.simplemobiletools.commons.extensions.internalStoragePath
+import com.simplemobiletools.commons.helpers.isRPlus
 import com.simplemobiletools.commons.interfaces.RefreshRecyclerViewListener
 import com.simplemobiletools.gallery.pro.R
 import com.simplemobiletools.gallery.pro.adapters.ManageFoldersAdapter
@@ -21,10 +23,16 @@ class ExcludedFoldersActivity : SimpleActivity(), RefreshRecyclerViewListener {
     private fun updateFolders() {
         val folders = ArrayList<String>()
         config.excludedFolders.mapTo(folders) { it }
+        var placeholderText = getString(R.string.excluded_activity_placeholder)
         manage_folders_placeholder.apply {
-            text = getString(R.string.excluded_activity_placeholder)
             beVisibleIf(folders.isEmpty())
             setTextColor(config.textColor)
+
+            if (isRPlus()) {
+                placeholderText = placeholderText.substringBefore("\n")
+            }
+
+            text = placeholderText
         }
 
         val adapter = ManageFoldersAdapter(this, folders, true, this, manage_folders_list) {}
@@ -50,7 +58,7 @@ class ExcludedFoldersActivity : SimpleActivity(), RefreshRecyclerViewListener {
     }
 
     private fun addFolder() {
-        FilePickerDialog(this, config.lastFilepickerPath, false, config.shouldShowHidden, false, true, true) {
+        FilePickerDialog(this, internalStoragePath, false, config.shouldShowHidden, false, true, true) {
             config.lastFilepickerPath = it
             config.addExcludedFolder(it)
             updateFolders()

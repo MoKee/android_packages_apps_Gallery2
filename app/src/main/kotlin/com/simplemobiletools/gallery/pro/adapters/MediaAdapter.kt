@@ -210,8 +210,8 @@ class MediaAdapter(
 
     private fun checkHideBtnVisibility(menu: Menu, selectedItems: ArrayList<Medium>) {
         val isInRecycleBin = selectedItems.firstOrNull()?.getIsInRecycleBin() == true
-        menu.findItem(R.id.cab_hide).isVisible = !isInRecycleBin && selectedItems.any { !it.isHidden() }
-        menu.findItem(R.id.cab_unhide).isVisible = !isInRecycleBin && selectedItems.any { it.isHidden() }
+        menu.findItem(R.id.cab_hide).isVisible = !isRPlus() && !isInRecycleBin && selectedItems.any { !it.isHidden() }
+        menu.findItem(R.id.cab_unhide).isVisible = !isRPlus() && !isInRecycleBin && selectedItems.any { it.isHidden() }
     }
 
     private fun checkFavoriteBtnVisibility(menu: Menu, selectedItems: ArrayList<Medium>) {
@@ -459,26 +459,35 @@ class MediaAdapter(
             return
         }
 
-        val SAFPath = getSelectedPaths().firstOrNull { activity.needsStupidWritePermissions(it) } ?: getFirstSelectedItemPath() ?: return
+        val selectedItems = getSelectedItems()
+        val selectedPaths = selectedItems.map { it.path } as ArrayList<String>
+        val SAFPath = selectedPaths.firstOrNull { activity.needsStupidWritePermissions(it) } ?: getFirstSelectedItemPath() ?: return
         activity.handleSAFDialog(SAFPath) {
             if (!it) {
                 return@handleSAFDialog
             }
 
-            val fileDirItems = ArrayList<FileDirItem>(selectedKeys.size)
-            val removeMedia = ArrayList<Medium>(selectedKeys.size)
-            val positions = getSelectedItemPositions()
+            val sdk30SafPath = selectedPaths.firstOrNull { activity.isAccessibleWithSAFSdk30(it) } ?: getFirstSelectedItemPath() ?: return@handleSAFDialog
+            activity.handleSAFDeleteSdk30Dialog(sdk30SafPath){
+                if (!it) {
+                    return@handleSAFDeleteSdk30Dialog
+                }
 
-            getSelectedItems().forEach {
-                fileDirItems.add(FileDirItem(it.path, it.name))
-                removeMedia.add(it)
+                val fileDirItems = ArrayList<FileDirItem>(selectedKeys.size)
+                val removeMedia = ArrayList<Medium>(selectedKeys.size)
+                val positions = getSelectedItemPositions()
+
+                selectedItems.forEach {
+                    fileDirItems.add(FileDirItem(it.path, it.name))
+                    removeMedia.add(it)
+                }
+
+                media.removeAll(removeMedia)
+                listener?.tryDeleteFiles(fileDirItems)
+                listener?.updateMediaGridDecoration(media)
+                removeSelectedItems(positions)
+                currentMediaHash = media.hashCode()
             }
-
-            media.removeAll(removeMedia)
-            listener?.tryDeleteFiles(fileDirItems)
-            listener?.updateMediaGridDecoration(media)
-            removeSelectedItems(positions)
-            currentMediaHash = media.hashCode()
         }
     }
 

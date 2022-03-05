@@ -31,6 +31,7 @@ import com.simplemobiletools.commons.models.FAQItem
 import com.simplemobiletools.commons.models.FileDirItem
 import com.simplemobiletools.gallery.pro.BuildConfig
 import com.simplemobiletools.gallery.pro.R
+import com.simplemobiletools.gallery.pro.activities.SettingsActivity
 import com.simplemobiletools.gallery.pro.activities.SimpleActivity
 import com.simplemobiletools.gallery.pro.dialogs.PickDirectoryDialog
 import com.simplemobiletools.gallery.pro.helpers.RECYCLE_BIN
@@ -75,6 +76,11 @@ fun Activity.openEditor(path: String, forceChooser: Boolean = false) {
 fun Activity.launchCamera() {
     val intent = Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA)
     launchActivityIntent(intent)
+}
+
+fun SimpleActivity.launchSettings() {
+    hideKeyboard()
+    startActivity(Intent(applicationContext, SettingsActivity::class.java))
 }
 
 fun AppCompatActivity.showSystemUI(toggleActionBarVisibility: Boolean) {
@@ -214,7 +220,7 @@ fun BaseSimpleActivity.tryDeleteFileDirItem(
     fileDirItem: FileDirItem, allowDeleteFolder: Boolean = false, deleteFromDatabase: Boolean,
     callback: ((wasSuccess: Boolean) -> Unit)? = null
 ) {
-    deleteFile(fileDirItem, allowDeleteFolder) {
+    deleteFile(fileDirItem, allowDeleteFolder, isDeletingMultipleFiles = false) {
         if (deleteFromDatabase) {
             ensureBackgroundThread {
                 deleteDBPath(fileDirItem.path)
