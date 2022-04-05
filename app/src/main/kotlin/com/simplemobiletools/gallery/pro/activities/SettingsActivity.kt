@@ -104,7 +104,7 @@ class SettingsActivity : SimpleActivity() {
             settings_recycle_bin_label,
             settings_migrating_label
         ).forEach {
-            it.setTextColor(getAdjustedPrimaryColor())
+            it.setTextColor(getProperPrimaryColor())
         }
 
         arrayOf(
@@ -122,7 +122,7 @@ class SettingsActivity : SimpleActivity() {
             settings_recycle_bin_holder,
             settings_migrating_holder
         ).forEach {
-            it.background.applyColorFilter(baseConfig.backgroundColor.getContrastColor())
+            it.background.applyColorFilter(getProperBackgroundColor().getContrastColor())
         }
     }
 

@@ -61,7 +61,6 @@ import kotlinx.android.synthetic.main.activity_medium.*
 import kotlinx.android.synthetic.main.bottom_actions.*
 import java.io.File
 import java.io.OutputStream
-import java.util.*
 
 class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, ViewPagerFragment.FragmentListener {
     private val REQUEST_VIEW_VIDEO = 1
@@ -91,7 +90,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_medium)
 
-        window.decorView.setBackgroundColor(config.backgroundColor)
+        window.decorView.setBackgroundColor(getProperBackgroundColor())
         top_shadow.layoutParams.height = statusBarHeight + actionBarHeight
         checkNotchSupport()
         (MediaActivity.mMedia.clone() as ArrayList<ThumbnailItem>).filter { it is Medium }.mapTo(mMediaFiles) { it as Medium }
@@ -223,7 +222,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             updateBottomActionIcons(currentMedium)
         }
 
-        updateMenuItemColors(menu, baseColor = Color.BLACK)
+        updateMenuItemColors(menu, forceWhiteIcons = true)
         return true
     }
 
@@ -1109,20 +1108,26 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
 
         val fileDirItem = FileDirItem(path, path.getFilenameFromPath())
         if (config.useRecycleBin && !getCurrentMedium()!!.getIsInRecycleBin()) {
-            mIgnoredPaths.add(fileDirItem.path)
-            val media = mMediaFiles.filter { !mIgnoredPaths.contains(it.path) } as ArrayList<ThumbnailItem>
-            runOnUiThread {
-                gotMedia(media, true, false)
-            }
+            handleSAFDialogSdk30(fileDirItem.path) {
+                if (!it) {
+                    return@handleSAFDialogSdk30
+                }
 
-            movePathsInRecycleBin(arrayListOf(path)) {
-                if (it) {
-                    tryDeleteFileDirItem(fileDirItem, false, false) {
-                        mIgnoredPaths.remove(fileDirItem.path)
-                        deleteDirectoryIfEmpty()
+                mIgnoredPaths.add(fileDirItem.path)
+                val media = mMediaFiles.filter { !mIgnoredPaths.contains(it.path) } as ArrayList<ThumbnailItem>
+                runOnUiThread {
+                    gotMedia(media, true, false)
+                }
+
+                movePathsInRecycleBin(arrayListOf(path)) {
+                    if (it) {
+                        tryDeleteFileDirItem(fileDirItem, false, false) {
+                            mIgnoredPaths.remove(fileDirItem.path)
+                            deleteDirectoryIfEmpty()
+                        }
+                    } else {
+                        toast(R.string.unknown_error_occurred)
                     }
-                } else {
-                    toast(R.string.unknown_error_occurred)
                 }
             }
         } else {
@@ -1131,15 +1136,21 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     }
 
     private fun handleDeletion(fileDirItem: FileDirItem) {
-        mIgnoredPaths.add(fileDirItem.path)
-        val media = mMediaFiles.filter { !mIgnoredPaths.contains(it.path) } as ArrayList<ThumbnailItem>
-        runOnUiThread {
-            gotMedia(media, true, false)
-        }
+        handleSAFDialogSdk30(fileDirItem.path) {
+            if (!it) {
+                return@handleSAFDialogSdk30
+            }
 
-        tryDeleteFileDirItem(fileDirItem, false, true) {
-            mIgnoredPaths.remove(fileDirItem.path)
-            deleteDirectoryIfEmpty()
+            mIgnoredPaths.add(fileDirItem.path)
+            val media = mMediaFiles.filter { !mIgnoredPaths.contains(it.path) } as ArrayList<ThumbnailItem>
+            runOnUiThread {
+                gotMedia(media, true, false)
+            }
+
+            tryDeleteFileDirItem(fileDirItem, false, true) {
+                mIgnoredPaths.remove(fileDirItem.path)
+                deleteDirectoryIfEmpty()
+            }
         }
     }
 

@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.simplemobiletools.commons.dialogs.FilePickerDialog
 import com.simplemobiletools.commons.extensions.beVisibleIf
+import com.simplemobiletools.commons.extensions.getProperTextColor
 import com.simplemobiletools.commons.extensions.internalStoragePath
 import com.simplemobiletools.commons.helpers.isRPlus
 import com.simplemobiletools.commons.interfaces.RefreshRecyclerViewListener
@@ -26,7 +27,7 @@ class ExcludedFoldersActivity : SimpleActivity(), RefreshRecyclerViewListener {
         var placeholderText = getString(R.string.excluded_activity_placeholder)
         manage_folders_placeholder.apply {
             beVisibleIf(folders.isEmpty())
-            setTextColor(config.textColor)
+            setTextColor(getProperTextColor())
 
             if (isRPlus()) {
                 placeholderText = placeholderText.substringBefore("\n")
@@ -58,7 +59,7 @@ class ExcludedFoldersActivity : SimpleActivity(), RefreshRecyclerViewListener {
     }
 
     private fun addFolder() {
-        FilePickerDialog(this, internalStoragePath, false, config.shouldShowHidden, false, true, true) {
+        FilePickerDialog(this, internalStoragePath, false, config.shouldShowHidden, false, true) {
             config.lastFilepickerPath = it
             config.addExcludedFolder(it)
             updateFolders()
