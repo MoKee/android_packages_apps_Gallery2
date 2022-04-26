@@ -13,11 +13,11 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.simplemobiletools.gallery.pro"
+        applicationId "com.mokee.gallery"
         minSdk 21
-        targetSdk 30
-        versionCode 358
-        versionName "6.22.3"
+        targetSdk 31
+        versionCode 360
+        versionName "6.23.1"
         vectorDrawables.useSupportLibrary = true
         android.applicationVariants.all { variant ->
             variant.outputs.all {
@@ -81,7 +81,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:41503be352'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:f3661fce8a'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
@@ -103,7 +103,7 @@ dependencies {
     }
     compileOnly 'com.squareup.okhttp3:okhttp:4.9.0'
 
-    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+    kapt 'com.github.bumptech.glide:compiler:4.13.1'
 
     kapt 'androidx.room:room-compiler:2.3.0'
     implementation 'androidx.room:room-runtime:2.3.0'

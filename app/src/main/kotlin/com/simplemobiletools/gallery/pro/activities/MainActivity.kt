@@ -64,6 +64,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     private var mShouldStopFetching = false
     private var mIsSearchOpen = false
     private var mWasDefaultFolderChecked = false
+    private var mWasMediaManagementPromptShown = false
     private var mLatestMediaId = 0L
     private var mLatestMediaDateId = 0L
     private var mCurrentPathPrefix = ""                 // used at "Group direct subfolders" for navigation
@@ -145,10 +146,23 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
         }
 
         // just request the permission, tryLoadGallery will then trigger in onResume
-        handlePermission(PERMISSION_WRITE_STORAGE) {
+        handleMediaPermissions {
             if (!it) {
                 toast(R.string.no_storage_permissions)
                 finish()
+            }
+        }
+    }
+
+    private fun handleMediaPermissions(callback: (granted: Boolean) -> Unit) {
+        handlePermission(PERMISSION_WRITE_STORAGE) { granted ->
+            callback(granted)
+            if (granted && isRPlus()) {
+                handlePermission(PERMISSION_MEDIA_LOCATION) {}
+                if (!mWasMediaManagementPromptShown && (config.appRunCount == 1 || config.appRunCount % 5 == 0)) {
+                    mWasMediaManagementPromptShown = true
+                    handleMediaManagementPrompt { }
+                }
             }
         }
     }
@@ -184,7 +198,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
 
         val primaryColor = getProperPrimaryColor()
         if (mStoredPrimaryColor != primaryColor) {
-            getRecyclerAdapter()?.updatePrimaryColor(primaryColor)
+            getRecyclerAdapter()?.updatePrimaryColor()
         }
 
         val styleString = "${config.folderStyle}${config.showFolderMediaCount}${config.limitFolderTitle}"
@@ -435,9 +449,9 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
     private fun tryLoadGallery() {
         // avoid calling anything right after granting the permission, it will be called from onResume()
         val wasMissingPermission = config.appRunCount == 1 && !hasPermission(PERMISSION_WRITE_STORAGE)
-        handlePermission(PERMISSION_WRITE_STORAGE) {
+        handleMediaPermissions {
             if (wasMissingPermission) {
-                return@handlePermission
+                return@handleMediaPermissions
             }
 
             if (it) {
@@ -1429,6 +1443,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
             add(Release(277, R.string.release_277))
             add(Release(295, R.string.release_295))
             add(Release(327, R.string.release_327))
+            add(Release(359, R.string.faq_16_text))
             checkWhatsNew(this, BuildConfig.VERSION_CODE)
         }
     }

@@ -90,7 +90,6 @@ class SettingsActivity : SimpleActivity() {
         invalidateOptionsMenu()
 
         arrayOf(
-            settings_color_customization_label,
             settings_general_settings_label,
             settings_videos_label,
             settings_thumbnails_label,
@@ -108,7 +107,6 @@ class SettingsActivity : SimpleActivity() {
         }
 
         arrayOf(
-            settings_color_customization_holder,
             settings_general_settings_holder,
             settings_videos_holder,
             settings_thumbnails_holder,
@@ -448,8 +446,10 @@ class SettingsActivity : SimpleActivity() {
     private fun setupKeepLastModified() {
         settings_keep_last_modified.isChecked = config.keepLastModified
         settings_keep_last_modified_holder.setOnClickListener {
-            settings_keep_last_modified.toggle()
-            config.keepLastModified = settings_keep_last_modified.isChecked
+            handleMediaManagementPrompt {
+                settings_keep_last_modified.toggle()
+                config.keepLastModified = settings_keep_last_modified.isChecked
+            }
         }
     }
 
