@@ -15,10 +15,8 @@ import android.os.Build
 import android.provider.MediaStore
 import android.provider.MediaStore.Files
 import android.provider.MediaStore.Images
-import android.provider.Settings
 import android.util.DisplayMetrics
 import android.view.View
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.exifinterface.media.ExifInterface
 import com.bumptech.glide.Glide
@@ -85,18 +83,11 @@ fun SimpleActivity.launchSettings() {
     startActivity(Intent(applicationContext, SettingsActivity::class.java))
 }
 
-@RequiresApi(Build.VERSION_CODES.S)
-fun AppCompatActivity.launchMediaManagementIntent() {
-    Intent(Settings.ACTION_REQUEST_MANAGE_MEDIA).apply {
-        data = Uri.parse("package:$packageName")
-        startActivity(this)
-    }
-}
 
-fun AppCompatActivity.handleMediaManagementPrompt(callback: () -> Unit) {
-    if (isSPlus() && !MediaStore.canManageMedia(this)) {
+fun BaseSimpleActivity.handleMediaManagementPrompt(callback: () -> Unit) {
+    if (isSPlus() && !MediaStore.canManageMedia(this) && !isExternalStorageManager()) {
         ConfirmationDialog(this, "", R.string.media_management_prompt, R.string.ok, 0) {
-            launchMediaManagementIntent()
+            launchMediaManagementIntent(callback)
         }
     } else {
         callback()

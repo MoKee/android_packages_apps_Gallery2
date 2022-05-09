@@ -1,6 +1,33 @@
 Changelog
 ==========
 
+Version 6.23.5 *(2022-05-05)*
+----------------------------
+
+ * Fixed renaming SD card files on Android 12
+
+Version 6.23.4 *(2022-05-04)*
+----------------------------
+
+ * Fixed a copying related glitch on Android 12
+ * Added some stability and translation improvements
+
+Version 6.23.3 *(2022-05-03)*
+----------------------------
+
+ * Show proper Last Modified value after file moving
+ * Fix some wallpaper setting related glitches
+ * Make sure Fix Date Taken values works on Android 11+
+ * Added some stability and translation improvements
+
+Version 6.23.2 *(2022-05-01)*
+----------------------------
+
+ * Simplify some file operations on Android 12+, if the gallery is set as a Media Management app
+ * Added .avif support on Android 12
+ * Allow setting both landscape and portrait wallpapers
+ * Added some translation, stability and UX improvements
+
 Version 6.23.1 *(2022-04-16)*
 ----------------------------
 
