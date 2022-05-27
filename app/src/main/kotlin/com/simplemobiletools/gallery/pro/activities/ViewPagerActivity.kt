@@ -595,6 +595,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             showSystemUI(true)
             mSlideshowHandler.removeCallbacksAndMessages(null)
             window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+            mAreSlideShowMediaVisible = false
         }
     }
 
@@ -1076,7 +1077,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
         rescanPaths(paths) {
             fixDateTaken(paths, false)
 
-            if (config.keepLastModified) {
+            if (config.keepLastModified && lastModified != 0L) {
                 File(file.absolutePath).setLastModified(lastModified)
                 updateLastModified(file.absolutePath, lastModified)
             }
@@ -1103,7 +1104,10 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     }
 
     private fun askConfirmDelete() {
+        val fileDirItem = File(getCurrentPath()).toFileDirItem(this)
+        val size = fileDirItem.getProperSize(this, countHidden = true).formatSize()
         val filename = "\"${getCurrentPath().getFilenameFromPath()}\""
+        val filenameAndSize = "$filename ($size)"
 
         val baseString = if (config.useRecycleBin && !getCurrentMedium()!!.getIsInRecycleBin()) {
             R.string.move_to_recycle_bin_confirmation
@@ -1111,7 +1115,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             R.string.deletion_confirmation
         }
 
-        val message = String.format(resources.getString(baseString), filename)
+        val message = String.format(resources.getString(baseString), filenameAndSize)
         DeleteWithRememberDialog(this, message) {
             config.tempSkipDeleteConfirmation = it
             deleteConfirmed()
@@ -1132,16 +1136,25 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
                 }
 
                 mIgnoredPaths.add(fileDirItem.path)
-                val media = mMediaFiles.filter { !mIgnoredPaths.contains(it.path) } as ArrayList<ThumbnailItem>
-                runOnUiThread {
-                    gotMedia(media, true, false)
+                val media = mMediaFiles.filter { !mIgnoredPaths.contains(it.path) } as ArrayList<Medium>
+                if (media.isNotEmpty()) {
+                    runOnUiThread {
+                        refreshUI(media, false)
+                    }
+                }
+
+                if (media.size == 1) {
+                    onPageSelected(0)
                 }
 
                 movePathsInRecycleBin(arrayListOf(path)) {
                     if (it) {
                         tryDeleteFileDirItem(fileDirItem, false, false) {
                             mIgnoredPaths.remove(fileDirItem.path)
-                            deleteDirectoryIfEmpty()
+                            if (media.isEmpty()) {
+                                deleteDirectoryIfEmpty()
+                                finish()
+                            }
                         }
                     } else {
                         toast(R.string.unknown_error_occurred)
@@ -1160,14 +1173,23 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             }
 
             mIgnoredPaths.add(fileDirItem.path)
-            val media = mMediaFiles.filter { !mIgnoredPaths.contains(it.path) } as ArrayList<ThumbnailItem>
-            runOnUiThread {
-                gotMedia(media, true, false)
+            val media = mMediaFiles.filter { !mIgnoredPaths.contains(it.path) } as ArrayList<Medium>
+            if (media.isNotEmpty()) {
+                runOnUiThread {
+                    refreshUI(media, false)
+                }
+            }
+
+            if (media.size == 1) {
+                onPageSelected(0)
             }
 
             tryDeleteFileDirItem(fileDirItem, false, true) {
                 mIgnoredPaths.remove(fileDirItem.path)
-                deleteDirectoryIfEmpty()
+                if (media.isEmpty()) {
+                    deleteDirectoryIfEmpty()
+                    finish()
+                }
             }
         }
     }
@@ -1213,7 +1235,7 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
     private fun refreshViewPager() {
         if (config.getFolderSorting(mDirectory) and SORT_BY_RANDOM == 0) {
             GetMediaAsynctask(applicationContext, mDirectory, false, false, mShowAll) {
-                gotMedia(it, refetchViewPagerPosition = true)
+                gotMedia(it)
             }.execute()
         }
     }
@@ -1231,6 +1253,10 @@ class ViewPagerActivity : SimpleActivity(), ViewPager.OnPageChangeListener, View
             return
         }
 
+        refreshUI(media, refetchViewPagerPosition)
+    }
+
+    private fun refreshUI(media: ArrayList<Medium>, refetchViewPagerPosition: Boolean) {
         mPrevHashcode = media.hashCode()
         mMediaFiles = media
 
