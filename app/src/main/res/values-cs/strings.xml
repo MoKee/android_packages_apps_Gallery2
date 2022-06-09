@@ -332,6 +332,12 @@
     <string name="faq_15_title">Proč aplikace zabírá tolik místa?</string>
     <string name="faq_15_text">Mezipaměť aplikace může mít až 250 MB, což zajišťuje rychlejší načítání obrázků. Pokud aplikace zabírá ještě více místa, je to s největší pravděpodobností způsobeno tím, že máte položky v Koši. Tyto soubory se počítají do velikosti aplikace. Koš můžete vysypat otevřením a odstraněním všech souborů nebo z nastavení aplikace. 
 Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
+    <string name="faq_16_title">Co se stalo se skrýváním souborů a složek a proč už nevidím skryté položky?</string>
+    <string name="faq_16_text">Počínaje systémem Android 11 již nelze skrývat ani odkrývat soubory nebo složky a skryté soubory nelze zobrazit ani v aplikacích galerie. K tomu budete muset použít nějaký správce souborů.</string>
+    <string name="faq_17_title">Proč již nemohu zahrnout chybějící složky?</string>
+    <string name="faq_17_text">To přestalo fungovat kvůli systémovým změnám, které přišly s Androidem 11. Aplikace už nemůže procházet skutečné složky a při načítání dat se spoléhá na takzvaný MediaStore.</string>
+    <string name="faq_18_title">Proč se mi během přehrávání videa zobrazují reklamy?</string>
+    <string name="faq_18_text">Naše aplikace neobsahují žádné reklamy. Pokud je vidíte během přehrávání videa, musíte používat nějaký jiný přehrávač videa. Zkuste v nastavení zařízení najít výchozí přehrávač videa a provést v něm příkaz \"Vyčistit výchozí\". Při příštím vyvolání nějakého záměru videa se zobrazí výzva k výběru aplikace, kde můžete vybrat, jakou aplikaci chcete použít.</string>
     <string name="app_title">Simple Gallery Pro - Správce fotografií &amp; editor</string>
     <string name="app_short_description">Prémiová aplikace bez reklam pro správu a úpravy fotografií, videí a GIFů</string>
     <string name="app_long_description">        Simple Gallery Pro je vysoce přizpůsobitelná offline galerie. Organizujte a upravujte své fotografie, obnovujte smazané fotografie s funkcí odpadkového koše, chraňte je a skrývejte. Prohlížejte množství různých foto a video formátů včetně RAW, SVG a mnoho dalších.
