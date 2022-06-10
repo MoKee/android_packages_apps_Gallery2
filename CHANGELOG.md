@@ -1,6 +1,26 @@
 Changelog
 ==========
 
+Version 6.23.11 *(2022-06-07)*
+----------------------------
+
+ * Fixed a crash at third party intent file picker
+
+Version 6.23.10 *(2022-06-06)*
+----------------------------
+
+ * Allow temporarily showing excluded folders on Android 11+, if hiding is unavailable
+ * Fixed the Indonesian translation
+ * Fixed the performance of copy/move onto SD cards
+ * Added some translation and stability improvements
+
+Version 6.23.9 *(2022-06-01)*
+----------------------------
+
+ * Fixed some sorting by Date Taken related issues
+ * Fixed some file operation related glitches
+ * Added some stability, translation and UX improvements
+
 Version 6.23.8 *(2022-05-25)*
 ----------------------------
 
