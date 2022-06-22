@@ -33,6 +33,7 @@
     <string name="set_as_default_folder">Set as default folder</string>
     <string name="unset_as_default_folder">Unset as default folder</string>
     <string name="reorder_by_dragging">Reorder folders by dragging</string>
+    <string name="reorder_by_dragging_pro">Reorder folders by dragging (Pro)</string>
     <string name="restore_to_path">Restoring to \'%s\'</string>
 
     <!-- Filter -->
@@ -116,6 +117,7 @@
     <string name="home_screen">홈 화면</string>
     <string name="lock_screen">잠금화면</string>
     <string name="home_and_lock_screen">홈 화면과 잠금화면</string>
+    <string name="allow_changing_aspect_ratio">Allow changing the aspect ratio</string>
 
     <!-- Slideshow -->
     <string name="slideshow">슬라이드 쇼</string>
@@ -209,6 +211,7 @@
     <string name="export_favorite_paths">Export favorite file paths</string>
     <string name="media_management_prompt">To make sure that all file operations work reliably, please make this app a Media management app in your device settings.</string>
     <string name="password_protect_excluded">Password protect excluded folder visibility</string>
+    <string name="media_management_manual">Something went wrong, please go into your device Settings - Apps - Special app access - Media management apps and allow this app to manage media.</string>
 
     <!-- Setting sections -->
     <string name="thumbnails">섬네일</string>

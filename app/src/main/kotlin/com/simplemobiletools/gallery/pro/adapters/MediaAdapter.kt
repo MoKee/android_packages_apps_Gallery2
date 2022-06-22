@@ -38,7 +38,6 @@ import kotlinx.android.synthetic.main.video_item_grid.view.media_item_holder
 import kotlinx.android.synthetic.main.video_item_grid.view.medium_check
 import kotlinx.android.synthetic.main.video_item_grid.view.medium_name
 import kotlinx.android.synthetic.main.video_item_grid.view.medium_thumbnail
-import java.io.File
 
 class MediaAdapter(
     activity: BaseSimpleActivity, var media: ArrayList<ThumbnailItem>, val listener: MediaOperationsListener?, val isAGetIntent: Boolean,
@@ -462,21 +461,22 @@ class MediaAdapter(
 
     private fun askConfirmDelete() {
         val itemsCnt = selectedKeys.size
-        val firstPath = getSelectedPaths().first()
-        val fileDirItem = File(firstPath).toFileDirItem(activity)
+        val selectedMedia = getSelectedItems()
+        val firstPath = selectedMedia.first().path
+        val fileDirItem = selectedMedia.first().toFileDirItem()
         val size = fileDirItem.getProperSize(activity, countHidden = true).formatSize()
         val itemsAndSize = if (itemsCnt == 1) {
+            fileDirItem.mediaStoreId = selectedMedia.first().mediaStoreId
             "\"${firstPath.getFilenameFromPath()}\" ($size)"
         } else {
-            val paths = getSelectedPaths()
-            val fileDirItems = ArrayList<FileDirItem>(paths.size)
-            paths.forEach {
-                val fileDirItem = File(it).toFileDirItem(activity)
-                fileDirItems.add(fileDirItem)
+            val fileDirItems = ArrayList<FileDirItem>(selectedMedia.size)
+            selectedMedia.forEach { medium ->
+                val curFileDirItem = medium.toFileDirItem()
+                fileDirItems.add(curFileDirItem)
             }
-            val size = fileDirItems.sumByLong { it.getProperSize(activity, countHidden = true) }.formatSize()
+            val fileSize = fileDirItems.sumByLong { it.getProperSize(activity, countHidden = true) }.formatSize()
             val deleteItemsString = resources.getQuantityString(R.plurals.delete_items, itemsCnt, itemsCnt)
-            "$deleteItemsString ($size)"
+            "$deleteItemsString ($fileSize)"
         }
 
         val isRecycleBin = firstPath.startsWith(activity.recycleBinPath)
@@ -501,8 +501,8 @@ class MediaAdapter(
                 return@handleSAFDialog
             }
 
-            val sdk30SafPath = selectedPaths.firstOrNull { activity.isAccessibleWithSAFSdk30(it) } ?: getFirstSelectedItemPath() ?: return@handleSAFDialog
-            activity.checkManageMediaOrHandleSAFDialogSdk30(sdk30SafPath) {
+            val sdk30SAFPath = selectedPaths.firstOrNull { activity.isAccessibleWithSAFSdk30(it) } ?: getFirstSelectedItemPath() ?: return@handleSAFDialog
+            activity.checkManageMediaOrHandleSAFDialogSdk30(sdk30SAFPath) {
                 if (!it) {
                     return@checkManageMediaOrHandleSAFDialogSdk30
                 }
@@ -511,9 +511,9 @@ class MediaAdapter(
                 val removeMedia = ArrayList<Medium>(selectedKeys.size)
                 val positions = getSelectedItemPositions()
 
-                selectedItems.forEach {
-                    fileDirItems.add(FileDirItem(it.path, it.name))
-                    removeMedia.add(it)
+                selectedItems.forEach { medium ->
+                    fileDirItems.add(medium.toFileDirItem())
+                    removeMedia.add(medium)
                 }
 
                 media.removeAll(removeMedia)

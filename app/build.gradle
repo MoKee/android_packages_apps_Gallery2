@@ -82,7 +82,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:d4c3ee5ce5'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:e7e64f7ba2'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
@@ -94,7 +94,7 @@ dependencies {
     implementation 'info.androidhive:imagefilters:1.0.7'
     implementation 'com.caverock:androidsvg-aar:1.4'
     implementation 'com.github.tibbi:gestureviews:a8e8fa8d27'
-    implementation 'com.github.tibbi:subsampling-scale-image-view:65ff7870ed'
+    implementation 'com.github.tibbi:subsampling-scale-image-view:05b02e26b7'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'com.github.penfeizhou.android.animation:awebp:2.17.0'
     implementation 'com.github.penfeizhou.android.animation:apng:2.17.0'

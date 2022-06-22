@@ -39,6 +39,7 @@
     <string name="set_as_default_folder">Utilizar como pasta padrão</string>
     <string name="unset_as_default_folder">Deixar de utilizar como pasta padrão</string>
     <string name="reorder_by_dragging">Organizar pasta por arrasto</string>
+    <string name="reorder_by_dragging_pro">Organizar pasta por arrasto (Pro)</string>
     <string name="restore_to_path">Restoring to \'%s\'</string>
 
     <!-- Filter -->
@@ -123,6 +124,7 @@
     <string name="home_screen">Ecrã principal</string>
     <string name="lock_screen">Ecrã de bloqueio</string>
     <string name="home_and_lock_screen">Ecrã principal e ecrã de bloqueio</string>
+    <string name="allow_changing_aspect_ratio">Allow changing the aspect ratio</string>
     <!-- Slideshow -->
     <string name="slideshow">Apresentação</string>
     <string name="interval">Intervalo (em segundos):</string>
@@ -211,6 +213,7 @@
     <string name="export_favorite_paths">Exportar caminho dos ficheiros favoritos</string>
     <string name="media_management_prompt">To make sure that all file operations work reliably, please make this app a Media management app in your device settings.</string>
     <string name="password_protect_excluded">Password protect excluded folder visibility</string>
+    <string name="media_management_manual">Something went wrong, please go into your device Settings - Apps - Special app access - Media management apps and allow this app to manage media.</string>
     <!-- Setting sections -->
     <string name="thumbnails">Miniaturas</string>
     <string name="fullscreen_media">Multimédia em ecrã completo</string>
