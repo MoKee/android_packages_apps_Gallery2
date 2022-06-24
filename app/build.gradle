@@ -16,8 +16,8 @@ android {
         applicationId "com.mokee.gallery"
         minSdk 21
         targetSdk 31
-        versionCode 370
-        versionName "6.23.11"
+        versionCode 371
+        versionName "6.23.12"
         vectorDrawables.useSupportLibrary = true
         android.applicationVariants.all { variant ->
             variant.outputs.all {
@@ -82,7 +82,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:e7e64f7ba2'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:a60e3e25dc'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
