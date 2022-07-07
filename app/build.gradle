@@ -16,8 +16,8 @@ android {
         applicationId "com.mokee.gallery"
         minSdk 21
         targetSdk 31
-        versionCode 371
-        versionName "6.23.12"
+        versionCode 372
+        versionName "6.23.13"
         vectorDrawables.useSupportLibrary = true
         android.applicationVariants.all { variant ->
             variant.outputs.all {
@@ -82,7 +82,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:a60e3e25dc'
+    implementation 'com.github.MoKee:android_packages_apps_SimpleCommons:8f00db52f1'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'it.sephiroth.android.exif:library:1.0.1'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
@@ -94,7 +94,7 @@ dependencies {
     implementation 'info.androidhive:imagefilters:1.0.7'
     implementation 'com.caverock:androidsvg-aar:1.4'
     implementation 'com.github.tibbi:gestureviews:a8e8fa8d27'
-    implementation 'com.github.tibbi:subsampling-scale-image-view:05b02e26b7'
+    implementation 'com.github.tibbi:subsampling-scale-image-view:b51482b3fa'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'com.github.penfeizhou.android.animation:awebp:2.17.0'
     implementation 'com.github.penfeizhou.android.animation:apng:2.17.0'
