@@ -33,6 +33,7 @@
     <string name="set_as_default_folder">Varsayılan klasör olarak ayarla</string>
     <string name="unset_as_default_folder">Varsayılan klasör olarak ayarlanmadı</string>
     <string name="reorder_by_dragging">Klasörleri sürükleyerek yeniden sıralayın</string>
+    <string name="restore_to_path">\'%s\' geri yükleniyor</string>
     <string name="filter_media">Medyayı filtrele</string>
     <string name="images">Görüntüler</string>
     <string name="videos">Videolar</string>
@@ -127,6 +128,7 @@
     <string name="by_date_taken_monthly">Alındığı tarih (aylık)</string>
     <string name="by_file_type">Dosya tipi</string>
     <string name="by_extension">Eklenti</string>
+    <string name="show_file_count_section_header">Bölüm başlıklarında dosya sayısını göster</string>
     <string name="grouping_and_sorting">Lütfen gruplamanın ve sıralamanın 2 bağımsız alan olduğunu unutmayın</string>
     <string name="folder_on_widget">Witged öğesinde gösterilen klasör:</string>
     <string name="show_folder_name">Klasör adını göster</string>
@@ -181,6 +183,7 @@
     <string name="square">Kare</string>
     <string name="rounded_corners">Yuvarlak köşeler</string>
     <string name="export_favorite_paths">Favori dosya yollarını dışa aktarın</string>
+    <string name="media_management_prompt">Tüm dosya işlemlerinin güvenilir bir şekilde çalıştığından emin olmak için lütfen bu uygulamayı cihaz ayarlarınızda bir Medya yönetimi uygulaması yapın.</string>
     <string name="thumbnails">Önizleme resimleri</string>
     <string name="fullscreen_media">Tam ekran medya</string>
     <string name="extended_details">Genişletilmiş ayrıntılar</string>
@@ -330,60 +333,9 @@
     <string name="faq_14_text">Gizli öğeyi görmek için ana ekranda \"Gizli öğeleri geçici olarak göster\" menü öğesine basabilir veya uygulama ayarlarında \"Gizli öğeleri göster\" seçeneğini değiştirebilirsiniz. Gizlemek istiyorsanız, uzun basın ve \"Göster\" i seçin. Klasörler gizli bir \".nomedia\" dosyası ekleyerek gizlenir, dosyayı herhangi bir dosya yöneticisi ile de silebilirsiniz. Gizlemenin yinelemeli olarak çalıştığını unutmayın, bu nedenle bir klasörü gizlerseniz, tüm alt klasörler de gizlenir. Bu nedenle, alt klasörleri göstermek için ana klasörü göstermeniz gerekir.</string>
     <string name="faq_15_title">Bu uygulama neden bu kadar yer kaplıyor?</string>
     <string name="faq_15_text">Uygulama önbelleği 250 MB\'a kadar alabilir ve daha hızlı görüntü yükleme sağlar. Uygulama daha fazla yer kaplıyorsa, büyük olasılıkla Geri Dönüşüm Kutusu\'nda öğe bulundurmanızdan kaynaklanmaktadır. Bu dosyalar uygulama boyutuna göre sayılır. Geri Dönüşüm Kutusu\'nu açarak tüm dosyaları silebilirsiniz ya da uygulama ayarlarından temizleyebilirsiniz. Depodaki her dosya 30 gün sonra otomatik olarak silinir.</string>
-    <string name="app_title">Simple Gallery Pro: Fotoğraf Yöneticisi ve &amp; Düzenleyicisi</string>
-    <string name="app_short_description">Fotoğraflarınızı, videolarınızı, GIF\'lerinizi reklamsız yönetmek ve düzenlemek için premium bir uygulama</string>
-    <string name="app_long_description">Basit Galeri Pro, özelleştirilebilir bir çevrimdışı galeridir.  Düzenle &amp; fotoğraflarınızı düzenleyin, geri dönüşüm kutusuyla silinen dosyaları kurtarın, koruyun &amp; dosyaları gizle ve çok çeşitli farklı fotoğraflara bakın &amp; RAW, SVG ve daha fazlasını içeren video biçimleri.
-
-         Uygulamaya hiçbir reklam ve gereksiz izinler içeriyor. Uygulama ya internet erişimi gerektirmediğinden gizliliğiniz korunur.
-
-         -------------------------------------------------
-         <b>BASİT GALERİ PRO - ÖZELLİKLER</b>
-         -------------------------------------------------
-
-         • Reklamsız veya açılır pencereli çevrimdışı galeri
-         • Basit galeri fotoğraf editörü - kırpın, döndürün, yeniden boyutlandırın, çizin, filtreler &amp; Daha
-         • İnternet erişimi gerekmez, size daha fazla gizlilik ve güvenlik sunar
-         • Gereksiz izin gerekmez
-         • Hızlıca resim, video &amp; Dosyalar
-         • Aç &amp; birçok farklı fotoğraf ve video türünü görüntüleyin (RAW, SVG, panoramik vb.)
-         • Kolayca düzenlemek için çeşitli sezgisel hareketler &amp; dosyaları düzenle
-         • Filtreleme, gruplandırma &amp; dosyaları sırala
-         • Basit Galeri Pro\'nun görünümünü kişiselleştirme
-         • 32 dilde mevcut
-         • Hızlı erişim için dosyaları sık kullanılanlar olarak işaretleyin
-         • Fotoğraflarınızı koruyun &amp; desen, iğne veya parmak izi olan videolar
-         • Pin, desen ve &amp; Uygulama lansmanını veya belirli işlevleri de korumak için parmak izi
-         • Silinen fotoğrafları kurtarma &amp; geri dönüşüm kutusundan videolar
-         • Fotoğrafları gizlemek için dosyaların görünürlüğünü değiştir &amp; videolar
-         • Dosyalarınızın özelleştirilebilir bir slayt gösterisi oluşturun
-         • Dosyalarınızın ayrıntılı bilgilerini görüntüleyin (çözünürlük, EXIF ​​değerleri vb.)
-         • Basit Galeri Pro açık kaynak kodlu
-         … ve çok daha fazlası!
-
-         <b>FOTO GALERİ EDİTÖRÜ</b>
-         Basit Galeri Pro, fotoğraflarınızı anında düzenlemenizi kolaylaştırır. Resimlerinizi kırpın, çevirin, döndürün ve yeniden boyutlandırın. Kendinizi daha yaratıcı hissediyorsanız, filtre ekleyebilir ve resimlerinizi çizebilirsiniz!
-
-         <b>BİRÇOK DOSYA TÜRÜ İÇİN DESTEK</b>
-         Diğer bazı galeri izleyicilerinden farklı olarak &amp;  Fotoğraf organizatörleri Basit Galeri Pro, JPEG, PNG, MP4, MKV, RAW, SVG, Panoramik fotoğraflar, Panoramik videolar ve daha pek çok farklı dosya türünü destekler.
-
-         <b>ÇOK ÖZELLEŞTİRİLEN GALERİ MÜDÜRÜ</b>
-         Kullanıcı arabiriminden alt araç çubuğundaki işlev düğmelerine kadar, Basit Galeri Pro oldukça özelleştirilebilir ve istediğiniz şekilde çalışır. Başka hiçbir galeri yöneticisi bu tür bir esnekliğe sahip değil!  Açık kaynak olması sayesinde 32 dilde de hazırız!
-
-         <b>KURTARMA SİLİNEN FOTOĞRAFLAR &amp;  VİDEOLAR</b>
-         Yanlışlıkla değerli bir fotoğraf veya video silindi?  Endişelenme! Basit Galeri Pro, silinen fotoğrafları &amp; videoları kolayca kurtarabileceğiniz kullanışlı bir geri dönüşüm kutusuna sahiptir.
-
-         <b>KORUMA &amp; FOTOĞRAFLARI GİZLE, VİDEOLAR &amp; DOSYALAR</b>
-         Pin, desen veya cihazınızın parmak izi tarayıcısını kullanarak, fotoğrafları, videoları ve videoları koruyabilir ve gizleyebilirsiniz. Uygulamanın kendisini koruyabilir veya uygulamanın belirli işlevlerine kilitler yerleştirebilirsiniz. Örneğin, parmak izi taraması olmadan bir dosyayı silemez ve dosyalarınızı yanlışlıkla silmeye karşı koruyabilirsiniz.
-
-         <b>Tüm Basit Araçlar grubuna buradan göz atın</b>
-         https://www.simplemobiletools.com
-
-         <b>Bağımsız Basit Galeri Pro web sitesi:</b>
-         https://www.simplemobiletools.com/gallery
-
-         <b>Facebook:</b>
-         https://www.facebook.com/simplemobiletools
-
-         <b>Reddit:</b>
-         https://www.reddit.com/r/SimpleMobileTools    </string>
+    <string name="faq_16_title">Dosya ve klasör gizlemeye ne oldu ve neden artık gizli öğeleri göremiyorum?</string>
+    <string name="faq_17_title">Neden artık eksik klasörleri ekleyemiyorum?</string>
+    <string name="faq_17_text">Bu, Android 11 ile birlikte gelen sistem değişiklikleri nedeniyle çalışmayı durdurdu, uygulama artık gerçek klasörlere göz atamıyor, veri getirmede MediaStore\'a güveniyor.</string>
+    <string name="faq_18_title">Video oynatılırken neden reklamlar görüyorum?</string>
+    <string name="faq_18_text">Uygulamalarımızda hiçbir şekilde reklam yoktur. Bunları video oynatımı sırasında görürseniz, diğer bazı uygulamalar video oynatıcısını kullanıyor olmalısınız.  Cihaz ayarlarında varsayılan video oynatıcınızı bulmayı deneyin, ardından üzerinde \"Varsayılanları temizle\" yapın. Bir dahaki sefere video amacı çağırdığınızda, kullanmak istediğiniz uygulamayı seçebileceğiniz bir uygulama seçici istemi göreceksiniz.</string>
 </resources>

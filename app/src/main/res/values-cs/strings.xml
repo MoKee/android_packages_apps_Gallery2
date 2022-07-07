@@ -33,6 +33,7 @@
     <string name="set_as_default_folder">Nastavit jako výchozí složku</string>
     <string name="unset_as_default_folder">Zrušit nastavení jako výchozí složku</string>
     <string name="reorder_by_dragging">Přeuspořádat složky přetažením</string>
+    <string name="restore_to_path">Obnovuji do \'%s\'</string>
     <string name="filter_media">Filtr médií</string>
     <string name="images">Obrázky</string>
     <string name="videos">Videa</string>
@@ -182,6 +183,7 @@
     <string name="square">Čtverec</string>
     <string name="rounded_corners">Zaoblené rohy</string>
     <string name="export_favorite_paths">Exportovat cesty k oblíbeným souborům</string>
+    <string name="media_management_prompt">Aby všechny operace se soubory spolehlivě fungovaly, nastavte tuto aplikaci v nastavení zařízení jako aplikaci pro správu médií.</string>
     <string name="thumbnails">Náhledy</string>
     <string name="fullscreen_media">Média přes celou obrazovku</string>
     <string name="extended_details">Rozšířené vlastnosti</string>
@@ -333,66 +335,8 @@
     <string name="faq_15_text">Mezipaměť aplikace může mít až 250 MB, což zajišťuje rychlejší načítání obrázků. Pokud aplikace zabírá ještě více místa, je to s největší pravděpodobností způsobeno tím, že máte položky v Koši. Tyto soubory se počítají do velikosti aplikace. Koš můžete vysypat otevřením a odstraněním všech souborů nebo z nastavení aplikace. 
 Každý soubor v Koši bude po 30 dnech automaticky vymazán.</string>
     <string name="faq_16_title">Co se stalo se skrýváním souborů a složek a proč už nevidím skryté položky?</string>
-    <string name="faq_16_text">Počínaje systémem Android 11 již nelze skrývat ani odkrývat soubory nebo složky a skryté soubory nelze zobrazit ani v aplikacích galerie. K tomu budete muset použít nějaký správce souborů.</string>
     <string name="faq_17_title">Proč již nemohu zahrnout chybějící složky?</string>
     <string name="faq_17_text">To přestalo fungovat kvůli systémovým změnám, které přišly s Androidem 11. Aplikace už nemůže procházet skutečné složky a při načítání dat se spoléhá na takzvaný MediaStore.</string>
     <string name="faq_18_title">Proč se mi během přehrávání videa zobrazují reklamy?</string>
     <string name="faq_18_text">Naše aplikace neobsahují žádné reklamy. Pokud je vidíte během přehrávání videa, musíte používat nějaký jiný přehrávač videa. Zkuste v nastavení zařízení najít výchozí přehrávač videa a provést v něm příkaz \"Vyčistit výchozí\". Při příštím vyvolání nějakého záměru videa se zobrazí výzva k výběru aplikace, kde můžete vybrat, jakou aplikaci chcete použít.</string>
-    <string name="app_title">Simple Gallery Pro - Správce fotografií &amp; editor</string>
-    <string name="app_short_description">Prémiová aplikace bez reklam pro správu a úpravy fotografií, videí a GIFů</string>
-    <string name="app_long_description">        Simple Gallery Pro je vysoce přizpůsobitelná offline galerie. Organizujte a upravujte své fotografie, obnovujte smazané fotografie s funkcí odpadkového koše, chraňte je a skrývejte. Prohlížejte množství různých foto a video formátů včetně RAW, SVG a mnoho dalších.
-
-        Aplikace neobsahuje žádné reklamy ani nepotřebná oprávnění. Tím, že ani nevyžaduje připojení k internetu, je vaše soukromí maximálně chráněno.
-
-        -------------------------------------------------
-        <b>SIMPLE GALLERY PRO – FUNKCE</b>
-        -------------------------------------------------
-
-        • Offline galerie bez reklam a vyskakujících oken
-        • Foto editor – ořezávejte, otáčejte, měňte velikost, kreslete, používejte filtry a více
-        • Nevyžaduje přístup k internetu - více soukromí a bezpečí
-        • Nepožaduje žádná nepotřebná oprávnění navíc
-        • Rychle prohledávejte obrázky a videa
-        • Otevírejte mnoho rozličných formátů fotografií a videí (RAW, SVG, GIF, panorama, atd)
-        • Množství intuitivních gest pro jednoduchou úpravu a organizaci souborů
-        • Mnoho různých způsobů filtrování, seskupování a řazení souborů
-        • Změňte si vzhled Simple Gallery Pro
-        • Dostupná ve 32 jazycích
-        • Označte si oblíbené soubory pro rychlý přístup
-        • Chraňte své fotografie a videa pomocí pinu, vzoru nebo otiskem prstu
-        • Použijte pin, vzor a otisk prstu pro zabezpečení spuštění aplikace, nebo i některých funkcí
-        • Obnovte smazané fotografie a videa z odpadkového koše
-        • Přepněte viditelnost souborů pro skrytí obrázků a videí
-        • Vytvořte si ze svých souborů prezentaci
-        • Zobrazte si detailní informace o svých souborech (rozlišení, hodnoty EXIF, atd)
-        • Simple Gallery Pro má otevřený zdrojový kód
-        … a mnoho dalších!!
-
-        <b>EDITOR OBRÁZKŮ</b>
-        Simple Gallery Pro umožňuje snadnou úpravu obrázků. Ořezávejte, překlápějte, otáčejte či měňte jejich velikost. Pokud se cítíte kreativně, můžete také aplikovat filtry nebo do obrázku kreslit!
-
-        <b>PODPORA MNOHA TYPŮ SOUBORŮ</b>
-        Na rozdíl od některých galerií podporuje Simple Gallery Pro velké množství různých druhů souborů včetně JPEG, PNG, MP4, MKV, RAW, SVG, panoramatických fotografií a videí.
-
-        <b>VYSOCE UPRAVITELNÝ SPRÁVCE GALERIE</b>
-        Od vzhledu až po funkční tlačítka na spodní liště, Simple Gallery Pro je plně nastavitelná a bude fungovat přesně jak si budete přát. Žádná jiná galerie nenabízí takovou flexibilitu! A díky otevřenému kódu je naše aplikace dostupná ve 32 jazycích!
-
-        <b>OBNOVTE SMAZANÉ FOTOGRAFIE A VIDEA</b>
-        Smazali jste nechtěně důležitou fotografii nebo video? Žádný strach! Simple Gallery Pro pro podobné případy nabízí funkci odpadkového koše, odkud smazané fotografie a videa snadno obnovíte.
-
-        <b>CHRAŇTE A SKRÝVEJTE SVÉ FOTOGRAFIE A VIDEA</b>
-        Použitím pinu, vzoru nebo otisku prstu snadno své fotografie, videa či celá alba ochráníte nebo skryjete. Můžete ochránit i spuštění samotné aplikace, nebo některé její funkce. Například můžete zabránit náhodnému smazání souboru bez potvrzení otiskem prstu.
-
-        <b>Prohlédněte si celou sadu Simple Tools na::</b>
-        https://www.simplemobiletools.com
-
-        <b>Samostatný web Simple Gallery Pro:</b>
-        https://www.simplemobiletools.com/gallery
-
-        <b>Facebook:</b>
-        https://www.facebook.com/simplemobiletools
-
-        <b>Reddit:</b>
-        https://www.reddit.com/r/SimpleMobileTools
-    </string>
 </resources>

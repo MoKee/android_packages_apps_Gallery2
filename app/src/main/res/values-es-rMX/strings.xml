@@ -243,6 +243,4 @@ Puedes fijar multiples carpetas,los items fijados seran ordenados predeterminada
     <string name="faq_14_title">He escondido un archivo/carpeta. ¿Cómo lo puedo Mostrar?</string>
     <string name="faq_15_title">¿Por qué la aplicación ocupa tanto espacio?</string>
     <string name="faq_15_text">La cache de la aplicacion puede ocupar hasta 250MB,esto permite asegurar el rapido cargado de las imagenes. Si la aplicacion toma aun mas espacio,puede ser causado por que  tienes archivos en la papelera de reciclaje. Esos archivos cuentan en el tamaño de la aplicacion. Puedes limpiar la papelera de reciclaje al abrirla y eliminar todos los archivos,o desde los ajustes de la aplicacion. Cada archivo en la papelera es eliminado autommaticamente despues de 30 dias.</string>
-    <string name="app_title">Simple Gallery Pro - Gestor y editor de fotos</string>
-    <string name="app_long_description">.</string>
 </resources>
