@@ -1,57 +1,23 @@
 # Simple Gallery
 
-<img alt="Logo" src="fastlane/metadata/android/en-US/images/icon.png" width="120" />
+<img alt="Logo" src="graphics/icon.png" width="120" />
 
-Simple Gallery Pro is a highly customizable lightweight gallery loved by millions of people for its great user experience. Organize and edit your photos, recover deleted files with the recycle bin, protect & hide files and easily view a huge variety of different photo and video formats including RAW, SVG, GIF, panoramic and much more.
-
--------------------------------------------------
-SIMPLE GALLERY PRO – FEATURES
--------------------------------------------------
-
-• A beautiful modern gallery with no ads or popups  
-• Photo editor – crop, rotate, resize, draw, filters & more  
-• No internet access needed, giving you more privacy, security and stability  
-• No unnecessary permissions required  
-• Quickly search images, videos & other files  
-• Open and view many different photo and video types (RAW, SVG, panoramic, GIF etc)  
-• A variety of intuitive gestures to easily edit, rotate & organize files  
-• Lots of ways to filter, group and sort files  
-• Customize the appearance of Simple Gallery Pro  
-• Available in over 30 languages  
-• Mark files as favorites for quick access  
-• Protect your photos & videos with a pattern, pin or fingerprint  
-• Use pin, pattern & fingerprint to protect the app launch or specific functions too  
-• Recover deleted photos & videos from the recycle bin  
-• Toggle visibility of files to hide photos & videos  
-• Create a customizable slideshow of your files with many options  
-• View detailed information of your files (resolution, EXIF values etc)  
-• Zoom high quality photos, videos and GIFs easily with gestures  
-• Easily force portrait or landscape orientation for easy video viewing  
-• Quick file share to social media, email or anywhere else  
-• Print images or set them as wallpaper with a few clicks  
-• Create home screen shortcuts or widgets to easily access any file or folder  
-• Show the image location on a map, if available  
-• Obvious presence of standard operations like rename, copy/move, un/hide, delete  
-• Rewind videos with horizontal gestures  
-• Change photo and video brightness, or volume with vertical gestures  
-• Reorder, lock folders or change cover thumbnails anytime  
-• Set any image as wallpaper without hassle  
-… and much much more!  
+Simple Gallery brings you all the photo viewing and editing features you have been missing on your Android in one stylish easy-to-use app. Browse, manage, crop and edit photos or videos faster than ever, recover accidentally deleted files or create hidden galleries for your most precious images and videos. And with advanced file-support and full customization, finally, your gallery works just the way you want.
 
 ADVANCED PHOTO EDITOR  
-Simple Gallery Pro makes it easy to edit your pictures on the fly. Crop, flip, rotate and resize your pictures. If you’re feeling a little more creative you can add filters and draw on your pictures!
+Turn photo editing into child's play with Simple Gallery's improved file organizer and photo album. Intuitive gestures make it super easy to edit your images on the fly. Crop, flip, rotate and resize pictures or apply stylish filters to make them pop in an instant.
 
-SUPPORT FOR MANY FILE TYPES  
-Simple Gallery Pro supports a huge range of different file types including JPEG, PNG, MP4, MKV, RAW, SVG, GIF Panoramic photos, Panoramic videos and many more.
+ALL THE FILES YOU NEED  
+Simple Gallery supports a huge variety of different file types including JPEG, PNG, MP4, MKV, RAW, SVG, GIF, Panoramic photos, videos and many more, so you enjoy full flexibility in your choice of format. Ever wonder "Can I use this format on my Android"? Now the answer is yes.
 
-HIGHLY CUSTOMIZABLE FILE MANAGER  
-From the UI to the function buttons on the bottom toolbar, Simple Gallery Pro is highly customizable and works the way you want it to. No other gallery has this kind of flexibility! Thanks to being open source, we’re also available in over 30 languages!
+MAKE IT YOURS  
+Simple Gallery's highly customizable design allows you make the photo app look, feel and work just the way you want it to. From the UI to the function buttons on the bottom toolbar, Simple Gallery gives you the creative freedom you need in a gallery app.
 
 RECOVER DELETED PHOTOS & VIDEOS  
-Accidentally deleted a precious photo or video? Don’t worry! Simple Gallery Pro features a handy recycle bin where you can recover deleted photos & videos easily.
+Never worry about accidentally deleting that one precious photo or video you just can't replace. Simple Gallery allows you to quickly recover any deleted photo and videos, meaning on top of being the best media gallery for Android, Simple Gallery doubles as an amazing photo vault app.
 
-PROTECT & HIDE PHOTOS, VIDEOS & FILES  
-Using pin, pattern or your device’s fingerprint scanner you can protect and hide photos, videos & entire albums. You can protect the app itself or place locks on specific functions of the app. For example, you can’t delete a file without a fingerprint scan, helping to protect your files from accidental deletion.
+PROTECT YOUR PRIVATE PHOTOS, VIDEOS & FILES  
+Rest assured your photo album is safe. With Simple Gallery's superior security features you can use a pin, pattern or your device’s fingerprint scanner to limit who can view or edit selected photos and videos or access important files. You can even protect the app itself or place locks on specific functions of the file organizer.
 
 Check out the full suite of Simple Tools here:  
 https://www.simplemobiletools.com
@@ -65,11 +31,14 @@ https://www.facebook.com/simplemobiletools
 Reddit:  
 https://www.reddit.com/r/SimpleMobileTools
 
+Telegram:  
+https://t.me/SimpleMobileTools
+
 <a href='https://play.google.com/store/apps/details?id=com.simplemobiletools.gallery.pro'><img src='https://simplemobiletools.com/images/button-google-play.svg' alt='Get it on Google Play' height='45' /></a>
 <a href='https://f-droid.org/packages/com.simplemobiletools.gallery.pro'><img src='https://simplemobiletools.com/images/button-f-droid.png' alt='Get it on F-Droid' height='45' /></a>
 
 <div style="display:flex;">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg" width="30%">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg" width="30%">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.jpg" width="30%">
+<img alt="App image" src="fastlane/metadata/android/en-GB/images/phoneScreenshots/1_en-GB.jpeg" width="30%">
+<img alt="App image" src="fastlane/metadata/android/en-GB/images/phoneScreenshots/2_en-GB.jpeg" width="30%">
+<img alt="App image" src="fastlane/metadata/android/en-GB/images/phoneScreenshots/3_en-GB.jpeg" width="30%">
 </div>

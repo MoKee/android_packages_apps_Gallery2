@@ -6,3 +6,6 @@
 .DS_Store
 /build
 /captures
+fastlane/fastlane.json
+Gemfile
+Gemfile.lock
